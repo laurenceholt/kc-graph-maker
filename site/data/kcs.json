@@ -1,0 +1,129 @@
+[
+  {
+    "kc_id": "count_equal_parts_in_whole",
+    "title": "Count Equal Parts in a Whole",
+    "description": "Determine the total number of equal parts a whole is partitioned into.",
+    "condition": "A shape or strip is partitioned into equal-sized parts.",
+    "response": "Count the total number of equal parts to determine the denominator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a rectangle is divided into 6 equal parts, the denominator is $6$.",
+    "notes": "Supports identifying thirds, fourths, sixths, etc.",
+    "question_ids": [
+      "G3_M5_TA_a1_q1",
+      "G3_M5_TA_a1_q3",
+      "G3_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "define_unit_fraction",
+    "title": "Define a Unit Fraction",
+    "description": "Recognize that a unit fraction represents one equal part of a whole partitioned into equal parts.",
+    "condition": "A fraction of the form $\\frac{1}{n}$ is given.",
+    "response": "Interpret it as 1 out of $n$ equal parts of a whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$\\frac{1}{4}$ means 1 of 4 equal parts.",
+    "notes": "Foundational definition of unit fractions.",
+    "question_ids": [
+      "G3_M5_TA_a1_q2",
+      "G3_M5_TA_a1_q4",
+      "G3_M5_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_equal_partitions",
+    "title": "Identify Equal Partitions",
+    "description": "Determine whether a shape is partitioned into equal-sized parts.",
+    "condition": "A shape is divided into multiple regions.",
+    "response": "Judge whether all parts are equal in size.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A circle divided into 3 congruent sectors is partitioned into equal parts.",
+    "notes": "Key for distinguishing correct from distractor choices.",
+    "question_ids": [
+      "G3_M5_TA_a1_q1",
+      "G3_M5_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "match_visual_to_unit_fraction",
+    "title": "Match Visual Model to Unit Fraction",
+    "description": "Match a partitioned and shaded model to the corresponding unit fraction.",
+    "condition": "A shape or strip shows 1 shaded part out of $n$ equal parts.",
+    "response": "Select or state the fraction $\\frac{1}{n}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 1 of 8 equal parts is shaded, the fraction is $\\frac{1}{8}$.",
+    "notes": "Integrates counting equal parts and unit fraction meaning.",
+    "question_ids": [
+      "G3_M5_TA_a1_q2",
+      "G3_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "partition_shape_into_equal_parts",
+    "title": "Partition a Shape into Equal Parts",
+    "description": "Divide a given whole into a specified number of equal parts.",
+    "condition": "Instruction to partition a whole into $n$ equal parts.",
+    "response": "Draw or imagine $n$ equal-sized regions within the whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Partition a rectangle into 6 equal parts by drawing 5 evenly spaced lines to create 6 equal sections.",
+    "notes": "Primarily procedural drawing skill.",
+    "question_ids": [
+      "G3_M5_TA_a1_q2",
+      "G3_M5_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "shade_specified_number_of_parts",
+    "title": "Shade Specified Number of Equal Parts",
+    "description": "Shade the number of equal parts indicated by the numerator.",
+    "condition": "A fraction $\\frac{a}{n}$ is given and the whole is partitioned into $n$ equal parts.",
+    "response": "Shade $a$ of the equal parts.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $\\frac{1}{6}$, shade 1 of the 6 equal parts.",
+    "notes": "In these items, $a=1$ (unit fractions).",
+    "question_ids": [
+      "G3_M5_TA_a1_q2",
+      "G3_M5_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "sort_by_number_of_equal_parts",
+    "title": "Sort Shapes by Number of Equal Parts",
+    "description": "Classify shapes based on how many equal parts they are partitioned into.",
+    "condition": "Multiple shapes are shown with different partitions.",
+    "response": "Group each shape according to whether it is partitioned into thirds, fourths, sixths, or not equal parts.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If a circle is divided into 6 equal sectors, place it under 'Partitioned into Sixths.'",
+    "notes": "Requires counting and checking equality of parts.",
+    "question_ids": [
+      "G3_M5_TA_a1_q1"
+    ]
+  }
+]

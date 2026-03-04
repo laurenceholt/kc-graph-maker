@@ -6,6 +6,7 @@ EM2 Fractions Assessments/
 
 # Local extraction output
 extracted_questions/
+extracted_kcs/
 
 # Python
 __pycache__/

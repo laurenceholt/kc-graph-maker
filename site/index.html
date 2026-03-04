@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EM2 Fractions Assessments</title>
+<title>KC Browser — EM2 Fractions</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <style>
   :root {
     --accent: #e8552e;
@@ -21,7 +24,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
   header {
@@ -32,24 +35,25 @@
     top: 0;
     z-index: 10;
     box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
   }
 
   header h1 {
     font-size: 1.3em;
     font-weight: 600;
-    display: inline;
   }
 
   header h1 span { color: var(--accent); }
 
   .stats {
-    display: inline;
-    margin-left: 16px;
     color: var(--text-secondary);
     font-size: 0.9em;
   }
 
-  .filters {
+  .toolbar {
     display: flex;
     gap: 12px;
     padding: 14px 24px;
@@ -59,18 +63,23 @@
     align-items: center;
   }
 
-  .filters label {
+  .toolbar label {
     font-size: 0.85em;
     color: var(--text-secondary);
     font-weight: 500;
   }
 
-  .filters select {
-    padding: 6px 28px 6px 10px;
+  .toolbar select, .search-input {
+    padding: 6px 12px;
     border: 1px solid var(--border);
     border-radius: 8px;
     font-size: 0.9em;
     background: white;
+    font-family: inherit;
+  }
+
+  .toolbar select {
+    padding-right: 28px;
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236e6e73' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -78,10 +87,14 @@
     cursor: pointer;
   }
 
-  .filters select:focus {
+  .toolbar select:focus, .search-input:focus {
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(232, 85, 46, 0.15);
+  }
+
+  .search-input {
+    width: 220px;
   }
 
   .filter-group {
@@ -98,79 +111,213 @@
     font-size: 0.85em;
     cursor: pointer;
     color: var(--text-secondary);
+    font-family: inherit;
   }
 
   .reset-btn:hover { background: var(--bg); }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 16px;
-    padding: 20px 24px;
-    max-width: 1800px;
+  /* KC panels */
+  .kc-list {
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .card {
+  .kc-panel {
     background: var(--card-bg);
     border-radius: 12px;
     border: 1px solid var(--border);
     overflow: hidden;
-    transition: box-shadow 0.2s, transform 0.15s;
+    transition: box-shadow 0.2s;
   }
 
-  .card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
+  .kc-panel:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   }
 
-  .card-header {
-    padding: 12px 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .kc-header {
+    padding: 16px 20px;
     border-bottom: 1px solid var(--border);
-    background: var(--bg);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .card-header .label {
+  .kc-title {
+    font-size: 1.15em;
     font-weight: 600;
-    font-size: 0.95em;
+  }
+
+  .kc-id {
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    font-family: 'SF Mono', SFMono-Regular, Menlo, monospace;
+    margin-top: 2px;
   }
 
   .badge {
     display: inline-block;
-    padding: 2px 10px;
+    padding: 3px 10px;
     border-radius: 20px;
-    font-size: 0.78em;
-    font-weight: 500;
+    font-size: 0.75em;
+    font-weight: 600;
+    white-space: nowrap;
   }
 
-  .badge-grade { background: #e8f4fd; color: #1a73e8; }
-  .badge-topic { background: #e8f5e9; color: #2e7d32; }
-  .badge-notopic { background: #f3f3f3; color: #999; }
+  .badge-label { background: #f3e8ff; color: #7c3aed; }
+  .badge-concept { background: #dbeafe; color: #2563eb; }
+  .badge-skill { background: #d1fae5; color: #059669; }
+  .badge-rule { background: #fef3c7; color: #d97706; }
+  .badge-principle { background: #ffe4e6; color: #e11d48; }
+  .badge-association { background: #f1f5f9; color: #475569; }
+  .badge-fact { background: #e0f2fe; color: #0284c7; }
+  .badge-category { background: #fce7f3; color: #be185d; }
 
-  .card-image {
-    padding: 8px;
+  .kc-body {
+    padding: 16px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .kc-description {
+    font-size: 0.95em;
+    color: var(--text);
+  }
+
+  .cond-resp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  @media (max-width: 700px) {
+    .cond-resp { grid-template-columns: 1fr; }
+  }
+
+  .cond-resp-box {
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+  }
+
+  .cond-resp-box .cr-label {
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+  }
+
+  .cond-resp-box .cr-text {
+    font-size: 0.9em;
+  }
+
+  .type-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .type-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.78em;
+  }
+
+  .type-tag .tag-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  .kc-example {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9em;
+  }
+
+  .kc-example .ex-label {
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .kc-notes {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  /* Question images grid */
+  .kc-questions {
+    border-top: 1px solid var(--border);
+    padding: 14px 20px;
+    background: var(--bg);
+  }
+
+  .kc-questions .q-heading {
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+  }
+
+  .q-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .q-thumb {
     background: white;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow: hidden;
     cursor: pointer;
-    min-height: 80px;
+    transition: box-shadow 0.15s, transform 0.15s;
   }
 
-  .card-image img {
-    max-width: 100%;
-    max-height: 400px;
+  .q-thumb:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+  }
+
+  .q-thumb img {
+    width: 100%;
+    display: block;
     object-fit: contain;
+    max-height: 220px;
+    padding: 6px;
   }
 
-  .card-footer {
-    padding: 8px 16px;
-    font-size: 0.8em;
+  .q-thumb-label {
+    padding: 4px 8px;
+    font-size: 0.72em;
+    font-weight: 600;
     color: var(--text-secondary);
     border-top: 1px solid var(--border);
     background: var(--bg);
+    text-align: center;
   }
 
   /* Lightbox modal */
@@ -203,7 +350,6 @@
 
   .empty-state h2 { font-size: 1.2em; margin-bottom: 8px; }
 
-  /* Loading */
   .loading {
     text-align: center;
     padding: 60px;
@@ -214,32 +360,36 @@
 <body>
 
 <header>
-  <h1>EM2 <span>Fractions</span> Assessments</h1>
+  <h1>EM2 <span>Fractions</span> &mdash; Knowledge Components</h1>
   <span class="stats" id="stats">Loading...</span>
 </header>
 
-<div class="filters">
+<div class="toolbar">
+  <div class="filter-group">
+    <label>Label</label>
+    <select id="filter-label"><option value="">All</option></select>
+  </div>
   <div class="filter-group">
     <label>Grade</label>
     <select id="filter-grade"><option value="">All</option></select>
   </div>
   <div class="filter-group">
-    <label>Module</label>
-    <select id="filter-module"><option value="">All</option></select>
+    <label>Cond Type</label>
+    <select id="filter-cond"><option value="">All</option></select>
   </div>
   <div class="filter-group">
-    <label>Topic</label>
-    <select id="filter-topic"><option value="">All</option></select>
+    <label>Resp Type</label>
+    <select id="filter-resp"><option value="">All</option></select>
   </div>
   <div class="filter-group">
-    <label>Assessment</label>
-    <select id="filter-assessment"><option value="">All</option></select>
+    <label>Search</label>
+    <input type="text" class="search-input" id="search" placeholder="Title or description...">
   </div>
   <button class="reset-btn" onclick="resetFilters()">Reset</button>
 </div>
 
-<div class="grid" id="grid">
-  <div class="loading">Loading questions...</div>
+<div class="kc-list" id="kc-list">
+  <div class="loading">Loading knowledge components...</div>
 </div>
 
 <div class="modal" id="modal" onclick="closeModal()">
@@ -247,46 +397,63 @@
 </div>
 
 <script>
+let kcs = [];
 let questions = [];
+let questionMap = {}; // question_id -> question object
+
+function questionId(q) {
+  const parts = [q.grade, q.module];
+  if (q.topic) parts.push(q.topic);
+  parts.push('a' + q.assessment_number);
+  parts.push('q' + q.question_number);
+  return parts.join('_');
+}
 
 async function init() {
-  const resp = await fetch('data/questions.json');
-  questions = await resp.json();
+  const [kcResp, qResp] = await Promise.all([
+    fetch('data/kcs.json'),
+    fetch('data/questions.json')
+  ]);
+  kcs = await kcResp.json();
+  questions = await qResp.json();
 
-  // Sort: grade, module, topic (nulls first), assessment, question
-  questions.sort((a, b) => {
-    if (a.grade !== b.grade) return a.grade.localeCompare(b.grade);
-    if (a.module !== b.module) return a.module.localeCompare(b.module);
-    const ta = a.topic || '';
-    const tb = b.topic || '';
-    if (ta !== tb) return ta.localeCompare(tb);
-    if (a.assessment_number !== b.assessment_number) return a.assessment_number - b.assessment_number;
-    return a.question_number - b.question_number;
+  // Build lookup map: question_id -> question
+  questions.forEach(q => {
+    questionMap[questionId(q)] = q;
   });
+
+  // Sort KCs alphabetically by title
+  kcs.sort((a, b) => a.title.localeCompare(b.title));
 
   populateFilters();
   render();
 }
 
 function populateFilters() {
-  const grades = [...new Set(questions.map(q => q.grade))].sort();
-  const modules = [...new Set(questions.map(q => q.module))].sort();
-  const topics = [...new Set(questions.map(q => q.topic).filter(Boolean))].sort();
-  const assessments = [...new Set(questions.map(q => q.assessment_number))].sort((a,b) => a-b);
+  const labels = [...new Set(kcs.map(k => k.label))].sort();
+  const condTypes = [...new Set(kcs.map(k => k.cond_type))].sort();
+  const respTypes = [...new Set(kcs.map(k => k.resp_type))].sort();
 
-  fillSelect('filter-grade', grades);
-  fillSelect('filter-module', modules);
-  fillSelect('filter-topic', topics, 'Full Module');
-  fillSelect('filter-assessment', assessments.map(String));
+  // Grades come from the question_ids in each KC
+  const grades = new Set();
+  kcs.forEach(k => {
+    k.question_ids.forEach(qid => {
+      const m = qid.match(/^(G\d)/);
+      if (m) grades.add(m[1]);
+    });
+  });
+  const gradeArr = [...grades].sort();
+
+  fillSelect('filter-label', labels);
+  fillSelect('filter-grade', gradeArr);
+  fillSelect('filter-cond', condTypes);
+  fillSelect('filter-resp', respTypes);
 }
 
-function fillSelect(id, values, nullLabel) {
+function fillSelect(id, values) {
   const el = document.getElementById(id);
   const current = el.value;
   el.innerHTML = '<option value="">All</option>';
-  if (nullLabel) {
-    el.innerHTML += `<option value="__none__">${nullLabel}</option>`;
-  }
   values.forEach(v => {
     el.innerHTML += `<option value="${v}">${v}</option>`;
   });
@@ -294,70 +461,154 @@ function fillSelect(id, values, nullLabel) {
   el.addEventListener('change', render);
 }
 
-function getFilters() {
-  return {
-    grade: document.getElementById('filter-grade').value,
-    module: document.getElementById('filter-module').value,
-    topic: document.getElementById('filter-topic').value,
-    assessment: document.getElementById('filter-assessment').value,
-  };
-}
+document.getElementById('search').addEventListener('input', render);
 
 function resetFilters() {
+  document.getElementById('filter-label').value = '';
   document.getElementById('filter-grade').value = '';
-  document.getElementById('filter-module').value = '';
-  document.getElementById('filter-topic').value = '';
-  document.getElementById('filter-assessment').value = '';
+  document.getElementById('filter-cond').value = '';
+  document.getElementById('filter-resp').value = '';
+  document.getElementById('search').value = '';
   render();
 }
 
+function labelBadgeClass(label) {
+  const l = label.toLowerCase();
+  if (l.includes('concept')) return 'badge-concept';
+  if (l.includes('skill') || l.includes('production')) return 'badge-skill';
+  if (l.includes('rule') || l.includes('plan')) return 'badge-rule';
+  if (l.includes('principle') || l.includes('model')) return 'badge-principle';
+  if (l.includes('association')) return 'badge-association';
+  if (l.includes('fact')) return 'badge-fact';
+  if (l.includes('category')) return 'badge-category';
+  return 'badge-label';
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 function render() {
-  const f = getFilters();
-  const filtered = questions.filter(q => {
-    if (f.grade && q.grade !== f.grade) return false;
-    if (f.module && q.module !== f.module) return false;
-    if (f.topic === '__none__' && q.topic !== null) return false;
-    if (f.topic && f.topic !== '__none__' && q.topic !== f.topic) return false;
-    if (f.assessment && q.assessment_number !== parseInt(f.assessment)) return false;
+  const fLabel = document.getElementById('filter-label').value;
+  const fGrade = document.getElementById('filter-grade').value;
+  const fCond = document.getElementById('filter-cond').value;
+  const fResp = document.getElementById('filter-resp').value;
+  const search = document.getElementById('search').value.toLowerCase().trim();
+
+  const filtered = kcs.filter(k => {
+    if (fLabel && k.label !== fLabel) return false;
+    if (fCond && k.cond_type !== fCond) return false;
+    if (fResp && k.resp_type !== fResp) return false;
+    if (fGrade) {
+      const hasGrade = k.question_ids.some(qid => qid.startsWith(fGrade));
+      if (!hasGrade) return false;
+    }
+    if (search) {
+      const haystack = (k.title + ' ' + k.description + ' ' + k.kc_id).toLowerCase();
+      if (!haystack.includes(search)) return false;
+    }
     return true;
   });
 
   document.getElementById('stats').textContent =
-    `${filtered.length} of ${questions.length} questions`;
+    `${filtered.length} of ${kcs.length} KCs`;
 
-  const grid = document.getElementById('grid');
+  const list = document.getElementById('kc-list');
 
   if (filtered.length === 0) {
-    grid.innerHTML = `
-      <div class="empty-state" style="grid-column: 1/-1;">
-        <h2>No questions match</h2>
+    list.innerHTML = `
+      <div class="empty-state">
+        <h2>No KCs match</h2>
         <p>Try adjusting your filters</p>
       </div>`;
     return;
   }
 
-  grid.innerHTML = filtered.map(q => {
-    const topicBadge = q.topic
-      ? `<span class="badge badge-topic">${q.topic}</span>`
-      : `<span class="badge badge-notopic">Full Module</span>`;
+  list.innerHTML = filtered.map(k => {
+    const badgeClass = labelBadgeClass(k.label);
+
+    // Build type tags
+    const tags = [
+      { label: 'Cond', value: k.cond_type },
+      { label: 'Resp', value: k.resp_type },
+      { label: 'Relationship', value: k.relationship },
+      { label: 'Rationale', value: k.rationale },
+    ];
+    const tagsHtml = tags.map(t =>
+      `<span class="type-tag"><span class="tag-label">${t.label}:</span> ${escapeHtml(t.value)}</span>`
+    ).join('');
+
+    // Build question thumbnails
+    const qThumbs = k.question_ids.map(qid => {
+      const q = questionMap[qid];
+      if (!q) {
+        return `<div class="q-thumb">
+          <div style="padding:20px;text-align:center;color:var(--text-secondary);font-size:0.8em">${escapeHtml(qid)}<br>(not found)</div>
+        </div>`;
+      }
+      return `<div class="q-thumb" onclick="showModal('${q.image}')">
+        <img src="${q.image}" alt="${escapeHtml(qid)}" loading="lazy">
+        <div class="q-thumb-label">${q.grade} ${q.module} A${q.assessment_number} Q${q.question_number}</div>
+      </div>`;
+    }).join('');
+
+    const notesHtml = k.notes
+      ? `<div class="kc-notes">${escapeHtml(k.notes)}</div>`
+      : '';
+
+    const exampleHtml = k.example
+      ? `<div class="kc-example">
+          <div class="ex-label">Example</div>
+          <div class="ex-text">${escapeHtml(k.example)}</div>
+        </div>`
+      : '';
 
     return `
-    <div class="card">
-      <div class="card-header">
-        <span class="label">
-          <span class="badge badge-grade">${q.grade}</span>
-          ${q.module} ${topicBadge}
-          &mdash; Assessment ${q.assessment_number}, Q${q.question_number}
-        </span>
+    <div class="kc-panel">
+      <div class="kc-header">
+        <div>
+          <div class="kc-title">${escapeHtml(k.title)}</div>
+          <div class="kc-id">${escapeHtml(k.kc_id)}</div>
+        </div>
+        <span class="badge ${badgeClass}">${escapeHtml(k.label)}</span>
       </div>
-      <div class="card-image" onclick="showModal('${q.image}')">
-        <img src="${q.image}" alt="${q.grade} ${q.module} A${q.assessment_number} Q${q.question_number}" loading="lazy">
+      <div class="kc-body">
+        <div class="kc-description">${escapeHtml(k.description)}</div>
+        <div class="cond-resp">
+          <div class="cond-resp-box">
+            <div class="cr-label">Condition</div>
+            <div class="cr-text">${escapeHtml(k.condition)}</div>
+          </div>
+          <div class="cond-resp-box">
+            <div class="cr-label">Response</div>
+            <div class="cr-text">${escapeHtml(k.response)}</div>
+          </div>
+        </div>
+        <div class="type-row">${tagsHtml}</div>
+        ${exampleHtml}
+        ${notesHtml}
       </div>
-      <div class="card-footer">
-        ${q.image_width}&times;${q.image_height}px &middot; Pages ${q.source_pages.join(', ')}
+      <div class="kc-questions">
+        <div class="q-heading">Questions (${k.question_ids.length})</div>
+        <div class="q-grid">${qThumbs}</div>
       </div>
     </div>`;
   }).join('');
+
+  // Render LaTeX via KaTeX auto-render
+  if (window.renderMathInElement) {
+    renderMathInElement(list, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true },
+      ],
+      throwOnError: false,
+    });
+  }
 }
 
 function showModal(src) {
@@ -373,7 +624,19 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
 });
 
-init();
+// Wait for KaTeX to load, then init
+document.addEventListener('DOMContentLoaded', () => {
+  // KaTeX scripts are deferred, so we poll briefly
+  const start = Date.now();
+  function tryInit() {
+    if (window.renderMathInElement || Date.now() - start > 3000) {
+      init();
+    } else {
+      setTimeout(tryInit, 50);
+    }
+  }
+  tryInit();
+});
 </script>
 </body>
 </html>
