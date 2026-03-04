@@ -169,6 +169,7 @@
     white-space: nowrap;
   }
 
+  .badge-grade { background: #e8f4fd; color: #1a73e8; }
   .badge-label { background: #f3e8ff; color: #7c3aed; }
   .badge-concept { background: #dbeafe; color: #2563eb; }
   .badge-skill { background: #d1fae5; color: #059669; }
@@ -266,20 +267,52 @@
     font-style: italic;
   }
 
-  /* Question images grid */
+  .kc-badges {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  /* Collapsible question images */
   .kc-questions {
     border-top: 1px solid var(--border);
-    padding: 14px 20px;
     background: var(--bg);
   }
 
-  .kc-questions .q-heading {
+  .kc-questions summary {
+    padding: 12px 20px;
     font-size: 0.78em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--text-secondary);
-    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .kc-questions summary::-webkit-details-marker { display: none; }
+
+  .kc-questions summary::before {
+    content: '\25B6';
+    font-size: 0.7em;
+    transition: transform 0.2s;
+  }
+
+  .kc-questions[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .kc-questions summary:hover {
+    color: var(--text);
+  }
+
+  .kc-questions .q-grid-wrap {
+    padding: 0 20px 14px;
   }
 
   .q-grid {
@@ -366,20 +399,20 @@
 
 <div class="toolbar">
   <div class="filter-group">
-    <label>Label</label>
-    <select id="filter-label"><option value="">All</option></select>
-  </div>
-  <div class="filter-group">
     <label>Grade</label>
     <select id="filter-grade"><option value="">All</option></select>
   </div>
   <div class="filter-group">
-    <label>Cond Type</label>
-    <select id="filter-cond"><option value="">All</option></select>
+    <label>Module</label>
+    <select id="filter-module"><option value="">All</option></select>
   </div>
   <div class="filter-group">
-    <label>Resp Type</label>
-    <select id="filter-resp"><option value="">All</option></select>
+    <label>Topic</label>
+    <select id="filter-topic"><option value="">All</option></select>
+  </div>
+  <div class="filter-group">
+    <label>Label</label>
+    <select id="filter-label"><option value="">All</option></select>
   </div>
   <div class="filter-group">
     <label>Search</label>
@@ -431,23 +464,26 @@ async function init() {
 
 function populateFilters() {
   const labels = [...new Set(kcs.map(k => k.label))].sort();
-  const condTypes = [...new Set(kcs.map(k => k.cond_type))].sort();
-  const respTypes = [...new Set(kcs.map(k => k.resp_type))].sort();
 
-  // Grades come from the question_ids in each KC
+  // Gather grades, modules, topics from the questions linked to KCs
   const grades = new Set();
+  const modules = new Set();
+  const topics = new Set();
   kcs.forEach(k => {
     k.question_ids.forEach(qid => {
-      const m = qid.match(/^(G\d)/);
-      if (m) grades.add(m[1]);
+      const q = questionMap[qid];
+      if (q) {
+        grades.add(q.grade);
+        modules.add(q.module);
+        if (q.topic) topics.add(q.topic);
+      }
     });
   });
-  const gradeArr = [...grades].sort();
 
+  fillSelect('filter-grade', [...grades].sort());
+  fillSelect('filter-module', [...modules].sort());
+  fillSelect('filter-topic', [...topics].sort());
   fillSelect('filter-label', labels);
-  fillSelect('filter-grade', gradeArr);
-  fillSelect('filter-cond', condTypes);
-  fillSelect('filter-resp', respTypes);
 }
 
 function fillSelect(id, values) {
@@ -464,10 +500,10 @@ function fillSelect(id, values) {
 document.getElementById('search').addEventListener('input', render);
 
 function resetFilters() {
-  document.getElementById('filter-label').value = '';
   document.getElementById('filter-grade').value = '';
-  document.getElementById('filter-cond').value = '';
-  document.getElementById('filter-resp').value = '';
+  document.getElementById('filter-module').value = '';
+  document.getElementById('filter-topic').value = '';
+  document.getElementById('filter-label').value = '';
   document.getElementById('search').value = '';
   render();
 }
@@ -490,21 +526,29 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+function kcQuestions(k) {
+  return k.question_ids.map(qid => questionMap[qid]).filter(Boolean);
+}
+
+function kcLowestGrade(k) {
+  const grades = kcQuestions(k).map(q => q.grade);
+  if (grades.length === 0) return '';
+  return grades.sort()[0];
+}
+
 function render() {
-  const fLabel = document.getElementById('filter-label').value;
   const fGrade = document.getElementById('filter-grade').value;
-  const fCond = document.getElementById('filter-cond').value;
-  const fResp = document.getElementById('filter-resp').value;
+  const fModule = document.getElementById('filter-module').value;
+  const fTopic = document.getElementById('filter-topic').value;
+  const fLabel = document.getElementById('filter-label').value;
   const search = document.getElementById('search').value.toLowerCase().trim();
 
   const filtered = kcs.filter(k => {
     if (fLabel && k.label !== fLabel) return false;
-    if (fCond && k.cond_type !== fCond) return false;
-    if (fResp && k.resp_type !== fResp) return false;
-    if (fGrade) {
-      const hasGrade = k.question_ids.some(qid => qid.startsWith(fGrade));
-      if (!hasGrade) return false;
-    }
+    const qs = kcQuestions(k);
+    if (fGrade && !qs.some(q => q.grade === fGrade)) return false;
+    if (fModule && !qs.some(q => q.module === fModule)) return false;
+    if (fTopic && !qs.some(q => q.topic === fTopic)) return false;
     if (search) {
       const haystack = (k.title + ' ' + k.description + ' ' + k.kc_id).toLowerCase();
       if (!haystack.includes(search)) return false;
@@ -528,6 +572,7 @@ function render() {
 
   list.innerHTML = filtered.map(k => {
     const badgeClass = labelBadgeClass(k.label);
+    const grade = kcLowestGrade(k);
 
     // Build type tags
     const tags = [
@@ -565,6 +610,10 @@ function render() {
         </div>`
       : '';
 
+    const gradeBadge = grade
+      ? `<span class="badge badge-grade">${escapeHtml(grade)}</span>`
+      : '';
+
     return `
     <div class="kc-panel">
       <div class="kc-header">
@@ -572,7 +621,10 @@ function render() {
           <div class="kc-title">${escapeHtml(k.title)}</div>
           <div class="kc-id">${escapeHtml(k.kc_id)}</div>
         </div>
-        <span class="badge ${badgeClass}">${escapeHtml(k.label)}</span>
+        <div class="kc-badges">
+          ${gradeBadge}
+          <span class="badge ${badgeClass}">${escapeHtml(k.label)}</span>
+        </div>
       </div>
       <div class="kc-body">
         <div class="kc-description">${escapeHtml(k.description)}</div>
@@ -590,10 +642,10 @@ function render() {
         ${exampleHtml}
         ${notesHtml}
       </div>
-      <div class="kc-questions">
-        <div class="q-heading">Questions (${k.question_ids.length})</div>
-        <div class="q-grid">${qThumbs}</div>
-      </div>
+      <details class="kc-questions">
+        <summary>Questions (${k.question_ids.length})</summary>
+        <div class="q-grid-wrap"><div class="q-grid">${qThumbs}</div></div>
+      </details>
     </div>`;
   }).join('');
 
