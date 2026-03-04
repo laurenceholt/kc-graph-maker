@@ -1,0 +1,19 @@
+# Source PDFs (too large for git)
+EM2 Fractions Assessments/
+
+# Environment and secrets
+.env
+
+# Local extraction output
+extracted_questions/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# IDE
+.claude/

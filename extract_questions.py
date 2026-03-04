@@ -1,0 +1,505 @@
+#!/usr/bin/env python3
+"""
+Extract individual math assessment questions from Eureka Math² PDFs
+and store them in a PostgreSQL database or export as a static site.
+
+Usage:
+    # Preview mode - save images locally to check extraction quality
+    python extract_questions.py --preview
+
+    # Store in database
+    python extract_questions.py
+
+    # Process all PDFs (default: first only)
+    python extract_questions.py --all
+
+    # Export static site (processes all PDFs, outputs to site/)
+    python extract_questions.py --export-site
+"""
+
+import fitz  # PyMuPDF
+import re
+import os
+import sys
+import io
+import json
+import argparse
+from PIL import Image
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# --- Configuration ---
+DPI = 200
+SCALE = DPI / 72.0
+HEADER_MARGIN_PT = 45
+FOOTER_MARGIN_PT = 55
+QUESTION_PADDING_PT = 3
+PDF_DIR = "EM2 Fractions Assessments"
+OUTPUT_DIR = "extracted_questions"
+
+SCHEMA_SQL = """
+CREATE TABLE IF NOT EXISTS questions (
+    id SERIAL PRIMARY KEY,
+    filename TEXT NOT NULL,
+    grade TEXT NOT NULL,
+    module TEXT NOT NULL,
+    topic TEXT,
+    assessment_number INTEGER NOT NULL,
+    question_number INTEGER NOT NULL,
+    image_data BYTEA NOT NULL,
+    image_width INTEGER NOT NULL,
+    image_height INTEGER NOT NULL,
+    source_pages INTEGER[] NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    UNIQUE(filename, assessment_number, question_number)
+);
+"""
+
+
+def parse_filename(filepath):
+    """Extract grade, module, topic from the PDF filename.
+
+    Examples:
+        EM2_G3_M5_SampleSolutions_WCAG21.pdf        -> G3, M5, None
+        EM2_G3_M5_TA_SampleSolutions_WCAG21_v2.pdf  -> G3, M5, TA
+        EM2_G4_M4_TF_SampleSolutions_WCAG21.pdf     -> G4, M4, TF
+    """
+    basename = os.path.splitext(os.path.basename(filepath))[0]
+    match = re.match(r'EM2_(G\d+)_(M\d+)(?:_(T[A-Z]))?_SampleSolutions', basename)
+    if not match:
+        raise ValueError(f"Could not parse metadata from filename: {basename}")
+    return {
+        'grade': match.group(1),
+        'module': match.group(2),
+        'topic': match.group(3),
+    }
+
+
+def analyze_page(page):
+    """Analyze a PDF page to find question start markers and assessment info."""
+    text_dict = page.get_text("dict")
+    blocks = text_dict.get("blocks", [])
+
+    question_markers = []  # [(question_num, y_top_pt)]
+    assessment_num = None
+    banner_bottom_pt = None
+
+    for block in blocks:
+        if block.get("type") != 0:  # text blocks only
+            continue
+
+        block_bbox = block["bbox"]
+
+        for line in block["lines"]:
+            spans = line.get("spans", [])
+            if not spans:
+                continue
+
+            full_text = "".join(s["text"] for s in spans).strip()
+            line_bbox = line["bbox"]
+
+            # Detect assessment number from page header like "3 > M5 > Module Assessment 1"
+            m = re.search(r'Module Assessment\s*(\d+)', full_text)
+            if m:
+                assessment_num = int(m.group(1))
+
+            # Detect ANSWER KEY banner (only in top half of page, not footer)
+            if (re.search(r'ANSWER\s*KEY.*MODULE\s*ASSESSMENT', full_text)
+                    and line_bbox[1] < page.rect.height / 2):
+                banner_bottom_pt = line_bbox[3] + 10
+                m2 = re.search(r'ASSESSMENT[- ]*(\d+)', full_text)
+                if m2 and assessment_num is None:
+                    assessment_num = int(m2.group(1))
+
+            # Detect question start: "N. " at the left margin area
+            # Skip header/footer zone (top 40pt and bottom 50pt)
+            page_height = page.rect.height
+            if line_bbox[1] < 40 or line_bbox[1] > page_height - 50:
+                continue
+
+            m = re.match(r'^(\d+)\.\s', full_text) or re.fullmatch(r'(\d+)\.', full_text)
+            if m and line_bbox[0] < 140:
+                q_num = int(m.group(1))
+                question_markers.append((q_num, line_bbox[1]))
+
+    return {
+        'question_markers': sorted(question_markers, key=lambda x: x[1]),
+        'assessment_num': assessment_num,
+        'banner_bottom_pt': banner_bottom_pt,
+    }
+
+
+def extract_question_image(page, top_pt, bottom_pt):
+    """Render a cropped region of a page as a PNG image."""
+    # Ensure valid clip region (minimum 10pt height)
+    if bottom_pt - top_pt < 10:
+        bottom_pt = top_pt + 10
+    clip = fitz.Rect(0, top_pt, page.rect.width, bottom_pt)
+    clip = clip & page.rect  # intersect with page bounds
+    if clip.is_empty or clip.width < 1 or clip.height < 1:
+        raise ValueError(f"Invalid clip region: {clip}")
+    pix = page.get_pixmap(dpi=DPI, clip=clip)
+    return pix.tobytes("png"), pix.width, pix.height
+
+
+def stitch_images_vertically(image_data_list):
+    """Stitch multiple PNG images vertically into one."""
+    if len(image_data_list) == 1:
+        data = image_data_list[0]
+        img = Image.open(io.BytesIO(data))
+        return data, img.width, img.height
+
+    images = [Image.open(io.BytesIO(d)) for d in image_data_list]
+    total_height = sum(img.height for img in images)
+    max_width = max(img.width for img in images)
+
+    stitched = Image.new("RGB", (max_width, total_height), "white")
+    y_offset = 0
+    for img in images:
+        stitched.paste(img, (0, y_offset))
+        y_offset += img.height
+
+    buf = io.BytesIO()
+    stitched.save(buf, format="PNG")
+    return buf.getvalue(), stitched.width, stitched.height
+
+
+def trim_whitespace(png_data, padding=20, threshold=250):
+    """Trim excess whitespace from the bottom of a PNG image.
+
+    Scans the center 80% of each row to ignore edge decorations (sidebars, tabs).
+    Keeps content + padding pixels.
+    """
+    img = Image.open(io.BytesIO(png_data)).convert("RGB")
+    width, height = img.size
+
+    # Ignore edge decorations: only scan center 80% of width
+    margin = int(width * 0.1)
+    scan_left = margin
+    scan_right = width - margin
+
+    # Scan from bottom to find last non-white row
+    import numpy as np
+    arr = np.array(img)
+    last_content_row = 0
+    for y in range(height - 1, -1, -1):
+        row_pixels = arr[y, scan_left:scan_right, :]
+        if np.any(row_pixels < threshold):
+            last_content_row = y
+            break
+
+    # Crop with padding
+    crop_bottom = min(height, last_content_row + padding)
+    if crop_bottom < height - 10:  # only trim if saving meaningful space
+        img = img.crop((0, 0, width, crop_bottom))
+
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    return buf.getvalue(), img.width, img.height
+
+
+def extract_questions_from_pdf(pdf_path):
+    """Extract all individual question images from a PDF."""
+    doc = fitz.open(pdf_path)
+    metadata = parse_filename(pdf_path)
+
+    # First pass: analyze every page
+    page_analyses = []
+    for page_num in range(len(doc)):
+        page = doc[page_num]
+        analysis = analyze_page(page)
+        analysis['page_num'] = page_num
+        analysis['page_height'] = page.rect.height
+        page_analyses.append(analysis)
+
+    # Forward-fill assessment numbers across pages
+    current_assessment = None
+    for analysis in page_analyses:
+        if analysis['assessment_num'] is not None:
+            current_assessment = analysis['assessment_num']
+        analysis['resolved_assessment'] = current_assessment
+
+    # Topic-level PDFs don't have "Module Assessment N" headers.
+    # They contain a single assessment, so default to 1.
+    if current_assessment is None:
+        for analysis in page_analyses:
+            analysis['resolved_assessment'] = 1
+
+    # Build question regions: map (assessment, question) -> list of (page, top, bottom)
+    questions_map = {}
+    last_question_key = None
+
+    for analysis in page_analyses:
+        page_num = analysis['page_num']
+        page = doc[page_num]
+        page_height = analysis['page_height']
+        markers = analysis['question_markers']
+        assessment = analysis['resolved_assessment']
+
+        # Content area (excluding header/footer)
+        content_top = HEADER_MARGIN_PT
+        if analysis['banner_bottom_pt'] is not None:
+            content_top = max(content_top, analysis['banner_bottom_pt'])
+        content_bottom = page_height - FOOTER_MARGIN_PT
+
+        # Pages with a banner start a new assessment — never continue previous question
+        has_banner = analysis['banner_bottom_pt'] is not None
+
+        if not markers:
+            # No new questions on this page — continuation of previous question
+            # But don't continue across assessment boundaries (banner pages)
+            if (last_question_key and last_question_key in questions_map
+                    and not has_banner):
+                questions_map[last_question_key]['regions'].append(
+                    (page_num, content_top, content_bottom)
+                )
+            continue
+
+        # If there's content above the first question marker on this page,
+        # it belongs to the previous question (continuation from prior page).
+        # Skip if this page has a banner (new assessment) or if the previous
+        # question belongs to a different assessment.
+        first_marker_y = markers[0][1]
+        if (last_question_key and last_question_key in questions_map
+                and not has_banner
+                and last_question_key[0] == assessment):
+            gap = first_marker_y - content_top
+            if gap > 80:  # substantial content, not just header whitespace
+                questions_map[last_question_key]['regions'].append(
+                    (page_num, content_top, first_marker_y - QUESTION_PADDING_PT)
+                )
+
+        for i, (q_num, y_start) in enumerate(markers):
+            crop_top = max(content_top, y_start - QUESTION_PADDING_PT)
+
+            if i + 1 < len(markers):
+                # Use next question's y directly — content can overlap in PDF blocks
+                crop_bottom = markers[i + 1][1]
+            else:
+                crop_bottom = content_bottom
+
+            key = (assessment, q_num)
+            questions_map[key] = {
+                'assessment_num': assessment,
+                'question_num': q_num,
+                'regions': [(page_num, crop_top, crop_bottom)],
+            }
+            last_question_key = key
+
+    # Render images for each question
+    results = []
+    for key in sorted(questions_map.keys()):
+        q = questions_map[key]
+        image_parts = []
+        source_pages = []
+
+        for (page_num, top_pt, bottom_pt) in q['regions']:
+            page = doc[page_num]
+            if bottom_pt <= top_pt:
+                print(f"    SKIP: Assessment {q['assessment_num']} Q{q['question_num']} "
+                      f"page {page_num+1}: invalid region top={top_pt:.1f} bottom={bottom_pt:.1f}")
+                continue
+            img_data, w, h = extract_question_image(page, top_pt, bottom_pt)
+            image_parts.append(img_data)
+            source_pages.append(page_num + 1)  # 1-indexed
+
+        final_data, final_w, final_h = stitch_images_vertically(image_parts)
+
+        # Trim excess whitespace from bottom of image
+        final_data, final_w, final_h = trim_whitespace(final_data)
+
+        results.append({
+            'filename': os.path.basename(pdf_path),
+            'grade': metadata['grade'],
+            'module': metadata['module'],
+            'topic': metadata['topic'],
+            'assessment_number': q['assessment_num'],
+            'question_number': q['question_num'],
+            'image_data': final_data,
+            'image_width': final_w,
+            'image_height': final_h,
+            'source_pages': source_pages,
+        })
+
+    doc.close()
+    return results
+
+
+def save_preview(questions, pdf_basename):
+    """Save extracted question images locally for inspection."""
+    subdir = os.path.join(OUTPUT_DIR, os.path.splitext(pdf_basename)[0])
+    os.makedirs(subdir, exist_ok=True)
+
+    for q in questions:
+        fname = f"assessment_{q['assessment_number']}_q{q['question_number']}.png"
+        path = os.path.join(subdir, fname)
+        with open(path, 'wb') as f:
+            f.write(q['image_data'])
+
+    print(f"  Saved {len(questions)} images to {subdir}/")
+
+
+def export_static_site(all_questions, script_dir):
+    """Export all questions as a static site (images + JSON metadata)."""
+    site_dir = os.path.join(script_dir, "site")
+    images_dir = os.path.join(site_dir, "images")
+    data_dir = os.path.join(site_dir, "data")
+    os.makedirs(images_dir, exist_ok=True)
+    os.makedirs(data_dir, exist_ok=True)
+
+    metadata_list = []
+
+    for q in all_questions:
+        topic_part = f"_{q['topic']}" if q['topic'] else ""
+        image_filename = (
+            f"{q['grade']}_{q['module']}{topic_part}"
+            f"_a{q['assessment_number']}_q{q['question_number']}.png"
+        )
+        image_path = os.path.join(images_dir, image_filename)
+
+        with open(image_path, 'wb') as f:
+            f.write(q['image_data'])
+
+        metadata_list.append({
+            'filename': q['filename'],
+            'grade': q['grade'],
+            'module': q['module'],
+            'topic': q['topic'],
+            'assessment_number': q['assessment_number'],
+            'question_number': q['question_number'],
+            'image': f"images/{image_filename}",
+            'image_width': q['image_width'],
+            'image_height': q['image_height'],
+            'source_pages': q['source_pages'],
+        })
+
+    json_path = os.path.join(data_dir, "questions.json")
+    with open(json_path, 'w') as f:
+        json.dump(metadata_list, f, indent=2)
+
+    print(f"\nExported static site:")
+    print(f"  {len(metadata_list)} question images -> site/images/")
+    print(f"  Metadata -> site/data/questions.json")
+    print(f"  Total image size: {sum(len(q['image_data']) for q in all_questions) / 1024 / 1024:.1f} MB")
+
+
+def init_db(conn):
+    """Create the questions table if it doesn't exist."""
+    import psycopg2  # noqa: lazy import
+    with conn.cursor() as cur:
+        cur.execute(SCHEMA_SQL)
+    conn.commit()
+
+
+def store_questions(conn, questions):
+    """Insert or update extracted questions in the database."""
+    import psycopg2  # noqa: lazy import
+    with conn.cursor() as cur:
+        for q in questions:
+            cur.execute("""
+                INSERT INTO questions
+                    (filename, grade, module, topic, assessment_number, question_number,
+                     image_data, image_width, image_height, source_pages)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (filename, assessment_number, question_number)
+                DO UPDATE SET
+                    image_data = EXCLUDED.image_data,
+                    image_width = EXCLUDED.image_width,
+                    image_height = EXCLUDED.image_height,
+                    source_pages = EXCLUDED.source_pages,
+                    created_at = NOW()
+            """, (
+                q['filename'], q['grade'], q['module'], q['topic'],
+                q['assessment_number'], q['question_number'],
+                psycopg2.Binary(q['image_data']),
+                q['image_width'], q['image_height'],
+                q['source_pages'],
+            ))
+    conn.commit()
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Extract questions from Eureka Math² PDFs")
+    parser.add_argument('--preview', action='store_true',
+                        help='Save images locally instead of storing in database')
+    parser.add_argument('--all', action='store_true',
+                        help='Process all PDFs (default: first only)')
+    parser.add_argument('--export-site', action='store_true',
+                        help='Export all PDFs as a static site to site/')
+    args = parser.parse_args()
+
+    # --export-site implies --all
+    if args.export_site:
+        args.all = True
+
+    # Resolve PDF directory relative to script location
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    pdf_dir = os.path.join(script_dir, PDF_DIR)
+
+    pdf_files = sorted([
+        os.path.join(pdf_dir, f)
+        for f in os.listdir(pdf_dir)
+        if f.endswith('.pdf')
+    ])
+
+    if not pdf_files:
+        print(f"No PDF files found in {pdf_dir}")
+        sys.exit(1)
+
+    if not args.all:
+        pdf_files = pdf_files[:1]
+
+    print(f"Found {len(pdf_files)} PDF(s) to process\n")
+
+    # Connect to database unless in preview or export mode
+    conn = None
+    if not args.preview and not args.export_site:
+        import psycopg2
+        db_url = os.environ.get("DATABASE_URL")
+        if not db_url:
+            print("ERROR: DATABASE_URL not set. Use --preview or --export-site, or set it in .env")
+            sys.exit(1)
+        conn = psycopg2.connect(db_url)
+        init_db(conn)
+
+    all_questions = []
+
+    for pdf_path in pdf_files:
+        basename = os.path.basename(pdf_path)
+        print(f"Processing: {basename}")
+
+        metadata = parse_filename(pdf_path)
+        print(f"  Grade={metadata['grade']}, Module={metadata['module']}, Topic={metadata['topic']}")
+
+        questions = extract_questions_from_pdf(pdf_path)
+        print(f"  Extracted {len(questions)} questions:")
+
+        for q in questions:
+            size_kb = len(q['image_data']) / 1024
+            print(f"    Assessment {q['assessment_number']}, Q{q['question_number']}: "
+                  f"{q['image_width']}x{q['image_height']}px ({size_kb:.0f}KB), "
+                  f"pages {q['source_pages']}")
+
+        if args.preview:
+            save_preview(questions, basename)
+        elif args.export_site:
+            all_questions.extend(questions)
+        else:
+            import psycopg2
+            store_questions(conn, questions)
+            print(f"  Stored {len(questions)} questions in database")
+
+        print()
+
+    if args.export_site:
+        export_static_site(all_questions, script_dir)
+
+    if conn:
+        conn.close()
+
+    print("Done!")
+
+
+if __name__ == "__main__":
+    main()
