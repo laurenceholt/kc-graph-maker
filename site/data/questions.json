@@ -1928,7 +1928,21 @@
     "assessment_number": 1,
     "question_number": 1,
     "image": "images/G5_M3_a1_q1.png",
-    "image_width": 1700,
+    "image_width": 850,
+    "image_height": 813,
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "filename": "EM2_G5_M3_SampleSolutions_WCAG21_v2.pdf",
+    "grade": "G5",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 2,
+    "image": "images/G5_M3_a1_q2.png",
+    "image_width": 850,
     "image_height": 815,
     "source_pages": [
       1
@@ -2054,8 +2068,22 @@
     "assessment_number": 2,
     "question_number": 1,
     "image": "images/G5_M3_a2_q1.png",
-    "image_width": 1700,
+    "image_width": 850,
     "image_height": 746,
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "filename": "EM2_G5_M3_SampleSolutions_WCAG21_v2.pdf",
+    "grade": "G5",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 2,
+    "image": "images/G5_M3_a2_q2.png",
+    "image_width": 850,
+    "image_height": 740,
     "source_pages": [
       6
     ]

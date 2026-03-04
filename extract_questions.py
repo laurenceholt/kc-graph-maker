@@ -77,19 +77,25 @@ def parse_filename(filepath):
 
 
 def analyze_page(page):
-    """Analyze a PDF page to find question start markers and assessment info."""
+    """Analyze a PDF page to find question start markers and assessment info.
+
+    Detects both single-column and two-column (side-by-side) question layouts.
+    Right-column markers are only accepted if paired with a left-column marker
+    at a similar y position.
+    """
     text_dict = page.get_text("dict")
     blocks = text_dict.get("blocks", [])
 
-    question_markers = []  # [(question_num, y_top_pt)]
+    left_markers = []   # [(question_num, y_top_pt)]
+    right_markers = []  # [(question_num, y_top_pt, x_left)]
     assessment_num = None
     banner_bottom_pt = None
+    page_width = page.rect.width
+    page_midpoint = page_width / 2
 
     for block in blocks:
         if block.get("type") != 0:  # text blocks only
             continue
-
-        block_bbox = block["bbox"]
 
         for line in block["lines"]:
             spans = line.get("spans", [])
@@ -112,16 +118,36 @@ def analyze_page(page):
                 if m2 and assessment_num is None:
                     assessment_num = int(m2.group(1))
 
-            # Detect question start: "N. " at the left margin area
+            # Detect question start: "N. " or "N."
             # Skip header/footer zone (top 40pt and bottom 50pt)
             page_height = page.rect.height
             if line_bbox[1] < 40 or line_bbox[1] > page_height - 50:
                 continue
 
             m = re.match(r'^(\d+)\.\s', full_text) or re.fullmatch(r'(\d+)\.', full_text)
-            if m and line_bbox[0] < 140:
+            if m:
                 q_num = int(m.group(1))
-                question_markers.append((q_num, line_bbox[1]))
+                x_left = line_bbox[0]
+
+                if x_left < 140:
+                    # Left column marker (standard)
+                    left_markers.append((q_num, line_bbox[1]))
+                elif page_midpoint - 20 < x_left < page_midpoint + 80:
+                    # Potential right column marker (near page center)
+                    right_markers.append((q_num, line_bbox[1], x_left))
+
+    # Build final marker list: left markers are always included.
+    # Right markers only if paired with a left marker at similar y (within 30pt).
+    question_markers = [(q, y, 'left') for q, y in left_markers]
+
+    paired_right = []
+    for rq, ry, rx in right_markers:
+        for lq, ly in left_markers:
+            if abs(ly - ry) < 30:
+                paired_right.append((rq, ry, 'right'))
+                break
+
+    question_markers.extend(paired_right)
 
     return {
         'question_markers': sorted(question_markers, key=lambda x: x[1]),
@@ -130,12 +156,14 @@ def analyze_page(page):
     }
 
 
-def extract_question_image(page, top_pt, bottom_pt):
+def extract_question_image(page, top_pt, bottom_pt, left_pt=0, right_pt=None):
     """Render a cropped region of a page as a PNG image."""
+    if right_pt is None:
+        right_pt = page.rect.width
     # Ensure valid clip region (minimum 10pt height)
     if bottom_pt - top_pt < 10:
         bottom_pt = top_pt + 10
-    clip = fitz.Rect(0, top_pt, page.rect.width, bottom_pt)
+    clip = fitz.Rect(left_pt, top_pt, right_pt, bottom_pt)
     clip = clip & page.rect  # intersect with page bounds
     if clip.is_empty or clip.width < 1 or clip.height < 1:
         raise ValueError(f"Invalid clip region: {clip}")
@@ -226,7 +254,8 @@ def extract_questions_from_pdf(pdf_path):
         for analysis in page_analyses:
             analysis['resolved_assessment'] = 1
 
-    # Build question regions: map (assessment, question) -> list of (page, top, bottom)
+    # Build question regions: map (assessment, question) -> list of (page, top, bottom, left, right)
+    # left/right are horizontal clip bounds (0 and page_width for full-width, or half-page for columns)
     questions_map = {}
     last_question_key = None
 
@@ -234,7 +263,9 @@ def extract_questions_from_pdf(pdf_path):
         page_num = analysis['page_num']
         page = doc[page_num]
         page_height = analysis['page_height']
-        markers = analysis['question_markers']
+        page_width = page.rect.width
+        page_midpoint = page_width / 2
+        markers = analysis['question_markers']  # [(q_num, y, column)]
         assessment = analysis['resolved_assessment']
 
         # Content area (excluding header/footer)
@@ -246,13 +277,17 @@ def extract_questions_from_pdf(pdf_path):
         # Pages with a banner start a new assessment — never continue previous question
         has_banner = analysis['banner_bottom_pt'] is not None
 
+        # Separate left-only markers from right markers for column handling
+        left_markers = [(q, y, col) for q, y, col in markers if col == 'left']
+        right_markers = [(q, y, col) for q, y, col in markers if col == 'right']
+
         if not markers:
             # No new questions on this page — continuation of previous question
             # But don't continue across assessment boundaries (banner pages)
             if (last_question_key and last_question_key in questions_map
                     and not has_banner):
                 questions_map[last_question_key]['regions'].append(
-                    (page_num, content_top, content_bottom)
+                    (page_num, content_top, content_bottom, 0, page_width)
                 )
             continue
 
@@ -267,23 +302,52 @@ def extract_questions_from_pdf(pdf_path):
             gap = first_marker_y - content_top
             if gap > 80:  # substantial content, not just header whitespace
                 questions_map[last_question_key]['regions'].append(
-                    (page_num, content_top, first_marker_y - QUESTION_PADDING_PT)
+                    (page_num, content_top, first_marker_y - QUESTION_PADDING_PT, 0, page_width)
                 )
 
-        for i, (q_num, y_start) in enumerate(markers):
+        # Find the y boundary where side-by-side columns end
+        # (the next left-column marker well below the right-column markers)
+        column_bottom_y = None
+        if right_markers:
+            max_right_y = max(ry for _, ry, _ in right_markers)
+            # Use tolerance of 30pt to skip markers at the same vertical position
+            below_markers = [(q, y) for q, y, col in left_markers if y > max_right_y + 30]
+            if below_markers:
+                column_bottom_y = below_markers[0][1]
+            else:
+                column_bottom_y = content_bottom
+
+        for i, (q_num, y_start, column) in enumerate(markers):
             crop_top = max(content_top, y_start - QUESTION_PADDING_PT)
 
-            if i + 1 < len(markers):
-                # Use next question's y directly — content can overlap in PDF blocks
-                crop_bottom = markers[i + 1][1]
+            if column == 'right':
+                # Right-column question: clip right half, bottom is column_bottom_y
+                crop_bottom = column_bottom_y
+                left_bound = page_midpoint
+                right_bound = page_width
+            elif column == 'left' and right_markers and y_start <= max(ry for _, ry, _ in right_markers) + 30:
+                # Left-column question that's paired with a right-column one:
+                # clip left half, bottom is column_bottom_y
+                crop_bottom = column_bottom_y
+                left_bound = 0
+                right_bound = page_midpoint
             else:
-                crop_bottom = content_bottom
+                # Full-width question (standard case)
+                left_bound = 0
+                right_bound = page_width
+                # Find bottom: next marker's y (only among full-width or left markers below columns)
+                next_markers = [(q, y) for q, y, c in markers[i+1:]
+                                if c == 'left' and (not right_markers or y > max(ry for _, ry, _ in right_markers) + 30)]
+                if next_markers:
+                    crop_bottom = next_markers[0][1]
+                else:
+                    crop_bottom = content_bottom
 
             key = (assessment, q_num)
             questions_map[key] = {
                 'assessment_num': assessment,
                 'question_num': q_num,
-                'regions': [(page_num, crop_top, crop_bottom)],
+                'regions': [(page_num, crop_top, crop_bottom, left_bound, right_bound)],
             }
             last_question_key = key
 
@@ -294,13 +358,16 @@ def extract_questions_from_pdf(pdf_path):
         image_parts = []
         source_pages = []
 
-        for (page_num, top_pt, bottom_pt) in q['regions']:
+        for region in q['regions']:
+            page_num, top_pt, bottom_pt = region[0], region[1], region[2]
+            left_pt = region[3] if len(region) > 3 else 0
+            right_pt = region[4] if len(region) > 4 else None
             page = doc[page_num]
             if bottom_pt <= top_pt:
                 print(f"    SKIP: Assessment {q['assessment_num']} Q{q['question_num']} "
                       f"page {page_num+1}: invalid region top={top_pt:.1f} bottom={bottom_pt:.1f}")
                 continue
-            img_data, w, h = extract_question_image(page, top_pt, bottom_pt)
+            img_data, w, h = extract_question_image(page, top_pt, bottom_pt, left_pt, right_pt)
             image_parts.append(img_data)
             source_pages.append(page_num + 1)  # 1-indexed
 
