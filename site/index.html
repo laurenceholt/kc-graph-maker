@@ -595,7 +595,7 @@ function render() {
       }
       return `<div class="q-thumb" onclick="showModal('${q.image}')">
         <img src="${q.image}" alt="${escapeHtml(qid)}" loading="lazy">
-        <div class="q-thumb-label">${q.grade} ${q.module} A${q.assessment_number} Q${q.question_number}</div>
+        <div class="q-thumb-label">${q.grade} ${q.module}${q.topic ? ' ' + q.topic : ''} Q${q.question_number}</div>
       </div>`;
     }).join('');
 

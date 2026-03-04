@@ -13,69 +13,24 @@
     "example": "$\\frac{2}{4} + \\frac{3}{4} = \\frac{2+3}{4} = \\frac{5}{4}$",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G4_M4_TD_a1_q1",
+      "G4_M4_TD_a1_q2",
+      "G4_M4_TD_a1_q5",
+      "G4_M4_TE_a1_q2",
+      "G4_M4_TE_a1_q5",
+      "G4_M4_a1_q4",
       "G4_M4_a2_q4",
       "G5_M2_TB_a1_q1",
       "G5_M2_TB_a1_q2",
       "G5_M2_TB_a1_q5",
       "G5_M2_TB_a1_q6",
+      "G5_M2_a1_q6",
       "G5_M2_a2_q6",
+      "G5_M3_TA_a1_q6",
       "G5_M3_TD_a1_q2",
       "G5_M3_TD_a1_q3",
       "G5_M3_a1_q2",
       "G5_M3_a2_q2"
-    ]
-  },
-  {
-    "kc_id": "add_fractions_like_denominators",
-    "title": "Add Fractions with Like Denominators",
-    "description": "Add two fractions that have the same denominator by adding the numerators and keeping the denominator the same.",
-    "condition": "Two fractions with the same denominator are being added (e.g., a/b + c/b).",
-    "response": "Add the numerators and keep the denominator constant: (a + c)/b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{2}{3} + \\frac{2}{3} = \\frac{4}{3}$",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G4_M4_a1_q4",
-      "G5_M2_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "add_fractions_same_denominator",
-    "title": "Add Fractions with Like Denominators",
-    "description": "Adds two fractions that share a common denominator by adding numerators and keeping the denominator.",
-    "condition": "Two fractions with the same denominator (a/b + c/b).",
-    "response": "Add numerators and keep denominator: (a+c)/b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{7}{12} + \\frac{8}{12} = \\frac{15}{12}$",
-    "notes": "Foundation for mixed number operations.",
-    "question_ids": [
-      "G4_M4_TE_a1_q2",
-      "G4_M4_TE_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "add_fractions_same_unit",
-    "title": "Add Fractions with Same Unit",
-    "description": "Add fractional amounts with like denominators or compatible units by combining numerators.",
-    "condition": "Two fractional quantities with the same unit (e.g., miles) are given and must be combined.",
-    "response": "Add the quantities to find the total amount.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{3}{4} + \\frac{1}{2} = \\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4}$",
-    "notes": "Assumes ability to rename to common denominator when needed.",
-    "question_ids": [
-      "G5_M3_TA_a1_q6"
     ]
   },
   {
@@ -101,22 +56,21 @@
     ]
   },
   {
-    "kc_id": "add_like_denominators",
-    "title": "Add Fractions with Like Denominators",
-    "description": "When adding fractions that have the same denominator, add the numerators and keep the denominator the same.",
-    "condition": "Two fractions with the same denominator are being added (a/b + c/b).",
-    "response": "Compute (a + c)/b.",
+    "kc_id": "place_measurement_on_line_plot",
+    "title": "Add Measurement to Line Plot",
+    "description": "Represent a new measurement by adding an X above the correct value on a line plot.",
+    "condition": "A new measured value and an existing labeled line plot.",
+    "response": "Locate the value on the horizontal axis and draw an additional X above it.",
     "cond_type": "Variable",
     "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{12} + \\frac{6}{12} = \\frac{4+6}{12} = \\frac{10}{12}$",
-    "notes": "Applies only when denominators are identical.",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If a new caterpillar measures $3\\tfrac{1}{4}$ inches, add one X above $3\\tfrac{1}{4}$ on the plot.",
+    "notes": "",
     "question_ids": [
-      "G4_M4_TD_a1_q1",
-      "G4_M4_TD_a1_q2",
-      "G4_M4_TD_a1_q5"
+      "G3_M5_TC_a1_q3",
+      "G3_M5_TC_a1_q4"
     ]
   },
   {
@@ -133,6 +87,11 @@
     "example": "$1\\frac{1}{6} + 4\\frac{2}{9} = 5\\frac{7}{18}$",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G4_M4_TE_a1_q1",
+      "G4_M4_TE_a1_q2",
+      "G4_M4_TE_a1_q5",
+      "G5_M2_TD_a1_q1",
+      "G5_M2_TD_a1_q4",
       "G5_M2_a1_q2",
       "G5_M2_a1_q8",
       "G5_M2_a2_q10",
@@ -158,56 +117,21 @@
     ]
   },
   {
-    "kc_id": "add_mixed_numbers_no_regroup",
-    "title": "Add Mixed Numbers Without Regrouping",
-    "description": "Adds whole number parts and fractional parts separately when no regrouping is required.",
-    "condition": "Two mixed numbers whose fractional parts sum to less than 1.",
-    "response": "Add whole numbers; add fractions using common denominator.",
+    "kc_id": "fraction_word_problem_addition",
+    "title": "Add Quantities in Word Problem",
+    "description": "Translate a word problem involving combined quantities into an addition expression.",
+    "condition": "A context describes multiple amounts combined into a total.",
+    "response": "Write and evaluate an addition expression representing the total.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "$1\\frac{2}{5} + 1\\frac{2}{5} = 2\\frac{4}{5}$",
+    "example": "$1\\frac{5}{6} + 1\\frac{1}{3} + 2\\frac{1}{2}$",
     "notes": "",
     "question_ids": [
-      "G4_M4_TE_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "add_mixed_numbers_with_common_denominator",
-    "title": "Add Mixed Numbers with Common Denominators",
-    "description": "Add mixed numbers that share a common fractional denominator by adding whole numbers and fractional parts, regrouping if needed.",
-    "condition": "Two or more mixed numbers with the same fractional denominator are to be added.",
-    "response": "Add the whole numbers and add the fractional parts; if the fractional sum is \u2265 1, regroup to form a new mixed number.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$1\\tfrac{1}{4} + 2\\tfrac{1}{4} = (1+2) + \\left(\\tfrac{1}{4}+\\tfrac{1}{4}\\right) = 3\\tfrac{1}{2}$",
-    "notes": "Applies when summing heaviest values in Q1.",
-    "question_ids": [
-      "G5_M2_TD_a1_q1",
-      "G5_M2_TD_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "add_mixed_numbers_with_regroup",
-    "title": "Add Mixed Numbers With Regrouping",
-    "description": "Adds mixed numbers and converts improper fraction results into a mixed number.",
-    "condition": "Two mixed numbers whose fractional parts sum to 1 or more.",
-    "response": "Add whole numbers and fractions; convert improper fraction to mixed number and regroup.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$1\\frac{7}{12} + \\frac{8}{12} = 1 + \\frac{15}{12} = 2\\frac{3}{12}$",
-    "notes": "Includes simplifying if needed.",
-    "question_ids": [
-      "G4_M4_TE_a1_q2",
-      "G4_M4_TE_a1_q5"
+      "G5_M2_a2_q10",
+      "G5_M2_a2_q8"
     ]
   },
   {
@@ -227,6 +151,24 @@
       "G4_M4_TA_a1_q2",
       "G4_M4_TA_a1_q3",
       "G4_M4_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "sequential_fraction_application",
+    "title": "Apply Fractions Sequentially to Remainder",
+    "description": "After removing a fraction of a quantity, compute a fraction of the remaining amount.",
+    "condition": "A problem states that a fraction of a quantity is used, then a fraction of the remaining amount is used.",
+    "response": "First subtract the initial fractional amount, then multiply the remainder by the next fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Start with $\\frac{4}{5}$. Use $\\frac{1}{2}$: remainder $\\frac{4}{5} - \\frac{2}{5} = \\frac{2}{5}$. Then use $\\frac{1}{3}$ of $\\frac{2}{5}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TD_a1_q4",
+      "G5_M3_TD_a1_q6"
     ]
   },
   {
@@ -264,40 +206,6 @@
     ]
   },
   {
-    "kc_id": "compare_expression_values",
-    "title": "Compare Numerical Expressions",
-    "description": "Evaluate two numerical expressions and compare their values using >, <, or =.",
-    "condition": "Two numerical expressions are given with a blank comparison symbol between them.",
-    "response": "Evaluate both expressions and write >, <, or = based on their values.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If $\\frac{1}{2} + \\frac{1}{4} = \\frac{3}{4}$ and $\\frac{2}{3} > \\frac{3}{4}$ is false, then write $<$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_TD_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "compare_fraction_sums_by_estimation",
-    "title": "Compare Sums Using Estimation",
-    "description": "Determine which total is greater by reasoning about benchmark values instead of exact computation.",
-    "condition": "Two sums of mixed numbers or fractions must be compared without exact calculation.",
-    "response": "Use benchmarks (e.g., 1/2, 1, 1 1/2, 3) to reason which total is larger.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Since $\\frac{1}{4}$ and $\\frac{3}{8}$ are each less than $\\frac{1}{2}$, $2\\frac{1}{4}+\\frac{3}{8} < 3$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_a2_q5"
-    ]
-  },
-  {
     "kc_id": "compare_fraction_to_one",
     "title": "Compare Fraction to One",
     "description": "Determine whether a fraction is less than, equal to, or greater than 1 by comparing numerator and denominator.",
@@ -317,6 +225,45 @@
     ]
   },
   {
+    "kc_id": "compare_to_one_half",
+    "title": "Compare Fraction to One-Half",
+    "description": "Determine whether a fraction is greater than, equal to, or less than one-half.",
+    "condition": "A fraction is compared to $\\frac{1}{2}$.",
+    "response": "State whether the fraction is greater than, equal to, or less than $\\frac{1}{2}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{4}{8} = \\frac{1}{2}$, so it is equal to $\\frac{1}{2}$; $\\frac{1}{3} < \\frac{1}{2}$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M4_TC_a1_q2",
+      "G4_M4_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_fractions_number_line",
+    "title": "Compare Fractions Using Number Line",
+    "description": "Determine which of two fractions is greater by comparing their positions on a number line.",
+    "condition": "Two fractions are plotted or imagined on the same number line.",
+    "response": "State that the fraction farther to the right is greater.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "On a number line, $\\frac{3}{6}$ is to the right of $\\frac{1}{4}$, so $\\frac{3}{6} > \\frac{1}{4}$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M5_TD_a1_q3",
+      "G3_M5_TD_a1_q5",
+      "G3_M5_TE_a1_q1",
+      "G4_M4_a1_q3",
+      "G4_M4_a2_q3"
+    ]
+  },
+  {
     "kc_id": "compare_fractions_common_denominator",
     "title": "Compare Fractions with Common Denominators",
     "description": "When two fractions have the same denominator, compare their numerators to determine which fraction is greater.",
@@ -330,6 +277,7 @@
     "example": "Compare $\\frac{4}{6}$ and $\\frac{5}{6}$. Since $4 < 5$, $\\frac{4}{6} < \\frac{5}{6}$.",
     "notes": "Used after renaming fractions to like denominators.",
     "question_ids": [
+      "G3_M5_TD_a1_q2",
       "G4_M4_TC_a1_q5"
     ]
   },
@@ -347,42 +295,9 @@
     "example": "Compare $\\frac{7}{6}$ and $\\frac{7}{3}$. Since $6 > 3$, sixths are smaller parts than thirds, so $\\frac{7}{6} < \\frac{7}{3}$.",
     "notes": "",
     "question_ids": [
+      "G3_M5_TB_a1_q5",
+      "G3_M5_TD_a1_q5",
       "G3_M5_a1_q7"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_different_denominators_same_numerator",
-    "title": "Compare Fractions with Same Numerator",
-    "description": "Determine which of two fractions with the same numerator is greater by comparing denominators when the wholes are equal.",
-    "condition": "Two fractions with the same numerator but different denominators referring to the same whole (e.g., 2/6 and 2/8).",
-    "response": "Conclude that the fraction with the smaller denominator is greater, and state the correct comparison (>, <).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Compare $\\frac{2}{6}$ and $\\frac{2}{8}$. Since sixths are larger than eighths, $\\frac{2}{6} > \\frac{2}{8}$.",
-    "notes": "Assumes same-sized wholes.",
-    "question_ids": [
-      "G3_M5_TB_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_number_line",
-    "title": "Compare Fractions Using Number Line",
-    "description": "Determine which of two fractions is greater by comparing their positions on a number line.",
-    "condition": "Two fractions are plotted or imagined on the same number line.",
-    "response": "State that the fraction farther to the right is greater.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "On a number line, $\\frac{3}{6}$ is to the right of $\\frac{1}{4}$, so $\\frac{3}{6} > \\frac{1}{4}$.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G4_M4_a1_q3",
-      "G4_M4_a2_q3"
     ]
   },
   {
@@ -399,112 +314,28 @@
     "example": "Since $\\frac{2}{3} > \\frac{1}{3}$, Gabe eats more than Robin.",
     "notes": "",
     "question_ids": [
+      "G3_M5_TB_a1_q4",
+      "G3_M5_TB_a1_q6",
+      "G3_M5_a1_q6",
       "G3_M5_a2_q1",
       "G3_M5_a2_q7"
     ]
   },
   {
-    "kc_id": "compare_fractions_same_whole_requirement",
-    "title": "Require Same-Sized Wholes When Comparing Fractions",
-    "description": "Fractions can only be directly compared when they refer to equal-sized wholes.",
-    "condition": "Two fractions are represented with different-sized wholes.",
-    "response": "Conclude that the fractions cannot be validly compared unless the wholes are the same size.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "A shaded $\\frac{1}{4}$ of a large square cannot be compared to $\\frac{1}{2}$ of a smaller square because the wholes are different sizes.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_use_symbols",
-    "title": "Use Comparison Symbols for Fractions",
-    "description": "Use >, <, or = to compare two fractions based on their values.",
-    "condition": "Two fractions are given with a prompt to compare using >, <, or =.",
-    "response": "Insert the correct comparison symbol between the fractions.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "$\\frac{9}{3} > \\frac{9}{6}$",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a2_q7"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_using_benchmark_half",
-    "title": "Compare Fractions to 1/2 Benchmark",
-    "description": "Compare each fraction to 1/2 to determine their relative sizes.",
-    "condition": "Two fractions where comparison to $\\frac{1}{2}$ is helpful (e.g., one above, one below).",
-    "response": "Determine whether each fraction is greater than, equal to, or less than $\\frac{1}{2}$ and conclude their order.",
+    "kc_id": "compare_expression_values",
+    "title": "Compare Numerical Expressions",
+    "description": "Evaluate two numerical expressions and compare their values using >, <, or =.",
+    "condition": "Two numerical expressions are given with a blank comparison symbol between them.",
+    "response": "Evaluate both expressions and write >, <, or = based on their values.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "$\\frac{3}{4} > \\frac{1}{2}$ and $\\frac{2}{6} < \\frac{1}{2}$, so $\\frac{3}{4} > \\frac{2}{6}$.",
-    "notes": "Uses benchmark reasoning strategy.",
+    "example": "If $\\frac{1}{2} + \\frac{1}{4} = \\frac{3}{4}$ and $\\frac{2}{3} > \\frac{3}{4}$ is false, then write $<$.",
+    "notes": "",
     "question_ids": [
-      "G4_M4_TC_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_using_symbols",
-    "title": "Use Comparison Symbols for Fractions",
-    "description": "After determining relative size, represent the comparison using >, <, or =.",
-    "condition": "Two fractions have been evaluated for relative size.",
-    "response": "Write the correct comparison symbol between them.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Category",
-    "example": "Since $\\frac{7}{6}$ is less than $\\frac{7}{3}$, write $\\frac{7}{6} < \\frac{7}{3}$.",
-    "notes": "Response type treated as Constant because symbol choice is single correct token for each comparison.",
-    "question_ids": [
-      "G3_M5_a1_q7"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_with_symbols",
-    "title": "Use Comparison Symbols for Fractions",
-    "description": "Represent the relationship between two fractions using >, <, or =.",
-    "condition": "Two fractions have been compared and their relative sizes determined.",
-    "response": "Write >, <, or = to correctly compare them.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Concept",
-    "example": "Since $\\frac{1}{2} > \\frac{2}{5}$, write $\\frac{1}{2} > \\frac{2}{5}$.",
-    "notes": "Symbol selection from a fixed set.",
-    "question_ids": [
-      "G4_M4_TC_a1_q1",
-      "G4_M4_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "compare_product_with_one",
-    "title": "Determine Product Size Using Factor Relative to 1",
-    "description": "Determine whether a product is greater than, equal to, or less than one factor based on whether the other factor is less than, equal to, or greater than 1.",
-    "condition": "A product a \u00d7 b where a is positive and b is compared to 1.",
-    "response": "If b < 1 then a \u00d7 b < a; if b = 1 then equal; if b > 1 then a \u00d7 b > a.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Since $\\frac{2}{5} < 1$, $\\frac{2}{5} \\times \\frac{4}{3}$ is less than $\\frac{4}{3}$.",
-    "notes": "Assumes positive factors.",
-    "question_ids": [
-      "G5_M3_TB_a1_q4",
-      "G5_M3_TB_a1_q5"
+      "G5_M3_TD_a1_q2"
     ]
   },
   {
@@ -525,40 +356,6 @@
     ]
   },
   {
-    "kc_id": "compare_same_denominator",
-    "title": "Compare Fractions with Same Denominator",
-    "description": "When two fractions have the same denominator, compare their numerators to determine which fraction is greater.",
-    "condition": "Two fractions with the same denominator (e.g., a/b and c/b).",
-    "response": "Compare numerators: the fraction with the larger numerator is greater.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Since $11/6$ and $8/6$ have the same denominator, compare numerators: $11 > 8$, so $\\frac{11}{6} > \\frac{8}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TD_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "compare_same_numerator",
-    "title": "Compare Fractions with Same Numerator",
-    "description": "When two fractions have the same numerator, the fraction with the smaller denominator is greater.",
-    "condition": "Two fractions with the same numerator (e.g., a/b and a/c).",
-    "response": "Identify that the fraction with the smaller denominator has larger parts and is therefore greater.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Compare $\\frac{5}{3}$ and $\\frac{5}{6}$. Since thirds are larger than sixths, $\\frac{5}{3} > \\frac{5}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TD_a1_q5"
-    ]
-  },
-  {
     "kc_id": "compare_sum_to_benchmark_by_estimation",
     "title": "Compare Sum to Benchmark Using Estimation",
     "description": "Estimate sums of mixed numbers or fractions by comparing parts to benchmark numbers (like 1 or 2) to determine if a total is greater or less than a given value.",
@@ -572,24 +369,8 @@
     "example": "Since $\\tfrac{7}{8}<1$, $\\tfrac{5}{8}<1$, $1\\tfrac{1}{4}<2$, and $\\tfrac{1}{2}<1$, their total is less than $1+1+2+1=5$, and can be reasoned to be less than 4 using tighter bounds.",
     "notes": "",
     "question_ids": [
-      "G5_M2_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "compare_to_one_half",
-    "title": "Compare Fraction to One-Half",
-    "description": "Determine whether a fraction is greater than, equal to, or less than one-half.",
-    "condition": "A fraction is compared to $\\frac{1}{2}$.",
-    "response": "State whether the fraction is greater than, equal to, or less than $\\frac{1}{2}$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{8} = \\frac{1}{2}$, so it is equal to $\\frac{1}{2}$; $\\frac{1}{3} < \\frac{1}{2}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a2_q3"
+      "G5_M2_a1_q5",
+      "G5_M2_a2_q5"
     ]
   },
   {
@@ -611,74 +392,6 @@
     ]
   },
   {
-    "kc_id": "complete_equivalent_fraction_equation",
-    "title": "Complete Equivalent Fraction Equation",
-    "description": "Fill in a missing numerator or denominator to create two equivalent fractions.",
-    "condition": "An equation of the form a/b = ?/d or ?/b = c/d where fractions must be equivalent.",
-    "response": "Multiply or divide numerator and denominator by the same number to determine the missing value.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Complete: $\\frac{1}{2} = \\frac{?}{4}$. Since $2 \\times 2 = 4$, multiply numerator by 2: $1 \\times 2 = 2$, so $\\frac{1}{2} = \\frac{2}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "complete_equivalent_fraction_missing_denominator",
-    "title": "Complete Equivalent Fraction (Missing Denominator)",
-    "description": "Find a missing denominator that makes two fractions equivalent by multiplying or dividing numerator and denominator by the same number.",
-    "condition": "An equation of the form a/b = c/\u25a1 where a, b, and c are given and fractions are equivalent.",
-    "response": "Determine the factor from a to c and multiply b by the same factor to find the missing denominator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "To complete $\\frac{8}{12} = \\frac{4}{\\Box}$, note $8 \\div 2 = 4$, so divide $12 \\div 2 = 6$. The missing denominator is $6$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "complete_equivalent_fraction_missing_numerator",
-    "title": "Complete Equivalent Fraction (Missing Numerator)",
-    "description": "Find a missing numerator that makes two fractions equivalent by multiplying or dividing numerator and denominator by the same number.",
-    "condition": "An equation of the form a/b = \u25a1/d where a, b, and d are given and fractions are equivalent.",
-    "response": "Determine the factor from b to d and multiply a by the same factor to find the missing numerator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "To complete $\\frac{2}{3} = \\frac{\\Box}{9}$, note $3 \\times 3 = 9$, so $2 \\times 3 = 6$. The missing numerator is $6$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "complete_fraction_equals_whole_over_one",
-    "title": "Write Whole Number as Fraction Over 1",
-    "description": "Express a whole number as an equivalent fraction with denominator 1.",
-    "condition": "Given a whole number n to write as a fraction.",
-    "response": "Write n as n/1.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Write 6 as a fraction: $6 = \\frac{6}{1}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TE_a1_q5"
-    ]
-  },
-  {
     "kc_id": "complete_missing_equivalent_fraction",
     "title": "Complete Equivalent Fraction",
     "description": "Find a missing numerator or denominator to create equivalent fractions.",
@@ -692,25 +405,10 @@
     "example": "Complete: $\\frac{3}{2} = \\frac{6}{?}$. Since $3 \\times 2 = 6$, multiply denominator by 2: $2 \\times 2 = 4$, so $\\frac{3}{2} = \\frac{6}{4}$.",
     "notes": "",
     "question_ids": [
+      "G3_M5_TC_a1_q6",
       "G3_M5_TE_a1_q2",
-      "G3_M5_TE_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "compute_difference_mixed_numbers",
-    "title": "Compute Difference of Mixed Numbers",
-    "description": "Find the difference between two mixed numbers, regrouping if necessary.",
-    "condition": "Two mixed numbers are given and the problem asks for their difference.",
-    "response": "Subtract the smaller mixed number from the larger, regrouping one whole as fractional parts if needed.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$9\\tfrac{1}{4} - 6\\tfrac{3}{4} = 8\\tfrac{5}{4} - 6\\tfrac{3}{4} = 2\\tfrac{1}{2}$",
-    "notes": "Used to find distance difference in Q4.",
-    "question_ids": [
-      "G5_M2_TD_a1_q4"
+      "G3_M5_TE_a1_q5",
+      "G4_M4_TB_a1_q3"
     ]
   },
   {
@@ -733,63 +431,6 @@
     ]
   },
   {
-    "kc_id": "construct_division_equation_from_fraction",
-    "title": "Interpret Fraction as Division",
-    "description": "Recognize that a fraction a/b represents the division expression a \u00f7 b.",
-    "condition": "A fraction written as a/b representing equal sharing.",
-    "response": "Write or interpret it as the division expression a \u00f7 b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{14}{6}$ means $14 \\div 6$.",
-    "notes": "Core interpretation of fractions as division.",
-    "question_ids": [
-      "G5_M2_TA_a1_q1",
-      "G5_M2_TA_a1_q2",
-      "G5_M2_TA_a1_q3",
-      "G5_M2_TA_a1_q4",
-      "G5_M2_TA_a1_q5",
-      "G5_M2_TA_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "convert_division_to_fraction",
-    "title": "Interpret Division as Fraction",
-    "description": "Rewrite a division expression as a fraction with dividend over divisor.",
-    "condition": "An expression of the form a \u00f7 b.",
-    "response": "Rewrite as $\\frac{a}{b}$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$1 \\div 5 = \\frac{1}{5}$",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_a2_q1",
-      "G5_M2_a2_q4"
-    ]
-  },
-  {
-    "kc_id": "convert_improper_fraction_to_mixed",
-    "title": "Convert Improper Fraction to Mixed Number",
-    "description": "Convert an improper fraction to a mixed number by dividing the numerator by the denominator.",
-    "condition": "An improper fraction is given.",
-    "response": "Divide numerator by denominator to get whole number and remainder; write as mixed number.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$\\tfrac{23}{8} = 2\\tfrac{7}{8}$",
-    "notes": "Needed when interpreting eighths beyond whole numbers.",
-    "question_ids": [
-      "G5_M2_TD_a1_q3"
-    ]
-  },
-  {
     "kc_id": "convert_improper_to_mixed",
     "title": "Convert Improper Fraction to Mixed Number",
     "description": "Rewrite an improper fraction as a mixed number by dividing the numerator by the denominator.",
@@ -808,7 +449,10 @@
       "G4_M4_TE_a1_q2",
       "G4_M4_TF_a1_q3",
       "G4_M4_TF_a1_q4",
-      "G4_M4_TF_a1_q5"
+      "G4_M4_TF_a1_q5",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_TD_a1_q3"
     ]
   },
   {
@@ -900,73 +544,21 @@
     ]
   },
   {
-    "kc_id": "convert_to_common_denominator",
-    "title": "Rename Fractions with a Common Denominator",
-    "description": "Before adding or subtracting fractions with unlike denominators, rewrite them as equivalent fractions with a common denominator.",
-    "condition": "Two fractions with different denominators are being added or subtracted.",
-    "response": "Find a common denominator and rewrite each fraction as an equivalent fraction with that denominator.",
+    "kc_id": "count_xs_on_line_plot",
+    "title": "Count Data Points on Line Plot",
+    "description": "Determine frequency of a measurement by counting the X marks above a value.",
+    "condition": "A line plot with X marks stacked above labeled values.",
+    "response": "Count the number of Xs above each value to determine how many data points occur there.",
     "cond_type": "Variable",
     "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{2}{3} = \\frac{8}{12}$ and $\\frac{3}{4} = \\frac{9}{12}$",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If there are 3 Xs above $3\\tfrac{1}{2}$, then three items measure $3\\tfrac{1}{2}$ inches.",
     "notes": "",
     "question_ids": [
-      "G5_M2_a1_q6",
-      "G5_M2_a1_q7",
-      "G5_M2_a1_q9"
-    ]
-  },
-  {
-    "kc_id": "convert_whole_to_fraction",
-    "title": "Convert Whole Number to Fraction Form",
-    "description": "Rewrite a whole number as an equivalent fraction with a specified denominator.",
-    "condition": "Whole number expressed in a context requiring common denominator b.",
-    "response": "Rewrite as (whole \u00d7 b)/b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$1 = \\frac{5}{5}$",
-    "notes": "Used to decompose mixed numbers into fractional parts.",
-    "question_ids": [
-      "G4_M4_TA_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "convert_whole_to_fraction_over_one",
-    "title": "Write Whole Number as Fraction Over 1",
-    "description": "Any whole number n can be written as n/1.",
-    "condition": "A whole number is to be expressed as a fraction.",
-    "response": "Write the number as n/1.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$2 = \\frac{2}{1}$ and $5 = \\frac{5}{1}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a1_q9"
-    ]
-  },
-  {
-    "kc_id": "convert_word_problem_to_addition",
-    "title": "Translate Word Problem to Addition Expression",
-    "description": "Interpret a word problem describing combined quantities as an addition expression.",
-    "condition": "A word problem describes two distances or quantities combined (e.g., walks 2/3 mile and then 1/6 mile).",
-    "response": "Write an addition expression representing the total (e.g., $2/3 + 1/6$).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Ryan walks $\\frac{2}{3}$ mile and $\\frac{1}{6}$ mile, so total is $\\frac{2}{3} + \\frac{1}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_TB_a1_q6"
+      "G3_M5_TC_a1_q3",
+      "G3_M5_TC_a1_q4"
     ]
   },
   {
@@ -986,64 +578,6 @@
       "G3_M5_TC_a1_q1",
       "G3_M5_TC_a1_q2",
       "G3_M5_TC_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "count_equal_parts_denominator",
-    "title": "Denominator as Number of Equal Parts",
-    "description": "Interpret the denominator as the total number of equal parts in one whole.",
-    "condition": "A whole is partitioned into equal parts.",
-    "response": "State that the denominator equals the total number of equal parts.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If a square is divided into 4 equal parts, each part is $\\frac{1}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a2_q2",
-      "G3_M5_a2_q3",
-      "G3_M5_a2_q4",
-      "G3_M5_a2_q5"
-    ]
-  },
-  {
-    "kc_id": "count_equal_parts_for_denominator",
-    "title": "Determine Denominator by Counting Equal Parts",
-    "description": "The denominator represents the total number of equal parts in the whole.",
-    "condition": "A whole is partitioned into equal parts.",
-    "response": "Count the total number of equal parts to determine the denominator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If a circle is divided into 6 equal slices, each slice is $\\frac{1}{6}$ of the whole.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a1_q2",
-      "G3_M5_a1_q3",
-      "G3_M5_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "count_equal_parts_in_whole",
-    "title": "Count Equal Parts in a Whole",
-    "description": "Determine the total number of equal parts a whole is partitioned into.",
-    "condition": "A shape or strip is partitioned into equal-sized parts.",
-    "response": "Count the total number of equal parts to determine the denominator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If a rectangle is divided into 6 equal parts, the denominator is $6$.",
-    "notes": "Supports identifying thirds, fourths, sixths, etc.",
-    "question_ids": [
-      "G3_M5_TA_a1_q1",
-      "G3_M5_TA_a1_q3",
-      "G3_M5_TA_a1_q4"
     ]
   },
   {
@@ -1101,58 +635,6 @@
     ]
   },
   {
-    "kc_id": "count_xs_on_line_plot",
-    "title": "Count Data Points on Line Plot",
-    "description": "Determine frequency of a measurement by counting the X marks above a value.",
-    "condition": "A line plot with X marks stacked above labeled values.",
-    "response": "Count the number of Xs above each value to determine how many data points occur there.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "If there are 3 Xs above $3\\tfrac{1}{2}$, then three items measure $3\\tfrac{1}{2}$ inches.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q3",
-      "G3_M5_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "decompose_fraction_same_denominator",
-    "title": "Decompose Fraction into Fractions with Same Denominator",
-    "description": "Rewrite a fraction as a sum of fractions that have the same denominator.",
-    "condition": "A fraction a/b is to be written as a sum of fractions with denominator b.",
-    "response": "Express as sums such as c/b + d/b where c + d = a.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{5} = \\frac{3}{5} + \\frac{1}{5}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a2_q5"
-    ]
-  },
-  {
-    "kc_id": "decompose_fraction_sum",
-    "title": "Decompose Fraction into Sum of Fractions",
-    "description": "Express a fraction as a sum of fractions with the same denominator or as repeated unit fractions.",
-    "condition": "A fraction a/b is to be written as a sum of fractions with denominator b.",
-    "response": "Write a/b as a sum such as 1/b + ... + 1/b (a times) or as c/b + d/b where c + d = a.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{5}{6} = \\frac{1}{6}+\\frac{1}{6}+\\frac{1}{6}+\\frac{1}{6}+\\frac{1}{6} = \\frac{3}{6}+\\frac{2}{6}$",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a1_q5"
-    ]
-  },
-  {
     "kc_id": "decompose_fraction_sum_of_unit_fractions",
     "title": "Decompose Fraction into Unit Fractions",
     "description": "Express a fraction a/b as a sum of a copies of 1/b or other equivalent sums with denominator b.",
@@ -1168,7 +650,9 @@
     "question_ids": [
       "G4_M4_TA_a1_q1",
       "G4_M4_TA_a1_q3",
-      "G4_M4_TA_a1_q5"
+      "G4_M4_TA_a1_q5",
+      "G4_M4_a1_q5",
+      "G4_M4_a2_q5"
     ]
   },
   {
@@ -1208,78 +692,47 @@
     ]
   },
   {
-    "kc_id": "determine_fraction_from_number_line",
-    "title": "Identify Fraction Represented on Number Line",
-    "description": "Determine a fraction by identifying equal partitions between whole numbers and locating the point.",
-    "condition": "A point is placed on a number line partitioned into equal parts between two whole numbers.",
-    "response": "Count the number of equal parts to determine the denominator and count the position of the point to determine the numerator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If the interval from 0 to 1 is divided into 4 equal parts and the point is at the first tick mark, the fraction is $\\frac{1}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "determine_fraction_from_point",
-    "title": "Determine Fraction from Point on Number Line",
-    "description": "Identify the fraction represented by a point on a partitioned number line.",
-    "condition": "A point located on one of several equal partitions between 0 and 1.",
-    "response": "Use the count of equal parts (denominator) and the position count from 0 (numerator) to name the fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If 0 to 1 is divided into 8 equal parts and the point is at the 4th tick after 0, the fraction is $\\frac{4}{8}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "divide_by_fraction",
-    "title": "Divide by a Fraction",
-    "description": "Divide a number by a fraction by multiplying by its reciprocal.",
-    "condition": "An expression of the form $a \\div \\frac{b}{c}$ is given.",
-    "response": "Rewrite as $a \\times \\frac{c}{b}$ and compute.",
+    "kc_id": "count_equal_parts_denominator",
+    "title": "Denominator as Number of Equal Parts",
+    "description": "Interpret the denominator as the total number of equal parts in one whole.",
+    "condition": "A whole is partitioned into equal parts.",
+    "response": "State that the denominator equals the total number of equal parts.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "$3 \\div \\frac{1}{4} = 3 \\times 4 = 12$.",
+    "example": "If a square is divided into 4 equal parts, each part is $\\frac{1}{4}$.",
     "notes": "",
     "question_ids": [
-      "G5_M3_TD_a1_q1"
+      "G3_M5_TA_a1_q1",
+      "G3_M5_TA_a1_q3",
+      "G3_M5_TA_a1_q4",
+      "G3_M5_a1_q2",
+      "G3_M5_a1_q3",
+      "G3_M5_a1_q4",
+      "G3_M5_a2_q2",
+      "G3_M5_a2_q3",
+      "G3_M5_a2_q4",
+      "G3_M5_a2_q5"
     ]
   },
   {
-    "kc_id": "divide_by_fraction_multiply_reciprocal",
-    "title": "Divide by a Fraction Using Reciprocal",
-    "description": "Divide a number by a fraction by multiplying by the reciprocal of the fraction.",
-    "condition": "An expression of the form a \u00f7 (b/c) where b/c \u2260 0.",
-    "response": "Rewrite as a \u00d7 (c/b) and multiply.",
+    "kc_id": "compare_product_with_one",
+    "title": "Determine Product Size Using Factor Relative to 1",
+    "description": "Determine whether a product is greater than, equal to, or less than one factor based on whether the other factor is less than, equal to, or greater than 1.",
+    "condition": "A product a \u00d7 b where a is positive and b is compared to 1.",
+    "response": "If b < 1 then a \u00d7 b < a; if b = 1 then equal; if b > 1 then a \u00d7 b > a.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$8 \\div \\frac{1}{3} = 8 \\times 3 = 24$",
-    "notes": "[merged: condition varies]",
+    "label": "Principle",
+    "example": "Since $\\frac{2}{5} < 1$, $\\frac{2}{5} \\times \\frac{4}{3}$ is less than $\\frac{4}{3}$.",
+    "notes": "Assumes positive factors.",
     "question_ids": [
-      "G5_M3_a1_q10",
-      "G5_M3_a1_q2",
-      "G5_M3_a1_q4",
-      "G5_M3_a1_q5",
-      "G5_M3_a2_q10",
-      "G5_M3_a2_q2",
-      "G5_M3_a2_q4",
-      "G5_M3_a2_q5"
+      "G5_M3_TB_a1_q4",
+      "G5_M3_TB_a1_q5"
     ]
   },
   {
@@ -1302,23 +755,6 @@
     ]
   },
   {
-    "kc_id": "divide_total_by_count",
-    "title": "Divide Total by Number of Equal Groups",
-    "description": "Find the value of each group by dividing the total amount by the number of equal groups.",
-    "condition": "A total quantity and a number of equal groups are given.",
-    "response": "Compute total \u00f7 number of groups to find the amount in each group.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If total weight is $9$ pounds for $12$ blocks, each weighs $9 \\div 12 = \\tfrac{3}{4}$ pound.",
-    "notes": "Used to find equal block weight in Q5.",
-    "question_ids": [
-      "G5_M2_TD_a1_q5"
-    ]
-  },
-  {
     "kc_id": "divide_whole_by_fraction",
     "title": "Divide a Whole Number by a Fraction",
     "description": "Compute how many fractional units fit into a whole number.",
@@ -1336,6 +772,51 @@
       "G5_M3_TC_a1_q2",
       "G5_M3_TC_a1_q3",
       "G5_M3_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "divide_by_fraction_multiply_reciprocal",
+    "title": "Divide by a Fraction Using Reciprocal",
+    "description": "Divide a number by a fraction by multiplying by the reciprocal of the fraction.",
+    "condition": "An expression of the form a \u00f7 (b/c) where b/c \u2260 0.",
+    "response": "Rewrite as a \u00d7 (c/b) and multiply.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8 \\div \\frac{1}{3} = 8 \\times 3 = 24$",
+    "notes": "[merged: condition varies]",
+    "question_ids": [
+      "G5_M3_TC_a1_q1",
+      "G5_M3_TC_a1_q2",
+      "G5_M3_TC_a1_q6",
+      "G5_M3_TD_a1_q1",
+      "G5_M3_a1_q10",
+      "G5_M3_a1_q2",
+      "G5_M3_a1_q4",
+      "G5_M3_a1_q5",
+      "G5_M3_a2_q10",
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q4",
+      "G5_M3_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_total_by_count",
+    "title": "Divide Total by Number of Equal Groups",
+    "description": "Find the value of each group by dividing the total amount by the number of equal groups.",
+    "condition": "A total quantity and a number of equal groups are given.",
+    "response": "Compute total \u00f7 number of groups to find the amount in each group.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If total weight is $9$ pounds for $12$ blocks, each weighs $9 \\div 12 = \\tfrac{3}{4}$ pound.",
+    "notes": "Used to find equal block weight in Q5.",
+    "question_ids": [
+      "G5_M2_TD_a1_q5"
     ]
   },
   {
@@ -1360,110 +841,55 @@
     ]
   },
   {
-    "kc_id": "divide_whole_by_whole_as_fraction",
-    "title": "Interpret Division as a Fraction",
-    "description": "A division expression of two whole numbers can be written as a fraction with the dividend as numerator and divisor as denominator.",
-    "condition": "A whole number is divided by another whole number.",
-    "response": "Write the quotient as a fraction $\\frac{a}{b}$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$8 \\div 5 = \\frac{8}{5}$",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_a1_q1",
-      "G5_M2_a1_q3",
-      "G5_M2_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "ensure_same_whole_for_comparison",
-    "title": "Ensure Same Whole When Comparing Fractions",
-    "description": "Recognize that fractions must refer to the same-sized whole in order to make a valid comparison of quantities.",
-    "condition": "Two fractions are presented with visual models or contexts that may represent different-sized wholes.",
-    "response": "Determine whether the wholes are the same size; only compare directly if they are the same size.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If one circle represents 1 whole and a larger circle also represents 1 whole, shaded halves are only comparable if both circles are the same size.",
-    "notes": "Conceptual prerequisite for valid fraction comparison.",
-    "question_ids": [
-      "G3_M5_TB_a1_q4",
-      "G3_M5_TB_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "equivalent_fraction_to_whole",
-    "title": "Recognize Fraction Equal to a Whole Number",
-    "description": "A fraction with numerator equal to the denominator equals 1 whole; a fraction where the numerator is a multiple of the denominator equals a whole number.",
-    "condition": "A fraction where the numerator equals or is a multiple of the denominator (e.g., a/a or ka/a).",
-    "response": "State the equivalent whole number.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{4} = 1$ and $\\frac{16}{8} = 2$ because the numerator is a multiple of the denominator.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TD_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "equivalent_fractions_multiplicative",
-    "title": "Generate Equivalent Fractions by Multiplying",
-    "description": "Create an equivalent fraction by multiplying the numerator and denominator by the same nonzero number.",
-    "condition": "A fraction a/b is given and an equivalent fraction is needed.",
-    "response": "Multiply numerator and denominator by the same number n: (a\u00d7n)/(b\u00d7n).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{6} = \\frac{4\\times2}{6\\times2} = \\frac{8}{12}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a2_q1",
-      "G4_M4_a2_q2"
-    ]
-  },
-  {
-    "kc_id": "equivalent_fractions_multiply_one",
-    "title": "Generate Equivalent Fractions by Multiplying by 1",
-    "description": "Create an equivalent fraction by multiplying the numerator and denominator by the same nonzero number.",
-    "condition": "A fraction a/b is to be rewritten with a different but related denominator.",
-    "response": "Multiply numerator and denominator by the same number n to get (a\u00d7n)/(b\u00d7n).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{1}{6} = \\frac{1\\times2}{6\\times2} = \\frac{2}{12}$",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a1_q1",
-      "G4_M4_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "equivalent_fractions_same_point",
-    "title": "Equivalent Fractions Share Same Location",
-    "description": "Recognize that equivalent fractions represent the same quantity and the same point on a number line.",
-    "condition": "Two fractions represent the same value (e.g., 4/4 and 2/2).",
-    "response": "State that the fractions are equivalent and correspond to the same location.",
+    "kc_id": "multiply_by_fraction_more_than_one_effect",
+    "title": "Effect of Multiplying by Fraction Greater Than 1",
+    "description": "Recognize that multiplying a positive number by a fraction greater than 1 results in a product greater than the original number.",
+    "condition": "A positive number is multiplied by a fraction known to be greater than 1.",
+    "response": "Conclude that the product is greater than the original number.",
     "cond_type": "Variable",
     "resp_type": "Constant",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Concept",
-    "example": "$\\frac{4}{4} = \\frac{2}{2} = 1$, so both are at 1 on the number line.",
+    "example": "Since $\\frac{9}{4}>1$, $\\frac{9}{4}\\times 13>13$.",
+    "notes": "Response type treated as Constant because direction of comparison (greater than) is fixed.",
+    "question_ids": [
+      "G5_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_fraction_less_than_one_effect",
+    "title": "Effect of Multiplying by Fraction Less Than 1",
+    "description": "Recognize that multiplying a positive number by a fraction less than 1 results in a product less than the original number.",
+    "condition": "A positive number is multiplied by a fraction known to be less than 1.",
+    "response": "Conclude that the product is less than the original number.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "Since $\\frac{5}{9}<1$, $\\frac{5}{9}\\times 10<10$.",
+    "notes": "Response type treated as Constant because direction of comparison (less than) is fixed.",
+    "question_ids": [
+      "G5_M3_TA_a1_q7",
+      "G5_M3_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "true_false_fraction_equality",
+    "title": "Evaluate Fraction Equality as True or False",
+    "description": "Determine whether a statement claiming two fractions are equal is true or false.",
+    "condition": "A statement of the form a/b = c/d.",
+    "response": "Compare values (e.g., by using number lines or equivalent fractions) and state True or False.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{1}{3} = \\frac{1}{6}$ is False because $\\frac{1}{6}$ is half of $\\frac{1}{3}$.",
     "notes": "",
     "question_ids": [
-      "G3_M5_a2_q8"
+      "G3_M5_TC_a1_q5"
     ]
   },
   {
@@ -1485,21 +911,20 @@
     ]
   },
   {
-    "kc_id": "express_improper_fraction_as_mixed_number",
-    "title": "Convert Improper Fraction to Mixed Number",
-    "description": "Rewrite an improper fraction as a mixed number using division.",
-    "condition": "Improper fraction a/b where a > b.",
-    "response": "Divide a by b to get a whole number and remainder; write as mixed number.",
+    "kc_id": "fraction_as_product_of_numerator_and_unit_fraction",
+    "title": "Express Fraction as Numerator \u00d7 Unit Fraction",
+    "description": "Rewrite a fraction as the product of its numerator and the unit fraction with the same denominator.",
+    "condition": "Fraction a/b",
+    "response": "Rewrite as a \u00d7 (1/b)",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "$\\frac{89}{9} = 9\\frac{8}{9}$ because $89 \\div 9 = 9$ remainder $8$.",
+    "example": "$\\frac{4}{6} = 4 \\times \\frac{1}{6}$.",
     "notes": "",
     "question_ids": [
-      "G5_M2_TA_a1_q5",
-      "G5_M2_TA_a1_q6"
+      "G4_M4_TF_a1_q1"
     ]
   },
   {
@@ -1516,9 +941,18 @@
     "example": "$\\frac{1}{4} + \\frac{2}{5} = \\frac{5}{20} + \\frac{8}{20}$",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G4_M4_TC_a1_q4",
+      "G4_M4_TC_a1_q5",
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6",
       "G5_M2_TC_a1_q1",
       "G5_M2_TC_a1_q3",
       "G5_M2_TC_a1_q4",
+      "G5_M2_a1_q6",
+      "G5_M2_a1_q7",
+      "G5_M2_a1_q9",
       "G5_M2_a2_q2",
       "G5_M2_a2_q6",
       "G5_M2_a2_q7",
@@ -1526,23 +960,21 @@
     ]
   },
   {
-    "kc_id": "find_common_denominator_lcm",
-    "title": "Find Common Denominator Using LCM",
-    "description": "Determine a common denominator for fractions by finding a common multiple, typically the least common multiple (LCM), of the denominators.",
-    "condition": "Fractions have different denominators and must be renamed to like units.",
-    "response": "Identify a common multiple (often the least common multiple) of the denominators to use as the new denominator.",
+    "kc_id": "interpret_remainder_as_subtraction",
+    "title": "Find Remaining Amount by Subtraction",
+    "description": "When a total amount is given and some parts are used, subtract the used amounts from the total to find the remainder.",
+    "condition": "A starting total is given and one or more amounts are used or removed.",
+    "response": "Subtract the used amounts from the starting total.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "For $\\frac{3}{4}$ and $\\frac{3}{5}$, LCM$(4,5)=20$.",
+    "example": "$5\\frac{7}{8} - 1\\frac{3}{8} - 1\\frac{1}{2} = 3$",
     "notes": "",
     "question_ids": [
-      "G5_M2_TB_a1_q1",
-      "G5_M2_TB_a1_q2",
-      "G5_M2_TB_a1_q5",
-      "G5_M2_TB_a1_q6"
+      "G5_M2_a1_q10",
+      "G5_M2_a1_q8"
     ]
   },
   {
@@ -1564,23 +996,6 @@
     ]
   },
   {
-    "kc_id": "fraction_as_multiple_of_unit_fraction",
-    "title": "Express Fraction as Multiple of Unit Fraction",
-    "description": "Rewrite a fraction as a whole number multiplied by a unit fraction.",
-    "condition": "A fraction a/b is given.",
-    "response": "Write as a \u00d7 (1/b).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{5}{4} = 5 \\times \\frac{1}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a2_q7"
-    ]
-  },
-  {
     "kc_id": "fraction_as_numerator_of_unit_fraction",
     "title": "Fraction as Multiple of Unit Fraction",
     "description": "Interpret a fraction a/b as a copies of 1/b.",
@@ -1595,24 +1010,8 @@
     "notes": "",
     "question_ids": [
       "G3_M5_a2_q4",
-      "G3_M5_a2_q5"
-    ]
-  },
-  {
-    "kc_id": "fraction_as_product_of_numerator_and_unit_fraction",
-    "title": "Express Fraction as Numerator \u00d7 Unit Fraction",
-    "description": "Rewrite a fraction as the product of its numerator and the unit fraction with the same denominator.",
-    "condition": "Fraction a/b",
-    "response": "Rewrite as a \u00d7 (1/b)",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{6} = 4 \\times \\frac{1}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TF_a1_q1"
+      "G3_M5_a2_q5",
+      "G4_M4_a2_q7"
     ]
   },
   {
@@ -1633,93 +1032,6 @@
     ]
   },
   {
-    "kc_id": "fraction_less_than_one_scales_down",
-    "title": "Multiplying by a Fraction Less Than 1 Decreases Value",
-    "description": "Recognize that multiplying a positive number by a fraction less than 1 results in a smaller product.",
-    "condition": "A positive number is multiplied by a fraction between 0 and 1.",
-    "response": "Conclude that the product is less than the original number.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "$18 \\times \\frac{3}{4} = 13.5 < 18$",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_a2_q9"
-    ]
-  },
-  {
-    "kc_id": "fraction_of_total_expression",
-    "title": "Represent Fraction of a Total",
-    "description": "Express a shaded portion as a fraction of the total and multiply by the total to represent the quantity.",
-    "condition": "A model shows a fraction $\\frac{a}{b}$ of a total of $n$ objects shaded.",
-    "response": "Write the expression $\\frac{a}{b} \\times n$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If $\\frac{3}{5}$ of 25 circles are shaded, write $\\frac{3}{5}\\times 25$.",
-    "notes": "Requires identifying correct fraction from visual model.",
-    "question_ids": [
-      "G5_M3_TA_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "fraction_word_problem_addition",
-    "title": "Add Quantities in Word Problem",
-    "description": "Translate a word problem involving combined quantities into an addition expression.",
-    "condition": "A context describes multiple amounts combined into a total.",
-    "response": "Write and evaluate an addition expression representing the total.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$1\\frac{5}{6} + 1\\frac{1}{3} + 2\\frac{1}{2}$",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_a2_q10",
-      "G5_M2_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "fraction_word_problem_subtraction",
-    "title": "Subtract to Find Difference in Context",
-    "description": "Represent and solve a word problem asking how much more or less using subtraction.",
-    "condition": "A context asks how many more or how much difference between quantities.",
-    "response": "Write and evaluate a subtraction expression.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Total needed $-\\,$ amount available.",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "generate_equivalent_fraction_by_multiplying",
-    "title": "Generate Equivalent Fraction by Multiplying",
-    "description": "Create an equivalent fraction by multiplying numerator and denominator by the same nonzero number.",
-    "condition": "A fraction and a chosen multiplier applied to both numerator and denominator.",
-    "response": "Multiply numerator and denominator by the same number to form an equivalent fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{2}{3} = \\frac{2 \\times 2}{3 \\times 2} = \\frac{4}{6}$.",
-    "notes": "Based on multiplying by 1 in the form $\\frac{n}{n}$.",
-    "question_ids": [
-      "G4_M4_TC_a1_q4",
-      "G4_M4_TC_a1_q5"
-    ]
-  },
-  {
     "kc_id": "generate_equivalent_fraction_by_scaling",
     "title": "Generate Equivalent Fraction by Scaling",
     "description": "Create an equivalent fraction by multiplying numerator and denominator by the same nonzero number.",
@@ -1736,62 +1048,17 @@
       "G3_M5_TE_a1_q1",
       "G3_M5_TE_a1_q2",
       "G4_M4_TB_a1_q4",
-      "G4_M4_TB_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "identify_common_denominator",
-    "title": "Identify a Common Denominator",
-    "description": "Recognize or select a common denominator to compare fractions.",
-    "condition": "Two fractions with different denominators.",
-    "response": "Determine a common denominator (e.g., least common multiple or convenient multiple).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "To compare $\\frac{1}{2}$ and $\\frac{2}{5}$, use 10 as a common denominator.",
-    "notes": "Often followed by generating equivalent fractions.",
-    "question_ids": [
+      "G4_M4_TB_a1_q5",
       "G4_M4_TC_a1_q4",
-      "G4_M4_TC_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "identify_equal_partitions",
-    "title": "Identify Shapes Partitioned into Equal Parts",
-    "description": "Recognize whether a shape has been divided into parts of equal size.",
-    "condition": "A shape is partitioned into multiple regions.",
-    "response": "Determine whether all regions are equal in size.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Category",
-    "example": "A circle divided into 6 congruent slices is partitioned into equal parts.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G3_M5_TA_a1_q1",
-      "G3_M5_TA_a1_q3",
-      "G3_M5_a1_q2",
-      "G3_M5_a2_q2"
-    ]
-  },
-  {
-    "kc_id": "identify_equal_parts_in_model",
-    "title": "Identify Equal Parts in Area Model",
-    "description": "Recognize how many equal parts each whole is divided into in a visual model.",
-    "condition": "A model where each whole is partitioned into equal sections.",
-    "response": "State the number of equal parts per whole.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Category",
-    "example": "If each circle is split into 5 slices, each whole has 5 equal parts.",
-    "notes": "Visual recognition skill.",
-    "question_ids": [
-      "G5_M2_TA_a1_q4"
+      "G4_M4_TC_a1_q5",
+      "G4_M4_a1_q1",
+      "G4_M4_a1_q2",
+      "G4_M4_a2_q1",
+      "G4_M4_a2_q2",
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6"
     ]
   },
   {
@@ -1830,23 +1097,6 @@
     ]
   },
   {
-    "kc_id": "identify_equivalent_fraction_on_number_line",
-    "title": "Identify Equivalent Fraction on Number Line",
-    "description": "Recognize equivalent fractions by locating the same point on number lines partitioned into different numbers of equal intervals.",
-    "condition": "Two number lines from 0 to 1 are partitioned into different equal parts and a point represents a fraction on one line.",
-    "response": "Find the fraction on the other number line that corresponds to the same location.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "Yes",
-    "label": "Production / Skill",
-    "example": "On a line partitioned into fourths, $\\frac{2}{4}$ is at the same point as $\\frac{1}{2}$ on a line partitioned into halves.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q4"
-    ]
-  },
-  {
     "kc_id": "identify_equivalent_fractions_number_line",
     "title": "Identify Equivalent Fractions Using Number Line",
     "description": "Recognize fractions as equivalent when they represent the same location on a number line.",
@@ -1861,26 +1111,9 @@
     "notes": "",
     "question_ids": [
       "G3_M5_TC_a1_q5",
-      "G3_M5_TC_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "identify_extreme_value_on_line_plot",
-    "title": "Identify Greatest or Least Value on Line Plot",
-    "description": "Determine the greatest or least data value represented on a line plot.",
-    "condition": "A line plot is shown and the problem asks for the greatest or least value.",
-    "response": "Locate the rightmost (greatest) or leftmost (least) data point that has a mark.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Category",
-    "example": "If the rightmost X is at $2\\tfrac{7}{8}$, that is the greatest value.",
-    "notes": "Must distinguish between axis maximum and actual data point.",
-    "question_ids": [
-      "G5_M2_TD_a1_q2",
-      "G5_M2_TD_a1_q3",
-      "G5_M2_TD_a1_q4"
+      "G3_M5_TC_a1_q6",
+      "G3_M5_a2_q8",
+      "G4_M4_TB_a1_q4"
     ]
   },
   {
@@ -1919,6 +1152,43 @@
     ]
   },
   {
+    "kc_id": "determine_fraction_from_number_line",
+    "title": "Identify Fraction Represented on Number Line",
+    "description": "Determine a fraction by identifying equal partitions between whole numbers and locating the point.",
+    "condition": "A point is placed on a number line partitioned into equal parts between two whole numbers.",
+    "response": "Count the number of equal parts to determine the denominator and count the position of the point to determine the numerator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If the interval from 0 to 1 is divided into 4 equal parts and the point is at the first tick mark, the fraction is $\\frac{1}{4}$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M5_TC_a1_q1",
+      "G3_M5_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_extreme_value_on_line_plot",
+    "title": "Identify Greatest or Least Value on Line Plot",
+    "description": "Determine the greatest or least data value represented on a line plot.",
+    "condition": "A line plot is shown and the problem asks for the greatest or least value.",
+    "response": "Locate the rightmost (greatest) or leftmost (least) data point that has a mark.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If the rightmost X is at $2\\tfrac{7}{8}$, that is the greatest value.",
+    "notes": "Must distinguish between axis maximum and actual data point.",
+    "question_ids": [
+      "G5_M2_TD_a1_q2",
+      "G5_M2_TD_a1_q3",
+      "G5_M2_TD_a1_q4"
+    ]
+  },
+  {
     "kc_id": "identify_heaviest_values_on_line_plot",
     "title": "Identify Largest Data Values on Line Plot",
     "description": "Select the largest data values shown on a line plot for further calculation.",
@@ -1936,20 +1206,42 @@
     ]
   },
   {
-    "kc_id": "identify_shaded_fraction_from_equal_parts",
-    "title": "Identify Fraction from Shaded Equal Parts",
-    "description": "Determine the fraction represented by counting shaded parts out of the total equal parts in a model representing one whole.",
-    "condition": "A shape or tape diagram partitioned into equal parts with some parts shaded.",
-    "response": "Count shaded parts as numerator and total equal parts as denominator; express as a fraction.",
+    "kc_id": "identify_equal_partitions",
+    "title": "Identify Shapes Partitioned into Equal Parts",
+    "description": "Recognize whether a shape has been divided into parts of equal size.",
+    "condition": "A shape is partitioned into multiple regions.",
+    "response": "Determine whether all regions are equal in size.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "A circle divided into 6 congruent slices is partitioned into equal parts.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M5_TA_a1_q1",
+      "G3_M5_TA_a1_q3",
+      "G3_M5_a1_q2",
+      "G3_M5_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_of_as_multiplication",
+    "title": "Interpret 'of' as Multiplication",
+    "description": "Translate the word 'of' in a fraction context as multiplication.",
+    "condition": "A phrase of the form 'a fraction of a quantity.'",
+    "response": "Write and evaluate a multiplication expression.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If 7 of 8 equal parts are shaded, the fraction is $\\frac{7}{8}$.",
-    "notes": "Applies when the whole is explicitly defined as 1.",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$\\frac{1}{5}$ of 11 \u2192 $\\frac{1}{5} \\times 11$.",
+    "notes": "Language-to-symbol translation.",
     "question_ids": [
-      "G3_M5_TB_a1_q1"
+      "G5_M3_a1_q3",
+      "G5_M3_a1_q7",
+      "G5_M3_a1_q8"
     ]
   },
   {
@@ -1991,24 +1283,6 @@
     ]
   },
   {
-    "kc_id": "interpret_division_context_equal_shares",
-    "title": "Interpret Division as Equal Sharing",
-    "description": "Translate a context involving equal sharing into a division expression.",
-    "condition": "A word problem describes a quantity being shared equally among a given number of groups.",
-    "response": "Represent the situation with a division expression (total \u00f7 number of groups).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "\"$\\frac{1}{4}$ gallon poured equally into 6 glasses\" \u2192 $\\frac{1}{4} \\div 6$.",
-    "notes": "Distinguishes sharing (partitive) division from measurement division.",
-    "question_ids": [
-      "G5_M3_TC_a1_q3",
-      "G5_M3_TC_a1_q5"
-    ]
-  },
-  {
     "kc_id": "interpret_division_context_measurement",
     "title": "Interpret Division as Measurement (How Many Groups)",
     "description": "Translate a context asking how many groups of a given size fit into a total into a division expression.",
@@ -2023,25 +1297,37 @@
     "notes": "Also called measurement or quotative division.",
     "question_ids": [
       "G5_M3_TC_a1_q3",
-      "G5_M3_TC_a1_q5"
+      "G5_M3_TC_a1_q5",
+      "G5_M3_TD_a1_q1"
     ]
   },
   {
-    "kc_id": "interpret_fraction_as_division",
+    "kc_id": "construct_division_equation_from_fraction",
     "title": "Interpret Fraction as Division",
-    "description": "Understand a fraction a/b as the quotient a \u00f7 b.",
-    "condition": "Given a fraction written in the form a/b.",
-    "response": "Interpret its value as a divided by b.",
+    "description": "Recognize that a fraction a/b represents the division expression a \u00f7 b.",
+    "condition": "A fraction written as a/b representing equal sharing.",
+    "response": "Write or interpret it as the division expression a \u00f7 b.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
-    "label": "Principle",
-    "example": "$\\frac{6}{6} = 6 \\div 6 = 1$.",
-    "notes": "",
+    "label": "Principle / Model",
+    "example": "$\\frac{14}{6}$ means $14 \\div 6$.",
+    "notes": "Core interpretation of fractions as division.",
     "question_ids": [
       "G3_M5_TE_a1_q3",
-      "G3_M5_TE_a1_q5"
+      "G3_M5_TE_a1_q5",
+      "G5_M2_TA_a1_q1",
+      "G5_M2_TA_a1_q2",
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_a1_q1",
+      "G5_M2_a1_q3",
+      "G5_M2_a1_q4",
+      "G5_M2_a2_q1",
+      "G5_M2_a2_q4"
     ]
   },
   {
@@ -2064,36 +1350,20 @@
     ]
   },
   {
-    "kc_id": "interpret_fraction_division_context",
-    "title": "Interpret Division as Number of Groups",
-    "description": "Recognize that dividing by a fraction finds how many groups of that size fit into the whole.",
-    "condition": "A word problem asks how many groups of a fractional size fit into a total amount.",
-    "response": "Set up division: total \u00f7 fractional amount.",
+    "kc_id": "interpret_tape_diagram_fraction",
+    "title": "Interpret Fraction from Equal Parts Model",
+    "description": "Determine or label fractional parts based on equal partitions of a whole in a tape diagram.",
+    "condition": "Tape diagram partitioned into b equal parts with some parts shaded or bracketed.",
+    "response": "Assign fraction a/b based on number of selected parts over total parts.",
     "cond_type": "Variable",
     "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "3 pounds with $\\frac{1}{4}$ pound per cake \u2192 $3 \\div \\frac{1}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_TD_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "interpret_fraction_from_tape_diagram",
-    "title": "Interpret Fraction from Tape Diagram",
-    "description": "Determine the fraction represented by shaded parts of a partitioned tape diagram.",
-    "condition": "A tape diagram partitioned into equal parts with some parts shaded.",
-    "response": "Express shaded parts over total equal parts as a fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
+    "relationship": "Non\u2011verbal",
     "rationale": "No",
     "label": "Production / Skill",
-    "example": "If 9 out of 12 equal parts are shaded, the fraction is $\\frac{9}{12}$.",
-    "notes": "Relies on visual-partition recognition.",
+    "example": "If 4 of 10 equal parts are shaded, the fraction is $\\frac{4}{10}$.",
+    "notes": "Relies on visual part-whole interpretation.",
     "question_ids": [
+      "G4_M4_TA_a1_q1",
       "G4_M4_TC_a1_q3"
     ]
   },
@@ -2117,20 +1387,40 @@
     ]
   },
   {
-    "kc_id": "interpret_left_as_subtraction",
-    "title": "Interpret \u201cLeft\u201d as Subtraction",
-    "description": "In a word problem, recognize that 'left' indicates subtraction from the starting amount.",
-    "condition": "A word problem asks how much is left after some amount is used or removed.",
-    "response": "Subtract the amount used from the starting amount.",
+    "kc_id": "interpret_numerator_as_count_of_parts",
+    "title": "Interpret Numerator as Count of Selected Parts",
+    "description": "The numerator tells how many equal parts are selected or shaded.",
+    "condition": "A fraction a/b describes parts of a whole partitioned into b equal parts.",
+    "response": "Select or count a parts.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "A baker has $2$ pounds and uses $\\frac{1}{3}$; compute $2 - \\frac{1}{3}$.",
-    "notes": "Language cue\u2013based strategy.",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $\\frac{3}{4}$, shade 3 of the 4 equal parts.",
+    "notes": "",
     "question_ids": [
-      "G4_M4_TD_a1_q4"
+      "G3_M5_a1_q1",
+      "G3_M5_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_shaded_fraction_model",
+    "title": "Interpret Shaded Fraction Model",
+    "description": "Determine the fraction represented by shaded parts in a model.",
+    "condition": "A visual model with some parts shaded out of equal partitions.",
+    "response": "Express shaded amount as a fraction of the whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 1 out of 3 equal parts is shaded, the fraction is $\\frac{1}{3}$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M5_TB_a1_q1",
+      "G5_M2_TA_a1_q2",
+      "G5_M2_TA_a1_q4"
     ]
   },
   {
@@ -2151,114 +1441,6 @@
     ]
   },
   {
-    "kc_id": "interpret_number_line_position",
-    "title": "Use Number Line Position to Compare Numbers",
-    "description": "Numbers located farther to the right on a number line are greater than numbers to the left.",
-    "condition": "Two numbers plotted on a number line.",
-    "response": "Determine which number is greater based on rightward position.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "On the number line, $\\frac{5}{3}$ is to the right of $\\frac{5}{6}$, so $\\frac{5}{3} > \\frac{5}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TD_a1_q3",
-      "G3_M5_TD_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "interpret_numerator_as_count_of_parts",
-    "title": "Interpret Numerator as Count of Selected Parts",
-    "description": "The numerator tells how many equal parts are selected or shaded.",
-    "condition": "A fraction a/b describes parts of a whole partitioned into b equal parts.",
-    "response": "Select or count a parts.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "For $\\frac{3}{4}$, shade 3 of the 4 equal parts.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a1_q1",
-      "G3_M5_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "interpret_of_as_multiplication",
-    "title": "Interpret 'of' as Multiplication",
-    "description": "Translate the word 'of' in a fraction context as multiplication.",
-    "condition": "A phrase of the form 'a fraction of a quantity.'",
-    "response": "Write and evaluate a multiplication expression.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "$\\frac{1}{5}$ of 11 \u2192 $\\frac{1}{5} \\times 11$.",
-    "notes": "Language-to-symbol translation.",
-    "question_ids": [
-      "G5_M3_a1_q3",
-      "G5_M3_a1_q7",
-      "G5_M3_a1_q8"
-    ]
-  },
-  {
-    "kc_id": "interpret_remainder_as_subtraction",
-    "title": "Find Remaining Amount by Subtraction",
-    "description": "When a total amount is given and some parts are used, subtract the used amounts from the total to find the remainder.",
-    "condition": "A starting total is given and one or more amounts are used or removed.",
-    "response": "Subtract the used amounts from the starting total.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$5\\frac{7}{8} - 1\\frac{3}{8} - 1\\frac{1}{2} = 3$",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_a1_q10",
-      "G5_M2_a1_q8"
-    ]
-  },
-  {
-    "kc_id": "interpret_shaded_fraction_model",
-    "title": "Interpret Shaded Fraction Model",
-    "description": "Determine the fraction represented by shaded parts in a model.",
-    "condition": "A visual model with some parts shaded out of equal partitions.",
-    "response": "Express shaded amount as a fraction of the whole.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If 1 out of 3 equal parts is shaded, the fraction is $\\frac{1}{3}$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_TA_a1_q2",
-      "G5_M2_TA_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "interpret_tape_diagram_fraction",
-    "title": "Interpret Fraction from Equal Parts Model",
-    "description": "Determine or label fractional parts based on equal partitions of a whole in a tape diagram.",
-    "condition": "Tape diagram partitioned into b equal parts with some parts shaded or bracketed.",
-    "response": "Assign fraction a/b based on number of selected parts over total parts.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "If 4 of 10 equal parts are shaded, the fraction is $\\frac{4}{10}$.",
-    "notes": "Relies on visual part-whole interpretation.",
-    "question_ids": [
-      "G4_M4_TA_a1_q1"
-    ]
-  },
-  {
     "kc_id": "interpret_total_as_addition",
     "title": "Interpret \u201cAltogether\u201d as Addition",
     "description": "In a word problem, recognize that 'altogether' indicates quantities should be added.",
@@ -2276,21 +1458,20 @@
     ]
   },
   {
-    "kc_id": "interpret_whole_times_fraction_as_repeated_addition",
-    "title": "Whole Number \u00d7 Fraction as Repeated Addition",
-    "description": "Interpret multiplication of a whole number and a fraction as repeated addition of the fraction.",
-    "condition": "Whole number n multiplied by fraction a/b",
-    "response": "Interpret as a/b added n times",
+    "kc_id": "interpret_left_as_subtraction",
+    "title": "Interpret \u201cLeft\u201d as Subtraction",
+    "description": "In a word problem, recognize that 'left' indicates subtraction from the starting amount.",
+    "condition": "A word problem asks how much is left after some amount is used or removed.",
+    "response": "Subtract the amount used from the starting amount.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$5 \\times \\frac{1}{4} = \\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}$.",
-    "notes": "",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "A baker has $2$ pounds and uses $\\frac{1}{3}$; compute $2 - \\frac{1}{3}$.",
+    "notes": "Language cue\u2013based strategy.",
     "question_ids": [
-      "G4_M4_TF_a1_q3",
-      "G4_M4_TF_a1_q5"
+      "G4_M4_TD_a1_q4"
     ]
   },
   {
@@ -2328,7 +1509,13 @@
       "G3_M5_a2_q3",
       "G3_M5_a2_q5",
       "G3_M5_a2_q7",
-      "G3_M5_a2_q8"
+      "G3_M5_a2_q8",
+      "G4_M4_TF_a1_q1",
+      "G4_M4_a1_q10",
+      "G4_M4_a1_q3",
+      "G4_M4_a1_q7",
+      "G4_M4_a2_q3",
+      "G4_M4_a2_q7"
     ]
   },
   {
@@ -2364,23 +1551,6 @@
     "notes": "Requires fraction addition and comparison.",
     "question_ids": [
       "G4_M4_TA_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "match_equivalent_fractions",
-    "title": "Match Equivalent Fractions",
-    "description": "Determine which fractions from a set are equivalent to given fractions.",
-    "condition": "Given a fraction and multiple candidate fractions.",
-    "response": "Select the fraction(s) that are formed by multiplying or dividing numerator and denominator by the same number.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{5}{6} = \\frac{10}{12}$ because both numerator and denominator are multiplied by $2$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q5"
     ]
   },
   {
@@ -2452,7 +1622,11 @@
       "G5_M2_TA_a1_q3",
       "G5_M2_TA_a1_q4",
       "G5_M2_TA_a1_q5",
-      "G5_M2_TA_a1_q6"
+      "G5_M2_TA_a1_q6",
+      "G5_M2_a1_q3",
+      "G5_M2_a1_q4",
+      "G5_M3_TC_a1_q3",
+      "G5_M3_TC_a1_q5"
     ]
   },
   {
@@ -2473,57 +1647,32 @@
     ]
   },
   {
-    "kc_id": "multiply_by_fraction_less_than_one_effect",
-    "title": "Effect of Multiplying by Fraction Less Than 1",
-    "description": "Recognize that multiplying a positive number by a fraction less than 1 results in a product less than the original number.",
-    "condition": "A positive number is multiplied by a fraction known to be less than 1.",
-    "response": "Conclude that the product is less than the original number.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "Since $\\frac{5}{9}<1$, $\\frac{5}{9}\\times 10<10$.",
-    "notes": "Response type treated as Constant because direction of comparison (less than) is fixed.",
-    "question_ids": [
-      "G5_M3_TA_a1_q7"
-    ]
-  },
-  {
-    "kc_id": "multiply_by_fraction_more_than_one_effect",
-    "title": "Effect of Multiplying by Fraction Greater Than 1",
-    "description": "Recognize that multiplying a positive number by a fraction greater than 1 results in a product greater than the original number.",
-    "condition": "A positive number is multiplied by a fraction known to be greater than 1.",
-    "response": "Conclude that the product is greater than the original number.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "Since $\\frac{9}{4}>1$, $\\frac{9}{4}\\times 13>13$.",
-    "notes": "Response type treated as Constant because direction of comparison (greater than) is fixed.",
-    "question_ids": [
-      "G5_M3_TA_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "multiply_fraction_by_fraction",
+    "kc_id": "multiply_fractions",
     "title": "Multiply Two Fractions",
     "description": "Multiply two fractions by multiplying numerators and denominators.",
     "condition": "An expression of the form (a/b) \u00d7 (c/d).",
-    "response": "Compute (a\u00d7c)/(b\u00d7d).",
+    "response": "Compute (a \u00d7 c)/(b \u00d7 d) and simplify if needed.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "$\\frac{3}{4} \\times \\frac{1}{7} = \\frac{3}{28}$.",
-    "notes": "",
+    "example": "$\\frac{4}{7} \\times \\frac{3}{5} = \\frac{12}{35}$",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
     "question_ids": [
+      "G5_M3_TB_a1_q2",
+      "G5_M3_TB_a1_q3",
+      "G5_M3_TD_a1_q2",
+      "G5_M3_TD_a1_q5",
       "G5_M3_a1_q1",
       "G5_M3_a1_q2",
       "G5_M3_a1_q7",
-      "G5_M3_a1_q8"
+      "G5_M3_a1_q8",
+      "G5_M3_a2_q1",
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q6",
+      "G5_M3_a2_q7",
+      "G5_M3_a2_q8"
     ]
   },
   {
@@ -2546,96 +1695,19 @@
       "G4_M4_TF_a1_q5",
       "G4_M4_a1_q8",
       "G4_M4_a1_q9",
+      "G4_M4_a2_q8",
+      "G4_M4_a2_q9",
       "G5_M3_TA_a1_q2",
       "G5_M3_TA_a1_q3",
       "G5_M3_TA_a1_q5",
       "G5_M3_TA_a1_q7",
       "G5_M3_TB_a1_q3",
-      "G5_M3_TB_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "multiply_fraction_by_whole_number",
-    "title": "Multiply Fraction by Whole Number",
-    "description": "Multiply a fraction by a whole number by writing the whole number as a fraction over 1.",
-    "condition": "An expression of the form (a/b) \u00d7 n where n is a whole number.",
-    "response": "Rewrite n as n/1 and multiply numerators and denominators.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{3}{2} \\times 3 = \\frac{3}{2} \\times \\frac{3}{1} = \\frac{9}{2}$.",
-    "notes": "[merged: response varies]",
-    "question_ids": [
+      "G5_M3_TB_a1_q4",
       "G5_M3_a1_q1",
       "G5_M3_a1_q3",
       "G5_M3_a1_q9",
       "G5_M3_a2_q1",
       "G5_M3_a2_q7"
-    ]
-  },
-  {
-    "kc_id": "multiply_fractions",
-    "title": "Multiply Two Fractions",
-    "description": "Multiply two fractions by multiplying numerators and denominators.",
-    "condition": "An expression of the form (a/b) \u00d7 (c/d).",
-    "response": "Compute (a \u00d7 c)/(b \u00d7 d) and simplify if needed.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{7} \\times \\frac{3}{5} = \\frac{12}{35}$",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G5_M3_TB_a1_q2",
-      "G5_M3_TB_a1_q3",
-      "G5_M3_TD_a1_q2",
-      "G5_M3_TD_a1_q5",
-      "G5_M3_a2_q1",
-      "G5_M3_a2_q2",
-      "G5_M3_a2_q6",
-      "G5_M3_a2_q7",
-      "G5_M3_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "multiply_to_form_equivalent_fraction",
-    "title": "Form Equivalent Fraction by Multiplying",
-    "description": "Create an equivalent fraction by multiplying the numerator and denominator by the same nonzero number.",
-    "condition": "A fraction must be rewritten with a specified or chosen new denominator.",
-    "response": "Multiply both numerator and denominator by the same number to produce an equivalent fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{1}{2} = \\frac{1\\times7}{2\\times7} = \\frac{7}{14}$",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_TB_a1_q1",
-      "G5_M2_TB_a1_q2",
-      "G5_M2_TB_a1_q5",
-      "G5_M2_TB_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "multiply_whole_by_fraction",
-    "title": "Multiply Whole Number by Fraction",
-    "description": "Multiply a whole number by a fraction by multiplying the whole number and the numerator.",
-    "condition": "Expression of the form n \u00d7 (a/b).",
-    "response": "Compute (n\u00d7a)/b and simplify if needed.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$7 \\times \\frac{2}{3} = \\frac{14}{3}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a2_q8",
-      "G4_M4_a2_q9"
     ]
   },
   {
@@ -2658,112 +1730,6 @@
     ]
   },
   {
-    "kc_id": "order_of_operations_parentheses",
-    "title": "Use Parentheses to Control Order of Operations",
-    "description": "Insert or interpret parentheses to ensure operations are performed in the intended order.",
-    "condition": "An expression requires grouping to produce a specific value.",
-    "response": "Place parentheses to group terms so calculations follow the intended order.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$6 \\times (\\frac{4}{9} + \\frac{1}{3} + \\frac{1}{9})$ ensures addition before multiplication.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_TD_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "partition_number_line_equal_parts",
-    "title": "Partition a Whole into Equal Fractional Parts",
-    "description": "Divide each unit interval on a number line into equal parts according to the denominator.",
-    "condition": "A number line and a specified denominator (e.g., sixths, fourths, eighths).",
-    "response": "Partition each whole into that many equal segments and label them.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Rule / Plan",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "To plot sixths, divide each interval from 0 to 1 into 6 equal parts and label $1/6, 2/6, \\dots, 6/6$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TD_a1_q2",
-      "G3_M5_TD_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "partition_shape_into_equal_parts",
-    "title": "Partition a Shape into Equal Parts",
-    "description": "Divide a given whole into a specified number of equal parts.",
-    "condition": "Instruction to partition a whole into $n$ equal parts.",
-    "response": "Draw or imagine $n$ equal-sized regions within the whole.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "Partition a rectangle into 6 equal parts by drawing 5 evenly spaced lines to create 6 equal sections.",
-    "notes": "Primarily procedural drawing skill.",
-    "question_ids": [
-      "G3_M5_TA_a1_q2",
-      "G3_M5_TA_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "partition_unit_interval_equal_parts",
-    "title": "Partition Interval into Equal Parts",
-    "description": "Divide each whole number interval into a specified number of equal segments.",
-    "condition": "Given a number line and instruction to partition each unit into n equal parts.",
-    "response": "Mark n equal subdivisions within each unit interval.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "Partition each unit into fourths by marking 3 equally spaced points between consecutive integers.",
-    "notes": "Procedural spatial skill.",
-    "question_ids": [
-      "G3_M5_TE_a1_q2",
-      "G3_M5_TE_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "partition_unit_interval_into_equal_parts",
-    "title": "Partition Number Line into Equal Fractional Parts",
-    "description": "Divide the interval from 0 to 1 into equal parts based on the denominator of a fraction.",
-    "condition": "Number line from 0 to 1 and fraction with denominator b",
-    "response": "Partition the interval into b equal segments",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "Yes",
-    "label": "Production / Skill",
-    "example": "To plot $\\frac{4}{6}$, divide 0\u20131 into 6 equal parts.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TF_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "partition_whole_into_equal_denominator_parts",
-    "title": "Partition Whole into Denominator Equal Parts",
-    "description": "Divide a whole into the number of equal parts indicated by the denominator.",
-    "condition": "Given a fraction a/b and a representation of one whole.",
-    "response": "Partition the whole into b equal parts.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "To represent $\\frac{5}{6}$, divide the rectangle into 6 equal parts.",
-    "notes": "Often demonstrated visually rather than verbally explained.",
-    "question_ids": [
-      "G3_M5_TB_a1_q3",
-      "G3_M5_TB_a1_q5"
-    ]
-  },
-  {
     "kc_id": "partition_whole_into_equal_parts",
     "title": "Partition Whole into Equal Parts",
     "description": "Divide a whole shape or number line interval into a specified number of equal parts.",
@@ -2777,65 +1743,18 @@
     "example": "Partition the interval from 0 to 1 into 3 equal parts to show thirds.",
     "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
     "question_ids": [
+      "G3_M5_TA_a1_q2",
+      "G3_M5_TA_a1_q5",
+      "G3_M5_TB_a1_q3",
+      "G3_M5_TB_a1_q5",
+      "G3_M5_TD_a1_q2",
+      "G3_M5_TD_a1_q5",
+      "G3_M5_TE_a1_q2",
+      "G3_M5_TE_a1_q4",
       "G3_M5_a1_q5",
       "G3_M5_a1_q8",
-      "G5_M3_TA_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "place_measurement_on_line_plot",
-    "title": "Add Measurement to Line Plot",
-    "description": "Represent a new measurement by adding an X above the correct value on a line plot.",
-    "condition": "A new measured value and an existing labeled line plot.",
-    "response": "Locate the value on the horizontal axis and draw an additional X above it.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "If a new caterpillar measures $3\\tfrac{1}{4}$ inches, add one X above $3\\tfrac{1}{4}$ on the plot.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q3",
-      "G3_M5_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "plot_fraction_number_line",
-    "title": "Plot Fraction on Number Line",
-    "description": "Place a fraction at the correct location on a number line by partitioning the interval into equal parts.",
-    "condition": "A fraction a/b is to be located on a number line between whole numbers.",
-    "response": "Divide each unit into b equal parts and count a parts from 0 (or from the nearest whole).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "To plot $\\frac{7}{4}$, divide each unit into 4 equal parts and count 7 fourths to reach $1\\frac{3}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a1_q10",
-      "G4_M4_a1_q3",
-      "G4_M4_a1_q7"
-    ]
-  },
-  {
-    "kc_id": "plot_fraction_on_number_line",
-    "title": "Plot Fraction on Number Line",
-    "description": "Locate and label a fraction accurately on a number line.",
-    "condition": "A fraction and a number line with appropriate scale are given.",
-    "response": "Divide the interval into equal parts based on the denominator and mark the point corresponding to the numerator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "To plot $\\frac{5}{4}$, divide each unit into 4 equal parts and mark the fifth part from 0 (at $1\\frac{1}{4}$).",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
       "G4_M4_TF_a1_q1",
-      "G4_M4_a2_q3",
-      "G4_M4_a2_q7"
+      "G5_M3_TA_a1_q3"
     ]
   },
   {
@@ -2857,6 +1776,23 @@
     ]
   },
   {
+    "kc_id": "solve_fraction_inequality_by_reasoning",
+    "title": "Reason About Fraction Inequality",
+    "description": "Determine which whole numbers make a fractional multiplication inequality true by reasoning about size relative to 1.",
+    "condition": "An inequality of the form (n/5) \u00d7 16 < 16 where n is a whole number.",
+    "response": "Conclude that n must be less than 5.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $n=3$, then $\\frac{3}{5} \\times 16 < 16$ since $\\frac{3}{5}<1$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_a1_q9"
+    ]
+  },
+  {
     "kc_id": "recognize_equivalent_fractions",
     "title": "Recognize Equivalent Fractions",
     "description": "Fractions that represent the same quantity occupy the same point on a number line.",
@@ -2871,6 +1807,7 @@
     "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
     "question_ids": [
       "G3_M5_a1_q8",
+      "G4_M4_TB_a1_q5",
       "G4_M4_TC_a1_q3"
     ]
   },
@@ -2892,74 +1829,37 @@
     ]
   },
   {
-    "kc_id": "relate_division_and_multiplication",
-    "title": "Relate Division to Multiplication",
-    "description": "Use the inverse relationship between division and multiplication to write a related multiplication equation.",
-    "condition": "A division equation a \u00f7 b = c.",
-    "response": "Write the related multiplication equation c \u00d7 b = a.",
+    "kc_id": "equivalent_fraction_to_whole",
+    "title": "Recognize Fraction Equal to a Whole Number",
+    "description": "A fraction with numerator equal to the denominator equals 1 whole; a fraction where the numerator is a multiple of the denominator equals a whole number.",
+    "condition": "A fraction where the numerator equals or is a multiple of the denominator (e.g., a/a or ka/a).",
+    "response": "State the equivalent whole number.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "If $8 \\div \\frac{1}{3} = 24$, then $24 \\times \\frac{1}{3} = 8$.",
+    "example": "$\\frac{4}{4} = 1$ and $\\frac{16}{8} = 2$ because the numerator is a multiple of the denominator.",
     "notes": "",
     "question_ids": [
-      "G5_M3_a1_q4"
+      "G3_M5_TD_a1_q1"
     ]
   },
   {
-    "kc_id": "relate_division_to_multiplication_reciprocal",
-    "title": "Relate Division to Multiplication by the Reciprocal",
-    "description": "Recognize that dividing by a number is equivalent to multiplying by its reciprocal.",
-    "condition": "An expression of the form $a \\div b$, where b \u2260 0.",
-    "response": "Rewrite as $a \\times \\frac{1}{b}$ (or multiply by reciprocal if b is a fraction).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$10 \\div 3 = 10 \\times \\frac{1}{3}$.",
-    "notes": "Foundation for fraction division and comparison tasks.",
-    "question_ids": [
-      "G5_M3_TC_a1_q1",
-      "G5_M3_TC_a1_q2",
-      "G5_M3_TC_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "represent_equal_sharing_as_division",
-    "title": "Model Equal Sharing with Division",
-    "description": "When a quantity is shared equally among a number of groups, represent the amount per group using division.",
-    "condition": "A total quantity is divided equally among a given number of groups or people.",
-    "response": "Write and evaluate a division expression total \u00f7 number of groups.",
+    "kc_id": "fraction_of_total_expression",
+    "title": "Represent Fraction of a Total",
+    "description": "Express a shaded portion as a fraction of the total and multiply by the total to represent the quantity.",
+    "condition": "A model shows a fraction $\\frac{a}{b}$ of a total of $n$ objects shaded.",
+    "response": "Write the expression $\\frac{a}{b} \\times n$.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "6 pizzas shared by 15 people: $6 \\div 15 = \\frac{2}{5}$",
-    "notes": "",
+    "example": "If $\\frac{3}{5}$ of 25 circles are shaded, write $\\frac{3}{5}\\times 25$.",
+    "notes": "Requires identifying correct fraction from visual model.",
     "question_ids": [
-      "G5_M2_a1_q3",
-      "G5_M2_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "represent_fraction_by_shading",
-    "title": "Represent Fraction by Shading",
-    "description": "Shade the correct number of equal parts to represent a given fraction.",
-    "condition": "A shape partitioned into equal parts and a target fraction are given.",
-    "response": "Shade the number of parts indicated by the numerator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "Yes",
-    "label": "Production / Skill",
-    "example": "If a rectangle is divided into 3 equal parts, shading 2 parts represents $\\frac{2}{3}$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_a2_q1"
+      "G5_M3_TA_a1_q1"
     ]
   },
   {
@@ -2978,7 +1878,11 @@
     "question_ids": [
       "G3_M5_TD_a1_q2",
       "G3_M5_TD_a1_q3",
-      "G3_M5_TD_a1_q4"
+      "G3_M5_TD_a1_q4",
+      "G3_M5_a1_q7",
+      "G3_M5_a2_q7",
+      "G4_M4_TC_a1_q1",
+      "G4_M4_TC_a1_q4"
     ]
   },
   {
@@ -3016,24 +1920,6 @@
     ]
   },
   {
-    "kc_id": "sequential_fraction_application",
-    "title": "Apply Fractions Sequentially to Remainder",
-    "description": "After removing a fraction of a quantity, compute a fraction of the remaining amount.",
-    "condition": "A problem states that a fraction of a quantity is used, then a fraction of the remaining amount is used.",
-    "response": "First subtract the initial fractional amount, then multiply the remainder by the next fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Start with $\\frac{4}{5}$. Use $\\frac{1}{2}$: remainder $\\frac{4}{5} - \\frac{2}{5} = \\frac{2}{5}$. Then use $\\frac{1}{3}$ of $\\frac{2}{5}$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_TD_a1_q4",
-      "G5_M3_TD_a1_q6"
-    ]
-  },
-  {
     "kc_id": "shade_numerator_parts",
     "title": "Shade Numerator Number of Parts",
     "description": "Shade the number of equal parts indicated by the numerator once the whole is partitioned.",
@@ -3047,44 +1933,12 @@
     "example": "For $\\frac{5}{6}$, after dividing into 6 parts, shade 5 parts.",
     "notes": "Procedural representation skill.",
     "question_ids": [
+      "G3_M5_TA_a1_q2",
+      "G3_M5_TA_a1_q5",
       "G3_M5_TB_a1_q2",
       "G3_M5_TB_a1_q3",
-      "G3_M5_TB_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "shade_specified_number_of_parts",
-    "title": "Shade Specified Number of Equal Parts",
-    "description": "Shade the number of equal parts indicated by the numerator.",
-    "condition": "A fraction $\\frac{a}{n}$ is given and the whole is partitioned into $n$ equal parts.",
-    "response": "Shade $a$ of the equal parts.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "For $\\frac{1}{6}$, shade 1 of the 6 equal parts.",
-    "notes": "In these items, $a=1$ (unit fractions).",
-    "question_ids": [
-      "G3_M5_TA_a1_q2",
-      "G3_M5_TA_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "solve_fraction_inequality_by_reasoning",
-    "title": "Reason About Fraction Inequality",
-    "description": "Determine which whole numbers make a fractional multiplication inequality true by reasoning about size relative to 1.",
-    "condition": "An inequality of the form (n/5) \u00d7 16 < 16 where n is a whole number.",
-    "response": "Conclude that n must be less than 5.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If $n=3$, then $\\frac{3}{5} \\times 16 < 16$ since $\\frac{3}{5}<1$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_a1_q9"
+      "G3_M5_TB_a1_q5",
+      "G3_M5_a2_q1"
     ]
   },
   {
@@ -3153,52 +2007,22 @@
     "example": "$\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6}$.",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G4_M4_TD_a1_q1",
+      "G4_M4_TD_a1_q3",
+      "G4_M4_TE_a1_q4",
+      "G4_M4_a1_q10",
+      "G4_M4_a1_q4",
+      "G4_M4_a1_q6",
       "G4_M4_a2_q10",
       "G4_M4_a2_q4",
       "G4_M4_a2_q6",
       "G5_M2_TC_a1_q1",
       "G5_M2_TC_a1_q5",
+      "G5_M2_a1_q7",
       "G5_M2_a2_q7",
       "G5_M3_TD_a1_q2",
       "G5_M3_TD_a1_q4",
       "G5_M3_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "subtract_fractions_like_denominators",
-    "title": "Subtract Fractions with Like Denominators",
-    "description": "Subtract two fractions with the same denominator by subtracting numerators and keeping the denominator.",
-    "condition": "Two fractions with the same denominator are being subtracted (e.g., a/b \u2212 c/b).",
-    "response": "Subtract the numerators and keep the denominator constant: (a \u2212 c)/b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{4}{5} - \\frac{1}{5} = \\frac{3}{5}$",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G4_M4_a1_q10",
-      "G4_M4_a1_q4",
-      "G4_M4_a1_q6",
-      "G5_M2_a1_q7"
-    ]
-  },
-  {
-    "kc_id": "subtract_fractions_same_denominator",
-    "title": "Subtract Fractions with Like Denominators",
-    "description": "Subtracts two fractions with the same denominator by subtracting numerators.",
-    "condition": "Two fractions with the same denominator (a/b \u2212 c/b).",
-    "response": "Subtract numerators and keep denominator: (a\u2212c)/b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{8}{10} - \\frac{3}{10} = \\frac{5}{10}$",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TE_a1_q4"
     ]
   },
   {
@@ -3223,24 +2047,6 @@
     ]
   },
   {
-    "kc_id": "subtract_like_denominators",
-    "title": "Subtract Fractions with Like Denominators",
-    "description": "When subtracting fractions that have the same denominator, subtract the numerators and keep the denominator the same.",
-    "condition": "Two fractions with the same denominator are being subtracted (a/b \u2212 c/b).",
-    "response": "Compute (a \u2212 c)/b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{6}{8} - \\frac{1}{8} = \\frac{6-1}{8} = \\frac{5}{8}$",
-    "notes": "Applies only when denominators are identical.",
-    "question_ids": [
-      "G4_M4_TD_a1_q1",
-      "G4_M4_TD_a1_q3"
-    ]
-  },
-  {
     "kc_id": "subtract_mixed_numbers_like_denominators",
     "title": "Subtract Mixed Numbers with Like Denominators",
     "description": "Subtract mixed numbers that share the same fractional denominator by subtracting whole parts and fractional parts.",
@@ -3254,43 +2060,29 @@
     "example": "$3\\frac{1}{8} - 1\\frac{7}{8} = 1\\frac{2}{8}$",
     "notes": "",
     "question_ids": [
+      "G4_M4_TE_a1_q4",
       "G4_M4_a1_q10",
-      "G4_M4_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "subtract_mixed_numbers_with_decomposition",
-    "title": "Subtract Mixed Numbers Using Decomposition",
-    "description": "Subtracts mixed numbers by decomposing one whole into a fraction when needed.",
-    "condition": "Mixed number subtraction where fractional part of minuend is less than subtrahend.",
-    "response": "Rename one whole as a fraction; subtract fractional and whole parts.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$3\\frac{1}{3} - 2\\frac{2}{3} = 2\\frac{4}{3} - 2\\frac{2}{3} = \\frac{2}{3}$",
-    "notes": "Also called regrouping or borrowing.",
-    "question_ids": [
-      "G4_M4_TE_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "subtract_mixed_numbers_with_regrouping",
-    "title": "Subtract Mixed Numbers with Regrouping",
-    "description": "Subtract mixed numbers by regrouping one whole as a fraction when needed.",
-    "condition": "Subtracting mixed numbers where the fractional part of the minuend is smaller than the fractional part of the subtrahend.",
-    "response": "Regroup one whole into fractional form, find a common denominator if needed, subtract fractions, then subtract whole numbers.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$3\\frac{1}{4} - \\frac{2}{3} = 3\\frac{3}{12} - \\frac{8}{12} = 2\\frac{7}{12}$",
-    "notes": "Requires regrouping and common denominator.",
-    "question_ids": [
+      "G4_M4_a1_q6",
       "G5_M2_TC_a1_q1",
-      "G5_M2_TC_a1_q3"
+      "G5_M2_TC_a1_q3",
+      "G5_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "fraction_word_problem_subtraction",
+    "title": "Subtract to Find Difference in Context",
+    "description": "Represent and solve a word problem asking how much more or less using subtraction.",
+    "condition": "A context asks how many more or how much difference between quantities.",
+    "response": "Write and evaluate a subtraction expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total needed $-\\,$ amount available.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_a2_q8"
     ]
   },
   {
@@ -3329,24 +2121,6 @@
     ]
   },
   {
-    "kc_id": "translate_word_phrase_to_expression",
-    "title": "Translate Verbal Phrase to Expression",
-    "description": "Convert a verbal mathematical description into a symbolic expression using correct operations.",
-    "condition": "A verbal description involving terms like sum, difference, product, or of.",
-    "response": "Write a matching numerical expression with appropriate operations and grouping.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "\"The sum of $\\frac{3}{4}$ and the difference of $\\frac{1}{2}$ and $\\frac{1}{7}$\" \u2192 $\\frac{3}{4} + \\left(\\frac{1}{2} - \\frac{1}{7}\\right)$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_a1_q10",
-      "G5_M3_a1_q6"
-    ]
-  },
-  {
     "kc_id": "translate_word_problem_to_division_expression",
     "title": "Translate Context to Division Expression",
     "description": "Translate a real-world sharing situation into a numerical division expression.",
@@ -3366,56 +2140,42 @@
     ]
   },
   {
-    "kc_id": "translate_word_problem_to_expression",
-    "title": "Translate Word Problem into Numerical Expression",
-    "description": "Convert a verbal description involving fractions and operations into a correct numerical expression.",
-    "condition": "A word problem describes operations such as 'of', 'difference', 'times', or 'remaining'.",
-    "response": "Write a numerical expression that represents the described operations.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "'$\\frac{1}{3}$ of $\\frac{3}{4}$ plus $\\frac{1}{4}$ of $\\frac{5}{6}$' \u2192 $(\\frac{1}{3} \\times \\frac{3}{4}) + (\\frac{1}{4} \\times \\frac{5}{6})$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M3_TD_a1_q1",
-      "G5_M3_TD_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "translate_words_to_expression_operations",
-    "title": "Translate Verbal Phrases to Operations",
-    "description": "Translate phrases such as 'sum', 'difference', and 'product' into the corresponding arithmetic symbols.",
-    "condition": "A verbal mathematical description includes terms like sum, difference, product, or of.",
-    "response": "Write the corresponding arithmetic expression using +, \u2212, \u00d7, or \u00f7 and parentheses as needed.",
+    "kc_id": "translate_word_phrase_to_expression",
+    "title": "Translate Verbal Phrase to Expression",
+    "description": "Convert a verbal mathematical description into a symbolic expression using correct operations.",
+    "condition": "A verbal description involving terms like sum, difference, product, or of.",
+    "response": "Write a matching numerical expression with appropriate operations and grouping.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "No",
     "label": "Rule / Plan",
-    "example": "\"The difference of $\\frac{4}{5}$ and $\\frac{3}{8}$\" \u2192 $\\frac{4}{5} - \\frac{3}{8}$",
-    "notes": "Language convention mapping.",
+    "example": "\"The sum of $\\frac{3}{4}$ and the difference of $\\frac{1}{2}$ and $\\frac{1}{7}$\" \u2192 $\\frac{3}{4} + \\left(\\frac{1}{2} - \\frac{1}{7}\\right)$.",
+    "notes": "",
     "question_ids": [
+      "G5_M3_TD_a1_q1",
+      "G5_M3_TD_a1_q5",
+      "G5_M3_a1_q10",
+      "G5_M3_a1_q6",
       "G5_M3_a2_q10",
       "G5_M3_a2_q6"
     ]
   },
   {
-    "kc_id": "true_false_fraction_equality",
-    "title": "Evaluate Fraction Equality as True or False",
-    "description": "Determine whether a statement claiming two fractions are equal is true or false.",
-    "condition": "A statement of the form a/b = c/d.",
-    "response": "Compare values (e.g., by using number lines or equivalent fractions) and state True or False.",
+    "kc_id": "convert_word_problem_to_addition",
+    "title": "Translate Word Problem to Addition Expression",
+    "description": "Interpret a word problem describing combined quantities as an addition expression.",
+    "condition": "A word problem describes two distances or quantities combined (e.g., walks 2/3 mile and then 1/6 mile).",
+    "response": "Write an addition expression representing the total (e.g., $2/3 + 1/6$).",
     "cond_type": "Variable",
-    "resp_type": "Constant",
+    "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
-    "label": "Principle",
-    "example": "$\\frac{1}{3} = \\frac{1}{6}$ is False because $\\frac{1}{6}$ is half of $\\frac{1}{3}$.",
+    "label": "Principle / Model",
+    "example": "Ryan walks $\\frac{2}{3}$ mile and $\\frac{1}{6}$ mile, so total is $\\frac{2}{3} + \\frac{1}{6}$.",
     "notes": "",
     "question_ids": [
-      "G3_M5_TC_a1_q5"
+      "G5_M2_TB_a1_q6"
     ]
   },
   {
@@ -3436,37 +2196,58 @@
     ]
   },
   {
-    "kc_id": "use_number_line_to_compare_fractions",
-    "title": "Compare Fractions Using Number Line",
-    "description": "Determine whether two fractions are equal by locating them on the same number line.",
-    "condition": "Given two fractions and a common number line representation.",
-    "response": "Judge them equal if they correspond to the same point; otherwise not equal.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Category",
-    "example": "$\\frac{4}{6}$ and $\\frac{4}{3}$ are at different points on the number line, so the statement is false.",
-    "notes": "Response is a True/False judgment.",
-    "question_ids": [
-      "G3_M5_TE_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "whole_number_as_fraction_over_one",
-    "title": "Whole Number as Fraction Over 1",
-    "description": "Express a whole number as a fraction with denominator 1.",
-    "condition": "A whole number is given.",
-    "response": "Rewrite it in the form n/1.",
+    "kc_id": "order_of_operations_parentheses",
+    "title": "Use Parentheses to Control Order of Operations",
+    "description": "Insert or interpret parentheses to ensure operations are performed in the intended order.",
+    "condition": "An expression requires grouping to produce a specific value.",
+    "response": "Place parentheses to group terms so calculations follow the intended order.",
     "cond_type": "Variable",
     "resp_type": "Variable",
     "relationship": "Verbal",
     "rationale": "Yes",
     "label": "Principle / Model",
-    "example": "$3 = \\frac{3}{1}$.",
+    "example": "$6 \\times (\\frac{4}{9} + \\frac{1}{3} + \\frac{1}{9})$ ensures addition before multiplication.",
     "notes": "",
     "question_ids": [
-      "G3_M5_a2_q9"
+      "G5_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_whole_times_fraction_as_repeated_addition",
+    "title": "Whole Number \u00d7 Fraction as Repeated Addition",
+    "description": "Interpret multiplication of a whole number and a fraction as repeated addition of the fraction.",
+    "condition": "Whole number n multiplied by fraction a/b",
+    "response": "Interpret as a/b added n times",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$5 \\times \\frac{1}{4} = \\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}+\\frac{1}{4}$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M4_TF_a1_q3",
+      "G4_M4_TF_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "convert_whole_to_fraction_over_one",
+    "title": "Write Whole Number as Fraction Over 1",
+    "description": "Any whole number n can be written as n/1.",
+    "condition": "A whole number is to be expressed as a fraction.",
+    "response": "Write the number as n/1.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$2 = \\frac{2}{1}$ and $5 = \\frac{5}{1}$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M5_TE_a1_q5",
+      "G3_M5_a1_q9",
+      "G3_M5_a2_q9",
+      "G4_M4_TA_a1_q4"
     ]
   }
 ]
