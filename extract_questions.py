@@ -15,6 +15,9 @@ Usage:
 
     # Export static site (processes all PDFs, outputs to site/)
     python extract_questions.py --export-site
+
+    # Export for a specific stem (multi-stem pipeline)
+    python extract_questions.py --export-site --pdf-dir "path/to/PDFs" --stem fractions
 """
 
 import fitz  # PyMuPDF
@@ -407,11 +410,25 @@ def save_preview(questions, pdf_basename):
     print(f"  Saved {len(questions)} images to {subdir}/")
 
 
-def export_static_site(all_questions, script_dir):
-    """Export all questions as a static site (images + JSON metadata)."""
+def export_static_site(all_questions, script_dir, stem=None):
+    """Export all questions as a static site (images + JSON metadata).
+
+    When stem is provided, writes to stem-scoped paths:
+      images -> site/images/{stem}/
+      metadata -> site/data/{stem}/questions.json
+      image paths in JSON -> images/{stem}/filename.png
+    """
     site_dir = os.path.join(script_dir, "site")
-    images_dir = os.path.join(site_dir, "images")
-    data_dir = os.path.join(site_dir, "data")
+
+    if stem:
+        images_dir = os.path.join(site_dir, "images", stem)
+        data_dir = os.path.join(site_dir, "data", stem)
+        image_prefix = f"images/{stem}"
+    else:
+        images_dir = os.path.join(site_dir, "images")
+        data_dir = os.path.join(site_dir, "data")
+        image_prefix = "images"
+
     os.makedirs(images_dir, exist_ok=True)
     os.makedirs(data_dir, exist_ok=True)
 
@@ -435,7 +452,7 @@ def export_static_site(all_questions, script_dir):
             'topic': q['topic'],
             'assessment_number': q['assessment_number'],
             'question_number': q['question_number'],
-            'image': f"images/{image_filename}",
+            'image': f"{image_prefix}/{image_filename}",
             'image_width': q['image_width'],
             'image_height': q['image_height'],
             'source_pages': q['source_pages'],
@@ -445,9 +462,10 @@ def export_static_site(all_questions, script_dir):
     with open(json_path, 'w') as f:
         json.dump(metadata_list, f, indent=2)
 
-    print(f"\nExported static site:")
-    print(f"  {len(metadata_list)} question images -> site/images/")
-    print(f"  Metadata -> site/data/questions.json")
+    stem_label = f" ({stem})" if stem else ""
+    print(f"\nExported static site{stem_label}:")
+    print(f"  {len(metadata_list)} question images -> {os.path.relpath(images_dir, script_dir)}/")
+    print(f"  Metadata -> {os.path.relpath(json_path, script_dir)}")
     print(f"  Total image size: {sum(len(q['image_data']) for q in all_questions) / 1024 / 1024:.1f} MB")
 
 
@@ -494,6 +512,10 @@ def main():
                         help='Process all PDFs (default: first only)')
     parser.add_argument('--export-site', action='store_true',
                         help='Export all PDFs as a static site to site/')
+    parser.add_argument('--pdf-dir',
+                        help='Path to PDF folder (default: EM2 Fractions Assessments)')
+    parser.add_argument('--stem',
+                        help='Stem name for multi-stem pipeline (e.g., fractions)')
     args = parser.parse_args()
 
     # --export-site implies --all
@@ -502,7 +524,11 @@ def main():
 
     # Resolve PDF directory relative to script location
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    pdf_dir = os.path.join(script_dir, PDF_DIR)
+    if args.pdf_dir:
+        # If absolute, use as-is; if relative, resolve from cwd
+        pdf_dir = os.path.abspath(args.pdf_dir)
+    else:
+        pdf_dir = os.path.join(script_dir, PDF_DIR)
 
     pdf_files = sorted([
         os.path.join(pdf_dir, f)
@@ -560,7 +586,7 @@ def main():
         print()
 
     if args.export_site:
-        export_static_site(all_questions, script_dir)
+        export_static_site(all_questions, script_dir, stem=args.stem)
 
     if conn:
         conn.close()

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KC Browser — EM2 Fractions</title>
+<title>KC Browser — EM2</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
@@ -102,6 +102,19 @@
     display: flex;
     align-items: center;
     gap: 6px;
+  }
+
+  .filter-group.stem-filter select {
+    font-weight: 600;
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .filter-separator {
+    width: 1px;
+    height: 24px;
+    background: var(--border);
+    margin: 0 4px;
   }
 
   .reset-btn {
@@ -394,11 +407,16 @@
 <body>
 
 <header>
-  <h1>EM2 <span>Fractions</span> &mdash; Knowledge Components</h1>
+  <h1 id="page-title">EM2 <span>Knowledge Components</span></h1>
   <span class="stats" id="stats">Loading...</span>
 </header>
 
 <div class="toolbar">
+  <div class="filter-group stem-filter">
+    <label>Stem</label>
+    <select id="filter-stem"><option value="">Loading...</option></select>
+  </div>
+  <div class="filter-separator"></div>
   <div class="filter-group">
     <label>Grade</label>
     <select id="filter-grade"><option value="">All</option></select>
@@ -431,6 +449,8 @@
 </div>
 
 <script>
+let stems = [];
+let currentStem = null;
 let kcs = [];
 let questions = [];
 let questionMap = {}; // question_id -> question object
@@ -444,6 +464,89 @@ function questionId(q) {
 }
 
 async function init() {
+  // Try to load stems manifest
+  try {
+    const stemsResp = await fetch('data/stems.json');
+    if (stemsResp.ok) {
+      stems = await stemsResp.json();
+    }
+  } catch (e) {
+    // No stems.json — fall back to flat paths
+  }
+
+  if (stems.length > 0) {
+    populateStemSelector();
+
+    // Check URL hash for stem selection
+    const hash = window.location.hash.slice(1);
+    const matchingStem = stems.find(s => s.id === hash);
+    if (matchingStem) {
+      document.getElementById('filter-stem').value = matchingStem.id;
+      await loadStem(matchingStem.id);
+    } else {
+      // Default to first stem
+      document.getElementById('filter-stem').value = stems[0].id;
+      await loadStem(stems[0].id);
+    }
+  } else {
+    // Legacy fallback: flat paths (no stems)
+    document.getElementById('filter-stem').closest('.filter-group').style.display = 'none';
+    document.querySelector('.filter-separator').style.display = 'none';
+    await loadLegacyData();
+  }
+}
+
+function populateStemSelector() {
+  const el = document.getElementById('filter-stem');
+  el.innerHTML = stems.map(s =>
+    `<option value="${s.id}">${s.label} (${s.kc_count} KCs)</option>`
+  ).join('');
+  el.addEventListener('change', async () => {
+    await loadStem(el.value);
+  });
+}
+
+async function loadStem(stemId) {
+  currentStem = stemId;
+  window.location.hash = stemId;
+
+  const stem = stems.find(s => s.id === stemId);
+  const label = stem ? stem.label : stemId;
+
+  document.getElementById('page-title').innerHTML =
+    `EM2 <span>${escapeHtml(label)}</span> &mdash; Knowledge Components`;
+  document.title = `KC Browser — EM2 ${label}`;
+
+  document.getElementById('kc-list').innerHTML =
+    '<div class="loading">Loading knowledge components...</div>';
+
+  try {
+    const [kcResp, qResp] = await Promise.all([
+      fetch(`data/${stemId}/kcs.json`),
+      fetch(`data/${stemId}/questions.json`)
+    ]);
+
+    if (!kcResp.ok || !qResp.ok) {
+      throw new Error('Failed to load data');
+    }
+
+    kcs = await kcResp.json();
+    questions = await qResp.json();
+  } catch (e) {
+    document.getElementById('kc-list').innerHTML =
+      `<div class="empty-state"><h2>Failed to load data</h2><p>Could not load data for stem "${escapeHtml(stemId)}"</p></div>`;
+    return;
+  }
+
+  onDataLoaded();
+}
+
+async function loadLegacyData() {
+  // Flat paths — backward compatible
+  document.getElementById('page-title').innerHTML =
+    'EM2 <span>Fractions</span> &mdash; Knowledge Components';
+  document.title = 'KC Browser — EM2 Fractions';
+
   const [kcResp, qResp] = await Promise.all([
     fetch('data/kcs.json'),
     fetch('data/questions.json')
@@ -451,7 +554,12 @@ async function init() {
   kcs = await kcResp.json();
   questions = await qResp.json();
 
+  onDataLoaded();
+}
+
+function onDataLoaded() {
   // Build lookup map: question_id -> question
+  questionMap = {};
   questions.forEach(q => {
     questionMap[questionId(q)] = q;
   });
@@ -489,13 +597,14 @@ function populateFilters() {
 
 function fillSelect(id, values) {
   const el = document.getElementById(id);
-  const current = el.value;
   el.innerHTML = '<option value="">All</option>';
   values.forEach(v => {
     el.innerHTML += `<option value="${v}">${v}</option>`;
   });
-  el.value = current;
-  el.addEventListener('change', render);
+  // Remove old listener and add new one
+  const newEl = el.cloneNode(true);
+  el.parentNode.replaceChild(newEl, el);
+  newEl.addEventListener('change', render);
 }
 
 document.getElementById('search').addEventListener('input', render);
@@ -677,9 +786,19 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
 });
 
+// Handle back/forward navigation
+window.addEventListener('hashchange', async () => {
+  if (stems.length === 0) return;
+  const hash = window.location.hash.slice(1);
+  const matchingStem = stems.find(s => s.id === hash);
+  if (matchingStem && matchingStem.id !== currentStem) {
+    document.getElementById('filter-stem').value = matchingStem.id;
+    await loadStem(matchingStem.id);
+  }
+});
+
 // Wait for KaTeX to load, then init
 document.addEventListener('DOMContentLoaded', () => {
-  // KaTeX scripts are deferred, so we poll briefly
   const start = Date.now();
   function tryInit() {
     if (window.renderMathInElement || Date.now() - start > 3000) {

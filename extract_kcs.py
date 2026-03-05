@@ -15,6 +15,9 @@ Usage:
 
     # Skip assessments that already have cached responses
     python extract_kcs.py --resume
+
+    # Process for a specific stem (multi-stem pipeline)
+    python extract_kcs.py --stem fractions --resume
 """
 
 import argparse
@@ -294,13 +297,14 @@ def merge_kcs(all_kcs):
     return [merged[k] for k in sorted(merged.keys())]
 
 
-def process_assessment(key, questions, client, model, script_dir, resume=False):
+def process_assessment(key, questions, client, model, script_dir, resume=False, raw_dir=None):
     """Process one assessment group: send images to API and parse KCs."""
     assess_name = assessment_id_from_key(key)
     print(f"\nProcessing: {assess_name} ({len(questions)} questions)")
 
     # Check for cached response
-    raw_dir = os.path.join(script_dir, RAW_OUTPUT_DIR)
+    if raw_dir is None:
+        raw_dir = os.path.join(script_dir, RAW_OUTPUT_DIR)
     os.makedirs(raw_dir, exist_ok=True)
     raw_path = os.path.join(raw_dir, f"{assess_name}.json")
 
@@ -369,11 +373,24 @@ def main():
         '--model', default=DEFAULT_MODEL,
         help=f'OpenAI model to use (default: {DEFAULT_MODEL})'
     )
+    parser.add_argument(
+        '--stem',
+        help='Stem name for multi-stem pipeline (e.g., fractions)'
+    )
     args = parser.parse_args()
 
     # Resolve paths relative to script location
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    questions_path = os.path.join(script_dir, QUESTIONS_JSON)
+
+    # Stem-scoped paths
+    if args.stem:
+        questions_path = os.path.join(script_dir, SITE_DIR, "data", args.stem, "questions.json")
+        kcs_output = os.path.join(script_dir, SITE_DIR, "data", args.stem, "kcs.json")
+        raw_dir = os.path.join(script_dir, "extracted_kcs", args.stem, "raw")
+    else:
+        questions_path = os.path.join(script_dir, QUESTIONS_JSON)
+        kcs_output = os.path.join(script_dir, KCS_JSON)
+        raw_dir = os.path.join(script_dir, RAW_OUTPUT_DIR)
 
     # Load questions
     with open(questions_path) as f:
@@ -418,7 +435,8 @@ def main():
     # Process each assessment
     all_kcs = []
     for key in sorted(groups.keys()):
-        kcs = process_assessment(key, groups[key], client, args.model, script_dir, args.resume)
+        kcs = process_assessment(key, groups[key], client, args.model, script_dir,
+                                 args.resume, raw_dir=raw_dir)
         if kcs:
             all_kcs.extend(kcs)
         time.sleep(1)  # Rate limit courtesy
@@ -430,12 +448,13 @@ def main():
     # Merge and output
     merged = merge_kcs(all_kcs)
 
-    kcs_path = os.path.join(script_dir, KCS_JSON)
-    with open(kcs_path, 'w') as f:
+    os.makedirs(os.path.dirname(kcs_output), exist_ok=True)
+    with open(kcs_output, 'w') as f:
         json.dump(merged, f, indent=2)
 
+    kcs_rel = os.path.relpath(kcs_output, script_dir)
     print(f"\n{'='*60}")
-    print(f"Wrote {len(merged)} unique KCs to {KCS_JSON}")
+    print(f"Wrote {len(merged)} unique KCs to {kcs_rel}")
     print(f"Label distribution:")
     label_counts = defaultdict(int)
     for kc in merged:

@@ -1,5 +1,8 @@
 # Source PDFs (too large for git)
-EM2 Fractions Assessments/
+EM2 */
+
+# Question images (too large for git at scale — deploy via netlify)
+site/images/
 
 # Environment and secrets
 .env
