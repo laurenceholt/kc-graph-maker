@@ -1,0 +1,26 @@
+[
+  {
+    "id": "G3_M5",
+    "label": "Grade 3 Module 5",
+    "kc_count": 36,
+    "question_count": 45
+  },
+  {
+    "id": "G4_M4",
+    "label": "Grade 4 Module 4",
+    "kc_count": 37,
+    "question_count": 50
+  },
+  {
+    "id": "G5_M2",
+    "label": "Grade 5 Module 2",
+    "kc_count": 33,
+    "question_count": 42
+  },
+  {
+    "id": "G5_M3",
+    "label": "Grade 5 Module 3",
+    "kc_count": 36,
+    "question_count": 45
+  }
+]

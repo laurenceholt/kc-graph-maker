@@ -1,0 +1,637 @@
+[
+  {
+    "kc_id": "add_fractions_common_denominator",
+    "title": "Add Fractions with a Common Denominator",
+    "description": "Add fractions that share the same denominator by adding the numerators and keeping the denominator the same.",
+    "condition": "Two fractions with the same denominator are added (e.g., a/b + c/b).",
+    "response": "Add the numerators and keep the denominator: (a+c)/b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{2}{4} + \\frac{3}{4} = \\frac{2+3}{4} = \\frac{5}{4}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6",
+      "G5_M2_a1_q6",
+      "G5_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "add_fractions_unlike_denominators",
+    "title": "Add Fractions with Unlike Denominators",
+    "description": "To add fractions with different denominators, rename them with a common denominator and then add.",
+    "condition": "Two or more fractions with different denominators are being added.",
+    "response": "Find a common denominator, rewrite each fraction as an equivalent fraction with that denominator, then add.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{2} + \\frac{4}{7} = \\frac{7}{14} + \\frac{8}{14} = \\frac{15}{14}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "add_mixed_numbers",
+    "title": "Add Mixed Numbers",
+    "description": "To add mixed numbers, add whole numbers and fractional parts, renaming fractions as needed.",
+    "condition": "Two mixed numbers are being added.",
+    "response": "Add whole numbers and add fractional parts (using common denominators if needed), then combine.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$1\\frac{1}{6} + 4\\frac{2}{9} = 5\\frac{7}{18}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TD_a1_q1",
+      "G5_M2_TD_a1_q4",
+      "G5_M2_a1_q2",
+      "G5_M2_a1_q8",
+      "G5_M2_a2_q10",
+      "G5_M2_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "add_mixed_numbers_common_denominator",
+    "title": "Add Mixed Numbers with Unlike Denominators",
+    "description": "Add mixed numbers by finding a common denominator for the fractional parts and combining whole numbers and fractions.",
+    "condition": "Two mixed numbers or a mixed number and a fraction with unlike denominators are being added.",
+    "response": "Rename fractions with a common denominator, add fractional parts, combine with whole numbers, and simplify if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$1\\frac{3}{4} + 2\\frac{2}{3} = 1\\frac{9}{12} + 2\\frac{8}{12} = 3\\frac{17}{12} = 4\\frac{5}{12}$",
+    "notes": "Includes simplifying improper fractional results.",
+    "question_ids": [
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "fraction_word_problem_addition",
+    "title": "Add Quantities in Word Problem",
+    "description": "Translate a word problem involving combined quantities into an addition expression.",
+    "condition": "A context describes multiple amounts combined into a total.",
+    "response": "Write and evaluate an addition expression representing the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$1\\frac{5}{6} + 1\\frac{1}{3} + 2\\frac{1}{2}$",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_a2_q10",
+      "G5_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "classify_value_relative_to_benchmarks",
+    "title": "Classify Value Using Benchmarks",
+    "description": "Determine whether a sum or difference is less than 1, between 1 and 2, or greater than 2 using estimation.",
+    "condition": "An expression involving fractions or mixed numbers must be compared to benchmark whole numbers (1 or 2).",
+    "response": "Estimate the value and determine whether it is <1, between 1 and 2, or >2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{2}{5} + 1\\frac{3}{7} \\approx 0.4 + 1.4 = 1.8$, which is between 1 and 2.",
+    "notes": "Uses rounding or compatible numbers.",
+    "question_ids": [
+      "G5_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compare_sum_to_benchmark_by_estimation",
+    "title": "Compare Sum to Benchmark Using Estimation",
+    "description": "Estimate sums of mixed numbers or fractions by comparing parts to benchmark numbers (like 1 or 2) to determine if a total is greater or less than a given value.",
+    "condition": "Given several fractional or mixed-number quantities and asked whether their total is greater or less than a benchmark without exact computation.",
+    "response": "Use benchmark comparisons (e.g., each part is less than 1) to justify whether the total is greater or less than the benchmark.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since $\\tfrac{7}{8}<1$, $\\tfrac{5}{8}<1$, $1\\tfrac{1}{4}<2$, and $\\tfrac{1}{2}<1$, their total is less than $1+1+2+1=5$, and can be reasoned to be less than 4 using tighter bounds.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_a1_q5",
+      "G5_M2_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "convert_improper_to_mixed",
+    "title": "Convert Improper Fraction to Mixed Number",
+    "description": "Rewrite an improper fraction as a mixed number by dividing the numerator by the denominator.",
+    "condition": "An improper fraction a/b where a > b is given and a mixed number form is required.",
+    "response": "Divide a by b to get quotient q and remainder r; write q r/b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{14}{12} = 1\\frac{2}{12}$",
+    "notes": "Remainder becomes the new numerator. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "convert_mixed_to_improper",
+    "title": "Convert Mixed Number to Improper Fraction",
+    "description": "Rewrite a mixed number as an improper fraction before performing operations.",
+    "condition": "A mixed number must be combined with another fraction for addition or subtraction.",
+    "response": "Multiply the whole number by the denominator, add the numerator, and place over the original denominator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3\\frac{1}{4} = \\frac{3 \\times 4 + 1}{4} = \\frac{13}{4}$",
+    "notes": "Often used as an intermediate computation step.",
+    "question_ids": [
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "count_frequency_on_line_plot",
+    "title": "Count Frequency on Line Plot",
+    "description": "Determine how many data points occur at a given value by counting marks above that value.",
+    "condition": "A line plot with stacked marks above labeled values.",
+    "response": "Count the number of marks above a specific value to determine its frequency.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If three X's are above $2\\tfrac{3}{4}$, then its frequency is 3.",
+    "notes": "Visual recognition and counting skill.",
+    "question_ids": [
+      "G5_M2_TD_a1_q2",
+      "G5_M2_TD_a1_q3",
+      "G5_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_total_by_count",
+    "title": "Divide Total by Number of Equal Groups",
+    "description": "Find the value of each group by dividing the total amount by the number of equal groups.",
+    "condition": "A total quantity and a number of equal groups are given.",
+    "response": "Compute total \u00f7 number of groups to find the amount in each group.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If total weight is $9$ pounds for $12$ blocks, each weighs $9 \\div 12 = \\tfrac{3}{4}$ pound.",
+    "notes": "Used to find equal block weight in Q5.",
+    "question_ids": [
+      "G5_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_whole_by_whole",
+    "title": "Divide Whole Numbers",
+    "description": "Divide one whole number by another to find a quotient.",
+    "condition": "Expression of the form a \u00f7 b where a and b are whole numbers.",
+    "response": "Compute the quotient as a fraction or mixed number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$25 \\div 6 = 4\\frac{1}{6}$.",
+    "notes": "May result in improper fraction or mixed number.",
+    "question_ids": [
+      "G5_M2_TA_a1_q1",
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "find_common_denominator",
+    "title": "Find Common Denominator",
+    "description": "Rename fractions with equivalent fractions that share a common denominator before adding or subtracting.",
+    "condition": "Two fractions with different denominators are being added or subtracted.",
+    "response": "Generate equivalent fractions with a common denominator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{4} + \\frac{2}{5} = \\frac{5}{20} + \\frac{8}{20}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6",
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q3",
+      "G5_M2_TC_a1_q4",
+      "G5_M2_a1_q6",
+      "G5_M2_a1_q7",
+      "G5_M2_a1_q9",
+      "G5_M2_a2_q2",
+      "G5_M2_a2_q6",
+      "G5_M2_a2_q7",
+      "G5_M2_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "interpret_remainder_as_subtraction",
+    "title": "Find Remaining Amount by Subtraction",
+    "description": "When a total amount is given and some parts are used, subtract the used amounts from the total to find the remainder.",
+    "condition": "A starting total is given and one or more amounts are used or removed.",
+    "response": "Subtract the used amounts from the starting total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$5\\frac{7}{8} - 1\\frac{3}{8} - 1\\frac{1}{2} = 3$",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_a1_q10",
+      "G5_M2_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "generate_equivalent_fraction_by_scaling",
+    "title": "Generate Equivalent Fraction by Scaling",
+    "description": "Create an equivalent fraction by multiplying numerator and denominator by the same nonzero number.",
+    "condition": "Given a fraction a/b and a need for an equivalent fraction.",
+    "response": "Compute (a\u00d7k)/(b\u00d7k) for some nonzero k.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{6}{3} = \\frac{6 \\times 2}{3 \\times 2} = \\frac{12}{6}$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "identify_extreme_value_on_line_plot",
+    "title": "Identify Greatest or Least Value on Line Plot",
+    "description": "Determine the greatest or least data value represented on a line plot.",
+    "condition": "A line plot is shown and the problem asks for the greatest or least value.",
+    "response": "Locate the rightmost (greatest) or leftmost (least) data point that has a mark.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If the rightmost X is at $2\\tfrac{7}{8}$, that is the greatest value.",
+    "notes": "Must distinguish between axis maximum and actual data point.",
+    "question_ids": [
+      "G5_M2_TD_a1_q2",
+      "G5_M2_TD_a1_q3",
+      "G5_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_heaviest_values_on_line_plot",
+    "title": "Identify Largest Data Values on Line Plot",
+    "description": "Select the largest data values shown on a line plot for further calculation.",
+    "condition": "A line plot is given and the problem asks for the heaviest or largest values (e.g., top 3).",
+    "response": "Scan from right to left and select the specified number of largest data points.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the three rightmost X's are at $1\\tfrac{1}{4}, 1\\tfrac{1}{8}, 1$, select those values.",
+    "notes": "Precedes summing in Q1.",
+    "question_ids": [
+      "G5_M2_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_area_model_fraction",
+    "title": "Interpret Area Model as Fraction",
+    "description": "Determine the fraction represented by a shaded area model by counting shaded parts over total equal parts.",
+    "condition": "A shape is partitioned into equal parts with some parts shaded.",
+    "response": "Write the fraction as (number of shaded parts)/(total equal parts).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 9 of 12 equal parts are shaded, the fraction is $\\frac{9}{12}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TB_a1_q3",
+      "G5_M2_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_axis_interval",
+    "title": "Interpret Axis Interval on Line Plot",
+    "description": "Determine the interval length between consecutive tick marks on a number line.",
+    "condition": "A number line with evenly spaced tick marks and labeled fractional values.",
+    "response": "Identify the difference between consecutive labeled values to state the interval length.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If labels increase from $4$ to $4\\tfrac{1}{8}$, the interval length is $\\tfrac{1}{8}$.",
+    "notes": "Requires understanding of fractional increments.",
+    "question_ids": [
+      "G5_M2_TD_a1_q2",
+      "G5_M2_TD_a1_q3",
+      "G5_M2_TD_a1_q4",
+      "G5_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "construct_division_equation_from_fraction",
+    "title": "Interpret Fraction as Division",
+    "description": "Recognize that a fraction a/b represents the division expression a \u00f7 b.",
+    "condition": "A fraction written as a/b representing equal sharing.",
+    "response": "Write or interpret it as the division expression a \u00f7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{14}{6}$ means $14 \\div 6$.",
+    "notes": "Core interpretation of fractions as division.",
+    "question_ids": [
+      "G5_M2_TA_a1_q1",
+      "G5_M2_TA_a1_q2",
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_a1_q1",
+      "G5_M2_a1_q3",
+      "G5_M2_a1_q4",
+      "G5_M2_a2_q1",
+      "G5_M2_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_shaded_fraction_model",
+    "title": "Interpret Shaded Fraction Model",
+    "description": "Determine the fraction represented by shaded parts in a model.",
+    "condition": "A visual model with some parts shaded out of equal partitions.",
+    "response": "Express shaded amount as a fraction of the whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 1 out of 3 equal parts is shaded, the fraction is $\\frac{1}{3}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TA_a1_q2",
+      "G5_M2_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "model_equal_sharing_division",
+    "title": "Model Division as Equal Sharing",
+    "description": "Represent division as distributing a total equally among a given number of groups.",
+    "condition": "Word problem describing total amount shared equally among n groups.",
+    "response": "Represent as a \u00f7 n and interpret as equal parts per group.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "9 tablespoons shared among 4 loaves is $9 \\div 4 = \\frac{9}{4}$ per loaf.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_a1_q3",
+      "G5_M2_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "model_sum_on_number_line",
+    "title": "Model Fraction Addition on a Number Line",
+    "description": "Represent addition of mixed numbers as a movement to the right on a number line.",
+    "condition": "A word problem asks for a visual or number line model of adding mixed numbers.",
+    "response": "Start at the first value and draw a rightward arrow representing the second addend to show the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Start at $1\\frac{3}{4}$ and move right $2\\frac{2}{3}$ to land at $4\\frac{5}{12}$ on the number line.",
+    "notes": "Graphical representation skill.",
+    "question_ids": [
+      "G5_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "plot_value_on_line_plot",
+    "title": "Plot Value on Line Plot",
+    "description": "Place a mark above the correct location on a line plot to represent a data value.",
+    "condition": "A numerical value is given and a corresponding line plot scale is shown.",
+    "response": "Locate the matching position on the number line and draw a mark above it.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To plot $2\\tfrac{5}{8}$, place an X above the tick labeled $2\\tfrac{5}{8}$.",
+    "notes": "Used when adding new data points.",
+    "question_ids": [
+      "G5_M2_TD_a1_q3",
+      "G5_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "select_correct_operation_symbol",
+    "title": "Select Appropriate Operation Symbol",
+    "description": "Choose the correct arithmetic operation symbol to match a target result.",
+    "condition": "Given numbers and a target result requiring an operation between them.",
+    "response": "Insert the correct operation symbol (e.g., \u00f7).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "To make $14 \\div 6 = \\frac{14}{6}$, choose the \u00f7 symbol.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "subtract_fractions_common_denominator",
+    "title": "Subtract Fractions with a Common Denominator",
+    "description": "Subtract fractions that share the same denominator by subtracting the numerators and keeping the denominator the same.",
+    "condition": "Two fractions with the same denominator are subtracted (e.g., a/b \u2212 c/b).",
+    "response": "Subtract the numerators and keep the denominator: (a\u2212c)/b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6}$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q5",
+      "G5_M2_a1_q7",
+      "G5_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "subtract_fractions_unlike_denominators",
+    "title": "Subtract Fractions with Unlike Denominators",
+    "description": "To subtract fractions with different denominators, rename them with a common denominator and then subtract the numerators.",
+    "condition": "Two fractions with different denominators are being subtracted.",
+    "response": "Find a common denominator, rewrite as equivalent fractions, then subtract the numerators.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{7}{10} - \\frac{1}{4} = \\frac{14}{20} - \\frac{5}{20} = \\frac{9}{20}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q4",
+      "G5_M2_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "subtract_mixed_numbers_like_denominators",
+    "title": "Subtract Mixed Numbers with Like Denominators",
+    "description": "Subtract mixed numbers that share the same fractional denominator by subtracting whole parts and fractional parts.",
+    "condition": "Two mixed numbers with the same fractional denominator are being subtracted.",
+    "response": "Subtract whole numbers and subtract fractional parts; regroup if necessary.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3\\frac{1}{8} - 1\\frac{7}{8} = 1\\frac{2}{8}$",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q3",
+      "G5_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "fraction_word_problem_subtraction",
+    "title": "Subtract to Find Difference in Context",
+    "description": "Represent and solve a word problem asking how much more or less using subtraction.",
+    "condition": "A context asks how many more or how much difference between quantities.",
+    "response": "Write and evaluate a subtraction expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total needed $-\\,$ amount available.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "subtract_stacked_heights",
+    "title": "Subtract to Find Missing Height",
+    "description": "Find a missing stacked measurement by subtracting the known combined height from the total height.",
+    "condition": "A total height and one or more component heights are given; one component height is unknown.",
+    "response": "Add known component heights if needed and subtract from the total to find the missing height.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8\\frac{1}{4} - 4\\frac{5}{8} - 2\\frac{3}{4} = \\frac{7}{8}$ inches",
+    "notes": "Multi-step subtraction of mixed numbers.",
+    "question_ids": [
+      "G5_M2_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "translate_word_problem_to_division_expression",
+    "title": "Translate Context to Division Expression",
+    "description": "Translate a real-world sharing situation into a numerical division expression.",
+    "condition": "Word problem stating total quantity and number of equal groups.",
+    "response": "Write division expression total \u00f7 number of groups.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "25 ounces for 6 pizzas \u2192 $25 \\div 6$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "convert_word_problem_to_addition",
+    "title": "Translate Word Problem to Addition Expression",
+    "description": "Interpret a word problem describing combined quantities as an addition expression.",
+    "condition": "A word problem describes two distances or quantities combined (e.g., walks 2/3 mile and then 1/6 mile).",
+    "response": "Write an addition expression representing the total (e.g., $2/3 + 1/6$).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Ryan walks $\\frac{2}{3}$ mile and $\\frac{1}{6}$ mile, so total is $\\frac{2}{3} + \\frac{1}{6}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "use_benchmark_fractions_for_estimation",
+    "title": "Use Benchmark Fractions to Estimate",
+    "description": "Estimate sums or differences of fractions by comparing each fraction to benchmark values such as 0, 1/2, or 1.",
+    "condition": "Asked to estimate a fraction sum or difference and classify relative to 1 or 2.",
+    "response": "Approximate each fraction using benchmarks and determine whether the result is less than 1, between 1 and 2, or greater than 2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{8}{5} \\approx 1.6$ and $\\frac{3}{4} \\approx 0.75$, so sum $\\approx 2.35 > 2$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M2_TB_a1_q4"
+    ]
+  }
+]

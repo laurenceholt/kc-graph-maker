@@ -1,0 +1,683 @@
+[
+  {
+    "kc_id": "add_fractions_common_denominator",
+    "title": "Add Fractions with a Common Denominator",
+    "description": "Add fractions that share the same denominator by adding the numerators and keeping the denominator the same.",
+    "condition": "Two fractions with the same denominator are added (e.g., a/b + c/b).",
+    "response": "Add the numerators and keep the denominator: (a+c)/b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{2}{4} + \\frac{3}{4} = \\frac{2+3}{4} = \\frac{5}{4}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M3_TA_a1_q6",
+      "G5_M3_TD_a1_q2",
+      "G5_M3_TD_a1_q3",
+      "G5_M3_a1_q2",
+      "G5_M3_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "add_fractions_unlike_denominators",
+    "title": "Add Fractions with Unlike Denominators",
+    "description": "To add fractions with different denominators, rename them with a common denominator and then add.",
+    "condition": "Two or more fractions with different denominators are being added.",
+    "response": "Find a common denominator, rewrite each fraction as an equivalent fraction with that denominator, then add.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{2} + \\frac{4}{7} = \\frac{7}{14} + \\frac{8}{14} = \\frac{15}{14}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "sequential_fraction_application",
+    "title": "Apply Fractions Sequentially to Remainder",
+    "description": "After removing a fraction of a quantity, compute a fraction of the remaining amount.",
+    "condition": "A problem states that a fraction of a quantity is used, then a fraction of the remaining amount is used.",
+    "response": "First subtract the initial fractional amount, then multiply the remainder by the next fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Start with $\\frac{4}{5}$. Use $\\frac{1}{2}$: remainder $\\frac{4}{5} - \\frac{2}{5} = \\frac{2}{5}$. Then use $\\frac{1}{3}$ of $\\frac{2}{5}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TD_a1_q4",
+      "G5_M3_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_division_expressions",
+    "title": "Compare Division Expressions Using Structure",
+    "description": "Compare two division expressions by reasoning about how the divisor affects the quotient without fully computing both.",
+    "condition": "Two numerical division expressions are given for comparison (e.g., a \u00f7 b and a \u00f7 c, or a \u00f7 b and a \u00d7 1/b).",
+    "response": "Determine whether one expression is greater than, less than, or equal to the other using properties of division and multiplication.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Compare $\\frac{1}{6} \\div 11$ and $\\frac{1}{6} \\div 2$. Since dividing by a larger number gives a smaller result, $\\frac{1}{6} \\div 11 < \\frac{1}{6} \\div 2$.",
+    "notes": "Includes reasoning such as dividing by a unit fraction makes a number larger.",
+    "question_ids": [
+      "G5_M3_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_fraction_to_one",
+    "title": "Compare Fraction to One",
+    "description": "Determine whether a fraction is less than, equal to, or greater than 1 by comparing numerator and denominator.",
+    "condition": "A fraction $\\frac{a}{b}$ is given and must be compared to 1.",
+    "response": "State whether $\\frac{a}{b} < 1$, $=1$, or $>1$ based on numerator and denominator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since $5<9$, $\\frac{5}{9}<1$.",
+    "notes": "Core reasoning for multiplicative comparison. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M3_TA_a1_q5",
+      "G5_M3_TA_a1_q7",
+      "G5_M3_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_expression_values",
+    "title": "Compare Numerical Expressions",
+    "description": "Evaluate two numerical expressions and compare their values using >, <, or =.",
+    "condition": "Two numerical expressions are given with a blank comparison symbol between them.",
+    "response": "Evaluate both expressions and write >, <, or = based on their values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $\\frac{1}{2} + \\frac{1}{4} = \\frac{3}{4}$ and $\\frac{2}{3} > \\frac{3}{4}$ is false, then write $<$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compare_products_same_factor",
+    "title": "Compare Products with Same Positive Factor",
+    "description": "When two expressions share the same positive factor, compare the other factors to determine the inequality.",
+    "condition": "Two products of the form a \u00d7 c and b \u00d7 c where c > 0.",
+    "response": "Compare a and b and use the same inequality symbol for the products.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Compare $\\frac{5}{4} \\times 3$ and $\\frac{9}{10} \\times 3$. Since $\\frac{5}{4} > \\frac{9}{10}$ and $3>0$, then $\\frac{5}{4} \\times 3 > \\frac{9}{10} \\times 3$.",
+    "notes": "Applies only when the common factor is positive.",
+    "question_ids": [
+      "G5_M3_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compute_fraction_of_quantity",
+    "title": "Compute a Fraction of a Quantity",
+    "description": "Find a fractional part of a given whole number or fraction by multiplying.",
+    "condition": "A quantity and a fraction 'of' that quantity are given.",
+    "response": "Multiply the quantity by the fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{3}$ of $\\frac{3}{4}$ is $\\frac{1}{3} \\times \\frac{3}{4} = \\frac{1}{4}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TD_a1_q4",
+      "G5_M3_TD_a1_q5",
+      "G5_M3_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "convert_larger_to_smaller_unit",
+    "title": "Convert Larger to Smaller Unit",
+    "description": "Convert a quantity from a larger unit to a smaller unit using a known conversion factor by multiplying.",
+    "condition": "A measurement in a larger unit (e.g., miles) must be expressed in a smaller unit (e.g., yards), and the conversion rate is known.",
+    "response": "Multiply by the number of smaller units in one larger unit.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{5}{4}$ miles $\\times 1760$ yards per mile $=2200$ yards.",
+    "notes": "Requires knowledge of conversion rate (e.g., 1 mile = 1760 yards).",
+    "question_ids": [
+      "G5_M3_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "convert_measurement_using_rate",
+    "title": "Convert Measurement Using Unit Rate",
+    "description": "Convert between customary units using a multiplicative conversion factor.",
+    "condition": "A quantity in one customary unit and a known equivalence (e.g., 16 ounces = 1 pound) are given.",
+    "response": "Multiply or divide by the conversion factor to express in the target unit.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$76 \\div 16 = 4\\frac{12}{16}=4\\frac{3}{4}$ pounds.",
+    "notes": "Includes division when converting smaller to larger units.",
+    "question_ids": [
+      "G5_M3_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_miles_to_feet",
+    "title": "Convert Miles to Feet",
+    "description": "Convert a distance in miles to feet using the fixed conversion factor.",
+    "condition": "A distance is given in miles and needs to be expressed in feet.",
+    "response": "Multiply the number of miles by 5280.",
+    "cond_type": "Constant",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$\\frac{9}{40}$ miles $\\times 5280 = 1188$ feet.",
+    "notes": "5280 feet = 1 mile is a memorized fact. [merged: condition varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M3_a1_q8",
+      "G5_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "count_shaded_parts",
+    "title": "Count Shaded Parts",
+    "description": "Count the number of shaded regions in an area model.",
+    "condition": "An area model with some parts shaded.",
+    "response": "Count shaded regions to determine numerator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If 10 of 18 parts are shaded, the shaded count is 10.",
+    "notes": "Primarily perceptual counting.",
+    "question_ids": [
+      "G5_M3_TB_a1_q1",
+      "G5_M3_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "count_total_equal_parts",
+    "title": "Count Total Equal Parts in Area Model",
+    "description": "Determine the total number of equal parts by multiplying the number of rows and columns.",
+    "condition": "A rectangular area model partitioned into r rows and c columns.",
+    "response": "Compute r \u00d7 c to find total equal parts.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If a model has 6 rows and 3 columns, then total parts = $6 \\times 3 = 18$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_product_with_one",
+    "title": "Determine Product Size Using Factor Relative to 1",
+    "description": "Determine whether a product is greater than, equal to, or less than one factor based on whether the other factor is less than, equal to, or greater than 1.",
+    "condition": "A product a \u00d7 b where a is positive and b is compared to 1.",
+    "response": "If b < 1 then a \u00d7 b < a; if b = 1 then equal; if b > 1 then a \u00d7 b > a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Since $\\frac{2}{5} < 1$, $\\frac{2}{5} \\times \\frac{4}{3}$ is less than $\\frac{4}{3}$.",
+    "notes": "Assumes positive factors.",
+    "question_ids": [
+      "G5_M3_TB_a1_q4",
+      "G5_M3_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_fraction_by_whole",
+    "title": "Divide a Fraction by a Whole Number",
+    "description": "Compute the quotient when a fraction is divided by a whole number.",
+    "condition": "An expression of the form $\\frac{a}{b} \\div n$, where n is a whole number.",
+    "response": "Multiply the fraction by $\\frac{1}{n}$ to get $\\frac{a}{b \\cdot n}$ (or equivalent simplified form).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{1}{3} \\div 4 = \\frac{1}{3} \\times \\frac{1}{4} = \\frac{1}{12}$.",
+    "notes": "Often interpreted as partitioning a fraction into equal parts.",
+    "question_ids": [
+      "G5_M3_TC_a1_q1",
+      "G5_M3_TC_a1_q2",
+      "G5_M3_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "divide_whole_by_fraction",
+    "title": "Divide a Whole Number by a Fraction",
+    "description": "Compute how many fractional units fit into a whole number.",
+    "condition": "An expression of the form $n \\div \\frac{a}{b}$, where n is a whole number and $\\frac{a}{b}$ is a fraction.",
+    "response": "Multiply n by the reciprocal of the fraction: $n \\times \\frac{b}{a}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$4 \\div \\frac{1}{3} = 4 \\times 3 = 12$.",
+    "notes": "Conceptually counts how many fractional parts fit into the whole.",
+    "question_ids": [
+      "G5_M3_TC_a1_q1",
+      "G5_M3_TC_a1_q2",
+      "G5_M3_TC_a1_q3",
+      "G5_M3_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "divide_by_fraction_multiply_reciprocal",
+    "title": "Divide by a Fraction Using Reciprocal",
+    "description": "Divide a number by a fraction by multiplying by the reciprocal of the fraction.",
+    "condition": "An expression of the form a \u00f7 (b/c) where b/c \u2260 0.",
+    "response": "Rewrite as a \u00d7 (c/b) and multiply.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8 \\div \\frac{1}{3} = 8 \\times 3 = 24$",
+    "notes": "[merged: condition varies]",
+    "question_ids": [
+      "G5_M3_TC_a1_q1",
+      "G5_M3_TC_a1_q2",
+      "G5_M3_TC_a1_q6",
+      "G5_M3_TD_a1_q1",
+      "G5_M3_a1_q10",
+      "G5_M3_a1_q2",
+      "G5_M3_a1_q4",
+      "G5_M3_a1_q5",
+      "G5_M3_a2_q10",
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q4",
+      "G5_M3_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_fraction_more_than_one_effect",
+    "title": "Effect of Multiplying by Fraction Greater Than 1",
+    "description": "Recognize that multiplying a positive number by a fraction greater than 1 results in a product greater than the original number.",
+    "condition": "A positive number is multiplied by a fraction known to be greater than 1.",
+    "response": "Conclude that the product is greater than the original number.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "Since $\\frac{9}{4}>1$, $\\frac{9}{4}\\times 13>13$.",
+    "notes": "Response type treated as Constant because direction of comparison (greater than) is fixed.",
+    "question_ids": [
+      "G5_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_fraction_less_than_one_effect",
+    "title": "Effect of Multiplying by Fraction Less Than 1",
+    "description": "Recognize that multiplying a positive number by a fraction less than 1 results in a product less than the original number.",
+    "condition": "A positive number is multiplied by a fraction known to be less than 1.",
+    "response": "Conclude that the product is less than the original number.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "Since $\\frac{5}{9}<1$, $\\frac{5}{9}\\times 10<10$.",
+    "notes": "Response type treated as Constant because direction of comparison (less than) is fixed.",
+    "question_ids": [
+      "G5_M3_TA_a1_q7",
+      "G5_M3_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "evaluate_parentheses_first",
+    "title": "Evaluate Parentheses First",
+    "description": "Compute expressions inside parentheses before performing operations outside them.",
+    "condition": "An expression contains parentheses with operations inside and outside.",
+    "response": "Simplify the expression inside parentheses before proceeding.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$\\frac{3}{4} \\times \\left(\\frac{1}{7} + \\frac{1}{2}\\right)$ \u2192 first add inside parentheses.",
+    "notes": "Order of operations.",
+    "question_ids": [
+      "G5_M3_a1_q2",
+      "G5_M3_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "form_fraction_from_model",
+    "title": "Form Fraction from Area Model",
+    "description": "Express shaded parts over total equal parts as a fraction.",
+    "condition": "Given s shaded parts out of t total equal parts.",
+    "response": "Write the fraction s/t.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If 3 out of 20 parts are shaded, the fraction is $\\frac{3}{20}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TB_a1_q1",
+      "G5_M3_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "fraction_less_than_one_if_numerator_less",
+    "title": "Fraction Less Than One",
+    "description": "Recognize that a fraction with numerator less than denominator is less than 1.",
+    "condition": "A fraction a/b where a and b are positive whole numbers and a < b.",
+    "response": "Conclude that a/b < 1.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{3}{5} < 1$ because 3 < 5.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "interpret_of_as_multiplication",
+    "title": "Interpret 'of' as Multiplication",
+    "description": "Translate the word 'of' in a fraction context as multiplication.",
+    "condition": "A phrase of the form 'a fraction of a quantity.'",
+    "response": "Write and evaluate a multiplication expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$\\frac{1}{5}$ of 11 \u2192 $\\frac{1}{5} \\times 11$.",
+    "notes": "Language-to-symbol translation.",
+    "question_ids": [
+      "G5_M3_a1_q3",
+      "G5_M3_a1_q7",
+      "G5_M3_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "interpret_division_context_measurement",
+    "title": "Interpret Division as Measurement (How Many Groups)",
+    "description": "Translate a context asking how many groups of a given size fit into a total into a division expression.",
+    "condition": "A word problem asks how many groups of size $\\frac{a}{b}$ (or other size) fit into a total amount n.",
+    "response": "Represent the situation with a division expression (total \u00f7 group size).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "\"How many $\\frac{1}{2}$-foot pieces are in 8 feet?\" \u2192 $8 \\div \\frac{1}{2} = 16$.",
+    "notes": "Also called measurement or quotative division.",
+    "question_ids": [
+      "G5_M3_TC_a1_q3",
+      "G5_M3_TC_a1_q5",
+      "G5_M3_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_fraction_of_quantity",
+    "title": "Interpret Fraction of a Quantity",
+    "description": "Interpret 'a fraction of a quantity' as multiplication of the fraction and the quantity.",
+    "condition": "A phrase such as 'c/d of N' appears in a word problem.",
+    "response": "Write and evaluate (c/d) \u00d7 N.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$\\frac{1}{3} \\text{ of } 23 = \\frac{1}{3} \\times 23$",
+    "notes": "Conventional language-to-operation mapping.",
+    "question_ids": [
+      "G5_M3_a2_q3",
+      "G5_M3_a2_q7",
+      "G5_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "model_equal_sharing_division",
+    "title": "Model Division as Equal Sharing",
+    "description": "Represent division as distributing a total equally among a given number of groups.",
+    "condition": "Word problem describing total amount shared equally among n groups.",
+    "response": "Represent as a \u00f7 n and interpret as equal parts per group.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "9 tablespoons shared among 4 loaves is $9 \\div 4 = \\frac{9}{4}$ per loaf.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TC_a1_q3",
+      "G5_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "multiply_fractions",
+    "title": "Multiply Two Fractions",
+    "description": "Multiply two fractions by multiplying numerators and denominators.",
+    "condition": "An expression of the form (a/b) \u00d7 (c/d).",
+    "response": "Compute (a \u00d7 c)/(b \u00d7 d) and simplify if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{4}{7} \\times \\frac{3}{5} = \\frac{12}{35}$",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M3_TB_a1_q2",
+      "G5_M3_TB_a1_q3",
+      "G5_M3_TD_a1_q2",
+      "G5_M3_TD_a1_q5",
+      "G5_M3_a1_q1",
+      "G5_M3_a1_q2",
+      "G5_M3_a1_q7",
+      "G5_M3_a1_q8",
+      "G5_M3_a2_q1",
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q6",
+      "G5_M3_a2_q7",
+      "G5_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "multiply_fraction_by_whole",
+    "title": "Multiply Whole Number by Fraction",
+    "description": "Multiply a whole number by a fraction to get an improper fraction or mixed number.",
+    "condition": "Expression of the form n \u00d7 a/b.",
+    "response": "Compute (n\u00d7a)/b and simplify if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$6 \\times \\frac{4}{5} = \\frac{24}{5}$",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M3_TA_a1_q2",
+      "G5_M3_TA_a1_q3",
+      "G5_M3_TA_a1_q5",
+      "G5_M3_TA_a1_q7",
+      "G5_M3_TB_a1_q3",
+      "G5_M3_TB_a1_q4",
+      "G5_M3_a1_q1",
+      "G5_M3_a1_q3",
+      "G5_M3_a1_q9",
+      "G5_M3_a2_q1",
+      "G5_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "partition_whole_into_equal_parts",
+    "title": "Partition Whole into Equal Parts",
+    "description": "Divide a whole shape or number line interval into a specified number of equal parts.",
+    "condition": "Instruction to divide a whole into n equal parts.",
+    "response": "Create n equal partitions of the whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Partition the interval from 0 to 1 into 3 equal parts to show thirds.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M3_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "solve_fraction_inequality_by_reasoning",
+    "title": "Reason About Fraction Inequality",
+    "description": "Determine which whole numbers make a fractional multiplication inequality true by reasoning about size relative to 1.",
+    "condition": "An inequality of the form (n/5) \u00d7 16 < 16 where n is a whole number.",
+    "response": "Conclude that n must be less than 5.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $n=3$, then $\\frac{3}{5} \\times 16 < 16$ since $\\frac{3}{5}<1$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "fraction_of_total_expression",
+    "title": "Represent Fraction of a Total",
+    "description": "Express a shaded portion as a fraction of the total and multiply by the total to represent the quantity.",
+    "condition": "A model shows a fraction $\\frac{a}{b}$ of a total of $n$ objects shaded.",
+    "response": "Write the expression $\\frac{a}{b} \\times n$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $\\frac{3}{5}$ of 25 circles are shaded, write $\\frac{3}{5}\\times 25$.",
+    "notes": "Requires identifying correct fraction from visual model.",
+    "question_ids": [
+      "G5_M3_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_fraction_of_unknown_whole",
+    "title": "Solve When a Fraction of a Whole Is Known",
+    "description": "Find the whole when a fractional part of it is given.",
+    "condition": "A situation states that a known quantity equals a fraction of an unknown whole (e.g., $a = \\frac{1}{k} \\times W$).",
+    "response": "Divide the known quantity by the fraction (or multiply by its reciprocal) to find the whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If 8 quarts is $\\frac{1}{3}$ of a cooler, then total $= 8 \\div \\frac{1}{3} = 24$.",
+    "notes": "Requires interpreting fraction-of relationship before dividing.",
+    "question_ids": [
+      "G5_M3_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "subtract_fractions_common_denominator",
+    "title": "Subtract Fractions with a Common Denominator",
+    "description": "Subtract fractions that share the same denominator by subtracting the numerators and keeping the denominator the same.",
+    "condition": "Two fractions with the same denominator are subtracted (e.g., a/b \u2212 c/b).",
+    "response": "Subtract the numerators and keep the denominator: (a\u2212c)/b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6}$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M3_TD_a1_q2",
+      "G5_M3_TD_a1_q4",
+      "G5_M3_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "subtract_fractions_unlike_denominators",
+    "title": "Subtract Fractions with Unlike Denominators",
+    "description": "To subtract fractions with different denominators, rename them with a common denominator and then subtract the numerators.",
+    "condition": "Two fractions with different denominators are being subtracted.",
+    "response": "Find a common denominator, rewrite as equivalent fractions, then subtract the numerators.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{7}{10} - \\frac{1}{4} = \\frac{14}{20} - \\frac{5}{20} = \\frac{9}{20}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "translate_word_phrase_to_expression",
+    "title": "Translate Verbal Phrase to Expression",
+    "description": "Convert a verbal mathematical description into a symbolic expression using correct operations.",
+    "condition": "A verbal description involving terms like sum, difference, product, or of.",
+    "response": "Write a matching numerical expression with appropriate operations and grouping.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "\"The sum of $\\frac{3}{4}$ and the difference of $\\frac{1}{2}$ and $\\frac{1}{7}$\" \u2192 $\\frac{3}{4} + \\left(\\frac{1}{2} - \\frac{1}{7}\\right)$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TD_a1_q1",
+      "G5_M3_TD_a1_q5",
+      "G5_M3_a1_q10",
+      "G5_M3_a1_q6",
+      "G5_M3_a2_q10",
+      "G5_M3_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "order_of_operations_parentheses",
+    "title": "Use Parentheses to Control Order of Operations",
+    "description": "Insert or interpret parentheses to ensure operations are performed in the intended order.",
+    "condition": "An expression requires grouping to produce a specific value.",
+    "response": "Place parentheses to group terms so calculations follow the intended order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$6 \\times (\\frac{4}{9} + \\frac{1}{3} + \\frac{1}{9})$ ensures addition before multiplication.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TD_a1_q3"
+    ]
+  }
+]

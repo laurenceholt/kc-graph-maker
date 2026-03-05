@@ -16,8 +16,8 @@ Usage:
     # Skip assessments that already have cached responses
     python extract_kcs.py --resume
 
-    # Process for a specific stem (multi-stem pipeline)
-    python extract_kcs.py --stem fractions --resume
+    # Process for a specific module (multi-module pipeline)
+    python extract_kcs.py --module G3_M5 --resume
 """
 
 import argparse
@@ -374,19 +374,19 @@ def main():
         help=f'OpenAI model to use (default: {DEFAULT_MODEL})'
     )
     parser.add_argument(
-        '--stem',
-        help='Stem name for multi-stem pipeline (e.g., fractions)'
+        '--module',
+        help='Module ID for multi-module pipeline (e.g., G3_M5)'
     )
     args = parser.parse_args()
 
     # Resolve paths relative to script location
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Stem-scoped paths
-    if args.stem:
-        questions_path = os.path.join(script_dir, SITE_DIR, "data", args.stem, "questions.json")
-        kcs_output = os.path.join(script_dir, SITE_DIR, "data", args.stem, "kcs.json")
-        raw_dir = os.path.join(script_dir, "extracted_kcs", args.stem, "raw")
+    # Module-scoped paths
+    if args.module:
+        questions_path = os.path.join(script_dir, SITE_DIR, "data", args.module, "questions.json")
+        kcs_output = os.path.join(script_dir, SITE_DIR, "data", args.module, "kcs.json")
+        raw_dir = os.path.join(script_dir, "extracted_kcs", args.module, "raw")
     else:
         questions_path = os.path.join(script_dir, QUESTIONS_JSON)
         kcs_output = os.path.join(script_dir, KCS_JSON)

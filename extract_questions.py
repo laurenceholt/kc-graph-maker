@@ -16,8 +16,8 @@ Usage:
     # Export static site (processes all PDFs, outputs to site/)
     python extract_questions.py --export-site
 
-    # Export for a specific stem (multi-stem pipeline)
-    python extract_questions.py --export-site --pdf-dir "path/to/PDFs" --stem fractions
+    # Export for a specific module (multi-module pipeline)
+    python extract_questions.py --export-site --pdf-dir "path/to/PDFs" --module G3_M5
 """
 
 import fitz  # PyMuPDF
@@ -410,20 +410,20 @@ def save_preview(questions, pdf_basename):
     print(f"  Saved {len(questions)} images to {subdir}/")
 
 
-def export_static_site(all_questions, script_dir, stem=None):
+def export_static_site(all_questions, script_dir, module=None):
     """Export all questions as a static site (images + JSON metadata).
 
-    When stem is provided, writes to stem-scoped paths:
-      images -> site/images/{stem}/
-      metadata -> site/data/{stem}/questions.json
-      image paths in JSON -> images/{stem}/filename.png
+    When module is provided, writes to module-scoped paths:
+      images -> site/images/{module}/
+      metadata -> site/data/{module}/questions.json
+      image paths in JSON -> images/{module}/filename.png
     """
     site_dir = os.path.join(script_dir, "site")
 
-    if stem:
-        images_dir = os.path.join(site_dir, "images", stem)
-        data_dir = os.path.join(site_dir, "data", stem)
-        image_prefix = f"images/{stem}"
+    if module:
+        images_dir = os.path.join(site_dir, "images", module)
+        data_dir = os.path.join(site_dir, "data", module)
+        image_prefix = f"images/{module}"
     else:
         images_dir = os.path.join(site_dir, "images")
         data_dir = os.path.join(site_dir, "data")
@@ -462,8 +462,8 @@ def export_static_site(all_questions, script_dir, stem=None):
     with open(json_path, 'w') as f:
         json.dump(metadata_list, f, indent=2)
 
-    stem_label = f" ({stem})" if stem else ""
-    print(f"\nExported static site{stem_label}:")
+    mod_label = f" ({module})" if module else ""
+    print(f"\nExported static site{mod_label}:")
     print(f"  {len(metadata_list)} question images -> {os.path.relpath(images_dir, script_dir)}/")
     print(f"  Metadata -> {os.path.relpath(json_path, script_dir)}")
     print(f"  Total image size: {sum(len(q['image_data']) for q in all_questions) / 1024 / 1024:.1f} MB")
@@ -514,8 +514,8 @@ def main():
                         help='Export all PDFs as a static site to site/')
     parser.add_argument('--pdf-dir',
                         help='Path to PDF folder (default: EM2 Fractions Assessments)')
-    parser.add_argument('--stem',
-                        help='Stem name for multi-stem pipeline (e.g., fractions)')
+    parser.add_argument('--module',
+                        help='Module ID to process (e.g., G3_M5). Filters PDFs and scopes output.')
     args = parser.parse_args()
 
     # --export-site implies --all
@@ -535,6 +535,19 @@ def main():
         for f in os.listdir(pdf_dir)
         if f.endswith('.pdf')
     ])
+
+    # Filter PDFs to only those matching the specified module
+    if args.module:
+        filtered = []
+        for pdf_path in pdf_files:
+            try:
+                meta = parse_filename(pdf_path)
+                pdf_module_id = f"{meta['grade']}_{meta['module']}"
+                if pdf_module_id == args.module:
+                    filtered.append(pdf_path)
+            except ValueError:
+                continue
+        pdf_files = filtered
 
     if not pdf_files:
         print(f"No PDF files found in {pdf_dir}")
@@ -586,7 +599,7 @@ def main():
         print()
 
     if args.export_site:
-        export_static_site(all_questions, script_dir, stem=args.stem)
+        export_static_site(all_questions, script_dir, module=args.module)
 
     if conn:
         conn.close()

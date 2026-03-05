@@ -4,18 +4,18 @@ Deduplicate KCs that were generated independently across assessments.
 Merges question_ids and keeps the metadata from the KC with the most questions.
 
 Supports two modes:
-  --auto    GPT-based automatic duplicate detection (for new stems)
+  --auto    GPT-based automatic duplicate detection (for new modules)
   (default) Legacy hardcoded merge groups (for Fractions, backward compat)
 
 Usage:
-    # Auto-dedup for a stem
-    python dedup_kcs.py --stem fractions --auto
+    # Auto-dedup for a module
+    python dedup_kcs.py --module G3_M5 --auto
 
     # Legacy mode (hardcoded Fractions merge groups)
     python dedup_kcs.py
 
     # Dry run — show detected groups without applying
-    python dedup_kcs.py --stem fractions --auto --dry-run
+    python dedup_kcs.py --module G3_M5 --auto --dry-run
 """
 
 import argparse
@@ -256,8 +256,8 @@ def main():
     parser = argparse.ArgumentParser(
         description="Deduplicate KCs across assessments"
     )
-    parser.add_argument('--stem',
-                        help='Stem name (e.g., fractions). Uses stem-scoped paths.')
+    parser.add_argument('--module',
+                        help='Module ID (e.g., G3_M5). Uses module-scoped paths.')
     parser.add_argument('--auto', action='store_true',
                         help='Use GPT to auto-detect duplicate groups')
     parser.add_argument('--dry-run', action='store_true',
@@ -269,9 +269,9 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Resolve paths
-    if args.stem:
-        kcs_path = os.path.join(script_dir, "site", "data", args.stem, "kcs.json")
-        cache_dir = os.path.join(script_dir, "extracted_kcs", args.stem)
+    if args.module:
+        kcs_path = os.path.join(script_dir, "site", "data", args.module, "kcs.json")
+        cache_dir = os.path.join(script_dir, "extracted_kcs", args.module)
     else:
         kcs_path = os.path.join(script_dir, "site", "data", "kcs.json")
         cache_dir = os.path.join(script_dir, "extracted_kcs")
