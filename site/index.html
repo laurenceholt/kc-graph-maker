@@ -104,12 +104,6 @@
     gap: 6px;
   }
 
-  .filter-group.module-picker select {
-    font-weight: 600;
-    color: var(--accent);
-    border-color: var(--accent);
-  }
-
   .filter-separator {
     width: 1px;
     height: 24px;
@@ -412,9 +406,13 @@
 </header>
 
 <div class="toolbar">
-  <div class="filter-group module-picker">
+  <div class="filter-group">
+    <label>Grade</label>
+    <select id="filter-grade"><option value="">All</option></select>
+  </div>
+  <div class="filter-group">
     <label>Module</label>
-    <select id="picker-module"><option value="">Loading...</option></select>
+    <select id="filter-module"><option value="">All</option></select>
   </div>
   <div class="filter-separator"></div>
   <div class="filter-group">
@@ -441,11 +439,9 @@
 </div>
 
 <script>
-let modules = [];
-let currentModule = null;
-let kcs = [];
-let questions = [];
-let questionMap = {}; // question_id -> question object
+let allModules = [];   // from modules.json
+let kcs = [];          // combined from all modules (each tagged with _grade, _module)
+let questionMap = {};  // question_id -> question object
 
 function questionId(q) {
   const parts = [q.grade, q.module];
@@ -456,116 +452,79 @@ function questionId(q) {
 }
 
 async function init() {
-  // Try to load modules manifest
+  document.getElementById('kc-list').innerHTML =
+    '<div class="loading">Loading all modules...</div>';
+
+  // Load modules manifest
   try {
     const resp = await fetch('data/modules.json');
-    if (resp.ok) {
-      modules = await resp.json();
-    }
-  } catch (e) {
-    // No modules.json — fall back to flat paths
-  }
+    if (resp.ok) allModules = await resp.json();
+  } catch (e) {}
 
-  if (modules.length > 0) {
-    populateModulePicker();
-
-    // Check URL hash for module selection
-    const hash = window.location.hash.slice(1);
-    const match = modules.find(m => m.id === hash);
-    if (match) {
-      document.getElementById('picker-module').value = match.id;
-      await loadModule(match.id);
-    } else {
-      // Default to first module
-      document.getElementById('picker-module').value = modules[0].id;
-      await loadModule(modules[0].id);
-    }
-  } else {
-    // Legacy fallback: flat paths (no modules.json)
-    document.getElementById('picker-module').closest('.filter-group').style.display = 'none';
-    document.querySelector('.filter-separator').style.display = 'none';
-    await loadLegacyData();
-  }
-}
-
-function populateModulePicker() {
-  const el = document.getElementById('picker-module');
-  el.innerHTML = modules.map(m =>
-    `<option value="${m.id}">${m.label} (${m.kc_count} KCs)</option>`
-  ).join('');
-  el.addEventListener('change', async () => {
-    await loadModule(el.value);
-  });
-}
-
-async function loadModule(moduleId) {
-  currentModule = moduleId;
-  window.location.hash = moduleId;
-
-  const mod = modules.find(m => m.id === moduleId);
-  const label = mod ? mod.label : moduleId;
-
-  document.getElementById('page-title').innerHTML =
-    `EM2 <span>${escapeHtml(label)}</span> &mdash; Knowledge Components`;
-  document.title = `KC Browser — EM2 ${label}`;
-
-  document.getElementById('kc-list').innerHTML =
-    '<div class="loading">Loading knowledge components...</div>';
-
-  try {
-    const [kcResp, qResp] = await Promise.all([
-      fetch(`data/${moduleId}/kcs.json`),
-      fetch(`data/${moduleId}/questions.json`)
-    ]);
-
-    if (!kcResp.ok || !qResp.ok) {
-      throw new Error('Failed to load data');
-    }
-
-    kcs = await kcResp.json();
-    questions = await qResp.json();
-  } catch (e) {
+  if (allModules.length === 0) {
     document.getElementById('kc-list').innerHTML =
-      `<div class="empty-state"><h2>Failed to load data</h2><p>Could not load data for module "${escapeHtml(moduleId)}"</p></div>`;
+      '<div class="empty-state"><h2>No data</h2><p>No modules.json found</p></div>';
     return;
   }
 
-  onDataLoaded();
-}
+  // Load ALL modules' data in parallel
+  const results = await Promise.all(allModules.map(async (mod) => {
+    try {
+      const [kcResp, qResp] = await Promise.all([
+        fetch(`data/${mod.id}/kcs.json`),
+        fetch(`data/${mod.id}/questions.json`)
+      ]);
+      if (!kcResp.ok || !qResp.ok) return { kcs: [], questions: [] };
+      const kcData = await kcResp.json();
+      const qData = await qResp.json();
 
-async function loadLegacyData() {
-  document.getElementById('page-title').innerHTML =
-    'EM2 <span>Knowledge Components</span>';
-  document.title = 'KC Browser — EM2';
+      // Tag each KC with module metadata
+      const grade = mod.id.split('_')[0];  // "G8" from "G8_M4"
+      kcData.forEach(k => {
+        k._module = mod.id;
+        k._grade = grade;
+        k._moduleLabel = mod.label;
+      });
 
-  const [kcResp, qResp] = await Promise.all([
-    fetch('data/kcs.json'),
-    fetch('data/questions.json')
-  ]);
-  kcs = await kcResp.json();
-  questions = await qResp.json();
+      return { kcs: kcData, questions: qData };
+    } catch (e) {
+      return { kcs: [], questions: [] };
+    }
+  }));
 
-  onDataLoaded();
-}
+  // Combine all data
+  kcs = results.flatMap(r => r.kcs);
+  const allQuestions = results.flatMap(r => r.questions);
 
-function onDataLoaded() {
-  // Build lookup map: question_id -> question
+  // Build question lookup
   questionMap = {};
-  questions.forEach(q => {
-    questionMap[questionId(q)] = q;
-  });
+  allQuestions.forEach(q => { questionMap[questionId(q)] = q; });
 
   // Sort KCs alphabetically by title
   kcs.sort((a, b) => a.title.localeCompare(b.title));
+
+  // Update title and page title
+  document.title = 'KC Browser — EM2';
+  document.getElementById('page-title').innerHTML =
+    'EM2 <span>Knowledge Components</span>';
 
   populateFilters();
   render();
 }
 
 function populateFilters() {
-  const labels = [...new Set(kcs.map(k => k.label))].sort();
+  // Grades
+  const grades = [...new Set(kcs.map(k => k._grade))].sort();
+  fillSelect('filter-grade', grades, v => `Grade ${v.slice(1)}`);
 
-  // Gather topics from the questions linked to KCs
+  // Modules (all initially)
+  updateModuleFilter();
+
+  // Labels
+  const labels = [...new Set(kcs.map(k => k.label))].sort();
+  fillSelect('filter-label', labels);
+
+  // Topics
   const topics = new Set();
   kcs.forEach(k => {
     k.question_ids.forEach(qid => {
@@ -573,26 +532,50 @@ function populateFilters() {
       if (q && q.topic) topics.add(q.topic);
     });
   });
-
   fillSelect('filter-topic', [...topics].sort());
-  fillSelect('filter-label', labels);
 }
 
-function fillSelect(id, values) {
+function updateModuleFilter() {
+  const fGrade = document.getElementById('filter-grade').value;
+  const relevantModules = allModules.filter(m =>
+    !fGrade || m.id.startsWith(fGrade + '_')
+  );
+  const el = document.getElementById('filter-module');
+  const currentVal = el.value;
+  el.innerHTML = '<option value="">All</option>';
+  relevantModules.forEach(m => {
+    el.innerHTML += `<option value="${m.id}">${m.label} (${m.kc_count})</option>`;
+  });
+  // Preserve selection if still valid
+  if (relevantModules.some(m => m.id === currentVal)) {
+    el.value = currentVal;
+  }
+}
+
+function fillSelect(id, values, labelFn) {
   const el = document.getElementById(id);
   el.innerHTML = '<option value="">All</option>';
   values.forEach(v => {
-    el.innerHTML += `<option value="${v}">${v}</option>`;
+    const display = labelFn ? labelFn(v) : v;
+    el.innerHTML += `<option value="${v}">${display}</option>`;
   });
   // Remove old listener and add new one
   const newEl = el.cloneNode(true);
   el.parentNode.replaceChild(newEl, el);
-  newEl.addEventListener('change', render);
+  newEl.addEventListener('change', () => {
+    if (id === 'filter-grade') {
+      updateModuleFilter();
+    }
+    render();
+  });
 }
 
 document.getElementById('search').addEventListener('input', render);
 
 function resetFilters() {
+  document.getElementById('filter-grade').value = '';
+  document.getElementById('filter-module').value = '';
+  updateModuleFilter();
   document.getElementById('filter-topic').value = '';
   document.getElementById('filter-label').value = '';
   document.getElementById('search').value = '';
@@ -622,23 +605,27 @@ function kcQuestions(k) {
 }
 
 function render() {
+  const fGrade = document.getElementById('filter-grade').value;
+  const fModule = document.getElementById('filter-module').value;
   const fTopic = document.getElementById('filter-topic').value;
   const fLabel = document.getElementById('filter-label').value;
   const search = document.getElementById('search').value.toLowerCase().trim();
 
   const filtered = kcs.filter(k => {
+    if (fGrade && k._grade !== fGrade) return false;
+    if (fModule && k._module !== fModule) return false;
     if (fLabel && k.label !== fLabel) return false;
     const qs = kcQuestions(k);
     if (fTopic && !qs.some(q => q.topic === fTopic)) return false;
     if (search) {
-      const haystack = (k.title + ' ' + k.description + ' ' + k.kc_id).toLowerCase();
+      const haystack = (k.title + ' ' + k.description + ' ' + k.kc_id + ' ' + k._moduleLabel).toLowerCase();
       if (!haystack.includes(search)) return false;
     }
     return true;
   });
 
   document.getElementById('stats').textContent =
-    `${filtered.length} of ${kcs.length} KCs`;
+    `${filtered.length} of ${kcs.length} KCs across ${allModules.length} modules`;
 
   const list = document.getElementById('kc-list');
 
@@ -690,6 +677,10 @@ function render() {
         </div>`
       : '';
 
+    // Grade badge for the KC's source module
+    const gradeNum = k._grade.slice(1);
+    const moduleNum = k._module.split('_')[1];
+
     return `
     <div class="kc-panel">
       <div class="kc-header">
@@ -698,6 +689,7 @@ function render() {
           <div class="kc-id">${escapeHtml(k.kc_id)}</div>
         </div>
         <div class="kc-badges">
+          <span class="badge badge-grade">G${gradeNum} ${moduleNum}</span>
           <span class="badge ${badgeClass}">${escapeHtml(k.label)}</span>
         </div>
       </div>
@@ -749,17 +741,6 @@ function closeModal() {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
-});
-
-// Handle back/forward navigation
-window.addEventListener('hashchange', async () => {
-  if (modules.length === 0) return;
-  const hash = window.location.hash.slice(1);
-  const match = modules.find(m => m.id === hash);
-  if (match && match.id !== currentModule) {
-    document.getElementById('picker-module').value = match.id;
-    await loadModule(match.id);
-  }
 });
 
 // Wait for KaTeX to load, then init

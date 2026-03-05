@@ -1,6 +1,8 @@
 # Source PDFs (too large for git)
 EM2 */
 Assessment Solutions/
+Assessment/
+Batch*/
 
 # Question images (too large for git at scale — deploy via netlify)
 site/images/
@@ -11,6 +13,9 @@ site/images/
 # Local extraction output
 extracted_questions/
 extracted_kcs/
+
+# Pipeline logs
+logs/
 
 # Python
 __pycache__/

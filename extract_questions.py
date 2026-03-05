@@ -27,6 +27,8 @@ import sys
 import io
 import json
 import argparse
+import logging
+from datetime import datetime
 from PIL import Image
 from dotenv import load_dotenv
 
@@ -60,16 +62,51 @@ CREATE TABLE IF NOT EXISTS questions (
 """
 
 
+def setup_logging(module=None):
+    """Set up logging to both console and a timestamped log file.
+
+    Returns the log file path.
+    """
+    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
+    os.makedirs(log_dir, exist_ok=True)
+
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    mod_part = f"_{module}" if module else ""
+    log_file = os.path.join(log_dir, f'extract{mod_part}_{timestamp}.log')
+
+    logger = logging.getLogger('extract')
+    logger.setLevel(logging.DEBUG)
+    logger.handlers.clear()
+
+    # File handler — captures everything (DEBUG+)
+    fh = logging.FileHandler(log_file)
+    fh.setLevel(logging.DEBUG)
+    fh.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
+    logger.addHandler(fh)
+
+    # Console handler — INFO+
+    ch = logging.StreamHandler()
+    ch.setLevel(logging.INFO)
+    ch.setFormatter(logging.Formatter('%(message)s'))
+    logger.addHandler(ch)
+
+    return log_file
+
+
+log = logging.getLogger('extract')
+
+
 def parse_filename(filepath):
     """Extract grade, module, topic from the PDF filename.
 
     Examples:
-        EM2_G3_M5_SampleSolutions_WCAG21.pdf        -> G3, M5, None
-        EM2_G3_M5_TA_SampleSolutions_WCAG21_v2.pdf  -> G3, M5, TA
-        EM2_G4_M4_TF_SampleSolutions_WCAG21.pdf     -> G4, M4, TF
+        EM2_G3_M5_SampleSolutions_WCAG21.pdf              -> G3, M5, None
+        EM2_G3_M5_TA_SampleSolutions_WCAG21_v2.pdf        -> G3, M5, TA
+        EM2_G4_M4_TF_SampleSolutions_WCAG21.pdf           -> G4, M4, TF
+        EM2_G8_M4_AssessmentSampleSolutions_WCAG21.pdf     -> G8, M4, None
     """
     basename = os.path.splitext(os.path.basename(filepath))[0]
-    match = re.match(r'EM2_(G\d+)_(M\d+)(?:_(T[A-Z]))?_SampleSolutions', basename)
+    match = re.match(r'EM2_(G\d+)_(M\d+)(?:_(T[A-Z]))?_(?:Assessment)?SampleSolutions', basename)
     if not match:
         raise ValueError(f"Could not parse metadata from filename: {basename}")
     return {
@@ -367,8 +404,8 @@ def extract_questions_from_pdf(pdf_path):
             right_pt = region[4] if len(region) > 4 else None
             page = doc[page_num]
             if bottom_pt <= top_pt:
-                print(f"    SKIP: Assessment {q['assessment_num']} Q{q['question_num']} "
-                      f"page {page_num+1}: invalid region top={top_pt:.1f} bottom={bottom_pt:.1f}")
+                log.warning(f"    SKIP: Assessment {q['assessment_num']} Q{q['question_num']} "
+                            f"page {page_num+1}: invalid region top={top_pt:.1f} bottom={bottom_pt:.1f}")
                 continue
             img_data, w, h = extract_question_image(page, top_pt, bottom_pt, left_pt, right_pt)
             image_parts.append(img_data)
@@ -407,7 +444,7 @@ def save_preview(questions, pdf_basename):
         with open(path, 'wb') as f:
             f.write(q['image_data'])
 
-    print(f"  Saved {len(questions)} images to {subdir}/")
+    log.info(f"  Saved {len(questions)} images to {subdir}/")
 
 
 def export_static_site(all_questions, script_dir, module=None):
@@ -463,10 +500,10 @@ def export_static_site(all_questions, script_dir, module=None):
         json.dump(metadata_list, f, indent=2)
 
     mod_label = f" ({module})" if module else ""
-    print(f"\nExported static site{mod_label}:")
-    print(f"  {len(metadata_list)} question images -> {os.path.relpath(images_dir, script_dir)}/")
-    print(f"  Metadata -> {os.path.relpath(json_path, script_dir)}")
-    print(f"  Total image size: {sum(len(q['image_data']) for q in all_questions) / 1024 / 1024:.1f} MB")
+    log.info(f"\nExported static site{mod_label}:")
+    log.info(f"  {len(metadata_list)} question images -> {os.path.relpath(images_dir, script_dir)}/")
+    log.info(f"  Metadata -> {os.path.relpath(json_path, script_dir)}")
+    log.info(f"  Total image size: {sum(len(q['image_data']) for q in all_questions) / 1024 / 1024:.1f} MB")
 
 
 def init_db(conn):
@@ -536,6 +573,10 @@ def main():
         if f.endswith('.pdf')
     ])
 
+    # Set up logging
+    log_file = setup_logging(module=args.module)
+    log.info(f"Log file: {log_file}")
+
     # Filter PDFs to only those matching the specified module
     if args.module:
         filtered = []
@@ -545,18 +586,19 @@ def main():
                 pdf_module_id = f"{meta['grade']}_{meta['module']}"
                 if pdf_module_id == args.module:
                     filtered.append(pdf_path)
-            except ValueError:
+            except ValueError as e:
+                log.warning(f"Skipping file (parse error): {os.path.basename(pdf_path)} — {e}")
                 continue
         pdf_files = filtered
 
     if not pdf_files:
-        print(f"No PDF files found in {pdf_dir}")
+        log.error(f"No PDF files found in {pdf_dir}")
         sys.exit(1)
 
     if not args.all:
         pdf_files = pdf_files[:1]
 
-    print(f"Found {len(pdf_files)} PDF(s) to process\n")
+    log.info(f"Found {len(pdf_files)} PDF(s) to process\n")
 
     # Connect to database unless in preview or export mode
     conn = None
@@ -573,19 +615,29 @@ def main():
 
     for pdf_path in pdf_files:
         basename = os.path.basename(pdf_path)
-        print(f"Processing: {basename}")
+        log.info(f"Processing: {basename}")
 
-        metadata = parse_filename(pdf_path)
-        print(f"  Grade={metadata['grade']}, Module={metadata['module']}, Topic={metadata['topic']}")
+        try:
+            metadata = parse_filename(pdf_path)
+        except ValueError as e:
+            log.error(f"  FAILED to parse filename: {e}")
+            continue
 
-        questions = extract_questions_from_pdf(pdf_path)
-        print(f"  Extracted {len(questions)} questions:")
+        log.info(f"  Grade={metadata['grade']}, Module={metadata['module']}, Topic={metadata['topic']}")
+
+        try:
+            questions = extract_questions_from_pdf(pdf_path)
+        except Exception as e:
+            log.error(f"  FAILED to extract questions: {e}", exc_info=True)
+            continue
+
+        log.info(f"  Extracted {len(questions)} questions:")
 
         for q in questions:
             size_kb = len(q['image_data']) / 1024
-            print(f"    Assessment {q['assessment_number']}, Q{q['question_number']}: "
-                  f"{q['image_width']}x{q['image_height']}px ({size_kb:.0f}KB), "
-                  f"pages {q['source_pages']}")
+            log.info(f"    Assessment {q['assessment_number']}, Q{q['question_number']}: "
+                     f"{q['image_width']}x{q['image_height']}px ({size_kb:.0f}KB), "
+                     f"pages {q['source_pages']}")
 
         if args.preview:
             save_preview(questions, basename)
@@ -594,9 +646,9 @@ def main():
         else:
             import psycopg2
             store_questions(conn, questions)
-            print(f"  Stored {len(questions)} questions in database")
+            log.info(f"  Stored {len(questions)} questions in database")
 
-        print()
+        log.info("")
 
     if args.export_site:
         export_static_site(all_questions, script_dir, module=args.module)
@@ -604,7 +656,8 @@ def main():
     if conn:
         conn.close()
 
-    print("Done!")
+    log.info("Done!")
+    log.info(f"Log saved to: {log_file}")
 
 
 if __name__ == "__main__":

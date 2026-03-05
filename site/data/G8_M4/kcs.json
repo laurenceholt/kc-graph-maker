@@ -1,0 +1,974 @@
+[
+  {
+    "kc_id": "classify_line_from_standard_form",
+    "title": "Classify Line from Standard Form",
+    "description": "Determine whether a linear equation in standard form represents a vertical line, horizontal line, or neither.",
+    "condition": "Linear equation in the form Ax + By = C with both A \u2260 0 and B \u2260 0.",
+    "response": "State that the graph is a line that is neither vertical nor horizontal.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $5x - 2y = 3$, both coefficients are nonzero, so the graph is neither vertical nor horizontal.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_linear_solution_type",
+    "title": "Classify Linear Equation by Solution Type",
+    "description": "Determine whether a linear equation has one solution, infinitely many solutions, or no solution based on its simplified form.",
+    "condition": "A linear equation simplifies to either a true statement (e.g., 5 = 5), a false statement (e.g., 3.5 = -3.5), or an equation of the form x = a.",
+    "response": "State whether the equation has infinitely many solutions, no solution, or one solution, respectively.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If simplifying gives $3.5 = -3.5$, conclude there is **no solution**.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q1",
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q5",
+      "G8_M4_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_same_or_parallel_by_slope_intercept",
+    "title": "Classify Lines by Slope and Intercept",
+    "description": "Determine whether two linear equations represent the same line, parallel lines, or neither by comparing slopes and y-intercepts.",
+    "condition": "Given two linear equations (in any form) that can be written in slope-intercept form.",
+    "response": "Rewrite both as y = mx + b; if slopes and intercepts match \u2192 same line; if slopes match but intercepts differ \u2192 parallel; otherwise \u2192 neither.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Compare $y=4x-\\tfrac{5}{2}$ and $-8x+2y=5$. Rewrite second: $2y=8x+5 \\Rightarrow y=4x+\\tfrac{5}{2}$. Slopes equal (4) but intercepts differ, so the lines are parallel.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "clear_fraction_by_multiplying",
+    "title": "Clear Fraction by Multiplying Both Sides",
+    "description": "Eliminate a fractional coefficient by multiplying both sides of an equation by a common denominator.",
+    "condition": "Equation contains a fractional coefficient (e.g., 1/2(4x \u2212 1) \u2212 3 = ax + b).",
+    "response": "Multiply both sides by the denominator to remove the fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Given $\\frac{1}{2}(4x-1)-3=ax+b$, multiply both sides by 2.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "combine_like_terms",
+    "title": "Combine Like Terms",
+    "description": "Add or subtract coefficients of terms with the same variable and exponent.",
+    "condition": "An expression containing like terms (e.g., $ax + bx$ or constants).",
+    "response": "Add or subtract coefficients to produce a simplified term.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3x - 8x = -5x$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M4_TA_a1_q2",
+      "G8_M4_TA_a1_q5",
+      "G8_M4_TB_a1_q1",
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q5",
+      "G8_M4_a1_q1",
+      "G8_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compare_linear_slopes",
+    "title": "Compare Slopes of Two Lines",
+    "description": "Compare slopes numerically to determine which line is steeper or has greater slope.",
+    "condition": "Two linear equations or representations with identifiable slopes.",
+    "response": "Determine which slope is greater or which line is steeper.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $m_d = 3$ and $m_n = \\frac{5}{2}$, then $m_d > m_n$, so line $d$ is steeper.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_slope_from_two_points",
+    "title": "Compute Slope from Two Points",
+    "description": "Calculate the slope of a line given two ordered pairs using the slope formula.",
+    "condition": "Given two distinct points (x1, y1) and (x2, y2).",
+    "response": "Compute m = (y2 - y1) / (x2 - x1).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For (4,3) and (5,-1): m = \\frac{-1 - 3}{5 - 4} = \\frac{-4}{1} = -4.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "convert_repeating_decimal_to_fraction",
+    "title": "Convert Repeating Decimal to Fraction",
+    "description": "Rewrite a repeating decimal as a fraction using place value structure.",
+    "condition": "Decimal has repeating block (e.g., 0.\\overline{83}).",
+    "response": "Write repeating digits over 99 (or appropriate number of 9s) and simplify.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$0.\\overline{83} = \\frac{83}{99}$.",
+    "notes": "Assumes two-digit repeat block. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M4_TA_a1_q4",
+      "G8_M4_a1_q4",
+      "G8_M4_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_standard_to_slope_intercept",
+    "title": "Convert Standard Form to Slope-Intercept Form",
+    "description": "Rewrite a linear equation in standard form Ax + By = C into slope-intercept form y = mx + b.",
+    "condition": "Equation in the form Ax + By = C.",
+    "response": "Solve for y by isolating y to obtain y = mx + b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Convert $4x+3y=-6$ to slope-intercept form: $3y=-4x-6 \\Rightarrow y=-\\tfrac{4}{3}x-2$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TE_a1_q5",
+      "G8_M4_TF_a1_q1",
+      "G8_M4_a1_q5",
+      "G8_M4_a1_q7",
+      "G8_M4_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "set_equal_coefficients_for_one_solution",
+    "title": "Determine One-Solution Condition for Linear Equation",
+    "description": "Identify when a linear equation in x has exactly one solution based on coefficient comparison.",
+    "condition": "Equation simplifies to form mx + k = ax + b.",
+    "response": "State there is one solution if m \u2260 a; no or infinite solutions if m = a depending on constants.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $2x-\\frac{7}{2}=ax+b$, one solution when $a\\neq2$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "determine_unit_rate_from_table",
+    "title": "Determine Unit Rate from Table",
+    "description": "Find the constant of proportionality by dividing output values by corresponding input values in a proportional table.",
+    "condition": "Given a proportional relationship table with corresponding (x, y) values.",
+    "response": "Compute unit rate k = y / x for any pair.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From (1.5, 18): k = \\frac{18}{1.5} = 12 minutes per pound.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q4",
+      "G8_M4_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "distribute_multiplication",
+    "title": "Distribute Multiplication Over Addition",
+    "description": "Apply the distributive property to expand an expression.",
+    "condition": "Expression of form k(a + b).",
+    "response": "Rewrite as ka + kb.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{2}(4x-1)=2x-\\frac{1}{2}$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M4_TA_a1_q2",
+      "G8_M4_TA_a1_q5",
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q3",
+      "G8_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "distribute_rational_coefficient",
+    "title": "Distribute Rational Coefficient",
+    "description": "Apply distributive property with fractional coefficients.",
+    "condition": "Expression of form k(a + b) where k is rational.",
+    "response": "Multiply k by each term inside parentheses.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{2}{3}(6x-1)=4x-\\frac{2}{3}.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "equal_distances_same_time",
+    "title": "Equal Distances for Same Arrival Time",
+    "description": "Set distances equal when two travelers arrive at the same location at the same time.",
+    "condition": "Two objects travel to the same destination and arrive simultaneously, possibly with different speeds and start times.",
+    "response": "Create an equation equating their distances: rate \u00d7 time expressions are equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If train time is $t$, taxi time is $t - \\tfrac{1}{5}$, so $35t = 50\\left(t - \\tfrac{1}{5}\\right)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "evaluate_linear_expression_substitution",
+    "title": "Evaluate Linear Expression by Substitution",
+    "description": "Substitute given values for variables into a linear expression and simplify.",
+    "condition": "Given a linear expression such as Ax + By and specific numerical values for x and y.",
+    "response": "Compute the numerical value by multiplying and adding/subtracting terms.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Substitute $(x,y)=(1,1)$ into $5x-2y$: $5(1)-2(1)=5-2=3$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q1",
+      "G8_M4_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "generate_ordered_pairs_from_linear_equation",
+    "title": "Generate Ordered Pairs from Linear Equation",
+    "description": "Find ordered pairs that satisfy a linear equation by choosing a value for one variable and solving for the other.",
+    "condition": "Given a linear equation in two variables and a selected value for one variable.",
+    "response": "Solve for the other variable and state the ordered pair.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $6x-4y=8$, let $x=0$: $-4y=8 \\Rightarrow y=-2$, so $(0,-2)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "graph_line_given_point_slope",
+    "title": "Graph Line from Point and Slope",
+    "description": "Graph a line by plotting a given point and using the slope as rise over run to find additional points.",
+    "condition": "Given a slope m and a point (x, y) on the line.",
+    "response": "Plot the point and use rise/run to locate another point, then draw the line through them.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Given slope -4 and point (-2,3): from (-2,3) move right 1 and down 4 to (-1,-1), then draw the line.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "graph_line_from_standard_form",
+    "title": "Graph Line from Standard Form",
+    "description": "Rewrite standard form as slope-intercept form and graph using slope and intercept.",
+    "condition": "Linear equation in standard form ax + by = c.",
+    "response": "Solve for y, identify slope and intercept, and draw line.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "From $3x+y=-2$, solve $y=-3x-2$ and graph with slope -3 and y-intercept -2.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "identify_linear_equation_graph",
+    "title": "Identify Graph of Linear Equation",
+    "description": "Recognize that a first-degree equation in two variables graphs as a nonhorizontal line unless slope is zero.",
+    "condition": "Equation in form ax + by = c with a and b not both zero.",
+    "response": "State that its graph is a line (nonhorizontal if slope \u2260 0).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$2x+y=6$ rearranges to $y=-2x+6$, a nonhorizontal line.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a1_q7",
+      "G8_M4_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "identify_horizontal_line_equation",
+    "title": "Identify Horizontal Line Equation",
+    "description": "Recognize that an equation of the form y = constant represents a horizontal line.",
+    "condition": "Equation written as y = k, where k is a constant.",
+    "response": "State that the graph is a horizontal line at y = k.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$y=5$ represents a horizontal line crossing the y-axis at 5.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_decimal_repeating",
+    "title": "Identify Repeating Decimal from Fraction",
+    "description": "Determine that a fraction has a repeating decimal when its simplified denominator contains prime factors other than 2 or 5.",
+    "condition": "A fraction in simplest form whose denominator has a prime factor other than 2 or 5.",
+    "response": "Classify the decimal equivalent as repeating.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{9}$ with $9=3^2$ \u2192 repeating decimal $0.\\overline{1}$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_slope_from_graph",
+    "title": "Identify Slope from Graph",
+    "description": "Determine the slope of a line by calculating rise over run from two points on its graph.",
+    "condition": "A graphed straight line with at least two visible points.",
+    "response": "Select two points and compute slope as change in y divided by change in x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "From points $(0,40)$ and $(5,80)$, slope $m=\\frac{80-40}{5-0}=\\frac{40}{5}=8$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M4_TE_a1_q1",
+      "G8_M4_TE_a1_q3",
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TF_a1_q1",
+      "G8_M4_a1_q5",
+      "G8_M4_a1_q6",
+      "G8_M4_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "classify_decimal_terminating",
+    "title": "Identify Terminating Decimal from Fraction",
+    "description": "Determine that a fraction has a terminating decimal when its simplified denominator has only prime factors 2 and/or 5.",
+    "condition": "A fraction in simplest form whose denominator\u2019s prime factors are only 2 and/or 5.",
+    "response": "Classify the decimal equivalent as terminating.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{3}{8}$ with $8=2^3$ \u2192 terminating decimal.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_vertical_line_equation",
+    "title": "Identify Vertical Line Equation",
+    "description": "Recognize that an equation of the form x = constant represents a vertical line.",
+    "condition": "Equation written as x = k or reducible to x = k.",
+    "response": "State that the graph is a vertical line at x = k.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2x=3 \\Rightarrow x=\\frac{3}{2}$, which is a vertical line at $x=\\frac{3}{2}$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_y_intercept_from_graph",
+    "title": "Identify y-Intercept from Graph",
+    "description": "Determine the y-intercept by locating where the line crosses the y-axis.",
+    "condition": "A graphed line crossing the y-axis.",
+    "response": "State the y-value at x = 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If the line crosses the y-axis at $(0,-2)$, then the y-intercept is $-2$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M4_TE_a1_q1",
+      "G8_M4_TE_a1_q3",
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TF_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_slope_as_rate",
+    "title": "Interpret Slope as Rate of Change",
+    "description": "Recognize that slope represents the rate of change (unit rate) in a proportional or linear relationship.",
+    "condition": "Given a linear relationship between two quantities (e.g., feet per second).",
+    "response": "State that the slope equals the unit rate (change in y per 1 unit of x).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a puck rises 4 feet per second, then slope = 4 because height increases 4 feet for each 1 second.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q2",
+      "G8_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_slope_in_context",
+    "title": "Interpret Slope in Context",
+    "description": "Explain the meaning of the slope as the rate of change in a real-world situation.",
+    "condition": "Given a linear model y = mx + b describing a contextual situation.",
+    "response": "State that m represents the change in y for each 1-unit increase in x, interpreted with units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "In $y = 0.3x + 27$, 0.3 means the coral reef grows 0.3 inches per year.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TF_a1_q2",
+      "G8_M4_TF_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_y_intercept_in_context",
+    "title": "Interpret y-Intercept in Context",
+    "description": "Explain the meaning of the y-intercept as the initial value in a real-world situation.",
+    "condition": "Given a contextual linear equation y = mx + b.",
+    "response": "State that b represents the value of y when x = 0, interpreted with units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "In $y = 0.3x + 27$, 27 represents the reef's length when it was discovered.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TF_a1_q2",
+      "G8_M4_TF_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "match_graph_to_equation",
+    "title": "Match Graph to Linear Equation",
+    "description": "Identify which equation corresponds to a graphed line by comparing slope and intercept.",
+    "condition": "Graph of a line and multiple equation choices.",
+    "response": "Select equation with matching slope and intercept.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "A line with slope $\\frac{3}{2}$ and y-intercept -2 matches $y=\\frac{3}{2}x-2$.",
+    "notes": "Often based on visual slope recognition. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M4_TC_a1_q4",
+      "G8_M4_TF_a1_q1",
+      "G8_M4_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "perimeter_equilateral_triangle",
+    "title": "Perimeter of Equilateral Triangle",
+    "description": "Compute the perimeter of an equilateral triangle from one side length.",
+    "condition": "An equilateral triangle has side length s.",
+    "response": "Compute perimeter as 3s.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If side is $6x-4$, perimeter is $3(6x-4)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "perimeter_rectangle",
+    "title": "Perimeter of Rectangle",
+    "description": "Compute the perimeter of a rectangle from its side lengths.",
+    "condition": "A rectangle has two side lengths given (length and width).",
+    "response": "Compute perimeter as 2l + 2w.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If sides are $4x-2$ and $5x-5$, perimeter is $2(4x-2)+2(5x-5)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "graph_ordered_pair",
+    "title": "Plot Ordered Pair on Coordinate Plane",
+    "description": "Plot a point on the coordinate plane given its ordered pair.",
+    "condition": "Given an ordered pair (x, y).",
+    "response": "Locate x on the horizontal axis and y on the vertical axis and mark the point.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To graph $(1,-0.5)$, move 1 unit right and 0.5 units down.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_linear_no_solution",
+    "title": "Recognize Contradictory Equation",
+    "description": "Identify when simplifying a linear equation results in a false statement.",
+    "condition": "After simplifying, the equation becomes a false numerical statement (e.g., a = b where a \u2260 b).",
+    "response": "Conclude the equation has no solution.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$3(x-2)+2x=\\tfrac13(15x-12)$ simplifies to $-6=-4$, so no solution.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q1",
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_identity_equation",
+    "title": "Recognize Identity Equation",
+    "description": "Identify when two expressions are equivalent for all values of the variable.",
+    "condition": "After simplifying both sides of an equation, the variable terms and constants match exactly.",
+    "response": "Conclude the equation has infinitely many solutions.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$4(x+9)=4x+36$ simplifies to $4x+36=4x+36$, so infinitely many solutions.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "recognize_similar_triangles",
+    "title": "Recognize Similar Triangles",
+    "description": "Identify triangles as similar when corresponding angles are equal and side lengths are proportional.",
+    "condition": "Given two triangles with equal corresponding angles and proportional side lengths.",
+    "response": "Conclude that the triangles are similar.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If two slope triangles on the same line have equal angle measures and proportional sides, then they are similar.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "recognize_slope_intercept_form",
+    "title": "Recognize Slope-Intercept Form",
+    "description": "Identify slope and y-intercept directly from an equation written in y = mx + b form.",
+    "condition": "Equation written in the form y = mx + b.",
+    "response": "State slope as m and y-intercept as b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "In $y=\\tfrac{4}{3}x-2$, slope is $\\tfrac{4}{3}$ and y-intercept is $-2$.",
+    "notes": "Rationale marked No because this is based on definition of form rather than derivation.???",
+    "question_ids": [
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "rewrite_point_slope_to_slope_intercept",
+    "title": "Rewrite Point-Slope Form",
+    "description": "Convert an equation from point-slope form to slope-intercept form.",
+    "condition": "Equation in the form y - y_1 = m(x - x_1).",
+    "response": "Distribute m and solve for y to obtain y = mx + b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Given $y-6=-\\tfrac{3}{4}(x+4)$, distribute: $y-6=-\\tfrac{3}{4}x-3$, then add 6: $y=-\\tfrac{3}{4}x+3$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TE_a1_q2",
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "select_equivalent_equations",
+    "title": "Select Equivalent Linear Equations",
+    "description": "Determine whether different equations represent the same line by checking algebraic equivalence.",
+    "condition": "Multiple linear equations given as answer choices.",
+    "response": "Rewrite each into slope-intercept form or simplify; select those with identical slope and intercept.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Given $y=\\tfrac{4}{3}x-2$ and $y-2=\\tfrac{4}{3}(x-3)$, rewrite second: $y=\\tfrac{4}{3}x-4+2=\\tfrac{4}{3}x-2$; they are equivalent.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "set_equal_angles_parallel_lines",
+    "title": "Set Corresponding/Alternate Interior Angles Equal",
+    "description": "When parallel lines are cut by a transversal, corresponding or alternate interior angles are congruent.",
+    "condition": "Two parallel lines cut by a transversal with identified corresponding or alternate interior angles.",
+    "response": "Set the angle measures equal in an equation.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $\\angle1$ and $\\angle2$ are corresponding, then $m\\angle1 = m\\angle2$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "set_equal_perimeters",
+    "title": "Set Perimeters Equal",
+    "description": "Form an equation by equating two perimeter expressions.",
+    "condition": "Two shapes are stated to have the same perimeter.",
+    "response": "Write an equation setting their perimeter expressions equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3(6x-4) = 2(4x-2) + 2(5x-5)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "set_up_proportion_from_similar_triangles",
+    "title": "Set Up Proportion from Similar Triangles",
+    "description": "Use corresponding sides of similar triangles to form a proportion.",
+    "condition": "Two triangles are similar and side lengths are labeled.",
+    "response": "Write ratio of corresponding sides equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $\\triangle AED \\sim \\triangle ACB$, then $\\frac{BC}{AC}=\\frac{DE}{AE}$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M4_TD_a1_q2",
+      "G8_M4_a1_q3",
+      "G8_M4_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "solve_one_variable_linear_equation",
+    "title": "Solve Linear Equation in One Variable",
+    "description": "Isolate the variable using inverse operations.",
+    "condition": "Linear equation in one variable (e.g., ax + b = cx + d).",
+    "response": "Combine like terms and isolate variable to find solution.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule",
+    "example": "$4x+5=2x-6 \\Rightarrow 2x=-11 \\Rightarrow x=-\\frac{11}{2}.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TF_a1_q5",
+      "G8_M4_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_linear_equation_variable_both_sides",
+    "title": "Solve Linear Equation with Variable on Both Sides",
+    "description": "Rearrange and combine terms to isolate the variable when it appears on both sides of the equation.",
+    "condition": "A linear equation with variable terms on both sides (e.g., $ax + b = cx + d$).",
+    "response": "Move variable terms to one side, constants to the other, then solve for the variable.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$6x = 3(x-7) \\Rightarrow 6x = 3x - 21 \\Rightarrow 3x = -21 \\Rightarrow x=-7$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TA_a1_q2",
+      "G8_M4_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "solve_two_step_linear_equation",
+    "title": "Solve Multi-Step Linear Equation",
+    "description": "Isolate the variable in a linear equation using inverse operations after simplifying.",
+    "condition": "A linear equation in one variable with variable terms on both sides simplifies to ax = b.",
+    "response": "Perform inverse operations (add/subtract, divide) to solve for x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $12x=10$, divide by 12 to get $x=\\tfrac{5}{6}$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "solve_one_step_linear_equation",
+    "title": "Solve One-Step Linear Equation",
+    "description": "Isolate the variable using inverse operations.",
+    "condition": "Equation of form ax = b.",
+    "response": "Divide both sides by a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$3x=-10 \\Rightarrow x=-\\frac{10}{3}$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_a1_q1",
+      "G8_M4_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "solve_one_step_division",
+    "title": "Solve One-Step Multiplication Equation",
+    "description": "Isolate a variable multiplied by a coefficient by dividing both sides by that coefficient.",
+    "condition": "An equation of the form $ax = b$, where $a \\neq 0$.",
+    "response": "Divide both sides by $a$ to obtain $x = \\frac{b}{a}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3x = 18 \\Rightarrow x = 6$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TA_a1_q2",
+      "G8_M4_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "subtract_unit_rates",
+    "title": "Subtract Unit Rates to Compare",
+    "description": "Find the difference between two linear rates by subtracting their unit rates.",
+    "condition": "Given two unit rates describing the same quantity in the same units.",
+    "response": "Subtract one rate from the other to find the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Air fryer: 12 min/lb; oven: 15.5 min/lb; difference = 15.5 - 12 = 3.5 minutes.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "form_linear_expression_from_words",
+    "title": "Translate Verbal Statement to Linear Expression",
+    "description": "Convert phrases like '20 less than twice a number' into algebraic expressions.",
+    "condition": "A verbal phrase describing operations on an unknown quantity.",
+    "response": "Write a linear algebraic expression representing the phrase.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'20 less than twice a number' \u2192 $2x - 20$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "use_rate_time_distance",
+    "title": "Use Distance = Rate \u00d7 Time",
+    "description": "Model motion problems using the formula distance equals rate times time.",
+    "condition": "A constant speed and travel time are given or implied.",
+    "response": "Write distance as d = rt.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Train distance is $35t$ miles.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "use_proportional_relationship_constant_rate",
+    "title": "Use Proportional Relationship for Constant Rate",
+    "description": "Model a proportional relationship with equation y = kx using constant rate of change.",
+    "condition": "Table or graph shows proportional relationship through origin.",
+    "response": "Determine constant of proportionality k and write y = kx.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From table: $450/2=225$, so $y=225x$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TF_a1_q4",
+      "G8_M4_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "verify_ordered_pair_solution",
+    "title": "Verify Ordered Pair as Solution",
+    "description": "Determine whether a given ordered pair satisfies a linear equation by substitution and comparison.",
+    "condition": "Given a linear equation in two variables and a specific ordered pair.",
+    "response": "Substitute the values and conclude whether the resulting statement is true or false.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $2x+4y=7$ and $(0.3,1.6)$: $2(0.3)+4(1.6)=0.6+6.4=7$, so it is a solution.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TC_a1_q1",
+      "G8_M4_TC_a1_q3",
+      "G8_M4_a1_q7",
+      "G8_M4_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "write_equation_from_constant_of_proportionality",
+    "title": "Write Equation from Constant of Proportionality",
+    "description": "Express a proportional relationship as y = kx using the constant of proportionality.",
+    "condition": "Given a proportional relationship with constant k.",
+    "response": "Write equation in the form y = kx.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If k = 15.5 minutes per pound, then y = 15.5x.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "point_slope_form_equation",
+    "title": "Write Equation Using Point-Slope Form",
+    "description": "Write the equation of a line given a slope and a point using point-slope form.",
+    "condition": "Given slope m and point (x\u2081, y\u2081).",
+    "response": "Write equation as $y - y_1 = m(x - x_1)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Slope $\\frac{5}{2}$ through $(-4,2)$:\n$y - 2 = \\frac{5}{2}(x + 4)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TF_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "write_slope_intercept_from_context",
+    "title": "Write Slope-Intercept Equation from Context",
+    "description": "Write a linear equation in slope-intercept form using an initial value and constant rate of change from a word problem.",
+    "condition": "Given an initial value and a constant rate of change in a context.",
+    "response": "Write equation in form y = mx + b with correct sign and units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Initial height 18 ft, decreasing 0.55 ft/s:\n$y = -0.55x + 18$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M4_TF_a1_q5"
+    ]
+  }
+]
