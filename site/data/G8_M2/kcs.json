@@ -35,7 +35,8 @@
       "G8_M2_TA_a1_q5",
       "G8_M2_TB_a1_q1",
       "G8_M2_TB_a1_q5",
-      "G8_M2_a2_q3"
+      "G8_M2_a2_q3",
+      "G8_M3_TC_a1_q4"
     ]
   },
   {
@@ -53,30 +54,8 @@
     "notes": "Requires recognition of parallel lines.",
     "question_ids": [
       "G8_M2_TC_a1_q3",
-      "G8_M2_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "apply_pythagorean_theorem",
-    "title": "Apply the Pythagorean Theorem",
-    "description": "Use the Pythagorean Theorem to find a missing side length in a right triangle.",
-    "condition": "A right triangle with legs a and b and hypotenuse c, with two side lengths known.",
-    "response": "Substitute into a^2 + b^2 = c^2 (or rearranged form) and solve for the unknown side.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If a = 6 and b = 11, then c = \\sqrt{6^2 + 11^2} = \\sqrt{36 + 121} = \\sqrt{157}.",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G8_M2_TD_a1_q2",
-      "G8_M2_TD_a1_q4",
-      "G8_M2_TD_a1_q5",
-      "G8_M2_a1_q8",
-      "G8_M2_a1_q9",
-      "G8_M2_a2_q5",
-      "G8_M2_a2_q9"
+      "G8_M2_TC_a1_q4",
+      "G8_M3_a1_q8"
     ]
   },
   {
@@ -278,7 +257,8 @@
       "G8_M2_TC_a1_q2",
       "G8_M2_TC_a1_q4",
       "G8_M2_TC_a1_q5",
-      "G8_M2_a2_q7"
+      "G8_M2_a2_q7",
+      "G8_M5_TC_a1_q4"
     ]
   },
   {
@@ -388,47 +368,8 @@
       "G8_M2_TA_a1_q4",
       "G8_M2_TB_a1_q1",
       "G8_M2_TB_a1_q5",
-      "G8_M2_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "round_to_nearest_tenth",
-    "title": "Round to Nearest Tenth",
-    "description": "Round a decimal value to the nearest tenth based on the hundredths digit.",
-    "condition": "Given a decimal number and instructed to round to the nearest tenth.",
-    "response": "Check the hundredths digit and round the tenths digit up or down accordingly.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "$6.73$ rounded to the nearest tenth is $6.7$ because the hundredths digit (3) is less than 5.",
-    "notes": "Standard rounding convention.",
-    "question_ids": [
-      "G8_M2_TD_a1_q3",
-      "G8_M2_TD_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "solve_linear_equation_one_variable",
-    "title": "Solve Linear Equation in One Variable",
-    "description": "Solve a linear equation by isolating the variable using inverse operations.",
-    "condition": "An equation of the form ax + b = c.",
-    "response": "Subtract b from both sides and divide by a to find x.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Solve 3x - 6 = 108: 3x = 114, so x = 38.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G8_M2_TC_a1_q1",
-      "G8_M2_TC_a1_q2",
-      "G8_M2_a1_q4",
-      "G8_M2_a1_q7",
-      "G8_M2_a2_q4",
-      "G8_M2_a2_q7"
+      "G8_M2_a1_q3",
+      "G8_M3_a2_q4"
     ]
   },
   {
@@ -505,7 +446,8 @@
     "notes": "",
     "question_ids": [
       "G8_M2_a1_q7",
-      "G8_M2_a2_q7"
+      "G8_M2_a2_q7",
+      "G8_M5_TC_a1_q4"
     ]
   },
   {

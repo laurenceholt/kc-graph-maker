@@ -1,39 +1,5 @@
 [
   {
-    "kc_id": "rotation_90_clockwise_rule",
-    "title": "90\u00b0 Clockwise Rotation Rule",
-    "description": "A 90\u00b0 clockwise rotation about the origin maps \\((x, y)\\) to \\((y, -x)\\).",
-    "condition": "A point \\((x, y)\\) rotated 90\u00b0 clockwise about the origin.",
-    "response": "Transform coordinates to \\((y, -x)\\).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Rule",
-    "example": "Rotate \\((3, 2)\\) \u2192 \\((2, -3)\\).",
-    "notes": "First step in Q4 transformation.",
-    "question_ids": [
-      "G8_M3_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "rigid_rotation_90_ccw_origin",
-    "title": "90\u00b0 Counterclockwise Rotation About Origin",
-    "description": "Rotate a point 90 degrees counterclockwise about the origin using the coordinate rule.",
-    "condition": "A point (x, y) is rotated 90\u00b0 counterclockwise about the origin.",
-    "response": "Map the point to (-y, x).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Rotate $(3, -1)$ 90\u00b0 CCW about the origin: $(3, -1) \\rightarrow (1, 3)$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M3_a2_q4"
-    ]
-  },
-  {
     "kc_id": "aa_similarity_criterion",
     "title": "AA Similarity Criterion",
     "description": "If two triangles have two pairs of congruent angles, then the triangles are similar.",
@@ -50,40 +16,6 @@
       "G8_M3_TC_a1_q5",
       "G8_M3_a1_q8",
       "G8_M3_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "parallel_alt_interior_angles",
-    "title": "Alternate Interior Angles with Parallel Lines",
-    "description": "When parallel lines are cut by a transversal, alternate interior angles are congruent.",
-    "condition": "Two parallel lines cut by a transversal creating alternate interior angles",
-    "response": "Conclude the alternate interior angles are congruent",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "If lines are parallel, then \\(\\angle BAE \\cong \\angle CDE\\) as alternate interior angles.",
-    "notes": "",
-    "question_ids": [
-      "G8_M3_a1_q8"
-    ]
-  },
-  {
-    "kc_id": "pythagorean_theorem_application",
-    "title": "Apply the Pythagorean Theorem",
-    "description": "In a right triangle, relate side lengths using \\(a^2 + b^2 = c^2\\) to find a missing length.",
-    "condition": "Right triangle with two known side lengths",
-    "response": "Substitute into \\(a^2 + b^2 = c^2\\) and solve for the unknown",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If legs are 15 and 8, then \\(h^2 + 15^2 = 20.825^2\\); solve for \\(h \\approx 9.8\\).",
-    "notes": "",
-    "question_ids": [
-      "G8_M3_a1_q6"
     ]
   },
   {
@@ -162,7 +94,8 @@
     "example": "If the diameter is $2.5$, then the radius is $\\frac{2.5}{2} = 1.25$.",
     "notes": "Based on the definition that diameter equals twice the radius.",
     "question_ids": [
-      "G8_M3_TB_a1_q1"
+      "G8_M3_TB_a1_q1",
+      "G8_M6_TE_a1_q3"
     ]
   },
   {
@@ -497,23 +430,6 @@
     "notes": "",
     "question_ids": [
       "G8_M3_a1_q7"
-    ]
-  },
-  {
-    "kc_id": "solve_linear_equation_one_variable",
-    "title": "Solve Linear Equation in One Variable",
-    "description": "Solve a first-degree linear equation for an unknown variable.",
-    "condition": "An equation involving one variable (e.g., proportion leading to linear equation) is given.",
-    "response": "Use inverse operations to isolate the variable and compute its value.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Rule / Plan",
-    "example": "If $\\frac{9}{20} = \\frac{2x-5}{16}$, then $9 \\cdot 16 = 20(2x-5)$, solve to get $x=6.1$.",
-    "notes": "Often involves cross-multiplication followed by distribution and inverse operations.",
-    "question_ids": [
-      "G8_M3_TD_a1_q2"
     ]
   },
   {

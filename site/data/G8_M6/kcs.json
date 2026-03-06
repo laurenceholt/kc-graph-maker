@@ -102,23 +102,6 @@
     ]
   },
   {
-    "kc_id": "compare_fractions_with_common_denominator",
-    "title": "Compare Fractions with Common Whole",
-    "description": "When multiple fractions share the same whole (same denominator or same total), compare them by comparing their numerators.",
-    "condition": "Fractions representing parts of the same total (e.g., counts out of the same grand total).",
-    "response": "Identify the fraction with the greatest numerator as the greatest fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Compare $\\frac{51}{278}$ and $\\frac{28}{278}$. Since $51 > 28$, $\\frac{51}{278}$ is greater.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_TD_a1_q4"
-    ]
-  },
-  {
     "kc_id": "compare_initial_values",
     "title": "Compare Initial Values of Linear Functions",
     "description": "Determine which linear function has the greatest initial value (y-intercept).",
@@ -242,7 +225,7 @@
     ]
   },
   {
-    "kc_id": "compute_slope_from_table",
+    "kc_id": "compute_slope_from_two_points",
     "title": "Compute Slope from Table",
     "description": "Calculate the rate of change (slope) using two points from a table of values.",
     "condition": "Given two data points $(x_1, y_1)$ and $(x_2, y_2)$ in a table representing a linear relationship.",
@@ -255,26 +238,11 @@
     "example": "Using $(6,300)$ and $(10,350)$:  \n$m = \\frac{350-300}{10-6} = \\frac{50}{4} = 12.5$.",
     "notes": "",
     "question_ids": [
+      "G8_M4_TD_a1_q3",
+      "G8_M5_TC_a1_q3",
       "G8_M6_TB_a1_q1",
       "G8_M6_TB_a1_q2",
       "G8_M6_TB_a1_q3",
-      "G8_M6_TE_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "divide_diameter_by_two",
-    "title": "Convert Diameter to Radius",
-    "description": "Find the radius by dividing the diameter by 2.",
-    "condition": "Diameter of a circle is given.",
-    "response": "Compute radius = diameter / 2.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If diameter = 9, then \\(r = 9/2 = 4.5\\).",
-    "notes": "",
-    "question_ids": [
       "G8_M6_TE_a1_q3"
     ]
   },
@@ -629,24 +597,7 @@
     ]
   },
   {
-    "kc_id": "interpret_slope_context",
-    "title": "Interpret Slope in Context",
-    "description": "Interpret the slope of a linear equation as the rate of change between contextual variables.",
-    "condition": "Linear equation in form y = mx + b with contextual meanings for x and y.",
-    "response": "State that when x increases by 1 unit, y changes by m units (increase if m > 0, decrease if m < 0), using context labels.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "For $y = 2x + 3.82$, as the high jump (x) increases by 1 meter, the long jump (y) increases by 2 meters.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "interpret_y_intercept_as_initial_value",
+    "kc_id": "interpret_y_intercept_in_context",
     "title": "Interpret Y-Intercept as Initial Value",
     "description": "Understand that the y-intercept represents the initial value when $x=0$.",
     "condition": "Given a linear function in context and asked for the initial amount or value before change.",
@@ -659,6 +610,8 @@
     "example": "For $y = 240 - 8x$, when $x=0$, $y=240$, so the initial amount is 240 grams.",
     "notes": "",
     "question_ids": [
+      "G8_M4_TF_a1_q2",
+      "G8_M4_TF_a1_q5",
       "G8_M6_TB_a1_q1",
       "G8_M6_TB_a1_q2",
       "G8_M6_TB_a1_q3"
@@ -713,23 +666,6 @@
     "notes": "Involves coordinating multiple linear segments.",
     "question_ids": [
       "G8_M6_TB_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "plot_ordered_pair",
-    "title": "Plot Ordered Pair on Coordinate Plane",
-    "description": "Plot a data point by locating the x-value on the horizontal axis and the y-value on the vertical axis.",
-    "condition": "Given an ordered pair (x, y) and a coordinate grid.",
-    "response": "Locate x on horizontal axis, move vertically to y, and mark the point.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "To plot $(17, 22)$, move to 17 on the x-axis and up to 22 on the y-axis and mark the point.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_TC_a1_q1"
     ]
   },
   {

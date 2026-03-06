@@ -2,25 +2,25 @@
   {
     "id": "G3_M5",
     "label": "Grade 3 Module 5",
-    "kc_count": 36,
+    "kc_count": 31,
     "question_count": 45
   },
   {
     "id": "G4_M4",
     "label": "Grade 4 Module 4",
-    "kc_count": 37,
+    "kc_count": 26,
     "question_count": 50
   },
   {
     "id": "G5_M2",
     "label": "Grade 5 Module 2",
-    "kc_count": 33,
+    "kc_count": 28,
     "question_count": 42
   },
   {
     "id": "G5_M3",
     "label": "Grade 5 Module 3",
-    "kc_count": 36,
+    "kc_count": 30,
     "question_count": 45
   },
   {
@@ -32,31 +32,31 @@
   {
     "id": "G8_M2",
     "label": "Grade 8 Module 2",
-    "kc_count": 28,
+    "kc_count": 25,
     "question_count": 38
   },
   {
     "id": "G8_M3",
     "label": "Grade 8 Module 3",
-    "kc_count": 31,
+    "kc_count": 26,
     "question_count": 35
   },
   {
     "id": "G8_M4",
     "label": "Grade 8 Module 4",
-    "kc_count": 54,
+    "kc_count": 51,
     "question_count": 45
   },
   {
     "id": "G8_M5",
     "label": "Grade 8 Module 5",
-    "kc_count": 22,
+    "kc_count": 16,
     "question_count": 32
   },
   {
     "id": "G8_M6",
     "label": "Grade 8 Module 6",
-    "kc_count": 52,
+    "kc_count": 48,
     "question_count": 41
   }
 ]

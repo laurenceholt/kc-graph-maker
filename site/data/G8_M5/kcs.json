@@ -19,57 +19,6 @@
     ]
   },
   {
-    "kc_id": "distribute_fractional_coefficient",
-    "title": "Clear or Distribute Fractional Coefficients",
-    "description": "Manipulate equations containing fractions by distributing or multiplying to eliminate fractional coefficients.",
-    "condition": "Equation contains fractional coefficients such as $\\tfrac{a}{b}x$ or $\\tfrac{1}{2}y$.",
-    "response": "Multiply both sides by a common denominator or distribute appropriately to remove fractions.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Given $\\tfrac{5}{2}x - 2 = \\tfrac{1}{2}y$, multiply both sides by 2 \u2192 $5x - 4 = y$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TB_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "combine_like_terms",
-    "title": "Combine Like Terms",
-    "description": "Simplify an algebraic expression by adding or subtracting terms with the same variable and exponent.",
-    "condition": "Expression contains terms with identical variables and exponents (e.g., 2s + 3s).",
-    "response": "Add or subtract coefficients to produce a single term (e.g., 5s).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Combine $2s + 3s = 5s$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TC_a1_q17"
-    ]
-  },
-  {
-    "kc_id": "slope_from_two_points",
-    "title": "Compute Slope from Two Points",
-    "description": "Find the slope of a line given two coordinate points.",
-    "condition": "Two distinct points $(x_1, y_1)$ and $(x_2, y_2)$ are given.",
-    "response": "Compute slope using $m = \\frac{y_2 - y_1}{x_2 - x_1}$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "From $(-6,-1)$ and $(1,-8)$, $m = \\frac{-8-(-1)}{1-(-6)} = \\frac{-7}{7} = -1$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TC_a1_q3"
-    ]
-  },
-  {
     "kc_id": "compare_slopes_intercepts_no_solution",
     "title": "Determine No Solution from Slope and Intercept",
     "description": "Identify that a system has no solution when the lines have the same slope but different y-intercepts.",
@@ -187,24 +136,7 @@
     ]
   },
   {
-    "kc_id": "linear_pair_supplementary",
-    "title": "Linear Pair Are Supplementary",
-    "description": "Recognize that two adjacent angles forming a straight line sum to 180\u00b0.",
-    "condition": "Two adjacent angles form a straight line.",
-    "response": "Set their measures to sum to $180^\\circ$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If one angle is $110^\\circ$, the adjacent angle is $180 - 110 = 70^\\circ$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "solve_linear_equation_one_variable",
+    "kc_id": "solve_one_variable_linear_equation",
     "title": "Solve Linear Equation in One Variable",
     "description": "Isolate the variable in a linear equation using inverse operations.",
     "condition": "Given a linear equation in one variable (e.g., $ax+b=c$).",
@@ -217,6 +149,15 @@
     "example": "Solve $3=2m+2$: subtract 2 \u2192 $1=2m$, divide by 2 \u2192 $m=\\frac{1}{2}$.",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G8_M2_TC_a1_q1",
+      "G8_M2_TC_a1_q2",
+      "G8_M2_a1_q4",
+      "G8_M2_a1_q7",
+      "G8_M2_a2_q4",
+      "G8_M2_a2_q7",
+      "G8_M3_TD_a1_q2",
+      "G8_M4_TF_a1_q5",
+      "G8_M4_a2_q1",
       "G8_M5_TB_a1_q1",
       "G8_M5_TB_a1_q3",
       "G8_M5_TB_a1_q4",
@@ -289,24 +230,6 @@
     ]
   },
   {
-    "kc_id": "solve_two_step_linear_equation",
-    "title": "Solve Two-Step Linear Equation",
-    "description": "Solve a linear equation of the form ax + b = c using inverse operations.",
-    "condition": "Equation in the form $ax + b = c$.",
-    "response": "Isolate $x$ by subtracting $b$ and dividing by $a$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Rule / Plan",
-    "example": "Solve $-4 = 6m$ by dividing both sides by 6: $m=-\\frac{4}{6}=-\\frac{2}{3}$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_a2_q2",
-      "G8_M5_a2_q8"
-    ]
-  },
-  {
     "kc_id": "substitute_expression_into_equation",
     "title": "Substitute Expression into Second Equation",
     "description": "Replace a variable in one equation with an equivalent expression from another equation.",
@@ -368,23 +291,6 @@
       "G8_M5_TC_a1_q5",
       "G8_M5_a1_q6",
       "G8_M5_a2_q6"
-    ]
-  },
-  {
-    "kc_id": "triangle_angle_sum",
-    "title": "Triangle Angle Sum",
-    "description": "Use the fact that the interior angles of a triangle sum to 180\u00b0.",
-    "condition": "Measures of three interior angles of a triangle are given algebraically or numerically.",
-    "response": "Set their sum equal to $180^\\circ$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If angles are $(7x+y)^\\circ$, $(5y-3x)^\\circ$, and $(x+4y)^\\circ$, write $(7x+y)+(5y-3x)+(x+4y)=180$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TC_a1_q4"
     ]
   },
   {

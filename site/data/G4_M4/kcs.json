@@ -19,26 +19,18 @@
       "G4_M4_TE_a1_q2",
       "G4_M4_TE_a1_q5",
       "G4_M4_a1_q4",
-      "G4_M4_a2_q4"
-    ]
-  },
-  {
-    "kc_id": "add_mixed_numbers",
-    "title": "Add Mixed Numbers",
-    "description": "To add mixed numbers, add whole numbers and fractional parts, renaming fractions as needed.",
-    "condition": "Two mixed numbers are being added.",
-    "response": "Add whole numbers and add fractional parts (using common denominators if needed), then combine.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$1\\frac{1}{6} + 4\\frac{2}{9} = 5\\frac{7}{18}$",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G4_M4_TE_a1_q1",
-      "G4_M4_TE_a1_q2",
-      "G4_M4_TE_a1_q5"
+      "G4_M4_a2_q4",
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6",
+      "G5_M2_a1_q6",
+      "G5_M2_a2_q6",
+      "G5_M3_TA_a1_q6",
+      "G5_M3_TD_a1_q2",
+      "G5_M3_TD_a1_q3",
+      "G5_M3_a1_q2",
+      "G5_M3_a2_q2"
     ]
   },
   {
@@ -79,58 +71,6 @@
     ]
   },
   {
-    "kc_id": "compare_fractions_number_line",
-    "title": "Compare Fractions Using Number Line",
-    "description": "Determine which of two fractions is greater by comparing their positions on a number line.",
-    "condition": "Two fractions are plotted or imagined on the same number line.",
-    "response": "State that the fraction farther to the right is greater.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "On a number line, $\\frac{3}{6}$ is to the right of $\\frac{1}{4}$, so $\\frac{3}{6} > \\frac{1}{4}$.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G4_M4_a1_q3",
-      "G4_M4_a2_q3"
-    ]
-  },
-  {
-    "kc_id": "compare_fractions_common_denominator",
-    "title": "Compare Fractions with Common Denominators",
-    "description": "When two fractions have the same denominator, compare their numerators to determine which fraction is greater.",
-    "condition": "Two fractions with equal denominators.",
-    "response": "The fraction with the greater numerator is greater; the one with the smaller numerator is less.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Compare $\\frac{4}{6}$ and $\\frac{5}{6}$. Since $4 < 5$, $\\frac{4}{6} < \\frac{5}{6}$.",
-    "notes": "Used after renaming fractions to like denominators.",
-    "question_ids": [
-      "G4_M4_TC_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "complete_missing_equivalent_fraction",
-    "title": "Complete Equivalent Fraction",
-    "description": "Find a missing numerator or denominator to create equivalent fractions.",
-    "condition": "Given a fraction equality with one missing value, such as a/b = ?/d or a/b = c/? .",
-    "response": "Multiply or divide numerator and denominator by the same number to determine the missing value.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Complete: $\\frac{3}{2} = \\frac{6}{?}$. Since $3 \\times 2 = 6$, multiply denominator by 2: $2 \\times 2 = 4$, so $\\frac{3}{2} = \\frac{6}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q3"
-    ]
-  },
-  {
     "kc_id": "convert_improper_to_mixed",
     "title": "Convert Improper Fraction to Mixed Number",
     "description": "Rewrite an improper fraction as a mixed number by dividing the numerator by the denominator.",
@@ -149,7 +89,10 @@
       "G4_M4_TE_a1_q2",
       "G4_M4_TF_a1_q3",
       "G4_M4_TF_a1_q4",
-      "G4_M4_TF_a1_q5"
+      "G4_M4_TF_a1_q5",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_TD_a1_q3"
     ]
   },
   {
@@ -208,41 +151,6 @@
     ]
   },
   {
-    "kc_id": "find_common_denominator",
-    "title": "Find Common Denominator",
-    "description": "Rename fractions with equivalent fractions that share a common denominator before adding or subtracting.",
-    "condition": "Two fractions with different denominators are being added or subtracted.",
-    "response": "Generate equivalent fractions with a common denominator.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{1}{4} + \\frac{2}{5} = \\frac{5}{20} + \\frac{8}{20}$",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G4_M4_TC_a1_q4",
-      "G4_M4_TC_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "fraction_as_numerator_of_unit_fraction",
-    "title": "Fraction as Multiple of Unit Fraction",
-    "description": "Interpret a fraction a/b as a copies of 1/b.",
-    "condition": "A fraction with numerator greater than 1 is given.",
-    "response": "Interpret it as that many copies of the unit fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{3}{4}$ means 3 copies of $\\frac{1}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_a2_q7"
-    ]
-  },
-  {
     "kc_id": "generate_equivalent_fraction_by_scaling",
     "title": "Generate Equivalent Fraction by Scaling",
     "description": "Create an equivalent fraction by multiplying numerator and denominator by the same nonzero number.",
@@ -256,6 +164,8 @@
     "example": "$\\frac{6}{3} = \\frac{6 \\times 2}{3 \\times 2} = \\frac{12}{6}$.",
     "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
     "question_ids": [
+      "G3_M5_TE_a1_q1",
+      "G3_M5_TE_a1_q2",
       "G4_M4_TB_a1_q4",
       "G4_M4_TB_a1_q5",
       "G4_M4_TC_a1_q4",
@@ -263,7 +173,11 @@
       "G4_M4_a1_q1",
       "G4_M4_a1_q2",
       "G4_M4_a2_q1",
-      "G4_M4_a2_q2"
+      "G4_M4_a2_q2",
+      "G5_M2_TB_a1_q1",
+      "G5_M2_TB_a1_q2",
+      "G5_M2_TB_a1_q5",
+      "G5_M2_TB_a1_q6"
     ]
   },
   {
@@ -299,23 +213,6 @@
     "notes": "",
     "question_ids": [
       "G4_M4_TF_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "identify_equivalent_fractions_number_line",
-    "title": "Identify Equivalent Fractions Using Number Line",
-    "description": "Recognize fractions as equivalent when they represent the same location on a number line.",
-    "condition": "Two fractions located at the same point on aligned number lines.",
-    "response": "State that the fractions are equivalent (or true) because they occupy the same position.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "On aligned number lines, $\\frac{2}{3}$ and $\\frac{4}{6}$ land at the same point, so $\\frac{2}{3} = \\frac{4}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q4"
     ]
   },
   {
@@ -419,6 +316,11 @@
     "example": "To plot $\\frac{6}{4}$, divide each unit into 4 parts and count 6 fourths to land at $1\\frac{2}{4}$.",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G3_M5_TE_a1_q4",
+      "G3_M5_a2_q3",
+      "G3_M5_a2_q5",
+      "G3_M5_a2_q7",
+      "G3_M5_a2_q8",
       "G4_M4_TF_a1_q1",
       "G4_M4_a1_q10",
       "G4_M4_a1_q3",
@@ -462,30 +364,6 @@
     ]
   },
   {
-    "kc_id": "multiply_fraction_by_whole",
-    "title": "Multiply Whole Number by Fraction",
-    "description": "Multiply a whole number by a fraction to get an improper fraction or mixed number.",
-    "condition": "Expression of the form n \u00d7 a/b.",
-    "response": "Compute (n\u00d7a)/b and simplify if needed.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$6 \\times \\frac{4}{5} = \\frac{24}{5}$",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G4_M4_TF_a1_q2",
-      "G4_M4_TF_a1_q3",
-      "G4_M4_TF_a1_q4",
-      "G4_M4_TF_a1_q5",
-      "G4_M4_a1_q8",
-      "G4_M4_a1_q9",
-      "G4_M4_a2_q8",
-      "G4_M4_a2_q9"
-    ]
-  },
-  {
     "kc_id": "multiply_whole_by_mixed_number",
     "title": "Multiply Whole Number by Mixed Number",
     "description": "Multiply a whole number by a mixed number by converting the mixed number to an improper fraction or using distribution.",
@@ -505,23 +383,6 @@
     ]
   },
   {
-    "kc_id": "partition_whole_into_equal_parts",
-    "title": "Partition Whole into Equal Parts",
-    "description": "Divide a whole shape or number line interval into a specified number of equal parts.",
-    "condition": "Instruction to divide a whole into n equal parts.",
-    "response": "Create n equal partitions of the whole.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "Partition the interval from 0 to 1 into 3 equal parts to show thirds.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G4_M4_TF_a1_q1"
-    ]
-  },
-  {
     "kc_id": "recognize_equivalent_fractions",
     "title": "Recognize Equivalent Fractions",
     "description": "Fractions that represent the same quantity occupy the same point on a number line.",
@@ -535,6 +396,7 @@
     "example": "$\\frac{6}{3} = 2$ and $\\frac{12}{6} = 2$, so $\\frac{6}{3}$ and $\\frac{12}{6}$ are equivalent.",
     "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
     "question_ids": [
+      "G3_M5_a1_q8",
       "G4_M4_TB_a1_q5",
       "G4_M4_TC_a1_q3"
     ]
@@ -554,24 +416,6 @@
     "notes": "",
     "question_ids": [
       "G4_M4_TB_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "select_comparison_symbol",
-    "title": "Select Appropriate Comparison Symbol",
-    "description": "Choose >, <, or = to correctly compare two numbers.",
-    "condition": "Two numbers with a known relative size.",
-    "response": "Write > if the first is greater, < if less, or = if equal.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Concept",
-    "example": "Since $\\frac{3}{6} < \\frac{3}{4}$, write $\\frac{3}{6} < \\frac{3}{4}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TC_a1_q1",
-      "G4_M4_TC_a1_q4"
     ]
   },
   {
@@ -614,7 +458,14 @@
       "G4_M4_a1_q6",
       "G4_M4_a2_q10",
       "G4_M4_a2_q4",
-      "G4_M4_a2_q6"
+      "G4_M4_a2_q6",
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q5",
+      "G5_M2_a1_q7",
+      "G5_M2_a2_q7",
+      "G5_M3_TD_a1_q2",
+      "G5_M3_TD_a1_q4",
+      "G5_M3_a1_q2"
     ]
   },
   {
@@ -633,7 +484,10 @@
     "question_ids": [
       "G4_M4_TE_a1_q4",
       "G4_M4_a1_q10",
-      "G4_M4_a1_q6"
+      "G4_M4_a1_q6",
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q3",
+      "G5_M2_TD_a1_q4"
     ]
   },
   {
@@ -670,23 +524,6 @@
     "question_ids": [
       "G4_M4_TF_a1_q3",
       "G4_M4_TF_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "convert_whole_to_fraction_over_one",
-    "title": "Write Whole Number as Fraction Over 1",
-    "description": "Any whole number n can be written as n/1.",
-    "condition": "A whole number is to be expressed as a fraction.",
-    "response": "Write the number as n/1.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$2 = \\frac{2}{1}$ and $5 = \\frac{5}{1}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TA_a1_q4"
     ]
   }
 ]
