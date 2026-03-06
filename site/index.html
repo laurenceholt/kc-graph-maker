@@ -519,6 +519,7 @@ function populateFilters() {
 
   // Modules (all initially)
   updateModuleFilter();
+  document.getElementById('filter-module').addEventListener('change', render);
 
   // Labels
   const labels = [...new Set(kcs.map(k => k.label))].sort();
