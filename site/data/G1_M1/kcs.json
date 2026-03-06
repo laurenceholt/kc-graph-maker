@@ -1,0 +1,107 @@
+[
+  {
+    "kc_id": "add_single_digits_within_20",
+    "title": "Add Within 20",
+    "description": "Compute the sum of two whole numbers within 20.",
+    "condition": "Addition expression a + b where a and b are whole numbers less than or equal to 20.",
+    "response": "Compute and state the correct sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$7 + 4 = 11$",
+    "notes": "General addition fluency skill.",
+    "question_ids": [
+      "G1_M1_TE_a1_q1",
+      "Q3"
+    ]
+  },
+  {
+    "kc_id": "add_identity_zero",
+    "title": "Additive Identity (Zero)",
+    "description": "Recognize that adding zero to a number results in the same number.",
+    "condition": "Addition expression of the form a + 0 or 0 + a.",
+    "response": "State that the sum equals a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$0 + 17 = 17$",
+    "notes": "Based on identity property of addition.",
+    "question_ids": [
+      "Q3"
+    ]
+  },
+  {
+    "kc_id": "count_all_from_visual_dots",
+    "title": "Count All from Visual Representation",
+    "description": "Count all objects in a pictured set to determine the total.",
+    "condition": "A visual representation (e.g., dots or circles) showing two groups combined.",
+    "response": "Count each object and state the total number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Counting 5 dots and 6 dots shown together to get $11$.",
+    "notes": "Used when coloring and counting circles.",
+    "question_ids": [
+      "G1_M1_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_doubles",
+    "title": "Doubles Facts",
+    "description": "Recognize and compute sums where both addends are the same.",
+    "condition": "Addition expression of the form a + a.",
+    "response": "State the sum equal to 2a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$6 + 6 = 12$",
+    "notes": "Used directly and to support near-doubles reasoning.",
+    "question_ids": [
+      "G1_M1_TE_a1_q1",
+      "Q3"
+    ]
+  },
+  {
+    "kc_id": "make_ten_strategy",
+    "title": "Make-Ten Strategy",
+    "description": "Decompose one addend to make a ten with the other addend, then add the remainder.",
+    "condition": "Addition expression a + b where one addend can be decomposed to complete 10 with the other (e.g., 8 + 6, 7 + 6, 9 + 1).",
+    "response": "Rewrite as (a + part) + remainder to make 10, then compute the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$8 + 6 = 8 + 2 + 4 = 10 + 4 = 14$",
+    "notes": "Explicitly shown in solutions such as $6 + 6 + 2 = 14$ and $4 + 4 + 2 = 10$.",
+    "question_ids": [
+      "G1_M1_TE_a1_q1",
+      "G1_M6_TE_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "near_doubles_strategy",
+    "title": "Near Doubles Strategy",
+    "description": "Use a known doubles fact to solve an addition problem where the addends differ by 1 or 2.",
+    "condition": "Addition expression a + b where a and b are close in value (e.g., 5 + 6, 6 + 7).",
+    "response": "Rewrite using a doubles fact plus or minus the difference, then compute the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$5 + 6 = 5 + 5 + 1 = 11$",
+    "notes": "Supported visually by circling doubles in the diagrams.",
+    "question_ids": [
+      "G1_M1_TE_a1_q1"
+    ]
+  }
+]

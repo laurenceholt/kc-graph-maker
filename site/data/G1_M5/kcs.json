@@ -1,0 +1,71 @@
+[
+  {
+    "kc_id": "add_multiples_of_ten",
+    "title": "Add Multiples of Ten",
+    "description": "Add two numbers that are multiples of ten by combining their tens.",
+    "condition": "Addition expression where both addends are multiples of 10 (e.g., 70 + 20).",
+    "response": "Add the tens to get the total (e.g., 7 tens + 2 tens = 9 tens \u2192 90).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$70 + 20 = 90$ because $7$ tens $+ 2$ tens $= 9$ tens.",
+    "notes": "",
+    "question_ids": [
+      "G1_M5_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_two_digit_numbers",
+    "title": "Compare Two-Digit Numbers",
+    "description": "Determine whether one two-digit number is greater than, less than, or equal to another by comparing place values.",
+    "condition": "Two two-digit numbers with a blank comparison symbol between them.",
+    "response": "Write >, <, or = based on comparing tens first, then ones if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$35 < 53$ because $3$ tens is less than $5$ tens.",
+    "notes": "",
+    "question_ids": [
+      "G1_M5_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "read_analog_clock_half_hour",
+    "title": "Read Analog Clock to the Half Hour",
+    "description": "Determine the time shown on an analog clock when the minute hand is at the 6.",
+    "condition": "Analog clock with minute hand pointing to 6 and hour hand between two numbers.",
+    "response": "State the time as half past the previous hour (e.g., 3:30).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the minute hand is on $6$ and the hour hand is between $3$ and $4$, the time is $3{:}30$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M5_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "subtract_multiples_of_ten",
+    "title": "Subtract Multiples of Ten",
+    "description": "Subtract one multiple of ten from another by subtracting their tens.",
+    "condition": "Subtraction expression where both numbers are multiples of 10 (e.g., 90 \u2212 40).",
+    "response": "Subtract the tens to get the result (e.g., 9 tens \u2212 4 tens = 5 tens \u2192 50).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$90 - 40 = 50$ because $9$ tens $- 4$ tens $= 5$ tens.",
+    "notes": "",
+    "question_ids": [
+      "G1_M5_TE_a1_q1",
+      "G1_M5_TE_a1_q3"
+    ]
+  }
+]

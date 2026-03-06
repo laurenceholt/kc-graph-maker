@@ -104,9 +104,10 @@ def parse_filename(filepath):
         EM2_G3_M5_TA_SampleSolutions_WCAG21_v2.pdf        -> G3, M5, TA
         EM2_G4_M4_TF_SampleSolutions_WCAG21.pdf           -> G4, M4, TF
         EM2_G8_M4_AssessmentSampleSolutions_WCAG21.pdf     -> G8, M4, None
+        EM2_G1_M2_TE_L23_SampleSolutions_WCAG21_v2.pdf    -> G1, M2, TE
     """
     basename = os.path.splitext(os.path.basename(filepath))[0]
-    match = re.match(r'EM2_(G\d+)_(M\d+)(?:_(T[A-Z]))?_(?:Assessment)?SampleSolutions', basename)
+    match = re.match(r'EM2_(G\d+)_(M\d+)(?:_(T[A-Z]))?_(?:L\d+_)?(?:Assessment)?SampleSolutions', basename)
     if not match:
         raise ValueError(f"Could not parse metadata from filename: {basename}")
     return {

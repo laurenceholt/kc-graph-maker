@@ -1,0 +1,31 @@
+[
+  {
+    "filename": "EM2_G1_M1_TE_SampleSolutions_WCAG21.pdf",
+    "grade": "G1",
+    "module": "M1",
+    "topic": "TE",
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G1_M1/G1_M1_TE_a1_q1.png",
+    "image_width": 2175,
+    "image_height": 1347,
+    "source_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "filename": "EM2_G1_M1_TE_SampleSolutions_WCAG21.pdf",
+    "grade": "G1",
+    "module": "M1",
+    "topic": "TE",
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G1_M1/G1_M1_TE_a1_q3.png",
+    "image_width": 2175,
+    "image_height": 1034,
+    "source_pages": [
+      2
+    ]
+  }
+]

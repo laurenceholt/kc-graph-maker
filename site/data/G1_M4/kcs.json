@@ -1,0 +1,88 @@
+[
+  {
+    "kc_id": "add_to_find_longer_length",
+    "title": "Add to Find a Longer Length",
+    "description": "When a length is described as a certain number of centimeters longer than another, add the extra amount to the original length.",
+    "condition": "Given a base length a and a statement that another object is b centimeters longer than it.",
+    "response": "Compute a + b to find the new total length.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a crayon is 10 cm and a marker is 7 cm longer, compute $10 + 7 = 17$ cm.",
+    "notes": "",
+    "question_ids": [
+      "G1_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "count_units_to_measure_length",
+    "title": "Count Equal Units to Measure Length",
+    "description": "Determine an object's length by counting the number of equal-sized units that span it.",
+    "condition": "Given an object aligned with equal measurement units (e.g., centimeter cubes).",
+    "response": "Count the total number of units to state the length in centimeters.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If 14 cubes line up with the object, its length is 14 cm.",
+    "notes": "Counting process is procedural.",
+    "question_ids": [
+      "G1_M4_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_shorter_or_taller",
+    "title": "Identify Shorter or Taller Object",
+    "description": "Determine which of two objects has less or greater height.",
+    "condition": "Given two objects with visibly different heights.",
+    "response": "State which object is shorter or taller.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the dog\u2019s height is less than the girl\u2019s, state: The dog is shorter than the girl.",
+    "notes": "",
+    "question_ids": [
+      "G1_M4_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "order_lengths_shortest_to_tallest",
+    "title": "Order Lengths from Shortest to Tallest",
+    "description": "Arrange multiple objects or numbers in order based on their measured lengths.",
+    "condition": "Given three or more objects or measurements with different lengths.",
+    "response": "List them in ascending (shortest to tallest/least to greatest) order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Order 7 cm, 12 cm, 14 cm from shortest to tallest: $7, 12, 14$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M4_TE_a1_q1",
+      "G1_M4_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "subtract_to_find_difference",
+    "title": "Subtract to Find Difference in Length",
+    "description": "Find how much shorter or longer one object is than another by subtracting the smaller length from the larger length.",
+    "condition": "Given two lengths a and b where a > b and asked how much longer/shorter one is.",
+    "response": "Compute a \u2212 b to find the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a snake is 18 cm and a worm is 10 cm, compute $18 - 10 = 8$ cm.",
+    "notes": "",
+    "question_ids": [
+      "G1_M4_TE_a1_q4"
+    ]
+  }
+]

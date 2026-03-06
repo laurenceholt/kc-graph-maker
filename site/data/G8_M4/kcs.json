@@ -654,7 +654,8 @@
     "example": "Given $y=\\tfrac{4}{3}x-2$ and $y-2=\\tfrac{4}{3}(x-3)$, rewrite second: $y=\\tfrac{4}{3}x-4+2=\\tfrac{4}{3}x-2$; they are equivalent.",
     "notes": "",
     "question_ids": [
-      "G8_M4_TE_a1_q4"
+      "G8_M4_TE_a1_q4",
+      "G8_M5_TA_a1_q5"
     ]
   },
   {

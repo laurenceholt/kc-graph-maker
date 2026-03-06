@@ -1,23 +1,5 @@
 [
   {
-    "kc_id": "place_measurement_on_line_plot",
-    "title": "Add Measurement to Line Plot",
-    "description": "Represent a new measurement by adding an X above the correct value on a line plot.",
-    "condition": "A new measured value and an existing labeled line plot.",
-    "response": "Locate the value on the horizontal axis and draw an additional X above it.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "If a new caterpillar measures $3\\tfrac{1}{4}$ inches, add one X above $3\\tfrac{1}{4}$ on the plot.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q3",
-      "G3_M5_TC_a1_q4"
-    ]
-  },
-  {
     "kc_id": "compare_fractions_number_line",
     "title": "Compare Fractions Using Number Line",
     "description": "Determine which of two fractions is greater by comparing their positions on a number line.",
@@ -154,24 +136,6 @@
     ]
   },
   {
-    "kc_id": "count_xs_on_line_plot",
-    "title": "Count Data Points on Line Plot",
-    "description": "Determine frequency of a measurement by counting the X marks above a value.",
-    "condition": "A line plot with X marks stacked above labeled values.",
-    "response": "Count the number of Xs above each value to determine how many data points occur there.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "If there are 3 Xs above $3\\tfrac{1}{2}$, then three items measure $3\\tfrac{1}{2}$ inches.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q3",
-      "G3_M5_TC_a1_q4"
-    ]
-  },
-  {
     "kc_id": "count_equal_partitions_number_line",
     "title": "Count Equal Partitions on Number Line",
     "description": "Determine the denominator of a fraction by counting equal parts between 0 and 1.",
@@ -289,23 +253,6 @@
       "G3_M5_TC_a1_q6",
       "G3_M5_a2_q8",
       "G4_M4_TB_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "identify_fraction_equal_whole",
-    "title": "Identify Fraction Equivalent to Whole Number",
-    "description": "Determine when a fraction represents a whole number.",
-    "condition": "Given a fraction a/b.",
-    "response": "Recognize it equals a whole number if a is a multiple of b (i.e., a \u00f7 b is an integer).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$\\frac{9}{3} = 3$ because $9 \\div 3 = 3$.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TE_a1_q3"
     ]
   },
   {
@@ -495,7 +442,8 @@
     "example": "$\\frac{4}{4} = 1$ and $\\frac{16}{8} = 2$ because the numerator is a multiple of the denominator.",
     "notes": "",
     "question_ids": [
-      "G3_M5_TD_a1_q1"
+      "G3_M5_TD_a1_q1",
+      "G3_M5_TE_a1_q3"
     ]
   },
   {
@@ -512,6 +460,7 @@
     "example": "Since $\\frac{3}{6} < \\frac{3}{4}$, write $\\frac{3}{6} < \\frac{3}{4}$.",
     "notes": "",
     "question_ids": [
+      "G1_M4_TE_a1_q3",
       "G3_M5_TD_a1_q2",
       "G3_M5_TD_a1_q3",
       "G3_M5_TD_a1_q4",

@@ -149,6 +149,8 @@
     "example": "If three X's are above $2\\tfrac{3}{4}$, then its frequency is 3.",
     "notes": "Visual recognition and counting skill.",
     "question_ids": [
+      "G3_M5_TC_a1_q3",
+      "G3_M5_TC_a1_q4",
       "G5_M2_TD_a1_q2",
       "G5_M2_TD_a1_q3",
       "G5_M2_TD_a1_q5"
@@ -279,24 +281,6 @@
     ]
   },
   {
-    "kc_id": "interpret_area_model_fraction",
-    "title": "Interpret Area Model as Fraction",
-    "description": "Determine the fraction represented by a shaded area model by counting shaded parts over total equal parts.",
-    "condition": "A shape is partitioned into equal parts with some parts shaded.",
-    "response": "Write the fraction as (number of shaded parts)/(total equal parts).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If 9 of 12 equal parts are shaded, the fraction is $\\frac{9}{12}$.",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_TB_a1_q3",
-      "G5_M2_TB_a1_q5"
-    ]
-  },
-  {
     "kc_id": "interpret_axis_interval",
     "title": "Interpret Axis Interval on Line Plot",
     "description": "Determine the interval length between consecutive tick marks on a number line.",
@@ -346,7 +330,7 @@
     ]
   },
   {
-    "kc_id": "interpret_shaded_fraction_model",
+    "kc_id": "interpret_area_model_fraction",
     "title": "Interpret Shaded Fraction Model",
     "description": "Determine the fraction represented by shaded parts in a model.",
     "condition": "A visual model with some parts shaded out of equal partitions.",
@@ -361,7 +345,9 @@
     "question_ids": [
       "G3_M5_TB_a1_q1",
       "G5_M2_TA_a1_q2",
-      "G5_M2_TA_a1_q4"
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TB_a1_q3",
+      "G5_M2_TB_a1_q5"
     ]
   },
   {
@@ -419,6 +405,8 @@
     "example": "To plot $2\\tfrac{5}{8}$, place an X above the tick labeled $2\\tfrac{5}{8}$.",
     "notes": "Used when adding new data points.",
     "question_ids": [
+      "G3_M5_TC_a1_q3",
+      "G3_M5_TC_a1_q4",
       "G5_M2_TD_a1_q3",
       "G5_M2_TD_a1_q4"
     ]

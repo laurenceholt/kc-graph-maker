@@ -36,23 +36,6 @@
     ]
   },
   {
-    "kc_id": "create_equivalent_linear_equation",
-    "title": "Generate Equivalent Linear Equation",
-    "description": "Produce a second equation that is a scalar multiple of a given linear equation to create infinitely many solutions.",
-    "condition": "Given a linear equation and told the system has infinitely many solutions.",
-    "response": "Write an equation that is a constant multiple of the original equation.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Given $8x-2y=4$, divide by 2 to get $4x-y=2$, or multiply by $-\\frac{1}{2}$ to get $-4x+y=-2$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TA_a1_q5"
-    ]
-  },
-  {
     "kc_id": "identify_intersection_from_graph",
     "title": "Identify Intersection on Graph",
     "description": "Locate the point where two graphed lines intersect to determine the solution to a system.",

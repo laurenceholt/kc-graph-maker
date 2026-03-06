@@ -1,0 +1,126 @@
+[
+  {
+    "kc_id": "add_three_numbers_within_20",
+    "title": "Add Three Numbers Within 20",
+    "description": "Compute the sum of three addends whose total is within 20.",
+    "condition": "Expression of the form a + b + c where a, b, c are whole numbers within 20.",
+    "response": "Compute the total sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8 + 6 + 2 = 16$.",
+    "notes": "May involve making a ten as an intermediate step.",
+    "question_ids": [
+      "G1_M3_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "add_within_20",
+    "title": "Add Two Numbers Within 20",
+    "description": "Compute the sum of two whole numbers whose total is within 20.",
+    "condition": "Expression of the form a + b where a and b are whole numbers within 20.",
+    "response": "Compute the total sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$13 + 6 = 19$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M3_TE_a1_q3",
+      "G1_M3_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "decompose_two_digit_number",
+    "title": "Decompose Number into Tens and Ones",
+    "description": "Represent a two-digit number as a sum of tens and ones.",
+    "condition": "Given a two-digit number less than 100.",
+    "response": "Express the number as (tens \u00d7 10) + ones and state the number of tens and ones.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$26 = 20 + 6$, so 2 tens and 6 ones.",
+    "notes": "Often supported with base-ten drawings.",
+    "question_ids": [
+      "G1_M3_TE_a1_q4",
+      "G1_M3_TE_a1_q5",
+      "G1_M4_TE_a1_q6",
+      "G1_M5_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_base_ten_blocks",
+    "title": "Interpret Base-Ten Block Representation",
+    "description": "Determine the total number represented by tens rods and ones cubes.",
+    "condition": "A drawing or model showing groups of tens and ones blocks.",
+    "response": "Count tens as groups of 10 and add remaining ones to state the total number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "2 tens rods and 6 ones cubes represent $20 + 6 = 26$.",
+    "notes": "Relies on place value convention that a rod equals 10.",
+    "question_ids": [
+      "G1_M3_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "represent_word_problem_with_equation_add",
+    "title": "Represent Additive Word Problem with Equation",
+    "description": "Translate a word problem describing a total of combined quantities into an addition equation.",
+    "condition": "Word problem describing quantities being combined or counted together.",
+    "response": "Write an addition equation representing the quantities and compute the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "5 shells in hand, 7 on sand, 5 on rocks \u2192 $5 + 7 + 5 = 17$.",
+    "notes": "Requires identifying all relevant quantities.",
+    "question_ids": [
+      "G1_M3_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "represent_word_problem_with_equation_subtract",
+    "title": "Represent Subtraction Word Problem with Equation",
+    "description": "Translate a word problem describing a quantity being taken away into a subtraction equation.",
+    "condition": "Word problem describing an initial quantity and an amount lost or removed.",
+    "response": "Write a subtraction equation initial \u2212 change and compute the result.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Ned had 15 rocks and lost 7 \u2192 $15 - 7 = 8$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M3_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "subtract_within_20",
+    "title": "Subtract Within 20",
+    "description": "Compute the difference of two whole numbers within 20.",
+    "condition": "Expression of the form a - b where a and b are whole numbers within 20 and a \u2265 b.",
+    "response": "Compute the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$16 - 5 = 11$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M3_TE_a1_q1",
+      "G1_M3_TE_a1_q3"
+    ]
+  }
+]

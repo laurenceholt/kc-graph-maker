@@ -1,0 +1,138 @@
+[
+  {
+    "kc_id": "count_back_on_number_line",
+    "title": "Count Back to Subtract",
+    "description": "Use a number line to subtract by counting backward from the starting number.",
+    "condition": "Given a subtraction expression a \u2212 b and a number line.",
+    "response": "Start at a and move back b steps to find the result.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To solve $11 - 2$, start at 11 and count back 2 steps to land on 9.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "count_objects_in_category",
+    "title": "Count Objects in a Category",
+    "description": "Determine the total number of objects in a given category by counting them.",
+    "condition": "Given a set of objects belonging to one category.",
+    "response": "Count each object once and state the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Count 4 squirrels shown; total = $4$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_difference_subtract",
+    "title": "Find Difference to Compare Quantities",
+    "description": "To determine how many more one quantity is than another, subtract the smaller quantity from the larger quantity.",
+    "condition": "Given two quantities and asked 'how many more' one has than the other.",
+    "response": "Compute larger \u2212 smaller to find the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If there are 7 rabbits and 3 bears, compute $7 - 3 = 4$ more rabbits.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "represent_change_subtraction_equation",
+    "title": "Model Change with Subtraction",
+    "description": "Represent a change-unknown word problem where a decrease occurred using a subtraction equation.",
+    "condition": "Initial amount and final amount are given, with a decrease described.",
+    "response": "Write an equation initial \u2212 ? = final.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Mel had 16 hats and now has 10. Write $16 - x = 10$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "represent_change_addition_equation",
+    "title": "Model Resulting Unknown with Addition",
+    "description": "Represent a change-unknown word problem where the result is known using an addition equation with a missing addend.",
+    "condition": "Initial amount and final amount are given, with an increase described.",
+    "response": "Write an equation initial + ? = final.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Max had 10 nuts and now has 16. Write $10 + x = 16$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_missing_addend_within_20",
+    "title": "Solve for Missing Addend Within 20",
+    "description": "Find the unknown addend in an addition equation within 20.",
+    "condition": "Given an equation of the form a + ? = b, where a and b are within 20.",
+    "response": "Compute b \u2212 a to find the missing addend.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Solve $10 + x = 16$ by computing $16 - 10 = 6$, so $x = 6$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_missing_subtrahend_within_20",
+    "title": "Solve for Missing Subtrahend Within 20",
+    "description": "Find the unknown subtrahend in a subtraction equation within 20.",
+    "condition": "Given an equation of the form a \u2212 ? = b, where a and b are within 20.",
+    "response": "Compute a \u2212 b to find the missing subtrahend.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Solve $16 - x = 10$ by computing $16 - 10 = 6$, so $x = 6$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "relate_addition_subtraction_fact_family",
+    "title": "Use Related Addition Fact for Subtraction",
+    "description": "Use a related addition fact to solve a subtraction problem (fact family relationship).",
+    "condition": "Given a subtraction expression a \u2212 b = ?.",
+    "response": "Find c such that b + c = a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "To solve $8 - 4$, think $4 + 4 = 8$, so $8 - 4 = 4$.",
+    "notes": "",
+    "question_ids": [
+      "G1_M2_TE_a1_q4"
+    ]
+  }
+]

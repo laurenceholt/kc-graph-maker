@@ -99,23 +99,6 @@
     ]
   },
   {
-    "kc_id": "rigid_motion_translation",
-    "title": "Describe a Translation",
-    "description": "A translation moves every point the same distance in a given direction.",
-    "condition": "Figure and specified horizontal and vertical shift",
-    "response": "Add the shift to each coordinate",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "A translation 2 units right and 10 units down maps \\((x, y)\\) to \\((x+2, y-10)\\).",
-    "notes": "",
-    "question_ids": [
-      "G8_M3_a1_q4"
-    ]
-  },
-  {
     "kc_id": "dilation_about_origin",
     "title": "Dilate Coordinates About the Origin",
     "description": "Apply a dilation centered at the origin by multiplying each coordinate by the scale factor.",
