@@ -1,0 +1,554 @@
+[
+  {
+    "kc_id": "rotation_90_clockwise_rule",
+    "title": "90\u00b0 Clockwise Rotation Rule",
+    "description": "A 90\u00b0 clockwise rotation about the origin maps \\((x, y)\\) to \\((y, -x)\\).",
+    "condition": "A point \\((x, y)\\) rotated 90\u00b0 clockwise about the origin.",
+    "response": "Transform coordinates to \\((y, -x)\\).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule",
+    "example": "Rotate \\((3, 2)\\) \u2192 \\((2, -3)\\).",
+    "notes": "First step in Q4 transformation.",
+    "question_ids": [
+      "G8_M3_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "rigid_rotation_90_ccw_origin",
+    "title": "90\u00b0 Counterclockwise Rotation About Origin",
+    "description": "Rotate a point 90 degrees counterclockwise about the origin using the coordinate rule.",
+    "condition": "A point (x, y) is rotated 90\u00b0 counterclockwise about the origin.",
+    "response": "Map the point to (-y, x).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Rotate $(3, -1)$ 90\u00b0 CCW about the origin: $(3, -1) \\rightarrow (1, 3)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "aa_similarity_criterion",
+    "title": "AA Similarity Criterion",
+    "description": "If two triangles have two pairs of congruent angles, then the triangles are similar.",
+    "condition": "Two triangles with two pairs of congruent corresponding angles",
+    "response": "Conclude the triangles are similar",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If \\(\\angle AEB \\cong \\angle DEC\\) and \\(\\angle BAE \\cong \\angle CDE\\), then \\(\\triangle ABE \\sim \\triangle DCE\\).",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M3_TC_a1_q5",
+      "G8_M3_a1_q8",
+      "G8_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "parallel_alt_interior_angles",
+    "title": "Alternate Interior Angles with Parallel Lines",
+    "description": "When parallel lines are cut by a transversal, alternate interior angles are congruent.",
+    "condition": "Two parallel lines cut by a transversal creating alternate interior angles",
+    "response": "Conclude the alternate interior angles are congruent",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If lines are parallel, then \\(\\angle BAE \\cong \\angle CDE\\) as alternate interior angles.",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "pythagorean_theorem_application",
+    "title": "Apply the Pythagorean Theorem",
+    "description": "In a right triangle, relate side lengths using \\(a^2 + b^2 = c^2\\) to find a missing length.",
+    "condition": "Right triangle with two known side lengths",
+    "response": "Substitute into \\(a^2 + b^2 = c^2\\) and solve for the unknown",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If legs are 15 and 8, then \\(h^2 + 15^2 = 20.825^2\\); solve for \\(h \\approx 9.8\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "classify_scale_factor_relative_to_1",
+    "title": "Classify Scale Factor Relative to 1",
+    "description": "Determine whether a dilation\u2019s scale factor is between 0 and 1, equal to 1, or greater than 1 by comparing distances from the center to a point and its image.",
+    "condition": "A dilation centered at O with a point P and its image P' shown; distances OP and OP' can be compared.",
+    "response": "If OP' < OP, scale factor is between 0 and 1; if OP' = OP, scale factor = 1; if OP' > OP, scale factor > 1.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $OP = 6$ and $OP' = 3$, then $k = \\frac{3}{6} = \\frac{1}{2}$, which is between 0 and 1.",
+    "notes": "Requires understanding that $k = \\frac{OP'}{OP}$.",
+    "question_ids": [
+      "G8_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_scaled_distance_from_center",
+    "title": "Compute Dilated Distance from Center",
+    "description": "Find the distance from the center to an image point by multiplying the original distance by the scale factor.",
+    "condition": "Given center O, original distance OP, and scale factor k.",
+    "response": "Compute OP' = k \\cdot OP.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $OP = 10$ cm and $k = \\frac{1}{2}$, then $OP' = \\frac{1}{2} \\cdot 10 = 5$ cm.",
+    "notes": "Applies for any real scale factor k.",
+    "question_ids": [
+      "G8_M3_TA_a1_q2",
+      "G8_M3_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_scale_factor_ratio",
+    "title": "Compute Scale Factor from Corresponding Sides",
+    "description": "Determine the scale factor by forming a ratio of corresponding side lengths in similar figures.",
+    "condition": "Two corresponding side lengths from similar figures",
+    "response": "Form and simplify the ratio of corresponding sides",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If \\(BC = 2\\) and \\(RS = 1\\), then the scale factor is \\(\\frac{2}{1} = 2\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_TB_a1_q1",
+      "G8_M3_TB_a1_q2",
+      "G8_M3_TC_a1_q3",
+      "G8_M3_TD_a1_q2",
+      "G8_M3_TD_a1_q3",
+      "G8_M3_TD_a1_q4",
+      "G8_M3_a1_q2",
+      "G8_M3_a1_q3",
+      "G8_M3_a1_q7",
+      "G8_M3_a2_q3",
+      "G8_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "convert_diameter_to_radius",
+    "title": "Convert Diameter to Radius",
+    "description": "Find the radius of a circle by dividing the diameter by 2.",
+    "condition": "Given the diameter of a circle.",
+    "response": "Compute radius as diameter \u00f7 2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If the diameter is $2.5$, then the radius is $\\frac{2.5}{2} = 1.25$.",
+    "notes": "Based on the definition that diameter equals twice the radius.",
+    "question_ids": [
+      "G8_M3_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "rigid_motion_translation",
+    "title": "Describe a Translation",
+    "description": "A translation moves every point the same distance in a given direction.",
+    "condition": "Figure and specified horizontal and vertical shift",
+    "response": "Add the shift to each coordinate",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A translation 2 units right and 10 units down maps \\((x, y)\\) to \\((x+2, y-10)\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "dilation_about_origin",
+    "title": "Dilate Coordinates About the Origin",
+    "description": "Apply a dilation centered at the origin by multiplying each coordinate by the scale factor.",
+    "condition": "A point (x, y) is to be dilated about the origin by scale factor k.",
+    "response": "Compute the image as (kx, ky).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Dilate $(4, -6)$ by scale factor $\\tfrac{1}{2}$: $(4, -6) \\rightarrow (2, -3)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_TB_a1_q3",
+      "G8_M3_TB_a1_q5",
+      "G8_M3_a1_q4",
+      "G8_M3_a1_q5",
+      "G8_M3_a2_q4",
+      "G8_M3_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "dilation_preserves_angle_measure",
+    "title": "Dilation Preserves Angle Measure",
+    "description": "Recognize that angle measures remain unchanged under a dilation.",
+    "condition": "Angle in a figure and its image under dilation.",
+    "response": "Conclude that the image angle measure equals the original angle measure.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $\\angle B = 55^\\circ$, then $\\angle B' = 55^\\circ$ under dilation.",
+    "notes": "Applies regardless of scale factor.",
+    "question_ids": [
+      "G8_M3_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "dilation_preserves_parallelism",
+    "title": "Dilation Preserves Parallel Lines",
+    "description": "Recognize that corresponding line segments not passing through the center of dilation remain parallel after dilation.",
+    "condition": "Two corresponding segments in a figure and its dilation.",
+    "response": "Conclude the image segment is parallel to the original segment.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $AD \\parallel BC$, then $A'D' \\parallel B'C'$ after dilation.",
+    "notes": "Lines through the center map to themselves; others map to parallel lines.",
+    "question_ids": [
+      "G8_M3_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "similarity_from_dilation",
+    "title": "Dilation Produces Similar Figures",
+    "description": "A figure obtained from another by a dilation (and rigid motions) is similar to the original.",
+    "condition": "A figure is transformed by a dilation with scale factor not equal to 1 (possibly preceded by a rigid motion).",
+    "response": "Conclude the image and original figures are similar (not congruent unless scale factor = 1).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If \\(\\triangle ABC\\) is dilated by scale factor 2 to form \\(\\triangle A'B'C'\\), then \\(\\triangle ABC \\sim \\triangle A'B'C'\\).",
+    "notes": "Used in Q4 Part B to classify triangles as similar.",
+    "question_ids": [
+      "G8_M3_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "dilation_scales_lengths",
+    "title": "Dilation Scales Segment Lengths",
+    "description": "Determine how segment lengths change under a dilation by multiplying by the scale factor.",
+    "condition": "Segment of length $L$ and dilation with scale factor $k$.",
+    "response": "Image segment length is $kL$; compare sizes using value of $k$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $BC = 10$ and $k = \\frac{1}{5}$, then $B'C' = \\frac{1}{5} \\cdot 10 = 2$, which is shorter than $BC$.",
+    "notes": "If $0<k<1$, image is shorter; if $k>1$, image is longer.",
+    "question_ids": [
+      "G8_M3_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_center_and_scale_from_mapping",
+    "title": "Identify Center and Scale Factor from Point Mapping",
+    "description": "Determine the center and scale factor of a dilation given a preimage point and its image.",
+    "condition": "Given two points X and X' where X' is a dilation image of X, and multiple candidate centers and scale factors.",
+    "response": "Choose the center C such that C, X, and X' are collinear and compute k = CX'/CX.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $W$, $X$, and $Z$ are collinear and $WX' = 5 \\cdot WX$, then the dilation is centered at $W$ with scale factor $5$.",
+    "notes": "Requires recognizing collinearity and multiplicative distance relationship.",
+    "question_ids": [
+      "G8_M3_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_center_of_dilation_by_alignment",
+    "title": "Identify Center of Dilation by Collinearity",
+    "description": "The center of dilation lies on lines connecting corresponding points of the original and image figures.",
+    "condition": "Two similar figures with known corresponding vertices.",
+    "response": "Locate the intersection point of lines through corresponding vertices to identify the center of dilation.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If lines \\(AA'\\), \\(BB'\\), and \\(CC'\\) intersect at point \\(J\\), then \\(J\\) is the center of dilation.",
+    "notes": "Applied to find center J in Q3.",
+    "question_ids": [
+      "G8_M3_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_similar_triangles_from_parallel_or_shared_slope",
+    "title": "Identify Similar Right Triangles from Shared Hypotenuse Line",
+    "description": "Recognize that right triangles with horizontal and vertical legs whose hypotenuses lie on the same straight line are similar.",
+    "condition": "Multiple right triangles have horizontal and vertical legs and their hypotenuses lie on the same straight line.",
+    "response": "Conclude the triangles are similar.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If two right triangles share the same slanted hypotenuse line, then corresponding leg ratios (e.g., $\\frac{12}{9}$ and $\\frac{y}{x}$) are equal.",
+    "notes": "Similarity follows from equal corresponding angles (AA similarity).",
+    "question_ids": [
+      "G8_M3_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "dilation_from_center_point",
+    "title": "Image of a Point Under Dilation from a Center",
+    "description": "To find the image of a point under dilation, move along the ray from the center through the point and multiply the distance by the scale factor.",
+    "condition": "Center \\(O\\), point \\(P\\), and scale factor \\(k\\)",
+    "response": "Locate point on ray \\(OP\\) at distance \\(k \\cdot OP\\) from \\(O\\)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If \\(OP = 3\\) and \\(k = 2\\), the image lies on ray \\(OP\\) at distance \\(6\\) from \\(O\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "dilation_inverse_scale_factor",
+    "title": "Inverse Scale Factor for Reverse Dilation",
+    "description": "To reverse a dilation, use the reciprocal of the original scale factor with the same center.",
+    "condition": "A figure is obtained by a dilation with scale factor \\(\\frac{1}{r}\\) centered at a given point.",
+    "response": "Apply a dilation with scale factor \\(r\\) centered at the same point to map back to the original figure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If a figure is dilated by scale factor \\(\\frac{1}{3}\\) about \\((0,0)\\), then dilating by scale factor \\(3\\) about \\((0,0)\\) maps it back.",
+    "notes": "Reciprocal relationship between scale factors.",
+    "question_ids": [
+      "G8_M3_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "dilation_on_ray_from_center",
+    "title": "Locate Image Under Dilation on a Ray",
+    "description": "Under a dilation with center O, the image of a point lies on the ray from O through the point, with distance multiplied by the scale factor.",
+    "condition": "Given center O, point P, and scale factor k.",
+    "response": "Locate point P' on ray OP such that $OP' = k \\cdot OP$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $OP = 2$ and $k=3$, then $OP' = 6$ on the same ray from $O$ through $P$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_TA_a1_q2",
+      "G8_M3_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "use_shadow_similarity_model",
+    "title": "Model Height and Shadow with Similar Triangles",
+    "description": "Represent a real-world height and shadow situation as similar right triangles to find an unknown height.",
+    "condition": "Two objects cast shadows under the same light source with known heights and shadow lengths.",
+    "response": "Set up and solve a proportion relating height-to-shadow ratios.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{5}{2} = \\frac{h}{9.5}$ so $h = \\frac{5}{2} \\cdot 9.5 = 23.75$.",
+    "notes": "Assumes same sun angle creates similar triangles.",
+    "question_ids": [
+      "G8_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "recognize_dilation_by_collinearity_and_proportion",
+    "title": "Recognize Dilation by Collinearity and Proportional Distances",
+    "description": "Determine whether one figure is a dilation of another centered at O by checking that corresponding points are collinear with O and distances are proportional.",
+    "condition": "Two similar-looking figures labeled as preimage and image with a marked center O.",
+    "response": "Conclude it is a dilation centered at O if each pair of corresponding points and O are collinear and all distance ratios from O are equal.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If for each vertex $A$ and $A'$, points $O$, $A$, and $A'$ are collinear and $\\frac{OA'}{OA} = 2$, then the figure is a dilation centered at $O$ with scale factor 2.",
+    "notes": "Used to select all diagrams that represent dilations.",
+    "question_ids": [
+      "G8_M3_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "round_decimal_to_nearest_hundredth",
+    "title": "Round to Nearest Hundredth",
+    "description": "Round a decimal value to two decimal places using standard rounding rules.",
+    "condition": "A decimal number requiring rounding to the nearest hundredth.",
+    "response": "Adjust the thousandths digit and state the number with two decimal places.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "$6.4$ rounded to the nearest hundredth is $6.40$.",
+    "notes": "Conventional rounding procedure.",
+    "question_ids": [
+      "G8_M3_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "set_up_proportion_corresponding_sides",
+    "title": "Set Up Proportion Using Corresponding Sides",
+    "description": "Form an equation equating ratios of corresponding sides in similar triangles.",
+    "condition": "Two triangles are known to be similar and corresponding sides are identified.",
+    "response": "Write a proportion equating the ratios of corresponding sides.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From similar triangles: $\\frac{12}{9} = \\frac{y}{x}$ or $\\frac{9}{20} = \\frac{2x-5}{16}$.",
+    "notes": "Correct correspondence order is essential.",
+    "question_ids": [
+      "G8_M3_TD_a1_q1",
+      "G8_M3_TD_a1_q2",
+      "G8_M3_TD_a1_q3",
+      "G8_M3_TD_a1_q4",
+      "G8_M3_a2_q6",
+      "G8_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "sequence_reflection_then_dilation_similarity",
+    "title": "Similarity via Reflection and Dilation",
+    "description": "A sequence consisting of a reflection and a dilation can map one similar figure onto another.",
+    "condition": "Two similar figures positioned as mirror images across an axis and differing by a constant scale factor.",
+    "response": "Apply a reflection across the axis followed by a dilation with the given scale factor about the origin.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Reflect a figure across the x-axis, then dilate by scale factor \\(\\frac{1}{2}\\) about the origin to match a smaller reflected image.",
+    "notes": "Matches correct sequence in Q1.",
+    "question_ids": [
+      "G8_M3_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "simplify_numeric_ratio",
+    "title": "Simplify Numeric Ratio",
+    "description": "Reduce or compute the value of a ratio of two numbers.",
+    "condition": "A ratio of two numerical quantities is given.",
+    "response": "Simplify or compute the ratio value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{12}{9} = \\frac{4}{3}$.",
+    "notes": "May remain unsimplified if problem accepts equivalent ratios.",
+    "question_ids": [
+      "G8_M3_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_proportion_for_missing_side",
+    "title": "Solve a Proportion for a Missing Side",
+    "description": "Use equivalent ratios in similar triangles to solve for an unknown side length.",
+    "condition": "Proportion involving a missing side in similar triangles",
+    "response": "Set up proportion and solve algebraically",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If \\(\\frac{AB}{10} = \\frac{5}{4}\\), then \\(AB = 10 \\cdot \\frac{5}{4} = 12.5\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "solve_linear_equation_one_variable",
+    "title": "Solve Linear Equation in One Variable",
+    "description": "Solve a first-degree linear equation for an unknown variable.",
+    "condition": "An equation involving one variable (e.g., proportion leading to linear equation) is given.",
+    "response": "Use inverse operations to isolate the variable and compute its value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "If $\\frac{9}{20} = \\frac{2x-5}{16}$, then $9 \\cdot 16 = 20(2x-5)$, solve to get $x=6.1$.",
+    "notes": "Often involves cross-multiplication followed by distribution and inverse operations.",
+    "question_ids": [
+      "G8_M3_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "test_similarity_by_side_ratios",
+    "title": "Test Similarity Using Side Ratios",
+    "description": "Determine whether two figures are similar by checking if all corresponding side ratios are equal.",
+    "condition": "Corresponding side lengths of two figures are given or can be computed.",
+    "response": "Compare ratios of corresponding sides and conclude whether a single scale factor exists.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $\\frac{BC}{RS} = \\frac{2}{3}$ but $\\frac{AD}{QT} = \\frac{3}{6}$, the ratios are not equal, so the figures are not similar.",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q3",
+      "G8_M3_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_vertical_angles",
+    "title": "Vertical Angles Are Congruent",
+    "description": "Vertical angles formed by two intersecting lines are congruent.",
+    "condition": "Two angles formed as vertical angles by intersecting lines",
+    "response": "Conclude the angles are congruent",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If \\(\\angle AEB\\) and \\(\\angle DEC\\) are vertical angles, then \\(\\angle AEB \\cong \\angle DEC\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M3_a1_q8"
+    ]
+  }
+]

@@ -1,0 +1,528 @@
+[
+  {
+    "kc_id": "rotate_180_origin_rule",
+    "title": "180\u00b0 Rotation About the Origin Rule",
+    "description": "Apply the coordinate rule for rotating a point 180\u00b0 about the origin.",
+    "condition": "A point $(x, y)$ is rotated $180^\\circ$ about the origin.",
+    "response": "Compute the image as $(-x, -y)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "Rotate $(s, t)$ by $180^\\circ$ about the origin to get $(-s, -t)$.",
+    "notes": "Equivalent to reflecting across both axes.",
+    "question_ids": [
+      "G8_M2_TA_a1_q5",
+      "G8_M2_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "rotate_90_clockwise_origin_rule",
+    "title": "90\u00b0 Clockwise Rotation Rule",
+    "description": "Apply the coordinate rule for rotating a point 90\u00b0 clockwise about the origin.",
+    "condition": "A point $(x, y)$ is rotated $90^\\circ$ clockwise about the origin.",
+    "response": "Compute the image as $(y, -x)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "Rotate $(2, 5)$ by $90^\\circ$ clockwise to get $(5, -2)$.",
+    "notes": "Used to distinguish from counterclockwise rotation.",
+    "question_ids": [
+      "G8_M2_TA_a1_q4",
+      "G8_M2_TA_a1_q5",
+      "G8_M2_TB_a1_q1",
+      "G8_M2_TB_a1_q5",
+      "G8_M2_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "alternate_interior_angles_congruent",
+    "title": "Alternate Interior Angles Are Congruent",
+    "description": "When two parallel lines are cut by a transversal, alternate interior angles are congruent.",
+    "condition": "Two parallel lines cut by a transversal; angles identified as alternate interior.",
+    "response": "Set the measures of the two angles equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If lines \u2113 \u2225 m and \u22201 and \u22202 are alternate interior, then m\u22201 = m\u22202.",
+    "notes": "Requires recognition of parallel lines.",
+    "question_ids": [
+      "G8_M2_TC_a1_q3",
+      "G8_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "apply_pythagorean_theorem",
+    "title": "Apply the Pythagorean Theorem",
+    "description": "Use the Pythagorean Theorem to find a missing side length in a right triangle.",
+    "condition": "A right triangle with legs a and b and hypotenuse c, with two side lengths known.",
+    "response": "Substitute into a^2 + b^2 = c^2 (or rearranged form) and solve for the unknown side.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a = 6 and b = 11, then c = \\sqrt{6^2 + 11^2} = \\sqrt{36 + 121} = \\sqrt{157}.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M2_TD_a1_q2",
+      "G8_M2_TD_a1_q4",
+      "G8_M2_TD_a1_q5",
+      "G8_M2_a1_q8",
+      "G8_M2_a1_q9",
+      "G8_M2_a2_q5",
+      "G8_M2_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "visual_area_rearrangement_argument",
+    "title": "Area Rearrangement Argument for Pythagorean Theorem",
+    "description": "Use rearrangement of congruent triangles to argue that remaining areas are equal, establishing c^2 = a^2 + b^2.",
+    "condition": "Two composite figures formed from the same set of triangles arranged differently.",
+    "response": "Reason that since the triangles have equal total area in both figures, the remaining areas must be equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one arrangement leaves a square of area c^2 and another leaves squares of areas a^2 and b^2, then c^2 = a^2 + b^2.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "sequence_of_rigid_motions_composition",
+    "title": "Compose Rigid Motions in Given Order",
+    "description": "Apply multiple rigid motions in the specified sequence to determine the final image.",
+    "condition": "Given a sequence such as rotation followed by reflection.",
+    "response": "Apply each transformation in order to determine the resulting figure or coordinates.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule",
+    "example": "Rotate $(2,1)$ 90\u00b0 CCW to $(-1,2)$, then reflect across the y-axis to $(1,2)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TB_a1_q1",
+      "G8_M2_TB_a1_q4",
+      "G8_M2_a1_q2",
+      "G8_M2_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compute_3d_diagonal_prism",
+    "title": "Compute Space Diagonal of Rectangular Prism",
+    "description": "Find the length of the space diagonal of a rectangular prism using the Pythagorean Theorem twice or the 3D formula.",
+    "condition": "Given length l, width w, and height h of a right rectangular prism and asked for the space diagonal.",
+    "response": "Compute $d = \\sqrt{l^2 + w^2 + h^2}$ (or first find base diagonal, then apply Pythagorean Theorem with height).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $l=15$, $w=8$, $h=7$: $d=\\sqrt{15^2+8^2+7^2}=\\sqrt{225+64+49}=\\sqrt{338}\\approx18.4$.",
+    "notes": "Extends Pythagorean Theorem to three dimensions.",
+    "question_ids": [
+      "G8_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "rigid_motion_congruence",
+    "title": "Congruence via Rigid Motions",
+    "description": "Two figures are congruent if a sequence of rigid motions maps one onto the other.",
+    "condition": "Two geometric figures in the plane.",
+    "response": "Determine whether a sequence of translations, rotations, or reflections maps one figure exactly onto the other.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Reflect \u25b3ABC across x-axis, then translate to coincide with \u25b3FGH, proving congruence.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TB_a1_q2",
+      "G8_M2_a2_q2",
+      "G8_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "corresponding_angles_congruent",
+    "title": "Corresponding Angles Are Congruent",
+    "description": "When two parallel lines are cut by a transversal, corresponding angles are congruent.",
+    "condition": "Two parallel lines cut by a transversal; angles identified as corresponding.",
+    "response": "Set the measures of the two angles equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If lines \u2113 \u2225 m and \u22201 corresponds to \u22202, then m\u22201 = m\u22202.",
+    "notes": "Used to equate expressions such as 3x + 15 and 78.",
+    "question_ids": [
+      "G8_M2_TC_a1_q1",
+      "G8_M2_TC_a1_q3",
+      "G8_M2_TC_a1_q5",
+      "G8_M2_a1_q4",
+      "G8_M2_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "distance_formula_coordinate_plane",
+    "title": "Distance Formula in Coordinate Plane",
+    "description": "Find the distance between two points using the distance formula derived from the Pythagorean Theorem.",
+    "condition": "Given two points (x1, y1) and (x2, y2) in the coordinate plane.",
+    "response": "Compute $d = \\sqrt{(x2 - x1)^2 + (y2 - y1)^2}$ and simplify or approximate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Between $(2,5)$ and $(3,2)$: $d=\\sqrt{(3-2)^2+(2-5)^2}=\\sqrt{1+9}=\\sqrt{10}\\approx3.2$.",
+    "notes": "Application of Pythagorean Theorem to coordinate geometry.",
+    "question_ids": [
+      "G8_M2_TD_a1_q3",
+      "G8_M2_TD_a1_q5",
+      "G8_M2_a1_q8",
+      "G8_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "exterior_angle_theorem",
+    "title": "Exterior Angle Theorem",
+    "description": "In a triangle, an exterior angle equals the sum of the two remote interior angles.",
+    "condition": "A triangle with an exterior angle formed by extending one side.",
+    "response": "Set exterior angle measure equal to sum of the two remote interior angles.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If an exterior angle is (4x + 3)\u00b0 and remote interior angles are 48\u00b0 and 87\u00b0, then 4x + 3 = 48 + 87.",
+    "notes": "Explains equation setup in triangle problems.",
+    "question_ids": [
+      "G8_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_hypotenuse_by_largest_side",
+    "title": "Identify Hypotenuse as Longest Side",
+    "description": "Recognize that in a right triangle, the hypotenuse is the longest side.",
+    "condition": "Given side lengths of a triangle and determining which side would be the hypotenuse if the triangle is right.",
+    "response": "Select the longest side as the hypotenuse candidate.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "For sides 3, 5, 6, the longest side is 6, so 6 would be the hypotenuse candidate.",
+    "notes": "Used before checking $a^2+b^2=c^2$.",
+    "question_ids": [
+      "G8_M2_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_noncongruence_by_mismatch",
+    "title": "Identify Non-Congruent Figures",
+    "description": "Determine that two figures are not congruent when no sequence of rigid motions maps one onto the other.",
+    "condition": "Given two plane figures that differ in side lengths or angle measures under all rigid motions.",
+    "response": "State that the figures are not congruent.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If one triangle has side lengths $3,4,5$ and another has $3,4,6$, they are not congruent.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "composition_inverse_rotation_90",
+    "title": "Inverse of 90\u00b0 Rotation",
+    "description": "Recognize that a 90\u00b0 clockwise rotation is the inverse of a 90\u00b0 counterclockwise rotation about the same point.",
+    "condition": "Given a figure rotated 90\u00b0 counterclockwise about the origin and asked how to map it back.",
+    "response": "Apply a 90\u00b0 clockwise rotation about the same point.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule",
+    "example": "If $(x,y)$ is mapped to $(-y,x)$ by a 90\u00b0 CCW rotation, then applying $(y,-x)$ (90\u00b0 CW) returns it to $(x,y)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "add_linear_pair_to_180",
+    "title": "Linear Pair Sum to 180\u00b0",
+    "description": "When two angles form a linear pair on a straight line, their measures sum to 180\u00b0.",
+    "condition": "Two adjacent angles whose noncommon sides form a straight line.",
+    "response": "Set up equation m\u2220a + m\u2220b = 180\u00b0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If m\u2220A = 110\u00b0 and \u2220A and \u2220B form a linear pair, then m\u2220B = 180\u00b0 - 110\u00b0 = 70\u00b0.",
+    "notes": "Used when angles lie on a straight line.",
+    "question_ids": [
+      "G8_M2_TC_a1_q2",
+      "G8_M2_TC_a1_q4",
+      "G8_M2_TC_a1_q5",
+      "G8_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "identify_parallel_after_translation",
+    "title": "Parallelism Preserved Under Translation",
+    "description": "Recognize that if two segments are parallel, their images under a translation are also parallel.",
+    "condition": "A translation is applied to a figure with two parallel segments.",
+    "response": "Conclude that the corresponding image segments remain parallel.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $\\overline{WX} \\parallel \\overline{ZY}$, then after a translation, $\\overline{W'X'} \\parallel \\overline{Z'Y'}$.",
+    "notes": "Applies to any translation vector.",
+    "question_ids": [
+      "G8_M2_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "reflection_across_x_axis",
+    "title": "Reflect Across the x-Axis",
+    "description": "A reflection across the x-axis maps each point to a point with the same x-coordinate and opposite y-coordinate.",
+    "condition": "Point $(x,y)$ reflected across the x-axis.",
+    "response": "Map to $(x,-y)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(2,-3)$ reflected across x-axis becomes $(2,3)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_a1_q3",
+      "G8_M2_a2_q1",
+      "G8_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "reflection_across_y_axis_rule",
+    "title": "Reflection Across the y-Axis Rule",
+    "description": "Apply the coordinate rule for reflecting a point across the y-axis.",
+    "condition": "A point (x, y) reflected across the y-axis.",
+    "response": "Map to (-x, y).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Reflect (4, -2) across the y-axis to get (-4, -2).",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TA_a1_q3",
+      "G8_M2_TB_a1_q4",
+      "G8_M2_a1_q1",
+      "G8_M2_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "rigid_motion_maps_congruent_angles",
+    "title": "Rigid Motion Maps Corresponding Angles",
+    "description": "If a rigid motion (translation or rotation) maps one angle onto another, then the angles are congruent.",
+    "condition": "A specified rigid motion maps angle A onto angle B.",
+    "response": "Conclude m\u2220A = m\u2220B.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If a translation along \\(\\overrightarrow{PR}\\) maps \u22201 onto \u22203, then m\u22201 = m\u22203.",
+    "notes": "Response is always that the angles are congruent.",
+    "question_ids": [
+      "G8_M2_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "rigid_motion_preserves_measure",
+    "title": "Rigid Motions Preserve Length and Angle Measure",
+    "description": "Use the property that reflections, rotations, and translations preserve distances and angle measures.",
+    "condition": "Given a figure and its image under a rigid motion.",
+    "response": "Conclude that corresponding side lengths and angle measures are equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $\\angle H = 135^\\circ$ in a figure, then after a reflection and rotation, $\\angle H'' = 135^\\circ$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "coordinate_rotate_90_ccw_origin",
+    "title": "Rotate 90\u00b0 Counterclockwise About Origin",
+    "description": "Apply the coordinate rule for a 90\u00b0 counterclockwise rotation about the origin.",
+    "condition": "Given a point $(x,y)$ rotated 90\u00b0 counterclockwise about the origin.",
+    "response": "Produce the image point $(-y,x)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Rotating $(3,5)$ 90\u00b0 CCW about the origin gives $(-5,3)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TA_a1_q4",
+      "G8_M2_TB_a1_q1",
+      "G8_M2_TB_a1_q5",
+      "G8_M2_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_tenth",
+    "title": "Round to Nearest Tenth",
+    "description": "Round a decimal value to the nearest tenth based on the hundredths digit.",
+    "condition": "Given a decimal number and instructed to round to the nearest tenth.",
+    "response": "Check the hundredths digit and round the tenths digit up or down accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$6.73$ rounded to the nearest tenth is $6.7$ because the hundredths digit (3) is less than 5.",
+    "notes": "Standard rounding convention.",
+    "question_ids": [
+      "G8_M2_TD_a1_q3",
+      "G8_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "solve_linear_equation_one_variable",
+    "title": "Solve Linear Equation in One Variable",
+    "description": "Solve a linear equation by isolating the variable using inverse operations.",
+    "condition": "An equation of the form ax + b = c.",
+    "response": "Subtract b from both sides and divide by a to find x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Solve 3x - 6 = 108: 3x = 114, so x = 38.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G8_M2_TC_a1_q1",
+      "G8_M2_TC_a1_q2",
+      "G8_M2_a1_q4",
+      "G8_M2_a1_q7",
+      "G8_M2_a2_q4",
+      "G8_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "substitute_angle_expression",
+    "title": "Substitute Algebraic Angle Expression",
+    "description": "Replace an angle measure in a geometric relationship with its algebraic expression.",
+    "condition": "An angle measure is given as an algebraic expression (e.g., 3x + 15).",
+    "response": "Insert the expression into the relevant angle equation.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If m\u22201 = 3x + 15 and corresponding angles are equal to 78\u00b0, write 3x + 15 = 78.",
+    "notes": "Procedural substitution step.",
+    "question_ids": [
+      "G8_M2_TC_a1_q1",
+      "G8_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "translation_on_coordinate_plane",
+    "title": "Translation on Coordinate Plane",
+    "description": "A translation moves every point by the same horizontal and/or vertical distance.",
+    "condition": "Point $(x,y)$ translated by $(a,b)$.",
+    "response": "Map to $(x+a, y+b)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Translate $(1,2)$ 6 units right \u2192 $(7,2)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_TA_a1_q1",
+      "G8_M2_TB_a1_q4",
+      "G8_M2_a1_q2",
+      "G8_M2_a1_q3",
+      "G8_M2_a1_q6",
+      "G8_M2_a2_q2",
+      "G8_M2_a2_q3",
+      "G8_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "recognize_translation_preserves_measure",
+    "title": "Translations Preserve Length and Angle",
+    "description": "Understand that translations preserve distances and angle measures.",
+    "condition": "A figure is mapped under a translation and a length or angle measure is questioned.",
+    "response": "State that the corresponding image length or angle measure is unchanged.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $\\angle WXY = 90^\\circ$, then after translation $\\angle W'X'Y' = 90^\\circ$, and if $XY = 4$, then $X'Y' = 4$.",
+    "notes": "Core rigid motion property.",
+    "question_ids": [
+      "G8_M2_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "triangle_angle_sum",
+    "title": "Triangle Angle Sum Theorem",
+    "description": "Use the fact that the sum of the interior angles of a triangle is 180 degrees.",
+    "condition": "A triangle with two interior angles known.",
+    "response": "Set up equation angle1 + angle2 + angle3 = 180 and solve for the unknown angle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If angles are 71^\\circ and 28^\\circ, then the third angle is 180 - 71 - 28 = 81^\\circ.",
+    "notes": "",
+    "question_ids": [
+      "G8_M2_a1_q7",
+      "G8_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "verify_right_triangle_by_converse",
+    "title": "Verify Right Triangle Using Converse",
+    "description": "Determine whether a triangle is right by checking if its side lengths satisfy the Pythagorean Theorem.",
+    "condition": "Given three side lengths a, b, c of a triangle.",
+    "response": "Check whether the square of the longest side equals the sum of the squares of the other two sides; conclude right or not right.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For sides 20, 21, 29: $20^2+21^2=400+441=841$ and $29^2=841$, so the triangle is right.",
+    "notes": "Converse of the Pythagorean Theorem.",
+    "question_ids": [
+      "G8_M2_TD_a1_q1"
+    ]
+  }
+]

@@ -1,0 +1,750 @@
+[
+  {
+    "kc_id": "add_scientific_notation_same_exp",
+    "title": "Add Numbers in Scientific Notation (Same Exponent)",
+    "description": "Add coefficients when two numbers share the same power of 10 and keep the exponent unchanged, then normalize if needed.",
+    "condition": "Two numbers written as a\u00d710^n and b\u00d710^n with the same exponent.",
+    "response": "Compute (a+b)\u00d710^n and rewrite in proper scientific notation if necessary.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(7.6\\times10^{-4})+(3.8\\times10^{-4})=(7.6+3.8)\\times10^{-4}=11.4\\times10^{-4}=1.14\\times10^{-3}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a1_q8",
+      "G8_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "add_subtract_scientific_notation_align_exponents",
+    "title": "Align Exponents Before Adding/Subtracting",
+    "description": "To add or subtract numbers in scientific notation, first rewrite them with the same power of 10.",
+    "condition": "Expression of the form a \u00d7 10^m \u00b1 b \u00d7 10^n where m \u2260 n.",
+    "response": "Rewrite one number so both have the same exponent, then combine coefficients.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8.3 \\times 10^{-8} - 5.6 \\times 10^{-9} = 8.3 \\times 10^{-8} - 0.56 \\times 10^{-8}$",
+    "notes": "Core step before combining coefficients.",
+    "question_ids": [
+      "G8_M1_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "pythagorean_theorem_apply",
+    "title": "Apply the Pythagorean Theorem",
+    "description": "Find a missing side length in a right triangle using a^2+b^2=c^2.",
+    "condition": "A right triangle with two known side lengths.",
+    "response": "Substitute into a^2+b^2=c^2 and solve for the unknown side.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$x=\\sqrt{8^2+5^2}=\\sqrt{89}$",
+    "notes": "[merged: response varies]",
+    "question_ids": [
+      "G8_M1_TD_a1_q4",
+      "G8_M1_TD_a1_q5",
+      "G8_M1_TD_a1_q6",
+      "G8_M1_a1_q10",
+      "G8_M1_a1_q6",
+      "G8_M1_a2_q10",
+      "G8_M1_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "classify_rational_fraction",
+    "title": "Classify Fraction as Rational",
+    "description": "Recognize that any ratio of integers with nonzero denominator is rational.",
+    "condition": "Given a number expressed as a fraction of integers (a/b, b \u2260 0).",
+    "response": "Classify the number as rational.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$-\\frac{7}{9}$ \u2192 rational.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_irrational_nonrepeating_decimal",
+    "title": "Classify Nonterminating Nonrepeating Decimal as Irrational",
+    "description": "Recognize that a decimal that does not terminate and does not repeat is irrational.",
+    "condition": "Given a decimal representation that is nonterminating and nonrepeating.",
+    "response": "Classify the number as irrational.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$0.60660666\\ldots$ (nonterminating, nonrepeating) \u2192 irrational.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_square_root_nonperfect",
+    "title": "Classify Square Root of Non\u2011Perfect Square as Irrational",
+    "description": "Recognize that the square root of a non\u2011perfect square integer is irrational.",
+    "condition": "Given \u221an where n is not a perfect square integer.",
+    "response": "Classify \u221an as irrational.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$\\sqrt{3}$ and $\\sqrt{18}$ are irrational.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_square_root_perfect_square",
+    "title": "Classify Square Root of Perfect Square as Rational",
+    "description": "Recognize that the square root of a perfect square integer is rational.",
+    "condition": "Given \u221an where n is a perfect square integer.",
+    "response": "Evaluate the root and classify it as rational.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\sqrt{4} = 2$, which is rational.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_rational_terminating_decimal",
+    "title": "Classify Terminating Decimal as Rational",
+    "description": "Recognize that a decimal that terminates can be written as a fraction and is rational.",
+    "condition": "Given a terminating decimal.",
+    "response": "Classify the number as rational.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$0.341$ \u2192 rational.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "combine_coefficients_after_alignment",
+    "title": "Combine Coefficients with Common Exponent",
+    "description": "After aligning exponents, add or subtract the decimal coefficients and keep the common power of 10.",
+    "condition": "Two scientific notation numbers with identical powers of 10 are being added or subtracted.",
+    "response": "Add or subtract the coefficients and retain the shared exponent.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(8.3 - 0.56) \\times 10^{-8} = 7.74 \\times 10^{-8}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TA_a1_q5",
+      "G8_M1_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_scientific_notation_by_exponent",
+    "title": "Compare by Exponent Magnitude",
+    "description": "When ordering numbers in scientific notation, compare powers of 10 first; larger exponents indicate larger magnitudes (for positive coefficients).",
+    "condition": "Two or more positive numbers written in scientific notation.",
+    "response": "Order numbers by exponent value first; if equal, compare coefficients.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8.51 \\times 10^{-13} < 7.0 \\times 10^{-12}$ because $-13 < -12$.",
+    "notes": "Assumes positive coefficients.",
+    "question_ids": [
+      "G8_M1_TA_a1_q3",
+      "G8_M1_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_scientific_notation_ratio",
+    "title": "Compare Quantities in Scientific Notation by Ratio",
+    "description": "Determine how many times larger one quantity is than another using division of coefficients and subtraction of exponents.",
+    "condition": "Two quantities written in scientific notation a\u00d710^m and b\u00d710^n to be compared multiplicatively.",
+    "response": "Compute (a/b)\u00d710^(m\u2212n) and interpret as a multiplicative comparison.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(4.5\\times10^9)/(1.5\\times10^8)=3\\times10^1=30$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M1_a1_q1",
+      "G8_M1_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_ratio_scientific",
+    "title": "Compute Ratio in Scientific Notation",
+    "description": "To determine how many times one scientific notation number is of another, divide coefficients and subtract exponents.",
+    "condition": "Given a \u00d7 10^m and b \u00d7 10^n, and asked how many times one is of the other.",
+    "response": "Compute (a/b) \u00d7 10^(m\u2212n) and simplify.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{7.8 \\times 10^8}{2.6 \\times 10^6} = (7.8/2.6) \\times 10^{8-6} = 3 \\times 10^2 = 300$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TA_a1_q3",
+      "G8_M1_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_units_miles_to_inches",
+    "title": "Convert Miles to Inches",
+    "description": "Convert a measurement in miles to inches using unit conversion factors.",
+    "condition": "A length is given in miles and must be expressed in inches.",
+    "response": "Multiply by 5280 feet per mile and 12 inches per foot.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$1.24\\times10^{-5}\\text{ miles} \\times 5280 \\times 12 \\approx 0.79\\text{ inches}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a2_q11"
+    ]
+  },
+  {
+    "kc_id": "convert_standard_to_scientific_notation",
+    "title": "Convert Standard Form to Scientific Notation",
+    "description": "Rewrite a decimal number as a value between 1 and 10 multiplied by a power of 10.",
+    "condition": "A decimal number not written in scientific notation.",
+    "response": "Move the decimal to create a number between 1 and 10 and multiply by the appropriate power of 10.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.000287 = 2.87 \\times 10^{-4}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TA_a1_q1",
+      "G8_M1_TC_a1_q2",
+      "G8_M1_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_units_multiplicative",
+    "title": "Convert Units Using Multiplicative Factors",
+    "description": "Convert a measurement to a more appropriate unit by multiplying by a known conversion factor.",
+    "condition": "A quantity given in one unit and a known conversion factor to another unit.",
+    "response": "Multiply by the conversion factor to express the quantity in the new unit.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8.75\\times10^{-3}\\text{ yd}\\times36\\text{ in/yd}=0.315\\text{ in}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a1_q11"
+    ]
+  },
+  {
+    "kc_id": "divide_scientific_notation",
+    "title": "Divide Numbers in Scientific Notation",
+    "description": "Divide coefficients and subtract exponents when dividing numbers written in scientific notation.",
+    "condition": "A quotient (a\u00d710^m) \u00f7 (b\u00d710^n).",
+    "response": "Compute (a/b)\u00d710^(m\u2212n) and normalize to scientific notation.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(8.4\\times10^{-5})\\div0.002=(8.4\\times10^{-5})\\div(2\\times10^{-3})=4.2\\times10^{-2}$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M1_TC_a1_q1",
+      "G8_M1_a1_q3",
+      "G8_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "evaluate_cube_root",
+    "title": "Evaluate a Cube Root",
+    "description": "Determine the number whose cube equals a given value.",
+    "condition": "Given an expression of the form \\sqrt[3]{n}.",
+    "response": "Find the number x such that x^3 = n.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "\\sqrt[3]{64} = 4 because 4^3 = 64.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "evaluate_square_root",
+    "title": "Evaluate a Square Root",
+    "description": "Determine the principal square root of a nonnegative number.",
+    "condition": "Given an expression of the form \\sqrt{n} with n \\ge 0.",
+    "response": "Find the nonnegative number x such that x^2 = n.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "\\sqrt{0.49} = 0.7 because 0.7^2 = 0.49.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TD_a1_q2",
+      "G8_M1_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "evaluate_exponent_expression",
+    "title": "Evaluate Expression with Exponent Rules",
+    "description": "Apply power, product, and quotient rules of exponents to simplify expressions.",
+    "condition": "Expression involving powers with the same base, such as (a^m)^n, a^m\u00b7a^n, or a^m/a^n.",
+    "response": "Use exponent rules to combine exponents and simplify.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{(3^2)^3\\cdot3^{-4}}{3}=\\frac{3^6\\cdot3^{-4}}{3}=\\frac{3^2}{3}=3$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "evaluate_square_and_cube_roots",
+    "title": "Evaluate Square and Cube Roots",
+    "description": "Recognize and compute exact or approximate values of square roots and cube roots.",
+    "condition": "An expression includes \u221aa or \u221ba.",
+    "response": "Compute or approximate the principal root value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$\\sqrt{16}=4,\\quad \\sqrt{24}\\approx4.9,\\quad \\sqrt{7}+1\\approx3.6,\\quad \\sqrt[3]{16}\\approx2.5$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "identify_pi_as_irrational",
+    "title": "Identify \u03c0 as Irrational",
+    "description": "Recall that \u03c0 is an irrational number.",
+    "condition": "Given the constant \u03c0.",
+    "response": "Classify \u03c0 as irrational.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "$\\pi$ \u2192 irrational.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q1",
+      "G8_M1_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "approximate_square_root_between_integers",
+    "title": "Locate Square Root Between Consecutive Integers",
+    "description": "Determine between which two whole numbers a non-perfect square root lies.",
+    "condition": "Given a positive number n that is not a perfect square and asked to bound \\sqrt{n} between consecutive integers.",
+    "response": "Find consecutive integers k and k+1 such that k^2 < n < (k+1)^2, then conclude k < \\sqrt{n} < k+1.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since 100 < 117 < 121, we have 10 < \\sqrt{117} < 11.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M1_TD_a1_q6",
+      "G8_M1_TE_a1_q2",
+      "G8_M1_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "match_square_root_to_value",
+    "title": "Match Radical to Approximate Value",
+    "description": "Estimate square or cube roots and match them to reasonable decimal approximations.",
+    "condition": "A radical expression such as \u221an or \u221bn with answer choices in decimal form.",
+    "response": "Estimate the root using nearby perfect squares or cubes and select the closest value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$\\sqrt{15}\\approx3.9$ since $3^2=9$ and $4^2=16$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "multiply_scientific_notation",
+    "title": "Multiply Numbers in Scientific Notation",
+    "description": "To multiply numbers in scientific notation, multiply coefficients and add exponents.",
+    "condition": "Expression of the form (a \u00d7 10^m)(b \u00d7 10^n).",
+    "response": "Compute (a \u00d7 b) \u00d7 10^(m + n), then adjust to proper scientific notation if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(7.8 \\times 10^{-5})(3.3 \\times 10^{2}) = 2.574 \\times 10^{-2}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "negative_exponent_reciprocal",
+    "title": "Negative Exponent as Reciprocal",
+    "description": "A negative exponent indicates the reciprocal of the base raised to the corresponding positive exponent.",
+    "condition": "Expression of the form a^{-n} where a \u2260 0",
+    "response": "Rewrite as 1/a^n",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3^{-8} = \\frac{1}{3^8}$",
+    "notes": "Equivalent to reciprocal rule",
+    "question_ids": [
+      "G8_M1_TB_a1_q2",
+      "G8_M1_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "order_by_magnitude",
+    "title": "Order Numbers by Magnitude",
+    "description": "Order a mixture of standard and scientific notation numbers by comparing their magnitudes.",
+    "condition": "A list of positive numbers in standard and/or scientific notation must be ordered from least to greatest.",
+    "response": "Convert to comparable forms or compare powers of 10 and coefficients to arrange in ascending order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$9.2 < 73.5 < 7.35 \\times 10^2 < 920 < 7.35 \\times 10^3 < 9.2 \\times 10^3 < 92{,}000 < 7.35 \\times 10^5$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "order_real_numbers_by_approximation",
+    "title": "Order Real Numbers Using Approximations",
+    "description": "Compare and order real numbers (including radicals and \u03c0) by converting to decimal approximations.",
+    "condition": "Given a set of real numbers in different forms (e.g., radicals, \u03c0, integers).",
+    "response": "Approximate each value and arrange them from least to greatest.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\sqrt{2}\u22481.41$, $\\sqrt[3]{11}\u22482.22$, $\\sqrt{3}+1\u22482.73$, $\\pi\u22483.14$, $\\sqrt{14}\u22483.74$ \u2192 ordered least to greatest.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "power_of_power_rule",
+    "title": "Power of a Power Rule",
+    "description": "When raising a power to a power, multiply the exponents.",
+    "condition": "Expression of the form (a^m)^n",
+    "response": "Rewrite as a^(m\u00b7n)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(3^{-2})^4 = 3^{-8}$",
+    "notes": "Applies to any real exponents",
+    "question_ids": [
+      "G8_M1_TB_a1_q2",
+      "G8_M1_TB_a1_q4",
+      "G8_M1_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "power_of_product_rule",
+    "title": "Power of a Product Rule",
+    "description": "When raising a product to a power, apply the exponent to each factor.",
+    "condition": "Expression of the form (ab)^n",
+    "response": "Rewrite as a^n b^n",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(a^7 b^0)^4 = a^{28} b^{0}$",
+    "notes": "Combined with other exponent rules",
+    "question_ids": [
+      "G8_M1_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "add_exponents_product_rule",
+    "title": "Product of Powers Rule",
+    "description": "When multiplying powers with the same base, add the exponents.",
+    "condition": "Expression of the form a^m \u00b7 a^n with the same nonzero base",
+    "response": "Rewrite as a^(m+n)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$9^8 \\cdot 9^6 = 9^{8+6} = 9^{14}$",
+    "notes": "Fundamental exponent law",
+    "question_ids": [
+      "G8_M1_TB_a1_q1",
+      "G8_M1_TB_a1_q5",
+      "G8_M1_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "quotient_exponent_subtract_rule",
+    "title": "Quotient of Powers Rule",
+    "description": "When dividing powers with the same base, subtract the exponents.",
+    "condition": "Expression of the form a^m / a^n with the same nonzero base",
+    "response": "Rewrite as a^(m\u2212n)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{z^{-7}}{z^{-5}} = z^{-7-(-5)} = z^{-2}$",
+    "notes": "Requires nonzero base",
+    "question_ids": [
+      "G8_M1_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "range_reasoning_pythagorean",
+    "title": "Reason About Range of Hypotenuse Values",
+    "description": "Determine possible values of the hypotenuse based on an interval for a leg.",
+    "condition": "Right triangle with one leg fixed and the other constrained to an interval.",
+    "response": "Evaluate the hypotenuse at interval endpoints and conclude all values lie between those results.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $b\\in[3,5]$, then $c=\\sqrt{2^2+b^2}$ ranges from $\\sqrt{13}$ to $\\sqrt{29}$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a1_q10"
+    ]
+  },
+  {
+    "kc_id": "rewrite_to_proper_scientific_notation",
+    "title": "Rewrite to Proper Scientific Notation",
+    "description": "Ensure the coefficient in scientific notation is at least 1 and less than 10 by adjusting the exponent accordingly.",
+    "condition": "A number is written as a \u00d7 10^n where a \u2265 10 or a < 1.",
+    "response": "Adjust a to 1 \u2264 a < 10 and change the exponent to keep the value equivalent.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$12.1 \\times 10^9 = 1.21 \\times 10^{10}$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_tenth",
+    "title": "Round to Nearest Tenth",
+    "description": "Round a decimal number to one decimal place using the hundredths digit.",
+    "condition": "Given a decimal number and instructed to round to the nearest tenth.",
+    "response": "Check the hundredths digit and round the tenths digit accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$3.605\\rightarrow 3.6$ (since the hundredths digit is 0).",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TE_a1_q2",
+      "G8_M1_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "round_decimal_place",
+    "title": "Round to Specified Decimal Place",
+    "description": "Round a decimal number to a given place value using standard rounding rules.",
+    "condition": "A decimal number and a specified place value (e.g., nearest ten\u2011thousandth or hundredth).",
+    "response": "Check the next digit and round up or down accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$0.000298$ rounded to the nearest ten\u2011thousandth is $0.0003$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TC_a1_q4",
+      "G8_M1_a1_q4",
+      "G8_M1_a1_q7",
+      "G8_M1_a2_q4",
+      "G8_M1_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "select_reasonable_unit",
+    "title": "Select Appropriate Measurement Unit",
+    "description": "Choose a unit of measurement that yields a manageable numerical value for interpretation.",
+    "condition": "A measurement is expressed in a unit that produces an extremely large or small number.",
+    "response": "Select a larger or smaller unit that makes the quantity easier to understand.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$1.6\\times10^5$ meters is more reasonably expressed as $160$ kilometers.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_a2_q11",
+      "G8_M1_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_cubic_by_cube_root",
+    "title": "Solve a Cubic Equation Using Cube Roots",
+    "description": "Solve equations of the form x^3 = k by taking the cube root of both sides.",
+    "condition": "Equation of the form x^3 = k.",
+    "response": "Take the cube root of both sides to get x = \\sqrt[3]{k}.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If p^3 = \\frac{125}{216}, then p = \\sqrt[3]{\\frac{125}{216}} = \\frac{5}{6}.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_quadratic_by_square_root_property",
+    "title": "Solve a Quadratic by Square Root Property",
+    "description": "Solve equations of the form x^2 = k by taking both positive and negative square roots.",
+    "condition": "Equation of the form x^2 = k where k > 0.",
+    "response": "State x = \\pm \\sqrt{k}.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If s^2 = 0.49, then s = \\pm \\sqrt{0.49} = \\pm 0.7.",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TD_a1_q2",
+      "G8_M1_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "solve_for_unknown_exponent",
+    "title": "Solve for Unknown Exponent",
+    "description": "Determine an unknown exponent by rewriting both sides with a common base and equating exponents.",
+    "condition": "Equation where both sides are powers of the same nonzero base, one with unknown exponent",
+    "response": "Set exponents equal and solve for the variable",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $9^t = 9^{14}$, then $t = 14$.",
+    "notes": "Depends on one-to-one property of exponential expressions",
+    "question_ids": [
+      "G8_M1_TB_a1_q1",
+      "G8_M1_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "subtract_scientific_notation",
+    "title": "Subtract Numbers in Scientific Notation",
+    "description": "Rewrite quantities with like exponents and subtract coefficients.",
+    "condition": "Two quantities to subtract, possibly requiring rewriting one in scientific notation.",
+    "response": "Express both with the same power of 10, subtract coefficients, and normalize.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2.2\\times10^7-5.2\\times10^6=2.2\\times10^7-0.52\\times10^7=1.68\\times10^7$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G8_M1_TA_a1_q6",
+      "G8_M1_a1_q2",
+      "G8_M1_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "use_ratio_to_compare_magnitudes",
+    "title": "Use Ratio to Compare Magnitudes",
+    "description": "Determine how many times larger one quantity is than another by dividing their values.",
+    "condition": "Statement asking how many times as large one scientific-notation quantity is compared to another.",
+    "response": "Compute the quotient of the two quantities and interpret the result as a multiplicative comparison.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{4 \\times 10^{-3}}{5 \\times 10^{-4}} = 8$",
+    "notes": "",
+    "question_ids": [
+      "G8_M1_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "evaluate_zero_exponent",
+    "title": "Zero Exponent Rule",
+    "description": "Any nonzero number raised to the zero power equals 1.",
+    "condition": "Expression of the form a^0 where a \u2260 0",
+    "response": "Rewrite as 1",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$17^0 = 1$",
+    "notes": "Requires nonzero base",
+    "question_ids": [
+      "G8_M1_TB_a1_q5"
+    ]
+  }
+]

@@ -1,0 +1,914 @@
+[
+  {
+    "kc_id": "apply_vertical_line_test",
+    "title": "Apply Vertical Line Test",
+    "description": "Determine whether a graphed relation is a function by checking that no vertical line intersects the graph more than once.",
+    "condition": "Given a graph of a relation in the coordinate plane and asked whether it is a function.",
+    "response": "Check whether any vertical line intersects the graph more than once; conclude it is a function if none do, otherwise not a function.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a vertical line at $x = 2$ intersects the graph at two points, then the relation is not a function. If every vertical line intersects at most once, it is a function.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "check_new_pair_against_existing_inputs",
+    "title": "Check Ordered Pair Against Existing Inputs",
+    "description": "Determine whether a new ordered pair can be added to a function by ensuring its input does not already map to a different output.",
+    "condition": "Given a function defined by a table of input-output pairs and a proposed ordered pair $(x, y)$.",
+    "response": "If the input x is already used with a different output, reject the pair; if the input is unused or has the same output, accept the pair.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the table includes $(11, 5)$, then the pair $(11, -7)$ cannot be included because input $11$ would have two different outputs.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_function_from_graph_shape",
+    "title": "Classify Function from Graph Shape",
+    "description": "Determine whether a graphed relationship is linear or nonlinear based on shape.",
+    "condition": "A graph of a function is shown.",
+    "response": "If the graph is a straight line, classify as linear; if curved, classify as nonlinear.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "A wavy curve on a graph is classified as nonlinear.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_function_from_equation",
+    "title": "Classify Linear Function from Equation",
+    "description": "Identify a linear function from an equation in slope-intercept form.",
+    "condition": "An equation is written in the form y = mx + b.",
+    "response": "Classify the relationship as a linear function.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Given y = -\\frac{4}{5}x + \\frac{2}{7}, classify as linear.",
+    "notes": "Recognition of linear form.",
+    "question_ids": [
+      "G8_M6_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_relation_as_function",
+    "title": "Classify Relation as Function or Not",
+    "description": "Determine whether a relation is a function based on whether each input has exactly one output.",
+    "condition": "Given a graph, table, or set of ordered pairs representing a relation.",
+    "response": "State whether the relation is a function (each x has exactly one y) or not a function.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If a table shows $x=3$ paired with both $y=6$ and $y=7$, then it is not a function.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_scatter_association",
+    "title": "Classify Type of Association",
+    "description": "Identify the strength, direction, and linearity of association in a scatter plot.",
+    "condition": "Given a scatter plot with points showing a trend.",
+    "response": "Classify the association (e.g., strong negative linear association).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If points cluster closely around a downward-sloping line, the association is strong, negative, linear.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_fractions_with_common_denominator",
+    "title": "Compare Fractions with Common Whole",
+    "description": "When multiple fractions share the same whole (same denominator or same total), compare them by comparing their numerators.",
+    "condition": "Fractions representing parts of the same total (e.g., counts out of the same grand total).",
+    "response": "Identify the fraction with the greatest numerator as the greatest fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compare $\\frac{51}{278}$ and $\\frac{28}{278}$. Since $51 > 28$, $\\frac{51}{278}$ is greater.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_initial_values",
+    "title": "Compare Initial Values of Linear Functions",
+    "description": "Determine which linear function has the greatest initial value (y-intercept).",
+    "condition": "Given multiple linear functions in graph, equation, or table form.",
+    "response": "Identify the function with the largest y-intercept.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "For $y=x+3$, the initial value is $3$. Compare this to other functions' values at $x=0$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_rates_of_change",
+    "title": "Compare Rates of Change",
+    "description": "Determine which linear function has the greatest rate of change (slope).",
+    "condition": "Given multiple linear functions in graph, equation, or table form.",
+    "response": "Identify the function with the largest slope.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If one function has slope $2$ and another has slope $1$, the function with slope $2$ has the greater rate of change.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_slopes_across_representations",
+    "title": "Compare Slopes Across Representations",
+    "description": "Determine which function has the greatest rate of change by finding and comparing slopes from equations, tables, or graphs.",
+    "condition": "Given multiple linear functions represented as equations, tables, or graphs, and asked which has the greatest rate of change.",
+    "response": "Compute or identify each slope and select the function with the largest slope value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Function J: $y = x + 6$ has slope $1$.  \nFunction K: slope $= \\frac{8-5}{4-2} = \\frac{3}{2} = 1.5$.  \nSince $1.5 > 1$, Function K has the greater rate of change.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q2",
+      "G8_M6_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "complete_two_way_table_using_totals",
+    "title": "Complete Two-Way Table Using Totals",
+    "description": "Fill in missing cells of a two-way frequency table using row totals, column totals, and the grand total.",
+    "condition": "A two-way table with some known cell counts and given row/column totals.",
+    "response": "Use addition or subtraction to determine missing cell values so row and column sums match totals.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a row total is 130 and one cell is 37, the other cell is $130 - 37 = 93$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_fraction_from_table",
+    "title": "Compute Fraction from Two-Way Table",
+    "description": "Form a fraction representing a subgroup by dividing its count by the appropriate total.",
+    "condition": "A specific subgroup count and its corresponding row total, column total, or grand total are identified.",
+    "response": "Write the fraction as subgroup count divided by the specified total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "The fraction of eighth graders who prefer red is $\\frac{51}{107}$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_relative_frequency",
+    "title": "Compute Relative Frequency",
+    "description": "Calculate a relative frequency by dividing a category frequency by the relevant total.",
+    "condition": "A frequency count and its associated total (row, column, or grand total).",
+    "response": "Divide the frequency by the total to obtain a decimal or fraction between 0 and 1.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For parrots who prefer foxes: $\\frac{48}{160} = 0.3$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q2",
+      "G8_M6_TD_a1_q3",
+      "G8_M6_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_row_relative_frequency",
+    "title": "Compute Row Relative Frequency",
+    "description": "Calculate relative frequencies within a row of a two-way table.",
+    "condition": "Given counts in a row and the row total.",
+    "response": "Divide each cell count by the row total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a row has 128 out of 200, relative frequency = 128/200 = 0.64.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q6",
+      "G8_M6_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "compute_slope_from_table",
+    "title": "Compute Slope from Table",
+    "description": "Calculate the rate of change (slope) using two points from a table of values.",
+    "condition": "Given two data points $(x_1, y_1)$ and $(x_2, y_2)$ in a table representing a linear relationship.",
+    "response": "Compute slope using $m = \\frac{y_2 - y_1}{x_2 - x_1}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Using $(6,300)$ and $(10,350)$:  \n$m = \\frac{350-300}{10-6} = \\frac{50}{4} = 12.5$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q1",
+      "G8_M6_TB_a1_q2",
+      "G8_M6_TB_a1_q3",
+      "G8_M6_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "divide_diameter_by_two",
+    "title": "Convert Diameter to Radius",
+    "description": "Find the radius by dividing the diameter by 2.",
+    "condition": "Diameter of a circle is given.",
+    "response": "Compute radius = diameter / 2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If diameter = 9, then \\(r = 9/2 = 4.5\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "define_function_single_output",
+    "title": "Definition of Function (Single Output per Input)",
+    "description": "Recognize that a relation is a function if and only if each input is associated with exactly one output.",
+    "condition": "Given a relation (table, mapping, or description) and asked whether it is a function.",
+    "response": "State that it is a function if each input has exactly one output; otherwise state it is not a function.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "In the table $\\{(0,5),(2,-6),(5,5),(6,1),(12,-7)\\}$, each input appears once, so the relation is a function.",
+    "notes": "Definition-based; conventional mathematical definition.",
+    "question_ids": [
+      "G8_M6_TA_a1_q1",
+      "G8_M6_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "determine_constant_interval_behavior",
+    "title": "Determine Constant Interval Behavior",
+    "description": "Identify that a function neither increases nor decreases over an interval when its graph is horizontal.",
+    "condition": "Given a graph with a horizontal segment over a specified interval.",
+    "response": "State that the function neither increases nor decreases on that interval.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If the graph shows $y=3$ for $0 \\le x \\le 2$, then the function neither increases nor decreases on $[0,2]$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "determine_linear_vs_nonlinear",
+    "title": "Determine Linear vs Nonlinear Function",
+    "description": "Identify whether a function is linear (constant rate of change/straight line) or nonlinear.",
+    "condition": "Given a graph, table, or equation representing a function.",
+    "response": "State whether the function is linear or nonlinear.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "The equation $y=\\frac{2}{3}x+\\frac{5}{6}$ is linear because it is in the form $y=mx+b$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "evaluate_linear_model",
+    "title": "Evaluate Linear Equation at Given x",
+    "description": "Substitute a given x-value into a linear equation to compute the corresponding y-value.",
+    "condition": "Linear equation in the form y = mx + b and a specific numerical value for x.",
+    "response": "Substitute x and compute y using arithmetic operations.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Given $y = 2x + 3.82$ and $x = 2.3$, compute $y = 2(2.3) + 3.82 = 4.6 + 3.82 = 8.42$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TA_a1_q2",
+      "G8_M6_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "find_y_intercept_from_slope_and_point",
+    "title": "Find Initial Value from Slope and Point",
+    "description": "Determine the y-intercept of a linear function using a known slope and a point.",
+    "condition": "Given slope $m$ and a point $(x, y)$ on a linear function.",
+    "response": "Substitute into $y = mx + b$ and solve for $b$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $m=12.5$ and point $(6,300)$:  \n$300 = 12.5(6) + b = 75 + b$, so $b = 225$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q1",
+      "G8_M6_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "divide_volume_by_unit_volume",
+    "title": "Find Number of Units from Volume",
+    "description": "Determine how many whole objects fit by dividing total volume by volume of one object.",
+    "condition": "Total volume and volume per object are known.",
+    "response": "Compute number = total volume / single-object volume, then interpret as whole scoops.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total volume is 3000 and one scoop is 280, then \\(3000/280 \\approx 10.7\\), so 10 full scoops.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_interval_monotonicity",
+    "title": "Identify Increasing/Decreasing Intervals",
+    "description": "Determine whether a function is increasing, decreasing, or constant on a given interval.",
+    "condition": "Given a graph of a function and a specified interval of x-values.",
+    "response": "State whether the function is increasing, decreasing, or neither on that interval.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If the graph rises from $x=4$ to $x=7$, the function is increasing on $(4,7)$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q5",
+      "G8_M6_a1_q8",
+      "G8_M6_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "identify_initial_value_from_table",
+    "title": "Identify Initial Value",
+    "description": "Read the output value when the input is zero.",
+    "condition": "Table includes a row where input variable equals 0.",
+    "response": "State the corresponding output as the initial value.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "At time 0, volume is 220, so the initial value is 220.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_joint_relative_frequency",
+    "title": "Identify Joint Relative Frequency",
+    "description": "Locate and report the relative frequency corresponding to two combined categories in a table.",
+    "condition": "A two-way table with relative frequencies and a description specifying both a row and a column category.",
+    "response": "Read the value at the intersection of the specified row and column.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "The relative frequency for Morning and Paint is read directly as $0.18$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_linear_rule_from_table",
+    "title": "Identify Linear Rule from Table",
+    "description": "Determine the linear equation that represents a function by finding the constant rate of change and intercept from a table of values.",
+    "condition": "Given a table of input-output pairs that follow a linear pattern.",
+    "response": "Compute the slope from changes in outputs over inputs and determine the intercept to write an equation in the form $y = mx + b$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From points $(-2,-14)$ and $(1,-5)$, slope $m = \\frac{-5 - (-14)}{1 - (-2)} = \\frac{9}{3} = 3$. Using $(1,-5)$: $-5 = 3(1) + b$, so $b = -8$. Thus $y = 3x - 8$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_marginal_relative_frequency",
+    "title": "Identify Marginal Relative Frequency",
+    "description": "Locate and report a marginal (row or column total) relative frequency from a table.",
+    "condition": "A two-way table with totals and a description specifying only one category (row or column).",
+    "response": "Read the value from the appropriate row or column total.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "The relative frequency of students in an afternoon class is $0.52$ from the row total.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "classify_negative_linear_association",
+    "title": "Identify Negative Linear Association",
+    "description": "Recognize when a scatter plot shows a downward trend that follows an approximately straight line.",
+    "condition": "Scatter plot where as x increases, y decreases in an approximately linear pattern.",
+    "response": "Classify the association as negative, linear association.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If points trend downward from left to right in a roughly straight line, state \"negative, linear association.\"",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_no_association",
+    "title": "Identify No Association",
+    "description": "Recognize when a scatter plot shows no clear upward, downward, or curved pattern.",
+    "condition": "Scatter plot with points randomly scattered and no clear trend.",
+    "response": "Classify the association as no association.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If points are scattered without any clear pattern, state \"no association.\"",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_nonlinear_association",
+    "title": "Identify Nonlinear Association",
+    "description": "Recognize when a scatter plot shows a curved pattern rather than a straight-line trend.",
+    "condition": "Scatter plot where points follow a curved (non-straight) increasing or decreasing pattern.",
+    "response": "Classify the association as nonlinear association.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If points increase at an increasing rate forming a curve, state \"nonlinear association.\"",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_not_function_repeated_input",
+    "title": "Identify Not a Function from Repeated Input",
+    "description": "Determine that a relation is not a function when one input maps to multiple outputs.",
+    "condition": "A table or relation shows the same x-value paired with different y-values.",
+    "response": "Classify the relation as not a function.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If x = 1 corresponds to y = 5 and y = 10, then it is not a function.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "classify_positive_linear_association",
+    "title": "Identify Positive Linear Association",
+    "description": "Recognize when a scatter plot shows an upward trend that follows an approximately straight line.",
+    "condition": "Scatter plot where as x increases, y increases in an approximately linear pattern.",
+    "response": "Classify the association as positive, linear association.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If points trend upward from left to right in a roughly straight line, state \"positive, linear association.\"",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q2",
+      "G8_M6_TC_a1_q5",
+      "G8_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_slope_from_equation",
+    "title": "Identify Slope from Slope-Intercept Form",
+    "description": "Recognize the slope directly from an equation written in the form $y = mx + b$.",
+    "condition": "Given a linear equation in the form $y = mx + b$.",
+    "response": "Identify $m$ as the slope (rate of change).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "In $y = x + 6$, the slope is $m = 1$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_association_from_row_relative_frequencies",
+    "title": "Interpret Association from Row Relative Frequencies",
+    "description": "Determine whether there is evidence of an association by comparing row relative frequencies across categories.",
+    "condition": "Row relative frequencies are computed for multiple rows in a two-way table.",
+    "response": "If the row relative frequencies differ across rows, conclude there is evidence of an association; if they are the same, conclude there is no evidence of an association.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one row has $(0.64, 0.20, 0.16)$ and another has $(0.36, 0.49, 0.16)$, the differences indicate an association.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TD_a1_q2",
+      "G8_M6_TD_a1_q5",
+      "G8_M6_a1_q6",
+      "G8_M6_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "describe_initial_value_and_rate_context",
+    "title": "Interpret Initial Value and Rate of Change",
+    "description": "Explain the meaning of the y-intercept and slope in terms of a real-world context.",
+    "condition": "Given a linear function modeling a real-world situation.",
+    "response": "State what the initial value represents and what the rate of change represents in context.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $y=0.18x+1.26$, $1.26$ is the starting amount and $0.18$ is the increase per hour.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_slope_and_intercept_context",
+    "title": "Interpret Slope and Intercept in Context",
+    "description": "Explain the real-world meaning of the slope and initial value in a linear model.",
+    "condition": "A linear equation y = mx + b models a contextual situation.",
+    "response": "Interpret m as rate of change and b as initial value in context.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "In y = 1.2x + 7.4, 1.2 is miles per hour on day 2 and 7.4 is miles from day 1.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_slope_context",
+    "title": "Interpret Slope in Context",
+    "description": "Interpret the slope of a linear equation as the rate of change between contextual variables.",
+    "condition": "Linear equation in form y = mx + b with contextual meanings for x and y.",
+    "response": "State that when x increases by 1 unit, y changes by m units (increase if m > 0, decrease if m < 0), using context labels.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $y = 2x + 3.82$, as the high jump (x) increases by 1 meter, the long jump (y) increases by 2 meters.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_y_intercept_as_initial_value",
+    "title": "Interpret Y-Intercept as Initial Value",
+    "description": "Understand that the y-intercept represents the initial value when $x=0$.",
+    "condition": "Given a linear function in context and asked for the initial amount or value before change.",
+    "response": "Determine or interpret the value of $y$ when $x=0$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $y = 240 - 8x$, when $x=0$, $y=240$, so the initial amount is 240 grams.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q1",
+      "G8_M6_TB_a1_q2",
+      "G8_M6_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "match_solid_to_volume_formula",
+    "title": "Match Solid to Correct Volume Formula",
+    "description": "Select the correct volume formula based on the type of solid shown.",
+    "condition": "A solid (cylinder, cone, or sphere) is presented.",
+    "response": "Choose its corresponding volume formula.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If the solid is a sphere, select \\(V = \\frac{4}{3}\\pi r^3\\).",
+    "notes": "Relies on recall of conventional formulas.",
+    "question_ids": [
+      "G8_M6_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "model_linear_from_table_constant_rate",
+    "title": "Model Linear Function from Constant Rate Table",
+    "description": "Determine that a table represents a linear function when rate of change is constant and write its equation.",
+    "condition": "A table shows equal changes in y for equal changes in x.",
+    "response": "Compute slope m = \u0394y/\u0394x and write equation y = mx + b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If distance increases 3 miles over 2.5 hours, m = 1.2 and equation is y = 1.2x + 7.4.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "model_piecewise_linear_situation",
+    "title": "Model Piecewise Linear Situation",
+    "description": "Represent a real-world situation with distinct phases (increasing, constant, decreasing) as a piecewise linear graph.",
+    "condition": "Given a contextual description with different constant rates over time intervals.",
+    "response": "Construct connected line segments with slopes matching each rate and correct transition times.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "Fill at $5$ gal/min to $40$ gal: from $(0,0)$ to $(8,40)$.  \nStay constant from $x=8$ to $x=18$.  \nDrain at $10$ gal/min to $(22,0)$.",
+    "notes": "Involves coordinating multiple linear segments.",
+    "question_ids": [
+      "G8_M6_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "plot_ordered_pair",
+    "title": "Plot Ordered Pair on Coordinate Plane",
+    "description": "Plot a data point by locating the x-value on the horizontal axis and the y-value on the vertical axis.",
+    "condition": "Given an ordered pair (x, y) and a coordinate grid.",
+    "response": "Locate x on horizontal axis, move vertically to y, and mark the point.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To plot $(17, 22)$, move to 17 on the x-axis and up to 22 on the y-axis and mark the point.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_whole_number",
+    "title": "Round to Nearest Whole Number",
+    "description": "Approximate a decimal to the nearest whole number when context requires.",
+    "condition": "A decimal result is obtained and the problem asks for an approximate whole-number answer.",
+    "response": "Round the decimal to the nearest whole number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If volume \u2248 1519.76, round to 1520.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q2",
+      "G8_M6_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "select_best_fit_line",
+    "title": "Select Appropriate Line of Best Fit",
+    "description": "Choose the line that best represents the overall linear trend by balancing points above and below the line.",
+    "condition": "Scatter plot with multiple candidate lines drawn.",
+    "response": "Select the line that best follows the central trend with roughly equal distribution of points above and below.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Given several drawn lines, choose the one that passes through the middle of the data cluster and reflects the overall downward trend.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TC_a1_q3",
+      "G8_M6_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "solve_for_height_from_volume",
+    "title": "Solve for Height Using Volume Formula",
+    "description": "Rearrange the cylinder volume formula to solve for height.",
+    "condition": "Given V and r for a cylinder and asked to find h.",
+    "response": "Compute h = V / (\\pi r^2).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If \\(V = 540\\pi\\) and \\(r = 6\\), then \\(h = 540\\pi / (\\pi \\cdot 36) = 15\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "solve_linear_equation_for_zero",
+    "title": "Solve Linear Equation for Zero Output",
+    "description": "Find the input value when the output of a linear function equals zero.",
+    "condition": "Given a linear equation and asked when the quantity reaches zero.",
+    "response": "Set $y=0$ and solve the resulting linear equation for $x$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $y = 240 - 8x$, set $0 = 240 - 8x$.  \n$8x = 240$ so $x = 30$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "apply_cone_volume_formula",
+    "title": "Use Cone Volume Formula",
+    "description": "Calculate the volume of a cone using one-third times pi times radius squared times height.",
+    "condition": "Solid is a cone with given radius r and height h.",
+    "response": "Compute V = \\frac{1}{3}\\pi r^2 h.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For r = 5 and h = 12, \\(V = \\frac{1}{3}\\pi(5)^2(12) = 100\\pi\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q1",
+      "G8_M6_TE_a1_q2",
+      "G8_M6_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "apply_cylinder_volume_formula",
+    "title": "Use Cylinder Volume Formula",
+    "description": "Calculate the volume of a cylinder as the area of the circular base times height.",
+    "condition": "Solid is a cylinder with given radius r and height h.",
+    "response": "Compute V = \\pi r^2 h.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For r = 6 and h = 10, \\(V = \\pi(6)^2(10) = 360\\pi\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q1",
+      "G8_M6_TE_a1_q3",
+      "G8_M6_TE_a1_q4",
+      "G8_M6_TE_a1_q5",
+      "G8_M6_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "apply_sphere_volume_formula",
+    "title": "Use Sphere Volume Formula",
+    "description": "Calculate the volume of a sphere using four-thirds times pi times radius cubed.",
+    "condition": "Solid is a sphere with given radius r.",
+    "response": "Compute V = \\frac{4}{3}\\pi r^3.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For r = 3, \\(V = \\frac{4}{3}\\pi(3)^3 = 36\\pi\\).",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_TE_a1_q1",
+      "G8_M6_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "write_context_matching_piecewise_graph",
+    "title": "Write Context for Piecewise Graph",
+    "description": "Create a real-world situation that matches segments of a piecewise linear graph and define variables.",
+    "condition": "A piecewise linear graph with labeled axes is given.",
+    "response": "Describe a scenario consistent with slopes and intervals and define x and y.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Let x be time and y be distance; describe walking, stopping, and continuing to match segments.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "write_linear_equation_from_table",
+    "title": "Write Linear Equation from Table",
+    "description": "Determine slope and intercept from tabular data and write a linear equation.",
+    "condition": "Given a table of ordered pairs showing a constant rate of change.",
+    "response": "Compute slope from differences and write equation in form $y=mx+b$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From points $(2,1.62)$ and $(5,2.16)$, slope $m=\\frac{2.16-1.62}{5-2}=0.18$, so $y=0.18x+1.26$.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "write_situation_from_graph",
+    "title": "Write Real-World Situation from Graph",
+    "description": "Create a plausible real-world context that matches a piecewise linear graph and define variables.",
+    "condition": "Given a piecewise linear graph with labeled axes.",
+    "response": "Describe a situation consistent with the graph and define each variable.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Let $x$ be time in minutes and $y$ be distance from home. The graph could represent walking away, stopping, then returning.",
+    "notes": "",
+    "question_ids": [
+      "G8_M6_a1_q4"
+    ]
+  }
+]
