@@ -326,7 +326,8 @@
     "notes": "",
     "question_ids": [
       "G8_M1_TD_a1_q2",
-      "G8_M1_TD_a1_q3"
+      "G8_M1_TD_a1_q3",
+      "G8_M1_a2_q9"
     ]
   },
   {
@@ -344,23 +345,6 @@
     "notes": "",
     "question_ids": [
       "G8_M1_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "evaluate_square_and_cube_roots",
-    "title": "Evaluate Square and Cube Roots",
-    "description": "Recognize and compute exact or approximate values of square roots and cube roots.",
-    "condition": "An expression includes \u221aa or \u221ba.",
-    "response": "Compute or approximate the principal root value.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "$\\sqrt{16}=4,\\quad \\sqrt{24}\\approx4.9,\\quad \\sqrt{7}+1\\approx3.6,\\quad \\sqrt[3]{16}\\approx2.5$",
-    "notes": "",
-    "question_ids": [
-      "G8_M1_a2_q9"
     ]
   },
   {
@@ -593,26 +577,6 @@
     ]
   },
   {
-    "kc_id": "round_to_nearest_tenth",
-    "title": "Round to Nearest Tenth",
-    "description": "Round a decimal number to one decimal place using the hundredths digit.",
-    "condition": "Given a decimal number and instructed to round to the nearest tenth.",
-    "response": "Check the hundredths digit and round the tenths digit accordingly.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "$3.605\\rightarrow 3.6$ (since the hundredths digit is 0).",
-    "notes": "",
-    "question_ids": [
-      "G8_M1_TE_a1_q2",
-      "G8_M1_TE_a1_q4",
-      "G8_M2_TD_a1_q3",
-      "G8_M2_TD_a1_q4"
-    ]
-  },
-  {
     "kc_id": "round_decimal_place",
     "title": "Round to Specified Decimal Place",
     "description": "Round a decimal number to a given place value using standard rounding rules.",
@@ -627,28 +591,17 @@
     "notes": "",
     "question_ids": [
       "G8_M1_TC_a1_q4",
+      "G8_M1_TE_a1_q2",
+      "G8_M1_TE_a1_q4",
       "G8_M1_a1_q4",
       "G8_M1_a1_q7",
       "G8_M1_a2_q4",
-      "G8_M1_a2_q7"
-    ]
-  },
-  {
-    "kc_id": "select_reasonable_unit",
-    "title": "Select Appropriate Measurement Unit",
-    "description": "Choose a unit of measurement that yields a manageable numerical value for interpretation.",
-    "condition": "A measurement is expressed in a unit that produces an extremely large or small number.",
-    "response": "Select a larger or smaller unit that makes the quantity easier to understand.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "$1.6\\times10^5$ meters is more reasonably expressed as $160$ kilometers.",
-    "notes": "",
-    "question_ids": [
-      "G8_M1_a2_q11",
-      "G8_M1_a2_q2"
+      "G8_M1_a2_q7",
+      "G8_M2_TD_a1_q3",
+      "G8_M2_TD_a1_q4",
+      "G8_M3_TB_a1_q1",
+      "G8_M6_TE_a1_q2",
+      "G8_M6_TE_a1_q5"
     ]
   },
   {

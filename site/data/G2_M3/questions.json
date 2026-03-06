@@ -1,0 +1,116 @@
+[
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G2_M3/G2_M3_a1_q1.png",
+    "image_width": 1088,
+    "image_height": 294,
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G2_M3/G2_M3_a1_q3.png",
+    "image_width": 2175,
+    "image_height": 774,
+    "source_pages": [
+      1,
+      2
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 6,
+    "image": "images/G2_M3/G2_M3_a1_q6.png",
+    "image_width": 1088,
+    "image_height": 249,
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 7,
+    "image": "images/G2_M3/G2_M3_a1_q7.png",
+    "image_width": 2175,
+    "image_height": 435,
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 8,
+    "image": "images/G2_M3/G2_M3_a1_q8.png",
+    "image_width": 2175,
+    "image_height": 1084,
+    "source_pages": [
+      2,
+      3
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 10,
+    "image": "images/G2_M3/G2_M3_a1_q10.png",
+    "image_width": 2175,
+    "image_height": 306,
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 11,
+    "image": "images/G2_M3/G2_M3_a1_q11.png",
+    "image_width": 2175,
+    "image_height": 347,
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "filename": "EM2_G2_M3_SampleSolutions_WCAG21.pdf",
+    "grade": "G2",
+    "module": "M3",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 12,
+    "image": "images/G2_M3/G2_M3_a1_q12.png",
+    "image_width": 2175,
+    "image_height": 334,
+    "source_pages": [
+      3
+    ]
+  }
+]

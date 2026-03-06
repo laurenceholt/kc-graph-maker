@@ -34,23 +34,6 @@
     ]
   },
   {
-    "kc_id": "compare_difference_subtract",
-    "title": "Find Difference to Compare Quantities",
-    "description": "To determine how many more one quantity is than another, subtract the smaller quantity from the larger quantity.",
-    "condition": "Given two quantities and asked 'how many more' one has than the other.",
-    "response": "Compute larger \u2212 smaller to find the difference.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If there are 7 rabbits and 3 bears, compute $7 - 3 = 4$ more rabbits.",
-    "notes": "",
-    "question_ids": [
-      "G1_M2_TE_a1_q8"
-    ]
-  },
-  {
     "kc_id": "represent_change_subtraction_equation",
     "title": "Model Change with Subtraction",
     "description": "Represent a change-unknown word problem where a decrease occurred using a subtraction equation.",
@@ -116,23 +99,6 @@
     "notes": "",
     "question_ids": [
       "G1_M2_TE_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "relate_addition_subtraction_fact_family",
-    "title": "Use Related Addition Fact for Subtraction",
-    "description": "Use a related addition fact to solve a subtraction problem (fact family relationship).",
-    "condition": "Given a subtraction expression a \u2212 b = ?.",
-    "response": "Find c such that b + c = a.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "To solve $8 - 4$, think $4 + 4 = 8$, so $8 - 4 = 4$.",
-    "notes": "",
-    "question_ids": [
-      "G1_M2_TE_a1_q4"
     ]
   }
 ]

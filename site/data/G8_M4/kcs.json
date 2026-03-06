@@ -365,7 +365,7 @@
     ]
   },
   {
-    "kc_id": "identify_slope_from_graph",
+    "kc_id": "identify_slope_from_equation",
     "title": "Identify Slope from Graph",
     "description": "Determine the slope of a line by calculating rise over run from two points on its graph.",
     "condition": "A graphed straight line with at least two visible points.",
@@ -384,7 +384,8 @@
       "G8_M4_TF_a1_q1",
       "G8_M4_a1_q5",
       "G8_M4_a1_q6",
-      "G8_M4_a1_q8"
+      "G8_M4_a1_q8",
+      "G8_M6_TB_a1_q2"
     ]
   },
   {
@@ -422,44 +423,6 @@
     ]
   },
   {
-    "kc_id": "identify_y_intercept_from_graph",
-    "title": "Identify y-Intercept from Graph",
-    "description": "Determine the y-intercept by locating where the line crosses the y-axis.",
-    "condition": "A graphed line crossing the y-axis.",
-    "response": "State the y-value at x = 0.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If the line crosses the y-axis at $(0,-2)$, then the y-intercept is $-2$.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G8_M4_TE_a1_q1",
-      "G8_M4_TE_a1_q3",
-      "G8_M4_TE_a1_q4",
-      "G8_M4_TF_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "interpret_slope_as_rate",
-    "title": "Interpret Slope as Rate of Change",
-    "description": "Recognize that slope represents the rate of change (unit rate) in a proportional or linear relationship.",
-    "condition": "Given a linear relationship between two quantities (e.g., feet per second).",
-    "response": "State that the slope equals the unit rate (change in y per 1 unit of x).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If a puck rises 4 feet per second, then slope = 4 because height increases 4 feet for each 1 second.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_TD_a1_q2",
-      "G8_M4_TD_a1_q5"
-    ]
-  },
-  {
     "kc_id": "interpret_slope_in_context",
     "title": "Interpret Slope in Context",
     "description": "Explain the meaning of the slope as the rate of change in a real-world situation.",
@@ -473,6 +436,8 @@
     "example": "In $y = 0.3x + 27$, 0.3 means the coral reef grows 0.3 inches per year.",
     "notes": "",
     "question_ids": [
+      "G8_M4_TD_a1_q2",
+      "G8_M4_TD_a1_q5",
       "G8_M4_TF_a1_q2",
       "G8_M4_TF_a1_q5",
       "G8_M6_TC_a1_q4"
@@ -604,24 +569,6 @@
     ]
   },
   {
-    "kc_id": "recognize_slope_intercept_form",
-    "title": "Recognize Slope-Intercept Form",
-    "description": "Identify slope and y-intercept directly from an equation written in y = mx + b form.",
-    "condition": "Equation written in the form y = mx + b.",
-    "response": "State slope as m and y-intercept as b.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule",
-    "example": "In $y=\\tfrac{4}{3}x-2$, slope is $\\tfrac{4}{3}$ and y-intercept is $-2$.",
-    "notes": "Rationale marked No because this is based on definition of form rather than derivation.???",
-    "question_ids": [
-      "G8_M4_TE_a1_q4",
-      "G8_M4_TE_a1_q5"
-    ]
-  },
-  {
     "kc_id": "rewrite_point_slope_to_slope_intercept",
     "title": "Rewrite Point-Slope Form",
     "description": "Convert an equation from point-slope form to slope-intercept form.",
@@ -747,42 +694,6 @@
       "G8_M4_TB_a1_q4",
       "G8_M5_a2_q2",
       "G8_M5_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "solve_one_step_linear_equation",
-    "title": "Solve One-Step Linear Equation",
-    "description": "Isolate the variable using inverse operations.",
-    "condition": "Equation of form ax = b.",
-    "response": "Divide both sides by a.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Rule / Plan",
-    "example": "$3x=-10 \\Rightarrow x=-\\frac{10}{3}$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_a1_q1",
-      "G8_M4_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "solve_one_step_division",
-    "title": "Solve One-Step Multiplication Equation",
-    "description": "Isolate a variable multiplied by a coefficient by dividing both sides by that coefficient.",
-    "condition": "An equation of the form $ax = b$, where $a \\neq 0$.",
-    "response": "Divide both sides by $a$ to obtain $x = \\frac{b}{a}$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$3x = 18 \\Rightarrow x = 6$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_TA_a1_q2",
-      "G8_M4_TA_a1_q5"
     ]
   },
   {

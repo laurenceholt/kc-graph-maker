@@ -1,0 +1,148 @@
+[
+  {
+    "kc_id": "count_vertices_2d_shape",
+    "title": "Count Angles/Vertices of a Polygon",
+    "description": "Determine the number of angles (vertices) in a 2D polygon by counting its corner points.",
+    "condition": "Given a 2D polygon.",
+    "response": "Count and state the total number of angles (vertices).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "A polygon with 6 corners has 6 angles.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q1",
+      "G2_M3_a1_q3",
+      "G2_M3_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "count_sides_2d_shape",
+    "title": "Count Sides of a Polygon",
+    "description": "Determine the number of sides of a 2D polygon by counting its line segments.",
+    "condition": "Given a 2D polygon.",
+    "response": "Count and state the total number of sides.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "A shape with 5 line segments has 5 sides.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q1",
+      "G2_M3_a1_q3",
+      "G2_M3_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "choose_am_pm_from_context",
+    "title": "Determine a.m. or p.m. from Context",
+    "description": "Use contextual clues (e.g., daytime school, playing soccer) to decide whether a given time is a.m. or p.m.",
+    "condition": "A time is given with a real-world scene or context indicating time of day.",
+    "response": "Select either a.m. or p.m. consistent with the context.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the time is 8:40 and the picture shows children arriving at school in the morning, choose **a.m.**.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q10",
+      "G2_M3_a1_q11",
+      "G2_M3_a1_q12"
+    ]
+  },
+  {
+    "kc_id": "count_faces_edges_vertices_cube",
+    "title": "Identify Attributes of a Cube",
+    "description": "Recall the number of faces, edges, and vertices of a cube.",
+    "condition": "Given or shown a cube.",
+    "response": "State that it has 6 faces, 12 edges, and 8 vertices.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "A cube has 6 faces, 12 edges, and 8 vertices.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "understand_more_shares_smaller_size",
+    "title": "More Equal Shares Means Smaller Pieces",
+    "description": "Recognize that dividing a whole into more equal parts results in smaller individual shares.",
+    "condition": "Compare equal partitions of the same whole with different numbers of shares.",
+    "response": "Conclude that the partition with more shares has smaller pieces.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "A brownie cut into 4 equal pieces has smaller shares than one cut into 2 equal pieces.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "identify_polygon_by_sides",
+    "title": "Name Polygon by Number of Sides",
+    "description": "Identify and name a polygon based on its number of sides.",
+    "condition": "Given a polygon with n sides (e.g., 4, 5, 6).",
+    "response": "State the corresponding polygon name (e.g., quadrilateral, pentagon, hexagon).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If a polygon has 6 sides, it is a **hexagon**.",
+    "notes": "Naming conventions are memorized.",
+    "question_ids": [
+      "G2_M3_a1_q1",
+      "G2_M3_a1_q3",
+      "G2_M3_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "read_analog_clock_time",
+    "title": "Read Time on an Analog Clock",
+    "description": "Determine the hour and minute shown by the positions of the hour and minute hands.",
+    "condition": "Given an analog clock with hour and minute hands.",
+    "response": "State the time in hours and minutes (e.g., 2:55, 6:10).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the minute hand points to 11 (55 minutes) and the hour hand is near 3, the time is $2{:}55$.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q10",
+      "G2_M3_a1_q11",
+      "G2_M3_a1_q12"
+    ]
+  },
+  {
+    "kc_id": "skip_count_by_fives",
+    "title": "Skip Count by Fives",
+    "description": "Count forward by increments of five starting from zero.",
+    "condition": "Given a number line starting at 0 with instruction to count by fives.",
+    "response": "List numbers increasing by 5 (0, 5, 10, 15, ...).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50$.",
+    "notes": "",
+    "question_ids": [
+      "G2_M3_a1_q10"
+    ]
+  }
+]

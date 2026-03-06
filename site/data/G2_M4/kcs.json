@@ -1,0 +1,109 @@
+[
+  {
+    "kc_id": "add_multi_digit_standard",
+    "title": "Add Multi-Digit Numbers",
+    "description": "Add multi-digit numbers using place value or the standard algorithm.",
+    "condition": "Expression of the form a + b where a and b are multi-digit whole numbers.",
+    "response": "Add ones, tens, hundreds (with regrouping if needed) to find the sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$436 + 322 = 758$.",
+    "notes": "Includes vertical algorithm or place value reasoning.",
+    "question_ids": [
+      "G2_M4_a1_q14",
+      "G2_M4_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "add_subtract_10_100",
+    "title": "Add or Subtract 10 or 100",
+    "description": "Adjust a number by 10 or 100 by changing the tens or hundreds digit.",
+    "condition": "Expression of the form n \u00b1 10 or n \u00b1 100.",
+    "response": "Increase or decrease the tens or hundreds digit accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$743 + 10 = 753$; $587 - 100 = 487$.",
+    "notes": "Relies on place value structure.",
+    "question_ids": [
+      "G2_M4_a1_q11"
+    ]
+  },
+  {
+    "kc_id": "add_make_hundred_compensation",
+    "title": "Add Using Make-a-Hundred Compensation",
+    "description": "Add numbers by decomposing one addend to make a friendly hundred, then add the remaining part.",
+    "condition": "Addition of multi-digit numbers where one addend is close to a multiple of 100 (e.g., 297 + 613).",
+    "response": "Decompose one addend to make a friendly hundred (e.g., 297 + 3 = 300), add the remaining amount, and compute the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $297 + 613$: $297 + 3 = 300$, $613 - 3 = 610$, so $300 + 610 = 910$.",
+    "notes": "Compensation strategy for addition.",
+    "question_ids": [
+      "G2_M4_a1_q10",
+      "G2_M4_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "relational_equation_missing_subtrahend",
+    "title": "Find Missing Subtrahend",
+    "description": "Solve equations of the form a = b \u2212 x by subtracting a from b.",
+    "condition": "Equation structured as a = b \u2212 x, where x is unknown.",
+    "response": "Compute x = b \u2212 a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "For $561 = 800 - x$, compute $x = 800 - 561 = 239$.",
+    "notes": "Uses inverse relationship of addition and subtraction.",
+    "question_ids": [
+      "G2_M4_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "solve_additive_compare_fewer",
+    "title": "Solve Additive Compare (Fewer)",
+    "description": "Interpret 'fewer than' in word problems as subtraction.",
+    "condition": "Word problem stating a quantity is k fewer than another quantity.",
+    "response": "Subtract k from the reference quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "If there are 63 students and 48 fewer teachers, compute $63 - 48 = 15$.",
+    "notes": "Language cue: 'fewer than' indicates subtraction.",
+    "question_ids": [
+      "G2_M4_a1_q14",
+      "G2_M4_a1_q15",
+      "G2_M4_a1_q16"
+    ]
+  },
+  {
+    "kc_id": "subtract_multi_digit_standard",
+    "title": "Subtract Multi-Digit Numbers",
+    "description": "Subtract multi-digit numbers using place value or the standard algorithm with regrouping.",
+    "condition": "Expression of the form a \u2212 b where a and b are multi-digit whole numbers.",
+    "response": "Subtract ones, tens, hundreds (with regrouping if needed) to find the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$743 - 267 = 476$.",
+    "notes": "May include place value drawings or vertical algorithm.",
+    "question_ids": [
+      "G2_M4_a1_q10",
+      "G2_M4_a1_q5"
+    ]
+  }
+]

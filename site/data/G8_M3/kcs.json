@@ -326,23 +326,6 @@
     ]
   },
   {
-    "kc_id": "round_decimal_to_nearest_hundredth",
-    "title": "Round to Nearest Hundredth",
-    "description": "Round a decimal value to two decimal places using standard rounding rules.",
-    "condition": "A decimal number requiring rounding to the nearest hundredth.",
-    "response": "Adjust the thousandths digit and state the number with two decimal places.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule",
-    "example": "$6.4$ rounded to the nearest hundredth is $6.40$.",
-    "notes": "Conventional rounding procedure.",
-    "question_ids": [
-      "G8_M3_TB_a1_q1"
-    ]
-  },
-  {
     "kc_id": "set_up_proportion_corresponding_sides",
     "title": "Set Up Proportion Using Corresponding Sides",
     "description": "Form an equation equating ratios of corresponding sides in similar triangles.",
@@ -431,23 +414,6 @@
     "question_ids": [
       "G8_M3_a1_q3",
       "G8_M3_a2_q3"
-    ]
-  },
-  {
-    "kc_id": "identify_vertical_angles",
-    "title": "Vertical Angles Are Congruent",
-    "description": "Vertical angles formed by two intersecting lines are congruent.",
-    "condition": "Two angles formed as vertical angles by intersecting lines",
-    "response": "Conclude the angles are congruent",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "If \\(\\angle AEB\\) and \\(\\angle DEC\\) are vertical angles, then \\(\\angle AEB \\cong \\angle DEC\\).",
-    "notes": "",
-    "question_ids": [
-      "G8_M3_a1_q8"
     ]
   }
 ]

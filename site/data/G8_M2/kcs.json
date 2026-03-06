@@ -241,7 +241,7 @@
     ]
   },
   {
-    "kc_id": "add_linear_pair_to_180",
+    "kc_id": "use_angle_relationships_vertical_linear",
     "title": "Linear Pair Sum to 180\u00b0",
     "description": "When two angles form a linear pair on a straight line, their measures sum to 180\u00b0.",
     "condition": "Two adjacent angles whose noncommon sides form a straight line.",
@@ -258,7 +258,10 @@
       "G8_M2_TC_a1_q4",
       "G8_M2_TC_a1_q5",
       "G8_M2_a2_q7",
-      "G8_M5_TC_a1_q4"
+      "G8_M3_a1_q8",
+      "G8_M5_TC_a1_q4",
+      "G8_M5_a1_q5",
+      "G8_M5_a2_q5"
     ]
   },
   {

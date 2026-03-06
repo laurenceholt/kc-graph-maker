@@ -151,7 +151,7 @@
     ]
   },
   {
-    "kc_id": "generate_equivalent_fraction_by_scaling",
+    "kc_id": "recognize_equivalent_fractions",
     "title": "Generate Equivalent Fraction by Scaling",
     "description": "Create an equivalent fraction by multiplying numerator and denominator by the same nonzero number.",
     "condition": "Given a fraction a/b and a need for an equivalent fraction.",
@@ -164,12 +164,22 @@
     "example": "$\\frac{6}{3} = \\frac{6 \\times 2}{3 \\times 2} = \\frac{12}{6}$.",
     "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
     "question_ids": [
+      "G3_M5_TC_a1_q5",
+      "G3_M5_TC_a1_q6",
       "G3_M5_TE_a1_q1",
       "G3_M5_TE_a1_q2",
+      "G3_M5_TE_a1_q5",
+      "G3_M5_a1_q8",
+      "G3_M5_a2_q8",
+      "G4_M4_TB_a1_q1",
+      "G4_M4_TB_a1_q2",
+      "G4_M4_TB_a1_q3",
       "G4_M4_TB_a1_q4",
       "G4_M4_TB_a1_q5",
+      "G4_M4_TC_a1_q3",
       "G4_M4_TC_a1_q4",
       "G4_M4_TC_a1_q5",
+      "G4_M4_TF_a1_q2",
       "G4_M4_a1_q1",
       "G4_M4_a1_q2",
       "G4_M4_a2_q1",
@@ -178,41 +188,6 @@
       "G5_M2_TB_a1_q2",
       "G5_M2_TB_a1_q5",
       "G5_M2_TB_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "identify_equivalent_fraction_from_area_model",
-    "title": "Identify Equivalent Fraction from Area Model",
-    "description": "Determine the equivalent fraction represented when a shaded area is repartitioned into more equal parts.",
-    "condition": "An area model shows a fraction a/b, then each part is subdivided into equal smaller parts.",
-    "response": "Count total shaded smaller parts over total smaller parts to form the equivalent fraction.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "Yes",
-    "label": "Production / Skill",
-    "example": "If $\\frac{3}{4}$ is split into eighths, there are $6$ shaded parts out of $8$, so $\\frac{3}{4} = \\frac{6}{8}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TB_a1_q1",
-      "G4_M4_TB_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "identify_equivalent_fraction_multiplication_form",
-    "title": "Identify Equivalent Fraction Multiplication Form",
-    "description": "Recognize multiplication expressions that are structurally equivalent to a whole number times a fraction.",
-    "condition": "Expression of form n \u00d7 (a/b)",
-    "response": "Recognize equivalent form (n \u00d7 a)/b",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$4 \\times \\frac{3}{5} = \\frac{4 \\times 3}{5}$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M4_TF_a1_q2"
     ]
   },
   {
@@ -316,7 +291,9 @@
     "example": "To plot $\\frac{6}{4}$, divide each unit into 4 parts and count 6 fourths to land at $1\\frac{2}{4}$.",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G3_M5_TC_a1_q1",
       "G3_M5_TE_a1_q4",
+      "G3_M5_a1_q3",
       "G3_M5_a2_q3",
       "G3_M5_a2_q5",
       "G3_M5_a2_q7",
@@ -361,44 +338,6 @@
     "notes": "Involves computation plus comparison.",
     "question_ids": [
       "G4_M4_TE_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "multiply_whole_by_mixed_number",
-    "title": "Multiply Whole Number by Mixed Number",
-    "description": "Multiply a whole number by a mixed number by converting the mixed number to an improper fraction or using distribution.",
-    "condition": "Expression of the form n \u00d7 (a b/c).",
-    "response": "Convert a b/c to an improper fraction and multiply, or compute n\u00d7a + n\u00d7b/c.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$3 \\times 2\\frac{3}{4} = 3 \\times \\frac{11}{4} = \\frac{33}{4} = 8\\frac{1}{4}$",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G4_M4_TF_a1_q4",
-      "G4_M4_TF_a1_q5",
-      "G4_M4_a1_q8"
-    ]
-  },
-  {
-    "kc_id": "recognize_equivalent_fractions",
-    "title": "Recognize Equivalent Fractions",
-    "description": "Fractions that represent the same quantity occupy the same point on a number line.",
-    "condition": "Two fractions can be simplified or scaled to the same value.",
-    "response": "Conclude that the fractions are equivalent and represent the same quantity.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "$\\frac{6}{3} = 2$ and $\\frac{12}{6} = 2$, so $\\frac{6}{3}$ and $\\frac{12}{6}$ are equivalent.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G3_M5_a1_q8",
-      "G4_M4_TB_a1_q5",
-      "G4_M4_TC_a1_q3"
     ]
   },
   {

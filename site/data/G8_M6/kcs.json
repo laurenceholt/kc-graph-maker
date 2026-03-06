@@ -1,22 +1,5 @@
 [
   {
-    "kc_id": "apply_vertical_line_test",
-    "title": "Apply Vertical Line Test",
-    "description": "Determine whether a graphed relation is a function by checking that no vertical line intersects the graph more than once.",
-    "condition": "Given a graph of a relation in the coordinate plane and asked whether it is a function.",
-    "response": "Check whether any vertical line intersects the graph more than once; conclude it is a function if none do, otherwise not a function.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If a vertical line at $x = 2$ intersects the graph at two points, then the relation is not a function. If every vertical line intersects at most once, it is a function.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_TA_a1_q5"
-    ]
-  },
-  {
     "kc_id": "check_new_pair_against_existing_inputs",
     "title": "Check Ordered Pair Against Existing Inputs",
     "description": "Determine whether a new ordered pair can be added to a function by ensuring its input does not already map to a different output.",
@@ -65,23 +48,6 @@
     "notes": "Recognition of linear form.",
     "question_ids": [
       "G8_M6_a2_q1"
-    ]
-  },
-  {
-    "kc_id": "classify_relation_as_function",
-    "title": "Classify Relation as Function or Not",
-    "description": "Determine whether a relation is a function based on whether each input has exactly one output.",
-    "condition": "Given a graph, table, or set of ordered pairs representing a relation.",
-    "response": "State whether the relation is a function (each x has exactly one y) or not a function.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "If a table shows $x=3$ paired with both $y=6$ and $y=7$, then it is not a function.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_a1_q1"
     ]
   },
   {
@@ -247,7 +213,7 @@
     ]
   },
   {
-    "kc_id": "define_function_single_output",
+    "kc_id": "classify_relation_as_function",
     "title": "Definition of Function (Single Output per Input)",
     "description": "Recognize that a relation is a function if and only if each input is associated with exactly one output.",
     "condition": "Given a relation (table, mapping, or description) and asked whether it is a function.",
@@ -261,7 +227,10 @@
     "notes": "Definition-based; conventional mathematical definition.",
     "question_ids": [
       "G8_M6_TA_a1_q1",
-      "G8_M6_TA_a1_q3"
+      "G8_M6_TA_a1_q3",
+      "G8_M6_TA_a1_q5",
+      "G8_M6_a1_q1",
+      "G8_M6_a2_q1"
     ]
   },
   {
@@ -490,23 +459,6 @@
     ]
   },
   {
-    "kc_id": "classify_not_function_repeated_input",
-    "title": "Identify Not a Function from Repeated Input",
-    "description": "Determine that a relation is not a function when one input maps to multiple outputs.",
-    "condition": "A table or relation shows the same x-value paired with different y-values.",
-    "response": "Classify the relation as not a function.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Concept",
-    "example": "If x = 1 corresponds to y = 5 and y = 10, then it is not a function.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_a2_q1"
-    ]
-  },
-  {
     "kc_id": "classify_positive_linear_association",
     "title": "Identify Positive Linear Association",
     "description": "Recognize when a scatter plot shows an upward trend that follows an approximately straight line.",
@@ -523,23 +475,6 @@
       "G8_M6_TC_a1_q2",
       "G8_M6_TC_a1_q5",
       "G8_M6_a2_q3"
-    ]
-  },
-  {
-    "kc_id": "identify_slope_from_equation",
-    "title": "Identify Slope from Slope-Intercept Form",
-    "description": "Recognize the slope directly from an equation written in the form $y = mx + b$.",
-    "condition": "Given a linear equation in the form $y = mx + b$.",
-    "response": "Identify $m$ as the slope (rate of change).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "In $y = x + 6$, the slope is $m = 1$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_TB_a1_q2"
     ]
   },
   {
@@ -610,6 +545,10 @@
     "example": "For $y = 240 - 8x$, when $x=0$, $y=240$, so the initial amount is 240 grams.",
     "notes": "",
     "question_ids": [
+      "G8_M4_TE_a1_q1",
+      "G8_M4_TE_a1_q3",
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TF_a1_q1",
       "G8_M4_TF_a1_q2",
       "G8_M4_TF_a1_q5",
       "G8_M6_TB_a1_q1",
@@ -666,24 +605,6 @@
     "notes": "Involves coordinating multiple linear segments.",
     "question_ids": [
       "G8_M6_TB_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "round_to_nearest_whole_number",
-    "title": "Round to Nearest Whole Number",
-    "description": "Approximate a decimal to the nearest whole number when context requires.",
-    "condition": "A decimal result is obtained and the problem asks for an approximate whole-number answer.",
-    "response": "Round the decimal to the nearest whole number.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "If volume \u2248 1519.76, round to 1520.",
-    "notes": "",
-    "question_ids": [
-      "G8_M6_TE_a1_q2",
-      "G8_M6_TE_a1_q5"
     ]
   },
   {

@@ -149,6 +149,9 @@
     "example": "If three X's are above $2\\tfrac{3}{4}$, then its frequency is 3.",
     "notes": "Visual recognition and counting skill.",
     "question_ids": [
+      "G2_M5_TE_a1_q16",
+      "G2_M5_TE_a1_q17",
+      "G2_M5_TE_a1_q18",
       "G3_M5_TC_a1_q3",
       "G3_M5_TC_a1_q4",
       "G5_M2_TD_a1_q2",

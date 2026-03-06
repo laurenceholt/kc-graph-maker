@@ -13,26 +13,10 @@
     "example": "Given $y = 3x - \\tfrac{1}{3}$ and $3y = 9x - 1$ \u2192 rewrite second: $y = 3x - \\tfrac{1}{3}$. Same slope and intercept \u21d2 infinitely many solutions.",
     "notes": "Requires ability to convert to slope-intercept form when needed.",
     "question_ids": [
+      "G8_M5_TA_a1_q4",
       "G8_M5_TB_a1_q2",
       "G8_M5_a1_q7",
       "G8_M5_a2_q7"
-    ]
-  },
-  {
-    "kc_id": "compare_slopes_intercepts_no_solution",
-    "title": "Determine No Solution from Slope and Intercept",
-    "description": "Identify that a system has no solution when the lines have the same slope but different y-intercepts.",
-    "condition": "Two linear equations in slope-intercept or equivalent form with equal slopes but different y-intercepts.",
-    "response": "State that the system has no solution.",
-    "cond_type": "Variable",
-    "resp_type": "Constant",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Concept",
-    "example": "For $y=\\frac{2}{3}x+5$ and $-2x+3y=10$ (which simplifies to $y=\\frac{2}{3}x+\\frac{10}{3}$), the slopes are equal but the y-intercepts differ, so there is no solution.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TA_a1_q4"
     ]
   },
   {
@@ -59,7 +43,7 @@
     ]
   },
   {
-    "kc_id": "interpret_solution_as_ordered_pair",
+    "kc_id": "interpret_solution_as_intersection",
     "title": "Interpret Solution as Ordered Pair",
     "description": "Understand that a solution to a system is an ordered pair satisfying both equations.",
     "condition": "Given a system of two linear equations.",
@@ -72,35 +56,19 @@
     "example": "If $x=1$ and $y=-2$ satisfy both equations, the solution is $(1,-2)$.",
     "notes": "",
     "question_ids": [
+      "G8_M5_TA_a1_q2",
       "G8_M5_TB_a1_q1",
       "G8_M5_TB_a1_q3",
       "G8_M5_TB_a1_q4",
       "G8_M5_a1_q1",
       "G8_M5_a1_q2",
       "G8_M5_a1_q3",
-      "G8_M5_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "interpret_solution_as_intersection",
-    "title": "Interpret Solution of System",
-    "description": "Understand that a solution to a system is an ordered pair that satisfies both equations simultaneously.",
-    "condition": "Given a system of two linear equations and an ordered pair.",
-    "response": "Determine whether the ordered pair satisfies both equations.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Test $(-2,3)$ in $3x+4y=6$: $3(-2)+4(3)=-6+12=6$ and in $4x+2y=-2$: $4(-2)+2(3)=-8+6=-2$, so it is the solution.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G8_M5_TA_a1_q2",
+      "G8_M5_a1_q4",
       "G8_M5_a2_q4"
     ]
   },
   {
-    "kc_id": "isolate_variable_one_step",
+    "kc_id": "solve_one_step_linear_equation",
     "title": "Isolate Variable Using Inverse Operations",
     "description": "Rearrange a linear equation to isolate one variable using inverse operations.",
     "condition": "Linear equation where a variable can be isolated (e.g., x = expression or ax + b = c).",
@@ -113,6 +81,10 @@
     "example": "From $x = 6 - 3y$, x is already isolated; from $3y = 2x + 4$, divide by 3 \u2192 $y = \\tfrac{2}{3}x + \\tfrac{4}{3}$.",
     "notes": "",
     "question_ids": [
+      "G8_M4_TA_a1_q2",
+      "G8_M4_TA_a1_q5",
+      "G8_M4_a1_q1",
+      "G8_M4_a1_q6",
       "G8_M5_TB_a1_q1",
       "G8_M5_TB_a1_q3",
       "G8_M5_TB_a1_q4"
@@ -151,26 +123,7 @@
     ]
   },
   {
-    "kc_id": "solve_system_by_elimination",
-    "title": "Solve System by Elimination",
-    "description": "Add or subtract equations to eliminate one variable and solve the system.",
-    "condition": "Given a system of two linear equations in standard form.",
-    "response": "Manipulate equations so coefficients align, eliminate one variable, and solve.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "For $7x+2y=3$ and $3x+4y=-5$, multiply first by 2 and subtract to eliminate $y$.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G8_M5_TA_a1_q2",
-      "G8_M5_a1_q4",
-      "G8_M5_a1_q6"
-    ]
-  },
-  {
-    "kc_id": "solve_system_by_substitution",
+    "kc_id": "solve_system_elimination_or_substitution",
     "title": "Solve System by Substitution",
     "description": "Solve a system by substituting an expression for one variable into the other equation and solving.",
     "condition": "Given a system where one equation is solved for a variable or can be easily solved for one variable.",
@@ -183,33 +136,20 @@
     "example": "Given $y=-4x+5$ and $5x+2y=-5$, substitute: $5x+2(-4x+5)=-5$ and solve for $x$.",
     "notes": "",
     "question_ids": [
+      "G8_M5_TA_a1_q2",
+      "G8_M5_TC_a1_q1",
+      "G8_M5_TC_a1_q15",
+      "G8_M5_TC_a1_q3",
+      "G8_M5_TC_a1_q4",
+      "G8_M5_TC_a1_q5",
       "G8_M5_a1_q2",
+      "G8_M5_a1_q4",
+      "G8_M5_a1_q6",
       "G8_M5_a1_q8",
       "G8_M5_a2_q2",
       "G8_M5_a2_q3",
       "G8_M5_a2_q6",
       "G8_M5_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "solve_system_elimination_or_substitution",
-    "title": "Solve System of Linear Equations",
-    "description": "Find the values of two variables that satisfy both linear equations.",
-    "condition": "Two linear equations with two variables are given.",
-    "response": "Use substitution or elimination to determine the ordered pair solution.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Solve $p = 2q + 4$ and $p + q = 37$ \u2192 substitute to get $2q + 4 + q = 37$ \u2192 $3q = 33$ \u2192 $q = 11$, $p = 26$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M5_TC_a1_q1",
-      "G8_M5_TC_a1_q15",
-      "G8_M5_TC_a1_q3",
-      "G8_M5_TC_a1_q4",
-      "G8_M5_TC_a1_q5"
     ]
   },
   {
@@ -277,24 +217,6 @@
     ]
   },
   {
-    "kc_id": "use_angle_relationships_vertical_linear",
-    "title": "Use Vertical and Linear Pair Angle Relationships",
-    "description": "Apply vertical angle equality and linear pair supplementary relationships to solve for unknown angles.",
-    "condition": "Given intersecting lines with angle measures expressed algebraically.",
-    "response": "Set vertical angles equal or sum linear pair angles to 180\u00b0 and solve for variables.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If angles form a linear pair, $x+132=180$ so $x=48$.",
-    "notes": "May involve multi-step solving.",
-    "question_ids": [
-      "G8_M5_a1_q5",
-      "G8_M5_a2_q5"
-    ]
-  },
-  {
     "kc_id": "write_slope_intercept_form",
     "title": "Write Equation in Slope-Intercept Form",
     "description": "Express a linear equation in the form $y = mx + b$ using slope and a point.",
@@ -308,6 +230,8 @@
     "example": "With slope $-1$ and point $(-6,-1)$: $-1 = (-1)(-6) + b \\Rightarrow -1 = 6 + b \\Rightarrow b = -7$, so $y=-x-7$.",
     "notes": "",
     "question_ids": [
+      "G8_M4_TE_a1_q4",
+      "G8_M4_TE_a1_q5",
       "G8_M5_TB_a1_q2",
       "G8_M5_TC_a1_q3"
     ]
