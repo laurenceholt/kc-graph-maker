@@ -4,9 +4,6 @@ Assessment Solutions/
 Assessment/
 Batch*/
 
-# Question images (too large for git at scale — deploy via netlify)
-site/images/
-
 # Environment and secrets
 .env
 
