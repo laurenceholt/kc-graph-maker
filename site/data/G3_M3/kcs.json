@@ -1,0 +1,496 @@
+[
+  {
+    "kc_id": "add_product_to_initial",
+    "title": "Add Product to Initial Quantity",
+    "description": "After finding a product representing additional items, add it to an existing starting amount.",
+    "condition": "An initial quantity and an additional amount computed as (a \u00d7 b) are given in a word problem.",
+    "response": "Add the initial quantity and the computed product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Initial 253 balloons and 6 packs of 30: \\(6 \\times 30 = 180\\), then \\(253 + 180 = 433\\).",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "add_two_amounts",
+    "title": "Add Two Monetary Amounts",
+    "description": "Combine two given monetary amounts to find a total.",
+    "condition": "Two monetary amounts are given and the total amount is needed.",
+    "response": "Add the two amounts to find the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Deepa has $45 and $18, compute $45 + $18 = 63$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "apply_associative_property_mult",
+    "title": "Apply Associative Property of Multiplication",
+    "description": "Regroup factors in a multiplication expression without changing the product.",
+    "condition": "A multiplication expression of the form a \u00d7 (b \u00d7 c).",
+    "response": "Rewrite as (a \u00d7 b) \u00d7 c.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "\\(8 \\times (5 \\times 10) = (8 \\times 5) \\times 10\\).",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TB_a1_q4",
+      "G3_M3_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "apply_distributive_property",
+    "title": "Apply Distributive Property",
+    "description": "Use the distributive property to break apart a factor into easier parts and multiply each part before adding.",
+    "condition": "Expression of the form (a + b) \u00d7 c or decomposing a factor such as 14 \u00d7 3 into (10 + 4) \u00d7 3",
+    "response": "Compute (a \u00d7 c) + (b \u00d7 c)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(10 + 4) \\times 3 = (10 \\times 3) + (4 \\times 3) = 30 + 12 = 42$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M3_TA_a1_q3",
+      "G3_M3_TB_a1_q1",
+      "G3_M3_a1_q7",
+      "G3_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "apply_division_pattern_rule",
+    "title": "Apply Given Division Pattern",
+    "description": "Use a stated rule to divide each input value by a specified number.",
+    "condition": "A pattern states to divide each input by a fixed number (e.g., 7).",
+    "response": "Divide each input value by the given number to produce the output.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given the rule \"Divide by 7,\" compute $28 \\div 7 = 4$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compute_basic_division",
+    "title": "Compute Basic Division Facts",
+    "description": "Recall or compute the quotient of two whole numbers within basic multiplication facts.",
+    "condition": "Division expression a \u00f7 b with whole numbers within multiplication table range.",
+    "response": "State the correct quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$48 \\div 6 = 8$ because $6 \\times 8 = 48$.",
+    "notes": "Often relies on memorized multiplication facts. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M1_TB_a1_q3",
+      "G3_M1_TB_a1_q4",
+      "G3_M1_TD_a1_q1",
+      "G3_M1_TD_a1_q2",
+      "G3_M1_TD_a1_q3",
+      "G3_M1_a1_q2",
+      "G3_M1_a1_q8",
+      "G3_M1_a2_q2",
+      "G3_M1_a2_q8",
+      "G3_M3_TA_a1_q2",
+      "G3_M3_TA_a1_q4",
+      "G3_M3_TA_a1_q6",
+      "G3_M3_TB_a1_q2",
+      "G3_M3_TB_a1_q3",
+      "G3_M3_a1_q1",
+      "G3_M3_a1_q3",
+      "G3_M3_a1_q4",
+      "G3_M3_a2_q1",
+      "G3_M3_a2_q3",
+      "G3_M3_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_basic_multiplication",
+    "title": "Compute Basic Multiplication Facts",
+    "description": "Recall or compute the product of two whole numbers within basic multiplication facts.",
+    "condition": "Multiplication expression a \u00d7 b with whole numbers within multiplication table range.",
+    "response": "State the correct product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$7 \\times 9 = 63$.",
+    "notes": "Fluency with multiplication facts. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M1_TA_a1_q1",
+      "G3_M1_TA_a1_q2",
+      "G3_M1_TA_a1_q3",
+      "G3_M1_TC_a1_q4",
+      "G3_M1_TC_a1_q5",
+      "G3_M1_TD_a1_q1",
+      "G3_M1_TD_a1_q3",
+      "G3_M1_a1_q1",
+      "G3_M1_a1_q2",
+      "G3_M1_a1_q3",
+      "G3_M1_a1_q4",
+      "G3_M1_a1_q6",
+      "G3_M1_a1_q8",
+      "G3_M1_a2_q1",
+      "G3_M1_a2_q2",
+      "G3_M1_a2_q3",
+      "G3_M1_a2_q4",
+      "G3_M1_a2_q6",
+      "G3_M1_a2_q8",
+      "G3_M3_TA_a1_q3",
+      "G3_M3_TA_a1_q4",
+      "G3_M3_TB_a1_q1",
+      "G3_M3_TB_a1_q2",
+      "G3_M3_TB_a1_q4",
+      "G3_M3_TB_a1_q5",
+      "G3_M3_TD_a1_q1",
+      "G3_M3_TD_a1_q2",
+      "G3_M3_TD_a1_q3",
+      "G3_M3_TD_a1_q5",
+      "G3_M3_a1_q1",
+      "G3_M3_a1_q2",
+      "G3_M3_a1_q3",
+      "G3_M3_a1_q5",
+      "G3_M3_a1_q6",
+      "G3_M3_a1_q7",
+      "G3_M3_a1_q8",
+      "G3_M3_a2_q1",
+      "G3_M3_a2_q2",
+      "G3_M3_a2_q5",
+      "G3_M3_a2_q7",
+      "G3_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "decompose_dividend_for_division",
+    "title": "Decompose Dividend Using Partial Quotients",
+    "description": "Break apart a dividend into addends that are easier to divide, then divide each part and add the quotients.",
+    "condition": "Division expression a \u00f7 b where a can be decomposed into convenient addends (e.g., 72 = 40 + 32).",
+    "response": "Rewrite as (a1 \u00f7 b) + (a2 \u00f7 b) and compute partial quotients, then add them.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$72 \\div 8 = (40 \\div 8) + (32 \\div 8) = 5 + 4 = 9$.",
+    "notes": "Uses distributive property of division over addition.",
+    "question_ids": [
+      "G3_M3_TA_a1_q5",
+      "G3_M3_a1_q4",
+      "G3_M3_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "decompose_multiple_of_ten",
+    "title": "Decompose Multiple of Ten",
+    "description": "Rewrite a multiple of ten as a single-digit number times 10.",
+    "condition": "A number ending in zero (e.g., 50, 40).",
+    "response": "Express the number as (digit \u00d7 10).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "\\(50 = 5 \\times 10\\).",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "divide_total_by_unit_rate",
+    "title": "Divide Total by Unit Cost",
+    "description": "Find the number of equal items that can be purchased by dividing total money by the cost per item.",
+    "condition": "A total amount of money and a cost per item are given; the number of items is unknown.",
+    "response": "Divide the total amount by the unit cost.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the total is $63 and each bracelet costs $9, compute $63 \\div 9 = 7$ bracelets.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "evaluate_basic_multiplication_division",
+    "title": "Evaluate Basic Multiplication and Division Facts",
+    "description": "Compute products and quotients involving 0 and 1 using basic arithmetic properties.",
+    "condition": "An equation involving multiplication or division by 0 or 1 (e.g., $0 \\times 1$, $1 \\times 9$, $0 \\div 1$).",
+    "response": "Compute the product or quotient using identity and zero properties.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$1 \\times 9 = 9$ because multiplying by 1 leaves the number unchanged; $0 \\div 1 = 0$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "evaluate_expression_equality",
+    "title": "Evaluate Expression for Equality",
+    "description": "Determine whether two expressions have the same value by evaluating them.",
+    "condition": "Given two expressions and asked if they are equal",
+    "response": "Compute both expressions and state Yes if equal, No if not",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(3 \\times 5) \\times 4 = 60$ and $15 \\times 4 = 60$, so Yes",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TC_a1_q4",
+      "G3_M3_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "evaluate_grouping_with_parentheses",
+    "title": "Evaluate Expressions with Parentheses",
+    "description": "Evaluate numerical expressions by first computing operations inside parentheses, then completing remaining operations.",
+    "condition": "Expression containing parentheses with addition and/or multiplication.",
+    "response": "Compute inside parentheses first, then complete remaining operations to find the value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $(6+2)\\times 4$, compute $6+2=8$, then $8\\times 4=32$.",
+    "notes": "Order of operations at elementary level (parentheses first).",
+    "question_ids": [
+      "G3_M3_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "apply_multiplicative_pattern_rule",
+    "title": "Identify and Apply Multiplicative Pattern",
+    "description": "Determine that outputs are produced by multiplying inputs by a constant factor and apply that factor.",
+    "condition": "A table shows consistent input-output pairs where each output equals input multiplied by the same number.",
+    "response": "State the multiplication rule and multiply new inputs by that constant.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since $3 \\mapsto 27$ and $5 \\mapsto 45$, recognize $\\text{output} = 9 \\times \\text{input}$. Then $8 \\times 9 = 72$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "division_as_missing_factor",
+    "title": "Interpret Division as Missing Factor",
+    "description": "Represent a division equation as a related multiplication equation with a missing factor.",
+    "condition": "Equation of the form a \u00f7 b = n",
+    "response": "Rewrite as n \u00d7 b = a (or b \u00d7 n = a)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $48 \\div 6 = n$, write $n \\times 6 = 48$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TA_a1_q1",
+      "G3_M3_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "interpret_groups_word_problem",
+    "title": "Interpret Equal Groups in Word Problem",
+    "description": "Translate equal groups described in words into a multiplication expression.",
+    "condition": "A context describing equal groups (e.g., sheets with rows, packs with items).",
+    "response": "Write a multiplication expression representing groups \u00d7 items per group (and multiply sequential factors if needed).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "7 sheets with 5 rows of 6 stickers each \u2192 \\(7 \\times 5 \\times 6\\).",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TD_a1_q4",
+      "G3_M3_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "match_equation_to_value",
+    "title": "Match Equation to Correct Value",
+    "description": "Determine which given number makes an equation true.",
+    "condition": "Equation with one unknown and a list of possible values",
+    "response": "Select the value that satisfies the equation",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For $72 \\div \\Box = 9$, choose $8$ because $72 \\div 8 = 9$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_multiple_of_ten",
+    "title": "Multiply by a Multiple of Ten",
+    "description": "Multiply a whole number by a multiple of ten by multiplying non-zero digits and appending one zero.",
+    "condition": "An expression of the form a \u00d7 (b0), where b0 is a multiple of 10.",
+    "response": "Compute (a \u00d7 b) and append one zero to the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "\\(3 \\times 40 = 3 \\times 4 \\times 10 = 12 \\times 10 = 120\\).",
+    "notes": "",
+    "question_ids": [
+      "G3_M3_TD_a1_q1",
+      "G3_M3_TD_a1_q2",
+      "G3_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "represent_unknown_with_variable",
+    "title": "Represent Unknown with Variable",
+    "description": "Use a letter to represent an unknown quantity in an equation.",
+    "condition": "Word problem specifies an unknown quantity and instructs to use a specific letter.",
+    "response": "Write an equation using the given letter to represent the unknown.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Let $b$ be books per shelf: $28 \\div 7 = b$.",
+    "notes": "Conventional use of variables.",
+    "question_ids": [
+      "G3_M3_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "solve_missing_factor_equation",
+    "title": "Solve for Missing Factor",
+    "description": "Find the unknown number in a multiplication or division equation.",
+    "condition": "Equation of the form a \u00d7 x = c or c \u00f7 a = x",
+    "response": "Compute the missing number that makes the equation true",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Solve $8 \\times r = 80$ by computing $r = 80 \\div 8 = 10$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M1_a1_q1",
+      "G3_M1_a1_q8",
+      "G3_M1_a2_q1",
+      "G3_M1_a2_q8",
+      "G3_M3_TA_a1_q4",
+      "G3_M3_TA_a1_q6",
+      "G3_M3_TB_a1_q2",
+      "G3_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "solve_two_step_word_problem",
+    "title": "Solve Two-Step Multiplicative Word Problem",
+    "description": "Solve a word problem requiring multiplication to find a total and addition or subtraction to compare quantities.",
+    "condition": "Context requires finding a product and then adjusting by adding or subtracting a given difference.",
+    "response": "Compute product, then add or subtract given amount to find unknown quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Jayla has $5\\times7=35$ rocks. If she has 15 more than David, then David has $35-15=20$.",
+    "notes": "Requires identifying sequence of operations from context. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M3_a1_q8",
+      "G3_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "translate_equal_groups_to_division_equation",
+    "title": "Translate Equal Groups to Division Equation",
+    "description": "Represent a total split equally into groups using a division equation.",
+    "condition": "Word problem describing total items shared equally among a given number of groups",
+    "response": "Write equation total \u00f7 number_of_groups = amount_per_group",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "63 birds in 7 cages \u2192 $63 \\div 7 = r$.",
+    "notes": "Requires identifying total and number of groups.",
+    "question_ids": [
+      "G3_M3_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "translate_equal_groups_to_multiplication_equation",
+    "title": "Translate Equal Groups to Multiplication Equation",
+    "description": "Represent equal groups with a multiplication equation.",
+    "condition": "Word problem describing number of groups and number in each group",
+    "response": "Write equation groups \u00d7 number_in_each_group = total",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "10 rows with 7 plants each \u2192 $10 \\times 7 = p$.",
+    "notes": "Standard equal-groups structure.",
+    "question_ids": [
+      "G3_M3_TB_a1_q3",
+      "G3_M3_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "relate_multiplication_and_division",
+    "title": "Use Inverse Relationship of Multiplication and Division",
+    "description": "Use the inverse relationship between multiplication and division to write related equations or find missing values.",
+    "condition": "Division equation a \u00f7 b = c or missing factor equation b \u00d7 c = a",
+    "response": "Rewrite as the related multiplication or division equation",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $63 \\div 7 = r$, then $7 \\times r = 63$.",
+    "notes": "Supports solving for unknown factors.",
+    "question_ids": [
+      "G3_M1_TD_a1_q1",
+      "G3_M1_TD_a1_q3",
+      "G3_M3_TA_a1_q2",
+      "G3_M3_TB_a1_q2",
+      "G3_M3_TB_a1_q3",
+      "G3_M3_a1_q3",
+      "G3_M3_a1_q6",
+      "G3_M3_a2_q6"
+    ]
+  }
+]

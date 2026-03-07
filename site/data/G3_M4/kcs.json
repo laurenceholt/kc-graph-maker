@@ -1,0 +1,437 @@
+[
+  {
+    "kc_id": "add_partial_areas",
+    "title": "Add Areas of Parts",
+    "description": "Find the total area of a composite figure by adding the areas of its non-overlapping parts.",
+    "condition": "A figure is decomposed into two or more non-overlapping rectangles or parts with known areas.",
+    "response": "Add the areas of the parts to find the total area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a shape is split into rectangles of areas $20$ and $40$, then total area $= 20 + 40 = 60$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_TC_a1_q4",
+      "G3_M4_TD_a1_q3",
+      "G3_M4_TD_a1_q5",
+      "G3_M4_a1_q6",
+      "G3_M4_a1_q7",
+      "G3_M4_a2_q6",
+      "G3_M4_a2_q7",
+      "G3_M4_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "area_from_array_count",
+    "title": "Area from Completed Array",
+    "description": "Find the area of a rectangle by counting the total number of unit squares in a completed array.",
+    "condition": "A rectangular array is shown with each small square representing one square unit.",
+    "response": "Count all unit squares (or determine rows \u00d7 columns) to find total area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If an array has 4 rows and 5 columns of unit squares, then area = $4 \\times 5 = 20$ square units.",
+    "notes": "May involve completing missing grid lines first.",
+    "question_ids": [
+      "G3_M4_TB_a1_q1",
+      "G3_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "area_rectangle_multiply",
+    "title": "Area of a Rectangle by Multiplication",
+    "description": "Find the area of a rectangle by multiplying its length by its width.",
+    "condition": "A rectangle with given side lengths $l$ and $w$.",
+    "response": "Compute $l \\times w$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For a $6$ ft by $3$ ft rectangle: $6 \\times 3 = 18$ square feet.",
+    "notes": "Core area formula for rectangles. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M4_TA_a1_q3",
+      "G3_M4_TA_a1_q4",
+      "G3_M4_TB_a1_q2",
+      "G3_M4_TB_a1_q3",
+      "G3_M4_TB_a1_q5",
+      "G3_M4_TC_a1_q1",
+      "G3_M4_TC_a1_q3",
+      "G3_M4_TC_a1_q4",
+      "G3_M4_TD_a1_q2",
+      "G3_M4_TD_a1_q3",
+      "G3_M4_TD_a1_q4",
+      "G3_M4_TD_a1_q5",
+      "G3_M4_a1_q2",
+      "G3_M4_a1_q4",
+      "G3_M4_a1_q6",
+      "G3_M4_a1_q7",
+      "G3_M4_a1_q8",
+      "G3_M4_a2_q2",
+      "G3_M4_a2_q4",
+      "G3_M4_a2_q6",
+      "G3_M4_a2_q7",
+      "G3_M4_a2_q8",
+      "G3_M6_TC_a1_q2",
+      "G3_M6_TC_a1_q4",
+      "G3_M6_TC_a1_q5",
+      "G3_M6_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "compare_areas_same_units",
+    "title": "Compare Areas with Same Units",
+    "description": "Compare two areas measured in the same square units to determine if one is greater, less, or equal.",
+    "condition": "Two shapes have areas expressed in the same square units.",
+    "response": "Determine whether one area is greater than, less than, or equal to the other by comparing numerical values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If shape A has area 10 square inches and Ray\u2019s shape has area 12 square inches, then 10 < 12, so shape A is less than Ray\u2019s shape.",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_TA_a1_q4",
+      "G3_M4_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_areas",
+    "title": "Compare Two Areas",
+    "description": "Determine whether one area is greater than, less than, or equal to another area.",
+    "condition": "Two numerical area values are given.",
+    "response": "Compare the numbers and state greater than, less than, or equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one area is $20$ cm$^2$ and another is $18$ cm$^2$, then $20 > 18$, so it is greater than.",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "count_unit_squares",
+    "title": "Count Unit Squares to Find Area",
+    "description": "Determine the area of a figure by counting the number of unit squares that cover it.",
+    "condition": "A figure drawn on a grid where each square represents 1 square unit.",
+    "response": "Count all full unit squares covering the figure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If a shaded figure covers 16 unit squares, its area is $16$ square units.",
+    "notes": "Often includes systematic counting strategies. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M4_TA_a1_q3",
+      "G3_M4_TA_a1_q4",
+      "G3_M4_TA_a1_q5",
+      "G3_M4_a1_q3",
+      "G3_M4_a1_q5",
+      "G3_M4_a2_q3",
+      "G3_M4_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "decompose_composite_rectangle",
+    "title": "Decompose Composite Shape into Rectangles",
+    "description": "Draw a line to split an irregular composite figure into two or more rectangles.",
+    "condition": "Given a composite rectilinear figure with right angles.",
+    "response": "Draw one or more straight horizontal or vertical lines to form rectangles.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "An L-shaped figure can be split into a $4 \\times 2$ rectangle and a $4 \\times 4$ rectangle by drawing a horizontal line at the \u0627\u0644\u062f\u0627\u062e\u0644 corner.",
+    "notes": "Multiple valid decompositions may exist.",
+    "question_ids": [
+      "G3_M4_TD_a1_q1",
+      "G3_M4_TD_a1_q3",
+      "G3_M4_TD_a1_q5",
+      "G3_M4_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "evaluate_multiplication_expression",
+    "title": "Evaluate Multiplication Expression",
+    "description": "Compute the value of a multiplication expression.",
+    "condition": "Given a numerical multiplication expression (e.g., 4 \u00d7 10, 5 \u00d7 3).",
+    "response": "Calculate the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$4 \\times 10 = 40$.",
+    "notes": "Basic multiplication fact fluency.",
+    "question_ids": [
+      "G3_M4_TC_a1_q1",
+      "G3_M4_TC_a1_q2",
+      "G3_M4_TC_a1_q3",
+      "G3_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_correct_area_model",
+    "title": "Identify Correct Area Representation",
+    "description": "Determine whether a visual model correctly represents measuring area by covering a rectangle with equal-sized, non-overlapping units.",
+    "condition": "A picture shows a rectangle covered (or not covered) by unit squares or equal parts.",
+    "response": "State Yes if it fully covers without gaps/overlaps using equal units; otherwise state No.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a rectangle is completely tiled with equal squares and no gaps, respond \"Yes.\" If pieces overlap or leave gaps, respond \"No.\"",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_a1_q1",
+      "G3_M4_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_equivalent_area_rectangle",
+    "title": "Identify Rectangle with Equivalent Area",
+    "description": "Determine which rectangle has the same area as a given rectangle by comparing products of side lengths.",
+    "condition": "Given a target rectangle\u2019s side lengths and multiple candidate rectangles.",
+    "response": "Compute each area and select the rectangle whose area matches the target.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "Target area: $3 \\times 4 = 12$. Option B: $6 \\times 2 = 12$, so it matches.",
+    "notes": "Response is constant per item (one correct choice).",
+    "question_ids": [
+      "G3_M4_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_rows_columns_structure",
+    "title": "Identify Rows and Columns in Array",
+    "description": "Determine the number of rows and columns in a rectangular array.",
+    "condition": "A rectangular grid or array is shown.",
+    "response": "State the number of rows and the number of columns.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "In a grid with 3 horizontal rows and 5 vertical columns, the structure is 3 by 5.",
+    "notes": "Students may miscount rows vs. columns.",
+    "question_ids": [
+      "G3_M4_TB_a1_q1",
+      "G3_M4_TB_a1_q2",
+      "G3_M4_TB_a1_q3",
+      "G3_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_shapes_with_given_area",
+    "title": "Identify Shapes with a Given Area",
+    "description": "Select shapes whose total number of unit squares equals a specified area.",
+    "condition": "Multiple shapes composed of unit squares and a target area value.",
+    "response": "Count unit squares in each shape and select those equal to the target area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the target area is 7 square units, choose shapes that contain exactly 7 unit squares.",
+    "notes": "Combines counting and comparison to a fixed target.",
+    "question_ids": [
+      "G3_M4_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_rectangle_side_lengths",
+    "title": "Identify Side Lengths of Decomposed Rectangles",
+    "description": "Determine and label the length and width of each rectangle formed after decomposition.",
+    "condition": "After decomposing a composite figure, side lengths are partially given or can be inferred from the diagram.",
+    "response": "State the numerical length and width of each rectangle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the total bottom length is $7$ cm and a right section is $3$ cm wide, the remaining left section is $7 - 3 = 4$ cm.",
+    "notes": "Often requires subtracting known segments to find missing side lengths.",
+    "question_ids": [
+      "G3_M4_TD_a1_q1",
+      "G3_M4_TD_a1_q3",
+      "G3_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_area_model_expression",
+    "title": "Interpret Expression from Area Model",
+    "description": "Determine whether a numerical expression correctly represents the area shown in a rectangular area model.",
+    "condition": "Given an area model partitioned into dimensions (e.g., 4 by (10 + 2)) and a candidate expression.",
+    "response": "Judge whether the expression matches the total area (Yes or No).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "For a 4 by (10 + 2) rectangle, $4 \\times (10 + 2)$ correctly represents the area \u2192 Yes.",
+    "notes": "Includes recognizing incorrect forms such as $2 \\times 10 \\times 4$.",
+    "question_ids": [
+      "G3_M4_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "label_rectangle_dimensions_from_model",
+    "title": "Label Rectangle Dimensions from Model",
+    "description": "Determine and label the length and width of rectangles represented in a grid model.",
+    "condition": "Given a tiled rectangular model with total length and visible partitions.",
+    "response": "Count or infer the side lengths and assign correct measurement labels.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "Total length is 12 ft, shaded portion is 10 ft, unshaded portion is 2 ft; height is 9 ft.",
+    "notes": "Requires interpreting grid and measurement labels.",
+    "question_ids": [
+      "G3_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "measure_area_with_identical_units_no_gaps",
+    "title": "Measure Area Using Identical Units Without Gaps or Overlaps",
+    "description": "Recognize that area must be measured using identical unit squares that fully cover a shape without gaps or overlaps.",
+    "condition": "Given multiple visual models for covering a shape to measure area.",
+    "response": "Select the model that uses equal-sized unit squares and completely covers the shape without gaps or overlaps.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Choose the diagram where a rectangle is tiled with equal 1-unit squares arranged in rows and columns with no spaces.",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_equal_opposite_sides_rectangle",
+    "title": "Opposite Sides of a Rectangle Are Equal",
+    "description": "Recognize that opposite sides of a rectangle have equal lengths.",
+    "condition": "A figure is identified as a rectangle with one side length given.",
+    "response": "Label the opposite side with the same length.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If the top of a rectangle is 12 cm, then the bottom is also 12 cm.",
+    "notes": "Response is constant in that the opposite side must be equal to the given measure.",
+    "question_ids": [
+      "G3_M4_TA_a1_q1",
+      "G3_M4_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "select_correct_area_expression",
+    "title": "Select Valid Area Expression",
+    "description": "Identify which expressions correctly represent the area of a given rectangle.",
+    "condition": "Multiple expressions are given for the area of a shown rectangle.",
+    "response": "Select the expressions that correctly compute rows \u00d7 columns or equivalent repeated addition.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "For a 3-by-5 rectangle, valid expressions include $3 \\times 5$ and $5 + 5 + 5$.",
+    "notes": "Requires verifying structural match to array.",
+    "question_ids": [
+      "G3_M4_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "shade_rectangle_with_given_area",
+    "title": "Shade a Rectangle with a Given Area",
+    "description": "Create or identify a rectangle that has a specified area by arranging unit squares into equal rows and columns.",
+    "condition": "Given a target area in square units and a grid.",
+    "response": "Shade a rectangular arrangement of unit squares whose total equals the target area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Ray\u2019s shape has area 12 square inches, shade a $3 \\times 4$ rectangle since $3 \\times 4 = 12$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "state_area_with_units",
+    "title": "State Area with Square Units",
+    "description": "Express area answers using appropriate square units (e.g., square inches, square feet, square units).",
+    "condition": "An area value has been computed for a rectangular region.",
+    "response": "State the numerical result followed by the correct square unit label.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$81$ square feet; $15$ square inches; $48$ square units.",
+    "notes": "Unit label depends on context provided in problem.",
+    "question_ids": [
+      "G3_M4_TB_a1_q1",
+      "G3_M4_TB_a1_q2",
+      "G3_M4_TB_a1_q3",
+      "G3_M4_TB_a1_q4",
+      "G3_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "area_subtract_part",
+    "title": "Subtract Area of Removed Part",
+    "description": "To find the remaining area after a part is removed, subtract the area of the removed part from the original total area.",
+    "condition": "Given the total area of a whole and the area of a part that is removed or covered.",
+    "response": "Compute $\\text{total area} - \\text{part area}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total area is $72$ and removed area is $15$, remaining area $= 72 - 15 = 57$.",
+    "notes": "Applies to cut-out or covered regions.",
+    "question_ids": [
+      "G3_M4_TD_a1_q2",
+      "G3_M4_TD_a1_q4",
+      "G3_M4_TD_a1_q5",
+      "G3_M4_a1_q8",
+      "G3_M4_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "distributive_property_area",
+    "title": "Use Distributive Property to Find Area",
+    "description": "Use the distributive property to break apart one factor when finding the area of a rectangle.",
+    "condition": "One side length of a rectangle is expressed as a sum (e.g., $a+b$) multiplied by another side length.",
+    "response": "Rewrite $(a+b) \\times c$ as $(a \\times c) + (b \\times c)$ to find total area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(2+10) \\times 3 = (2 \\times 3) + (10 \\times 3) = 6 + 30 = 36$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M4_a2_q7"
+    ]
+  }
+]

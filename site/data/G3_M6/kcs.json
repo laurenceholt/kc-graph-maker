@@ -1,0 +1,627 @@
+[
+  {
+    "kc_id": "add_elapsed_time_minutes",
+    "title": "Add Elapsed Minutes to a Start Time",
+    "description": "Add one or more minute intervals to a given start time to find an end time.",
+    "condition": "Given a start time and one or more durations in minutes to be added.",
+    "response": "Add the minutes to the start time, updating the hour as needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Start at $4{:}35$ p.m. Add $19 + 22 = 41$ minutes. $4{:}35 + 41$ minutes $= 5{:}16$ p.m.",
+    "notes": "Includes regrouping when total minutes exceed 60. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M6_a1_q5",
+      "G3_M6_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "add_durations_multi_step",
+    "title": "Add Multiple Time Durations",
+    "description": "Add several time intervals (including play time and break time) to determine a final end time.",
+    "condition": "Given a start time and multiple durations in minutes that occur sequentially.",
+    "response": "Add all durations to the start time, regrouping minutes into hours as needed, to find the final time.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Start at 5:25 p.m.; durations: $17 + 12 + 13 = 42$ minutes. \\ $5{:}25 + 42\\text{ minutes} = 6{:}07$ p.m.",
+    "notes": "Requires regrouping when total minutes exceed 60.",
+    "question_ids": [
+      "G3_M6_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "add_two_categories_from_graph",
+    "title": "Add Two Categories from Graph",
+    "description": "Add the values of two categories read from a graph to find a combined total.",
+    "condition": "Two category values are identified from a bar graph and the total of both is requested.",
+    "response": "Compute the sum of the two category values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If tacos = 160 and salad = 80, then total = $160 + 80 = 240$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TD_a1_q2",
+      "G3_M6_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_quadrilateral_by_properties",
+    "title": "Classify Quadrilateral by Properties",
+    "description": "Determine whether a quadrilateral meets or does not meet given property constraints.",
+    "condition": "Given a quadrilateral and conditions such as 'not a rectangle' and 'at least one right angle.'",
+    "response": "Produce or identify a quadrilateral that satisfies all stated properties.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Draw a quadrilateral with one $90^\\circ$ angle but with sides not forming two pairs of parallel sides (so it is not a rectangle).",
+    "notes": "Construction may vary; multiple correct answers.",
+    "question_ids": [
+      "G3_M6_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compute_elapsed_time_across_hour",
+    "title": "Compute Elapsed Time Across an Hour",
+    "description": "Find the number of minutes between two times when the interval crosses from one hour to the next.",
+    "condition": "Given a start time and end time where the end minutes are less than the start minutes (crossing an hour).",
+    "response": "Count up to the next hour, then add remaining minutes to the end time.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $11{:}55$ a.m. to $12{:}35$ p.m.: $5$ minutes to $12{:}00$ plus $35$ minutes = $40$ minutes.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TA_a1_q3",
+      "G3_M6_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_perimeter_polygon_sum_sides",
+    "title": "Compute Perimeter by Summing All Side Lengths",
+    "description": "To find the perimeter of any polygon, add the lengths of all its exterior sides.",
+    "condition": "Given a polygon with all side lengths labeled.",
+    "response": "Add all side lengths to obtain the total perimeter.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a polygon has sides 6 cm, 4 cm, 8 cm, 6 cm, 14 cm, and 10 cm, then its perimeter is $6 + 4 + 8 + 6 + 14 + 10 = 48$ cm.",
+    "notes": "Applies to irregular polygons as well as regular polygons.",
+    "question_ids": [
+      "G3_M6_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_rectangle_perimeter_formula",
+    "title": "Compute Perimeter of a Rectangle",
+    "description": "The perimeter of a rectangle is found by adding twice the length and twice the width.",
+    "condition": "Given a rectangle with known length and width.",
+    "response": "Compute $2(\\text{length} + \\text{width})$ or add all four sides.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If length = 5 in and width = 4 in, perimeter is $2(5 + 4) = 18$ inches.",
+    "notes": "Equivalent to adding all four sides individually.",
+    "question_ids": [
+      "G3_M6_TC_a1_q2",
+      "G3_M6_TC_a1_q4",
+      "G3_M6_TC_a1_q5",
+      "G3_M6_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "create_graph_scale",
+    "title": "Create Appropriate Graph Scale",
+    "description": "Determine and apply a consistent scale for a bar graph axis based on the data range.",
+    "condition": "A blank or incomplete bar graph requires a numerical scale that fits the given data values.",
+    "response": "Select equal intervals (e.g., by 5s or 10s) that cover the maximum data value and label the axis.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If the greatest value is 65, choose a scale such as $0, 10, 20, \\dots, 70$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "define_quadrilateral",
+    "title": "Definition of Quadrilateral",
+    "description": "Recall that a quadrilateral is a polygon with four sides.",
+    "condition": "Asked for the meaning or property of a quadrilateral.",
+    "response": "State that a quadrilateral has four sides.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "A quadrilateral is a polygon with 4 sides.",
+    "notes": "Vocabulary knowledge.",
+    "question_ids": [
+      "G3_M6_TB_a1_q1",
+      "G3_M6_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "recognize_four_equal_sides_condition",
+    "title": "Determine if Four Sides Are Equal",
+    "description": "Check whether a quadrilateral has four sides of equal length.",
+    "condition": "Side lengths of a quadrilateral are given or shown.",
+    "response": "Compare all four side lengths and determine whether they are equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If a quadrilateral has side lengths 1 in, 1 in, 1 in, 1 in \u2192 conclude all four sides are equal.",
+    "notes": "Supports classification as square or rhombus.",
+    "question_ids": [
+      "G3_M6_TB_a1_q2",
+      "G3_M6_TB_a1_q3",
+      "G3_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "determine_rectangle_side_from_area",
+    "title": "Determine Missing Side from Area",
+    "description": "Find a missing side length of a rectangle using the area and one known side.",
+    "condition": "Given area and one side length of a rectangle.",
+    "response": "Divide area by known side to find the missing side.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If area $=36$ and length $=6$, then width $= 36 \\div 6 = 6$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "identify_rhombus_not_always_square",
+    "title": "Distinguish Rhombus from Square",
+    "description": "Recognize that while all squares are rhombuses, not all rhombuses are squares because right angles are not required.",
+    "condition": "Given the claim that every rhombus is a square.",
+    "response": "State that the claim is false and explain that rhombuses do not require four right angles.",
+    "cond_type": "Constant",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A rhombus has four equal sides, but its angles do not have to be $90^\\circ$, so not every rhombus is a square.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "construct_quadrilateral_with_parallel_sides",
+    "title": "Draw Non-Square with Parallel Sides",
+    "description": "Create a quadrilateral that has at least one pair of parallel sides but does not have all properties of a square.",
+    "condition": "Asked to draw a quadrilateral with at least one pair of parallel sides that is not a square.",
+    "response": "Draw a trapezoid or non-square parallelogram with at least one pair of parallel sides.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Draw a trapezoid with one pair of parallel sides, such as vertices at (0,0), (4,0), (3,3), (1,3).",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "validate_not_rhombus_constraint",
+    "title": "Ensure Shape Is Not a Rhombus",
+    "description": "Construct or identify a quadrilateral that does not have four equal sides.",
+    "condition": "Task requires a quadrilateral with at least one pair of parallel sides that is not a rhombus.",
+    "response": "Provide or select a quadrilateral with parallel sides where not all four sides are equal (e.g., a non-square rectangle).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Draw a rectangle with side lengths 2 and 4. It has parallel sides but not all sides are equal, so it is not a rhombus.",
+    "notes": "Requires satisfying one condition while excluding another.",
+    "question_ids": [
+      "G3_M6_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_difference_from_graph",
+    "title": "Find Difference Between Categories",
+    "description": "Determine how many more or fewer by subtracting one category value from another.",
+    "condition": "Two numerical values are read from a graph and the problem asks how many more or fewer.",
+    "response": "Subtract the smaller value from the larger value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If tacos = 160 and pizza = 100, then difference = $160 - 100 = 60$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TD_a1_q2",
+      "G3_M6_TD_a1_q4",
+      "G3_M6_a1_q7",
+      "G3_M6_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "compute_perimeter_from_area_and_length",
+    "title": "Find Perimeter from Area and One Side",
+    "description": "Determine the missing side of a rectangle using area and one side, then compute the perimeter.",
+    "condition": "Given area of a rectangle and one side length.",
+    "response": "Divide area by known side to find missing side, then compute perimeter using 2l + 2w.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Area = 24 sq ft, length = 6 ft. Width = 24 \u00f7 6 = 4 ft. Perimeter = 2(6) + 2(4) = 12 + 8 = 20 ft.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "divide_perimeter_regular_polygon",
+    "title": "Find Side Length of Regular Polygon from Perimeter",
+    "description": "Determine the side length of a regular polygon by dividing the perimeter by the number of equal sides.",
+    "condition": "Given the total perimeter of a regular polygon and the number of equal sides.",
+    "response": "Divide the perimeter by the number of sides.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A regular hexagon has perimeter $54$. Since it has $6$ sides, each side is $54 \\div 6 = 9$ inches.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TC_a1_q3",
+      "G3_M6_a1_q2",
+      "G3_M6_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_quadrilateral_by_four_sides",
+    "title": "Identify a Quadrilateral by Side Count",
+    "description": "Recognize that a polygon with exactly four sides is a quadrilateral.",
+    "condition": "A polygon is shown and the task is to determine whether it is a quadrilateral.",
+    "response": "Count the sides; if the polygon has exactly 4 sides, classify it as a quadrilateral.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "A shape with 4 sides (e.g., a trapezoid) \u2192 classify as a quadrilateral.",
+    "notes": "Definition-based; relies on memorized meaning of quadrilateral.",
+    "question_ids": [
+      "G3_M6_TB_a1_q1",
+      "G3_M6_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_right_angle",
+    "title": "Identify a Right Angle",
+    "description": "Recognize a 90\u00b0 angle in a polygon.",
+    "condition": "An angle in a shape is shown and the task is to determine whether it is a right angle.",
+    "response": "Determine whether the angle measures 90\u00b0 (forms a square corner).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "A corner shaped like the corner of a square \u2192 identify as a right angle.",
+    "notes": "Often based on visual recognition rather than measurement.",
+    "question_ids": [
+      "G3_M6_TB_a1_q3",
+      "G3_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_hour_hand_position",
+    "title": "Identify Hour from Hour Hand",
+    "description": "Determine the hour shown on an analog clock by locating the hour hand.",
+    "condition": "Given an analog clock with an hour hand pointing to or between hour numbers.",
+    "response": "State the hour indicated by the hour hand (the last number passed).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the hour hand is just past 11, the hour is $11$.",
+    "notes": "Often used together with minute-hand identification.",
+    "question_ids": [
+      "G3_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_minute_hand_value",
+    "title": "Identify Minutes from Minute Hand",
+    "description": "Determine the minutes shown on an analog clock by interpreting the minute hand position.",
+    "condition": "Given an analog clock with the minute hand pointing to a number or tick mark.",
+    "response": "Multiply the number the minute hand points to by 5 (or count tick marks) to state the minutes.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the minute hand points to $9$, then $9 \\times 5 = 45$ minutes.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_hexagon_six_sides",
+    "title": "Identify Number of Sides in a Hexagon",
+    "description": "A hexagon is defined as a polygon with six sides.",
+    "condition": "Asked for the number of sides in a hexagon.",
+    "response": "State that a hexagon has 6 sides.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "A hexagon has 6 sides.",
+    "notes": "Terminology fact that must be memorized.",
+    "question_ids": [
+      "G3_M6_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_bar_graph_value",
+    "title": "Interpret Bar Height",
+    "description": "Read the numerical value represented by the height or length of a bar using the graph scale.",
+    "condition": "A bar is shown aligned to a labeled numerical axis.",
+    "response": "State the numerical value corresponding to the top/end of the bar.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If a bar reaches the tick mark labeled 90, then the value is $90$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M2_TC_a1_q3",
+      "G3_M6_TD_a1_q1",
+      "G3_M6_TD_a1_q2",
+      "G3_M6_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_pictograph_scale",
+    "title": "Interpret Pictograph Key",
+    "description": "Use the pictograph key to determine how many units each symbol represents.",
+    "condition": "A pictograph includes a key stating that one symbol equals a fixed number of items.",
+    "response": "Multiply the number of symbols by the value of one symbol.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If each circle represents 10 students and there are 6 circles, then $6 \\times 10 = 60$ students.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TD_a1_q1",
+      "G3_M6_a1_q4",
+      "G3_M6_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "match_clock_to_digital_time",
+    "title": "Match Analog Clock to Digital Time",
+    "description": "Match a clock face to its corresponding written digital time.",
+    "condition": "Given an analog clock and a list of digital times.",
+    "response": "Select the digital time that matches the hour and minute shown on the clock.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "A clock showing hour $1$ and minute $55$ matches $1{:}55$.",
+    "notes": "Integrates hour and minute identification.",
+    "question_ids": [
+      "G3_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "measure_to_nearest_quarter_inch",
+    "title": "Measure to Nearest Quarter Inch",
+    "description": "Measure an object and record its length rounded to the nearest quarter inch.",
+    "condition": "Given an object aligned to a ruler with quarter-inch marks.",
+    "response": "State the length rounded to the nearest $\\tfrac{1}{4}$ inch.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "A pencil slightly past $2\\tfrac{1}{4}$ inches is recorded as $2\\tfrac{1}{4}$ inches.",
+    "notes": "Involves visual estimation and rounding. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M5_TC_a1_q4",
+      "G3_M6_TD_a1_q3",
+      "G3_M6_a1_q9",
+      "G3_M6_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "plot_line_plot_x",
+    "title": "Plot X on Line Plot",
+    "description": "Place an X above the correct value on a number line to represent one data point.",
+    "condition": "A numerical measurement is given and a line plot with matching scale is provided.",
+    "response": "Mark an X above the corresponding number on the line plot.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If a pencil measures $2\\frac{1}{4}$ inches, place an X above $2.25$ (or $2\\frac{1}{4}$) on the number line.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "properties_rectangle",
+    "title": "Properties of a Rectangle",
+    "description": "Recall that a rectangle has four right angles and two pairs of parallel sides; opposite sides are equal.",
+    "condition": "A shape is identified as a rectangle or the term rectangle is given.",
+    "response": "State that it has 4 right angles and opposite sides are equal and parallel.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "A rectangle has four right angles and two pairs of parallel sides.",
+    "notes": "Used to evaluate truth of statements.",
+    "question_ids": [
+      "G3_M6_TB_a1_q2",
+      "G3_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "properties_rhombus",
+    "title": "Properties of a Rhombus",
+    "description": "Recall that a rhombus is a quadrilateral with four sides of equal length.",
+    "condition": "A shape is identified as a rhombus or the term rhombus is given.",
+    "response": "State that all four sides are equal in length.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "A rhombus has 4 sides of equal length.",
+    "notes": "Key distinction from general parallelogram.",
+    "question_ids": [
+      "G3_M6_TB_a1_q2",
+      "G3_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "properties_square",
+    "title": "Properties of a Square",
+    "description": "Recall that a square has four equal sides and four right angles.",
+    "condition": "A shape is identified as a square or the term square is given.",
+    "response": "State that it has 4 equal sides and 4 right angles.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "A square has 4 equal sides and 4 right angles.",
+    "notes": "Combines properties of rectangle and rhombus.",
+    "question_ids": [
+      "G3_M6_TB_a1_q2",
+      "G3_M6_TB_a1_q3",
+      "G3_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_parallel_sides_requirement",
+    "title": "Recognize At Least One Pair of Parallel Sides",
+    "description": "Determine whether a quadrilateral has at least one pair of parallel sides.",
+    "condition": "A quadrilateral is shown and the task asks whether it has at least one pair of parallel sides.",
+    "response": "Inspect opposite sides and determine whether at least one pair does not intersect and remains equidistant (parallel).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "In a rectangle, the top and bottom sides are parallel \u2192 it has at least one pair of parallel sides.",
+    "notes": "Students may rely on visual recognition of parallelism.",
+    "question_ids": [
+      "G3_M6_TB_a1_q4",
+      "G3_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "determine_rectangle_same_perimeter_different_area",
+    "title": "Same Perimeter, Different Area",
+    "description": "Generate rectangle dimensions that produce a given perimeter but a different area.",
+    "condition": "Given a required perimeter and requirement for different area than a known rectangle.",
+    "response": "Choose length and width values whose perimeter matches the given value and verify the area is different.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If perimeter must be 20 ft, choose 5 ft by 5 ft. Perimeter = 2(5)+2(5)=20; Area = 25 sq ft, which differs from 24 sq ft.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TC_a1_q5",
+      "G3_M6_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "set_equal_areas_and_solve_missing_side",
+    "title": "Set Equal Areas to Find Missing Side",
+    "description": "When two rectangles have equal areas, set their area expressions equal and solve for the unknown side length.",
+    "condition": "Given two rectangles with equal area, one with a missing side length.",
+    "response": "Compute known area and divide by known side length to find the missing side.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one rectangle has area $6 \\times 4 = 24$ and another has width 3 m, then its length is $24 \\div 3 = 8$ m.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_square_as_rhombus",
+    "title": "Square as a Special Rhombus",
+    "description": "Recognize that a square meets the defining properties of a rhombus.",
+    "condition": "Asked whether every square is a rhombus and to justify.",
+    "response": "State that yes, because both have 4 equal sides and 2 pairs of parallel sides.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A square has 4 equal sides and 2 pairs of parallel sides. A rhombus is defined as a quadrilateral with 4 equal sides and 2 pairs of parallel sides. Therefore, every square is a rhombus.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "subtract_duration_from_end_time",
+    "title": "Subtract Duration to Find Start Time",
+    "description": "Find a start time by subtracting a given number of minutes from a known end time.",
+    "condition": "Given an end time and a duration in minutes.",
+    "response": "Subtract the duration from the end time, regrouping across the hour if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$4{:}45$ p.m. minus $38$ minutes: subtract $45 - 38 = 7$, so start time is $4{:}07$ p.m.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TA_a1_q2"
+    ]
+  }
+]

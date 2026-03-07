@@ -640,25 +640,6 @@
     ]
   },
   {
-    "kc_id": "set_up_proportion_from_similar_triangles",
-    "title": "Set Up Proportion from Similar Triangles",
-    "description": "Use corresponding sides of similar triangles to form a proportion.",
-    "condition": "Two triangles are similar and side lengths are labeled.",
-    "response": "Write ratio of corresponding sides equal.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If $\\triangle AED \\sim \\triangle ACB$, then $\\frac{BC}{AC}=\\frac{DE}{AE}$.",
-    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
-    "question_ids": [
-      "G8_M4_TD_a1_q2",
-      "G8_M4_a1_q3",
-      "G8_M4_a2_q3"
-    ]
-  },
-  {
     "kc_id": "solve_linear_equation_variable_both_sides",
     "title": "Solve Linear Equation with Variable on Both Sides",
     "description": "Rearrange and combine terms to isolate the variable when it appears on both sides of the equation.",

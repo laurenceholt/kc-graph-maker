@@ -291,23 +291,6 @@
     ]
   },
   {
-    "kc_id": "measure_to_nearest_quarter_inch",
-    "title": "Measure to Nearest Quarter Inch",
-    "description": "Determine an object's length and express it to the nearest quarter inch.",
-    "condition": "An object aligned with a ruler marked in quarter-inch increments.",
-    "response": "Read the whole number inches and nearest quarter-inch mark to record the measurement.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "If a pencil ends at the third small tick after 4 inches, its length is $4\\tfrac{3}{4}$ inches.",
-    "notes": "",
-    "question_ids": [
-      "G3_M5_TC_a1_q4"
-    ]
-  },
-  {
     "kc_id": "partition_whole_into_equal_parts",
     "title": "Partition Whole into Equal Parts",
     "description": "Divide a whole shape or number line interval into a specified number of equal parts.",

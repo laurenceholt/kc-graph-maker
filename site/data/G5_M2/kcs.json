@@ -160,23 +160,6 @@
     ]
   },
   {
-    "kc_id": "divide_total_by_count",
-    "title": "Divide Total by Number of Equal Groups",
-    "description": "Find the value of each group by dividing the total amount by the number of equal groups.",
-    "condition": "A total quantity and a number of equal groups are given.",
-    "response": "Compute total \u00f7 number of groups to find the amount in each group.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If total weight is $9$ pounds for $12$ blocks, each weighs $9 \\div 12 = \\tfrac{3}{4}$ pound.",
-    "notes": "Used to find equal block weight in Q5.",
-    "question_ids": [
-      "G5_M2_TD_a1_q5"
-    ]
-  },
-  {
     "kc_id": "divide_whole_by_whole",
     "title": "Divide Whole Numbers",
     "description": "Divide one whole number by another to find a quotient.",
@@ -351,30 +334,6 @@
       "G5_M2_TA_a1_q4",
       "G5_M2_TB_a1_q3",
       "G5_M2_TB_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "model_equal_sharing_division",
-    "title": "Model Division as Equal Sharing",
-    "description": "Represent division as distributing a total equally among a given number of groups.",
-    "condition": "Word problem describing total amount shared equally among n groups.",
-    "response": "Represent as a \u00f7 n and interpret as equal parts per group.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "9 tablespoons shared among 4 loaves is $9 \\div 4 = \\frac{9}{4}$ per loaf.",
-    "notes": "",
-    "question_ids": [
-      "G5_M2_TA_a1_q3",
-      "G5_M2_TA_a1_q4",
-      "G5_M2_TA_a1_q5",
-      "G5_M2_TA_a1_q6",
-      "G5_M2_a1_q3",
-      "G5_M2_a1_q4",
-      "G5_M3_TC_a1_q3",
-      "G5_M3_TC_a1_q5"
     ]
   },
   {

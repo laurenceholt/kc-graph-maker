@@ -1,23 +1,5 @@
 [
   {
-    "kc_id": "add_multi_digit_standard",
-    "title": "Add Multi-Digit Numbers",
-    "description": "Add multi-digit numbers using place value or the standard algorithm.",
-    "condition": "Expression of the form a + b where a and b are multi-digit whole numbers.",
-    "response": "Add ones, tens, hundreds (with regrouping if needed) to find the sum.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$436 + 322 = 758$.",
-    "notes": "Includes vertical algorithm or place value reasoning.",
-    "question_ids": [
-      "G2_M4_a1_q14",
-      "G2_M4_a1_q9"
-    ]
-  },
-  {
     "kc_id": "add_subtract_10_100",
     "title": "Add or Subtract 10 or 100",
     "description": "Adjust a number by 10 or 100 by changing the tens or hundreds digit.",
@@ -86,24 +68,6 @@
       "G2_M4_a1_q14",
       "G2_M4_a1_q15",
       "G2_M4_a1_q16"
-    ]
-  },
-  {
-    "kc_id": "subtract_multi_digit_standard",
-    "title": "Subtract Multi-Digit Numbers",
-    "description": "Subtract multi-digit numbers using place value or the standard algorithm with regrouping.",
-    "condition": "Expression of the form a \u2212 b where a and b are multi-digit whole numbers.",
-    "response": "Subtract ones, tens, hundreds (with regrouping if needed) to find the difference.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$743 - 267 = 476$.",
-    "notes": "May include place value drawings or vertical algorithm.",
-    "question_ids": [
-      "G2_M4_a1_q10",
-      "G2_M4_a1_q5"
     ]
   }
 ]

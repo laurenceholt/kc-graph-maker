@@ -1,0 +1,380 @@
+[
+  {
+    "kc_id": "add_partial_products",
+    "title": "Add Partial Products",
+    "description": "Add two computed partial products to find the total product.",
+    "condition": "Expression of the form a + b where a and b are partial products (e.g., 20 + 8).",
+    "response": "Compute the sum of the two numbers.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$20 + 8 = 28$.",
+    "notes": "Follows place-value and addition principles. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M1_TC_a1_q4",
+      "G3_M1_TE_a1_q2",
+      "G3_M1_a1_q6",
+      "G3_M1_a2_q6",
+      "G3_M4_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "apply_commutative_property_multiplication",
+    "title": "Apply Commutative Property of Multiplication",
+    "description": "Recognize that changing the order of factors does not change the product.",
+    "condition": "Multiplication expression of the form a \u00d7 b or equation a \u00d7 b = b \u00d7 ___",
+    "response": "Rewrite as b \u00d7 a or fill blank with the other factor",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $4 \\times 8 = 8 \\times \\_\\_$, fill in $4$ because $4 \\times 8 = 8 \\times 4$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M1_TC_a1_q1",
+      "G3_M1_TC_a1_q2",
+      "G3_M1_a1_q5",
+      "G3_M1_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "complete_division_equation",
+    "title": "Complete Division Equation with Quotient",
+    "description": "Given a division situation, fill in the dividend, divisor, and quotient to correctly complete the equation.",
+    "condition": "A word problem or equation of the form a \u00f7 b = ___ where a and b are given quantities representing equal groups.",
+    "response": "Compute the quotient a \u00f7 b and write the correct number in the blank.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Ivan makes 24 balloons and puts them in groups of 3, compute $24 \\div 3 = 8$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M1_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "decompose_factor_using_distributive_property",
+    "title": "Decompose a Factor Using Distributive Property",
+    "description": "Break apart one factor into addends and express the product as a sum of partial products.",
+    "condition": "Multiplication expression a \u00d7 b where one factor can be decomposed (e.g., 8 \u00d7 3)",
+    "response": "Rewrite as (m \u00d7 b) + (n \u00d7 b) where m + n = a",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8 \\times 3 = (5 \\times 3) + (3 \\times 3)$ because $8 = 5 + 3$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M1_TC_a1_q3",
+      "G3_M1_TC_a1_q4",
+      "G3_M1_TE_a1_q1",
+      "G3_M1_TE_a1_q2",
+      "G3_M1_a1_q4",
+      "G3_M1_a1_q6",
+      "G3_M3_TA_a1_q3",
+      "G3_M3_TB_a1_q1",
+      "G3_M3_TC_a1_q1",
+      "G3_M4_TC_a1_q3",
+      "G3_M4_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "select_equivalent_expression",
+    "title": "Determine if Expressions Are Equivalent",
+    "description": "Evaluate expressions and determine whether they are equal to a target expression.",
+    "condition": "Given a target expression and another expression involving operations.",
+    "response": "Compute both and state whether they are equal (Yes or No).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "Is $(4 \\times 5) + (4 \\times 5)$ equal to $8 \\times 5$? Yes, both equal 40.",
+    "notes": "",
+    "question_ids": [
+      "G3_M1_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_division_situation",
+    "title": "Identify Division Situation",
+    "description": "Recognize when a word problem represents division (equal groups or measurement).",
+    "condition": "Word problem describing sharing equally or forming groups of a given size from a total.",
+    "response": "Represent situation with a \u00f7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "12 flowers in rows of 3 \u2192 $12 \\div 3$.",
+    "notes": "Requires mapping context to operation.",
+    "question_ids": [
+      "G3_M1_a1_q7",
+      "G3_M1_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "interpret_equal_groups_multiplication",
+    "title": "Identify Equal Groups Structure",
+    "description": "Recognize a situation or picture as representing equal groups suitable for multiplication.",
+    "condition": "A picture or word problem describes objects arranged in equal groups, rows, boxes, or repeated amounts.",
+    "response": "Interpret the situation as equal groups and prepare to represent it with multiplication.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "\u201c5 pictures each day for 4 days\u201d is interpreted as equal groups suitable for $5 \\times 4$.",
+    "notes": "Distinguishes multiplicative from additive or subtractive situations.",
+    "question_ids": [
+      "G2_M6_TE_a1_q1",
+      "G2_M6_TE_a1_q6",
+      "G2_M6_TE_a1_q9",
+      "G3_M1_TA_a1_q1",
+      "G3_M1_TA_a1_q2",
+      "G3_M1_TA_a1_q3",
+      "G3_M1_TA_a1_q4",
+      "G3_M1_TC_a1_q3",
+      "G3_M1_TE_a1_q3",
+      "G3_M1_TE_a1_q5",
+      "G3_M2_TA_a1_q4",
+      "G3_M3_a1_q2",
+      "G3_M3_a1_q6",
+      "G3_M3_a1_q8",
+      "G3_M3_a2_q3",
+      "G3_M3_a2_q6",
+      "G3_M4_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_array_as_multiplication",
+    "title": "Interpret Array as Multiplication",
+    "description": "Translate an array with r rows and c columns into a multiplication expression.",
+    "condition": "Array arranged in r equal rows with c objects in each row.",
+    "response": "Write r \u00d7 c (or c \u00d7 r).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "4 rows of 8 \u2192 $4 \\times 8$.",
+    "notes": "Links visual model to symbolic multiplication. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M1_TC_a1_q1",
+      "G3_M1_TC_a1_q4",
+      "G3_M1_a1_q3",
+      "G3_M1_a1_q5",
+      "G3_M1_a1_q6",
+      "G3_M1_a2_q3",
+      "G3_M1_a2_q5",
+      "G3_M1_a2_q6",
+      "G3_M3_a2_q2",
+      "G3_M3_a2_q6",
+      "G3_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "identify_division_as_equal_groups",
+    "title": "Interpret Division as Equal Groups",
+    "description": "Recognize that division represents splitting a total into equal groups or determining number in each group.",
+    "condition": "A word problem describing a total being shared equally among a given number of groups or put into equal groups.",
+    "response": "Represent the situation using a division expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "\"40 pretzels divided equally among 5 students\" \u2192 $40 \\div 5$.",
+    "notes": "Distinguishes division situations from addition, subtraction, or multiplication contexts.",
+    "question_ids": [
+      "G3_M1_TB_a1_q1",
+      "G3_M1_TB_a1_q2",
+      "G3_M1_TB_a1_q3",
+      "G3_M1_TB_a1_q4",
+      "G3_M1_TD_a1_q2",
+      "G3_M1_TD_a1_q3",
+      "G3_M1_a2_q7",
+      "G3_M1_a2_q8",
+      "G3_M3_a1_q3",
+      "G3_M3_a1_q6",
+      "G3_M3_a1_q8",
+      "G3_M3_a2_q3",
+      "G3_M3_a2_q6",
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6",
+      "G5_M2_a1_q3",
+      "G5_M2_a1_q4",
+      "G5_M3_TC_a1_q3",
+      "G5_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_quotient_as_groups",
+    "title": "Interpret Quotient as Number of Groups",
+    "description": "Interpret the quotient in a division equation as the number of groups when dividing by group size.",
+    "condition": "A division equation where the divisor represents the size of each group (e.g., 24 \u00f7 3).",
+    "response": "State that the quotient represents the number of groups formed.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "In $24 \\div 3 = 8$, the 8 represents 8 groups of 3.",
+    "notes": "Response is constant interpretation pattern; specific numbers vary in explanation.",
+    "question_ids": [
+      "G3_M1_TD_a1_q3",
+      "G3_M1_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "match_visual_to_equal_division",
+    "title": "Match Visual Model to Division Situation",
+    "description": "Select the picture that correctly represents a given equal-sharing division scenario.",
+    "condition": "Multiple visual models showing groups and a word problem describing equal sharing of a total among a specific number of groups.",
+    "response": "Choose the model that shows the correct number of groups and equal number in each group matching the total.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "For 40 pretzels shared among 5 students, select the picture showing 5 equal groups of 8 pretzels.",
+    "notes": "Requires checking both total (5 \u00d7 8 = 40) and equal group size.",
+    "question_ids": [
+      "G3_M1_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "represent_array_from_rows_columns",
+    "title": "Represent Array from Rows and Columns",
+    "description": "Create or interpret an array based on a given number of rows and items in each row.",
+    "condition": "A specified number of rows and a specified number of items in each row.",
+    "response": "Draw or recognize an array with that many rows and equal items per row.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "3 rows of 4 objects \u2192 an array with 3 horizontal rows and 4 objects in each row.",
+    "notes": "Visual-spatial representation of equal groups.",
+    "question_ids": [
+      "G3_M1_TA_a1_q2",
+      "G3_M1_TB_a1_q3",
+      "G3_M1_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "represent_unknown_factor_equation",
+    "title": "Represent Division as Unknown Factor Equation",
+    "description": "Rewrite a division problem as a multiplication equation with an unknown factor.",
+    "condition": "Division situation a \u00f7 b with unknown quotient.",
+    "response": "Write b \u00d7 ___ = a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$40 \\div 5$ \u2192 $5 \\times \\_ = 40$.",
+    "notes": "Uses inverse relationship between multiplication and division.",
+    "question_ids": [
+      "G3_M1_a1_q1",
+      "G3_M1_a1_q8",
+      "G3_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "subtract_groups_from_total",
+    "title": "Subtract Equal Groups from Total",
+    "description": "Find the remaining total by subtracting the value of equal groups from an initial total.",
+    "condition": "Given a total amount and a number of equal groups with known size to remove.",
+    "response": "Compute remaining amount by subtracting groups \u00d7 size from total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Started with $36$ juice boxes, $2$ packs of $4$ left: $36 - (2 \\times 4) = 36 - 8 = 28$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "interpret_multiplication_word_problem",
+    "title": "Translate Word Problem to Multiplication Equation",
+    "description": "Convert a word problem describing equal groups into a multiplication equation.",
+    "condition": "A word problem states a number of groups and a number in each group.",
+    "response": "Write an equation of the form groups \u00d7 number_in_each = total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "\u201c3 rows of 4 glue sticks\u201d \u2192 $3 \\times 4 = 12$.",
+    "notes": "Requires mapping language ('rows of', 'each', 'for ___ days') to factors.",
+    "question_ids": [
+      "G3_M1_TA_a1_q2",
+      "G3_M1_TA_a1_q3",
+      "G3_M1_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "update_quantity_addition",
+    "title": "Update Quantity After Increase",
+    "description": "Add an additional amount to an existing quantity to find the new total.",
+    "condition": "An initial quantity q is increased by an additional amount k.",
+    "response": "Compute q + k to find the new quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Ivan has 6 red beads and gets 4 more \u2192 $6 + 4 = 10$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M1_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "write_division_equation_from_context",
+    "title": "Write Division Equation from Context",
+    "description": "Translate an equal-groups word problem into a complete division equation with dividend, divisor, and quotient.",
+    "condition": "A word problem giving a total and either number of groups or size of each group.",
+    "response": "Write an equation of the form total \u00f7 groups = number in each group (or total \u00f7 number in each group = groups).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "18 beads in 3 equal rows \u2192 $18 \\div 3 = 6$.",
+    "notes": "Structure depends on what quantity is unknown.",
+    "question_ids": [
+      "G3_M1_TB_a1_q3",
+      "G3_M1_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "write_multiplication_equation_from_picture",
+    "title": "Write Multiplication Equation from Picture",
+    "description": "Form a multiplication equation based on a visual model of equal groups.",
+    "condition": "A picture shows a specific number of equal groups with the same number of objects in each group.",
+    "response": "Write groups \u00d7 number_in_each = total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "2 circles with 5 birds in each \u2192 $2 \\times 5 = 10$.",
+    "notes": "Requires counting groups and items per group before forming equation.",
+    "question_ids": [
+      "G3_M1_TA_a1_q1"
+    ]
+  }
+]

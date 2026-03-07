@@ -1,0 +1,481 @@
+[
+  {
+    "kc_id": "add_multi_digit_numbers",
+    "title": "Add Multi-Digit Whole Numbers",
+    "description": "Compute the sum of two multi-digit whole numbers using standard or place value strategies.",
+    "condition": "Expression of the form a + b where a and b are multi-digit whole numbers.",
+    "response": "Calculate and state the correct sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Compute $548 + 237 = 785$.",
+    "notes": "Algorithmic computation skill.",
+    "question_ids": [
+      "G2_M4_a1_q14",
+      "G2_M4_a1_q9",
+      "G3_M2_TC_a1_q1",
+      "G3_M2_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "add_three_digit_numbers",
+    "title": "Add Three-Digit Numbers",
+    "description": "Compute the sum of two three-digit numbers using standard addition.",
+    "condition": "Two three-digit numbers presented with a plus sign (e.g., a + b).",
+    "response": "Calculate and state their sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$349 + 382 = 731$",
+    "notes": "Includes regrouping when necessary.",
+    "question_ids": [
+      "G3_M2_TD_a1_q1",
+      "G3_M2_TD_a1_q3",
+      "G3_M2_a1_q5",
+      "G3_M2_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "estimate_by_rounding_tens_vs_hundreds",
+    "title": "Choose Appropriate Rounding Level for Estimation",
+    "description": "Determine whether rounding to the nearest ten or hundred gives a more reasonable estimate for a subtraction problem.",
+    "condition": "A subtraction problem where estimation is requested (e.g., 326 \u2212 278).",
+    "response": "Select the rounding place (tens or hundreds) that gives a reasonable estimate and justify the choice.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $326 - 278$, round to tens: $326 \\approx 330$, $278 \\approx 280$, so $330 - 280 = 50$. Rounding to hundreds gives $300 - 300 = 0$, which is not reasonable.",
+    "notes": "",
+    "question_ids": [
+      "G3_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "create_two_numbers_same_rounding",
+    "title": "Construct Numbers that Round to Same Hundred",
+    "description": "Form two three-digit numbers from given digits so that both round to the same hundred.",
+    "condition": "Given a set of digits and requirement to form two three-digit numbers that round to the same hundred, using each digit at most once.",
+    "response": "Select and arrange digits into two valid three-digit numbers whose rounded values (nearest hundred) are equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Using digits 1,2,3,4,5,6: $156$ and $234$ both round to $200$.",
+    "notes": "Requires integrating place value and rounding rules. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M2_a1_q6",
+      "G3_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "divide_total_by_equal_groups",
+    "title": "Divide Total into Equal Groups",
+    "description": "Find the weight of one item by dividing the total weight by the number of equal items.",
+    "condition": "Given a total weight and the number of equal groups/items.",
+    "response": "Divide the total weight by the number of groups to find the weight of one group.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 3 blocks weigh 30 g total, then 1 block weighs $30 \\div 3 = 10$ g.",
+    "notes": "",
+    "question_ids": [
+      "G3_M2_TA_a1_q2",
+      "G5_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "estimate_by_rounding_to_tens",
+    "title": "Estimate Difference by Rounding to Tens",
+    "description": "Round both numbers to the nearest ten to produce a reasonable estimate of a difference.",
+    "condition": "Estimating the difference of two three-digit numbers where rounding to hundreds would produce an unreasonable estimate.",
+    "response": "Round each number to the nearest ten and subtract the rounded values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$537 \\approx 540$ and $489 \\approx 490$; $540 - 490 = 50$.",
+    "notes": "Includes reasoning about reasonableness of estimate.",
+    "question_ids": [
+      "G3_M2_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_expression_subtraction",
+    "title": "Evaluate Subtraction Expression",
+    "description": "Compute the value of a subtraction expression.",
+    "condition": "A subtraction expression of the form a \u2212 b.",
+    "response": "Calculate and state the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$384 - 257 = 127$",
+    "notes": "Includes regrouping across place values when required.",
+    "question_ids": [
+      "G3_M2_TD_a1_q1",
+      "G3_M2_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "total_from_two_quantities",
+    "title": "Find Total from Two Quantities",
+    "description": "Add two related quantities to find a combined total.",
+    "condition": "Two quantities representing parts of a whole are known.",
+    "response": "Add the two quantities to find the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If postcards $= 307$ and stamps $= 416$, then total $= 416 + 307 = 723$.",
+    "notes": "Typically follows determining a missing part in word problems.",
+    "question_ids": [
+      "G3_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_rounding_range_nearest_ten",
+    "title": "Identify Range That Rounds to a Given Ten",
+    "description": "Determine the interval of whole numbers that round to a specified multiple of ten.",
+    "condition": "Given a target multiple of ten (e.g., 370) and asked which whole numbers round to it to the nearest ten.",
+    "response": "State that numbers from 5 below the target ten to 4 above it (e.g., 365\u2013374) round to that ten; identify boundary values as needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Numbers that round to $370$ are $365 \\le n \\le 374$. The greatest whole number is $374$.",
+    "notes": "Explains why 5 rounds up to the next ten.",
+    "question_ids": [
+      "G3_M2_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_more_than_relation",
+    "title": "Interpret 'More Than' Relationship",
+    "description": "Translate a comparison statement using 'more than' into an addition or subtraction equation.",
+    "condition": "A word problem states that one quantity is k more than another and gives one of the quantities.",
+    "response": "Set up an equation representing the relationship (e.g., larger = smaller + k or smaller = larger \u2212 k).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If stamps are 109 more than postcards and there are 416 stamps, then postcards $= 416 - 109$.",
+    "notes": "Requires identifying which quantity is larger.",
+    "question_ids": [
+      "G3_M1_TE_a1_q5",
+      "G3_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "read_analog_scale",
+    "title": "Read Analog Scale Measurement",
+    "description": "Interpret the position of a pointer on a labeled analog scale to determine weight.",
+    "condition": "Given an analog scale with labeled units and a pointer indicating a value.",
+    "response": "State the numerical value and unit indicated by the pointer.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the pointer is at 9 on a kilogram scale, the weight is 9 kg.",
+    "notes": "Interpreting tick marks may involve counting intervals.",
+    "question_ids": [
+      "G3_M2_TA_a1_q4",
+      "G3_M2_a1_q1",
+      "G3_M2_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "read_liquid_level_scale",
+    "title": "Read Liquid Volume from Scale",
+    "description": "Determine the starting amount of liquid by reading a labeled vertical scale.",
+    "condition": "Given a container diagram with labeled liter markings and a visible liquid level.",
+    "response": "State the number of liters indicated by the liquid level.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the liquid level aligns with 20 L, then the starting amount is 20 liters.",
+    "notes": "",
+    "question_ids": [
+      "G3_M2_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "read_thermometer_scale",
+    "title": "Read Temperature from Thermometer",
+    "description": "Determine the temperature shown by interpreting the scale and fluid level on a thermometer.",
+    "condition": "A thermometer image with labeled major marks and evenly spaced minor tick marks.",
+    "response": "Identify the nearest labeled marks and count minor intervals to state the exact temperature.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the fluid is 6 small ticks above $70$ and each tick is 1 degree, the temperature is $76^\\circ$.",
+    "notes": "Visual measurement skill.",
+    "question_ids": [
+      "G3_M2_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_table_value",
+    "title": "Read Value from Data Table",
+    "description": "Locate and state the numerical value associated with a category in a table.",
+    "condition": "Given a table with categories and corresponding numerical values.",
+    "response": "State the number listed for the specified category.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "From the table, Panda corresponds to $45$ students.",
+    "notes": "Basic data retrieval skill.",
+    "question_ids": [
+      "G3_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "read_number_line_point",
+    "title": "Read Value from Number Line",
+    "description": "Determine the numerical value represented by a plotted point on a labeled number line.",
+    "condition": "A point is plotted between labeled benchmark numbers with equal intervals.",
+    "response": "Identify the exact value by counting interval marks from the nearest labeled benchmark.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a point is two small ticks past $550$ and each tick represents 10, the value is $570$.",
+    "notes": "Requires interpreting equal spacing on number lines.",
+    "question_ids": [
+      "G3_M2_TB_a1_q4",
+      "G3_M2_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "represent_data_bar_graph",
+    "title": "Represent Data on Bar Graph with Scale",
+    "description": "Create a bar graph that accurately represents categorical data and choose an appropriate scale.",
+    "condition": "Given categorical data with numerical values.",
+    "response": "Select a consistent scale and draw bars with heights matching each value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For values 35, 25, 30, 45, use a scale of 5 and draw bars up to each value.",
+    "notes": "Requires proportional reasoning about scale.",
+    "question_ids": [
+      "G3_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_hundred",
+    "title": "Round to Nearest Hundred",
+    "description": "Round a three-digit number to the nearest hundred based on the tens digit.",
+    "condition": "A three-digit number to be rounded to the nearest hundred.",
+    "response": "If tens digit is 5 or more, increase hundreds digit by 1 and set tens and ones to 0; otherwise keep hundreds digit and set tens and ones to 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$792 \\to 800$; $849 \\to 800$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M2_TB_a1_q3",
+      "G3_M2_TB_a1_q4",
+      "G3_M2_a1_q4",
+      "G3_M2_a1_q8",
+      "G3_M2_a2_q4",
+      "G3_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_ten",
+    "title": "Round to Nearest Ten",
+    "description": "Round a number to the nearest ten based on the ones digit.",
+    "condition": "A number to be rounded to the nearest ten.",
+    "response": "If ones digit is 5 or more, increase tens digit by 1 and set ones to 0; otherwise keep tens digit and set ones to 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$849 \\to 850$; $792 \\to 790$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G3_M2_TB_a1_q1",
+      "G3_M2_TB_a1_q2",
+      "G3_M2_TB_a1_q3",
+      "G3_M2_TB_a1_q4",
+      "G3_M2_TB_a1_q6",
+      "G3_M2_a1_q4",
+      "G3_M2_a1_q8",
+      "G3_M2_a2_q4",
+      "G3_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "select_appropriate_weight_unit",
+    "title": "Select Appropriate Weight Unit",
+    "description": "Choose grams or kilograms based on the typical weight of an object.",
+    "condition": "Given a familiar object and a numerical weight value with unit options (grams or kilograms).",
+    "response": "Select the unit (grams or kilograms) that makes the statement reasonable.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A cat weighs about 5 kilograms (not grams).",
+    "notes": "Requires real-world knowledge of typical object weights.",
+    "question_ids": [
+      "G3_M2_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "select_reasonable_measurement",
+    "title": "Select Reasonable Measurement Estimate",
+    "description": "Choose the most reasonable measurement value for a real-world object based on typical benchmarks.",
+    "condition": "A real-world object and multiple numerical answer choices with the same unit.",
+    "response": "Select the value that is most reasonable given typical sizes or weights.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A notebook weighs about $300$ grams (not $30$ grams).",
+    "notes": "Relies on benchmark knowledge. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G3_M2_a1_q2",
+      "G3_M2_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_missing_value_equation",
+    "title": "Solve for Missing Value in Equation",
+    "description": "Determine the number that makes an equation with a single operation true.",
+    "condition": "An equation with one unknown and a single addition or subtraction expression (e.g., ___ = a \u2212 b or ___ = a + b).",
+    "response": "Compute the expression and state the value that makes the equation true.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If ___ $= 189 + 349$, then ___ $= 538$.",
+    "notes": "Focus is on evaluating the expression to determine the unknown.",
+    "question_ids": [
+      "G3_M2_TD_a1_q2",
+      "G3_M2_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "subtract_multi_digit_numbers",
+    "title": "Subtract Multi-Digit Whole Numbers",
+    "description": "Compute the difference of two multi-digit whole numbers using standard or place value strategies.",
+    "condition": "Expression of the form a \u2212 b where a and b are multi-digit whole numbers.",
+    "response": "Calculate and state the correct difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Compute $716 - 84 = 632$.",
+    "notes": "Algorithmic computation skill.",
+    "question_ids": [
+      "G2_M4_a1_q10",
+      "G2_M4_a1_q5",
+      "G3_M2_TB_a1_q6",
+      "G3_M2_TC_a1_q1",
+      "G3_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "subtract_three_digit_numbers_standard",
+    "title": "Subtract Three-Digit Numbers Using Standard Algorithm",
+    "description": "Subtract one three-digit number from another using place value alignment and regrouping when necessary.",
+    "condition": "Two three-digit numbers in subtraction form (e.g., 813 \u2212 547).",
+    "response": "Compute the correct difference using place value subtraction with regrouping if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Compute $813 - 547$. Regroup: $13 - 7 = 6$, $10 - 4 = 6$, $7 - 5 = 2$. Result: $266$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M2_TD_a1_q1",
+      "G3_M2_TD_a1_q2",
+      "G3_M2_a1_q3",
+      "G3_M2_a1_q7",
+      "G3_M2_a2_q3",
+      "G3_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "translate_comparative_statement_to_subtraction",
+    "title": "Translate 'More Than' Statement to Subtraction",
+    "description": "Interpret a comparison statement indicating how much more one quantity is than another and represent it with subtraction.",
+    "condition": "A statement of the form 'A is X more than B' and the value of A is known.",
+    "response": "Set up and compute B = A \u2212 X.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If a bear weighs $147$ kg more than a kangaroo and the bear weighs $204$ kg, then kangaroo $= 204 - 147 = 57$ kg.",
+    "notes": "",
+    "question_ids": [
+      "G3_M2_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "compensation_addition_adjust",
+    "title": "Use Compensation Strategy for Addition",
+    "description": "Adjust one addend to a friendly number and compensate by subtracting or adding the adjustment.",
+    "condition": "Expression a + b where one addend can be adjusted to a nearby friendly number (e.g., 690 to 700).",
+    "response": "Rewrite as a + (b \u00b1 k) \u2213 k and compute equivalent sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$185 + 690 = 185 + 700 - 10 = 875$.",
+    "notes": "Based on maintaining equality by inverse operations.",
+    "question_ids": [
+      "G3_M2_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compensation_subtraction_adjust",
+    "title": "Use Compensation Strategy for Subtraction",
+    "description": "Adjust both numbers in a subtraction problem by the same amount to create friendly numbers while preserving the difference.",
+    "condition": "Expression a \u2212 b where b is close to a friendly number (e.g., 399 close to 400).",
+    "response": "Rewrite as (a \u00b1 k) \u2212 (b \u00b1 k) and compute equivalent difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$500 - 399 = 499 - 398 = 101$.",
+    "notes": "Uses property that adding/subtracting same amount to both terms preserves difference.",
+    "question_ids": [
+      "G3_M2_TC_a1_q4"
+    ]
+  }
+]
