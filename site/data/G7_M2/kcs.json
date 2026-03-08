@@ -1,0 +1,567 @@
+[
+  {
+    "kc_id": "add_integers",
+    "title": "Add Integers with Signs",
+    "description": "Add two integers, correctly accounting for their signs.",
+    "condition": "Expression of the form a + b where a and/or b are positive or negative integers.",
+    "response": "Compute the signed sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$-3 + (-5) = -8$",
+    "notes": "Includes cases with same or different signs. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M5_TB_a1_q1",
+      "G7_M2_TA_a1_q2",
+      "G7_M2_TA_a1_q3",
+      "G7_M2_TA_a1_q5",
+      "G7_M2_TB_a1_q1",
+      "G7_M2_TB_a1_q15",
+      "G7_M2_TB_a1_q6",
+      "G7_M2_a1_q1",
+      "G7_M2_a1_q6",
+      "G7_M2_a2_q1",
+      "G7_M2_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "add_rational_numbers",
+    "title": "Add Rational Numbers",
+    "description": "Compute the sum of rational numbers, including fractions, mixed numbers, and decimals.",
+    "condition": "An expression of the form a + b where a and/or b are fractions, mixed numbers, or decimals.",
+    "response": "Rewrite as needed and compute the sum with correct sign and form.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compute $-3.3 + 6 = 2.7$.",
+    "notes": "May require converting mixed numbers or aligning decimal places.",
+    "question_ids": [
+      "G7_M2_TB_a1_q4",
+      "G7_M2_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "add_signed_mixed_numbers",
+    "title": "Add Signed Mixed Numbers",
+    "description": "Add mixed numbers with signs by combining fractional parts and whole numbers, applying sign rules.",
+    "condition": "An expression of the form a + b where a and/or b are signed mixed numbers.",
+    "response": "Convert to improper fractions or combine whole and fractional parts; apply integer sign rules; simplify to a mixed number if appropriate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3\\tfrac{1}{8} + \\left(-9\\tfrac{1}{4}\\right) = 3\\tfrac{1}{8} - 9\\tfrac{1}{4} = -6\\tfrac{1}{8}$.",
+    "notes": "Requires common denominators and integer addition.",
+    "question_ids": [
+      "G7_M2_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "additive_inverse_property",
+    "title": "Additive Inverses Sum to Zero",
+    "description": "Recognize that a number and its opposite sum to zero.",
+    "condition": "Expression of the form a + (-a) or equivalent opposites.",
+    "response": "State that the value is 0.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$\\frac{2}{7} - \\frac{9}{13} + \\left(\\frac{9}{13} - \\frac{2}{7}\\right) = 0$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TA_a1_q1",
+      "G7_M2_TA_a1_q4",
+      "G7_M2_a1_q3",
+      "G7_M2_a1_q7",
+      "G7_M2_a2_q3",
+      "G7_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "classify_sign",
+    "title": "Classify Sign of Expression",
+    "description": "Determine whether the value of a numerical expression is positive, negative, or zero.",
+    "condition": "A fully specified numerical expression.",
+    "response": "State whether its value is positive, negative, or zero.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$30.1875 + (-27.263) > 0$, so the value is positive.",
+    "notes": "May rely on structure without full computation.",
+    "question_ids": [
+      "G7_M2_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_signed_numbers",
+    "title": "Compare Signed Numbers",
+    "description": "Determine which of two real numbers is greater using their positions on the number line.",
+    "condition": "Two real numbers (possibly negative or fractional) are given for comparison.",
+    "response": "Identify which number is greater and select the correct inequality symbol (< or >).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$-5 < -2$ because $-5$ is farther left on the number line.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "evaluate_numeric_product",
+    "title": "Compute Product of Rational Numbers",
+    "description": "Multiply integers, fractions, or decimals to obtain a numeric product.",
+    "condition": "Two or more rational numbers are multiplied.",
+    "response": "Compute the arithmetic product, applying sign rules and standard multiplication.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$6(-2(-4.1)) = 6(8.2) = 49.2$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TC_a1_q2",
+      "G7_M2_TC_a1_q3",
+      "G7_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_fraction_to_decimal",
+    "title": "Convert Fraction to Decimal",
+    "description": "Convert a fraction to its decimal form, using bar notation for repeating decimals if needed.",
+    "condition": "Fraction a/b.",
+    "response": "Express as a terminating or repeating decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{11}{9} = 1.\\overline{2}$",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M2_TD_a1_q5",
+      "G7_M2_a1_q4",
+      "G7_M2_a1_q9",
+      "G7_M2_a2_q4",
+      "G7_M5_TA_a1_q6",
+      "G7_M6_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "repeating_decimal_to_fraction",
+    "title": "Convert Repeating Decimal to Fraction",
+    "description": "Convert a repeating decimal into a fraction using algebraic reasoning.",
+    "condition": "A decimal with a repeating digit or block.",
+    "response": "Express it as a fraction of integers.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Let $x=0.\\overline{4}$. Then $10x=4.\\overline{4}$. Subtract: $9x=4$, so $x=\\frac{4}{9}$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "rational_definition",
+    "title": "Definition of Rational Number",
+    "description": "Know that a rational number can be expressed as a quotient of two integers with nonzero denominator.",
+    "condition": "Asked whether a number is rational.",
+    "response": "State that it is rational if it can be written as $\\frac{a}{b}$ where $a,b$ are integers and $b\\ne0$.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$-0.\\overline{4}$ is rational because it can be written as $-\\frac{4}{9}$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "determine_product_sign",
+    "title": "Determine Sign of a Product",
+    "description": "Determine whether a product is positive or negative based on the number of negative factors.",
+    "condition": "An expression involves multiplication of signed numbers.",
+    "response": "If there is an even number of negative factors, the product is positive; if odd, the product is negative.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(-3)(-6)$ has two negatives (even), so the product is positive.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TC_a1_q1",
+      "G7_M2_TC_a1_q2",
+      "G7_M2_TC_a1_q4",
+      "G7_M2_a1_q3",
+      "G7_M2_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "sign_of_quotient",
+    "title": "Determine Sign of a Quotient",
+    "description": "Determine the sign of a quotient based on the signs of dividend and divisor.",
+    "condition": "Division expression involving positive and/or negative numbers.",
+    "response": "Apply sign rule: same signs \u2192 positive; different signs \u2192 negative.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{2}{11} \\div \\left(-\\frac{1}{5}\\right)$ is negative because signs differ.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TD_a1_q1",
+      "G7_M2_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "divide_by_negative",
+    "title": "Divide by a Negative Number",
+    "description": "Determine the sign and value when dividing by a negative number.",
+    "condition": "A number is divided by a negative number.",
+    "response": "Divide absolute values and make the result negative if exactly one factor is negative.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{17}{5} \\div (-3) = -\\frac{17}{15}$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "evaluate_exponent",
+    "title": "Evaluate Exponent",
+    "description": "Compute the value of a number raised to a power.",
+    "condition": "An expression of the form $a^n$ is given.",
+    "response": "Multiply $a$ by itself $n$ times.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(-1.1)^3 = (-1.1)(-1.1)(-1.1)$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TE_a1_q1",
+      "G7_M2_TE_a1_q6",
+      "G7_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "evaluate_numeric_expression_order_of_operations",
+    "title": "Evaluate Numeric Expression Using Order of Operations",
+    "description": "Apply order of operations (parentheses, exponents, multiplication/division, addition/subtraction) to evaluate a numerical expression.",
+    "condition": "A numerical expression with multiple operations is given.",
+    "response": "Perform operations in the correct order to obtain the final value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{1}{4}\\left(\\frac{(1/2)^2}{-3/4}\\right) = \\frac{1}{4}\\left(\\frac{1/4}{-3/4}\\right) = \\frac{1}{4}(-\\frac{1}{3}) = -\\frac{1}{12}$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TE_a1_q0",
+      "G7_M2_TE_a1_q3",
+      "G7_M2_TE_a1_q6",
+      "G7_M2_a1_q5",
+      "G7_M2_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "distance_on_number_line",
+    "title": "Find Distance Between Two Points on Number Line",
+    "description": "Determine the distance between two numbers as the absolute value of their difference.",
+    "condition": "Two real numbers a and b represented on a number line; asked for the distance between them.",
+    "response": "Compute |a \u2212 b| to obtain a nonnegative distance.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $A=-0.75$ and $B=1.5$, then distance $= |1.5 - (-0.75)| = 2.25$.",
+    "notes": "Distance is always nonnegative.",
+    "question_ids": [
+      "G7_M2_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_equivalent_expression",
+    "title": "Identify Equivalent Expressions",
+    "description": "Recognize expressions that produce the same numerical value.",
+    "condition": "Multiple algebraic or numerical expressions are presented for comparison.",
+    "response": "Select expressions that evaluate to the same value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$-9\\left(4 - \\frac{2}{3}\\right)$ and $6(-5)$ both evaluate to $-30$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TC_a1_q2",
+      "G7_M2_TE_a1_q42",
+      "G7_M2_TE_a1_q5",
+      "G7_M2_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "equivalent_fraction_negative",
+    "title": "Identify Equivalent Signed Fractions",
+    "description": "Recognize equivalent forms of a negative fraction with the negative in numerator or denominator.",
+    "condition": "A quotient with one negative factor, such as $-a \\div b$.",
+    "response": "Write equivalent forms $-\\frac{a}{b}$ or $\\frac{a}{-b}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$-9 \\div 5 = -\\frac{9}{5} = \\frac{9}{-5}$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_opposite_numbers",
+    "title": "Identify Opposite Numbers",
+    "description": "Recognize that two numbers are opposites if they have the same absolute value and opposite signs.",
+    "condition": "Given two numbers a and b.",
+    "response": "Determine that they are opposites if b = -a (same magnitude, opposite signs).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$415$ and $-415$ are opposites because they have equal absolute value and opposite signs.",
+    "notes": "Foundation for understanding additive inverses.",
+    "question_ids": [
+      "G7_M2_TA_a1_q1",
+      "G7_M2_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_context_as_signed_change",
+    "title": "Interpret Context as Signed Quantity",
+    "description": "Translate real-world situations into positive or negative numbers based on direction or gain/loss meaning.",
+    "condition": "A word problem describing increases/decreases, above/below, gain/loss, rise/fall, or similar directional change.",
+    "response": "Assign a positive sign to gains/rises/above and a negative sign to losses/falls/below (relative to a reference point).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "\u201cDives 415 feet below sea level\u201d \u2192 $-415$; \u201crises 415 feet\u201d \u2192 $+415$.",
+    "notes": "Sign conventions are contextual and partly conventional.",
+    "question_ids": [
+      "G7_M2_TA_a1_q1",
+      "G7_M2_TA_a1_q3",
+      "G7_M2_TE_a1_q4",
+      "G7_M2_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "classify_division_word_problem",
+    "title": "Interpret Division in Context",
+    "description": "Recognize when a word problem represents division based on grouping or rate language.",
+    "condition": "A word problem describes separating a quantity into equal groups or finding how many groups of a given size fit into a total.",
+    "response": "Represent the situation using division (total \u00f7 group size).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "$1\\tfrac{3}{4}$ pounds separated into $\\tfrac{1}{8}$-pound portions \u2192 $1\\tfrac{3}{4} \\div \\tfrac{1}{8}$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "model_integer_addition_on_number_line",
+    "title": "Model Integer Addition on Number Line",
+    "description": "Represent addition of signed numbers as directed movement on a number line.",
+    "condition": "Expression of the form a + b with signed numbers.",
+    "response": "Start at a and move right or left depending on the sign of b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For $4 + (-7\\frac{1}{2})$, start at 4 and move $7\\frac{1}{2}$ units left.",
+    "notes": "Often demonstrated visually rather than verbally.",
+    "question_ids": [
+      "G7_M2_TA_a1_q2",
+      "G7_M2_a1_q2",
+      "G7_M2_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "model_integer_operation_on_number_line",
+    "title": "Model Integer Operation on Number Line",
+    "description": "Represent addition or subtraction of integers as directed movement on a number line.",
+    "condition": "An integer expression such as a \u2212 b or a + (\u2212b) to be modeled visually.",
+    "response": "Start at a; move right for positive values and left for negative values by the magnitude indicated.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To model $5 - 3$, start at 5 and move 3 units left to 2.",
+    "notes": "Emphasizes directional movement; often procedural/visual.",
+    "question_ids": [
+      "G7_M2_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "multiply_signed_numbers",
+    "title": "Multiply Signed Numbers",
+    "description": "Compute the product of two numbers, correctly applying sign rules.",
+    "condition": "An expression of the form a \u00d7 b where a and/or b may be negative.",
+    "response": "Multiply magnitudes and assign sign using sign rules.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$-2(-2) = 4$",
+    "notes": "Includes fraction and mixed number multiplication. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M2_TE_a1_q0",
+      "G7_M2_TE_a1_q5",
+      "G7_M2_a2_q1",
+      "G7_M2_a2_q6",
+      "G7_M2_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "represent_repeated_addition_as_multiplication",
+    "title": "Repeated Addition as Multiplication",
+    "description": "Recognize that repeated addition of the same number can be written as multiplication.",
+    "condition": "A quantity is added to itself multiple equal times.",
+    "response": "Rewrite as (number of terms) \u00d7 (repeated value).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$-3.3 + (-3.3) + (-3.3) + (-3.3) + (-3.3) = 5(-3.3)$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_negative_rate",
+    "title": "Represent Decrease with Negative Division",
+    "description": "Represent a total decrease over time as a negative rate using division.",
+    "condition": "A total decrease over a given number of equal time intervals.",
+    "response": "Write a negative quotient (total change \u00f7 number of intervals).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Decrease of 2 feet over 3 hours \u2192 $-2 \\div 3$",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "convert_subtraction_to_addition",
+    "title": "Rewrite Subtraction as Addition of the Opposite",
+    "description": "Express subtraction as addition of the additive inverse.",
+    "condition": "An expression of the form a \u2212 b, especially when b is negative.",
+    "response": "Rewrite as a + (\u2212b) and simplify signs (e.g., subtracting a negative becomes addition).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Rewrite $-3.3 - (-6)$ as $-3.3 + 6$.",
+    "notes": "Relies on the definition of subtraction as adding the opposite.",
+    "question_ids": [
+      "G7_M2_TB_a1_q15",
+      "G7_M2_TB_a1_q6",
+      "G7_M2_a1_q1",
+      "G7_M2_a1_q8",
+      "G7_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "scale_rate_proportionally",
+    "title": "Scale Change Proportionally",
+    "description": "Use proportional reasoning to scale a rate over a different time period.",
+    "condition": "A constant rate of change over one time interval is given and a different interval is requested.",
+    "response": "Multiply the rate by the ratio of the new interval to the original interval.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the change is $-13\\ \\frac{3}{5}$ in 6 weeks, then in 20 weeks: $\\frac{20}{6}\\times\\left(-13\\ \\frac{3}{5}\\right) = -45\\ \\frac{1}{3}$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M2_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "write_numeric_expression_from_context",
+    "title": "Translate Context to Numerical Expression",
+    "description": "Represent a real-world situation involving signed quantities with a numerical expression.",
+    "condition": "Word problem describing gains, losses, rates, or repeated quantities.",
+    "response": "Write a numerical expression that models the situation.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Earning $8 and spending $2.25 each weekday for 4 weeks, then saving $\\frac{1}{3}$: $\\frac{4\\cdot5(8+(-2.25))}{3}$",
+    "notes": "Modeling skill; multiple correct representations possible.",
+    "question_ids": [
+      "G7_M2_TA_a1_q3",
+      "G7_M2_a1_q10",
+      "G7_M2_a1_q5",
+      "G7_M2_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "represent_real_world_decrease_as_expression",
+    "title": "Translate Decrease Context to Integer Expression",
+    "description": "Represent a real-world decrease (e.g., temperature drop) using subtraction or addition of a negative.",
+    "condition": "A context describing an initial value that decreases by a given amount.",
+    "response": "Write an expression such as initial \u2212 decrease or initial + (\u2212decrease).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "A temperature of $13^\\circ C$ that drops $15^\\circ$ is represented by $13 - 15$ or $13 + (-15)$.",
+    "notes": "Focuses on translating verbal decrease into symbolic form.",
+    "question_ids": [
+      "G7_M2_TB_a1_q15",
+      "G7_M2_TB_a1_q2"
+    ]
+  }
+]

@@ -1,0 +1,559 @@
+[
+  {
+    "kc_id": "absolute_value_as_distance",
+    "title": "Absolute Value as Distance from Zero",
+    "description": "Interpret the absolute value of a number as its distance from 0 on the number line, regardless of sign.",
+    "condition": "Expression of the form |a| where a is a real number.",
+    "response": "State or compute the nonnegative distance of a from 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "|-150| = 150 because \u2212150 is 150 units from 0.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_a1_q5",
+      "G6_M3_a1_q6",
+      "G6_M3_a2_q5",
+      "G6_M3_a2_q6",
+      "G6_M3_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "compute_rectangle_area_coords",
+    "title": "Area of Rectangle from Coordinates",
+    "description": "Calculate the area of a rectangle by multiplying side lengths found from coordinate differences.",
+    "condition": "Vertices of a rectangle are given on a coordinate plane.",
+    "response": "Compute horizontal length and vertical length, then multiply $l \\times w$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Width $=8$, height $=10$ so area $=8 \\times 10 = 80$ square units.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_quadrant_by_signs",
+    "title": "Classify Point by Quadrant Using Signs",
+    "description": "Determine the quadrant of a point based on the signs of its x- and y-coordinates.",
+    "condition": "Given an ordered pair (x, y) with x \u2260 0 and y \u2260 0.",
+    "response": "Identify the quadrant: I if (+,+), II if (-,+), III if (-,-), IV if (+,-).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "For $(-5.25, -6)$, both coordinates are negative, so the point is in Quadrant III.",
+    "notes": "Includes all four sign combinations.",
+    "question_ids": [
+      "G6_M3_TC_a1_q1",
+      "G6_M3_TC_a1_q2",
+      "G6_M3_a1_q7",
+      "G6_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "compare_absolute_values",
+    "title": "Compare Absolute Values",
+    "description": "Compare two numbers by first evaluating their absolute values and then using inequality symbols.",
+    "condition": "Two expressions involving absolute value, such as |a| and |b|.",
+    "response": "Evaluate each absolute value and insert <, >, or = to correctly compare them.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since |-2| = 2 and |1/2| = 1/2, we have 2 > 1/2, so |-2| > |1/2|.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TB_a1_q5",
+      "G6_M3_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_integer_to_zero",
+    "title": "Compare Integer to Zero",
+    "description": "Determine whether a given integer is greater than, less than, or equal to 0.",
+    "condition": "Given an integer (positive, negative, or zero) and asked whether it is above/below/equal to 0.",
+    "response": "State whether the integer is > 0, < 0, or = 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Determine if $10 > 0$. Since 10 is positive, $10 > 0$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compare_integers_number_line",
+    "title": "Compare Integers on Number Line",
+    "description": "Determine which of two integers is greater by their positions on the number line.",
+    "condition": "Two real numbers a and b to be compared.",
+    "response": "Write a correct inequality (e.g., a < b) based on which is farther right on the number line.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "On the number line, \u221215 is left of \u22123, so \u221215 < \u22123.",
+    "notes": "[merged: response varies] [merged: condition varies]",
+    "question_ids": [
+      "G6_M3_TB_a1_q2",
+      "G6_M3_TB_a1_q3",
+      "G6_M3_a1_q4",
+      "G6_M3_a2_q4",
+      "G6_M3_a2_q5",
+      "G6_M3_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "compare_rational_numbers",
+    "title": "Compare Rational Numbers",
+    "description": "Compare integers, fractions, and decimals (including negatives) to determine their order.",
+    "condition": "Two rational numbers (integers, fractions, or decimals) are given.",
+    "response": "Determine and state which number is greater or less using >, <, or =.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Because $-0.5$ and $-\\frac{1}{2}$ represent the same value, $-0.5 = -\\frac{1}{2}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TB_a1_q1",
+      "G6_M3_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compute_absolute_value",
+    "title": "Compute Absolute Value",
+    "description": "Find the absolute value of a rational number as its distance from 0 on the number line.",
+    "condition": "A rational number is enclosed in absolute value symbols.",
+    "response": "State its nonnegative distance from 0.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$|-0.43| = 0.43$ and $|4\\tfrac{1}{3}| = 4\\tfrac{1}{3}$.",
+    "notes": "Response is always nonnegative.",
+    "question_ids": [
+      "G6_M3_TB_a1_q1",
+      "G6_M3_TB_a1_q4",
+      "G6_M3_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_manhattan_distance",
+    "title": "Compute Block (Manhattan) Distance",
+    "description": "Find the distance between two points along grid lines by summing the absolute horizontal and vertical differences.",
+    "condition": "Two points on a coordinate grid where movement is restricted to horizontal and vertical streets (blocks).",
+    "response": "Calculate $|x_2 - x_1| + |y_2 - y_1|$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Distance between $(-4, 2)$ and $(3, 2)$ is $|3 - (-4)| + |2 - 2| = 7 + 0 = 7$ blocks.",
+    "notes": "Used when grid represents city blocks.",
+    "question_ids": [
+      "G6_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "count_units_on_grid",
+    "title": "Count Horizontal and Vertical Units on Coordinate Grid",
+    "description": "Determine a point\u2019s coordinates by counting units horizontally and vertically from the origin.",
+    "condition": "Given a plotted point on a coordinate grid.",
+    "response": "Count horizontal movement for x-coordinate and vertical movement for y-coordinate to state the ordered pair.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If a point is 11 units right and 6 units up from the origin, its coordinates are $(11, 6)$.",
+    "notes": "Involves spatial counting and directionality.",
+    "question_ids": [
+      "G6_M3_TC_a1_q2",
+      "G6_M3_TC_a1_q3",
+      "G6_M3_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_distance_absolute_difference",
+    "title": "Distance as Absolute Difference",
+    "description": "Compute the distance between two elevations on a number line using absolute value of their difference.",
+    "condition": "Two signed numbers representing positions or elevations are given and distance is requested.",
+    "response": "Calculate $|a-b|$ to find the positive distance between them.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "The distance from $-15$ ft to $0$ ft is $|-15-0| = 15$ ft.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "find_horizontal_vertical_distance",
+    "title": "Find Horizontal or Vertical Distance",
+    "description": "Determine the length of a horizontal or vertical segment by taking the absolute difference of the differing coordinate.",
+    "condition": "Two points share the same x-coordinate (vertical segment) or same y-coordinate (horizontal segment).",
+    "response": "Compute the absolute difference of the other coordinate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Distance between $(-7,8)$ and $(7,8)$ is $|7 - (-7)| = 14$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TD_a1_q1",
+      "G6_M3_a1_q10",
+      "G6_M3_a2_q10"
+    ]
+  },
+  {
+    "kc_id": "rectangle_missing_vertices_axis_aligned",
+    "title": "Find Missing Vertices of Axis-Aligned Rectangle",
+    "description": "Determine the remaining vertices of a rectangle with sides parallel to the axes using given vertices and side lengths.",
+    "condition": "Two known vertices of an axis-aligned rectangle and given width/length.",
+    "response": "Use horizontal and vertical distances to determine the other two coordinate pairs.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one vertex is $(3,6)$ and width is 8 vertically, another vertex could be $(3,-2)$ since $6-8=-2$.",
+    "notes": "Assumes sides are parallel to axes (as shown in grid)???",
+    "question_ids": [
+      "G6_M3_TD_a1_q2",
+      "G6_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "opposite_of_number",
+    "title": "Find the Opposite of a Number",
+    "description": "Determine the opposite (additive inverse) of a number.",
+    "condition": "A real number a.",
+    "response": "State -a as its opposite.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "The opposite of $6$ is $-6$ because $6 + (-6) = 0$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M3_TA_a1_q2",
+      "G6_M3_TA_a1_q3",
+      "G6_M3_a1_q1",
+      "G6_M3_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_point_given_block_distance",
+    "title": "Identify Point at Given Block Distance",
+    "description": "Select or generate a point that is a specified Manhattan distance from a given point.",
+    "condition": "A reference point and a required block (Manhattan) distance are given.",
+    "response": "Find a point $(x,y)$ such that $|x - x_0| + |y - y_0|$ equals the given distance.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If school is at $(-2,9)$, a point 5 blocks away is $(1,9)$ since $|1 - (-2)| + |9 - 9| = 3 + 0 = 3$ ???",
+    "notes": "Example distance arithmetic may vary depending on exact school coordinate ???",
+    "question_ids": [
+      "G6_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_point_on_axis",
+    "title": "Identify Point on an Axis",
+    "description": "Determine whether a point lies on the x-axis or y-axis based on a zero coordinate.",
+    "condition": "Given an ordered pair (x, y).",
+    "response": "If y = 0, the point is on the x-axis; if x = 0, the point is on the y-axis.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "For $(0, -5)$, since $x = 0$, the point lies on the y-axis.",
+    "notes": "Zero determines axis location.",
+    "question_ids": [
+      "G6_M3_TC_a1_q1",
+      "G6_M3_TC_a1_q2",
+      "G6_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "interpret_directional_movement",
+    "title": "Interpret Directional Movement from Origin",
+    "description": "Translate verbal directions (left/right/up/down and units) into coordinate changes.",
+    "condition": "Given instructions to move a certain number of units in a cardinal direction from the origin.",
+    "response": "Adjust x for left/right and y for up/down by the given number of units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From the origin, move 3 units right and 2 units up to reach $(3, 2)$.",
+    "notes": "Right/left affect x; up/down affect y.",
+    "question_ids": [
+      "G6_M3_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_signed_context",
+    "title": "Interpret Signed Numbers in Context",
+    "description": "Explain the meaning of positive, negative, or zero values in real-world contexts such as elevation, temperature, or bank balance.",
+    "condition": "A signed number given within a contextual situation.",
+    "response": "Describe what the sign and magnitude represent in context (e.g., below sea level, debt, colder temperature).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "An elevation of \u221215 feet means 15 feet below sea level.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TB_a1_q3",
+      "G6_M3_TB_a1_q6",
+      "G6_M3_a1_q3",
+      "G6_M3_a1_q4",
+      "G6_M3_a1_q6",
+      "G6_M3_a2_q3",
+      "G6_M3_a2_q4",
+      "G6_M3_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "measure_distance_to_axis",
+    "title": "Measure Distance from Point to Axis",
+    "description": "Find the distance from a point to the x-axis or y-axis using absolute value of the relevant coordinate.",
+    "condition": "Given a point (x, y) and asked for distance to an axis.",
+    "response": "Distance to x-axis is |y|; distance to y-axis is |x|.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $(-5, -3)$, distance to the x-axis is $|-3| = 3$ and to the y-axis is $|-5| = 5$.",
+    "notes": "Distance is always nonnegative.",
+    "question_ids": [
+      "G6_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_negative_as_below_zero",
+    "title": "Negative Numbers Are Below Zero",
+    "description": "Recognize that any negative number represents a value below zero in context.",
+    "condition": "Given a real-world context with 0 as a reference point and a negative number.",
+    "response": "Interpret the negative number as below the reference point.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Since $-15 < 0$, an elevation of $-15$ feet is below sea level.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q1",
+      "G6_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "opposites_are_symmetric_about_zero",
+    "title": "Opposites Are Equidistant from Zero",
+    "description": "Recognize that two numbers are opposites if they are the same distance from 0 on opposite sides.",
+    "condition": "Given two numbers or labeled points on a number line and asked if they are opposites.",
+    "response": "Determine whether one equals the negative of the other.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $d = 0.5$ and $c = -0.5$, then $c$ is the opposite of $d$ because $c = -d$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "order_rational_numbers",
+    "title": "Order Rational Numbers",
+    "description": "Arrange integers, fractions, and decimals from least to greatest by comparing their values.",
+    "condition": "A list of rational numbers in different forms.",
+    "response": "Rewrite them in ascending order based on their numerical values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since \u22124 < \u22122.9 < \u221212/8 < \u22123/5 < 1/4 < 9/10, this is the correct order from least to greatest.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M3_TB_a1_q1",
+      "G6_M3_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "compute_perimeter_rectangle_coords",
+    "title": "Perimeter of Rectangle from Coordinates",
+    "description": "Determine the perimeter of a rectangle by finding side lengths from coordinate differences and summing all sides.",
+    "condition": "Four vertices of a rectangle are given on a coordinate plane.",
+    "response": "Find horizontal and vertical side lengths using absolute differences and compute $2(l + w)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $A(7,8)$ and $B(-1,8)$, width $= |7 - (-1)| = 8$; height $= |8 - (-2)| = 10$; perimeter $= 2(8+10)=36$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_positive_as_above_zero",
+    "title": "Positive Numbers Are Above Zero",
+    "description": "Recognize that any positive number represents a value above zero in context.",
+    "condition": "Given a real-world context where 0 is a reference point (e.g., freezing, sea level) and a positive number.",
+    "response": "Interpret the positive number as above the reference point.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Since $80 > 0$, $80^\\circ\\text{C}$ is above freezing (0\u00b0C).",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q1",
+      "G6_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "read_ordered_pair_from_graph",
+    "title": "Read Ordered Pair from Graph",
+    "description": "Identify the coordinates of a plotted point by reading its horizontal (x) and vertical (y) position on the grid.",
+    "condition": "A point is plotted on a coordinate plane.",
+    "response": "State its ordered pair $(x, y)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Point $F$ is located at $(-7, 8)$.",
+    "notes": "Requires interpreting grid scale and axis orientation.",
+    "question_ids": [
+      "G5_M6_TA_a1_q2",
+      "G5_M6_TA_a1_q3",
+      "G6_M3_TD_a1_q1",
+      "G6_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "match_point_to_value_number_line",
+    "title": "Read Value from Number Line Point",
+    "description": "Determine the numerical value represented by a labeled point on a number line.",
+    "condition": "Given a number line with evenly spaced tick marks and a labeled point.",
+    "response": "State the numerical value of the point.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If point $B$ is halfway between $1$ and $2$, then $B = 1.5$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "reflection_across_x_axis",
+    "title": "Reflect Point Across the x-Axis",
+    "description": "Determine or recognize the image of a point after reflection across the x-axis.",
+    "condition": "Given a point (x, y) and reflection across the x-axis.",
+    "response": "Keep x the same and change y to its opposite: (x, -y).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Reflecting $(6, 8)$ across the x-axis gives $(6, -8)$.",
+    "notes": "Based on symmetry over the horizontal axis.",
+    "question_ids": [
+      "G6_M3_TC_a1_q2",
+      "G6_M3_TC_a1_q4",
+      "G6_M3_TC_a1_q5",
+      "G6_M3_a1_q7",
+      "G6_M3_a2_q7",
+      "G8_M2_a1_q3",
+      "G8_M2_a2_q1",
+      "G8_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "simplify_double_negative",
+    "title": "Simplify Double Negative",
+    "description": "Simplify expressions involving a negative sign applied to a negative number.",
+    "condition": "Given an expression of the form $-(-a)$.",
+    "response": "Rewrite as $a$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$-(-\\frac{4}{5}) = \\frac{4}{5}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "zero_represents_reference_point",
+    "title": "Zero as Reference Point",
+    "description": "Identify 0 as the reference value in contextual situations such as sea level or freezing point.",
+    "condition": "Given a context (e.g., sea level, freezing point) and asked for the value representing the reference level.",
+    "response": "State 0.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Sea level is represented by $0$ feet.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q1",
+      "G6_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "zero_is_its_own_opposite",
+    "title": "Zero Is Its Own Opposite",
+    "description": "Recognize that the opposite of 0 is 0.",
+    "condition": "Given the number 0 and asked for its opposite.",
+    "response": "State 0.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Fact",
+    "example": "The opposite of $0$ is $0$ because $-0 = 0$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M3_TA_a1_q3"
+    ]
+  }
+]

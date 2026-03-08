@@ -1,0 +1,631 @@
+[
+  {
+    "kc_id": "classify_numerical_vs_categorical",
+    "title": "Classify Data as Numerical or Categorical",
+    "description": "Determine whether a data set consists of numerical measurements or categories.",
+    "condition": "A data set description is given (e.g., hand widths, eye colors).",
+    "response": "State whether the data are numerical (measurements/counts) or categorical (labels/groups).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "\"Students\u2019 hand widths\" \u2192 Numerical; \"Students\u2019 eye colors\" \u2192 Categorical.",
+    "notes": "Based on definitions of data types.",
+    "question_ids": [
+      "G6_M6_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_boxplot_median",
+    "title": "Compare Medians on Box Plots",
+    "description": "Determine which of two box plots has the greater median by comparing the positions of the median lines.",
+    "condition": "Given two box plots.",
+    "response": "Identify the distribution whose median line is farther to the right as having the greater median.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Team A\u2019s median is at 18 and Team B\u2019s median is at 10, then Team A has the greater median.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_extreme_values",
+    "title": "Compare Minimum or Maximum Values",
+    "description": "Identify which distribution has the greater minimum or maximum by comparing whisker endpoints.",
+    "condition": "Given two box plots and asked which has the greater minimum or maximum.",
+    "response": "Select the distribution whose whisker endpoint is farther to the right for maximum or left for minimum as appropriate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Team A\u2019s maximum is 32 and Team B\u2019s maximum is 28, then Team A has the greater maximum.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_boxplot_range",
+    "title": "Compare Ranges on Box Plots",
+    "description": "Determine which of two box plots has the greater range by comparing minimum and maximum whiskers.",
+    "condition": "Given two box plots.",
+    "response": "Compute or compare (maximum \u2212 minimum) for each and select the greater value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Team A ranges from 2 to 32 (range 30) and Team B from 4 to 28 (range 24), Team A has the greater range.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_value_using_mad",
+    "title": "Compare Value to Mean Using MAD",
+    "description": "Compare a specific data value to a distribution by reasoning about its distance from the mean relative to the mean absolute deviation.",
+    "condition": "Given a mean, a mean absolute deviation, and a specific data value.",
+    "response": "Determine in which distribution the value is relatively farther below or above the mean based on the MAD.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Race 1: mean = 58, MAD = 14 \u2192 one MAD below mean is $58-14=44$. Race 2: mean = 55, MAD = 3 \u2192 one MAD below mean is $55-3=52$. A time of 48 minutes is farther below the mean in Race 2 relative to its MAD.",
+    "notes": "Uses MAD as a measure of variability for comparison.",
+    "question_ids": [
+      "G6_M6_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "interpret_variability_comparison",
+    "title": "Compare Variability Between Distributions",
+    "description": "Determine which distribution has greater or lesser variability based on spread in graphs.",
+    "condition": "Given two graphical distributions.",
+    "response": "Identify which distribution has data values that vary more or less.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If Practice B data are clustered more tightly than Practice A, conclude Practice B varies less.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TA_a1_q3",
+      "G6_M6_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_absolute_deviation",
+    "title": "Compute Absolute Deviation from the Mean",
+    "description": "Find the absolute deviation of a single data value from the mean by taking the absolute value of their difference.",
+    "condition": "Given a data value x and the mean \u03bc of the data set.",
+    "response": "Compute |x \u2212 \u03bc|.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If \u03bc = 45 and x = 48, then the absolute deviation is |48 - 45| = 3.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_interquartile_range",
+    "title": "Compute Interquartile Range",
+    "description": "Find the interquartile range by subtracting the first quartile from the third quartile.",
+    "condition": "Given Q1 and Q3 for a data set.",
+    "response": "Compute $\\text{IQR} = Q3 - Q1$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $Q1=58$ and $Q3=60$, then $\\text{IQR}=60-58=2$.",
+    "notes": "Requires prior identification of quartiles. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M6_TC_a1_q1",
+      "G6_M6_TC_a1_q3",
+      "G6_M6_TC_a1_q4",
+      "G6_M6_a1_q3",
+      "G6_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "compute_mean_absolute_deviation",
+    "title": "Compute Mean Absolute Deviation",
+    "description": "Find the mean absolute deviation by averaging the absolute deviations of each data value from the mean.",
+    "condition": "Given a data set and its mean.",
+    "response": "Compute each |x \u2212 \u03bc| and then find their mean.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For data 6, 8 with mean 7: deviations are |6-7|=1 and |8-7|=1, so MAD = \\(\\frac{1+1}{2} = 1\\).",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compute_mean_from_data",
+    "title": "Compute Mean from Data Set",
+    "description": "Calculate the mean by summing all data values and dividing by the number of values.",
+    "condition": "Given a finite numerical data set.",
+    "response": "Add all values and divide by the number of values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For data $1,1,1,2,3,3,5,0$, mean $=\\frac{1+1+1+2+3+3+5+0}{8}=2$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M6_TB_a1_q1",
+      "G6_M6_TB_a1_q2",
+      "G6_M6_TB_a1_q5",
+      "G6_M6_a1_q1",
+      "G6_M6_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_range",
+    "title": "Compute Range of a Data Set",
+    "description": "Determine the range by subtracting the minimum value from the maximum value.",
+    "condition": "Given a set of numerical data values.",
+    "response": "Compute max \u2212 min.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For data 3, 4, 8: range = 8 - 3 = 5.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "sum_all_histogram_frequencies",
+    "title": "Compute Total Count from Histogram",
+    "description": "Find the total number of data points by summing all bin frequencies in a histogram.",
+    "condition": "A histogram displays frequencies for all intervals and the question asks for total number of observations.",
+    "response": "Add all bin frequencies to obtain the total count.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If bin frequencies are 10, 7, 5, 4, 3, 6, then total is $10+7+5+4+3+6=35$.",
+    "notes": "Each data point is counted in exactly one bin.",
+    "question_ids": [
+      "G6_M6_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "construct_histogram_from_frequency_table",
+    "title": "Construct Histogram from Frequency Table",
+    "description": "Create a histogram by representing each class interval with a bar whose height equals its frequency.",
+    "condition": "A grouped frequency table with class intervals and tallies is provided.",
+    "response": "Draw contiguous bars over each interval with heights equal to the corresponding frequencies.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 100 to <110 has frequency 8, draw a bar over $[100,110)$ with height 8.",
+    "notes": "Bars must touch because intervals are continuous.",
+    "question_ids": [
+      "G6_M6_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "count_data_points_from_display",
+    "title": "Count Data Points from Display",
+    "description": "Determine the total number of data values by counting marks in a dot plot or tally table.",
+    "condition": "Given a dot plot or tally chart representing data values.",
+    "response": "Count all dots or tally marks to find the total number of data points.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If a dot plot shows 35 dots, then there are 35 data values (students).",
+    "notes": "Response is a single total for a given display.",
+    "question_ids": [
+      "G6_M6_a1_q2",
+      "G6_M6_a2_q2",
+      "G6_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "create_box_plot_from_five_number_summary",
+    "title": "Create Box Plot",
+    "description": "Construct a box plot using the minimum, Q1, median, Q3, and maximum.",
+    "condition": "Given the five-number summary of a data set.",
+    "response": "Draw a number line, mark min and max as whiskers, draw a box from Q1 to Q3, and mark the median inside the box.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If min=17, Q1=18, median=19, Q3=20, max=22, draw whiskers at 17 and 22 and a box from 18 to 20 with a line at 19.",
+    "notes": "[merged: response varies]",
+    "question_ids": [
+      "G6_M6_TC_a1_q4",
+      "G6_M6_a1_q3",
+      "G6_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "read_dot_plot_values",
+    "title": "Extract Data Values from a Dot Plot",
+    "description": "Translate a dot plot into a list of numerical data values by counting each dot at its labeled position.",
+    "condition": "Given a dot plot with dots aligned above labeled numerical values.",
+    "response": "List each value once for every dot shown at that position.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If three dots are above 6 and two above 8, the data include 6, 6, 6, 8, 8.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q2",
+      "G6_M6_TB_a1_q3",
+      "G6_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_gap_in_dot_plot",
+    "title": "Identify a Gap in a Dot Plot",
+    "description": "Recognize an interval on a dot plot where no data values occur.",
+    "condition": "Given a dot plot with values marked along a number line.",
+    "response": "State that a gap exists between two values if no dots appear in that interval.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If dots appear at 4 and 7 but none at 5 or 6, there is a gap from 4 to 7.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_statistical_question",
+    "title": "Identify a Statistical Question",
+    "description": "Determine whether a question anticipates variability in data and requires collecting data from multiple individuals.",
+    "condition": "A question is posed about a quantity or characteristic.",
+    "response": "State that it is statistical if it expects variability in responses; otherwise not statistical.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "\"How many minutes does a student typically listen to music in a day?\" \u2192 Statistical (answers vary).",
+    "notes": "Key feature: anticipates variability across individuals.",
+    "question_ids": [
+      "G6_M6_TA_a1_q1",
+      "G6_M6_a1_q4",
+      "G6_M6_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_distribution_center_interval",
+    "title": "Identify Approximate Center from Histogram",
+    "description": "Determine the interval that represents the approximate center (typical value) of a distribution.",
+    "condition": "A histogram is shown and asked which interval contains the center.",
+    "response": "Select the interval where the distribution clusters most centrally (often highest middle bar).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If the tallest central bar is 8 to <12, state the center is in $8\\text{ to }<12$.",
+    "notes": "Center interpreted visually (informal median/mean concept).",
+    "question_ids": [
+      "G6_M6_TA_a1_q4",
+      "G6_M6_TD_a1_q1",
+      "G6_M6_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_approximately_symmetric_distribution",
+    "title": "Identify Approximately Symmetric Distribution",
+    "description": "Recognize a distribution where left and right sides are roughly mirror images around the center.",
+    "condition": "A dot plot or histogram shows similar spread and frequencies on both sides of a central value.",
+    "response": "Classify the distribution as approximately symmetric.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If frequencies decrease similarly on both sides of 10, the distribution is approximately symmetric.",
+    "notes": "Visual judgment; no exact calculation required.",
+    "question_ids": [
+      "G6_M6_TA_a1_q3",
+      "G6_M6_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_distribution_shape",
+    "title": "Identify Distribution Shape",
+    "description": "Classify a distribution as approximately symmetric, skewed left, or skewed right based on tail direction.",
+    "condition": "Given a graph of a numerical distribution.",
+    "response": "State whether the distribution is symmetric, skewed left, or skewed right.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If the right tail is longer, classify the distribution as skewed right.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M6_TD_a1_q2",
+      "G6_M6_TD_a1_q4",
+      "G6_M6_a1_q2",
+      "G6_M6_a1_q5",
+      "G6_M6_a2_q2",
+      "G6_M6_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_largest_gap",
+    "title": "Identify Largest Gap in Data",
+    "description": "Determine the interval between consecutive data values that has no observations and is widest.",
+    "condition": "Given a plotted or listed data set.",
+    "response": "Locate and state the interval with the greatest distance and no data points.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If no values occur between 28 and 37 and this is the widest empty interval, state 28 to 37.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M6_a1_q2",
+      "G6_M6_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_median_from_ordered_data",
+    "title": "Identify Median from Ordered Data",
+    "description": "Determine the median by locating the middle value of an ordered data set.",
+    "condition": "Given an ordered list or dot plot with an odd number of data points.",
+    "response": "Select the middle value (\\(\\frac{n+1}{2}\\)th value) as the median.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "For 13 values, the median is the 7th value in order; if the 7th value is 21, the median is 21.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q1",
+      "G6_M6_TC_a1_q2",
+      "G6_M6_TC_a1_q4",
+      "G6_M6_a1_q3",
+      "G6_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_peak_value",
+    "title": "Identify Peak of Distribution",
+    "description": "Find the data value with the highest frequency in a distribution.",
+    "condition": "Given a frequency display (dot plot, histogram, or table).",
+    "response": "State the value with the greatest frequency.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If 3 occurs most often, the peak is at 3.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_skew_direction",
+    "title": "Identify Skewness Direction",
+    "description": "Determine whether a distribution is skewed left or right based on the direction of its tail.",
+    "condition": "A dot plot or histogram shows a longer tail on one side.",
+    "response": "Classify as skewed right (tail to the right) or skewed left (tail to the left).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If most data cluster at low values with a long tail to higher values, the distribution is skewed right.",
+    "notes": "Right skew = tail extends to larger values.",
+    "question_ids": [
+      "G6_M6_TA_a1_q3",
+      "G6_M6_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_mad_relative_position",
+    "title": "Interpret Mean Absolute Deviation",
+    "description": "Compare a specific value to a distribution using the mean and mean absolute deviation.",
+    "condition": "Given a mean, a mean absolute deviation, and a specific data value.",
+    "response": "Compare how many MADs the value is above or below the mean to judge relative standing.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If mean $=46$ and MAD $=2$, one MAD above is $48$. A value of $51$ is more than one MAD above the mean.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "interpret_mean_as_fair_share",
+    "title": "Interpret Mean as Equal Share",
+    "description": "Understand the mean as the value each data point would have if the total were distributed equally.",
+    "condition": "Asked to interpret the meaning of the mean in context.",
+    "response": "State that the mean represents the equal amount each would have if shared evenly.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If 52 oranges were eaten over 4 weeks, the mean 13 means 13 oranges per week if shared equally.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_iqr_meaning",
+    "title": "Interpret Meaning of Interquartile Range",
+    "description": "Recognize that the interquartile range represents the spread of the middle 50% of the data.",
+    "condition": "Asked what the interquartile range represents.",
+    "response": "State that it is the range of the middle 50% of the data.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "The interquartile range describes the spread of the middle 50% of the values.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_median_as_center",
+    "title": "Interpret Median as Measure of Center",
+    "description": "Recognize the median as a measure of center and that about half the data are at or above it.",
+    "condition": "Asked to interpret the meaning of the median in context.",
+    "response": "State that the median is a measure of center and about half the data are at least the median.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If the median number of games is 21, then about half the matches had at least 21 games.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q1",
+      "G6_M6_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_boxplot_quartiles_percent",
+    "title": "Interpret Quartiles as Percentages",
+    "description": "Use quartiles in a box plot to determine approximate percentages of data above or below a value.",
+    "condition": "Given a box plot and asked about the percent of data at or below/above a quartile or median.",
+    "response": "Use the fact that each quartile represents about 25% of the data to determine the percentage.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 60 minutes is the first quartile (Q1), then about 25% of students practiced 60 minutes or less.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "match_boxplot_to_dotplot",
+    "title": "Match Box Plot to Dot Plot",
+    "description": "Select the box plot whose five-number summary matches the data shown in a dot plot.",
+    "condition": "Given a dot plot and multiple box plot options.",
+    "response": "Determine the five-number summary from the dot plot and choose the box plot with matching min, Q1, median, Q3, and max.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a dot plot has min 1, Q1 2, median 3, Q3 7, max 9, select the box plot displaying those values.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "match_measure_to_skew",
+    "title": "Match Measure of Center/Spread to Skew",
+    "description": "Select appropriate measures of center and variability based on distribution shape.",
+    "condition": "Given a skewed distribution.",
+    "response": "State that the median and interquartile range are more appropriate than the mean and MAD.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For a right-skewed distribution, use the median and IQR.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TD_a1_q2",
+      "G6_M6_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "order_by_mad_variability",
+    "title": "Order Data Sets by Mean Absolute Deviation",
+    "description": "Compare mean absolute deviations to determine relative variability.",
+    "condition": "Given two or more data sets with known or computed MADs.",
+    "response": "Order from smallest MAD (least variability) to largest MAD (greatest variability).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If MADs are 1.2, 1.5, and 2.0, order: 1.2 < 1.5 < 2.0 (least to greatest variability).",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_iqr_across_distributions",
+    "title": "Order Distributions by Interquartile Range",
+    "description": "Compare multiple data displays by estimating and ordering their interquartile ranges (IQRs).",
+    "condition": "Given two or more data distributions (e.g., dot plots) and asked to order them by least to greatest interquartile range.",
+    "response": "Estimate each distribution\u2019s IQR (Q3 \u2212 Q1) and rank them from smallest to largest.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Distribution A has Q1 = 12 and Q3 = 14 (IQR = 2), and Distribution B has Q1 = 10 and Q3 = 16 (IQR = 6), then A has the smaller IQR.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TC_a1_q5",
+      "G6_M6_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "recognize_outlier_from_histogram",
+    "title": "Recognize Outlier in Histogram",
+    "description": "Identify when a distribution includes a value far from the rest of the data (an outlier) based on a visual display.",
+    "condition": "Given a histogram and asked whether the distribution has an outlier.",
+    "response": "Identify a bar or value far separated from the main cluster as an outlier.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If most wins are between 80 and 100 but one season shows 55 wins far from the rest, identify 55 as an outlier.",
+    "notes": "",
+    "question_ids": [
+      "G6_M6_TD_a1_q4"
+    ]
+  }
+]

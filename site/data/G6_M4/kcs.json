@@ -1,0 +1,615 @@
+[
+  {
+    "kc_id": "add_constant_to_variable",
+    "title": "Add Constant to Variable",
+    "description": "Add a constant value to a variable to compute a total in a linear relationship.",
+    "condition": "Expression of the form total = constant + variable (e.g., t = 9.5 + m) with a given value for the variable.",
+    "response": "Substitute the variable value and add the constant to find the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $t = 9.5 + m$ and $m = 5$, compute $t = 9.5 + 5 = 14.5$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "check_value_satisfies_inequality",
+    "title": "Check if a Value Satisfies an Inequality",
+    "description": "Determine whether a given number makes an inequality statement true.",
+    "condition": "Given an inequality in one variable and a specific numerical value to test.",
+    "response": "Substitute the value and evaluate whether the resulting statement is true or false.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Check if $-5$ satisfies $s < -2.5$: since $-5 < -2.5$ is true, the answer is Yes.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TD_a1_q3",
+      "G6_M4_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_basic_product",
+    "title": "Compute Basic Product",
+    "description": "Multiply two or more integers to obtain their product.",
+    "condition": "Two or more integers connected by multiplication symbols (e.g., a \u00b7 b).",
+    "response": "Calculate and state the numerical product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Compute $7\\cdot7=49$.",
+    "notes": "Includes products such as $3\\cdot8=24$.",
+    "question_ids": [
+      "G6_M4_TA_a1_q3",
+      "G6_M4_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_power",
+    "title": "Evaluate Exponent (Power)",
+    "description": "Compute the value of a base raised to a positive integer exponent.",
+    "condition": "An expression of the form $a^n$ where $n$ is a positive integer.",
+    "response": "Multiply $a$ by itself $n$ times and state the result.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compute $2^3 = 2\\cdot2\\cdot2 = 8$.",
+    "notes": "Relies on definition of exponents as repeated multiplication.",
+    "question_ids": [
+      "G6_M4_TA_a1_q3",
+      "G6_M4_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "evaluate_expression_substitution",
+    "title": "Evaluate Expression by Substitution",
+    "description": "Substitute a given value for a variable and compute the result.",
+    "condition": "An algebraic expression with a specified value for its variable (e.g., x = 2).",
+    "response": "Replace the variable with the given value and simplify numerically.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $x = 2$, then $3(4 + 2x) - 3x = 3(4 + 4) - 6 = 24 - 6 = 18$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TB_a1_q6",
+      "G6_M4_TC_a1_q5",
+      "G6_M4_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "evaluate_fraction_expression",
+    "title": "Evaluate Fraction with Exponents",
+    "description": "Evaluate a numerical fraction by simplifying numerator and denominator separately, then dividing.",
+    "condition": "A fraction where numerator and/or denominator contain operations (including exponents).",
+    "response": "Evaluate numerator and denominator using order of operations, then divide numerator by denominator.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Evaluate $\\frac{4(1+10)+5(5-1)}{4^2-2^3}$: numerator $=64$, denominator $=8$, so result $=8$.",
+    "notes": "Combines order of operations with division.",
+    "question_ids": [
+      "G6_M4_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "expand_exponent_to_product",
+    "title": "Expand Exponent to Repeated Multiplication",
+    "description": "Rewrite an exponential expression as repeated multiplication of the base.",
+    "condition": "An expression of the form $a^n$ with positive integer exponent.",
+    "response": "Write $a$ multiplied by itself $n$ times.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$7^3 = 7\\cdot7\\cdot7$.",
+    "notes": "Used when matching expressions to expanded form.",
+    "question_ids": [
+      "G6_M4_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "factor_common_factor",
+    "title": "Factor Out Greatest Common Factor",
+    "description": "Rewrite a sum as a product by factoring out a common numerical factor.",
+    "condition": "Expression of the form $ab + ac$ where a common factor exists.",
+    "response": "Factor to $a(b + c)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$36 + 48 = 12(3 + 4)$",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TC_a1_q3",
+      "G6_M4_TC_a1_q6",
+      "G7_M3_TA_a1_q3",
+      "G7_M3_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "fraction_of_quantity",
+    "title": "Find Fraction of a Quantity",
+    "description": "Represent a fraction of a given quantity using multiplication.",
+    "condition": "Problem states a fraction of a variable quantity (e.g., 1/2 of y).",
+    "response": "Multiply the fraction by the quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Half of $y$ is $\\frac{1}{2}y$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "graph_strict_inequality_number_line",
+    "title": "Graph Strict Inequality on Number Line",
+    "description": "Represent solutions to a strict inequality using an open circle and shading in the correct direction.",
+    "condition": "An inequality of the form x < a or x > a is given.",
+    "response": "Place an open circle at a and shade left for < or right for >.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For $x < -1.5$, draw an open circle at $-1.5$ and shade to the left.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TD_a1_q6",
+      "G6_M4_a1_q7",
+      "G6_M4_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "recognize_constant_rate_from_table",
+    "title": "Identify Constant Rate from Table",
+    "description": "Determine the multiplicative relationship between two variables in a table by finding a constant ratio.",
+    "condition": "A table shows paired values with proportional change.",
+    "response": "Compute the constant rate and write an equation such as d = kt.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $(t,d)=(3,42)$, $42 \u00f7 3 = 14$, so $d = 14t$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TB_a1_q4",
+      "G6_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "identify_dependent_variable",
+    "title": "Identify Dependent Variable",
+    "description": "Identify the variable whose value depends on another variable in a contextual relationship.",
+    "condition": "Two variables described where one quantity depends on changes in the other.",
+    "response": "State that the dependent quantity is the dependent variable.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If cups of punch $c$ depends on family members $f$, then $c$ is the dependent variable.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_equivalent_expression_by_evaluation",
+    "title": "Identify Equivalent Expression by Evaluation",
+    "description": "Determine which expressions are equivalent by evaluating each to compare their numerical values.",
+    "condition": "Multiple numerical expressions presented for comparison.",
+    "response": "Evaluate each expression and select those with equal values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3\\cdot2^3+7\\cdot7-6 = 24+49-6 = 67$, so any option equal to $67$ is equivalent.",
+    "notes": "Equivalence determined via equal numerical value.",
+    "question_ids": [
+      "G6_M4_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_factor_in_product",
+    "title": "Identify Factor in Product",
+    "description": "Recognize that numbers or variables multiplied together are factors of the product.",
+    "condition": "An expression written as a product (e.g., 10mn or 5y).",
+    "response": "State that each multiplicative component is a factor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "In $10mn$, $10$, $m$, and $n$ are factors.",
+    "notes": "Students distinguish factors from terms.",
+    "question_ids": [
+      "G6_M4_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_independent_variable",
+    "title": "Identify Independent Variable",
+    "description": "Identify the variable that determines or influences another variable in a contextual relationship.",
+    "condition": "Two variables described where one quantity determines changes in the other.",
+    "response": "State that the determining quantity is the independent variable.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If cups $c$ depend on family members $f$, then $f$ is the independent variable.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_term_in_expression",
+    "title": "Identify Term in Expression",
+    "description": "Recognize that terms in an expression are separated by addition or subtraction.",
+    "condition": "An algebraic expression containing addition or subtraction (e.g., $\\frac{3}{4} + 5y$).",
+    "response": "Identify each addend or subtrahend as a term.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "In $\\frac{3}{4} + 5y$, the terms are $\\frac{3}{4}$ and $5y$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "expand_repeated_addition",
+    "title": "Interpret Repeated Addition as Multiplication",
+    "description": "Recognize repeated addition of the same variable as multiplication.",
+    "condition": "Expression shows a variable added repeatedly (e.g., n + n + n + n + ...).",
+    "response": "Rewrite as a product of the number of terms and the variable.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$n + n + n + n + n + n + n + n = 8n$",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "represent_total_sum",
+    "title": "Represent Total as Sum",
+    "description": "Express the total of two quantities as the sum of their algebraic expressions.",
+    "condition": "Problem asks for total or sum of two quantities expressed algebraically.",
+    "response": "Add the two expressions to form a single expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If Eddie has 12 and Leo has $12 + n$, total is $12 + (12 + n)$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TC_a1_q4",
+      "G6_M4_TD_a1_q4",
+      "G6_M4_a1_q5",
+      "G6_M4_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_one_step_addition_equation",
+    "title": "Solve One-Step Addition/Subtraction Equation",
+    "description": "Isolate the variable in an equation of the form x + k = c or x \u2212 k = c by using inverse operations.",
+    "condition": "An equation has the form x + k = c or x \u2212 k = c.",
+    "response": "Add or subtract k from both sides to solve for x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Solve $x + 76.5 = 135.75$ by subtracting 76.5: $x = 59.25$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M4_TD_a1_q2",
+      "G6_M4_TD_a1_q4",
+      "G6_M4_TD_a1_q5",
+      "G6_M4_a1_q1",
+      "G6_M4_a1_q6",
+      "G6_M4_a2_q1",
+      "G6_M4_a2_q6",
+      "G7_M3_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_linear_inequality_one_step",
+    "title": "Solve One-Step Linear Inequality",
+    "description": "Solve inequalities of the form ax + b < c by isolating the variable.",
+    "condition": "Inequality of the form ax + b < c (or >).",
+    "response": "Subtract b and divide by a to isolate x, reversing inequality if dividing by negative.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Solve $2x + 4 < 14$: subtract 4 to get $2x < 10$, divide by 2 to get $x < 5$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "solve_one_step_multiplication_equation",
+    "title": "Solve One-Step Multiplication Equation",
+    "description": "Solve equations of the form ax = b by dividing both sides by a.",
+    "condition": "Equation in the form a\u00b7x = b, where a \u2260 0.",
+    "response": "Divide both sides by a to isolate x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "From $\\frac{1}{5}n = 1.5$, divide by $\\frac{1}{5}$ to get $n = 7.5$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "substitute_and_multiply",
+    "title": "Substitute and Multiply in Proportional Equation",
+    "description": "Substitute a given value into a proportional equation and multiply to find the result.",
+    "condition": "Equation of form y = kx and a specific value of x is given.",
+    "response": "Replace x with the given value and compute y = kx.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $n = 21s$ and $s = 9$, compute $n = 21 \\times 9 = 189$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "subtract_from_total",
+    "title": "Subtract Part from Total",
+    "description": "Represent a remaining quantity by subtracting a known part from a fixed total.",
+    "condition": "Total amount is fixed and one part is represented by a variable.",
+    "response": "Write equation for remaining amount as total minus the known part.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total hours are 12 and math hours are $m$, then other hours $h = 12 - m$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_less_than_phrase",
+    "title": "Translate 'Less Than' Phrase",
+    "description": "Translate verbal phrases involving 'less than' into subtraction expressions with correct order.",
+    "condition": "Phrase of the form 'a less than b'.",
+    "response": "Write expression b \u2212 a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "\"6 less than x\" \u2192 $x - 6$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M4_TD_a1_q3",
+      "G6_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "represent_additive_comparison",
+    "title": "Translate Additive Comparison",
+    "description": "Translate phrases like 'more than' or 'less than' into addition or subtraction expressions with correct order.",
+    "condition": "A verbal phrase indicating additive comparison (e.g., '9 more than y', 'b less than 12').",
+    "response": "Write an expression using addition or subtraction in the correct order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'3 less than the product of 4 and n' \u2192 $4n - 3$.",
+    "notes": "Order reverses for 'less than' statements.",
+    "question_ids": [
+      "G6_M4_TB_a1_q1",
+      "G6_M4_TB_a1_q3",
+      "G6_M4_TB_a1_q5",
+      "G6_M4_a1_q5",
+      "G6_M4_a1_q8",
+      "G6_M4_a2_q5",
+      "G6_M4_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "represent_sum_then_fraction",
+    "title": "Translate Fraction of a Sum",
+    "description": "Translate phrases indicating a fraction of a sum into a grouped expression.",
+    "condition": "A verbal phrase like 'one-half of the sum of n and 3'.",
+    "response": "Write a fractional coefficient multiplied by a parenthesized sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'One-half of the sum of n and 3' \u2192 $\\frac{1}{2}(n+3)$.",
+    "notes": "Requires parentheses to preserve the sum structure.",
+    "question_ids": [
+      "G6_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "represent_multiplicative_relationship",
+    "title": "Translate Multiplicative Relationship",
+    "description": "Translate phrases like 'product of' or 'times as many' into multiplication expressions.",
+    "condition": "A verbal description indicating multiplication (e.g., 'product of 7 and x', '2 times as many as y').",
+    "response": "Write a product expression using implied or explicit multiplication.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'The product of 7 and x' \u2192 $7x$; '2 times as many as y' \u2192 $2y$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TB_a1_q1",
+      "G6_M4_TB_a1_q3",
+      "G6_M4_TB_a1_q5",
+      "G6_M4_a1_q2",
+      "G6_M4_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "represent_quotient_relationship",
+    "title": "Translate Quotient Relationship",
+    "description": "Translate phrases like 'quotient of' or equal sharing into division expressions.",
+    "condition": "A verbal description indicating division (e.g., 'quotient of x and 4', '$2 for y cookies').",
+    "response": "Write a division expression in correct order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'The quotient of x and 4' \u2192 $x \\div 4$; '$2 for y cookies' \u2192 $2 \\div y$.",
+    "notes": "Order matters in quotient statements.",
+    "question_ids": [
+      "G6_M4_TB_a1_q1",
+      "G6_M4_TB_a1_q3",
+      "G6_M4_TB_a1_q5",
+      "G6_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_product_sum_difference_quotient",
+    "title": "Translate Verbal Operation Phrases",
+    "description": "Translate phrases such as product, sum, difference, and quotient into algebraic expressions with correct structure.",
+    "condition": "A verbal description references operations (product, sum, difference, quotient) involving numbers and variables.",
+    "response": "Write the corresponding algebraic expression preserving order and grouping.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "\"The product of 5 and the sum of 8 and x\" \u2192 $5(8 + x)$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_more_than_expression",
+    "title": "Translate \u201cMore Than\u201d into Addition",
+    "description": "Interpret verbal phrases like 'k more than x' as x + k.",
+    "condition": "A phrase states 'k more than x.'",
+    "response": "Write the expression x + k.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "\"8 more than x\" \u2192 $x + 8$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "constant_rate_equation_from_graph",
+    "title": "Write Equation from Constant-Rate Graph",
+    "description": "Determine the linear equation relating two quantities from a graph showing a constant rate.",
+    "condition": "Graph shows proportional relationship between distance d and time t with constant rate (line through origin).",
+    "response": "Compute unit rate (slope) and write equation in form d = kt.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From points $(40,2)$ and $(100,5)$, rate $= \\frac{2}{40} = 0.05$, so $d = 0.05t$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "proportional_inverse_equation",
+    "title": "Write Inverse Proportional Equation",
+    "description": "Rewrite a proportional relationship to solve for the other variable by dividing by the constant of proportionality.",
+    "condition": "Given proportional equation of form y = kx and need equation for x in terms of y.",
+    "response": "Divide both sides by k to write x = y/k.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $n = 21s$, divide by 21 to get $s = \\frac{n}{21}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "write_proportional_equation_from_table",
+    "title": "Write Proportional Equation from Table",
+    "description": "Determine a multiplicative relationship between two variables from a table and express it as an equation.",
+    "condition": "Table shows constant ratio between dependent and independent variables.",
+    "response": "Compute unit rate and write equation in form d = kt (or equivalent).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From (4,60), (6,90), ratio is $\\frac{60}{4}=15$, so $d = 15t$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M4_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "write_product_as_exponent",
+    "title": "Write Repeated Multiplication in Exponential Form",
+    "description": "Rewrite repeated multiplication of the same factor using exponent notation.",
+    "condition": "A product where the same base is multiplied by itself multiple times (e.g., $a\\cdot a\\cdot a$).",
+    "response": "Express as $a^n$, where $n$ is the number of identical factors.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$1.5\\cdot1.5\\cdot1.5\\cdot1.5 = 1.5^4$.",
+    "notes": "Also applies within larger expressions, e.g., $2\\cdot2\\cdot2+3\\cdot3 = 2^3+3^2$.",
+    "question_ids": [
+      "G6_M4_TA_a1_q2"
+    ]
+  }
+]

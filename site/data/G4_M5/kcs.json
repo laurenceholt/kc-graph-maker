@@ -294,7 +294,7 @@
     ]
   },
   {
-    "kc_id": "plot_decimal_on_number_line",
+    "kc_id": "locate_decimal_on_number_line",
     "title": "Plot Decimal on Number Line",
     "description": "Locate and label a decimal number correctly on a number line between benchmarks.",
     "condition": "A number line with benchmarks (e.g., 0 and 1) and a decimal number is given.",
@@ -309,7 +309,8 @@
     "question_ids": [
       "G4_M5_TC_a1_q1",
       "G4_M5_a1_q3",
-      "G4_M5_a2_q3"
+      "G4_M5_a2_q3",
+      "G6_M3_TA_a1_q4"
     ]
   },
   {

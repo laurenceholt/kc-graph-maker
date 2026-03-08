@@ -54,24 +54,6 @@
     ]
   },
   {
-    "kc_id": "apply_order_of_operations",
-    "title": "Apply Order of Operations",
-    "description": "Evaluate numerical expressions using parentheses first, then multiplication/division, then addition/subtraction.",
-    "condition": "A numerical expression containing parentheses and/or multiple operation types.",
-    "response": "Evaluate in the correct order (parentheses \u2192 \u00d7/\u00f7 \u2192 +/\u2212).",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$6 \\times (89+98) - (489 \\div 3)$ \u2192 evaluate parentheses first.",
-    "notes": "General evaluation structure.",
-    "question_ids": [
-      "G5_M1_TD_a1_q1",
-      "G5_M1_TD_a1_q5"
-    ]
-  },
-  {
     "kc_id": "compare_place_value_magnitude",
     "title": "Compare Place Value Magnitude",
     "description": "Determine multiplicative relationship between values of the same digit in different places.",
@@ -224,7 +206,12 @@
       "G5_M1_TD_a1_q3",
       "G5_M1_TD_a1_q4",
       "G5_M1_TD_a1_q5",
-      "G5_M1_TD_a1_q6"
+      "G5_M1_TD_a1_q6",
+      "G5_M2_TA_a1_q1",
+      "G5_M2_TA_a1_q3",
+      "G5_M2_TA_a1_q4",
+      "G5_M2_TA_a1_q5",
+      "G5_M2_TA_a1_q6"
     ]
   },
   {
@@ -375,6 +362,9 @@
     "question_ids": [
       "G5_M1_TB_a1_q2",
       "G5_M1_TB_a1_q5",
+      "G5_M1_TD_a1_q1",
+      "G5_M1_TD_a1_q4",
+      "G5_M1_TD_a1_q5",
       "G5_M1_a1_q2",
       "G5_M1_a2_q2"
     ]
@@ -394,25 +384,6 @@
     "notes": "",
     "question_ids": [
       "G5_M1_TA_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "compute_product",
-    "title": "Multiply Whole Numbers",
-    "description": "Multiply two whole numbers.",
-    "condition": "Expression of the form a \u00d7 b.",
-    "response": "Compute the product.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "Yes",
-    "label": "Production / Skill",
-    "example": "$36 \\times 22 = 792$",
-    "notes": "Includes multi\u2011digit multiplication.",
-    "question_ids": [
-      "G5_M1_TD_a1_q1",
-      "G5_M1_TD_a1_q4",
-      "G5_M1_TD_a1_q5"
     ]
   },
   {

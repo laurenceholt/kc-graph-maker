@@ -91,7 +91,7 @@
     ]
   },
   {
-    "kc_id": "solve_one_variable_linear_equation",
+    "kc_id": "solve_linear_equation_one_variable",
     "title": "Solve Linear Equation in One Variable",
     "description": "Isolate the variable in a linear equation using inverse operations.",
     "condition": "Given a linear equation in one variable (e.g., $ax+b=c$).",
@@ -104,6 +104,7 @@
     "example": "Solve $3=2m+2$: subtract 2 \u2192 $1=2m$, divide by 2 \u2192 $m=\\frac{1}{2}$.",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G7_M4_TD_a1_q4",
       "G8_M2_TC_a1_q1",
       "G8_M2_TC_a1_q2",
       "G8_M2_a1_q4",

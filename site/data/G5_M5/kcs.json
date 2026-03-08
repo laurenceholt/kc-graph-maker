@@ -34,30 +34,6 @@
     ]
   },
   {
-    "kc_id": "area_is_length_times_width",
-    "title": "Area of a Rectangle Formula",
-    "description": "Find the area of a rectangle by multiplying its length by its width.",
-    "condition": "A rectangle with given side lengths.",
-    "response": "Compute length \u00d7 width.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{3}{4} \\times \\frac{6}{7} = \\frac{18}{28} = \\frac{9}{14}$",
-    "notes": "Fundamental area formula.",
-    "question_ids": [
-      "G5_M5_TB_a1_q2",
-      "G5_M5_TB_a1_q4",
-      "G5_M5_TB_a1_q6",
-      "G5_M5_a1_q4",
-      "G5_M5_a1_q6",
-      "G5_M5_a2_q4",
-      "G5_M5_a2_q6",
-      "G5_M5_a2_q8"
-    ]
-  },
-  {
     "kc_id": "area_composite_rectangles",
     "title": "Area of Composite Rectilinear Figure",
     "description": "Find the area of a composite figure by decomposing it into rectangles, finding each area, and combining appropriately.",
@@ -74,33 +50,6 @@
       "G5_M5_TB_a1_q5",
       "G5_M5_a1_q8",
       "G5_M5_a2_q8"
-    ]
-  },
-  {
-    "kc_id": "compute_rectangular_prism_volume",
-    "title": "Compute Volume of a Rectangular Prism",
-    "description": "The volume of a right rectangular prism equals length \u00d7 width \u00d7 height.",
-    "condition": "Given the length, width, and height of a right rectangular prism.",
-    "response": "Multiply length \u00d7 width \u00d7 height to calculate volume.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "For a prism with dimensions $25$, $5$, and $3$, volume is $25 \\times 5 \\times 3 = 375$.",
-    "notes": "Core formula underlying most problems in this set.",
-    "question_ids": [
-      "G5_M5_TC_a1_q3",
-      "G5_M5_TC_a1_q4",
-      "G5_M5_TD_a1_q1",
-      "G5_M5_TD_a1_q4",
-      "G5_M5_TD_a1_q5",
-      "G5_M5_a1_q3",
-      "G5_M5_a1_q5",
-      "G5_M5_a1_q9",
-      "G5_M5_a2_q3",
-      "G5_M5_a2_q5",
-      "G5_M5_a2_q9"
     ]
   },
   {
@@ -129,7 +78,25 @@
       "G5_M5_a2_q2",
       "G5_M5_a2_q4",
       "G5_M5_a2_q7",
-      "G5_M5_a2_q8"
+      "G5_M5_a2_q8",
+      "G6_M2_TC_a1_q2",
+      "G6_M2_TC_a1_q3",
+      "G6_M2_TC_a1_q4",
+      "G6_M2_a1_q6",
+      "G6_M2_a1_q7",
+      "G6_M2_a2_q4",
+      "G6_M2_a2_q6",
+      "G6_M2_a2_q7",
+      "G6_M5_TD_a1_q1",
+      "G6_M5_a1_q3",
+      "G6_M5_a1_q7",
+      "G6_M5_a1_q9",
+      "G7_M1_TC_a1_q2",
+      "G7_M1_TC_a1_q3",
+      "G7_M1_TC_a1_q4",
+      "G7_M2_TC_a1_q4",
+      "G7_M2_TC_a1_q5",
+      "G7_M2_TE_a1_q4"
     ]
   },
   {
@@ -510,7 +477,8 @@
     "example": "$\\frac{18}{28} = \\frac{9}{14}$",
     "notes": "Often final step after multiplication.",
     "question_ids": [
-      "G5_M5_TB_a1_q4"
+      "G5_M5_TB_a1_q4",
+      "G7_M2_TD_a1_q6"
     ]
   },
   {

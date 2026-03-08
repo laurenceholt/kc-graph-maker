@@ -1,0 +1,717 @@
+[
+  {
+    "kc_id": "aaa_not_unique",
+    "title": "AAA Does Not Guarantee a Unique Triangle",
+    "description": "Recognize that three angle measures determine only similarity, not a unique triangle.",
+    "condition": "Given three angle measures (AAA) with no side lengths.",
+    "response": "Conclude that the triangle is not guaranteed to be unique.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given angles $45^\\circ$, $45^\\circ$, and $90^\\circ$, infinitely many similar triangles can be formed with different side lengths.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TB_a1_q1",
+      "G7_M4_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "area_add_composite",
+    "title": "Add Areas of Composite Figure",
+    "description": "Find the total area of a composite figure by summing the areas of its non-overlapping parts.",
+    "condition": "A figure is decomposed into two or more non-overlapping shapes with known areas.",
+    "response": "Add the areas of all component shapes to obtain the total area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a figure is split into a rectangle of area $24$ and a triangle of area $10$, then total area $= 24 + 10 = 34$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TD_a1_q2",
+      "G7_M4_TD_a1_q4",
+      "G7_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compose_decompose_area",
+    "title": "Area by Composition or Decomposition",
+    "description": "Find area of a composite figure by adding and/or subtracting areas of simpler shapes.",
+    "condition": "Given a complex planar figure composed of rectangles, triangles, or other known shapes.",
+    "response": "Add areas of included regions and subtract excluded regions.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total area $= 96 - 8 - 12 - 12 - 5.76 = 58.24$ square feet.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "area_circle_formula",
+    "title": "Area of a Circle Formula",
+    "description": "Use the formula for the area of a circle in terms of its radius.",
+    "condition": "Given the radius r of a circle.",
+    "response": "Compute A = \u03c0r^2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If r = 4.2, then A = \u03c0(4.2)^2 = 17.64\u03c0.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TC_a1_q3",
+      "G7_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "area_circle_from_radius",
+    "title": "Area of a Circle from Radius",
+    "description": "Calculate the area of a circle given its radius using the formula A = \u03c0r^2.",
+    "condition": "Given the radius r of a circle.",
+    "response": "Compute A = \u03c0r^2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If r = 3.55, then $A = \\pi (3.55)^2 \\approx 3.14 \\cdot 12.6025 \\approx 39.57$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "area_annulus_subtract",
+    "title": "Area of an Annulus by Subtraction",
+    "description": "Find the area of a circular ring by subtracting the area of the inner circle from the area of the outer circle.",
+    "condition": "Given an outer radius R and inner radius r of two concentric circles.",
+    "response": "Compute \u03c0R^2 \u2212 \u03c0r^2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If R = 7.5 and r = 4.5, area = \u03c0(7.5^2) \u2212 \u03c0(4.5^2).",
+    "notes": "Used in walkway brick area calculation.",
+    "question_ids": [
+      "G7_M4_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "area_composite_by_subtraction",
+    "title": "Area of Composite Figure by Subtraction",
+    "description": "Find the area of a complex figure by subtracting areas of non-included parts from a larger enclosing shape.",
+    "condition": "Given a composite figure with known outer dimensions and identifiable subregions to exclude.",
+    "response": "Compute area of outer shape and subtract areas of excluded regions.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If outer rectangle is \\(8 \\times 12 = 96\\) and excluded areas total 42.76, remaining area is \\(96 - 42.76 = 53.24\\).",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "area_regular_hexagon_from_apothem",
+    "title": "Area of Regular Hexagon Prism Base",
+    "description": "Find the area of a regular hexagon using the formula A = (1/2)ap where a is the apothem and p is the perimeter.",
+    "condition": "Given a regular hexagon with apothem a and side length s.",
+    "response": "Compute p = 6s, then A = (1/2)ap.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If s = 6 and a = 5.2, then $p = 6 \\cdot 6 = 36$ and $A = \\frac{1}{2}(5.2)(36) = 93.6$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "volume_trapezoid_area",
+    "title": "Area of Trapezoid Base",
+    "description": "Compute the area of a trapezoid using the average of the bases times the height.",
+    "condition": "Given trapezoid bases $b_1, b_2$ and perpendicular height $h$.",
+    "response": "Compute $A = \\tfrac{1}{2}(b_1 + b_2)h$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $b_1=12$, $b_2=6$, $h=6.3$, then $A = \\tfrac{1}{2}(12+6)(6.3) = 56.7$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "volume_triangle_area",
+    "title": "Area of Triangle Base",
+    "description": "Compute the area of a triangle using one-half base times height.",
+    "condition": "Given a triangle with base $b$ and perpendicular height $h$.",
+    "response": "Compute $A = \\tfrac{1}{2}bh$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $b=6$ and $h=3$, then $A = \\tfrac{1}{2}(6)(3) = 9$ square units.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q3",
+      "G7_M4_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "scale_factor_area_quadratic",
+    "title": "Area Scales with Square of Radius",
+    "description": "Understand that when the radius of a circle is scaled by a factor k, the area is scaled by k^2.",
+    "condition": "Given one circle\u2019s radius is a known multiple of another\u2019s.",
+    "response": "Multiply the area by the square of the scale factor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If r_B = \\(\\frac{1}{2}\\)r_A, then A_B = \\(\\frac{1}{2}\\)^2 A_A = \\(\\frac{1}{4}\\)A_A.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "circumference_from_diameter",
+    "title": "Circumference Using Diameter",
+    "description": "Find the circumference of a circle using its diameter.",
+    "condition": "Given the diameter d of a circle.",
+    "response": "Compute C = \u03c0d.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If d = 1.5, then C = 3.14 \u00d7 1.5 = 4.71.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TC_a1_q1",
+      "G7_M4_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "circumference_from_radius",
+    "title": "Circumference Using Radius",
+    "description": "Find the circumference of a circle using its radius.",
+    "condition": "Given the radius r of a circle.",
+    "response": "Compute C = 2\u03c0r.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If r = 4.5, then C = 2 \u00d7 3.14 \u00d7 4.5 = 28.26.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TC_a1_q3",
+      "G7_M4_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "construct_perpendicular_sides_on_grid",
+    "title": "Construct Perpendicular Sides on Coordinate Grid",
+    "description": "Create a right angle on a coordinate plane by drawing one horizontal and one vertical segment from a point.",
+    "condition": "Given a starting point and requirement that the included angle is $90^\\circ$.",
+    "response": "Draw one horizontal and one vertical segment from the point to form a right angle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "From $A(1,2)$, move 3 units right to $(4,2)$ and 4 units down to $(1,-2)$ to form a right angle at $A$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "construct_rectangle_from_vertex",
+    "title": "Construct Rectangle from Given Vertex and Side Lengths",
+    "description": "Given one vertex and the side lengths, determine coordinates of the remaining vertices by applying horizontal and vertical displacements.",
+    "condition": "A rectangle with given width and length and one known vertex on a coordinate plane.",
+    "response": "Add or subtract the given side lengths horizontally and vertically to generate the other three vertices.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $L=(4,4)$, width $=3$, length $=2$, possible vertices include $(7,4)$, $(7,2)$, and $(4,2)$.",
+    "notes": "Assumes sides are parallel to coordinate axes as shown.",
+    "question_ids": [
+      "G7_M4_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "construct_trapezoid_from_specs",
+    "title": "Construct Trapezoid from Given Dimensions",
+    "description": "Construct a trapezoid on the coordinate plane using a given vertex, base lengths, and height.",
+    "condition": "Given one vertex, trapezoid height, and two base lengths.",
+    "response": "Plot the given point, construct one base of specified length, draw a parallel segment at given height for second base, and connect endpoints.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From \\((-3,5)\\), draw a base of length 2, then 3 units vertically to form a parallel base of length 5, and connect endpoints.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "cross_section_parallel_prism",
+    "title": "Cross Section Parallel to Base of Prism",
+    "description": "Identify that a cross section parallel to the base of a prism has the same shape as the base.",
+    "condition": "Given a prism and a cross section parallel to its base.",
+    "response": "State that the cross section has the same shape as the base.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "For a triangular prism, a cross section parallel to the base is a triangle.",
+    "notes": "[merged: response varies]",
+    "question_ids": [
+      "G7_M4_TE_a1_q3",
+      "G7_M4_a1_q5",
+      "G7_M4_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "classify_cross_section_parallel_pyramid_base",
+    "title": "Cross Section Parallel to Pyramid Base",
+    "description": "A plane parallel to the base of a pyramid produces a cross section similar to the base.",
+    "condition": "Given a pyramid and a plane parallel to its base.",
+    "response": "State that the cross section is a similar polygon to the base.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "In a regular hexagonal pyramid, a plane parallel to the base forms a smaller hexagon similar to the base.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q1",
+      "G7_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "cross_section_perpendicular_right_prism",
+    "title": "Cross Section Perpendicular to Base of Right Prism",
+    "description": "Identify that a cross section perpendicular to the base of a right prism forms a rectangle.",
+    "condition": "Given a right prism and a cross section perpendicular to its base.",
+    "response": "State that the cross section is a rectangle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "For a right triangular prism, a perpendicular cross section is a rectangle.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a1_q5",
+      "G7_M4_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "classify_cross_section_perpendicular_pyramid_base",
+    "title": "Cross Section Perpendicular to Pyramid Base",
+    "description": "A plane perpendicular to the base of a pyramid and passing through the apex forms a triangular cross section.",
+    "condition": "Given a pyramid and a plane perpendicular to the base (typically through the apex).",
+    "response": "Identify the cross section as a triangle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "In a right triangular pyramid, a vertical slice through the apex forms a triangle.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q1",
+      "G7_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "diameter_from_radius",
+    "title": "Diameter from Radius",
+    "description": "Find the diameter of a circle by doubling the radius.",
+    "condition": "Given the radius r of a circle.",
+    "response": "Compute d = 2r.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If r = 7.5, then d = 2(7.5) = 15.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "exclude_face_from_surface_area",
+    "title": "Exclude Specified Face from Surface Area",
+    "description": "Subtract or omit the area of a specified face when calculating total surface area.",
+    "condition": "A surface area problem specifies that one or more faces (e.g., floor) are not included.",
+    "response": "Compute total surface area and subtract (or do not include) the area of the specified face(s).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total surface area is $8{,}000$ and floor area is $1{,}054$, then required area $= 8{,}000 - 1{,}054 = 6{,}946$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "area_circle_from_different_measures",
+    "title": "Find Circle Area from Given Measure",
+    "description": "Compute the area of a circle when given diameter, radius, circumference, or area, converting measures as needed.",
+    "condition": "Given a circle\u2019s diameter, radius, circumference, or area and asked to compare or determine area.",
+    "response": "Use A = \\pi r^2, converting diameter to radius (r = d/2) or circumference to radius (r = C/(2\\pi)) as needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a circle has circumference 18.84 m and \\(\\pi = 3.14\\), then \\(r = \\frac{18.84}{2\\cdot3.14} = 3\\) and \\(A = 3.14 \\cdot 3^2 = 28.26\\).",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_impossible_cross_section_pyramid",
+    "title": "Identify Impossible Pyramid Cross Section",
+    "description": "Determine that certain polygons (e.g., square in a triangular pyramid) cannot result from specified plane orientations.",
+    "condition": "Given a triangular pyramid and a specified plane orientation (parallel, perpendicular, or oblique to base).",
+    "response": "State that a specified polygon (e.g., square) cannot be formed as a cross section.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "A plane cutting a triangular pyramid cannot form a square cross section because the pyramid has only triangular faces.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "classify_vertical_angles_diagram",
+    "title": "Identify Vertical Angles in a Diagram",
+    "description": "Recognize a pair of vertical angles as opposite angles formed by two intersecting lines.",
+    "condition": "A diagram of two intersecting lines forming four angles.",
+    "response": "Identify the pair of opposite (non-adjacent) angles as vertical angles.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "When two lines intersect in an X shape, the angles across from each other are vertical angles.",
+    "notes": "Students visually recognize opposite angles.",
+    "question_ids": [
+      "G7_M4_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "lateral_area_prism",
+    "title": "Lateral Area of a Prism",
+    "description": "Compute the lateral surface area of a prism as the sum of the areas of its rectangular side faces.",
+    "condition": "Given a prism with known base perimeter $P$ and height $h$.",
+    "response": "Compute lateral area as $P \\times h$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $P=20$ and $h=10$, lateral area $= 20 \\times 10 = 200$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TD_a1_q3",
+      "G7_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "match_cross_section_to_answer_choice",
+    "title": "Match Cross Section to Given Diagram",
+    "description": "Match a determined cross-sectional shape to a labeled answer choice.",
+    "condition": "Given a determined cross-sectional polygon and multiple labeled diagram choices.",
+    "response": "Select the letter corresponding to the matching diagram.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the cross section is a hexagon with all sides 2 cm, select choice F.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "circumference_to_radius",
+    "title": "Radius from Circumference",
+    "description": "Solve for the radius of a circle using the formula C = 2\u03c0r.",
+    "condition": "Given circumference C and value of \u03c0.",
+    "response": "Compute r = C / (2\u03c0).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $C = 87.92$ and $\\pi = 3.14$, then $r = 87.92 / (2 \\cdot 3.14) = 87.92 / 6.28 = 14$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G7_M4_TC_a1_q2",
+      "G7_M4_a1_q7",
+      "G7_M4_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_whole",
+    "title": "Round to Nearest Whole Number",
+    "description": "Round a decimal to the nearest whole number.",
+    "condition": "Given a decimal value and instruction to round to nearest whole number.",
+    "response": "If decimal part \u2265 0.5, round up; otherwise round down.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$7.6 \\approx 8$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "sas_unique_triangle",
+    "title": "SAS Congruence Guarantees Uniqueness",
+    "description": "Recognize that two side lengths and their included angle determine exactly one unique triangle.",
+    "condition": "Given two side lengths and the included angle measure (SAS).",
+    "response": "Conclude exactly one unique triangle can be constructed.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given sides 4 in and 7 in with included angle $35^\\circ$, exactly one triangle can be formed.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TB_a1_q2",
+      "G7_M4_TB_a1_q3",
+      "G7_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "ssa_not_guaranteed",
+    "title": "SSA Does Not Guarantee Uniqueness",
+    "description": "Recognize that two side lengths and a non-included angle may produce zero, one, or two triangles.",
+    "condition": "Given two side lengths and a non-included angle (SSA).",
+    "response": "Conclude a unique triangle is not guaranteed.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given sides 14 cm and 16 cm with a non-included angle of $30^\\circ$, more than one triangle may be possible.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TB_a1_q3",
+      "G7_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "sss_unique_triangle",
+    "title": "SSS Congruence Guarantees Uniqueness",
+    "description": "Recognize that three side lengths determine exactly one unique triangle (if triangle inequality holds).",
+    "condition": "Given three side lengths that satisfy the triangle inequality.",
+    "response": "Conclude exactly one unique triangle can be constructed.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given side lengths 7 cm, 9 cm, and 12 cm, exactly one triangle can be formed.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TA_a1_q2",
+      "G7_M4_TB_a1_q1",
+      "G7_M4_TB_a1_q3",
+      "G7_M4_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "substitute_pi_approximation",
+    "title": "Substitute 3.14 for \u03c0",
+    "description": "Replace \u03c0 with 3.14 when instructed to use this approximation.",
+    "condition": "Problem states to use 3.14 for \u03c0.",
+    "response": "Substitute 3.14 in place of \u03c0 in calculations.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "C = \u03c0d \u2192 C = 3.14 \u00d7 1.5.",
+    "notes": "Instruction-specific convention.",
+    "question_ids": [
+      "G7_M4_TC_a1_q1",
+      "G7_M4_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "surface_area_prism",
+    "title": "Surface Area of a Rectangular Prism",
+    "description": "Compute the total surface area of a rectangular prism by summing areas of all six faces.",
+    "condition": "Given a rectangular prism with dimensions $l$, $w$, and $h$.",
+    "response": "Compute $SA = 2(lw + lh + wh)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $l=6$, $w=4$, $h=2$, $SA = 2(24 + 12 + 8) = 88$.",
+    "notes": "In Q3, interior faces between stacked prisms are excluded.",
+    "question_ids": [
+      "G7_M4_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "surface_area_rectangular_pyramid",
+    "title": "Surface Area of a Rectangular Pyramid",
+    "description": "Compute the surface area of a rectangular pyramid as the sum of the base area and the areas of its four triangular faces.",
+    "condition": "Given base dimensions and slant heights of a right rectangular pyramid.",
+    "response": "Compute base area and add areas of all triangular faces.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If base is $6 \\times 6$ and each triangular face has area $21$, total surface area $= 36 + 4(21) = 120$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "triangle_angle_sum_180",
+    "title": "Triangle Angle Sum Theorem",
+    "description": "The interior angles of a triangle sum to 180 degrees.",
+    "condition": "A triangle with two known interior angle measures.",
+    "response": "Compute the third angle as $180^\\circ$ minus the sum of the two given angles.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If angles are $45^\\circ$ and $60^\\circ$, third angle is $180 - (45 + 60) = 75^\\circ$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TA_a1_q2",
+      "G7_M4_TA_a1_q5",
+      "G7_M4_TB_a1_q1",
+      "G8_M2_a1_q7",
+      "G8_M2_a2_q7",
+      "G8_M5_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "triangle_inequality_check",
+    "title": "Triangle Inequality Theorem",
+    "description": "A triangle can be formed only if the sum of any two side lengths is greater than the third side length.",
+    "condition": "Three proposed side lengths of a triangle.",
+    "response": "Verify that each pairwise sum of sides is strictly greater than the remaining side.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For sides $9, 11, 13$: $9+11>13$, $9+13>11$, $11+13>9$, so exactly one triangle is possible.",
+    "notes": "Equality (sum equals third side) does not form a triangle. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G7_M4_TA_a1_q2",
+      "G7_M4_TA_a1_q3",
+      "G7_M4_TA_a1_q5",
+      "G7_M4_TB_a1_q2",
+      "G7_M4_a1_q6",
+      "G7_M4_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "angle_sum_less_than_180_two_angles",
+    "title": "Two Angles Must Sum to Less Than 180\u00b0",
+    "description": "To determine if a triangle can be formed from two given angle measures, verify that their sum is less than 180\u00b0.",
+    "condition": "Given two angle measures of a triangle.",
+    "response": "Add the two measures and check that their sum is less than 180\u00b0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $86^\\circ$ and $94^\\circ$: $86 + 94 = 180$, so no triangle is possible.",
+    "notes": "If sum equals or exceeds 180\u00b0, a triangle cannot be formed.",
+    "question_ids": [
+      "G7_M4_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "volume_composite_solids_addition",
+    "title": "Volume of Composite Solid by Addition",
+    "description": "Find the total volume of a composite solid by summing the volumes of its component solids.",
+    "condition": "Given a solid composed of multiple prisms or pyramids with known dimensions.",
+    "response": "Compute each component volume and add them to find total volume.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If a solid consists of two rectangular prisms (each $V= lwh$) and one triangular prism ($V=Bh$), then $V_{total}=V_1+V_2+V_3$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "volume_right_prism_general",
+    "title": "Volume of Right Prism",
+    "description": "Calculate the volume of a right prism as the area of its base times its height.",
+    "condition": "Given a right prism with known base area and height (distance between bases).",
+    "response": "Compute $V = B h$ where $B$ is area of base.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If base area $B=18$ and height $h=4$, then $V = 18 \\times 4 = 72$ cubic units.",
+    "notes": "",
+    "question_ids": [
+      "G7_M4_TE_a1_q2",
+      "G7_M4_TE_a1_q3",
+      "G7_M4_TE_a1_q4",
+      "G7_M4_a1_q4"
+    ]
+  }
+]

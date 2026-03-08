@@ -1,0 +1,460 @@
+[
+  {
+    "kc_id": "classify_reduction_or_enlargement",
+    "title": "Classify Reduction or Enlargement",
+    "description": "Determine whether one figure is a reduction or enlargement of another based on proportional size comparison.",
+    "condition": "Two similar figures are compared and one is proportionally smaller or larger than the other.",
+    "response": "State that the smaller proportional figure is a reduction and the larger proportional figure is an enlargement.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If figure Y has all side lengths half those of figure X, then Y is a reduction of X.",
+    "notes": "Relies on proportional comparison rather than proof of similarity.",
+    "question_ids": [
+      "G7_M1_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compose_area_from_shapes",
+    "title": "Compose Area from Simpler Shapes",
+    "description": "Find the area of a composite figure by decomposing it into familiar shapes and summing their areas.",
+    "condition": "A composite polygon with grid or measurable side lengths is given.",
+    "response": "Decompose into rectangles/triangles, compute each area, and add them.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Split a trapezoid-like figure into a rectangle and two triangles, compute each area, then sum to get total area in square inches.",
+    "notes": "Used before applying area scale factor in Q5.",
+    "question_ids": [
+      "G7_M1_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_constant_of_proportionality_from_graph",
+    "title": "Compute Constant of Proportionality from Graph",
+    "description": "Determine the unit rate (constant of proportionality) from a graph of a proportional relationship by finding the slope (ratio of y to x).",
+    "condition": "A straight-line graph through the origin representing a proportional relationship with a labeled point (x, y).",
+    "response": "Compute k = y/x using a point on the line.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From point B (20, 75), compute $k = \\frac{75}{20} = 3.75$ grams per ounce.",
+    "notes": "Assumes the line passes through the origin.",
+    "question_ids": [
+      "G7_M1_TB_a1_q4",
+      "G7_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "find_linear_scale_factor",
+    "title": "Compute Linear Scale Factor",
+    "description": "Determine the scale factor by dividing a corresponding length in the image by the original length.",
+    "condition": "Two corresponding side lengths from similar figures are given.",
+    "response": "Compute scale factor as (new length) \u00f7 (original length).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$4\\tfrac{3}{8} \\div 2\\tfrac{1}{2} = \\frac{35}{8} \\div \\frac{5}{2} = \\frac{35}{8}\\cdot\\frac{2}{5} = \\frac{7}{4} = 1\\tfrac{3}{4}$.",
+    "notes": "Must use corresponding sides.",
+    "question_ids": [
+      "G7_M1_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compute_unit_rate_from_table",
+    "title": "Compute Unit Rate from Table",
+    "description": "Determine the constant of proportionality by dividing output values by corresponding input values in a table.",
+    "condition": "Given a table of paired values (x, y) that may represent a proportional relationship.",
+    "response": "Compute the unit rate k by calculating y/x for a nonzero pair.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "From the pair (8, 3), compute k = \\frac{3}{8}.",
+    "notes": "Assumes x \\neq 0 when computing unit rate. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M1_TA_a1_q1",
+      "G7_M1_TA_a1_q4",
+      "G7_M1_TB_a1_q1",
+      "G7_M1_TB_a1_q3",
+      "G7_M1_a2_q4",
+      "G7_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "determine_constant_unit_rate",
+    "title": "Determine if Unit Rate Is Constant",
+    "description": "Check whether multiple ratios y/x are equal to determine proportionality.",
+    "condition": "Given multiple ordered pairs (x, y) in a table.",
+    "response": "Compare ratios y/x across pairs and conclude whether they are equal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For (2.86, 1.72) and (5.72, 4.58), compare \\frac{1.72}{2.86} and \\frac{4.58}{5.72}; since they are not equal, the relationship is not proportional.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_TA_a1_q2",
+      "G7_M1_TA_a1_q4",
+      "G7_M1_a1_q3",
+      "G7_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "set_up_unit_rate_from_scale",
+    "title": "Determine Unit Rate from Scale",
+    "description": "Use a known map-to-actual pair to find the amount represented by 1 unit on the map.",
+    "condition": "A map distance and corresponding actual distance are given.",
+    "response": "Divide actual distance by map distance to find actual distance per 1 unit on map.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$150 \\div \\tfrac{3}{4} = 150 \\times \\tfrac{4}{3} = 200$, so 1 inch represents 200 yards.",
+    "notes": "Uses multiplicative inverse of fractional map length.",
+    "question_ids": [
+      "G7_M1_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "draw_scaled_figure_on_grid",
+    "title": "Draw Scaled Figure on Grid",
+    "description": "Create a scale drawing by multiplying each side length by the given scale factor while preserving shape.",
+    "condition": "A figure on a grid and a scale factor k are given.",
+    "response": "Multiply each horizontal and vertical length by k and redraw the figure with proportional dimensions.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a side is 8 units and $k=\\tfrac{1}{4}$, draw the corresponding side as $8\\times\\tfrac{1}{4}=2$ units.",
+    "notes": "Requires maintaining similarity and orientation.",
+    "question_ids": [
+      "G7_M1_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "evaluate_proportional_equation",
+    "title": "Evaluate Proportional Equation",
+    "description": "Substitute a given input value into a proportional equation of the form y = kx to compute the output.",
+    "condition": "An equation of the form y = kx and a specific value for x.",
+    "response": "Multiply k by x to find y.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $d = 1.8t$, then at $t = 24$, $d = 1.8 \\times 24 = 43.2$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "difference_between_quantities",
+    "title": "Find Difference Between Quantities",
+    "description": "Find how much one quantity differs from another by subtraction.",
+    "condition": "Two numerical quantities are given for comparison.",
+    "response": "Subtract one from the other to find the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If one car travels $28.1$ miles per gallon and the other $24.2$, difference is $28.1-24.2=3.9$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_proportional_equation_form",
+    "title": "Identify Proportional Equation Form",
+    "description": "Recognize that a proportional relationship has the form y = kx with no added constant term.",
+    "condition": "Given an equation relating two variables.",
+    "response": "Determine it is proportional if and only if it can be written as y = kx.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$y = 3x$ is proportional; $y = x - 4$ is not proportional because of the constant term.",
+    "notes": "[merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M1_TA_a1_q2",
+      "G7_M1_a1_q3",
+      "G7_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_proportional_graph_origin",
+    "title": "Identify Proportional Graph by Origin",
+    "description": "Recognize that a graph represents a proportional relationship if it is a straight line passing through the origin.",
+    "condition": "Given the graph of a linear relationship between two variables.",
+    "response": "Determine it is proportional if the graph is a straight line that passes through (0,0).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "A line through (0,0) with constant slope represents y = kx, a proportional relationship.",
+    "notes": "Requires both linearity and passing through origin.",
+    "question_ids": [
+      "G7_M1_TA_a1_q2",
+      "G7_M1_TA_a1_q5",
+      "G7_M1_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_constant_rate_context",
+    "title": "Interpret Constant Rate in Context",
+    "description": "Recognize verbal descriptions indicating a constant multiplicative rate.",
+    "condition": "Given a real-world statement describing cost or quantity per unit.",
+    "response": "Determine whether the situation describes a proportional relationship with a constant rate.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "\"Every 3-pound bag costs $3.49\" implies a constant price per bag, so cost = 3.49n.",
+    "notes": "Non-proportional if fixed discounts or additive adjustments are included.",
+    "question_ids": [
+      "G7_M1_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_point_on_graph",
+    "title": "Interpret Point on Graph",
+    "description": "Interpret the meaning of a point (x, y) in context as representing y units for x units.",
+    "condition": "A labeled point (x, y) appears on a contextual graph.",
+    "response": "State that when the independent variable is x, the dependent variable is y in context.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Point $(1,12)$ means 12 laundry pods are used in 1 month.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M1_TB_a1_q4",
+      "G7_M1_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "match_graph_to_slope_equation",
+    "title": "Match Graph to Slope Equation",
+    "description": "Match a linear graph through the origin to its equation by determining the slope from the graph.",
+    "condition": "A graph of a line through the origin and multiple candidate equations of the form y = kx.",
+    "response": "Determine the slope from the graph and select the equation with matching k value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the graph shows rise 8 for run 3, slope $= \\frac{8}{3}$, so equation is $y = \\frac{8}{3}x$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "multiply_rate_by_quantity",
+    "title": "Multiply Rate by Quantity",
+    "description": "Find total amount by multiplying a constant rate by the number of units.",
+    "condition": "A constant rate k per unit and a quantity t are given.",
+    "response": "Compute total as k \u00d7 t.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If rate is $2.5$ dollars/hour for $4$ hours, cost is $2.5\\times4=10$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M4_TE_a1_q2",
+      "G6_M4_TE_a1_q3",
+      "G7_M1_TA_a1_q1",
+      "G7_M1_TA_a1_q5",
+      "G7_M1_TC_a1_q3",
+      "G7_M1_a1_q1",
+      "G7_M1_a1_q5",
+      "G7_M1_a1_q8",
+      "G7_M1_a2_q1",
+      "G7_M1_a2_q5",
+      "G7_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "multiply_scale_factors_sequential",
+    "title": "Multiply Sequential Scale Factors",
+    "description": "When a figure is scaled multiple times, the overall scale factor is the product of the individual scale factors.",
+    "condition": "A figure is scaled by factor k1 and then by factor k2.",
+    "response": "Compute overall factor as k1 \u00d7 k2 and multiply original length by this product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$24 \\times \\frac{3}{8} \\times \\frac{7}{8} = 24 \\times \\frac{21}{64} = \\frac{504}{64} = 7\\tfrac{7}{8}$.",
+    "notes": "Combines scaling steps multiplicatively.",
+    "question_ids": [
+      "G7_M1_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "round_down_to_whole_number",
+    "title": "Round Down to Maximum Whole Number",
+    "description": "When finding a maximum number of whole units under a limit, round the quotient down to the nearest whole number.",
+    "condition": "Given a division result representing number of units and asked for a maximum whole number not exceeding a total.",
+    "response": "Round the quotient down to the greatest whole number less than or equal to it.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $2000 \\div 14 \\approx 142.9$, then the maximum whole number of days is 142.",
+    "notes": "resp_type marked Constant because rounding down is the fixed action for this condition pattern???",
+    "question_ids": [
+      "G7_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "apply_scale_factor_area",
+    "title": "Scale Area by Square of Scale Factor",
+    "description": "When a figure is scaled by a linear scale factor k, its area is multiplied by k^2.",
+    "condition": "A figure is enlarged or reduced by a linear scale factor k and the area of the original or scale drawing is known.",
+    "response": "Multiply the given area by k^2 to find the new area (or divide by k^2 to reverse).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 1 inch represents 3 feet, then k = 3. If the drawing\u2019s area is 22 in^2, the actual area is $22 \\times 3^2 = 22 \\times 9 = 198$ square feet.",
+    "notes": "Assumes similarity and proportional scaling of area.",
+    "question_ids": [
+      "G7_M1_TC_a1_q5",
+      "G7_M1_a1_q6",
+      "G7_M1_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "scale_lengths_by_factor",
+    "title": "Scale Lengths by Factor",
+    "description": "Create a scale drawing by multiplying all corresponding lengths by the given scale factor.",
+    "condition": "A figure and a scale factor k are given.",
+    "response": "Multiply each original length by k to determine corresponding lengths in the scaled figure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If original side is $5$ and scale factor is $\\frac{3}{5}$, new side is $5\\times\\frac{3}{5}=3$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M1_a1_q7",
+      "G7_M1_a1_q9",
+      "G7_M1_a2_q7",
+      "G7_M1_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "solve_two_step_equation_division",
+    "title": "Solve Equation by Dividing Both Sides",
+    "description": "Solve equations of the form a = kt by dividing both sides by k.",
+    "condition": "Given an equation in the form a = kt, where k \u2260 0.",
+    "response": "Divide both sides by k to isolate t.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Given $2000 = 14t$, divide both sides by 14 to get $t = \\frac{2000}{14}$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_one_step_equation_division",
+    "title": "Solve One-Step Multiplication Equation",
+    "description": "Solve equations of the form a\u00b7x = b by dividing both sides by a.",
+    "condition": "An equation in the form a\u00b7x = b is given.",
+    "response": "Divide both sides by a to find x = b/a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule",
+    "example": "From $12t=100$, divide by 12: $t=\\frac{100}{12}=8\\tfrac{1}{3}$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_proportion_by_scaling",
+    "title": "Solve Proportion by Scaling",
+    "description": "Scale quantities multiplicatively to find an equivalent value in a proportional relationship.",
+    "condition": "Given two quantities that are proportional and one quantity is scaled to a new value.",
+    "response": "Multiply the corresponding quantity by the same scale factor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If \\frac{3}{4} lap corresponds to \\frac{2}{3} lap, then for 1 lap (\\frac{3}{2} times \\frac{2}{3}), Shawn runs \\frac{3}{4} \\cdot \\frac{3}{2} = \\frac{9}{8} = 1\\frac{1}{8} laps.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "verify_statement_against_proportional_model",
+    "title": "Verify Statement Using Proportional Model",
+    "description": "Determine whether a contextual statement is true or false by checking it against the proportional relationship or graph.",
+    "condition": "A statement describing a value relationship in a proportional context with known equation or graph.",
+    "response": "Substitute values or compare to graph to determine if the statement matches the model; declare True or False.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $s = 3.75n$, then at $n = 30$, $s = 112.5$, not 8, so the statement is False.",
+    "notes": "Response limited to True or False.",
+    "question_ids": [
+      "G7_M1_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "represent_proportional_relationship_equation",
+    "title": "Write Proportional Equation",
+    "description": "Represent a proportional relationship with an equation of the form y = kx using the constant of proportionality.",
+    "condition": "A proportional situation with known constant rate k between variables.",
+    "response": "Write the equation y = kx (or equivalent with contextual variables).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If each bottle earns $0.06$, then $r = 0.06n$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M1_TA_a1_q1",
+      "G7_M1_TB_a1_q1",
+      "G7_M1_TB_a1_q3",
+      "G7_M1_a1_q5",
+      "G7_M1_a1_q8"
+    ]
+  }
+]

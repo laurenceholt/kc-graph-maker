@@ -118,7 +118,10 @@
     "notes": "Relies on memorized conversion 1 yd = 3 ft.",
     "question_ids": [
       "G4_M2_TD_a1_q1",
-      "G4_M2_TD_a1_q3"
+      "G4_M2_TD_a1_q3",
+      "G6_M1_TD_a1_q2",
+      "G6_M1_TD_a1_q5",
+      "G6_M2_TF_a1_q4"
     ]
   },
   {
@@ -499,7 +502,7 @@
     ]
   },
   {
-    "kc_id": "compute_perimeter_rectangle",
+    "kc_id": "perimeter_rectangle",
     "title": "Perimeter of a Rectangle",
     "description": "Find the perimeter of a rectangle by adding all sides or using the formula 2(l + w).",
     "condition": "Given the length and width of a rectangle.",
@@ -520,7 +523,8 @@
       "G4_M2_TD_a1_q6",
       "G4_M2_a1_q7",
       "G4_M2_a2_q7",
-      "G5_M6_TC_a1_q6"
+      "G5_M6_TC_a1_q6",
+      "G8_M4_TB_a1_q5"
     ]
   },
   {

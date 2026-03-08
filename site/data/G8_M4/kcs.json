@@ -84,6 +84,17 @@
     "example": "$3x - 8x = -5x$.",
     "notes": "[merged: condition varies] [merged: response varies]",
     "question_ids": [
+      "G6_M4_TC_a1_q5",
+      "G6_M4_TD_a1_q2",
+      "G6_M4_a1_q3",
+      "G6_M4_a2_q3",
+      "G7_M3_TA_a1_q1",
+      "G7_M3_TA_a1_q2",
+      "G7_M3_TA_a1_q3",
+      "G7_M3_a1_q2",
+      "G7_M3_a1_q5",
+      "G7_M3_a2_q2",
+      "G7_M3_a2_q5",
       "G8_M4_TA_a1_q2",
       "G8_M4_TA_a1_q5",
       "G8_M4_TB_a1_q1",
@@ -185,27 +196,6 @@
     "question_ids": [
       "G8_M4_TD_a1_q4",
       "G8_M4_a2_q6"
-    ]
-  },
-  {
-    "kc_id": "distribute_multiplication",
-    "title": "Distribute Multiplication Over Addition",
-    "description": "Apply the distributive property to expand an expression.",
-    "condition": "Expression of form k(a + b).",
-    "response": "Rewrite as ka + kb.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$\\frac{1}{2}(4x-1)=2x-\\frac{1}{2}$.",
-    "notes": "[merged: condition varies] [merged: response varies]",
-    "question_ids": [
-      "G8_M4_TA_a1_q2",
-      "G8_M4_TA_a1_q5",
-      "G8_M4_TB_a1_q2",
-      "G8_M4_TB_a1_q3",
-      "G8_M4_a1_q2"
     ]
   },
   {
@@ -480,23 +470,6 @@
     ]
   },
   {
-    "kc_id": "perimeter_rectangle",
-    "title": "Perimeter of Rectangle",
-    "description": "Compute the perimeter of a rectangle from its side lengths.",
-    "condition": "A rectangle has two side lengths given (length and width).",
-    "response": "Compute perimeter as 2l + 2w.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If sides are $4x-2$ and $5x-5$, perimeter is $2(4x-2)+2(5x-5)$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_TB_a1_q5"
-    ]
-  },
-  {
     "kc_id": "identify_linear_no_solution",
     "title": "Recognize Contradictory Equation",
     "description": "Identify when simplifying a linear equation results in a false statement.",
@@ -637,26 +610,6 @@
     "question_ids": [
       "G8_M4_TA_a1_q2",
       "G8_M4_TA_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "solve_two_step_linear_equation",
-    "title": "Solve Multi-Step Linear Equation",
-    "description": "Isolate the variable in a linear equation using inverse operations after simplifying.",
-    "condition": "A linear equation in one variable with variable terms on both sides simplifies to ax = b.",
-    "response": "Perform inverse operations (add/subtract, divide) to solve for x.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "From $12x=10$, divide by 12 to get $x=\\tfrac{5}{6}$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_TB_a1_q2",
-      "G8_M4_TB_a1_q4",
-      "G8_M5_a2_q2",
-      "G8_M5_a2_q8"
     ]
   },
   {

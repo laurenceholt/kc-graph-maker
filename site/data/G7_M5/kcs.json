@@ -1,0 +1,758 @@
+[
+  {
+    "kc_id": "add_initial_and_installments",
+    "title": "Add Initial Payment and Installments",
+    "description": "Find the total paid on a payment plan by adding the initial payment to the total of monthly payments.",
+    "condition": "Given an initial payment and a fixed monthly payment over a specified number of months.",
+    "response": "Compute total = initial payment + (monthly payment \u00d7 number of months).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total = 50 + (19.35 \\times 15) = 50 + 290.25 = 340.25.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "add_item_totals",
+    "title": "Add Item Totals",
+    "description": "Add monetary amounts for multiple items to find a total cost.",
+    "condition": "Given two or more monetary amounts representing item prices.",
+    "response": "Add the amounts to compute the total cost.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$11.80 + 21.00 = 32.80$",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "add_part_to_whole",
+    "title": "Add Parts to Find Whole",
+    "description": "Compute the total quantity by adding component amounts.",
+    "condition": "Given two or more part quantities that make a whole (e.g., 3 oz and 7 oz).",
+    "response": "Add the quantities to find the total (e.g., 3 + 7 = 10).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total paint = $3 + 7 = 10$ ounces.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "add_percent_to_base",
+    "title": "Add Percent Amount to Base",
+    "description": "Find a total amount after adding a percent of a base value (e.g., markup or tip).",
+    "condition": "Given a base amount and a percent increase applied to that same base.",
+    "response": "Compute percent amount = base \u00d7 percent; then total = base + percent amount.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Tip = 9 \\times 0.15 = 1.35; Total = 9 + 1.35 = 10.35.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TD_a1_q2",
+      "G7_M5_TD_a1_q5",
+      "G7_M5_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "apply_percent_decrease",
+    "title": "Apply Percent Decrease",
+    "description": "Multiply an original amount by (1 \u2212 decimal form of percent) to find the remaining amount after a percent decrease.",
+    "condition": "An original amount decreases by p%.",
+    "response": "Compute original \u00d7 (1 \u2212 p_decimal).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "After a 15% discount on $x$: $x(1 - 0.15) = 0.85x$.",
+    "notes": "Key for multi-step percent decrease problems.",
+    "question_ids": [
+      "G7_M5_TC_a1_q1",
+      "G7_M5_TC_a1_q3",
+      "G7_M5_TD_a1_q2",
+      "G7_M5_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "multiply_rate_by_time_simple_interest",
+    "title": "Apply Simple Interest Formula (One Year)",
+    "description": "For simple interest over one year, multiply principal by annual rate.",
+    "condition": "Given a principal, an annual simple interest rate, and time = 1 year.",
+    "response": "Compute interest = principal \u00d7 annual rate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "I = 80 \\times 0.014 = 1.12.",
+    "notes": "Special case of I = Prt with t = 1.",
+    "question_ids": [
+      "G7_M5_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "combine_weighted_percents",
+    "title": "Combine Weighted Percentages",
+    "description": "Find overall percent by computing part quantities and dividing by total.",
+    "condition": "Given multiple groups with different percentages and quantities (e.g., 10 oz at 30% yellow and 6 oz at 50% yellow).",
+    "response": "Compute each part amount, add them, divide by total, and convert to percent.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Yellow amount = $0.30(10) + 0.50(6) = 3 + 3 = 6$ oz. Total = 16 oz. Percent yellow = $6/16 = 37.5\\%$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TC_a1_q2",
+      "G7_M5_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compound_percent_change",
+    "title": "Compound Successive Percent Changes",
+    "description": "Apply sequential percent increases or decreases multiplicatively.",
+    "condition": "Given an initial amount and two successive percent changes (e.g., \u22124.5% then +2%).",
+    "response": "Multiply by $(1 - r_1)$ and then by $(1 + r_2)$ and compare to original to find net percent change.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Let September = 100. August = $100(0.955)=95.5$. October = $100(1.02)=102$. Increase from August to October = $\\frac{102-95.5}{95.5}\\approx7\\%$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_absolute_error",
+    "title": "Compute Absolute Error",
+    "description": "Find the absolute error by taking the absolute value of the difference between estimate and actual value.",
+    "condition": "Given an estimated value and an actual value.",
+    "response": "Compute |estimate \u2212 actual|.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "|51 - 48| = 3.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_percent_error",
+    "title": "Compute Percent Error",
+    "description": "Calculate percent error as absolute error divided by actual value, multiplied by 100.",
+    "condition": "Given an absolute error and the actual value.",
+    "response": "Compute (absolute error \u00f7 actual value) \u00d7 100%.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "(3 \\div 48) \\times 100\\% = 6.25\\%.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_percent_increase",
+    "title": "Compute Percent Increase",
+    "description": "Find percent increase by dividing the increase by the original amount and multiplying by 100.",
+    "condition": "Given an original amount and a new larger amount.",
+    "response": "Compute ((new \u2212 original) \u00f7 original) \u00d7 100%.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "((340.25 - 321) \\div 321) \\times 100\\% \\approx 6\\%.",
+    "notes": "Rounding to nearest percent required.",
+    "question_ids": [
+      "G7_M5_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compute_percent_of_quantity",
+    "title": "Compute Percent of a Quantity",
+    "description": "Find a percent of a given quantity by multiplying the quantity by the percent expressed as a decimal.",
+    "condition": "A statement of the form \"a% of b\" or equivalent context requiring part = percent \u00d7 whole.",
+    "response": "Compute a/100 \u00d7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Find 20% of 50: $0.20 \\times 50 = 10$.",
+    "notes": "Core percent computation skill. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M5_TA_a1_q1",
+      "G7_M5_TA_a1_q4",
+      "G7_M5_TB_a1_q1",
+      "G7_M5_TB_a1_q4",
+      "G7_M5_TB_a1_q5",
+      "G7_M5_TC_a1_q2",
+      "G7_M5_TC_a1_q5",
+      "G7_M5_TD_a1_q1",
+      "G7_M5_TD_a1_q2",
+      "G7_M5_TD_a1_q4",
+      "G7_M5_TD_a1_q5",
+      "G7_M5_TE_a1_q1",
+      "G7_M5_TE_a1_q2",
+      "G7_M5_TE_a1_q3",
+      "G7_M5_a1_q2",
+      "G7_M5_a1_q3",
+      "G7_M5_a1_q7",
+      "G7_M5_a1_q8",
+      "G7_M5_a2_q2",
+      "G7_M5_a2_q3",
+      "G7_M5_a2_q5",
+      "G7_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "convert_decimal_to_percent",
+    "title": "Convert Decimal to Percent",
+    "description": "Convert a decimal number to a percent by multiplying by 100 and adding the percent symbol.",
+    "condition": "Given a decimal value d.",
+    "response": "Compute 100d and express the result with a percent sign.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.375 = 37.5\\%$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q5",
+      "G7_M5_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "convert_fraction_to_percent",
+    "title": "Convert Fraction to Percent",
+    "description": "Convert a fraction to a percent by expressing it as an equivalent fraction over 100 or converting to decimal then multiplying by 100.",
+    "condition": "A fraction representing part of a whole that must be expressed as a percent.",
+    "response": "Compute (fraction) \u00d7 100% and simplify.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{3}{10} = 0.3 = 30\\%$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M1_TE_a1_q1",
+      "G7_M5_TA_a1_q6",
+      "G7_M5_a1_q3",
+      "G7_M5_a2_q3",
+      "G7_M5_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "scale_factor_percent_to_multiplier",
+    "title": "Convert Percent Scale Factor to Multiplier",
+    "description": "Interpret a percent scale factor as a decimal multiplier for resizing.",
+    "condition": "Given a scale factor of r%.",
+    "response": "Use r/100 as the multiplicative scale factor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A 175\\% scale factor corresponds to multiplying lengths by 1.75.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_a1_q4",
+      "G7_M5_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_percent_to_decimal",
+    "title": "Convert Percent to Decimal",
+    "description": "Convert a percent to its decimal form by dividing by 100 (move decimal point two places left).",
+    "condition": "A number written with a percent sign.",
+    "response": "Divide the number by 100 to express it as a decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$83\\tfrac{1}{3}\\% = 0.8333\\ldots$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M1_TE_a1_q1",
+      "G6_M1_a1_q8",
+      "G6_M1_a1_q9",
+      "G6_M1_a2_q8",
+      "G7_M5_TA_a1_q4",
+      "G7_M5_TB_a1_q3",
+      "G7_M5_TB_a1_q4",
+      "G7_M5_TC_a1_q1",
+      "G7_M5_TC_a1_q2",
+      "G7_M5_TC_a1_q3",
+      "G7_M5_TC_a1_q4",
+      "G7_M5_TC_a1_q5",
+      "G7_M5_TC_a1_q6",
+      "G7_M5_TD_a1_q1",
+      "G7_M5_TD_a1_q2",
+      "G7_M5_TD_a1_q4",
+      "G7_M5_TD_a1_q5",
+      "G7_M5_TE_a1_q2",
+      "G7_M5_a1_q1",
+      "G7_M5_a1_q6",
+      "G7_M5_a1_q9",
+      "G7_M5_a2_q1",
+      "G7_M5_a2_q6",
+      "G7_M5_a2_q7",
+      "G7_M5_a2_q8",
+      "G7_M5_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "percent_of_subgroup",
+    "title": "Find Percent of a Subgroup Within Whole",
+    "description": "Compute overall percent when given percent of a subgroup.",
+    "condition": "Given total percent of a group and percent within that group (e.g., 80% read fiction and 20% of them read news).",
+    "response": "Multiply the subgroup percent by the total percent.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Percent who read fiction and news = $0.80 \\times 0.20 = 0.16 = 16\\%$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "percent_remainder",
+    "title": "Find Remaining Percent",
+    "description": "Determine the remaining percent after given parts are subtracted from 100%.",
+    "condition": "Given one or more percentages that make up part of a whole.",
+    "response": "Compute 100% minus the sum of the given percentages.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 45\\% and 20\\% are paid, the remainder is \\(100\\% - 65\\% = 35\\%\\).",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "form_discount_equation",
+    "title": "Form Equation for Discounted Price",
+    "description": "Set up an equation equating discounted price to original price times remaining percent.",
+    "condition": "Given discounted price and percent off, with variable representing original price.",
+    "response": "Write equation discounted = (1 \u2212 p_decimal)x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "With 15% off and discounted price $9.60$: $9.60 = 0.85x$.",
+    "notes": "Combines percent decrease structure with equation representation.",
+    "question_ids": [
+      "G7_M5_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "form_increase_expression",
+    "title": "Form Expression for Percent Increase",
+    "description": "Represent a quantity increased by r% as a single multiplicative term.",
+    "condition": "A quantity described as increased by r%.",
+    "response": "Write (1 + r/100) \u00d7 original quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Increase $a$ by 27%: $1.27a$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TC_a1_q4",
+      "G7_M5_a1_q6",
+      "G7_M5_a1_q7",
+      "G7_M5_a1_q9",
+      "G7_M5_a2_q1",
+      "G7_M5_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "identify_part_whole_percent",
+    "title": "Identify Part, Whole, and Percent",
+    "description": "Determine which quantity in a situation represents the part, the whole, and the percent.",
+    "condition": "Given a contextual percent problem describing quantities and relationships.",
+    "response": "Classify each quantity as part, whole, or percent.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If a student types 43 of 55 words correctly, then part = 43, whole = 55, percent = unknown.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_percent_as_ratio",
+    "title": "Interpret Percent as Per Hundred",
+    "description": "Understand percent as a ratio out of 100 and use it to form equations.",
+    "condition": "Given a statement such as \"p% of W is P.\"",
+    "response": "Write $\\frac{P}{W} = \\frac{p}{100}$ or $P = \\frac{p}{100}W$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 10% of a distance is 0.5 miles, then $0.5 = 0.10W$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q1",
+      "G7_M5_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_percent_comparison",
+    "title": "Interpret Percent Comparison of Quantities",
+    "description": "Interpret statements like \"x% more than\" or \"x% of what\" in terms of multiplication relative to a reference quantity.",
+    "condition": "A comparison statement involving \"x% more than\" or \"x% of\" another amount.",
+    "response": "Translate to multiplicative expression relative to the reference (e.g., 1.12p or 0.15 \u00d7 amount).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "12% more than $p$ is $1.12p$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_a1_q3",
+      "G7_M5_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_quantity",
+    "title": "Multiply Unit Price by Quantity",
+    "description": "Find total cost or savings by multiplying a unit amount by the number of items.",
+    "condition": "Given a unit price or savings amount and a quantity greater than 1.",
+    "response": "Multiply the unit amount by the quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$11.15 \\times 2 = 22.30$",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TB_a1_q1",
+      "G7_M5_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "sort_percents_order",
+    "title": "Order Percent Values",
+    "description": "Arrange percent values from least to greatest.",
+    "condition": "Given multiple percent values.",
+    "response": "Compare numerical values and list in ascending order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Order $16\\%, 20\\%, 34\\%, 80\\%$ from least to greatest.",
+    "notes": "Comparison skill often intuitive.",
+    "question_ids": [
+      "G7_M5_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "percent_composition_ratio",
+    "title": "Percent from Part-to-Whole Ratio",
+    "description": "Compute percent concentration by dividing part by total and converting to percent.",
+    "condition": "Given part amount and total amount of a mixture.",
+    "response": "Compute (part \u00f7 total) \u00d7 100%.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Soap solution: $\\frac{1}{1+4}=\\frac{1}{5}=20\\%$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TE_a1_q1",
+      "G7_M5_TE_a1_q5",
+      "G7_M5_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "percent_decrease_expression",
+    "title": "Represent Percent Decrease with Multiplier",
+    "description": "Write a single-term expression for a quantity after a percent decrease.",
+    "condition": "Given an initial value a and a percent decrease r%.",
+    "response": "Write a(1 \u2212 r) using r as a decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A 19\\% decrease from c is \\(0.81c\\).",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "round_percent_to_nearest_tenth",
+    "title": "Round Percent to Nearest Tenth",
+    "description": "Round a percent value to the nearest tenth of a percent.",
+    "condition": "Given a percent value with more than one decimal place.",
+    "response": "Apply standard rounding rules to the tenths place.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$6.486\\% \\approx 6.5\\%$",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_cent",
+    "title": "Round to Nearest Cent",
+    "description": "Round a monetary amount to the nearest hundredth (cent).",
+    "condition": "A decimal representing dollars with more than two decimal places.",
+    "response": "Round to two decimal places using standard rounding rules.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "$22.595 \\approx 22.60$.",
+    "notes": "Response format fixed to two decimal places.",
+    "question_ids": [
+      "G7_M5_a1_q3",
+      "G7_M5_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_percent",
+    "title": "Round to Nearest Percent",
+    "description": "Round a decimal percent to the nearest whole percent.",
+    "condition": "Given a percent value with decimal places and instruction to round to nearest percent.",
+    "response": "Round to the nearest whole number percent.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "5.99\\% \\approx 6\\%.",
+    "notes": "Rounding convention treated as procedural. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M5_TD_a1_q3",
+      "G7_M5_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "simplify_equivalent_percent_expression",
+    "title": "Simplify Equivalent Percent Expressions",
+    "description": "Recognize and simplify equivalent expressions representing percent increase.",
+    "condition": "Given expressions like a + ra and (1 + r)a.",
+    "response": "Factor or expand to show equivalence (e.g., a + ra = (1 + r)a).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "\\(p + 0.18p = 1.18p\\).",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_a2_q1",
+      "G7_M5_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "divide_to_solve_linear_equation",
+    "title": "Solve Linear Equation by Division",
+    "description": "Solve equations of the form a = bx by dividing both sides by b.",
+    "condition": "Equation in the form a = b x, where b \u2260 0.",
+    "response": "Compute x = a \u00f7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "From $9.60 = 0.85x$, $x = 9.60 \u00f7 0.85 = 11.29$.",
+    "notes": "Also used when reversing scale factor.",
+    "question_ids": [
+      "G7_M5_TC_a1_q1",
+      "G7_M5_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "solve_percent_equation_for_unknown",
+    "title": "Solve Percent Equation for Unknown",
+    "description": "Solve equations of the form part = percent \u00d7 whole for an unknown quantity.",
+    "condition": "An equation such as a = r% \u00d7 x or r% \u00d7 x = a with one unknown.",
+    "response": "Isolate the unknown by dividing or multiplying appropriately.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$4.55 = 0.20x \\Rightarrow x = \\frac{4.55}{0.20} = 22.75$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_percent_equation_for_whole",
+    "title": "Solve Percent Equation for Whole",
+    "description": "Find the whole when given the part and percent.",
+    "condition": "Given part P and percent p%, with unknown whole W.",
+    "response": "Set up $P = \\frac{p}{100}W$ and solve for W.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $3 = 0.25W$, then $W = 12$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q1",
+      "G7_M5_TA_a1_q2",
+      "G7_M5_TB_a1_q3",
+      "G7_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "solve_proportion_cross_multiply",
+    "title": "Solve Proportion by Cross Multiplication",
+    "description": "Solve an equation of the form $\\frac{a}{b} = \\frac{c}{d}$ by cross multiplying.",
+    "condition": "Given a proportion with one variable.",
+    "response": "Compute $ad = bc$ and solve for the variable.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $\\frac{x}{4} = \\frac{28}{16}$, cross multiply: $16x = 112$, so $x = 7$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "subtract_discount_from_original",
+    "title": "Subtract Discount from Original Price",
+    "description": "Find the discounted price by subtracting the discount amount from the original price.",
+    "condition": "Given an original price and the discount amount.",
+    "response": "Subtract the discount from the original price.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$4.00 - 0.16 = 3.84$",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TB_a1_q2",
+      "G7_M5_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "add_fixed_discount",
+    "title": "Subtract Fixed Amount Discount",
+    "description": "Subtract a fixed dollar amount from the original price to find the discounted price.",
+    "condition": "Original price and a coupon for a fixed dollar amount off (e.g., $15 off $65).",
+    "response": "Compute original price minus fixed discount (e.g., 65 - 15).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "From $65 with $15 off: $65 - 15 = 50$.",
+    "notes": "Used before applying percent discount in optimal order.",
+    "question_ids": [
+      "G7_M5_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "use_constant_of_proportionality",
+    "title": "Use Constant of Proportionality from Table",
+    "description": "Determine and apply the constant ratio between two proportional quantities in a table.",
+    "condition": "Given paired values (x, y) in a proportional relationship.",
+    "response": "Compute k = y/x and use y = kx to find unknown values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $\\frac{0.97}{0.8} = 1.2125$, then for 12 miles: $12 \\times 1.2125 = 14.55$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "scale_similar_figures_ratio",
+    "title": "Use Ratios of Corresponding Sides in Similar Figures",
+    "description": "Set up and solve proportions using corresponding side lengths of similar figures.",
+    "condition": "Given two similar figures with known corresponding side lengths and one unknown.",
+    "response": "Write a proportion of corresponding sides and solve for the unknown.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $\\frac{x}{4} = \\frac{28}{16}$, then $x = 7$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M5_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "reverse_scale_factor",
+    "title": "Use Scale Factor to Find Original Length",
+    "description": "When a figure is scaled by a known factor, divide the scaled length by the scale factor to find the original length.",
+    "condition": "Scaled length given and scale factor k% (>100% or <100%).",
+    "response": "Convert k% to decimal and compute original = scaled \u00f7 k_decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If scaled length is $2.4$ in at $160\\%$, original $= 2.4 \u00f7 1.6 = 1.5$.",
+    "notes": "Requires interpreting 160% as 1.6.",
+    "question_ids": [
+      "G7_M5_TC_a1_q6"
+    ]
+  }
+]

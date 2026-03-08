@@ -1,0 +1,472 @@
+[
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G6_M6/G6_M6_a1_q1.png",
+    "image_width": 1700,
+    "image_height": 659,
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 2,
+    "image": "images/G6_M6/G6_M6_a1_q2.png",
+    "image_width": 1700,
+    "image_height": 3399,
+    "source_pages": [
+      2,
+      3
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G6_M6/G6_M6_a1_q3.png",
+    "image_width": 1700,
+    "image_height": 2461,
+    "source_pages": [
+      4,
+      5
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 4,
+    "image": "images/G6_M6/G6_M6_a1_q4.png",
+    "image_width": 1700,
+    "image_height": 1955,
+    "source_pages": [
+      5,
+      6
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 5,
+    "image": "images/G6_M6/G6_M6_a1_q5.png",
+    "image_width": 1700,
+    "image_height": 1401,
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 1,
+    "question_number": 6,
+    "image": "images/G6_M6/G6_M6_a1_q6.png",
+    "image_width": 1700,
+    "image_height": 1442,
+    "source_pages": [
+      8
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 1,
+    "image": "images/G6_M6/G6_M6_a2_q1.png",
+    "image_width": 1700,
+    "image_height": 663,
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 2,
+    "image": "images/G6_M6/G6_M6_a2_q2.png",
+    "image_width": 1700,
+    "image_height": 3416,
+    "source_pages": [
+      10,
+      11
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 3,
+    "image": "images/G6_M6/G6_M6_a2_q3.png",
+    "image_width": 1700,
+    "image_height": 2457,
+    "source_pages": [
+      12,
+      13
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 4,
+    "image": "images/G6_M6/G6_M6_a2_q4.png",
+    "image_width": 1700,
+    "image_height": 1997,
+    "source_pages": [
+      13,
+      14
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 5,
+    "image": "images/G6_M6/G6_M6_a2_q5.png",
+    "image_width": 1700,
+    "image_height": 1376,
+    "source_pages": [
+      15
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_AssessmentSampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": null,
+    "assessment_number": 2,
+    "question_number": 6,
+    "image": "images/G6_M6/G6_M6_a2_q6.png",
+    "image_width": 1700,
+    "image_height": 1321,
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TA_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TA",
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G6_M6/G6_M6_TA_a1_q1.png",
+    "image_width": 1700,
+    "image_height": 778,
+    "source_pages": [
+      13
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TA_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TA",
+    "assessment_number": 1,
+    "question_number": 2,
+    "image": "images/G6_M6/G6_M6_TA_a1_q2.png",
+    "image_width": 1700,
+    "image_height": 1479,
+    "source_pages": [
+      14
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TA_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TA",
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G6_M6/G6_M6_TA_a1_q3.png",
+    "image_width": 1700,
+    "image_height": 1541,
+    "source_pages": [
+      15
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TA_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TA",
+    "assessment_number": 1,
+    "question_number": 4,
+    "image": "images/G6_M6/G6_M6_TA_a1_q4.png",
+    "image_width": 1700,
+    "image_height": 1342,
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TA_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TA",
+    "assessment_number": 1,
+    "question_number": 5,
+    "image": "images/G6_M6/G6_M6_TA_a1_q5.png",
+    "image_width": 1700,
+    "image_height": 1605,
+    "source_pages": [
+      17
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TA_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TA",
+    "assessment_number": 1,
+    "question_number": 6,
+    "image": "images/G6_M6/G6_M6_TA_a1_q6.png",
+    "image_width": 1700,
+    "image_height": 507,
+    "source_pages": [
+      18
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TB_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TB",
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G6_M6/G6_M6_TB_a1_q1.png",
+    "image_width": 1700,
+    "image_height": 1166,
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TB_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TB",
+    "assessment_number": 1,
+    "question_number": 2,
+    "image": "images/G6_M6/G6_M6_TB_a1_q2.png",
+    "image_width": 1700,
+    "image_height": 1730,
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TB_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TB",
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G6_M6/G6_M6_TB_a1_q3.png",
+    "image_width": 1700,
+    "image_height": 1047,
+    "source_pages": [
+      13
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TB_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TB",
+    "assessment_number": 1,
+    "question_number": 4,
+    "image": "images/G6_M6/G6_M6_TB_a1_q4.png",
+    "image_width": 1700,
+    "image_height": 1173,
+    "source_pages": [
+      14
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TB_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TB",
+    "assessment_number": 1,
+    "question_number": 5,
+    "image": "images/G6_M6/G6_M6_TB_a1_q5.png",
+    "image_width": 1700,
+    "image_height": 975,
+    "source_pages": [
+      15
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TC_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TC",
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G6_M6/G6_M6_TC_a1_q1.png",
+    "image_width": 1700,
+    "image_height": 2268,
+    "source_pages": [
+      9,
+      10
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TC_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TC",
+    "assessment_number": 1,
+    "question_number": 2,
+    "image": "images/G6_M6/G6_M6_TC_a1_q2.png",
+    "image_width": 1700,
+    "image_height": 1146,
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TC_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TC",
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G6_M6/G6_M6_TC_a1_q3.png",
+    "image_width": 1700,
+    "image_height": 1000,
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TC_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TC",
+    "assessment_number": 1,
+    "question_number": 4,
+    "image": "images/G6_M6/G6_M6_TC_a1_q4.png",
+    "image_width": 1700,
+    "image_height": 561,
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TC_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TC",
+    "assessment_number": 1,
+    "question_number": 5,
+    "image": "images/G6_M6/G6_M6_TC_a1_q5.png",
+    "image_width": 1700,
+    "image_height": 1238,
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TD_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TD",
+    "assessment_number": 1,
+    "question_number": 1,
+    "image": "images/G6_M6/G6_M6_TD_a1_q1.png",
+    "image_width": 1700,
+    "image_height": 1046,
+    "source_pages": [
+      13
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TD_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TD",
+    "assessment_number": 1,
+    "question_number": 2,
+    "image": "images/G6_M6/G6_M6_TD_a1_q2.png",
+    "image_width": 1700,
+    "image_height": 1263,
+    "source_pages": [
+      14
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TD_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TD",
+    "assessment_number": 1,
+    "question_number": 3,
+    "image": "images/G6_M6/G6_M6_TD_a1_q3.png",
+    "image_width": 1700,
+    "image_height": 1356,
+    "source_pages": [
+      15
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TD_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TD",
+    "assessment_number": 1,
+    "question_number": 4,
+    "image": "images/G6_M6/G6_M6_TD_a1_q4.png",
+    "image_width": 1700,
+    "image_height": 2777,
+    "source_pages": [
+      16,
+      17
+    ]
+  },
+  {
+    "filename": "EM2_G6_M6_TD_SampleSolutions_WCAG21.pdf",
+    "grade": "G6",
+    "module": "M6",
+    "topic": "TD",
+    "assessment_number": 1,
+    "question_number": 5,
+    "image": "images/G6_M6/G6_M6_TD_a1_q5.png",
+    "image_width": 1700,
+    "image_height": 1002,
+    "source_pages": [
+      18
+    ]
+  }
+]

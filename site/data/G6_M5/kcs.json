@@ -1,0 +1,619 @@
+[
+  {
+    "kc_id": "add_areas_of_parts",
+    "title": "Add Areas of Composite Parts",
+    "description": "Find the total area of a composite figure by summing the areas of its non-overlapping parts.",
+    "condition": "Areas of multiple non-overlapping regions of a figure are known.",
+    "response": "Add the individual areas to obtain the total area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If a figure is composed of a rectangle with area $52.5$ and two triangles each with area $5.25$, then total area $= 52.5 + 5.25 + 5.25 = 63$.",
+    "notes": "\u2014",
+    "question_ids": [
+      "G6_M5_TA_a1_q4",
+      "G6_M5_a1_q10",
+      "G6_M5_a1_q2",
+      "G6_M5_a1_q6",
+      "G6_M5_a1_q9",
+      "G6_M5_a2_q10",
+      "G6_M5_a2_q2",
+      "G6_M5_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "area_parallelogram_base_height",
+    "title": "Area of a Parallelogram",
+    "description": "Calculate the area of a parallelogram by multiplying its base by its corresponding height.",
+    "condition": "Given a parallelogram with a specified base and its perpendicular height.",
+    "response": "Compute area as base \u00d7 height.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For base $18$ cm and height $21.6$ cm, area $=18\\times21.6=388.8\\text{ cm}^2$.",
+    "notes": "Height must be perpendicular to the chosen base.",
+    "question_ids": [
+      "G6_M5_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "area_rectangle",
+    "title": "Area of a Rectangle",
+    "description": "Compute the area of a rectangle using length multiplied by width.",
+    "condition": "A rectangle with given length $l$ and width $w$.",
+    "response": "Compute $A = l \\times w$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $l=12$ and $w=3\\frac{1}{4}$, then $A = 12 \\times 3\\frac{1}{4} = 39$.",
+    "notes": "\u2014 [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M5_TB_a1_q2",
+      "G5_M5_TB_a1_q4",
+      "G5_M5_TB_a1_q6",
+      "G5_M5_a1_q4",
+      "G5_M5_a1_q6",
+      "G5_M5_a2_q4",
+      "G5_M5_a2_q6",
+      "G5_M5_a2_q8",
+      "G6_M5_TA_a1_q4",
+      "G6_M5_TB_a1_q2",
+      "G6_M5_TB_a1_q4",
+      "G6_M5_TD_a1_q3",
+      "G6_M5_a1_q10",
+      "G6_M5_a1_q2",
+      "G6_M5_a1_q6",
+      "G6_M5_a1_q9",
+      "G6_M5_a2_q10",
+      "G6_M5_a2_q2",
+      "G6_M5_a2_q6",
+      "G6_M5_a2_q9",
+      "G7_M1_a1_q6",
+      "G7_M1_a2_q6",
+      "G7_M4_TD_a1_q1",
+      "G7_M4_TD_a1_q2",
+      "G7_M4_TD_a1_q3",
+      "G7_M4_TD_a1_q4",
+      "G7_M4_TD_a1_q5",
+      "G7_M4_a1_q2",
+      "G7_M4_a1_q4",
+      "G7_M4_a2_q2",
+      "G7_M4_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "area_trapezoid",
+    "title": "Area of a Trapezoid",
+    "description": "Compute the area of a trapezoid using the average of the bases times the height.",
+    "condition": "A trapezoid with bases $b_1, b_2$ and height $h$.",
+    "response": "Compute $A = \\tfrac{1}{2}(b_1 + b_2)h$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $b_1=16$, $b_2=4$, and $h=12$, then $A=\\tfrac{1}{2}(16+4)(12)=120$.",
+    "notes": "\u2014 [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M5_TB_a1_q3",
+      "G6_M5_a1_q5",
+      "G6_M5_a2_q5",
+      "G7_M4_TD_a1_q2",
+      "G7_M4_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "area_triangle",
+    "title": "Area of a Triangle",
+    "description": "Compute the area of a triangle using one-half the product of base and height.",
+    "condition": "A triangle with base $b$ and corresponding height $h$.",
+    "response": "Compute $A = \\tfrac{1}{2}bh$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $b=16$ and $h=5.8$, then $A=\\tfrac{1}{2}(16)(5.8)=46.4$.",
+    "notes": "\u2014 [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M5_TA_a1_q1",
+      "G6_M5_TA_a1_q3",
+      "G6_M5_TA_a1_q4",
+      "G6_M5_TB_a1_q2",
+      "G6_M5_TB_a1_q3",
+      "G6_M5_TB_a1_q4",
+      "G6_M5_TB_a1_q5",
+      "G6_M5_a1_q1",
+      "G6_M5_a1_q10",
+      "G6_M5_a1_q6",
+      "G6_M5_a2_q1",
+      "G6_M5_a2_q10",
+      "G6_M5_a2_q6",
+      "G7_M4_TD_a1_q1",
+      "G7_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "combine_adjacent_segments",
+    "title": "Combine Adjacent Segment Lengths",
+    "description": "Find a full base length by adding adjacent collinear segment lengths.",
+    "condition": "Given two or more adjacent segments that form a single straight base.",
+    "response": "Add the segment lengths to obtain the total base length.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a base is split into $16$ in and $8$ in, total base $=16+8=24$ in.",
+    "notes": "Segments must be collinear parts of the same base.",
+    "question_ids": [
+      "G6_M5_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_lateral_area_rect_prism",
+    "title": "Compute Lateral Area of a Rectangular Prism",
+    "description": "Find the total area of the four side faces of a rectangular prism by summing the areas of the rectangular sides (excluding top and bottom).",
+    "condition": "Given a right rectangular prism with length l, width w, and height h, and asked for the area of the sides only (not top or bottom).",
+    "response": "Compute 2lh + 2wh.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For a prism with $l=36$, $w=24$, $h=8$, lateral area $=2(36)(8)+2(24)(8)=576+384=960$ square inches.",
+    "notes": "Used in Part A to find painted blue area.",
+    "question_ids": [
+      "G6_M5_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_paint_required_from_coverage",
+    "title": "Compute Paint Required from Coverage Rate",
+    "description": "Determine the amount of paint needed by dividing total area by the coverage per unit and rounding as required.",
+    "condition": "Given total area A and coverage rate c (area per unit), and asked for number of units needed.",
+    "response": "Compute A \u00f7 c and round to the specified place value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $A=960$ sq in and $c=125$ sq in/oz, then $960 \\div 125 = 7.68 \\approx 7.7$ ounces.",
+    "notes": "Includes rounding to nearest tenth.",
+    "question_ids": [
+      "G6_M5_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_surface_area_composite_solid",
+    "title": "Compute Surface Area of a Composite Solid",
+    "description": "Add the areas of all exterior faces of a solid composed of multiple prisms or pyramids, ensuring no internal faces are included.",
+    "condition": "Given a composite solid (e.g., rectangular prism attached to triangular prism) with dimensions.",
+    "response": "Sum the areas of all exterior rectangular and triangular faces using appropriate area formulas.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Surface area $=2(12)(12)+3(12)(30)+(15)(30)+(9)(30)+2\\left(\\tfrac{1}{2}(9)(12)\\right)$.",
+    "notes": "Requires excluding shared interior faces.",
+    "question_ids": [
+      "G6_M5_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "surface_area_square_pyramid",
+    "title": "Compute Surface Area of a Square Pyramid from Net",
+    "description": "Find total surface area by adding the area of the square base and four congruent triangular faces.",
+    "condition": "Given a net of a square pyramid with base side length s and triangular face height h.",
+    "response": "Compute $s^2 + 4\\left(\\tfrac{1}{2}sh\\right)$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $s=16$ and $h=12$, surface area $=16^2+4\\left(\\tfrac{1}{2}(16)(12)\\right)=256+384=640$ cm$^2$.",
+    "notes": "Uses area formulas for squares and triangles.",
+    "question_ids": [
+      "G6_M5_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compute_cube_volume",
+    "title": "Compute Volume of a Cube",
+    "description": "Calculate the volume of a cube by cubing the side length.",
+    "condition": "Given the side length of a cube.",
+    "response": "Compute side \u00d7 side \u00d7 side (or side\u00b3).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If side length is $\\tfrac{2}{3}$ ft, then $V = \\left(\\tfrac{2}{3}\\right)^3 = \\tfrac{8}{27}$ ft\u00b3.",
+    "notes": "Special case of prism volume.",
+    "question_ids": [
+      "G6_M5_TD_a1_q1",
+      "G6_M5_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "count_unit_cubes_by_volume_ratio",
+    "title": "Count Unit Cubes by Volume Ratio",
+    "description": "Determine how many smaller cubes fit in a prism by dividing total volume by volume of one cube.",
+    "condition": "Volume of a large prism and edge length of a smaller cube are known.",
+    "response": "Compute number of cubes as $\\dfrac{V_{\\text{prism}}}{V_{\\text{cube}}}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If prism volume $=156.75$ in$^3$ and cube volume $=(\\tfrac{1}{4})^3=\\tfrac{1}{64}$, then number $=156.75 \\div \\tfrac{1}{64}=10032$.",
+    "notes": "Uses division by a fraction.",
+    "question_ids": [
+      "G6_M5_TD_a1_q1",
+      "G6_M5_a1_q3",
+      "G6_M5_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "count_units_on_coordinate_plane",
+    "title": "Count Units on Coordinate Plane",
+    "description": "Determine horizontal or vertical side lengths by subtracting coordinate values.",
+    "condition": "Two points share the same x- or y-coordinate on a grid.",
+    "response": "Find side length by taking the absolute difference of the other coordinate values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Distance between $(1,5)$ and $(1,-4)$ is $|5-(-4)|=9$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "decompose_composite_shape",
+    "title": "Decompose Composite Figure",
+    "description": "Break a complex figure into simpler shapes (rectangles and/or triangles) to compute total area.",
+    "condition": "A composite planar figure with identifiable simpler subregions.",
+    "response": "Partition into known shapes, compute each area, and combine appropriately (add or subtract).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A hexagon inside a $20 \\times 20$ square can be found by $400 - 4\\left(\\frac{1}{2}(4)(10)\\right)$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_TB_a1_q2",
+      "G6_M5_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "divide_by_unit_rate",
+    "title": "Divide by Unit Rate",
+    "description": "Determine the number of groups by dividing total quantity by the amount per group.",
+    "condition": "Total amount and per-unit amount are given.",
+    "response": "Compute total \u00f7 per-unit amount.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If total area is $63$ m$^2$ and each roll covers $7$ m$^2$, then rolls needed $=63 \\div 7 = 9$.",
+    "notes": "May require rounding up in other contexts ???",
+    "question_ids": [
+      "G6_M5_a1_q10"
+    ]
+  },
+  {
+    "kc_id": "divide_total_area_by_unit_area",
+    "title": "Divide Total Area by Unit Area",
+    "description": "Find the number of equal-sized units needed to cover a region by dividing total area by the area of one unit.",
+    "condition": "Total area of a region and area covered by one unit are given.",
+    "response": "Compute number of units as $\\frac{\\text{total area}}{\\text{area per unit}}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total area is $7.5$ ft$^2$ and each brick covers $0.25$ ft$^2$, then $7.5 \\div 0.25 = 30$ bricks.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_a2_q10"
+    ]
+  },
+  {
+    "kc_id": "double_identical_faces_area",
+    "title": "Double Area for Two Identical Faces",
+    "description": "When two congruent faces are included (e.g., top and bottom), multiply one face\u2019s area by 2.",
+    "condition": "Given area of one face and asked for total area of two identical faces.",
+    "response": "Multiply the single-face area by 2.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one face is $157.5$ in\u00b2, then total for two faces is $2 \\times 157.5 = 315$ in\u00b2.",
+    "notes": "Requires recognizing congruent faces.",
+    "question_ids": [
+      "G6_M5_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "distance_horizontal_vertical",
+    "title": "Horizontal or Vertical Distance on Coordinate Plane",
+    "description": "Find the distance between two points that share either the same x- or same y-coordinate.",
+    "condition": "Two points (x1, y1) and (x2, y2) where x1 = x2 or y1 = y2.",
+    "response": "Compute distance as the absolute difference of the differing coordinates: $|x_2 - x_1|$ or $|y_2 - y_1|$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $A(-5,7)$ and $C(8,7)$, distance $= |8 - (-5)| = 13$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_TB_a1_q1",
+      "G6_M5_TB_a1_q3",
+      "G6_M5_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_base_height_coordinate_triangle",
+    "title": "Identify Base and Height from Coordinates",
+    "description": "Determine a valid base and corresponding perpendicular height for a polygon using coordinate differences.",
+    "condition": "Vertices of a polygon given on the coordinate plane.",
+    "response": "Select horizontal or vertical segment as base and use perpendicular coordinate difference as height.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $X(-2,-5)$ and $Y(2,-5)$, base $=4$; height from $Z(0,7)$ to $y=-5$ is $12$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_TB_a1_q3",
+      "G6_M5_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "match_3d_figure_to_net",
+    "title": "Match 3D Figure to Net",
+    "description": "Identify which two-dimensional net folds to form a given three-dimensional figure.",
+    "condition": "A 3D solid and several candidate nets are shown.",
+    "response": "Select the net whose faces and arrangement correspond to the solid.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "A cube matches a net of six congruent squares arranged in a cross shape.",
+    "notes": "Relies on spatial visualization. [merged: response varies]",
+    "question_ids": [
+      "G6_M5_TC_a1_q2",
+      "G6_M5_TC_a1_q4",
+      "G6_M5_a1_q8",
+      "G6_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "multiply_area_by_unit_cost",
+    "title": "Multiply Area by Unit Cost",
+    "description": "Determine total cost by multiplying area by the cost per unit area.",
+    "condition": "Given an area measurement and a cost per square unit.",
+    "response": "Compute total cost as area \u00d7 cost per unit area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If area $=75\\text{ ft}^2$ and cost $=\\$4.50$ per ft$^2$, total cost $=75\\times4.50=\\$337.50$.",
+    "notes": "Ensure units match (e.g., square feet with dollars per square foot).",
+    "question_ids": [
+      "G6_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "perimeter_polygon_add_sides",
+    "title": "Perimeter by Adding Side Lengths",
+    "description": "Find the perimeter of a polygon by summing the lengths of all its sides.",
+    "condition": "Side lengths of a polygon are known or can be determined.",
+    "response": "Add all side lengths to compute the perimeter.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If side lengths are $9,7,4,3,5,4$, then perimeter $=9+7+4+3+5+4=32$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_a1_q4",
+      "G6_M5_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "recognize_valid_cube_net",
+    "title": "Recognize Valid Cube Net",
+    "description": "Determine whether a given arrangement of six connected squares can be folded to form a cube.",
+    "condition": "Given a figure composed of six connected congruent squares.",
+    "response": "State Yes if it folds into a cube without overlap; otherwise state No.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "A cross-shaped arrangement of six squares with four in a row and one above and below the second square is a valid cube net (Yes).",
+    "notes": "Classification based on known cube nets.",
+    "question_ids": [
+      "G6_M5_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "solve_triangle_area_for_base",
+    "title": "Solve for Base from Triangle Area",
+    "description": "Determine a triangle\u2019s base by solving the area formula for the unknown base.",
+    "condition": "Given the area of a triangle and its height, with base unknown.",
+    "response": "Set up $A=\\frac{1}{2}bh$ and solve algebraically for $b$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $10\\tfrac{1}{2}=\\frac{1}{2}b\\left(2\\tfrac{5}{8}\\right)$, solve to get $b=8$.",
+    "notes": "Requires isolating the variable using inverse operations.",
+    "question_ids": [
+      "G6_M5_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "solve_for_missing_dimension_volume",
+    "title": "Solve for Missing Dimension Using Volume",
+    "description": "Find an unknown dimension of a rectangular prism by dividing volume by the product of the known dimensions.",
+    "condition": "Volume $V$ and two dimensions $l,w$ of a rectangular prism are known; third dimension unknown.",
+    "response": "Compute missing dimension as $\\dfrac{V}{lw}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $V=195$, $l=12$, $w=3\\tfrac{1}{4}$, then $h=\\dfrac{195}{12\\times3\\tfrac{1}{4}}=5$.",
+    "notes": "Requires correct multiplication of mixed numbers.",
+    "question_ids": [
+      "G6_M5_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "solve_for_missing_height_from_area",
+    "title": "Solve for Missing Height Using Area Formula",
+    "description": "Given the area of a triangle and one dimension, solve for the unknown height.",
+    "condition": "Triangle area A and base b known, height h unknown.",
+    "response": "Use $A = \\frac{1}{2}bh$ and solve for $h$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $15 = \\frac{1}{2}(5)h$, then $h = 6$.",
+    "notes": "In Q4, x is the remaining rectangle height after subtracting the triangle\u2019s height.",
+    "question_ids": [
+      "G6_M5_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "solve_for_unknown_in_area_equation",
+    "title": "Solve for Unknown in Area Equation",
+    "description": "Substitute known values into an area formula and solve for the unknown dimension.",
+    "condition": "An area formula with one unknown variable and known numerical values.",
+    "response": "Set up an equation and solve algebraically for the unknown.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $864 = \\tfrac{1}{2}(x+8)(24)$, solve to find $x=32$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "subtract_lengths_to_find_remaining",
+    "title": "Subtract Lengths to Find Remaining Segment",
+    "description": "Find an unknown segment by subtracting a known part from a total length.",
+    "condition": "Total length T and known part p given, remaining length unknown.",
+    "response": "Compute remaining length as $T - p$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total height is 10 and triangle height is 6, then $x = 10 - 6 = 4$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M5_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "sum_volumes_of_composite_prisms",
+    "title": "Sum Volumes of Composite Prisms",
+    "description": "Add volumes of multiple rectangular prisms to find the total volume of a composite solid.",
+    "condition": "Given volumes of separate rectangular prism sections forming one solid.",
+    "response": "Add the individual volumes.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If chocolate sections total $1{,}152$ in\u00b3 and strawberry section is $480$ in\u00b3, then total volume $= 1{,}152 + 480 = 1{,}632$ in\u00b3.",
+    "notes": "Applies additive property of volume.",
+    "question_ids": [
+      "G6_M5_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "surface_area_rectangular_prism",
+    "title": "Surface Area of Rectangular Prism",
+    "description": "Compute the surface area of a rectangular prism by summing the areas of its faces (excluding any open faces if specified).",
+    "condition": "Dimensions $l,w,h$ of a rectangular prism are known; determine area of all exterior faces (possibly excluding top).",
+    "response": "Compute sum of areas of each face, e.g., $2lw + 2lh + 2wh$ (adjust if a face is missing).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $l=2$, $w=1.5$, $h=1.5$ with open top, area $= lw + 2lh + 2wh = 3 + 6 + 6 = 15$.",
+    "notes": "Exclude top face when stated. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M5_a1_q7",
+      "G6_M5_a1_q9",
+      "G6_M5_a2_q7",
+      "G6_M5_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "volume_rectangular_prism",
+    "title": "Volume of a Rectangular Prism",
+    "description": "Compute volume by multiplying length, width, and height.",
+    "condition": "A rectangular prism with dimensions $l,w,h$.",
+    "response": "Compute $V = lwh$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $l=4$, $w=3.25$, $h=5$, then $V=4\\times3.25\\times5=65$.",
+    "notes": "Applies to right rectangular prisms. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M5_TC_a1_q3",
+      "G5_M5_TC_a1_q4",
+      "G5_M5_TD_a1_q1",
+      "G5_M5_TD_a1_q4",
+      "G5_M5_TD_a1_q5",
+      "G5_M5_a1_q3",
+      "G5_M5_a1_q5",
+      "G5_M5_a1_q9",
+      "G5_M5_a2_q3",
+      "G5_M5_a2_q5",
+      "G5_M5_a2_q9",
+      "G6_M5_TD_a1_q1",
+      "G6_M5_TD_a1_q2",
+      "G6_M5_TD_a1_q4",
+      "G6_M5_a1_q3",
+      "G6_M5_a1_q7",
+      "G6_M5_a1_q9",
+      "G6_M5_a2_q3",
+      "G6_M5_a2_q7",
+      "G6_M5_a2_q9",
+      "G7_M4_TE_a1_q4",
+      "G7_M4_a2_q4"
+    ]
+  }
+]

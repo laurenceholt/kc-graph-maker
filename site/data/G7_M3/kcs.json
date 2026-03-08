@@ -1,0 +1,667 @@
+[
+  {
+    "kc_id": "add_constant_both_sides",
+    "title": "Add Constant to Both Sides of Inequality",
+    "description": "Adds the same constant to both sides of an inequality to isolate the variable term.",
+    "condition": "Inequality of the form a \u2264 b + c or a \u2265 b + c where a constant term is added to a variable expression.",
+    "response": "Add or subtract the constant from both sides to isolate the variable term.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $8 \\le 13 + \\frac{1}{7}x$, subtract 13 from both sides to get $-5 \\le \\frac{1}{7}x$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q2",
+      "G7_M3_TD_a1_q3",
+      "G7_M3_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "add_fractional_amounts",
+    "title": "Add Fractional Amounts",
+    "description": "Add fractional quantities with like denominators to find a total amount.",
+    "condition": "Two or more fractional quantities with the same denominator are to be combined.",
+    "response": "Add the numerators and keep the common denominator; simplify if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{3}{2} + \\frac{3}{4} = \\frac{6}{4} + \\frac{3}{4} = \\frac{9}{4} = 2\\frac{1}{4}$",
+    "notes": "Used when summing water amounts in Q5.",
+    "question_ids": [
+      "G7_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "add_linear_expressions",
+    "title": "Add Linear Angle Expressions",
+    "description": "Combine two linear angle expressions into a single equation by adding them.",
+    "condition": "Two angle measures expressed as linear expressions (e.g., ax + b and cx + d) must be combined in an equation.",
+    "response": "Form and simplify the sum (ax + b) + (cx + d).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$(6x - 26) + (2x + 22) = 8x - 4$",
+    "notes": "Often precedes solving a linear equation.",
+    "question_ids": [
+      "G7_M3_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "add_angles_around_point_360",
+    "title": "Angles Around a Point Sum to 360\u00b0",
+    "description": "The measures of all angles around a point sum to 360 degrees.",
+    "condition": "Multiple angles share a common vertex forming a full circle.",
+    "response": "Write an expression adding all angle measures and set equal to 360.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$y+(7x+3)+(13x+4)+33+100=360$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a1_q5",
+      "G7_M3_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "combine_fixed_and_variable_costs",
+    "title": "Combine Fixed and Variable Costs",
+    "description": "Represents a total amount as the sum of a fixed amount and a variable amount.",
+    "condition": "Word problem with a starting amount or fixed cost plus a rate times a variable quantity.",
+    "response": "Write an expression of the form fixed + rate\u00b7variable.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Total water: $16 + 0.6r$; Total cost: $2(4.99) + 2.24p$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q1",
+      "G7_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "add_adjacent_angles_to_90",
+    "title": "Complementary Angles Form 90\u00b0",
+    "description": "When two adjacent angles form a right angle, their measures sum to 90 degrees.",
+    "condition": "Two adjacent angles form a right angle (indicated by a square corner).",
+    "response": "Set up equation angle1 + angle2 = 90.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If angles are 63\u00b0 and $(2x+5)\u00b0$ and form a right angle, write $(2x+5)+63=90$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G7_M3_TB_a1_q4",
+      "G7_M3_a1_q3",
+      "G7_M3_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "rate_time_distance_steps",
+    "title": "Compute Steps from Rate and Time",
+    "description": "Use rate \u00d7 time and conversion factors to compute total quantity.",
+    "condition": "Given rate (miles/hour), time, and conversion (steps per mile).",
+    "response": "Multiply time by rate to get miles, then multiply by conversion factor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.8\\text{ hr}\\times6=4.8$ miles; $4.8\\times2000=9600$ steps.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "define_variable_unknown_quantity",
+    "title": "Define Variable for Unknown Quantity",
+    "description": "Assign a variable to represent the unknown quantity in a word problem.",
+    "condition": "A word problem includes an unknown quantity that varies and must be solved for.",
+    "response": "State a variable definition that clearly represents the unknown (e.g., $x$ is pounds of apples).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Let $x$ represent the number of pounds of apples purchased.",
+    "notes": "Choice must match the quantity actually unknown.",
+    "question_ids": [
+      "G7_M3_TC_a1_q4",
+      "G7_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_expression_equivalence",
+    "title": "Determine Expression Equivalence",
+    "description": "Decide whether two algebraic expressions are equivalent by simplifying or comparing their simplified forms.",
+    "condition": "Two algebraic expressions are presented and the task is to determine if they are equivalent (e.g., perimeter vs. candidate expression).",
+    "response": "Simplify each expression and state whether they are equivalent (Yes/No).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Check if $2(5x+4y)$ equals $10x+8y$. Distribute: $2(5x+4y)=10x+8y$, so they are equivalent.",
+    "notes": "Often requires prior use of distribution and combining like terms.",
+    "question_ids": [
+      "G7_M3_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "distribute_multiplication_over_addition",
+    "title": "Distribute Multiplication Over Addition/Subtraction",
+    "description": "Apply the distributive property to multiply a factor across each term inside parentheses.",
+    "condition": "An expression of the form $a(b + c)$ or $a(b - c)$, including rational coefficients or negatives.",
+    "response": "Rewrite as $ab + ac$ or $ab - ac$, multiplying the factor by each term inside the parentheses.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Distribute in $-\\frac{1}{10}(10x - 5y - 20)$: $-x + \\frac{1}{2}y + 2$.",
+    "notes": "Includes distributing negative and fractional coefficients.",
+    "question_ids": [
+      "G6_M4_TC_a1_q1",
+      "G6_M4_TC_a1_q5",
+      "G6_M4_a1_q3",
+      "G6_M4_a2_q3",
+      "G7_M2_TC_a1_q2",
+      "G7_M2_TE_a1_q42",
+      "G7_M2_TE_a1_q5",
+      "G7_M3_TA_a1_q1",
+      "G7_M3_TA_a1_q2",
+      "G7_M3_TA_a1_q4",
+      "G7_M3_TA_a1_q5",
+      "G7_M3_a1_q2",
+      "G7_M3_a2_q2",
+      "G8_M4_TA_a1_q2",
+      "G8_M4_TA_a1_q5",
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q3",
+      "G8_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "divide_both_sides_positive",
+    "title": "Divide Both Sides by Positive Coefficient",
+    "description": "Divides both sides of an inequality by a positive number without changing the inequality direction.",
+    "condition": "Inequality of the form ax > b or ax < b where a > 0.",
+    "response": "Divide both sides by a and keep the inequality sign the same.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From $33x > 47.85$, divide by 33 to get $x > 1.45$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q2",
+      "G7_M3_TD_a1_q3",
+      "G7_M3_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_fraction_by_fraction",
+    "title": "Divide Fraction by Fraction",
+    "description": "Divide one fraction by another using multiplication by the reciprocal.",
+    "condition": "An expression of the form $\\frac{a}{b} \\div \\frac{c}{d}$ appears.",
+    "response": "Rewrite as $\\frac{a}{b} \\times \\frac{d}{c}$ and simplify.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{3}{8} \\div \\frac{1}{4} = \\frac{3}{8} \\times 4 = \\frac{12}{8} = \\frac{3}{2}$",
+    "notes": "Used to find additional batches from leftover water.",
+    "question_ids": [
+      "G7_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_total_by_unit_amount",
+    "title": "Divide Total by Unit Amount",
+    "description": "Find number of groups by dividing total quantity by amount per group.",
+    "condition": "Given total quantity and amount required per one unit (e.g., total height and height per block).",
+    "response": "Compute total \u00f7 unit amount.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$144 \\div 9.6 = 15$ layers.",
+    "notes": "Determines number of layers in the tower.",
+    "question_ids": [
+      "G7_M3_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "form_linear_equation_from_context",
+    "title": "Form Linear Equation from Context",
+    "description": "Translate a purchase situation into a linear equation with fixed and variable costs.",
+    "condition": "A total cost equals sum of known fixed costs and a variable cost rate times quantity.",
+    "response": "Write equation in form total = fixed costs + (rate \u00d7 variable).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$16.22 = 2.49 + 2(3.99) + 1.15x$",
+    "notes": "Combines constants and variable term.",
+    "question_ids": [
+      "G7_M3_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "graph_greater_than_or_equal_closed_circle",
+    "title": "Graph Inclusive Inequality on Number Line",
+    "description": "Represents solutions to an inclusive inequality using a closed circle and shading in the correct direction.",
+    "condition": "Solution of the form x \u2265 a or x \u2264 a.",
+    "response": "Place a closed circle at a and shade right for \u2265 or left for \u2264.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For $x \\ge -35$, draw a closed circle at -35 and shade to the right.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "graph_greater_than_open_circle",
+    "title": "Graph Strict Inequality on Number Line",
+    "description": "Represents solutions to a strict inequality using an open circle and shading in the correct direction.",
+    "condition": "Solution of the form x > a or x < a.",
+    "response": "Place an open circle at a and shade right for > or left for <.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For $x > 26.5$, draw an open circle at 26.5 and shade to the right.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q2",
+      "G7_M3_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_maximum_whole_number",
+    "title": "Interpret Maximum Whole Number Solution",
+    "description": "Determines the greatest whole number that satisfies an inequality in context.",
+    "condition": "Inequality solution for a quantity that must be a whole number (e.g., number of items).",
+    "response": "Identify the largest whole number less than or equal to the upper bound.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If $p \\le 3.4$, the maximum whole number of pens is $3$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_graphed_inequality",
+    "title": "Interpret Number Line Inequality Graph",
+    "description": "Translate a graphed point and shaded direction on a number line into an inequality.",
+    "condition": "Closed or open circle at a value with shading left or right.",
+    "response": "Write inequality using \u2264/\u2265 for closed circle and </> for open circle, matching shading direction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Closed circle at \u221216 shaded left \u2192 $x\\le -16$.",
+    "notes": "Conventional meaning of open/closed circle.",
+    "question_ids": [
+      "G7_M3_a1_q1",
+      "G7_M3_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_range_from_context",
+    "title": "Interpret Range in Context",
+    "description": "Determine the meaningful interval of an independent variable based on a real-world constraint.",
+    "condition": "A contextual model gives a maximum allowable output value.",
+    "response": "Solve for the input values that keep the output within the limit and state the interval with units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If water amount is $3t+161$ and must be \u2264203, then $3t+161\\le203$ gives $t\\le14$, so time is between 0 and 14 minutes.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "linear_pair_sum_180",
+    "title": "Linear Pair or Straight Angle Sum to 180\u00b0",
+    "description": "Recognize that adjacent angles forming a straight line sum to 180 degrees.",
+    "condition": "Angles form a straight line or linear pair.",
+    "response": "Set up equation: m\u22201 + m\u22202 = 180\u00b0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If two angles form a straight line and one is 110\u00b0, then $110 + m\u22202 = 180$.",
+    "notes": "Used when angles are adjacent and their non-common sides form a line.",
+    "question_ids": [
+      "G7_M3_TB_a1_q2",
+      "G7_M3_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "model_capacity_with_inequality",
+    "title": "Model Capacity Constraint with Inequality",
+    "description": "Translates a maximum capacity situation into a \u2264 inequality comparing total amount to capacity.",
+    "condition": "Context describes a total amount that must not exceed a maximum value.",
+    "response": "Write an inequality of the form total \u2264 maximum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Since the barrel holds 49 gallons: $16 + 0.6r \\le 49$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_TD_a1_q1",
+      "G7_M3_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "model_linear_growth_pattern",
+    "title": "Model Linear Growing Pattern",
+    "description": "Represent a pattern with constant increase per stage using an expression.",
+    "condition": "Pattern increases by a constant amount each stage.",
+    "response": "Write expression initial_amount + rate(stage\u22121).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If stage 1 has 6 squares and increases by 5 each stage: $6+5(s-1)$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a1_q6",
+      "G7_M3_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "multiply_groups",
+    "title": "Multiply Number of Groups by Amount per Group",
+    "description": "Find total amount by multiplying number of groups by amount in each group.",
+    "condition": "Given a number of groups and quantity per group.",
+    "response": "Compute (number of groups) \u00d7 (amount per group).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2 \\times 3 = 6$ blocks per layer.",
+    "notes": "Used for blocks per layer and cost of multiple items.",
+    "question_ids": [
+      "G7_M3_TA_a1_q5",
+      "G7_M3_TC_a1_q2",
+      "G7_M3_TC_a1_q4",
+      "G7_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_perimeter_as_sum_of_sides",
+    "title": "Perimeter as Sum of Side Lengths",
+    "description": "Compute the perimeter of a polygon by summing the lengths of all its outer sides.",
+    "condition": "A geometric figure with labeled side lengths; task asks for perimeter.",
+    "response": "Add all exterior side lengths to form a total expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If sides are $4x, 2x, 3x, x, 4y, y, 2y$, then perimeter is $4x+2x+3x+x+4y+y+2y$.",
+    "notes": "Applies to composite rectilinear figures.",
+    "question_ids": [
+      "G7_M3_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "reverse_inequality_when_multiplying_negative",
+    "title": "Reverse Inequality When Multiplying/Dividing by Negative",
+    "description": "When multiplying or dividing both sides of an inequality by a negative number, reverse the inequality sign.",
+    "condition": "Both sides of an inequality are multiplied or divided by a negative value.",
+    "response": "Change < to > or > to < (and similarly for \u2264/\u2265).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$-4>6-\\frac56x \\Rightarrow -10>-\\frac56x \\Rightarrow 12<x$ so $x>12$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "round_for_estimate",
+    "title": "Round Values to Estimate",
+    "description": "Round numbers to compatible values to make mental estimation easier.",
+    "condition": "Problem requests a reasonable estimate rather than exact value.",
+    "response": "Round one or more quantities and compute with rounded numbers.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$9.6 \\approx 10$, so $144 \\div 10 \\approx 14$ layers.",
+    "notes": "Produces estimate within acceptable range.",
+    "question_ids": [
+      "G7_M3_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "compute_unit_rate_proportion",
+    "title": "Set Up Proportion from Unit Rate",
+    "description": "Represent a constant rate situation with an equivalent ratio equation.",
+    "condition": "A context gives a rate (e.g., 0.7 miles per 11 minutes) and asks for a quantity over a different amount.",
+    "response": "Set up an equation equating two ratios, such as $\\frac{m}{45} = \\frac{0.7}{11}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{m}{45} = \\frac{0.7}{11}$",
+    "notes": "Represents equivalent ratios for constant speed.",
+    "question_ids": [
+      "G7_M3_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "simplify_to_fewest_terms",
+    "title": "Simplify Expression to Fewest Terms",
+    "description": "Rewrite an algebraic expression in an equivalent form with all like terms combined.",
+    "condition": "An algebraic expression with multiple terms and the instruction to write in simplest form or fewest terms.",
+    "response": "Apply distribution and combine like terms to produce a simplified expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Simplify $-x + \\frac{1}{2}y + 2 + \\frac{2}{3}y - 12$ to $-x + \\frac{7}{6}y - 10$.",
+    "notes": "Composite KC relying on distribution and combining like terms.",
+    "question_ids": [
+      "G7_M3_TA_a1_q1",
+      "G7_M3_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_linear_inequality",
+    "title": "Solve Linear Inequality",
+    "description": "Isolate the variable in a linear inequality using inverse operations.",
+    "condition": "Inequality of form $ax+b\\;?\\;c$.",
+    "response": "Use inverse operations to isolate variable, reversing sign if multiplying/dividing by negative.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$-4>6-\\frac56x \\Rightarrow -10>-\\frac56x \\Rightarrow x>12$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "solve_two_step_inequality",
+    "title": "Solve Two-Step Inequality",
+    "description": "Isolate the variable in a linear inequality, reversing the inequality sign when multiplying or dividing by a negative.",
+    "condition": "An inequality of the form $ax + b \\;\\square\\; c$.",
+    "response": "Add/subtract to isolate $ax$, then divide by $a$, reversing the inequality if $a$ is negative.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$-2>7-\\frac{3}{8}x \\Rightarrow -9>-\\frac{3}{8}x \\Rightarrow 24<x$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "solve_two_step_linear_equation",
+    "title": "Solve Two-Step Linear Equation",
+    "description": "Solve an equation of the form ax + b = c by isolating x.",
+    "condition": "A linear equation with one variable requiring two inverse operations (e.g., ax + b = c).",
+    "response": "Subtract or add constant term, then divide by coefficient to isolate x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Solve $5x - 4 = 72$: add 4 to get $5x = 76$, then divide by 5 to get $x = 15.2$.",
+    "notes": "Core algebraic manipulation skill. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G7_M3_TB_a1_q1",
+      "G7_M3_TB_a1_q2",
+      "G7_M3_TB_a1_q3",
+      "G7_M3_TB_a1_q4",
+      "G7_M3_TC_a1_q1",
+      "G7_M3_TC_a1_q4",
+      "G7_M3_a1_q3",
+      "G7_M3_a1_q8",
+      "G7_M3_a2_q8",
+      "G8_M4_TB_a1_q2",
+      "G8_M4_TB_a1_q4",
+      "G8_M5_a2_q2",
+      "G8_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "substitute_value_into_expression",
+    "title": "Substitute Value into Algebraic Expression",
+    "description": "Replace a variable with its solved value to compute a numeric angle measure.",
+    "condition": "A variable's value is known and must be used to find a specific angle measure.",
+    "response": "Substitute the value and evaluate the expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $x = 6$, then $3x + 4.5 = 3(6) + 4.5 = 22.5$.",
+    "notes": "Requires correct order of operations.",
+    "question_ids": [
+      "G7_M3_TB_a1_q3",
+      "G7_M3_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "subtract_mixed_numbers",
+    "title": "Subtract Mixed Numbers",
+    "description": "Subtract mixed numbers by converting to improper fractions or common denominators.",
+    "condition": "Two mixed numbers must be subtracted.",
+    "response": "Rewrite as improper fractions or with common denominators and subtract.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2\\frac{5}{8} - 2\\frac{1}{4} = \\frac{21}{8} - \\frac{18}{8} = \\frac{3}{8}$",
+    "notes": "Finds leftover water in Q5.",
+    "question_ids": [
+      "G6_M2_TC_a1_q4",
+      "G7_M2_TB_a1_q4",
+      "G7_M3_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "translate_context_to_inequality",
+    "title": "Translate Verbal Condition to Inequality",
+    "description": "Convert a contextual requirement (e.g., at least, at most) into a symbolic inequality.",
+    "condition": "Phrase such as 'at least 235 books' describing a quantity.",
+    "response": "Write inequality using \u2265 or \u2264 to represent condition.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'At least 235 books' \u2192 $745-30b\\ge235$.",
+    "notes": "Mapping of phrases like 'at least' to \u2265 is conventional.",
+    "question_ids": [
+      "G7_M3_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "repeated_addition_for_pattern",
+    "title": "Use Repeated Addition for Pattern",
+    "description": "Compute a later stage of a pattern by repeatedly adding the constant increase.",
+    "condition": "A pattern increases by a fixed amount each stage and a specific stage number is given.",
+    "response": "Start with the initial value and add the constant increase repeatedly to reach the desired stage.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Stage 7: $7+2+2+2+2+2+2=19$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M3_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "vertical_angles_congruent",
+    "title": "Vertical Angles Are Congruent",
+    "description": "Recognize that vertical (opposite) angles formed by intersecting lines have equal measures.",
+    "condition": "Two angles are identified as vertical angles.",
+    "response": "Set their measures equal to each other.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If \u2220J and \u2220K are vertical and m\u2220J = 72\u00b0, then set $72 = 5x - 4$.",
+    "notes": "Definition-based geometric property.",
+    "question_ids": [
+      "G4_M6_TC_a1_q5",
+      "G7_M3_TB_a1_q1",
+      "G7_M3_TB_a1_q2",
+      "G7_M4_TA_a1_q4"
+    ]
+  }
+]

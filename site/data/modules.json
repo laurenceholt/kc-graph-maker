@@ -140,25 +140,25 @@
   {
     "id": "G4_M6",
     "label": "Grade 4 Module 6",
-    "kc_count": 34,
+    "kc_count": 33,
     "question_count": 43
   },
   {
     "id": "G5_M1",
     "label": "Grade 5 Module 1",
-    "kc_count": 33,
+    "kc_count": 31,
     "question_count": 43
   },
   {
     "id": "G5_M2",
     "label": "Grade 5 Module 2",
-    "kc_count": 24,
+    "kc_count": 23,
     "question_count": 42
   },
   {
     "id": "G5_M3",
     "label": "Grade 5 Module 3",
-    "kc_count": 27,
+    "kc_count": 26,
     "question_count": 45
   },
   {
@@ -170,13 +170,85 @@
   {
     "id": "G5_M5",
     "label": "Grade 5 Module 5",
-    "kc_count": 30,
+    "kc_count": 28,
     "question_count": 38
   },
   {
     "id": "G5_M6",
     "label": "Grade 5 Module 6",
+    "kc_count": 34,
+    "question_count": 35
+  },
+  {
+    "id": "G6_M1",
+    "label": "Grade 6 Module 1",
+    "kc_count": 27,
+    "question_count": 42
+  },
+  {
+    "id": "G6_M2",
+    "label": "Grade 6 Module 2",
+    "kc_count": 35,
+    "question_count": 52
+  },
+  {
+    "id": "G6_M3",
+    "label": "Grade 6 Module 3",
+    "kc_count": 30,
+    "question_count": 40
+  },
+  {
+    "id": "G6_M4",
+    "label": "Grade 6 Module 4",
+    "kc_count": 34,
+    "question_count": 45
+  },
+  {
+    "id": "G6_M5",
+    "label": "Grade 6 Module 5",
+    "kc_count": 31,
+    "question_count": 39
+  },
+  {
+    "id": "G6_M6",
+    "label": "Grade 6 Module 6",
+    "kc_count": 35,
+    "question_count": 33
+  },
+  {
+    "id": "G7_M1",
+    "label": "Grade 7 Module 1",
+    "kc_count": 25,
+    "question_count": 33
+  },
+  {
+    "id": "G7_M2",
+    "label": "Grade 7 Module 2",
+    "kc_count": 30,
+    "question_count": 51
+  },
+  {
+    "id": "G7_M3",
+    "label": "Grade 7 Module 3",
     "kc_count": 36,
+    "question_count": 37
+  },
+  {
+    "id": "G7_M4",
+    "label": "Grade 7 Module 4",
+    "kc_count": 40,
+    "question_count": 37
+  },
+  {
+    "id": "G7_M5",
+    "label": "Grade 7 Module 5",
+    "kc_count": 40,
+    "question_count": 46
+  },
+  {
+    "id": "G7_M6",
+    "label": "Grade 7 Module 6",
+    "kc_count": 18,
     "question_count": 35
   },
   {
@@ -188,7 +260,7 @@
   {
     "id": "G8_M2",
     "label": "Grade 8 Module 2",
-    "kc_count": 25,
+    "kc_count": 23,
     "question_count": 38
   },
   {
@@ -200,7 +272,7 @@
   {
     "id": "G8_M4",
     "label": "Grade 8 Module 4",
-    "kc_count": 43,
+    "kc_count": 40,
     "question_count": 45
   },
   {

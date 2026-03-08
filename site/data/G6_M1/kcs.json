@@ -1,0 +1,520 @@
+[
+  {
+    "kc_id": "move_fraction_of_quantity_between_groups",
+    "title": "Adjust Quantities by Fractional Transfer",
+    "description": "When a fraction of one group is moved to another, adjust both quantities accordingly.",
+    "condition": "A fraction f of quantity B is moved to quantity A.",
+    "response": "Decrease B by fB and increase A by fB, then form the new ratio.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the ratio is $3:6$ and $\\frac{1}{6}$ of box B (1 unit) moves to A, new amounts are $4:5$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "percent_of_quantity",
+    "title": "Calculate Percent of a Quantity",
+    "description": "Find a specified percent of a given whole number.",
+    "condition": "Given a whole number $W$ and a percent $p\\%$.",
+    "response": "Compute $(p/100) \\times W$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$25\\%$ of $360$ is $0.25 \\times 360 = 90$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TE_a1_q2",
+      "G6_M1_TE_a1_q4",
+      "G6_M1_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "compare_part_values",
+    "title": "Compare Computed Part Values",
+    "description": "Compare two calculated part amounts to determine which is greater.",
+    "condition": "Given two numerical part amounts derived from percent calculations.",
+    "response": "Identify which quantity is larger and state the comparison (e.g., A is greater than B).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Yuna plants $12$ flowers and Lisa plants $22$ flowers. Since $22 > 12$, Lisa plants more flowers than Yuna.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_ratios_by_cross_multiplication",
+    "title": "Compare Ratios Using Cross Products",
+    "description": "Determine which of two ratios is greater by cross-multiplying and comparing products.",
+    "condition": "Two ratios a:b and c:d are given and need to be compared.",
+    "response": "Compute a\u00b7d and b\u00b7c and compare the products to determine which ratio is greater.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compare $\\frac{4}{3}$ and $\\frac{3}{2}$ by cross-multiplying: $4 \\cdot 2 = 8$ and $3 \\cdot 3 = 9$. Since $8 < 9$, $\\frac{4}{3} < \\frac{3}{2}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_unit_rates",
+    "title": "Compare Unit Rates",
+    "description": "Determine which of two situations has the greater or smaller rate by computing and comparing unit rates.",
+    "condition": "Given two ratios or rates describing different situations with different quantities and units.",
+    "response": "Compute each unit rate (quantity per 1 unit) and compare their numerical values to determine which is greater or smaller.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Zebra: $15$ miles in $30$ minutes $= \\frac{15}{30}=0.5$ miles/min. Horse: $20$ miles in $35$ minutes $\\approx0.57$ miles/min. Since $0.5<0.57$, the zebra runs slower.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M1_TC_a1_q2",
+      "G6_M1_TC_a1_q4",
+      "G6_M1_TD_a1_q3",
+      "G6_M1_a1_q10",
+      "G6_M1_a1_q4",
+      "G6_M1_a2_q10",
+      "G6_M2_a1_q9",
+      "G6_M2_a2_q9",
+      "G7_M1_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_part_from_ratio_and_total",
+    "title": "Compute Part from Ratio and Total",
+    "description": "Given a part-to-part ratio and a total quantity, determine the quantity of one part.",
+    "condition": "A ratio a:b and a total quantity T for the combined parts are given; find the quantity corresponding to one part of the ratio.",
+    "response": "Compute total ratio units a+b, find unit value T/(a+b), then multiply by the relevant part (e.g., a or b).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the ratio of crayons to pencils is 7:5 and the total is 72, then total units = 7+5=12. Each unit is $72/12=6$. Crayons = $7 \\times 6 = 42$.",
+    "notes": "Supports Q4 Part B.",
+    "question_ids": [
+      "G6_M1_TA_a1_q4",
+      "G6_M1_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_total_from_parts",
+    "title": "Compute Total from Parts",
+    "description": "Add multiple quantities to find a total amount.",
+    "condition": "Given separate category counts and asked for the total.",
+    "response": "Add the quantities to compute the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total hats $= 3 + 5 + 4 + 2 = 14$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M1_TA_a1_q1",
+      "G6_M1_TA_a1_q2",
+      "G6_M1_a1_q5",
+      "G6_M1_a1_q9",
+      "G6_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "compute_unit_rate_division",
+    "title": "Compute Unit Rate by Division",
+    "description": "Find a unit rate by dividing the total quantity by the number of units.",
+    "condition": "Given a ratio $a:b$ or a statement like \"$a$ items in $b$ units of time\" and asked for the amount per 1 unit.",
+    "response": "Divide $a \\div b$ to determine the amount per 1 unit.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$8$ lawns in $4$ days: $8 \\div 4 = 2$ lawns per day.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M1_TB_a1_q4",
+      "G6_M1_TC_a1_q1",
+      "G6_M1_TC_a1_q2",
+      "G6_M1_TC_a1_q4",
+      "G6_M1_TD_a1_q1",
+      "G6_M1_TD_a1_q3",
+      "G6_M1_TD_a1_q5",
+      "G6_M1_a1_q1",
+      "G6_M1_a1_q10",
+      "G6_M1_a1_q6",
+      "G6_M1_a2_q1",
+      "G6_M1_a2_q10",
+      "G6_M1_a2_q6",
+      "G6_M2_TF_a1_q3",
+      "G6_M2_TF_a1_q4",
+      "G6_M2_TF_a1_q40"
+    ]
+  },
+  {
+    "kc_id": "convert_units_miles_min_to_feet_sec",
+    "title": "Convert Miles per Minute to Feet per Second",
+    "description": "Convert a rate from miles per minute to feet per second using unit conversion factors.",
+    "condition": "Given a rate in miles per minute and asked for feet per second.",
+    "response": "Multiply by $\\frac{5280\\text{ ft}}{1\\text{ mi}}$ and divide by $60$ seconds per minute.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.5\\ \\text{mi/min} \\times \\frac{5280}{1} \\div 60 = 44\\ \\text{ft/s}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_a2_q10"
+    ]
+  },
+  {
+    "kc_id": "convert_percent_to_fraction",
+    "title": "Convert Percent to Fraction",
+    "description": "Rewrite a percent as a fraction with denominator 100 and simplify if possible.",
+    "condition": "Given a percent value $p\\%$.",
+    "response": "Write $\\frac{p}{100}$ and simplify if appropriate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$30\\% = \\frac{30}{100} = \\frac{3}{10}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "convert_units_rate",
+    "title": "Convert Units in a Rate",
+    "description": "Convert a rate to different units by applying unit conversion factors.",
+    "condition": "Given a rate expressed in one set of units (e.g., miles per minute) and asked for the rate in different units (e.g., feet per second).",
+    "response": "Multiply by appropriate conversion factors to express the rate in the requested units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$0.5$ miles/min $\\times \\frac{5280\\text{ ft}}{1\\text{ mile}} \\times \\frac{1\\text{ min}}{60\\text{ s}} = 44$ ft/s.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_a1_q10"
+    ]
+  },
+  {
+    "kc_id": "convert_feet_per_hour_from_yards_per_minute",
+    "title": "Convert Yards per Minute to Feet per Hour",
+    "description": "Convert a rate from yards per minute to feet per hour using unit conversion factors.",
+    "condition": "Given a rate in yards per minute and asked for feet per hour.",
+    "response": "Multiply by $3$ (feet per yard) and by $60$ (minutes per hour).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$80$ yd/min $\\times 3 \\times 60 = 14{,}400$ ft/hr.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "find_percent_from_part_whole",
+    "title": "Find Percent from Part and Whole",
+    "description": "Determine the percent represented by a part of a whole.",
+    "condition": "Given a part value and a whole value.",
+    "response": "Compute $\\frac{\\text{part}}{\\text{whole}} \\times 100\\%$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Riley reads $23$ out of $50$: $\\frac{23}{50} = 0.46 = 46\\%$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "find_whole_from_percent_and_part",
+    "title": "Find Whole from Percent and Part",
+    "description": "Determine the total (whole) when given a part and its percent of the whole.",
+    "condition": "Given that a number $a$ represents $p\\%$ of a total.",
+    "response": "Compute $a \\div (p/100)$ to find the whole.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $21$ is $30\\%$ of the total, then total $= 21 \\div 0.30 = 70$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TE_a1_q3",
+      "G6_M1_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "form_ratio_from_quantities",
+    "title": "Form Ratio from Two Quantities",
+    "description": "Construct a ratio comparing two specified quantities in the stated order.",
+    "condition": "Two quantities A and B are identified and a comparison \"A to B\" is requested.",
+    "response": "Write the ratio as A:B in the given order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If there are 9 plates and 6 bowls, the ratio of plates to bowls is $9:6$.",
+    "notes": "Order matters; reversing changes meaning.",
+    "question_ids": [
+      "G6_M1_TA_a1_q1",
+      "G6_M1_TA_a1_q2",
+      "G6_M1_a1_q3",
+      "G6_M1_a1_q5",
+      "G6_M1_a2_q3",
+      "G6_M1_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "scale_ratio_equivalently",
+    "title": "Generate Equivalent Ratios by Scaling",
+    "description": "Create an equivalent ratio by multiplying or dividing both terms by the same nonzero number.",
+    "condition": "Given a ratio $a:b$ and a need to match one term to a known quantity.",
+    "response": "Multiply or divide both $a$ and $b$ by the same factor to produce an equivalent ratio.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$3:5$ scaled by $6$ gives $18:30$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TA_a1_q3",
+      "G6_M1_TA_a1_q4",
+      "G6_M1_TC_a1_q1",
+      "G6_M1_TC_a1_q2",
+      "G6_M1_TD_a1_q2",
+      "G6_M1_a1_q2",
+      "G6_M1_a1_q5",
+      "G6_M1_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_equivalent_ratios_in_table",
+    "title": "Identify Equivalent Ratios in a Table",
+    "description": "Recognize that pairs of values in a ratio table are equivalent if one is a constant multiple of the other.",
+    "condition": "A table lists paired quantities representing a proportional relationship.",
+    "response": "Check that each pair maintains the same multiplicative relationship (same constant of proportionality).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $12:3$, then multiplying both by 3 gives $36:9$, preserving the ratio.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M1_TA_a1_q2",
+      "G6_M1_TB_a1_q3",
+      "G6_M1_TC_a1_q1",
+      "G6_M1_TC_a1_q2",
+      "G6_M1_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_part_and_whole",
+    "title": "Identify Part and Whole in Context",
+    "description": "Distinguish which quantity represents the whole and which represents the part in a percent situation.",
+    "condition": "Given a word problem describing a percent relationship between two quantities.",
+    "response": "Label the total quantity as the whole and the percent portion as the part.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "In '90 is 25% of 360', $360$ is the whole and $90$ is the part.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TE_a1_q2",
+      "G6_M1_TE_a1_q3",
+      "G6_M1_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_points_on_proportional_graph",
+    "title": "Interpret Proportional Relationship from Graph",
+    "description": "Determine whether plotted points represent the same ratio by checking for a common constant of proportionality.",
+    "condition": "Two sets of plotted (x, y) points are shown and the relationship must be compared.",
+    "response": "Determine whether each set forms a line through the origin with the same slope (same y/x ratio).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If mixture 1 has points like $(4,8)$ and $(6,12)$ (ratio 2), and mixture 2 has $(3,6)$ (ratio 2), both share constant ratio 2.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_ratio_as_multiplicative_relationship",
+    "title": "Interpret Ratio as Multiplicative Relationship",
+    "description": "Translate a ratio into a multiplicative comparison between two quantities.",
+    "condition": "A ratio a:b relates two quantities (e.g., small rocks to large rocks).",
+    "response": "Express one quantity as a multiple of the other (e.g., small = 3 \u00d7 large if 21:7).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Since $21:7 = 3:1$, the number of small rocks is $3 \\times$ the number of large rocks.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_ratio_context",
+    "title": "Interpret Ratio in Context",
+    "description": "Explain what each term in a ratio represents within a given situation.",
+    "condition": "Given a ratio $a:b$ in a word problem context.",
+    "response": "State what $a$ represents and what $b$ represents in terms of the context.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "In $5:14$, $5$ represents blue shirts and $14$ represents total shirts.",
+    "notes": "Context-dependent interpretation.",
+    "question_ids": [
+      "G6_M1_a1_q3",
+      "G6_M1_a1_q6",
+      "G6_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_ratio_language_order",
+    "title": "Interpret Ratio Language in Context",
+    "description": "Correctly match the order of quantities in a verbal ratio statement to numerical form.",
+    "condition": "A statement such as 'red to blue' or 'tablespoons to cups' is given.",
+    "response": "Write the ratio in the stated order (first quantity : second quantity).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'Red to blue is 2 to 1' means $\\frac{\\text{red}}{\\text{blue}} = 2:1$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TC_a1_q2",
+      "G6_M1_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_ratio_statement",
+    "title": "Interpret Verbal Ratio Statement",
+    "description": "Translate a verbal description of a ratio into the correct pair of quantities.",
+    "condition": "A phrase of the form \"the ratio of X to Y\" is given.",
+    "response": "Identify quantity X as the first term and quantity Y as the second term of the ratio.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "\"The ratio of mugs to plates\" means mugs:plates (e.g., $1:9$).",
+    "notes": "Conceptual understanding of ratio language.",
+    "question_ids": [
+      "G6_M1_TA_a1_q1",
+      "G6_M1_TA_a1_q2",
+      "G6_M1_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "multiply_unit_rate_by_quantity",
+    "title": "Multiply Unit Rate by Quantity",
+    "description": "Find total amount by multiplying a unit rate by the number of units.",
+    "condition": "Given a unit rate $r$ per 1 unit and a quantity $n$ units.",
+    "response": "Compute $r \\times n$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If rate is $0.3$ and total is $270$, then $0.3 \\times 270 = 81$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TB_a1_q4",
+      "G6_M1_TD_a1_q2",
+      "G6_M1_TD_a1_q5",
+      "G6_M1_a2_q7",
+      "G6_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "represent_percent_on_100_grid",
+    "title": "Represent Percent on a 100-Grid",
+    "description": "Shade the correct number of squares on a 10\u00d710 grid to model a percent.",
+    "condition": "Given a percent value and a 100-square grid.",
+    "response": "Shade the number of squares equal to the percent value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To represent $25\\%$, shade $25$ out of $100$ squares.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_TE_a1_q1",
+      "G6_M1_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "simplify_ratio",
+    "title": "Simplify a Ratio",
+    "description": "Reduce a ratio to an equivalent ratio in simplest form by dividing both terms by a common factor.",
+    "condition": "A ratio a:b where a and b share a common factor greater than 1.",
+    "response": "Divide both terms by their greatest common factor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "The ratio $10:5$ simplifies by dividing both terms by 5 to get $2:1$.",
+    "notes": "Used to verify equivalence of ratios.",
+    "question_ids": [
+      "G6_M1_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_missing_value_constant_rate",
+    "title": "Solve Missing Value Using Constant Rate",
+    "description": "Use a constant rate relationship (rate = total \u00f7 time or quantity) to find a missing quantity.",
+    "condition": "Given total amount and constant rate information with one missing variable.",
+    "response": "Set up equation using rate \u00d7 time = total (or equivalent) and solve for the unknown.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Rate at job A: $132 \\div 6 = 22$. Job B rate: $22 + 4 = 26$. Hours at job B: $182 \\div 26 = 7$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M1_a2_q7"
+    ]
+  }
+]

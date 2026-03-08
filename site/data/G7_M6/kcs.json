@@ -1,0 +1,348 @@
+[
+  {
+    "kc_id": "classify_event_likelihood",
+    "title": "Classify Event by Probability Value",
+    "description": "Classify an event as impossible, unlikely, equally likely, likely, or certain based on its probability.",
+    "condition": "Given a probability value between 0 and 1 for an event.",
+    "response": "Match the probability to: 0 \u2192 impossible; 0 < p < 0.5 \u2192 unlikely; p = 0.5 \u2192 equally likely; 0.5 < p < 1 \u2192 likely; 1 \u2192 certain.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $p=1$, the event is **certain**. If $p=\\frac{2}{9}$, the event is **unlikely**.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compare_mean_difference_to_mad",
+    "title": "Compare Mean Difference to MAD",
+    "description": "Determine whether the difference between two sample means is large relative to the mean absolute deviation.",
+    "condition": "Two samples with given means and mean absolute deviations; need to judge if difference is likely due to chance.",
+    "response": "Compute the absolute difference between means and compare it to one or more MADs to assess if it is large (e.g., at least 2 MADs).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If means are 21.6 and 19.1 with MAD = 1.0, then $|21.6-19.1|=2.5$, which is more than 2 MADs, suggesting a meaningful difference.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M6_TD_a1_q2",
+      "G7_M6_TD_a1_q4",
+      "G7_M6_a1_q6",
+      "G7_M6_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "compute_difference_of_means",
+    "title": "Compute Difference of Sample Means",
+    "description": "Subtract one sample mean from another to find their difference.",
+    "condition": "Given two sample means $\\bar{x}_1$ and $\\bar{x}_2$.",
+    "response": "Compute $\\bar{x}_1 - \\bar{x}_2$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "With means 60 and 50, compute $60 - 50 = 10$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TD_a1_q1",
+      "G7_M6_TD_a1_q2",
+      "G7_M6_TD_a1_q3",
+      "G7_M6_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_empirical_probability",
+    "title": "Compute Empirical Probability",
+    "description": "Calculate probability from observed frequency data.",
+    "condition": "Given observed frequency of an event and total number of trials.",
+    "response": "Divide number of favorable outcomes by total trials.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If an event occurs 9 times out of 30 trials, probability is $\\frac{9}{30}=0.3$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M6_TA_a1_q3",
+      "G7_M6_TB_a1_q2",
+      "G7_M6_TB_a1_q3",
+      "G7_M6_TC_a1_q2",
+      "G7_M6_a1_q4",
+      "G7_M6_a1_q7",
+      "G7_M6_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "compute_expected_count_from_proportion",
+    "title": "Compute Expected Count from Proportion",
+    "description": "Use a sample proportion to predict a population count.",
+    "condition": "Given sample proportion and total population size.",
+    "response": "Multiply the population size by the sample proportion.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Sample proportion $=\\frac{11}{30}$. Expected count $=2160\\times\\frac{11}{30}=792$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TA_a1_q3",
+      "G7_M6_TB_a1_q3",
+      "G7_M6_TC_a1_q2",
+      "G7_M6_a1_q8",
+      "G7_M6_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "count_dots_relative_to_zero",
+    "title": "Count Data Points Relative to Zero",
+    "description": "Count the number of data points on a dot plot that are greater than or less than zero.",
+    "condition": "Given a dot plot with values distributed around 0.",
+    "response": "Count dots to the right of 0 for values greater than 0 and to the left for values less than 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If 22 dots lie to the right of 0 and 6 to the left, then 22 are greater than 0 and 6 are less than 0.",
+    "notes": "Visual counting skill based on graphical representation.",
+    "question_ids": [
+      "G7_M6_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "estimate_population_proportion_from_sampling_distribution",
+    "title": "Estimate Population Proportion from Sampling Distribution",
+    "description": "Estimate a population proportion by identifying the center of a sampling distribution of sample proportions.",
+    "condition": "Given a sampling distribution (dot plot or graph) of multiple sample proportions.",
+    "response": "Identify the central value (mean/cluster center) of the distribution as the population proportion estimate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If the sampling distribution clusters around $0.63$, estimate the population proportion as $0.63$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "evaluate_equal_theoretical_probability",
+    "title": "Evaluate Claim of Equal Theoretical Probability",
+    "description": "Determine whether outcomes have equal theoretical probability based on the structure of the experiment.",
+    "condition": "Given an experiment with equally sized regions or equal counts of outcomes.",
+    "response": "Conclude each outcome has equal theoretical probability (e.g., $\\frac{1}{n}$).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "If a bag contains equal numbers of three colors, each color has theoretical probability $\\frac{1}{3}$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_convenience_sample_not_random",
+    "title": "Identify Convenience Sample as Not Random",
+    "description": "Recognize that a sample chosen based on ease or order of selection is not random because not all individuals have equal chance.",
+    "condition": "Sample consists of easily accessible individuals (e.g., closest residents, first arrivals).",
+    "response": "Conclude the sample is not random because not all individuals had an equal chance of selection.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Surveying the first 100 customers is not random because not all customers had an equal chance of being selected.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TC_a1_q1",
+      "G7_M6_TC_a1_q5",
+      "G7_M6_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_favorable_outcomes_set",
+    "title": "Identify Favorable Outcomes from Conditions",
+    "description": "Determine which outcomes satisfy a verbal condition (e.g., even number, less than 3, neither A nor B).",
+    "condition": "Given a sample space and a verbal description of an event.",
+    "response": "List or count outcomes that satisfy the stated condition.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "From numbers 1\u201310, the event \"greater than 8\" has favorable outcomes $\\{9,10\\}$ (2 outcomes).",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TA_a1_q1",
+      "G7_M6_TA_a1_q4",
+      "G7_M6_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_exact_success_count",
+    "title": "Identify Trials with Exact Number of Successes",
+    "description": "Determine whether a sequence represents exactly a specified number of successes.",
+    "condition": "Given a sequence of outcomes (e.g., S and N) and asked for exactly k successes in n trials.",
+    "response": "Count the number of successes and verify it equals the specified value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "The sequence SSNN has exactly two successes because there are two S's.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TB_a1_q3",
+      "G7_M6_TB_a1_q5",
+      "G7_M6_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_similar_empirical_probabilities",
+    "title": "Interpret Similar Empirical Probabilities",
+    "description": "Use similar empirical probabilities to infer outcomes are likely equally likely.",
+    "condition": "Given empirical probabilities for multiple outcomes that are close in value.",
+    "response": "Conclude the outcomes appear to be equally likely or regions appear equal in size.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If relative frequencies are $\\frac{13}{80}, \\frac{14}{80}, \\frac{12}{80}, \\dots$, they are similar, suggesting equal-sized regions.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_sample_space_multiple_events",
+    "title": "List Combined Sample Space",
+    "description": "List all possible outcomes when combining two independent events.",
+    "condition": "Given two events (e.g., spinner with 3 outcomes and die with 6 outcomes).",
+    "response": "Enumerate all ordered pairs representing combinations of outcomes.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Outcomes: B1, B2, ..., B6, R1, ..., R6, O1, ..., O6 (18 total).",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TA_a1_q4",
+      "G7_M6_a1_q2",
+      "G7_M6_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "determine_closeness_more_trials",
+    "title": "More Trials \u2192 Closer to Theoretical Probability",
+    "description": "Recognize that larger sample sizes tend to produce empirical probabilities closer to theoretical probabilities.",
+    "condition": "Given two empirical probabilities from different numbers of trials.",
+    "response": "Identify the result from the larger number of trials as more reliable/closer to theoretical probability.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "250 trials vs. 80 trials \u2192 the 250\u2011trial relative frequency is expected to be closer to the theoretical probability.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TB_a1_q4",
+      "G7_M6_TC_a1_q3",
+      "G7_M6_a1_q3",
+      "G7_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_probabilities_order",
+    "title": "Order Events by Probability",
+    "description": "Compare numerical probabilities to order events from least likely to most likely.",
+    "condition": "Given two or more events with known probabilities.",
+    "response": "Arrange events in ascending order of their probability values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $P(A)=\\frac{1}{9}$, $P(B)=\\frac{3}{9}$, and $P(C)=\\frac{5}{9}$, then $A < B < C$ in likelihood.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_probability_multiple_favorable",
+    "title": "Probability with Multiple Favorable Outcomes",
+    "description": "Calculate probability when several outcomes are favorable among equally likely outcomes.",
+    "condition": "Total equally likely outcomes and more than one favorable outcome specified.",
+    "response": "Count favorable outcomes and divide by total outcomes.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 6 of 20 wedges are favorable, probability is $\\frac{6}{20}=0.3$.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_a1_q7",
+      "G7_M6_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "represent_probability_with_simulation_mapping",
+    "title": "Represent Probability with Simulation Mapping",
+    "description": "Assign outcomes in a simulation tool to match a given probability.",
+    "condition": "Given a target probability (e.g., $\\frac{5}{6}$) and a simulation device (e.g., 6-sided die).",
+    "response": "Assign proportional outcomes on the device to represent the event.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "To model $\\frac{5}{6}$, let outcomes 1\u20135 represent success and 6 represent failure.",
+    "notes": "",
+    "question_ids": [
+      "G7_M6_TB_a1_q4",
+      "G7_M6_TB_a1_q5",
+      "G7_M6_a1_q4",
+      "G7_M6_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_theoretical_probability_equally_likely",
+    "title": "Theoretical Probability (Equally Likely Outcomes)",
+    "description": "Compute theoretical probability when all outcomes are equally likely.",
+    "condition": "Given equally likely outcomes and a specified favorable subset.",
+    "response": "Compute probability as $\\frac{\\text{number of favorable outcomes}}{\\text{total number of outcomes}}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If 19 of 51 outcomes are favorable, probability $=\\frac{19}{51}$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G7_M6_TA_a1_q1",
+      "G7_M6_TA_a1_q2",
+      "G7_M6_TA_a1_q4",
+      "G7_M6_TA_a1_q5",
+      "G7_M6_a1_q1",
+      "G7_M6_a1_q2",
+      "G7_M6_a1_q7",
+      "G7_M6_a2_q1",
+      "G7_M6_a2_q2",
+      "G7_M6_a2_q7"
+    ]
+  }
+]

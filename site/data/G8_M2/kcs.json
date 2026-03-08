@@ -282,25 +282,6 @@
     ]
   },
   {
-    "kc_id": "reflection_across_x_axis",
-    "title": "Reflect Across the x-Axis",
-    "description": "A reflection across the x-axis maps each point to a point with the same x-coordinate and opposite y-coordinate.",
-    "condition": "Point $(x,y)$ reflected across the x-axis.",
-    "response": "Map to $(x,-y)$.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$(2,-3)$ reflected across x-axis becomes $(2,3)$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M2_a1_q3",
-      "G8_M2_a2_q1",
-      "G8_M2_a2_q6"
-    ]
-  },
-  {
     "kc_id": "reflection_across_y_axis_rule",
     "title": "Reflection Across the y-Axis Rule",
     "description": "Apply the coordinate rule for reflecting a point across the y-axis.",
@@ -433,25 +414,6 @@
     "notes": "Core rigid motion property.",
     "question_ids": [
       "G8_M2_TA_a1_q2"
-    ]
-  },
-  {
-    "kc_id": "triangle_angle_sum",
-    "title": "Triangle Angle Sum Theorem",
-    "description": "Use the fact that the sum of the interior angles of a triangle is 180 degrees.",
-    "condition": "A triangle with two interior angles known.",
-    "response": "Set up equation angle1 + angle2 + angle3 = 180 and solve for the unknown angle.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If angles are 71^\\circ and 28^\\circ, then the third angle is 180 - 71 - 28 = 81^\\circ.",
-    "notes": "",
-    "question_ids": [
-      "G8_M2_a1_q7",
-      "G8_M2_a2_q7",
-      "G8_M5_TC_a1_q4"
     ]
   },
   {

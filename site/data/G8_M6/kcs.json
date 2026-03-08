@@ -204,6 +204,7 @@
     "example": "Using $(6,300)$ and $(10,350)$:  \n$m = \\frac{350-300}{10-6} = \\frac{50}{4} = 12.5$.",
     "notes": "",
     "question_ids": [
+      "G5_M6_TC_a1_q1",
       "G8_M4_TD_a1_q3",
       "G8_M5_TC_a1_q3",
       "G8_M6_TB_a1_q1",

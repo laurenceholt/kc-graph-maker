@@ -35,11 +35,14 @@
       "G5_M4_a2_q10",
       "G5_M4_a2_q3",
       "G5_M4_a2_q5",
-      "G5_M4_a2_q9"
+      "G5_M4_a2_q9",
+      "G6_M2_TD_a1_q1",
+      "G6_M2_TD_a1_q2",
+      "G6_M2_a2_q8"
     ]
   },
   {
-    "kc_id": "order_of_operations",
+    "kc_id": "apply_order_of_operations",
     "title": "Apply Order of Operations",
     "description": "Evaluate numerical expressions with parentheses and multiple operations in the correct order.",
     "condition": "Expression containing parentheses and two or more operations.",
@@ -52,9 +55,13 @@
     "example": "$(2.87 + 8.49) - (10.26 \\div 7.6)$",
     "notes": "Follows conventional order (PEMDAS).",
     "question_ids": [
+      "G5_M1_TD_a1_q1",
+      "G5_M1_TD_a1_q5",
       "G5_M4_a2_q1",
       "G5_M4_a2_q10",
-      "G5_M4_a2_q9"
+      "G5_M4_a2_q9",
+      "G6_M4_TA_a1_q3",
+      "G6_M4_TA_a1_q4"
     ]
   },
   {
@@ -760,7 +767,10 @@
       "G5_M4_TE_a1_q4",
       "G5_M4_a1_q1",
       "G5_M4_a1_q7",
-      "G5_M4_a2_q1"
+      "G5_M4_a2_q1",
+      "G6_M2_TD_a1_q1",
+      "G6_M2_TD_a1_q2",
+      "G6_M2_a2_q8"
     ]
   },
   {

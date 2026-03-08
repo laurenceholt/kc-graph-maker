@@ -1,0 +1,652 @@
+[
+  {
+    "kc_id": "classify_division_relative_to_one",
+    "title": "Classify Quotient Relative to 1",
+    "description": "Determine whether a division expression will be less than 1, about 1, or much greater than 1 without exact computation.",
+    "condition": "A division expression involving fractions and/or whole numbers is given, and the task is to compare its value to 0 or 1.",
+    "response": "Reason about the sizes of the dividend and divisor to decide whether the quotient is closer to 0, closer to 1, or much greater than 1.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{10}{11} \\div \\frac{4}{5}$ is close to $1 \\div 1$, so it is closer to 1.",
+    "notes": "Requires conceptual understanding of how dividing by numbers greater or less than 1 affects magnitude.",
+    "question_ids": [
+      "G6_M2_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_gcf",
+    "title": "Compute Greatest Common Factor",
+    "description": "Find the greatest common factor of two whole numbers.",
+    "condition": "Given two whole numbers.",
+    "response": "Identify all common factors and select the greatest one.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Common factors of $36$ and $90$ include $1,2,3,6,9,18$; the GCF is $18$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M2_TA_a1_q2",
+      "G6_M2_TA_a1_q3",
+      "G6_M2_a1_q1",
+      "G6_M2_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "compute_lcm",
+    "title": "Compute Least Common Multiple",
+    "description": "Find the least common multiple of two whole numbers.",
+    "condition": "Given two whole numbers.",
+    "response": "List or generate multiples of each number and select the smallest common multiple.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Multiples of $4$: $4,8,12,\\dots$; multiples of $11$: $11,22,33,44$; LCM is $44$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M2_TA_a1_q4",
+      "G6_M2_TA_a1_q5",
+      "G6_M2_a1_q2",
+      "G6_M2_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "compute_profit_or_loss",
+    "title": "Compute Profit or Loss",
+    "description": "Determine whether a situation results in profit or loss and compute the difference between revenue and cost.",
+    "condition": "Total revenue and total cost are given in a real-world context.",
+    "response": "Compute revenue \u2212 cost; if positive, state profit and the amount; if negative, state loss and the amount.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Revenue: $11 \\times 8.25 = 90.75$. Cost: $74.75$. Profit: $90.75 - 74.75 = 16.00$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "quotient_remainder_to_mixed_number",
+    "title": "Convert Remainder to Fraction",
+    "description": "Express a division result with remainder as a mixed number by placing remainder over divisor.",
+    "condition": "Division result with nonzero remainder.",
+    "response": "Write quotient as whole number plus remainder/divisor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$342 \\div 8 = 42$ remainder $6 = 42\\frac{6}{8} = 42\\frac{3}{4}$.",
+    "notes": "May require simplifying the fraction.",
+    "question_ids": [
+      "G6_M2_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "divide_by_fraction_multiply_reciprocal",
+    "title": "Divide by a Fraction Using Reciprocal",
+    "description": "Divide a number by a fraction by multiplying by its reciprocal.",
+    "condition": "Expression of the form $a \\div \\frac{b}{c}$.",
+    "response": "Rewrite as $a \\times \\frac{c}{b}$ and multiply.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$\\frac{3}{5} \\div \\frac{2}{9} = \\frac{3}{5} \\times \\frac{9}{2} = \\frac{27}{10} = 2\\frac{7}{10}$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M3_TC_a1_q1",
+      "G5_M3_TC_a1_q2",
+      "G5_M3_TC_a1_q6",
+      "G5_M3_TD_a1_q1",
+      "G5_M3_a1_q10",
+      "G5_M3_a1_q2",
+      "G5_M3_a1_q4",
+      "G5_M3_a1_q5",
+      "G5_M3_a2_q10",
+      "G5_M3_a2_q2",
+      "G5_M3_a2_q4",
+      "G5_M3_a2_q5",
+      "G6_M2_TB_a1_q4",
+      "G6_M2_TB_a1_q5",
+      "G6_M2_TC_a1_q1",
+      "G6_M2_TC_a1_q2",
+      "G6_M2_TC_a1_q3",
+      "G6_M2_a1_q4",
+      "G6_M2_a1_q5",
+      "G6_M2_a1_q7",
+      "G6_M2_a2_q4",
+      "G6_M2_a2_q5",
+      "G6_M2_a2_q7",
+      "G7_M2_TD_a1_q6",
+      "G7_M2_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "decimal_division_by_multiple_of_ten",
+    "title": "Divide by a Multiple of Ten",
+    "description": "Divide a whole number by a multiple of ten by factoring out powers of ten.",
+    "condition": "Division problem where divisor is 10, 20, 30, 40, etc.",
+    "response": "Rewrite as division by (non-zero digit \u00d7 10) and divide stepwise, adjusting decimal place as needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$7{,}256 \\div 40 = 7{,}256 \\div (4 \\times 10) = 725.6 \\div 4 = 181.4$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "divide_decimal_numbers",
+    "title": "Divide Decimal Numbers",
+    "description": "Divide decimal numbers by adjusting place value and performing division.",
+    "condition": "Expression of the form a \u00f7 b where a and/or b are decimals.",
+    "response": "Adjust decimals (e.g., multiply both by powers of 10) and divide to find the quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$119.84 \\div 5.6 = 21.4$",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TF_a1_q2",
+      "G6_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "divide_mixed_numbers",
+    "title": "Divide Mixed Numbers",
+    "description": "Divide mixed numbers by converting to improper fractions and applying fraction division.",
+    "condition": "Division expression involving one or more mixed numbers.",
+    "response": "Convert each mixed number to an improper fraction, multiply by the reciprocal, and simplify.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$2\\frac{7}{8} \\div \\frac{3}{4} = \\frac{23}{8} \\times \\frac{4}{3} = \\frac{92}{24} = 3\\frac{5}{6}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_a1_q6",
+      "G6_M2_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "reason_divide_by_number_greater_than_one",
+    "title": "Effect of Dividing by a Number Greater Than 1",
+    "description": "Dividing a number by a value greater than 1 results in a smaller quotient.",
+    "condition": "A division expression where the divisor is greater than 1.",
+    "response": "Conclude that the quotient is less than the dividend (and possibly less than 1 if the dividend is less than the divisor).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{3}{4} \\div 15$ is much less than 1 because a number less than 1 is divided by 15 (>1).",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "reason_divide_by_number_less_than_one",
+    "title": "Effect of Dividing by a Number Less Than 1",
+    "description": "Dividing by a number less than 1 results in a larger quotient.",
+    "condition": "A division expression where the divisor is a positive number less than 1.",
+    "response": "Conclude that the quotient is greater than the dividend.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$19 \\div \\frac{1}{10} = 19 \\times 10$, which is much greater than 1.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TB_a1_q1",
+      "G6_M2_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compatible_number_estimation_division",
+    "title": "Estimate Quotient Using Compatible Numbers",
+    "description": "Estimate a division problem by replacing numbers with nearby compatible numbers that divide easily.",
+    "condition": "Division problem with numbers that are not easy to divide mentally (e.g., 375 \u00f7 19).",
+    "response": "Replace with compatible numbers (e.g., 400 \u00f7 20) and compute the estimated quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Estimate $375 \\div 19$ using $400 \\div 20 = 20$.",
+    "notes": "Requires recognizing proportional adjustments.",
+    "question_ids": [
+      "G6_M2_TE_a1_q0",
+      "G6_M2_TE_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "area_division_for_width",
+    "title": "Find Rectangle Width Using Area and Length",
+    "description": "Given the area and length of a rectangle, compute the width by dividing area by length.",
+    "condition": "Rectangle area A and length L are given; width is unknown.",
+    "response": "Compute width as A \u00f7 L.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $A = 189$ and $L = 45$, then width $= 189 \\div 45 = 4.2$.",
+    "notes": "Based on the area model $A = L \\times W$.",
+    "question_ids": [
+      "G6_M2_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "equivalent_division_scaling",
+    "title": "Generate Equivalent Division Expression",
+    "description": "Create an equivalent division expression by multiplying or dividing both dividend and divisor by the same nonzero power of 10.",
+    "condition": "Given a division expression with decimals and asked for an equivalent expression.",
+    "response": "Multiply or divide both numbers by the same power of 10 to form an equivalent quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$935 \\div 0.08 = 93{,}500 \\div 8$ (multiply both by 100).",
+    "notes": "Relies on the property that multiplying dividend and divisor by the same nonzero number preserves the quotient.",
+    "question_ids": [
+      "G6_M2_TF_a1_q0",
+      "G6_M2_TF_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_common_factor",
+    "title": "Identify Common Factor",
+    "description": "Determine whether a given number is a factor of two numbers.",
+    "condition": "Given numbers $a$, $b$, and candidate factor $k$.",
+    "response": "Check if $k$ divides both $a$ and $b$ evenly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$9$ is a common factor of $36$ and $90$ because $36 \\div 9 = 4$ and $90 \\div 9 = 10$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M2_TA_a1_q6",
+      "G6_M2_a1_q1",
+      "G6_M2_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "define_common_multiple",
+    "title": "Identify Common Multiple",
+    "description": "Recognize that a common multiple is a number divisible by each of the given numbers.",
+    "condition": "Given two numbers and a candidate number; determine whether the candidate is divisible by both numbers.",
+    "response": "Conclude the number is a common multiple if both numbers divide it evenly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "To test if 42 is a common multiple of 6 and 14: $42 \\div 6 = 7$ and $42 \\div 14 = 3$. Since both are whole numbers, 42 is a common multiple.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "interpret_division_as_sharing",
+    "title": "Interpret Division as Equal Sharing",
+    "description": "Model division in word problems as distributing a total equally among a given number of groups.",
+    "condition": "Word problem describes splitting a total equally into n groups.",
+    "response": "Write and solve division equation total \u00f7 n.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $3\\tfrac{1}{2}$ cups are shared among 6 jars, compute $3\\tfrac{1}{2} \\div 6$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TC_a1_q3",
+      "G6_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_division_as_how_many_groups",
+    "title": "Interpret Division as Number of Groups",
+    "description": "Model division in word problems as finding how many groups of a given size fit into a total.",
+    "condition": "Word problem asks how many groups of size x can be made from total y.",
+    "response": "Write and solve division equation y \u00f7 x.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If each serving is $\\frac{1}{9}$ gallon and there are $4\\tfrac{2}{3}$ gallons, compute $4\\tfrac{2}{3} \\div \\frac{1}{9}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_fraction_division_context",
+    "title": "Interpret Fraction Division in Context",
+    "description": "Interpret a fraction division expression as the number of groups of a given fractional size in a quantity.",
+    "condition": "Word problem representing a \u00f7 b where b is a fraction less than 1.",
+    "response": "Interpret quotient as number of groups of size b in a.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3\\tfrac{5}{6} \\div \\frac{2}{3}$ represents how many $\\frac{2}{3}$-size servings are in $3\\tfrac{5}{6}$ pizzas.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_a2_q5",
+      "G6_M2_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "interpret_tape_diagram_division",
+    "title": "Interpret Tape Diagram as Division Expression",
+    "description": "Translate a visual tape diagram showing equal parts into a corresponding division expression.",
+    "condition": "A tape diagram shows a total length and equal fractional parts or groups.",
+    "response": "Write a division expression total \u00f7 size_of_each_part (or equivalent) that matches the diagram.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A bar labeled 1 split into fourths with 3 parts highlighted corresponds to $1 \\div \\frac{3}{4}$.",
+    "notes": "Connects visual fraction models to symbolic division.",
+    "question_ids": [
+      "G6_M2_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_whole_number_result_context",
+    "title": "Interpret Whole-Number Result in Context",
+    "description": "When dividing in a real-world purchasing context, interpret the quotient as the greatest whole number not exceeding the exact value.",
+    "condition": "A division result represents number of items that can be purchased and fractional items are not allowed.",
+    "response": "Take the greatest whole number less than or equal to the quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$132.50 \\div 8.75 = 15.14\\ldots$, so Leo can buy $15$ cars.",
+    "notes": "Equivalent to applying the floor function in context.",
+    "question_ids": [
+      "G6_M2_TB_a1_q4",
+      "G6_M2_TF_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "model_division_word_problem",
+    "title": "Model Division in Word Problems",
+    "description": "Translate a context involving equal groups or rates into a division expression.",
+    "condition": "Word problem describing total amount and size of each group.",
+    "response": "Write a division expression total \u00f7 group size.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If  $2\\frac{7}{8}$ cups are available and each batch needs $\\frac{3}{4}$ cup, write $2\\frac{7}{8} \\div \\frac{3}{4}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_a1_q10",
+      "G6_M2_a1_q6",
+      "G6_M2_a1_q7",
+      "G6_M2_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "multiply_decimal_numbers",
+    "title": "Multiply Decimal Numbers",
+    "description": "Multiply decimal numbers and place the decimal point correctly in the product.",
+    "condition": "Expression of the form a \u00d7 b where a and/or b are decimals.",
+    "response": "Multiply as whole numbers and place the decimal based on total decimal places.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$107.7 \\times 0.2 = 21.54$",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G6_M2_TD_a1_q3",
+      "G6_M2_TD_a1_q4",
+      "G6_M2_a2_q10",
+      "G6_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "decimal_operations",
+    "title": "Operate with Decimals",
+    "description": "Accurately add, subtract, multiply, or divide decimal numbers.",
+    "condition": "Given decimal numbers and an operation (+, \u2212, \u00d7, \u00f7).",
+    "response": "Perform the operation using place value alignment or standard algorithms.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "$17.305 + 4.2 = 21.505$; $47.5 \\times 0.5 = 23.75$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_a1_q10",
+      "G6_M2_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "represent_fraction_division_tape_diagram",
+    "title": "Represent Fraction Division with Tape Diagram",
+    "description": "Draw a tape diagram partitioned into equal fractional parts to model fraction division.",
+    "condition": "Prompt to represent a fraction division expression visually.",
+    "response": "Partition a bar into equal fractional units and show how many divisor-sized parts fit into the dividend.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To model $\\frac{5}{6} \\div \\frac{2}{3}$, divide a bar into sixths, shade 5 parts, regroup into thirds, and count how many $\\frac{2}{3}$ units fit.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "round_to_nearest_hundredth",
+    "title": "Round to Nearest Hundredth",
+    "description": "Round a decimal to the nearest hundredth using the thousandths digit.",
+    "condition": "Given a decimal number with at least three decimal places.",
+    "response": "Check the thousandths digit and round the hundredths digit accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "$6.1275$ rounded to the nearest hundredth is $6.13$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G6_M2_TE_a1_q3",
+      "G6_M2_TF_a1_q2",
+      "G6_M2_a1_q10",
+      "G6_M2_a2_q10",
+      "G7_M2_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "use_ceiling_for_context",
+    "title": "Round Up for Real-World Grouping",
+    "description": "When dividing to determine number of groups needed, round up if there is a remainder.",
+    "condition": "Division used to find number of containers/groups needed and remainder exists.",
+    "response": "Increase quotient to next whole number.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$81 \\div 12 = 6$ remainder $9$, so $7$ boxes are needed.",
+    "notes": "Response is always \u2018round up\u2019 when remainder exists in this context.",
+    "question_ids": [
+      "G6_M2_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "scale_product_by_power_of_ten",
+    "title": "Scale Product Using Powers of Ten",
+    "description": "Use a known whole-number product to find related decimal products by adjusting place value.",
+    "condition": "A known product (e.g., 28 \u00d7 13 = 364) and a related expression where one or both factors are divided by powers of ten.",
+    "response": "Adjust the known product by dividing by the corresponding power(s) of ten to account for decimal factors.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Given $28 \\times 13 = 364$, then $2.8 \\times 13 = 36.4$ because $2.8 = 28 \\div 10$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "simplify_fraction_or_mixed",
+    "title": "Simplify Fraction or Convert to Mixed Number",
+    "description": "Rewrite an improper fraction in simplest form or as a mixed number.",
+    "condition": "Improper fraction or reducible fraction obtained after computation.",
+    "response": "Divide numerator by denominator and/or reduce by common factors.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{15}{12} = \\frac{5}{4} = 1\\tfrac{1}{4}$.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TC_a1_q1",
+      "G6_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "long_division_algorithm",
+    "title": "Standard Long Division",
+    "description": "Use the standard long division process to compute quotient and remainder.",
+    "condition": "Multi-digit dividend divided by one- or two-digit divisor.",
+    "response": "Apply divide\u2013multiply\u2013subtract\u2013bring down steps to find quotient (and remainder if any).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$603 \\div 9 = 67$ using long division steps.",
+    "notes": "Procedural fluency skill.",
+    "question_ids": [
+      "G6_M2_TE_a1_q2",
+      "G6_M2_TE_a1_q3",
+      "G6_M2_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "subtract_to_find_change",
+    "title": "Subtract to Find Change in Quantity",
+    "description": "Subtract an initial value from a final value to determine the amount of increase before dividing by a rate.",
+    "condition": "Initial amount, final amount, and constant growth rate are given; asked for time.",
+    "response": "Compute final minus initial to find total change.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$27 - 20\\tfrac{1}{2} = 6\\tfrac{1}{2}$ inches of growth.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "unit_rate_from_growth",
+    "title": "Time from Growth Rate",
+    "description": "Divide total change by rate to find elapsed time.",
+    "condition": "Total change in quantity and constant rate per time unit are given.",
+    "response": "Divide change by rate to compute time.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$6\\tfrac{1}{2} \\div 1\\tfrac{1}{12} = 6$ months.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "choose_division_for_equal_groups",
+    "title": "Use Division to Find Number of Groups or Size per Group",
+    "description": "When a total amount and a per-group amount (or number of groups) are given, use division to find the unknown quantity.",
+    "condition": "A word problem describes a total quantity and either the size of each group or the number of groups, and asks for the missing value.",
+    "response": "Write a division expression total \u00f7 known_quantity to represent the situation.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 4 cups make 1 gallon, then with $8\\tfrac{1}{2}$ cups the gallons are $8\\tfrac{1}{2} \\div 4$.",
+    "notes": "Includes both measurement (how many groups?) and partitive (how much per group?) interpretations.",
+    "question_ids": [
+      "G6_M2_TB_a1_q3",
+      "G6_M2_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "equal_grouping_via_gcf",
+    "title": "Use GCF for Equal Grouping",
+    "description": "Use the greatest common factor to determine the greatest number of equal groups when distributing items evenly.",
+    "condition": "A word problem describes distributing two quantities into the greatest number of equal groups with no remainder.",
+    "response": "Compute the GCF of the two quantities to determine the number of groups; divide each quantity by the GCF to find items per group.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "With 16 whistles and 40 stickers: $\\gcd(16,40)=8$. So there are 8 bags. Each bag has $16 \\div 8 = 2$ whistles and $40 \\div 8 = 5$ stickers.",
+    "notes": "Interprets GCF as maximum number of equal groups.",
+    "question_ids": [
+      "G6_M2_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "repeating_event_lcm",
+    "title": "Use LCM for Repeating Events",
+    "description": "Use the least common multiple to determine when two repeating events coincide.",
+    "condition": "A word problem describes two events occurring at different fixed intervals and asks when they will occur together again.",
+    "response": "Compute the LCM of the two intervals to determine when both events coincide.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Letters every 6 days and packages every 8 days: $6 = 2 \\times 3$, $8 = 2^3$. LCM $= 2^3 \\times 3 = 24$. They coincide every 24 days.",
+    "notes": "",
+    "question_ids": [
+      "G6_M2_TA_a1_q5"
+    ]
+  }
+]

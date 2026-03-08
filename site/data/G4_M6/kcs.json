@@ -585,23 +585,6 @@
     ]
   },
   {
-    "kc_id": "vertical_angles_congruent",
-    "title": "Vertical Angles Are Equal",
-    "description": "When two lines intersect, opposite (vertical) angles are congruent.",
-    "condition": "Two lines intersect forming vertical (opposite) angles; one angle measure is known.",
-    "response": "Assign the same measure to the vertical angle.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "If $\\angle AEB = 146\u00b0$, then its vertical angle $\\angle DEC = 146\u00b0$.",
-    "notes": "",
-    "question_ids": [
-      "G4_M6_TC_a1_q5"
-    ]
-  },
-  {
     "kc_id": "set_up_subtraction_equation",
     "title": "Write Equation for Missing Angle",
     "description": "Translate a geometric relationship into a subtraction equation to represent a missing angle.",
