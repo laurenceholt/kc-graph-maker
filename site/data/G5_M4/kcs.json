@@ -1,0 +1,835 @@
+[
+  {
+    "kc_id": "add_decimal_numbers",
+    "title": "Add Decimals by Aligning Place Values",
+    "description": "Add two decimal numbers by aligning place values and summing corresponding digits.",
+    "condition": "Expression of the form a + b where a and b are decimal numbers.",
+    "response": "Align decimal points and add by place value to compute the sum.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2.41 + 3.8 = 6.21$",
+    "notes": "[merged: condition varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M5_TB_a1_q4",
+      "G4_M5_TB_a1_q5",
+      "G4_M5_TD_a1_q4",
+      "G4_M5_a1_q2",
+      "G4_M5_a1_q7",
+      "G4_M5_a2_q2",
+      "G4_M5_a2_q7",
+      "G5_M4_TB_a1_q1",
+      "G5_M4_TB_a1_q3",
+      "G5_M4_TB_a1_q5",
+      "G5_M4_TB_a1_q6",
+      "G5_M4_TE_a1_q2",
+      "G5_M4_TE_a1_q3",
+      "G5_M4_TE_a1_q6",
+      "G5_M4_a1_q1",
+      "G5_M4_a1_q10",
+      "G5_M4_a1_q3",
+      "G5_M4_a1_q9",
+      "G5_M4_a2_q1",
+      "G5_M4_a2_q10",
+      "G5_M4_a2_q3",
+      "G5_M4_a2_q5",
+      "G5_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "order_of_operations",
+    "title": "Apply Order of Operations",
+    "description": "Evaluate numerical expressions with parentheses and multiple operations in the correct order.",
+    "condition": "Expression containing parentheses and two or more operations.",
+    "response": "Evaluate inside parentheses first, then multiplication/division, then addition/subtraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$(2.87 + 8.49) - (10.26 \\div 7.6)$",
+    "notes": "Follows conventional order (PEMDAS).",
+    "question_ids": [
+      "G5_M4_a2_q1",
+      "G5_M4_a2_q10",
+      "G5_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "compare_decimal_values",
+    "title": "Compare Decimal Numbers",
+    "description": "Determine the relative size of two decimal numbers using place value reasoning.",
+    "condition": "Two decimal numbers or equivalent expressions are presented with a comparison blank.",
+    "response": "Insert >, <, or = based on place value comparison.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$6.196 > 6.087$ because 196 thousandths is greater than 87 thousandths.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M4_TA_a1_q2",
+      "G5_M4_a1_q9",
+      "G5_M4_a2_q8",
+      "G5_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "compute_decimal_product",
+    "title": "Compute Product of Decimals",
+    "description": "Multiply two decimal numbers by multiplying as whole numbers and placing the decimal point based on total decimal places.",
+    "condition": "Two decimal numbers are given to multiply (e.g., a \u00d7 b where a and/or b are decimals).",
+    "response": "Multiply as whole numbers, count total decimal places in factors, and place decimal in product accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compute $8.2 \\times 0.03$: \\(82 \\times 3 = 246\\). There are 3 decimal places total, so the product is $0.246$.",
+    "notes": "Core algorithm for decimal multiplication.",
+    "question_ids": [
+      "G5_M4_TC_a1_q2",
+      "G5_M4_TC_a1_q4",
+      "G5_M4_TC_a1_q5",
+      "G5_M4_TE_a1_q2",
+      "G5_M4_TE_a1_q3",
+      "G5_M4_a1_q1",
+      "G5_M4_a1_q10",
+      "G5_M4_a1_q9",
+      "G5_M4_a2_q1",
+      "G5_M4_a2_q10",
+      "G5_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "compute_decimal_remainder",
+    "title": "Compute Remainder with Decimals",
+    "description": "After finding a whole-number quotient, multiply back and subtract to find the remaining decimal amount.",
+    "condition": "Given dividend a and divisor b with whole-number quotient q where a \u00f7 b is not exact.",
+    "response": "Compute remainder r = a - (b \u00d7 q).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $28.4 \\div 1.3$, if $q=21$, then $r = 28.4 - (1.3 \\times 21) = 28.4 - 27.3 = 1.1$.",
+    "notes": "Used in Part B of Q5.",
+    "question_ids": [
+      "G5_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "convert_customary_units",
+    "title": "Convert Customary Units",
+    "description": "Convert between customary units using known conversion factors.",
+    "condition": "Measurement given in inches and convert to feet, or pounds to ounces.",
+    "response": "Apply known conversion factor (e.g., 12 in = 1 ft, 16 oz = 1 lb) to compute equivalent measure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "$390\\text{ in} \\div 12 = 32.5\\text{ ft}$",
+    "notes": "Conversion factors must be memorized.",
+    "question_ids": [
+      "G5_M4_TE_a1_q1",
+      "G5_M4_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_decimal_to_unit_form",
+    "title": "Convert Decimal to Unit Form",
+    "description": "Express a decimal as a whole number multiplied by a place-value unit (e.g., tenths, hundredths).",
+    "condition": "A decimal number is given (e.g., 0.2 or 0.08).",
+    "response": "State the number in unit form using place value (e.g., 2 tenths, 8 hundredths).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.08 = 8$ hundredths.",
+    "notes": "Requires understanding of place value units.",
+    "question_ids": [
+      "G5_M4_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "convert_measurement_units",
+    "title": "Convert Measurement Units",
+    "description": "Convert a quantity from one unit to another using a known multiplicative relationship.",
+    "condition": "Measurement given in one unit with a target unit specified (e.g., lb to oz, mL to L).",
+    "response": "Multiply or divide by the appropriate conversion factor to express the equivalent quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$2.28\\text{ lb} \\times 16 = 36.48\\text{ oz}$",
+    "notes": "Requires recalling standard conversion constants (e.g., 16 oz = 1 lb).",
+    "question_ids": [
+      "G5_M4_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_metric_units",
+    "title": "Convert Within Metric System",
+    "description": "Convert between metric units by multiplying or dividing by powers of 10.",
+    "condition": "A measurement in metric units (e.g., cm, g, mL) to be converted to another metric unit.",
+    "response": "Multiply or divide by the appropriate power of 10.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$692\\text{ g} = 0.692\\text{ kg}$",
+    "notes": "Based on base\u201110 structure of metric system.",
+    "question_ids": [
+      "G5_M4_TE_a1_q1",
+      "G5_M4_TE_a1_q6",
+      "G5_M4_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "decompose_number_make_friendly_sum",
+    "title": "Decompose to Make a Friendly Sum",
+    "description": "Break apart a number to create a benchmark or whole-number sum that simplifies computation.",
+    "condition": "Addition expression where one addend can be split to complete a whole with another addend (e.g., 3.77 + 6.84).",
+    "response": "Decompose one addend (e.g., 6.84 = 0.23 + 6.61) to form an easier partial sum, then combine.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$3.77 + 6.84 = 3.77 + 0.23 + 6.61 = 4 + 6.61 = 10.61$",
+    "notes": "Uses associative and commutative properties.",
+    "question_ids": [
+      "G5_M4_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_using_place_value_powers_of_10",
+    "title": "Divide by Powers of 10 Using Place Value",
+    "description": "Shift the decimal point left when dividing by 10, 100, 1000, etc.",
+    "condition": "Division where divisor is 10, 100, 1000, or a multiple thereof.",
+    "response": "Move decimal point left according to the number of zeros in the divisor.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$5.8 \\div 0.03 \\approx 200$ since $5.8 \\div 0.03 = 580 \\div 3 \\approx 193 \\approx 200$.",
+    "notes": "Supports estimation and exact division with powers of 10.",
+    "question_ids": [
+      "G5_M4_TD_a1_q1",
+      "G5_M4_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "divide_decimal_by_whole",
+    "title": "Divide Decimal by Whole Number",
+    "description": "Use standard division to divide a decimal number by a whole number.",
+    "condition": "Expression of the form a (decimal) \u00f7 b (whole number).",
+    "response": "Perform division, placing the decimal point correctly in the quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$89.6 \\div 400 = 0.224$.",
+    "notes": "Includes multi-digit whole divisors.",
+    "question_ids": [
+      "G5_M4_TD_a1_q2",
+      "G5_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "divide_decimals",
+    "title": "Divide Decimals",
+    "description": "Compute a quotient involving decimals, adjusting place value as needed.",
+    "condition": "Division expression with decimal dividend and/or divisor.",
+    "response": "Scale numbers to remove decimals (if needed) and divide to find the quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$8.45 \\div 0.52 = 16.25$",
+    "notes": "Includes dividing remaining total by equal groups in word problems.",
+    "question_ids": [
+      "G5_M4_TE_a1_q3",
+      "G5_M4_a1_q1",
+      "G5_M4_a1_q7",
+      "G5_M4_a1_q9",
+      "G5_M4_a2_q1",
+      "G5_M4_a2_q7",
+      "G5_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "decimal_equivalent_trailing_zeros",
+    "title": "Equivalent Decimals with Trailing Zeros",
+    "description": "Recognize that adding or removing trailing zeros to the right of a decimal does not change its value.",
+    "condition": "A decimal number is written with additional trailing zeros (e.g., 4.02 and 4.020).",
+    "response": "State that the numbers are equal in value.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$4.02 = 4.020$ because the trailing zero in the thousandths place does not change the value.",
+    "notes": "Relies on understanding of place value and zero as a placeholder.",
+    "question_ids": [
+      "G5_M4_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "estimate_decimal_product_by_rounding",
+    "title": "Estimate Decimal Product by Rounding",
+    "description": "Estimate a product by rounding factors to compatible benchmark numbers and multiplying.",
+    "condition": "A multiplication expression with decimals is given and an estimate is requested.",
+    "response": "Round one or both factors to nearby friendly numbers and multiply to produce an approximate product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$5.04 \\times 0.09 \\approx 5 \\times 0.1 = 0.5$.",
+    "notes": "Choice of benchmark numbers may vary but should be reasonable.",
+    "question_ids": [
+      "G5_M4_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "estimate_decimal_quotient",
+    "title": "Estimate Decimal Quotient",
+    "description": "Use compatible numbers or place value reasoning to approximate a decimal division.",
+    "condition": "Instruction to estimate a quotient involving decimals.",
+    "response": "Round numbers to compatible values and compute an approximate quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$58 \\div 300 \\approx 60 \\div 300 = 0.2$.",
+    "notes": "Answers selected from given choices.",
+    "question_ids": [
+      "G5_M4_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "estimate_sum_or_difference",
+    "title": "Estimate Decimal Sum or Difference",
+    "description": "Estimate a decimal addition or subtraction by rounding each number to the nearest whole number first.",
+    "condition": "A decimal sum or difference is to be estimated to the nearest whole number.",
+    "response": "Round each number to the nearest whole number, then compute the resulting sum or difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$5.4 + 7.84 \\approx 5 + 8 = 13$",
+    "notes": "Builds on rounding knowledge component.",
+    "question_ids": [
+      "G5_M4_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "evaluate_parenthetical_expression",
+    "title": "Evaluate Expression with Parentheses",
+    "description": "Apply order of operations by evaluating expressions inside parentheses first.",
+    "condition": "A numerical expression containing parentheses.",
+    "response": "Compute inside parentheses before performing outside operations.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$(7.36 - 0.72) \\times (5.51 + 2.69)$",
+    "notes": "Order of operations (PEMDAS).",
+    "question_ids": [
+      "G5_M4_TE_a1_q2",
+      "G5_M4_TE_a1_q3",
+      "G5_M4_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "fraction_of_total_as_multiplication",
+    "title": "Find Fraction of Total Using Multiplication",
+    "description": "Interpret phrases like '7 tenths of 3.6' as multiplication of a decimal and a whole/decimal number.",
+    "condition": "A quantity is described as a fraction or decimal part of a total (e.g., 7 tenths of 3.6).",
+    "response": "Multiply the total by the fractional/decimal amount (e.g., 3.6 \u00d7 0.7).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$7$ tenths of $3.6$ is $3.6 \\times 0.7 = 2.52$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M4_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "whole_number_quotient_from_decimal_division",
+    "title": "Find Whole-Number Quotient from Decimal Division",
+    "description": "Determine how many whole groups can be made when dividing decimals in a context requiring whole items.",
+    "condition": "Division a \u00f7 b in a context where only whole units (e.g., vases) are allowed.",
+    "response": "Compute quotient and take the greatest whole number less than or equal to the exact result.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$28.4 \\div 1.3 \\approx 21.8$, so Toby can make $21$ whole vases.",
+    "notes": "Context restricts answer to whole numbers.",
+    "question_ids": [
+      "G5_M4_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "decimal_place_value_identification",
+    "title": "Identify Decimal Place Value",
+    "description": "Determine the value of a digit based on its position in a decimal number.",
+    "condition": "A specific digit in a decimal number is underlined or highlighted.",
+    "response": "State the digit\u2019s value (e.g., 2 hundredths, 8 thousandths).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "In $798.228$, the underlined 2 in the hundredths place has value $0.02$ (2 hundredths).",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M4_a1_q6",
+      "G5_M4_a2_q6",
+      "G5_M4_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "decimal_to_fraction_model",
+    "title": "Interpret Decimal from Area Model",
+    "description": "Translate a shaded base-ten area model into a decimal by counting parts out of 1 whole.",
+    "condition": "Area model representing 1 whole partitioned into tenths, hundredths, or thousandths with some parts shaded.",
+    "response": "Express shaded parts as a fraction of 1 and convert to a decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $205$ out of $1000$ parts are shaded, then $\\frac{205}{1000} = 0.205$.",
+    "notes": "Requires recognizing total equal parts.",
+    "question_ids": [
+      "G5_M4_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_decimal_place_value_model",
+    "title": "Interpret Decimal Place Value Model",
+    "description": "Translate a visual place value model (ones, tenths, hundredths) into its corresponding decimal expression.",
+    "condition": "A base-ten or place value model with ones, tenths, and hundredths is shown.",
+    "response": "Count units in each place and write the corresponding decimal expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A model showing 1 one, 5 tenths, and 4 hundredths represents $1.54$.",
+    "notes": "Includes interpreting addition or subtraction shown in the model.",
+    "question_ids": [
+      "G5_M4_TA_a1_q6",
+      "G5_M4_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_number_line_subtraction",
+    "title": "Interpret Number Line Subtraction Model",
+    "description": "Match a number line jump model to the subtraction expression it represents.",
+    "condition": "A number line shows a jump from one decimal value to another.",
+    "response": "Identify the starting and ending points and write the corresponding subtraction expression.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A jump from $4.5$ back to $3.8$ represents $4.5 - 3.8$.",
+    "notes": "Requires understanding subtraction as distance on a number line.",
+    "question_ids": [
+      "G5_M4_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_operation_vocabulary",
+    "title": "Interpret Operation Vocabulary",
+    "description": "Match operation words (sum, difference, product, quotient) to symbols.",
+    "condition": "A verbal phrase such as 'difference of' or 'quotient of.'",
+    "response": "Translate to the corresponding operation symbol (+, \u2212, \u00d7, \u00f7).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "'difference of 0.94 and 0.07' \u2192 $0.94 - 0.07$",
+    "notes": "Vocabulary-to-symbol mapping.",
+    "question_ids": [
+      "G5_M4_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_area_model_thousandths",
+    "title": "Interpret Thousandths in Area Model",
+    "description": "Interpret a shaded area model divided into 1000 equal parts as thousandths of a whole.",
+    "condition": "Area model representing 1 whole partitioned into 1000 equal parts with some shaded.",
+    "response": "Express shaded parts as a fraction over 1000 and as a decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 91 of 1000 parts are shaded, then $\\frac{91}{1000} = 0.091$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M4_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "represent_sum_on_number_line",
+    "title": "Model Decimal Addition on Number Line",
+    "description": "Represent addition of decimals as movement to the right on a number line.",
+    "condition": "Expression of the form a + b with a number line provided.",
+    "response": "Draw an arrow starting at a and ending at a + b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "Start at $1.2$ and move right $3.7$ units to land at $4.9$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M4_a1_q3",
+      "G5_M4_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "model_decimal_product_with_area_model",
+    "title": "Model Decimal Multiplication with Area Model",
+    "description": "Use a 10\u00d710 grid (representing 1 whole) to shade overlapping tenths and hundredths to represent a decimal product.",
+    "condition": "An area model representing 1 whole is provided and a decimal product (e.g., 0.6 \u00d7 0.4) must be represented.",
+    "response": "Shade rows/columns for each factor and identify overlapping shaded region as the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "Shade 6 tenths one direction and 4 tenths the other; overlap is $24$ hundredths $= 0.24$.",
+    "notes": "Relies on visual-spatial representation of place value.",
+    "question_ids": [
+      "G5_M4_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_1000_place_shift",
+    "title": "Multiply by 1000 Shifts Digits",
+    "description": "Understand that multiplying a decimal by 1,000 shifts each digit three places to the left in a place value chart.",
+    "condition": "A number is multiplied by 1,000.",
+    "response": "Move each digit three places to the left (or decimal point three places to the right).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$19.087 \\times 1000 = 19{,}087$ (digits shift three places left).",
+    "notes": "Equivalent to moving decimal point three places right.",
+    "question_ids": [
+      "G5_M4_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "place_value_multiplicative_relationship",
+    "title": "Place Value is 10 Times Adjacent Left",
+    "description": "Recognize that each place value is 10 times the value of the place to its right and 1/10 of the place to its left.",
+    "condition": "Comparing the value of the same digit in two adjacent place values (e.g., hundreds vs tens, hundredths vs tenths).",
+    "response": "State that the value differs by a factor of 10 (or 1/10) depending on direction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "A digit in the hundreds place is $10$ times the value of the same digit in the tens place.",
+    "notes": "Core base\u2011ten structure understanding.",
+    "question_ids": [
+      "G5_M4_TA_a1_q1",
+      "G5_M4_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "multiply_repeated_groups",
+    "title": "Represent Repeated Groups with Multiplication",
+    "description": "Use multiplication to represent equal groups.",
+    "condition": "A quantity repeated the same number of times (e.g., 4 days of same total hours).",
+    "response": "Multiply the single-group amount by the number of groups.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$(0.5 + 1.25) \\times 4$",
+    "notes": "Applies to days, bottles, etc.",
+    "question_ids": [
+      "G5_M4_TE_a1_q5",
+      "G5_M4_TE_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "round_to_specified_place",
+    "title": "Round to a Specified Place",
+    "description": "Round a number to a given place value by checking the digit to its right.",
+    "condition": "A number and a specified place (e.g., nearest tenth, nearest hundredth) are given.",
+    "response": "If the digit to the right is 5 or more, increase the rounding digit by 1; otherwise keep it the same and truncate remaining digits.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Round $378.089$ to the nearest tenth: hundredths digit is 8, so $378.1$.",
+    "notes": "Standard rounding rule.",
+    "question_ids": [
+      "G5_M4_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "estimate_round_nearest_whole",
+    "title": "Round to Nearest Whole Number",
+    "description": "Round a decimal number to the nearest whole number based on the tenths digit.",
+    "condition": "A decimal number must be approximated to the nearest whole number.",
+    "response": "If the tenths digit is 5 or more, round up; otherwise round down.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$85.3 \\approx 85$ and $3.12 \\approx 3$, so $85.3 + 3.12 \\approx 88$",
+    "notes": "Used before estimating sums or differences.",
+    "question_ids": [
+      "G5_M4_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "decimal_division_scaling",
+    "title": "Scale Decimals to Divide",
+    "description": "Multiply dividend and divisor by the same power of 10 to make the divisor a whole number before dividing.",
+    "condition": "Division problem with a decimal divisor (e.g., a \u00f7 0.b or a \u00f7 0.bc).",
+    "response": "Multiply both numbers by 10^n to make divisor whole, then divide.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $42 \\div 0.07$, multiply both by 100: $4200 \\div 7 = 600$.",
+    "notes": "Also applies to $11.2 \\div 0.14$ and $0.55 \\div 0.44$.",
+    "question_ids": [
+      "G5_M4_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "select_operation_from_context",
+    "title": "Select Operation from Word Problem Context",
+    "description": "Determine whether to add or subtract decimals based on a real-world context (e.g., money left, total used).",
+    "condition": "A word problem describes combining quantities or finding what remains.",
+    "response": "Choose addition for combining totals; choose subtraction for finding difference or remainder.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Tara has $5.40$ and spends $3.67$; compute $5.40 - 3.67$ to find what remains.",
+    "notes": "Operation choice depends on language cues like 'left' or 'total.'",
+    "question_ids": [
+      "G5_M4_TB_a1_q4",
+      "G5_M4_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "shade_area_model_decimal",
+    "title": "Shade Area Model for Decimal",
+    "description": "Represent a decimal on a 10\u00d710 (and subdivided) area model by shading tenths, hundredths, and thousandths.",
+    "condition": "A decimal less than 1 is given and a base\u2011ten area model is provided.",
+    "response": "Shade the corresponding number of tenths, hundredths, and thousandths to match the decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "For $0.365$, shade 3 tenths, 6 hundredths, and 5 thousandths of the whole.",
+    "notes": "Primarily procedural/visual representation skill.",
+    "question_ids": [
+      "G5_M4_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "solve_equal_groups_word_problem",
+    "title": "Solve Equal Groups with Unknown Unit Cost",
+    "description": "Find a unit amount when total cost and some component costs are known.",
+    "condition": "Word problem with total amount, known partial costs, and equal unknown group costs.",
+    "response": "Subtract known costs from total, then divide remainder by number of equal groups.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If total is $104.16$ and used books sum to $46.65$, then new books total $57.51$ and each costs $57.51 \\div 3 = 19.17$.",
+    "notes": "Multi-step problem combining addition, subtraction, and division.",
+    "question_ids": [
+      "G5_M4_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "solve_decimal_missing_addend",
+    "title": "Solve Missing Addend with Decimals",
+    "description": "Find a missing number in a decimal addition equation.",
+    "condition": "An equation of the form ___ + a = b or a + ___ = b with decimals is given.",
+    "response": "Subtract the known addend from the total to find the missing number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $x + 0.21 = 0.96$, then $x = 0.96 - 0.21 = 0.75$.",
+    "notes": "Uses inverse relationship between addition and subtraction.",
+    "question_ids": [
+      "G5_M4_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_decimal_missing_subtrahend",
+    "title": "Solve Missing Subtrahend with Decimals",
+    "description": "Find a missing number in a decimal subtraction equation.",
+    "condition": "An equation of the form a \u2212 ___ = b with decimals is given.",
+    "response": "Subtract the result from the minuend or solve using inverse addition to find the missing number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $1.54 - x = 0.37$, then $x = 1.54 - 0.37 = 1.17$.",
+    "notes": "Relies on understanding of inverse operations.",
+    "question_ids": [
+      "G5_M4_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_multistep_word_problem_decimals",
+    "title": "Solve Multi-Step Decimal Word Problem",
+    "description": "Translate a real-world situation into operations with decimals and compute the result.",
+    "condition": "Word problem involving decimal addition/subtraction and division or multiplication.",
+    "response": "Form expression, compute total or remaining amount, and divide or multiply as required.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Total spent: $4.28 + 8.75 + 13.49 = 26.52$; Remaining: $66 - 26.52 = 39.48$; Each child: $39.48 \\div 3 = 13.16$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M4_a1_q10",
+      "G5_M4_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "subtract_decimal_numbers",
+    "title": "Subtract Decimal Numbers",
+    "description": "Subtract one decimal number from another by aligning place values and regrouping if necessary.",
+    "condition": "Two decimal numbers are presented with a subtraction operation.",
+    "response": "Align decimal points and subtract corresponding place values, regrouping as needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$4.08 - 1.89 = 2.19$",
+    "notes": "May require regrouping across place values. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M4_TB_a1_q1",
+      "G5_M4_TB_a1_q3",
+      "G5_M4_TB_a1_q4",
+      "G5_M4_TB_a1_q5",
+      "G5_M4_TB_a1_q6",
+      "G5_M4_TE_a1_q3",
+      "G5_M4_TE_a1_q4",
+      "G5_M4_a1_q1",
+      "G5_M4_a1_q7",
+      "G5_M4_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "decimal_subtraction_compensation",
+    "title": "Subtract Decimals Using Compensation",
+    "description": "Subtract decimals by adjusting one number to a friendly value and compensating.",
+    "condition": "Expression of the form a \u2212 b where b is adjusted to a nearby friendly number.",
+    "response": "Subtract the friendly number, then add or subtract the adjustment to compensate.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.72 - 0.47 = 0.72 - 0.5 + 0.03 = 0.25$",
+    "notes": "",
+    "question_ids": [
+      "G5_M4_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "find_remainder_after_fraction",
+    "title": "Subtract Fractional Part from Total",
+    "description": "Subtract a computed fractional part from the total to find the remaining amount.",
+    "condition": "The total amount and a known fractional part of it are given.",
+    "response": "Subtract the fractional part from the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If total is $3.6$ and first day is $2.52$, then second day is $3.6 - 2.52 = 1.08$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M4_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "translate_word_problem_to_expression",
+    "title": "Translate Word Problem to Numerical Expression",
+    "description": "Convert a multi-step word problem into a single numerical expression.",
+    "condition": "A word problem describing quantities and operations.",
+    "response": "Write an expression using numbers, operation symbols, and parentheses that models the situation.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "$(0.5 + 1.25) \\times 4 + 1.5$",
+    "notes": "Requires identifying structure and grouping.",
+    "question_ids": [
+      "G5_M4_TE_a1_q5",
+      "G5_M4_TE_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "expanded_form_decimal",
+    "title": "Write Decimal in Expanded Form",
+    "description": "Express a decimal as the sum of each digit multiplied by its place value unit fraction.",
+    "condition": "A decimal number is given.",
+    "response": "Write it as a sum of (digit \u00d7 place value), e.g., tenths, hundredths, thousandths.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.365 = (3 \\times \\frac{1}{10}) + (6 \\times \\frac{1}{100}) + (5 \\times \\frac{1}{1000})$.",
+    "notes": "Requires identifying each digit\u2019s place value.",
+    "question_ids": [
+      "G5_M4_TA_a1_q5"
+    ]
+  }
+]

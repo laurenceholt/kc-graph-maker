@@ -1,0 +1,611 @@
+[
+  {
+    "kc_id": "add_partial_quotients",
+    "title": "Add Partial Quotients",
+    "description": "Combine the quotients from decomposed parts of a dividend to find the total quotient.",
+    "condition": "After dividing decomposed parts of a dividend by the same divisor (e.g., a \u00f7 d and b \u00f7 d).",
+    "response": "Add the partial quotients to get the total quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$(80 \\div 4) + (12 \\div 4) = 20 + 3 = 23$",
+    "notes": "Relies on distributive property of division over addition.",
+    "question_ids": [
+      "G4_M2_TC_a1_q1",
+      "G4_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "additive_comparison_more",
+    "title": "Additive Comparison (More Than)",
+    "description": "Interpret 'k more than' as adding k to a given quantity.",
+    "condition": "A word problem states that one quantity is k more than another quantity.",
+    "response": "Add k to the referenced quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "If shirts are 5 more than 168 pants, compute $168 + 5 = 173$.",
+    "notes": "Language-based convention linking 'more than' to addition.",
+    "question_ids": [
+      "G4_M2_TB_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_composite_number",
+    "title": "Classify Composite Number",
+    "description": "Determine that a whole number greater than 1 is composite if it has more than two factors.",
+    "condition": "A whole number greater than 1 with more than two positive factors.",
+    "response": "State that the number is composite.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "The number $6$ has factors $1, 2, 3, 6$, so it is **composite**.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q2",
+      "G4_M2_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_prime_number",
+    "title": "Classify Prime Number",
+    "description": "Determine that a whole number greater than 1 is prime if it has exactly two factors: 1 and itself.",
+    "condition": "A whole number greater than 1 with exactly two positive factors (1 and itself).",
+    "response": "State that the number is prime.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "The number $13$ has factors $1$ and $13$, so it is **prime**.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "feet_inches_combination",
+    "title": "Combine Feet and Inches",
+    "description": "Convert feet to inches and add remaining inches to find total inches.",
+    "condition": "Given a measurement in feet and inches.",
+    "response": "Convert feet to inches and add the extra inches.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$4$ ft $8$ in $= (4 \\times 12) + 8 = 56$ in.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "convert_feet_to_inches",
+    "title": "Convert Feet to Inches",
+    "description": "Convert a measurement in feet to inches using 12 inches per foot.",
+    "condition": "Given a number of feet.",
+    "response": "Multiply the number of feet by 12.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "$4$ ft $= 4 \\times 12 = 48$ inches.",
+    "notes": "Relies on memorized conversion 1 ft = 12 in.",
+    "question_ids": [
+      "G4_M2_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "convert_yards_to_feet",
+    "title": "Convert Yards to Feet",
+    "description": "Convert a measurement in yards to feet using 3 feet per yard.",
+    "condition": "Given a number of yards.",
+    "response": "Multiply the number of yards by 3.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "$7$ yd $= 7 \\times 3 = 21$ ft.",
+    "notes": "Relies on memorized conversion 1 yd = 3 ft.",
+    "question_ids": [
+      "G4_M2_TD_a1_q1",
+      "G4_M2_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "decompose_place_value",
+    "title": "Decompose by Place Value",
+    "description": "Break a number into sums of tens and ones (or other place values).",
+    "condition": "A multi-digit number in base ten.",
+    "response": "Express the number as a sum of place-value parts (e.g., tens and ones).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$252 = 240 + 12$ and $14 = 10 + 4$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TB_a1_q1",
+      "G4_M2_TB_a1_q5",
+      "G4_M2_a1_q4",
+      "G4_M2_a1_q6",
+      "G4_M2_a1_q8",
+      "G4_M2_a2_q4",
+      "G4_M2_a2_q6",
+      "G4_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "decompose_dividend_by_place_value",
+    "title": "Decompose Dividend by Place Value",
+    "description": "Break a number into place-value parts that are convenient for division.",
+    "condition": "Given a multi-digit dividend to divide by a single-digit divisor (e.g., 92 \u00f7 4).",
+    "response": "Rewrite the dividend as a sum of place-value parts (e.g., 92 = 80 + 12).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$92 = 80 + 12$ so $92 \\div 4 = (80 \\div 4) + (12 \\div 4)$",
+    "notes": "Supports partial quotients strategy.",
+    "question_ids": [
+      "G4_M2_TC_a1_q1",
+      "G4_M2_TC_a1_q4",
+      "G4_M3_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "composite_definition",
+    "title": "Definition of Composite Number",
+    "description": "Identify a composite number based on having more than two factors.",
+    "condition": "A whole number with more than two positive factors.",
+    "response": "Classify the number as composite.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "21 has factors $1,3,7,21$ (more than two), so it is composite.",
+    "notes": "Paired conceptually with prime definition.",
+    "question_ids": [
+      "G4_M2_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "prime_definition",
+    "title": "Definition of Prime Number",
+    "description": "Identify a prime number based on having exactly two factors: 1 and itself.",
+    "condition": "A whole number with exactly two positive factors.",
+    "response": "Classify the number as prime.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "13 has factors $1$ and $13$ only, so it is prime.",
+    "notes": "Used to contrast with composite numbers.",
+    "question_ids": [
+      "G4_M2_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "determine_factor_by_division",
+    "title": "Determine Factor Using Division",
+    "description": "Check whether one whole number is a factor of another by testing for a remainder of zero.",
+    "condition": "Given whole numbers $a$ and $b$, and asked whether $a$ is a factor of $b$.",
+    "response": "Divide $b \\div a$ and conclude that $a$ is a factor if the remainder is 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "To test if $7$ is a factor of $28$, compute $28 \\div 7 = 4$ with remainder $0$, so $7$ is a factor.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q1",
+      "G4_M2_TE_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "determine_multiple_by_division",
+    "title": "Determine Multiple Using Division",
+    "description": "Check whether a number is a multiple of another by dividing and verifying a whole-number result.",
+    "condition": "Given whole numbers $a$ and $b$, and asked whether $b$ is a multiple of $a$.",
+    "response": "Divide $b \\div a$ and conclude that $b$ is a multiple if the quotient is a whole number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "To test if $27$ is a multiple of $9$, compute $27 \\div 9 = 3$, a whole number, so $27$ is a multiple of $9$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q3",
+      "G4_M2_TE_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "determine_even_from_pattern",
+    "title": "Determine Parity in Pattern",
+    "description": "Determine whether a specific term in an additive pattern is even or odd using pattern structure.",
+    "condition": "An additive pattern with constant difference and a specified term index.",
+    "response": "Determine whether the term is even or odd based on the pattern's structure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Pattern: start 3, add 3. Terms alternate odd/even. The 80th term is even.",
+    "notes": "Parity reasoning may vary ???",
+    "question_ids": [
+      "G4_M2_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "multi_digit_division_basic",
+    "title": "Divide Multi-Digit by One-Digit",
+    "description": "Divide a multi-digit number by a one-digit divisor.",
+    "condition": "Given a division expression with a multi-digit dividend and one-digit divisor (e.g., 720 \u00f7 8).",
+    "response": "Compute the quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$720 \\div 8 = 90$.",
+    "notes": "Often performed using standard algorithm or place value reasoning.",
+    "question_ids": [
+      "G4_M2_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "division_as_decomposition",
+    "title": "Divide Using Decomposition",
+    "description": "Divide a number by decomposing it into parts that are divisible by the divisor.",
+    "condition": "A division expression where the dividend can be decomposed into place-value parts divisible by the divisor.",
+    "response": "Divide each part and add the partial quotients.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$252 \\div 3 = (240 \\div 3) + (12 \\div 3) = 80 + 4 = 84$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_a1_q4",
+      "G4_M2_a1_q8",
+      "G4_M2_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "select_expressions_equal_to_target",
+    "title": "Evaluate and Compare to Target Number",
+    "description": "Determine which expressions equal a given target number.",
+    "condition": "Given a target number and multiple multiplication expressions.",
+    "response": "Evaluate each expression and select those equal to the target.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Rule / Plan",
+    "example": "Target: 120. Since $6 \\times 20 = 120$ and $30 \\times 4 = 120$, select those expressions.",
+    "notes": "Requires evaluating each option and comparing to the target value.",
+    "question_ids": [
+      "G4_M2_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "extend_repeating_pattern",
+    "title": "Extend Repeating Pattern",
+    "description": "Continue a repeating pattern by reproducing the identified repeating unit.",
+    "condition": "A sequence with a known repeating unit and one or more blanks to fill.",
+    "response": "Fill each blank with the next element from the repeating unit in order.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the pattern is (triangle, circle, triangle), the next three shapes are triangle, circle, triangle.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "divide_to_find_missing_factor",
+    "title": "Find Missing Factor by Division",
+    "description": "Divide the total area by one side length to find the missing side of a rectangle.",
+    "condition": "Given area and one side length of a rectangle; missing other side.",
+    "response": "Compute missing side = area \u00f7 known side.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If area = 150 sq m and width = 5 m, then length = $150 \\div 5 = 30$ m.",
+    "notes": "Inverse relationship between multiplication and division.",
+    "question_ids": [
+      "G4_M2_TA_a1_q5",
+      "G4_M2_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "add_constant_pattern",
+    "title": "Generate Terms in Additive Pattern",
+    "description": "Generate subsequent terms in a number pattern defined by repeatedly adding a constant.",
+    "condition": "A number pattern defined by a rule of the form 'Add k' starting from an initial term.",
+    "response": "Add k to the previous term to produce the next term.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Start at 3, add 3 each time: $3, 6, 9, 12, 15, 18$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G4_M2_a1_q9",
+      "G4_M2_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "recognize_multiple_of_4",
+    "title": "Identify Multiples of 4",
+    "description": "Determine whether a number is a multiple of 4.",
+    "condition": "A whole number.",
+    "response": "Determine if it is divisible by 4 (no remainder).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "8, 20, and 80 are multiples of 4 because each equals $4 \\times n$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "multiple_of_number",
+    "title": "Identify Multiples of a Number",
+    "description": "Determine whether a given number is a multiple of a specified number.",
+    "condition": "A number n and a specified divisor (e.g., 6).",
+    "response": "State whether n is a multiple of the divisor.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$72$ is a multiple of $6$ because $72 \\div 6 = 12$ with no remainder.",
+    "notes": "May be verified using division or known multiplication facts.",
+    "question_ids": [
+      "G4_M2_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_repeating_pattern_unit",
+    "title": "Identify Repeating Pattern Unit",
+    "description": "Recognize the smallest sequence of elements that repeats in a pattern.",
+    "condition": "A sequence of shapes or objects that repeats in a regular cycle.",
+    "response": "State the smallest repeating unit of the pattern.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "In the sequence triangle, circle, triangle, triangle, circle, triangle, the repeating unit is (triangle, circle, triangle).",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "list_factors",
+    "title": "List All Factors of a Number",
+    "description": "Identify all positive factors of a given whole number.",
+    "condition": "A given whole number n.",
+    "response": "List all positive integers that divide n evenly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Factors of 27 are $1, 3, 9, 27$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_TE_a1_q6",
+      "G4_M2_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "match_expression_to_quotient",
+    "title": "Match Division Expression to Quotient",
+    "description": "Evaluate each division expression and select the matching quotient from given choices.",
+    "condition": "Given multiple division expressions and a list of possible quotients.",
+    "response": "Compute each quotient and pair it with the correct value from the list.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$63 \\div 3 = 21$, so match 63 \u00f7 3 with 21.",
+    "notes": "Requires evaluating and comparing results.",
+    "question_ids": [
+      "G4_M2_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "multiplicative_comparison_times_as_many",
+    "title": "Multiplicative Comparison (Times as Many)",
+    "description": "Interpret 'n times as many' as multiplication by n.",
+    "condition": "A word problem states that one quantity is n times as many as another quantity.",
+    "response": "Multiply the referenced quantity by n.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "If pants are 4 times 42 coats, compute $4 \\times 42 = 168$.",
+    "notes": "Language-to-operation mapping convention.",
+    "question_ids": [
+      "G4_M2_TB_a1_q2",
+      "G4_M2_TB_a1_q4",
+      "G4_M2_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "multiply_by_ten",
+    "title": "Multiply by 10",
+    "description": "Multiply a whole number by 10 using place value understanding.",
+    "condition": "Given a whole number multiplied by 10.",
+    "response": "Append a zero (shift digits left one place) to find the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$28 \\times 10 = 280$.",
+    "notes": "Based on base-10 place value structure.",
+    "question_ids": [
+      "G4_M2_TA_a1_q1",
+      "G4_M2_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "multiply_two_digit_by_one_digit",
+    "title": "Multiply Two-Digit by One-Digit Number",
+    "description": "Compute the product of a two-digit number and a one-digit number.",
+    "condition": "Given an expression of the form (two-digit number) \u00d7 (one-digit number).",
+    "response": "Calculate and state the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$27 \\times 6 = 162$ and $58 \\times 3 = 174$.",
+    "notes": "May be executed via distributive property or standard algorithm.",
+    "question_ids": [
+      "G4_M2_TB_a1_q3",
+      "G4_M2_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_perimeter_rectangle",
+    "title": "Perimeter of a Rectangle",
+    "description": "Find the perimeter of a rectangle by adding all sides or using the formula 2(l + w).",
+    "condition": "Given the length and width of a rectangle.",
+    "response": "Compute perimeter as P = 2(l + w).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If l = 6 and w = 4, then $P = 2(6 + 4) = 20$.",
+    "notes": "",
+    "question_ids": [
+      "G3_M6_TC_a1_q2",
+      "G3_M6_TC_a1_q4",
+      "G3_M6_TC_a1_q5",
+      "G3_M6_a1_q8",
+      "G4_M2_TD_a1_q2",
+      "G4_M2_TD_a1_q6",
+      "G4_M2_a1_q7",
+      "G4_M2_a2_q7",
+      "G5_M6_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "place_value_regroup_ten_to_ones",
+    "title": "Regroup Ten as Ones",
+    "description": "Convert one ten into ten ones to continue division evenly.",
+    "condition": "A division situation with a remaining ten that cannot be evenly divided.",
+    "response": "Regroup 1 ten as 10 ones and continue dividing.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "In $94 \\div 2$, regroup 1 ten as 10 ones to make 14 ones; $14 \\div 2 = 7$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "select_correct_decomposition_expression",
+    "title": "Select Correct Decomposition Expression",
+    "description": "Identify an equivalent expression that decomposes the dividend (not the divisor) when dividing.",
+    "condition": "Asked which expression can be used to compute a division such as 96 \u00f7 8.",
+    "response": "Choose the expression that decomposes the dividend into addends each divided by the same divisor.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$96 \\div 8 = (80 \\div 8) + (16 \\div 8)$",
+    "notes": "Distinguishes valid use of distributive property from incorrect decompositions.",
+    "question_ids": [
+      "G4_M2_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "skip_count_by_three_number_line",
+    "title": "Skip Count by 3 on Number Line",
+    "description": "Label equally spaced points on a number line by counting in increments of 3.",
+    "condition": "Given a number line with equal intervals representing 3 units each.",
+    "response": "Label ticks as 0, 3, 6, 9, 12, ...",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Starting at 0, the next ticks are $3, 6, 9, 12$.",
+    "notes": "Implicit pattern recognition of equal intervals.",
+    "question_ids": [
+      "G4_M2_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "unit_label_perimeter",
+    "title": "Use Linear Units for Perimeter",
+    "description": "Label perimeter measurements with linear units.",
+    "condition": "A perimeter measurement of a figure.",
+    "response": "Express the unit in linear units (e.g., inches).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Perimeter = 40 inches.",
+    "notes": "",
+    "question_ids": [
+      "G4_M2_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "unit_label_area",
+    "title": "Use Square Units for Area",
+    "description": "Label area measurements with square units.",
+    "condition": "An area measurement of a two-dimensional figure.",
+    "response": "Express the unit as square units (e.g., square inches).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Area = 75 square inches.",
+    "notes": "Unit depends on context but must be squared form.",
+    "question_ids": [
+      "G4_M2_a1_q7"
+    ]
+  }
+]

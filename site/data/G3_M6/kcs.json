@@ -66,7 +66,8 @@
     "example": "Draw a quadrilateral with one $90^\\circ$ angle but with sides not forming two pairs of parallel sides (so it is not a rectangle).",
     "notes": "Construction may vary; multiple correct answers.",
     "question_ids": [
-      "G3_M6_a1_q3"
+      "G3_M6_a1_q3",
+      "G5_M6_TC_a1_q5"
     ]
   },
   {
@@ -102,26 +103,6 @@
     "notes": "Applies to irregular polygons as well as regular polygons.",
     "question_ids": [
       "G3_M6_TC_a1_q1"
-    ]
-  },
-  {
-    "kc_id": "compute_rectangle_perimeter_formula",
-    "title": "Compute Perimeter of a Rectangle",
-    "description": "The perimeter of a rectangle is found by adding twice the length and twice the width.",
-    "condition": "Given a rectangle with known length and width.",
-    "response": "Compute $2(\\text{length} + \\text{width})$ or add all four sides.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "If length = 5 in and width = 4 in, perimeter is $2(5 + 4) = 18$ inches.",
-    "notes": "Equivalent to adding all four sides individually.",
-    "question_ids": [
-      "G3_M6_TC_a1_q2",
-      "G3_M6_TC_a1_q4",
-      "G3_M6_TC_a1_q5",
-      "G3_M6_a1_q8"
     ]
   },
   {
@@ -300,24 +281,6 @@
       "G3_M6_TC_a1_q3",
       "G3_M6_a1_q2",
       "G3_M6_a2_q2"
-    ]
-  },
-  {
-    "kc_id": "classify_quadrilateral_by_four_sides",
-    "title": "Identify a Quadrilateral by Side Count",
-    "description": "Recognize that a polygon with exactly four sides is a quadrilateral.",
-    "condition": "A polygon is shown and the task is to determine whether it is a quadrilateral.",
-    "response": "Count the sides; if the polygon has exactly 4 sides, classify it as a quadrilateral.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "No",
-    "label": "Rule / Plan",
-    "example": "A shape with 4 sides (e.g., a trapezoid) \u2192 classify as a quadrilateral.",
-    "notes": "Definition-based; relies on memorized meaning of quadrilateral.",
-    "question_ids": [
-      "G3_M6_TB_a1_q1",
-      "G3_M6_TB_a1_q3"
     ]
   },
   {

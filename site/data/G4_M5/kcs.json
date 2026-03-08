@@ -1,0 +1,461 @@
+[
+  {
+    "kc_id": "add_mixed_numbers_decimal_parts",
+    "title": "Add Mixed Numbers with Decimal Fractions",
+    "description": "Add mixed numbers by combining whole numbers and fractional parts separately.",
+    "condition": "Two mixed numbers with tenths and/or hundredths to be added.",
+    "response": "Add whole numbers together and add fractional parts (using common denominators if needed), then combine.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2\\frac{3}{10} + 3\\frac{95}{100} = 5 + \\frac{30}{100} + \\frac{95}{100} = 6\\frac{25}{100}$",
+    "notes": "Includes regrouping when fractional sum exceeds 1.",
+    "question_ids": [
+      "G4_M5_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "align_decimal_places_compare",
+    "title": "Align Decimal Places to Compare",
+    "description": "Compare decimals by aligning place values (including adding trailing zeros if needed) and comparing digits from left to right.",
+    "condition": "Two decimal numbers with the same whole number part or different numbers of decimal places are given for comparison.",
+    "response": "Rewrite decimals with equal place values if needed and compare digits from greatest place value to least to determine >, <, or =.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compare $0.3$ and $0.24$. Rewrite $0.3$ as $0.30$. Since $30$ hundredths $>$ $24$ hundredths, $0.30 > 0.24$.",
+    "notes": "Includes understanding that trailing zeros do not change value.",
+    "question_ids": [
+      "G4_M5_TC_a1_q1",
+      "G4_M5_TC_a1_q2",
+      "G4_M5_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "compare_decimals_by_place_value",
+    "title": "Compare Decimals Using Place Value",
+    "description": "Compare two decimal numbers by examining digits from left to right according to place value.",
+    "condition": "Two decimal numbers are given with a comparison prompt (>, <, =).",
+    "response": "Determine which decimal is greater, less, or equal using place value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Compare $0.4$ and $0.25$: since $0.40 > 0.25$, we write $0.4 > 0.25$.",
+    "notes": "Students may rewrite decimals with equal digits (e.g., 0.4 as 0.40).",
+    "question_ids": [
+      "G4_M5_a1_q3",
+      "G4_M5_a1_q6",
+      "G4_M5_a2_q3",
+      "G4_M5_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "convert_decimal_to_fraction_place_value",
+    "title": "Convert Decimal to Fraction (Place Value)",
+    "description": "Write a terminating decimal as a fraction using its place value (tenths, hundredths).",
+    "condition": "A terminating decimal with one or two decimal places is given.",
+    "response": "Write the decimal as a fraction with denominator 10 or 100 based on place value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$1.78 = 1 \\frac{78}{100}$ and $2.5 = 2 \\frac{5}{10}$",
+    "notes": "May be expressed as mixed numbers. [merged: condition varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M5_TA_a1_q3",
+      "G4_M5_TD_a1_q4",
+      "G4_M5_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "convert_mixed_decimal_to_mixed_fraction",
+    "title": "Convert Decimal to Mixed Fraction",
+    "description": "Convert a decimal with whole number into a mixed number using tenths or hundredths.",
+    "condition": "Decimal number with whole part and decimal part (e.g., 2.65).",
+    "response": "Write as whole number plus fraction based on place value (e.g., hundredths).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$2.65 = 2 \\frac{65}{100}$.",
+    "notes": "Used to select correct expression in Q7 Part A.",
+    "question_ids": [
+      "G4_M5_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "convert_mixed_number_tenths_to_decimal",
+    "title": "Convert Mixed Number with Tenths to Decimal",
+    "description": "Convert a mixed number with denominator 10 into decimal form by combining whole number and tenths.",
+    "condition": "A mixed number of the form w a/10",
+    "response": "Write the decimal w.a",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "2 \\frac{5}{10} = 2.5",
+    "notes": "Builds on place value and fraction-to-decimal conversion. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G4_M5_TA_a1_q5",
+      "G4_M5_TB_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "convert_fraction_to_decimal_tenths_hundredths",
+    "title": "Convert Tenths/Hundredths Fraction to Decimal",
+    "description": "Convert a fraction with denominator 10 or 100 into decimal form using place value.",
+    "condition": "A fraction with denominator 10 or 100 is given.",
+    "response": "Write the numerator in the tenths or hundredths place to form the decimal.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{24}{100} = 0.24$ and $\\frac{4}{10} = 0.4$",
+    "notes": "May require adding a leading zero (e.g., $\\frac{5}{100} = 0.05$).",
+    "question_ids": [
+      "G4_M5_TA_a1_q1",
+      "G4_M5_TA_a1_q5",
+      "G4_M5_TB_a1_q3",
+      "G4_M5_TB_a1_q7",
+      "G4_M5_a1_q1",
+      "G4_M5_a1_q5",
+      "G4_M5_a2_q4",
+      "G4_M5_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "decimal_fraction_equivalence",
+    "title": "Decimal\u2013Fraction Equivalence (Tenths/Hundredths)",
+    "description": "Recognize that decimals represent fractions with denominators 10 or 100.",
+    "condition": "A decimal with one or two decimal places (e.g., 0.4, 0.39).",
+    "response": "Express as an equivalent fraction with denominator 10 or 100.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.39 = \\frac{39}{100}$",
+    "notes": "Place value determines denominator (10 or 100).",
+    "question_ids": [
+      "G4_M5_TB_a1_q2",
+      "G4_M5_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "decimal_model_same_whole",
+    "title": "Ensure Decimals Refer to the Same Whole",
+    "description": "When comparing decimals using visual models, confirm that both representations refer to the same-sized whole.",
+    "condition": "Two visual decimal models (e.g., beakers, grids) are shown for comparison.",
+    "response": "Verify that each model represents one whole of the same size before comparing shaded amounts.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "To compare $0.5$ and $0.14$, ensure both beakers are marked from $0$ to $1$ with the same scale before judging which is greater.",
+    "notes": "Critical for valid visual comparison.",
+    "question_ids": [
+      "G4_M5_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_fraction_from_hundred_grid",
+    "title": "Identify Fraction from Hundred Grid Model",
+    "description": "Determine the fraction represented by shaded squares in a 10\u00d710 grid.",
+    "condition": "A 10\u00d710 area model with some squares shaded is shown.",
+    "response": "Count shaded squares and write as a fraction out of 100.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If 19 squares are shaded, the fraction is $\\frac{19}{100}$.",
+    "notes": "Each large square represents 1 whole.",
+    "question_ids": [
+      "G4_M5_TB_a1_q2",
+      "G4_M5_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_shaded_tenths_area_model",
+    "title": "Identify Fraction from Tenths Area Model",
+    "description": "Determine the fraction represented by shaded parts when a whole is partitioned into 10 equal parts.",
+    "condition": "An area model divided into 10 equal parts with some parts shaded",
+    "response": "Count shaded parts and write shaded_count/10",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 8 of 10 parts are shaded, the fraction is \\frac{8}{10}.",
+    "notes": "Requires equal partition recognition.",
+    "question_ids": [
+      "G4_M5_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "interpret_meter_as_one_whole",
+    "title": "Interpret 1 Meter as One Whole",
+    "description": "Interpret a length model labeled 1 meter as representing one whole partitioned into equal hundredths.",
+    "condition": "A bar labeled 1 meter partitioned into 100 equal parts.",
+    "response": "Treat each small part as $\\frac{1}{100}$ meter and total shaded parts accordingly.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "13 shaded parts out of 100 \u2192 $\\frac{13}{100}$ m = 0.13 m.",
+    "notes": "Connects measurement model to place value.",
+    "question_ids": [
+      "G4_M5_TB_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "hundredths_grid_interpret",
+    "title": "Interpret Hundredths Grid Model",
+    "description": "Interpret a 10\u00d710 grid as representing 100 hundredths and determine the decimal from shaded squares.",
+    "condition": "A 10\u00d710 grid with some squares shaded is shown.",
+    "response": "Count shaded squares and express the amount as a decimal to the hundredths place.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $38$ squares are shaded, the decimal is $0.38$ since $38$ hundredths equals $0.38$.",
+    "notes": "Relies on place value understanding of hundredths.",
+    "question_ids": [
+      "G4_M5_TC_a1_q2",
+      "G4_M5_TC_a1_q4",
+      "G4_M5_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "match_fraction_and_decimal_equivalents",
+    "title": "Match Equivalent Fraction and Decimal",
+    "description": "Recognize and pair equivalent fraction and decimal representations.",
+    "condition": "Given a fraction and a set of decimal choices (or vice versa).",
+    "response": "Select the decimal (or fraction) that represents the same value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{9}{10}$ matches $0.9$.",
+    "notes": "Requires understanding of place value equivalence.",
+    "question_ids": [
+      "G4_M5_TA_a1_q2",
+      "G4_M5_a2_q4",
+      "G4_M5_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "match_equivalent_fraction_forms",
+    "title": "Match Equivalent Fraction Representations",
+    "description": "Recognize when two fractions represent the same quantity despite different forms.",
+    "condition": "Two fractions with different numerators and/or denominators presented for comparison.",
+    "response": "Identify or select the fraction that is equivalent in value.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "$\\frac{6}{10} + \\frac{20}{100} = \\frac{60}{100} + \\frac{20}{100} = \\frac{80}{100}$",
+    "notes": "Response is selection of a matching value from choices.",
+    "question_ids": [
+      "G4_M5_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "order_decimals_least_to_greatest",
+    "title": "Order Decimals from Least to Greatest",
+    "description": "Arrange a set of decimals in ascending order by comparing place values.",
+    "condition": "Three or more decimal numbers are given with the instruction to order from least to greatest.",
+    "response": "Compare decimals pairwise using place value and list them from smallest to largest.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Order $0.04, 0.4, 0.45, 0.5, 0.54$ as $0.04 < 0.4 < 0.45 < 0.5 < 0.54$.",
+    "notes": "Often requires aligning decimal places (e.g., $0.4 = 0.40$).",
+    "question_ids": [
+      "G4_M5_TC_a1_q4",
+      "G5_M4_a1_q8"
+    ]
+  },
+  {
+    "kc_id": "plot_decimal_on_number_line",
+    "title": "Plot Decimal on Number Line",
+    "description": "Locate and label a decimal number correctly on a number line between benchmarks.",
+    "condition": "A number line with benchmarks (e.g., 0 and 1) and a decimal number is given.",
+    "response": "Place a point at the position corresponding to the decimal\u2019s value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Place $0.25$ one quarter of the way from 0 to 1 and $0.4$ at four tenths.",
+    "notes": "Requires proportional spatial reasoning. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G4_M5_TC_a1_q1",
+      "G4_M5_a1_q3",
+      "G4_M5_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "plot_fraction_on_tenths_number_line",
+    "title": "Plot Tenths Fraction on Number Line",
+    "description": "Locate and label a fraction with denominator 10 on a number line from 0 to 1 partitioned into tenths.",
+    "condition": "A number line from 0 to 1 divided into 10 equal intervals and a fraction a/10",
+    "response": "Place a point at the ath tick mark after 0 and label it a/10",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For \\frac{4}{10}, place the point at the 4th tick after 0.",
+    "notes": "Spatial placement skill tied to counting intervals.",
+    "question_ids": [
+      "G4_M5_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "read_measurement_scale_tenths",
+    "title": "Read Measurement Scale in Tenths",
+    "description": "Interpret a measurement scale marked in tenths to determine the quantity shown.",
+    "condition": "A vertical or horizontal scale from 0 to 1 divided into 10 equal parts with a marked level",
+    "response": "Count tenths to the marked level and state the value as a/10 or decimal 0.a",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If the liquid reaches 6 of 10 marks, the amount is \\frac{6}{10} = 0.6.",
+    "notes": "Requires interpreting visual scale markings.",
+    "question_ids": [
+      "G4_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "rewrite_decimal_with_trailing_zero",
+    "title": "Rewrite Decimal with Trailing Zero",
+    "description": "Add trailing zeros to a decimal without changing its value to compare place values.",
+    "condition": "Decimal numbers with different numbers of decimal digits to compare.",
+    "response": "Append zero(s) to shorter decimal to equalize place values.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.3 = 0.30$.",
+    "notes": "Supports comparison and addition.",
+    "question_ids": [
+      "G4_M5_a2_q3",
+      "G4_M5_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "select_expression_matching_word_problem",
+    "title": "Select Expression Matching Word Problem",
+    "description": "Choose the numerical expression that correctly represents quantities described in a word problem.",
+    "condition": "A word problem describes quantities and asks for an expression.",
+    "response": "Identify the expression that correctly represents the situation.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "For 1.78 L and 2.5 L, select $1 \\frac{78}{100} + 2 \\frac{5}{10}$.",
+    "notes": "Response is constant for the specific problem.",
+    "question_ids": [
+      "G4_M5_a1_q7",
+      "G4_M5_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "convert_tenths_to_hundredths",
+    "title": "Tenths to Hundredths Equivalence",
+    "description": "Rename a fraction with denominator 10 as an equivalent fraction with denominator 100.",
+    "condition": "A fraction of the form $\\frac{a}{10}$ to be expressed in hundredths.",
+    "response": "Multiply numerator and denominator by 10 to get $\\frac{10a}{100}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{7}{10} = \\frac{70}{100}$",
+    "notes": "Based on equivalent fractions using \u00d710/\u00d710. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G4_M5_TB_a1_q1",
+      "G4_M5_TB_a1_q6",
+      "G4_M5_TD_a1_q1",
+      "G4_M5_TD_a1_q2",
+      "G4_M5_TD_a1_q3",
+      "G4_M5_a2_q1",
+      "G4_M5_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "compare_decimal_symbols",
+    "title": "Use Comparison Symbols for Decimals",
+    "description": "Select and write the correct comparison symbol (> , < , =) after comparing two decimals.",
+    "condition": "Two decimal numbers have been compared and their relative size is known.",
+    "response": "Write the correct symbol (> , < , =) between the numbers.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Since $0.23$ is less than $0.36$, write $0.23 < 0.36$.",
+    "notes": "Symbol selection follows from prior comparison.",
+    "question_ids": [
+      "G4_M5_TC_a1_q1",
+      "G4_M5_TC_a1_q2",
+      "G4_M5_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "write_decimal_in_unit_form",
+    "title": "Write Decimal in Unit Form",
+    "description": "Express a decimal as a combination of place value units (e.g., tenths, hundredths).",
+    "condition": "A decimal to the tenths or hundredths place is given.",
+    "response": "State the value in unit form using place value language.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$0.23$ is $23$ hundredths; $0.36$ is $36$ hundredths.",
+    "notes": "Supports reasoning about decimal magnitude.",
+    "question_ids": [
+      "G4_M5_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "write_fraction_and_decimal_equivalent",
+    "title": "Write Fraction and Decimal Forms",
+    "description": "Express a quantity in both fraction (tenths) and decimal form.",
+    "condition": "A quantity given in either tenths fraction or decimal form with denominator 10 context",
+    "response": "Provide both equivalent forms (a/10 and 0.a)",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "\\frac{6}{10} = 0.6",
+    "notes": "Combines conversion in both directions.",
+    "question_ids": [
+      "G4_M5_TA_a1_q4"
+    ]
+  }
+]

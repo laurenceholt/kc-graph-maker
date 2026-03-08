@@ -1,23 +1,5 @@
 [
   {
-    "kc_id": "add_single_digits_within_20",
-    "title": "Add Within 20",
-    "description": "Compute the sum of two whole numbers within 20.",
-    "condition": "Addition expression a + b where a and b are whole numbers less than or equal to 20.",
-    "response": "Compute and state the correct sum.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non-verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "$7 + 4 = 11$",
-    "notes": "General addition fluency skill.",
-    "question_ids": [
-      "G1_M1_TE_a1_q1",
-      "Q3"
-    ]
-  },
-  {
     "kc_id": "add_identity_zero",
     "title": "Additive Identity (Zero)",
     "description": "Recognize that adding zero to a number results in the same number.",

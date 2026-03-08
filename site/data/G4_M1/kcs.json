@@ -1,0 +1,568 @@
+[
+  {
+    "kc_id": "additive_after_multiplicative_comparison",
+    "title": "Add After Multiplicative Comparison",
+    "description": "After finding a multiplicative comparison amount, add an additional specified quantity.",
+    "condition": "A quantity is described as k times another amount, and then an additional fixed number is added (e.g., '2 more than').",
+    "response": "Compute k \u00d7 base amount, then add the additional fixed number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If Mia sells $3 \\times 6 = 18$ tickets and James sells 2 more, then $18 + 2 = 20$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M1_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "add_multi_digit_standard_algorithm",
+    "title": "Add Multi-Digit Numbers (Standard Algorithm)",
+    "description": "Add two multi-digit whole numbers using the standard vertical algorithm with place-value alignment and regrouping as needed.",
+    "condition": "Two whole numbers written vertically with digits aligned by place value (ones, tens, hundreds, etc.).",
+    "response": "Add digits column by column from right to left, regrouping when a column sum is 10 or more, and record the total.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$4,105 + 2,030 = 6,135$",
+    "notes": "Includes regrouping across one or more place values.",
+    "question_ids": [
+      "G4_M1_TD_a1_q1",
+      "G4_M1_TD_a1_q3",
+      "G4_M1_a1_q10",
+      "G4_M1_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "add_rounded_numbers",
+    "title": "Add Rounded Numbers",
+    "description": "Add two or more numbers after they have been rounded to a specified place value.",
+    "condition": "Given two or more rounded whole numbers to combine for an estimate.",
+    "response": "Compute the sum of the rounded numbers.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "Round $551 \\approx 600$ and $404 \\approx 400$, then compute $600 + 400 = 1{,}000$.",
+    "notes": "Used after rounding to estimate totals.",
+    "question_ids": [
+      "G4_M1_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "digit_times_ten_relationship",
+    "title": "Adjacent Place Value \u00d710 Relationship",
+    "description": "Recognize that a digit in one place is 10 times the value of the same digit in the place to its right.",
+    "condition": "The same digit appears in adjacent place values (e.g., thousands and hundreds).",
+    "response": "State that the value in the higher place is 10 times the value in the place to its right.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Concept",
+    "example": "In $37{,}581$, the 7 in the thousands place (7,000) is $10$ times the 7 in the hundreds place (700).",
+    "notes": "",
+    "question_ids": [
+      "G4_M1_TB_a1_q1",
+      "G4_M1_TB_a1_q5",
+      "G4_M1_a1_q2",
+      "G4_M1_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "commutative_property_multiplication",
+    "title": "Commutative Property of Multiplication",
+    "description": "Multiplication facts can be represented in either factor order with the same product.",
+    "condition": "A multiplication equation a \u00d7 b = c is given.",
+    "response": "Recognize or state that b \u00d7 a = c represents the same relationship.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Since $5 \\times 9 = 45$, it is also true that $9 \\times 5 = 45$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M1_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_estimation_accuracy",
+    "title": "Compare Estimation Accuracy by Place Value",
+    "description": "Determine which rounding place value produces the closest estimate to an exact total.",
+    "condition": "Given the same numbers rounded to different place values and their resulting totals.",
+    "response": "Select the place value that gives the estimate closest to the actual sum.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Exact sum: $551 + 404 = 955$. Rounding to tens gives $550 + 400 = 950$ (difference 5), rounding to hundreds gives $600 + 400 = 1{,}000$ (difference 45). Choose tens.",
+    "notes": "Requires understanding of absolute difference to judge closeness.",
+    "question_ids": [
+      "G4_M1_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_multi_digit_numbers",
+    "title": "Compare Multi-Digit Numbers by Place Value",
+    "description": "Compare two whole numbers by examining digits from the greatest place value to the least.",
+    "condition": "Two multi-digit whole numbers are given for comparison.",
+    "response": "Compare digits starting at the leftmost place; determine and write <, >, or =.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Compare $724{,}740$ and $742{,}740$: since $7=7$ and $2<4$ in the ten-thousands place, $724{,}740 < 742{,}740$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M1_TB_a1_q3",
+      "G4_M1_a1_q5",
+      "G4_M1_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_product_basic",
+    "title": "Compute Basic Multiplication Fact",
+    "description": "Multiply two whole numbers to find their product.",
+    "condition": "Two whole numbers are given to be multiplied.",
+    "response": "Calculate their product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$9 \\times 8 = 72$.",
+    "notes": "Arithmetic fluency skill.",
+    "question_ids": [
+      "G4_M1_TA_a1_q2",
+      "G4_M1_TA_a1_q3",
+      "G4_M1_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_multiplicative_ratio",
+    "title": "Compute Multiplicative Comparison (How Many Times)",
+    "description": "Determine how many times as large one quantity is compared to another by division.",
+    "condition": "Two quantities are given, and the prompt asks 'how many times as many' or to complete '___ times as many'.",
+    "response": "Divide the larger quantity by the smaller quantity.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Since Amy completes 32 problems and Carla completes 8, compute $32 \\div 8 = 4$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M1_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "convert_kilograms_to_grams",
+    "title": "Convert Kilograms to Grams",
+    "description": "Convert a mass in kilograms to grams using the metric relationship between the units.",
+    "condition": "A quantity given in kilograms that needs to be expressed in grams.",
+    "response": "Multiply the number of kilograms by 1,000 to find the equivalent number of grams.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3 \\text{ kg} = 3 \\times 1{,}000 = 3{,}000 \\text{ g}$",
+    "notes": "Uses the fact that 1 kg = 1,000 g.",
+    "question_ids": [
+      "G4_M1_TE_a1_q1",
+      "G4_M1_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "convert_kilometers_to_meters",
+    "title": "Convert Kilometers to Meters",
+    "description": "Convert a length in kilometers to meters using the metric relationship between the units.",
+    "condition": "A quantity given in kilometers that needs to be expressed in meters.",
+    "response": "Multiply the number of kilometers by 1,000 to find the equivalent number of meters.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$5 \\text{ km} = 5 \\times 1{,}000 = 5{,}000 \\text{ m}$",
+    "notes": "Based on the metric base-10 structure.",
+    "question_ids": [
+      "G4_M1_TE_a1_q3",
+      "G4_M1_TE_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_liters_to_milliliters",
+    "title": "Convert Liters to Milliliters",
+    "description": "Convert a volume in liters to milliliters using the metric relationship between the units.",
+    "condition": "A quantity given in liters that needs to be expressed in milliliters.",
+    "response": "Multiply the number of liters by 1,000 to find the equivalent number of milliliters.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$8 \\text{ L} = 8 \\times 1{,}000 = 8{,}000 \\text{ mL}$",
+    "notes": "Uses the fact that 1 L = 1,000 mL.",
+    "question_ids": [
+      "G4_M1_TE_a1_q2",
+      "G4_M1_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "convert_meters_to_centimeters",
+    "title": "Convert Meters to Centimeters",
+    "description": "Convert a measurement in meters to centimeters using the metric relationship.",
+    "condition": "A quantity expressed in meters.",
+    "response": "Multiply the number of meters by 100 to find centimeters.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$4$ meters $= 4 \\times 100 = 400$ centimeters.",
+    "notes": "Based on the metric fact that 1 meter = 100 centimeters. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M1_TE_a1_q3",
+      "G4_M1_a1_q1",
+      "G4_M1_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "estimate_by_rounding_nearest_thousand",
+    "title": "Estimate by Rounding to Nearest Thousand",
+    "description": "Round multi-digit numbers to the nearest thousand to estimate a sum or difference.",
+    "condition": "A word problem asks for a closest estimate and involves numbers in the thousands or greater.",
+    "response": "Round each number to the nearest thousand and compute the approximate result.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$51,975 \\approx 52,000$, $18,133 \\approx 18,000$, $25,748 \\approx 26,000$",
+    "notes": "Used to select the closest answer choice.",
+    "question_ids": [
+      "G4_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "evaluate_metric_equation_true_false",
+    "title": "Evaluate Metric Conversion Equation",
+    "description": "Determine whether a given metric unit equation is true or false by converting units and comparing values.",
+    "condition": "An equation stating two quantities with different metric units are equal.",
+    "response": "Convert one quantity to the same unit as the other and determine whether the numerical values are equal (state True or False).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Check $5 \\text{ km} = 500 \\text{ m}$: $5 \\text{ km} = 5{,}000 \\text{ m}$, and $5{,}000 \\ne 500$, so False.",
+    "notes": "Requires correct unit conversion before comparison.",
+    "question_ids": [
+      "G4_M1_TE_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_resulting_difference_for_missing_addend",
+    "title": "Find Missing Addend from Final Total",
+    "description": "Determine an unknown change amount by subtracting the current amount from the final total.",
+    "condition": "A situation where a starting amount is changed and a final total is given, and the unknown amount added must be found.",
+    "response": "Subtract the current amount from the final total to find the missing addend.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $8,094 + b = 20,000$, then $b = 20,000 - 8,094 = 11,906$.",
+    "notes": "Requires prior computation of remaining bricks.",
+    "question_ids": [
+      "G4_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_rounding_threshold",
+    "title": "Identify Rounding Threshold Digit",
+    "description": "Determine whether to round up or down by checking the digit immediately to the right of the target place value.",
+    "condition": "Given a number and a specified place value to round to.",
+    "response": "If the next digit is 5 or greater, round up; if less than 5, round down.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "To round $218{,}657$ to the nearest thousand, check the hundreds digit (6). Since $6 \\ge 5$, round up to $219{,}000$.",
+    "notes": "Conventional rounding rule.",
+    "question_ids": [
+      "G4_M1_TC_a1_q1",
+      "G4_M1_TC_a1_q3",
+      "G4_M1_TC_a1_q4",
+      "G4_M1_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_place_value_of_digit",
+    "title": "Identify Value of a Digit",
+    "description": "Determine the value contributed by a digit based on its place in a multi-digit number.",
+    "condition": "A specific digit in a multi-digit number is indicated.",
+    "response": "Multiply the digit by its place value (e.g., 7 in thousands place \u2192 7,000).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "In $37{,}581$, the underlined 7 in the thousands place has value $7 \\times 1{,}000 = 7{,}000$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M1_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "interpret_times_as_multiplication",
+    "title": "Interpret 'Times as Much' as Multiplication",
+    "description": "Translate multiplicative comparison language into a multiplication expression.",
+    "condition": "A statement of the form 'A is n times as much as B.'",
+    "response": "Represent as $A = n \\times B$ (or compute using multiplication).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "\"12 is 4 times as much as 3\" means $12 = 4 \\times 3$.",
+    "notes": "Supports equation writing and modeling. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M1_TA_a1_q1",
+      "G4_M1_TA_a1_q2",
+      "G4_M1_TA_a1_q4",
+      "G4_M1_a1_q7",
+      "G4_M1_a1_q8",
+      "G4_M1_a1_q9",
+      "G4_M1_a2_q7",
+      "G4_M1_a2_q8",
+      "G4_M1_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "match_expression_to_computed_sum",
+    "title": "Match Computed Sum to Answer Choice",
+    "description": "Compute each expression and match it to the correct value from a list of answer choices.",
+    "condition": "Multiple addition expressions and a list of possible sums are provided.",
+    "response": "Compute each sum and select the matching value from the choices.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$4,501 + 2,300 = 6,801$ \u2192 match with 6,801.",
+    "notes": "Requires accurate computation before matching.",
+    "question_ids": [
+      "G4_M1_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "model_equal_groups",
+    "title": "Model Multiplication as Equal Groups",
+    "description": "Represent a multiplication situation using equal groups or a visual model.",
+    "condition": "A multiplicative comparison or product is given.",
+    "response": "Draw or describe equal groups showing repeated addends to match the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To show $12 = 4 \\times 3$, draw four boxes each labeled 3 to total 12.",
+    "notes": "Visual modeling skill.",
+    "question_ids": [
+      "G4_M1_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "order_numbers_least_to_greatest",
+    "title": "Order Numbers Least to Greatest",
+    "description": "Arrange a set of multi-digit numbers in ascending order by comparing place values.",
+    "condition": "A list of multi-digit whole numbers is given.",
+    "response": "Sequence the numbers from smallest to largest based on place value comparison.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Ordering $400{,}800$, $408{,}000$, and $480{,}000$ gives $400{,}800 < 408{,}000 < 480{,}000$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M1_TB_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "regroup_hundreds_as_tens",
+    "title": "Regroup Hundreds as Tens",
+    "description": "Rename 1 hundred as 10 tens during subtraction regrouping.",
+    "condition": "In subtraction, the tens digit is less than the subtrahend\u2019s tens digit and there are hundreds available to regroup.",
+    "response": "Decrease the hundreds digit by 1 and increase the tens digit by 10.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$7$ hundreds becomes $6$ hundreds $10$ tens.",
+    "notes": "Conceptual understanding of place value renaming.",
+    "question_ids": [
+      "G4_M1_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "round_number_to_place",
+    "title": "Round Number to Specified Place Value",
+    "description": "Round a whole number to the nearest ten, hundred, thousand, ten thousand, or hundred thousand.",
+    "condition": "Given any whole number and a specified place value for rounding.",
+    "response": "Apply rounding rule and express the correctly rounded number.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "Round $465{,}959$ to the nearest ten thousand: check the thousands digit (5), round up to $470{,}000$.",
+    "notes": "Integrates threshold identification and zeroing digits.",
+    "question_ids": [
+      "G4_M1_TC_a1_q1",
+      "G4_M1_TC_a1_q3",
+      "G4_M1_TC_a1_q4",
+      "G4_M1_TC_a1_q5",
+      "G4_M1_a1_q10",
+      "G4_M1_a1_q3",
+      "G4_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "select_numbers_rounding_to_target",
+    "title": "Select Numbers That Round to Target Value",
+    "description": "Determine which given numbers round to a specified target when rounded to a stated place value.",
+    "condition": "Given a target rounded value (e.g., 81,000) and several candidate numbers.",
+    "response": "Identify all numbers that round to the target under the stated rounding rule.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Numbers between $80{,}500$ and $81{,}499$ round to $81{,}000$. For example, $80{,}651 \\to 81{,}000$.",
+    "notes": "Requires reasoning about interval boundaries.",
+    "question_ids": [
+      "G4_M1_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "subtract_multi_digit_standard",
+    "title": "Subtract Multi-Digit Numbers Using Standard Algorithm",
+    "description": "Subtract one multi-digit whole number from another using place value alignment and regrouping.",
+    "condition": "Two multi-digit whole numbers written in vertical form for subtraction.",
+    "response": "Subtract digits by place from right to left, regrouping as needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Subtract $741{,}832 - 519{,}235$ to get $222{,}597$.",
+    "notes": "Includes regrouping across place values.",
+    "question_ids": [
+      "G4_M1_TD_a1_q2",
+      "G4_M1_TD_a1_q4",
+      "G4_M1_a1_q10",
+      "G4_M1_a1_q6",
+      "G4_M1_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "translate_word_problem_to_operations",
+    "title": "Translate Word Problem into Sequential Operations",
+    "description": "Convert a multi-step word problem into a sequence of addition and subtraction operations.",
+    "condition": "A word problem describes an initial quantity, amounts used or removed, and a final total.",
+    "response": "Represent the situation with numerical expressions in the correct order (subtract amounts used, then relate to final total).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Start with $51,975$, subtract $18,133$ and $25,748$, then compare result to $20,000$.",
+    "notes": "Structural modeling step before computation.",
+    "question_ids": [
+      "G4_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "write_number_from_expanded_form",
+    "title": "Write Number from Expanded Form",
+    "description": "Combine place value terms written in expanded form to determine the standard form number.",
+    "condition": "A sum of products of digits and powers of ten (e.g., $8 \\times 10{,}000$).",
+    "response": "Compute each product and add them to write the number in standard form.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$(8 \\times 10{,}000) + (5 \\times 100) + (2 \\times 10) = 80{,}000 + 500 + 20 = 80{,}520$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M1_TB_a1_q2",
+      "G4_M1_a1_q4",
+      "G4_M1_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "write_number_in_unit_form",
+    "title": "Write Number in Unit Form",
+    "description": "Express a multi-digit number as a sum of place-value units (e.g., hundreds, thousands).",
+    "condition": "Given a whole number in standard form.",
+    "response": "State the number as counts of place-value units.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$465{,}392 = 4$ hundred thousands $+ 6$ ten thousands $+ 5$ thousands $+ 3$ hundreds $+ 9$ tens $+ 2$ ones.",
+    "notes": "Based on base-ten place value structure.",
+    "question_ids": [
+      "G4_M1_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "translate_standard_to_word_form",
+    "title": "Write Number in Word Form",
+    "description": "Convert a multi-digit whole number from standard form to word form using place value names.",
+    "condition": "A multi-digit whole number in standard form is given.",
+    "response": "Write the number in words by grouping into periods (thousands, ones) and naming each place value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule",
+    "example": "$203{,}090$ is written as \"two hundred three thousand ninety.\"",
+    "notes": "Conventions of English number naming must be memorised.",
+    "question_ids": [
+      "G4_M1_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "replace_following_digits_with_zero",
+    "title": "Zero Out Lower Place Values After Rounding",
+    "description": "After rounding to a specified place, replace all digits to the right with zeros.",
+    "condition": "Given a number rounded to a specified place value.",
+    "response": "Keep digits up to the rounding place (adjusted if rounding up) and change all following digits to 0.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "Rounding $367{,}915$ to the nearest hundred gives $367{,}900$ (tens and ones become 0).",
+    "notes": "Follows application of rounding decision.",
+    "question_ids": [
+      "G4_M1_TC_a1_q1",
+      "G4_M1_TC_a1_q4"
+    ]
+  }
+]

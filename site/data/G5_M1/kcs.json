@@ -1,0 +1,618 @@
+[
+  {
+    "kc_id": "add_multiple_terms",
+    "title": "Add Multiple Whole Numbers",
+    "description": "Add two or more whole numbers to find their total.",
+    "condition": "Expression with two or more whole numbers connected by addition (e.g., a + b + c).",
+    "response": "Compute the sum of the numbers.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "$89 + 98 = 187$",
+    "notes": "Procedural computation skill.",
+    "question_ids": [
+      "G5_M1_TD_a1_q1",
+      "G5_M1_TD_a1_q2",
+      "G5_M1_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "add_converted_quantities_same_unit",
+    "title": "Add Quantities in Same Unit",
+    "description": "After converting measurements to the same unit, add the quantities to find a total.",
+    "condition": "Two measurements expressed in the same unit that must be combined into one total.",
+    "response": "Add the numerical values and keep the common unit.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "15,000 \\text{ m} + 295 \\text{ m} = 15,295 \\text{ m}",
+    "notes": "Requires prior unit conversion.",
+    "question_ids": [
+      "G5_M1_TA_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "compare_effect_of_parentheses",
+    "title": "Analyze Effect of Parentheses on Value",
+    "description": "Compare two expressions by reasoning about how parentheses change grouping and therefore the size of the result, without fully evaluating.",
+    "condition": "Two expressions differ only by grouping (parentheses) but contain the same numbers and operations.",
+    "response": "Determine which expression is greater (<, >, =) by reasoning about how grouping changes the operations performed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Compare $108 - (81 + 3)$ and $108 - 81 + 3$. Since subtracting a larger grouped sum makes the result smaller, $108 - (81 + 3) < 108 - 81 + 3$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_a1_q8",
+      "G5_M1_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "apply_order_of_operations",
+    "title": "Apply Order of Operations",
+    "description": "Evaluate numerical expressions using parentheses first, then multiplication/division, then addition/subtraction.",
+    "condition": "A numerical expression containing parentheses and/or multiple operation types.",
+    "response": "Evaluate in the correct order (parentheses \u2192 \u00d7/\u00f7 \u2192 +/\u2212).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$6 \\times (89+98) - (489 \\div 3)$ \u2192 evaluate parentheses first.",
+    "notes": "General evaluation structure.",
+    "question_ids": [
+      "G5_M1_TD_a1_q1",
+      "G5_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compare_place_value_magnitude",
+    "title": "Compare Place Value Magnitude",
+    "description": "Determine multiplicative relationship between values of the same digit in different places.",
+    "condition": "The same digit appears in two different place values within a number.",
+    "response": "State how many times greater one value is than the other (e.g., divided by 10, multiplied by 100).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "In 668,284, the 6 in the hundred-thousands place is 100 times the 6 in the thousands place.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compare_quotient_to_ten",
+    "title": "Compare Quotient to 10",
+    "description": "Determine whether a quotient is less than 10 or greater than 10 based on estimation or division.",
+    "condition": "A division expression and a prompt to classify the quotient as less than 10 or greater than 10.",
+    "response": "State whether the quotient is < 10 or > 10.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Estimate $311 \\div 88 \\approx 320 \\div 80 = 4$, so the quotient is less than 10.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "compute_partial_product",
+    "title": "Compute Partial Product",
+    "description": "Multiply two place-value components to find a partial product.",
+    "condition": "Given two numbers or place-value parts to multiply (e.g., 30 and 600).",
+    "response": "Compute their product using multiplication facts and place value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$30 \\times 600 = 18{,}000$.",
+    "notes": "Procedural fluency with multi-digit multiplication.",
+    "question_ids": [
+      "G5_M1_TB_a1_q2",
+      "G5_M1_TB_a1_q3",
+      "G5_M1_TB_a1_q4",
+      "G5_M1_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_remainder",
+    "title": "Compute Remainder in Division",
+    "description": "After finding the greatest multiple of the divisor less than the dividend, compute the leftover amount.",
+    "condition": "A division problem where the dividend is not an exact multiple of the divisor.",
+    "response": "Subtract (divisor \u00d7 quotient) from dividend to find remainder.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For $922 \\div 74$, $74 \\times 12 = 888$, so remainder $= 922 - 888 = 34$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TC_a1_q3",
+      "G5_M1_TC_a1_q5",
+      "G5_M1_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "convert_metric_units_powers_of_10",
+    "title": "Convert Metric Units Using Powers of 10",
+    "description": "Convert between metric units by multiplying or dividing by powers of 10.",
+    "condition": "A measurement in one metric unit (e.g., km, m, L, kg) must be expressed in a smaller or larger metric unit.",
+    "response": "Multiply or divide by the appropriate power of 10 based on place value shifts.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "2,200 \\text{ L} = 2,200 \\times 1,000 = 2,200,000 \\text{ mL}",
+    "notes": "Includes km\u2194m, m\u2194cm, L\u2194mL, kg\u2194g.",
+    "question_ids": [
+      "G5_M1_TA_a1_q3",
+      "G5_M1_TA_a1_q6",
+      "G5_M1_a1_q6",
+      "G5_M1_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "divide_by_power_of_ten",
+    "title": "Divide by a Power of Ten",
+    "description": "Divide a whole number by 10^n by shifting digits to the right n places.",
+    "condition": "A whole number divided by 10^n.",
+    "response": "Move the decimal point n places left (or remove n trailing zeros) to find the quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$900{,}000 \\div 10^3 = 900$ because the digits shift 3 places left.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M1_a1_q3",
+      "G5_M1_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "long_division_multi_digit",
+    "title": "Divide Multi-Digit Numbers",
+    "description": "Compute quotient and remainder when dividing a multi-digit number by a one- or two-digit divisor.",
+    "condition": "Expression of the form a \u00f7 b where a and b are whole numbers and b has one or two digits.",
+    "response": "Use long division or partial quotients to find the whole-number quotient and remainder.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$4{,}123\\div19=217$ remainder $0$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M1_TC_a1_q1",
+      "G5_M1_TC_a1_q5",
+      "G5_M1_TC_a1_q6",
+      "G5_M1_a1_q10",
+      "G5_M1_a1_q5",
+      "G5_M1_a2_q10",
+      "G5_M1_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_quotient",
+    "title": "Divide Whole Numbers",
+    "description": "Divide one whole number by another.",
+    "condition": "Expression of the form a \u00f7 b.",
+    "response": "Compute the quotient (and remainder if needed).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "$3906 \\div 42 = 93$",
+    "notes": "Long division may be required.",
+    "question_ids": [
+      "G4_M3_a1_q6",
+      "G5_M1_TD_a1_q1",
+      "G5_M1_TD_a1_q3",
+      "G5_M1_TD_a1_q4",
+      "G5_M1_TD_a1_q5",
+      "G5_M1_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "estimate_by_rounding",
+    "title": "Estimate Product by Rounding",
+    "description": "Round factors to compatible numbers to produce a reasonable multiplication estimate.",
+    "condition": "Given a word problem requiring a reasonable estimate of a product (e.g., 292 \u00d7 2,483).",
+    "response": "Round each factor to a nearby compatible number and multiply (e.g., 300 \u00d7 2,500).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$292 \\approx 300$ and $2{,}483 \\approx 2{,}500$, so $300 \\times 2{,}500 = 750{,}000$.",
+    "notes": "Rounding choice may vary slightly (???). [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M1_TB_a1_q4",
+      "G5_M1_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "evaluate_power_of_10",
+    "title": "Evaluate Power of 10",
+    "description": "Interpret 10 raised to a whole-number exponent as repeated multiplication of 10.",
+    "condition": "An expression of the form 10^n where n is a whole number.",
+    "response": "Rewrite as 1 followed by n zeros.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "10^4 = 10 \\times 10 \\times 10 \\times 10 = 10,000",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TA_a1_q1",
+      "G5_M1_TA_a1_q5",
+      "G5_M1_a1_q1",
+      "G5_M1_a1_q3",
+      "G5_M1_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_digit_place_value",
+    "title": "Identify Digit Place Value",
+    "description": "Determine the value of a digit based on its position in a multi-digit number.",
+    "condition": "A specific digit in a given place within a base-10 number.",
+    "response": "State the digit\u2019s value (e.g., 6 thousands = 6,000).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "In 912,084, the 2 is in the thousands place, so its value is 2,000.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TA_a1_q2",
+      "G5_M1_TA_a1_q4",
+      "G5_M1_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "place_parentheses_to_match_value",
+    "title": "Insert Parentheses to Make Equation True",
+    "description": "Determine where to place parentheses in an expression so that the equation evaluates to a given value.",
+    "condition": "An equation with missing parentheses and a specified result.",
+    "response": "Insert parentheses to group operations so the equation becomes true.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "To make $41 \\times 76 + 3 + 39 = 4{,}838$ true, group as $41 \\times (76 + 3 + 39)$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "interpret_quotient_as_groups",
+    "title": "Interpret Division as Number of Groups",
+    "description": "Use division to determine how many equal groups of a given size can be made from a total.",
+    "condition": "Word problem asking how many groups of size b can be made from total a.",
+    "response": "Set up and compute a \u00f7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$3906 \\div 42 = 93$ bracelets.",
+    "notes": "Connects context to division structure.",
+    "question_ids": [
+      "G3_M1_TD_a1_q3",
+      "G3_M1_TE_a1_q4",
+      "G5_M1_TC_a1_q6",
+      "G5_M1_TD_a1_q3",
+      "G5_M1_TD_a1_q4",
+      "G5_M1_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "interpret_quotient_and_remainder_context",
+    "title": "Interpret Quotient and Remainder in Context",
+    "description": "Explain the meaning of the quotient and remainder from a division expression within a word problem context.",
+    "condition": "A division expression is given and a contextual explanation of quotient and remainder is requested.",
+    "response": "State what the quotient represents in the situation and explain what the remainder means in context.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "For $5{,}050 \\div 75$, the quotient represents the number of full groups of 75, and any remainder represents the amount left over that does not make another full group.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "interpret_remainder_in_context",
+    "title": "Interpret Remainder in Context",
+    "description": "Explain the meaning of the quotient and remainder in a real-world division situation.",
+    "condition": "Given a division situation with context and a quotient with possible remainder.",
+    "response": "State what the quotient represents and explain what the remainder means in the context (e.g., leftover items or need for an extra group).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "For $4{,}724\\div85$, the quotient is the number of full boxes; the remainder is DVDs that do not fill a complete box.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M1_TD_a1_q4",
+      "G5_M1_a1_q9"
+    ]
+  },
+  {
+    "kc_id": "multiply_multi_digit_numbers",
+    "title": "Multiply Multi-Digit Numbers",
+    "description": "Multiply whole numbers with two or more digits using standard or distributive strategies.",
+    "condition": "Expression of the form a \u00d7 b where a and b are multi-digit whole numbers.",
+    "response": "Compute the product using an algorithm or decomposition.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$625\\times66=41{,}250$.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M1_TB_a1_q2",
+      "G5_M1_TB_a1_q5",
+      "G5_M1_a1_q2",
+      "G5_M1_a2_q2"
+    ]
+  },
+  {
+    "kc_id": "multiply_or_divide_by_power_of_10",
+    "title": "Multiply or Divide by a Power of 10",
+    "description": "Compute products or quotients involving whole numbers and powers of 10 by shifting place value.",
+    "condition": "A whole number multiplied or divided by 10^n.",
+    "response": "Shift digits left (multiply) or right (divide) by n places.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "9,000 \\div 10^2 = 9,000 \\div 100 = 90",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "compute_product",
+    "title": "Multiply Whole Numbers",
+    "description": "Multiply two whole numbers.",
+    "condition": "Expression of the form a \u00d7 b.",
+    "response": "Compute the product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "$36 \\times 22 = 792$",
+    "notes": "Includes multi\u2011digit multiplication.",
+    "question_ids": [
+      "G5_M1_TD_a1_q1",
+      "G5_M1_TD_a1_q4",
+      "G5_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "relate_standard_multiplication_exponential_forms",
+    "title": "Relate Standard, Expanded, and Exponential Forms",
+    "description": "Match a power of ten written in standard form, repeated multiplication, and exponential notation.",
+    "condition": "Given one form of a power of ten (standard, expanded multiplication, or exponential).",
+    "response": "Write an equivalent representation in the other forms.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$1{,}000{,}000 = 10\\times10\\times10\\times10\\times10\\times10 = 10^6$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TA_a1_q1",
+      "G5_M1_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "represent_division_area_model",
+    "title": "Represent Division with Area Model",
+    "description": "Use an area (rectangular) model to represent division and identify partial quotients.",
+    "condition": "Given a division expression and asked to model it with a rectangle showing partial quotients.",
+    "response": "Partition the rectangle into sections whose areas are multiples of the divisor and label partial quotients that sum to the total quotient.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For $6{,}384 \\div 57$, split into $57 \\times 100 = 5{,}700$, $57 \\times 10 = 570$, and $57 \\times 2 = 114$, giving partial quotients $100 + 10 + 2 = 112$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_TC_a1_q2",
+      "G5_M1_TC_a1_q3",
+      "G5_M1_a1_q10",
+      "G5_M1_a2_q10"
+    ]
+  },
+  {
+    "kc_id": "solve_multiplicative_word_problem",
+    "title": "Solve Multi-Step Multiplicative Word Problem",
+    "description": "Model and solve a word problem involving multiplication and division to find number of groups.",
+    "condition": "Given a context with total items formed by multiplication and a per-group usage rate, asked for number of days or groups.",
+    "response": "Multiply to find total quantity, then divide by rate to find number of groups or days.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Total food: $56\\times12=672$ ounces; days: $672\\div32=21$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "compute_difference",
+    "title": "Subtract Whole Numbers",
+    "description": "Subtract one whole number from another.",
+    "condition": "Expression of the form a \u2212 b.",
+    "response": "Compute the difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "Yes",
+    "label": "Production / Skill",
+    "example": "$684 - 288 = 396$",
+    "notes": "Standard subtraction algorithm.",
+    "question_ids": [
+      "G5_M1_TD_a1_q4",
+      "G5_M1_TD_a1_q5",
+      "G5_M1_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "translate_word_problem_to_division",
+    "title": "Translate Equal Groups Situation to Division",
+    "description": "Model a real-world equal groups situation using division to determine number of groups.",
+    "condition": "A word problem describes a total amount and a constant amount per group.",
+    "response": "Set up and compute a division expression (total \u00f7 amount per group) to find the number of groups.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If 95 bottles hold 16 ounces each, total ounces $= 95 \\times 16$. Days of water $= (95 \\times 16) \\div 76$.",
+    "notes": "",
+    "question_ids": [
+      "G5_M1_a2_q7"
+    ]
+  },
+  {
+    "kc_id": "translate_word_problem_to_equation",
+    "title": "Translate Multiplicative Word Problem",
+    "description": "Represent a real-world multiplicative situation with an equation.",
+    "condition": "Given a context describing equal groups (e.g., 292 rooms at $2,483 each).",
+    "response": "Write a multiplication equation representing total cost (e.g., $292 \\times 2{,}483$).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Total cost $= 292 \\times 2{,}483$.",
+    "notes": "Supports both estimation and exact computation.",
+    "question_ids": [
+      "G5_M1_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "translate_product_phrase",
+    "title": "Translate Product Phrase",
+    "description": "Translate verbal phrases indicating multiplication into symbolic expressions.",
+    "condition": "Phrase such as 'product of a and b' or 'multiply a by b.'",
+    "response": "Write a \u00d7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'product of 36 and 22' \u2192 $36 \\times 22$",
+    "notes": "Conventional language mapping.",
+    "question_ids": [
+      "G5_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "translate_quotient_phrase",
+    "title": "Translate Quotient Phrase",
+    "description": "Translate verbal phrases indicating division into symbolic expressions.",
+    "condition": "Phrase such as 'quotient of a and b' or 'divide a by b.'",
+    "response": "Write a \u00f7 b.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'quotient of 684 and 36' \u2192 $684 \\div 36$",
+    "notes": "Language-to-symbol mapping.",
+    "question_ids": [
+      "G5_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "translate_sum_difference_phrase",
+    "title": "Translate Sum or Difference Phrase",
+    "description": "Translate verbal phrases indicating addition or subtraction into symbolic expressions with appropriate grouping.",
+    "condition": "Phrase such as 'sum of a and b' or 'difference of a and b.'",
+    "response": "Write (a + b) or (a \u2212 b), using parentheses when needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "'difference of 684 and 288' \u2192 $(684 - 288)$",
+    "notes": "Parentheses preserve intended grouping.",
+    "question_ids": [
+      "G5_M1_TD_a1_q2",
+      "G5_M1_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "order_of_operations_parentheses",
+    "title": "Use Parentheses to Control Order",
+    "description": "Insert or interpret parentheses to ensure operations are performed in the intended order.",
+    "condition": "Given an expression with multiple operations and asked to make it true by inserting parentheses or to interpret grouping.",
+    "response": "Place or use parentheses so grouped operations are evaluated first according to order of operations.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$60\\times(50+2)+26=3{,}146$ because the sum is evaluated before multiplication.",
+    "notes": "[merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G5_M1_TB_a1_q1",
+      "G5_M1_a1_q4",
+      "G5_M1_a1_q8",
+      "G5_M3_TD_a1_q3",
+      "G5_M3_a1_q2",
+      "G5_M3_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "write_grouped_expression_from_context",
+    "title": "Write Grouped Expression from Context",
+    "description": "Represent repeated groups or combined quantities using parentheses and multiplication.",
+    "condition": "Word problem describing a total per group multiplied by number of groups, or sum multiplied by a factor.",
+    "response": "Write expression of the form (a + b + \u2026) \u00d7 n or similar grouped structure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$ (3 + 12 + 24) \\times 5 $",
+    "notes": "Connects structure of situation to symbolic grouping.",
+    "question_ids": [
+      "G5_M1_TD_a1_q2",
+      "G5_M1_TD_a1_q6"
+    ]
+  }
+]

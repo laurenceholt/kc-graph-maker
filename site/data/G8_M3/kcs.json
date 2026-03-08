@@ -326,7 +326,7 @@
     ]
   },
   {
-    "kc_id": "set_up_proportion_corresponding_sides",
+    "kc_id": "set_up_proportion_from_similar_triangles",
     "title": "Set Up Proportion Using Corresponding Sides",
     "description": "Form an equation equating ratios of corresponding sides in similar triangles.",
     "condition": "Two triangles are known to be similar and corresponding sides are identified.",
@@ -344,7 +344,10 @@
       "G8_M3_TD_a1_q3",
       "G8_M3_TD_a1_q4",
       "G8_M3_a2_q6",
-      "G8_M3_a2_q7"
+      "G8_M3_a2_q7",
+      "G8_M4_TD_a1_q2",
+      "G8_M4_a1_q3",
+      "G8_M4_a2_q3"
     ]
   },
   {

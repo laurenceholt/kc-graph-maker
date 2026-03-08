@@ -30,10 +30,12 @@
     "example": "$13 + 6 = 19$.",
     "notes": "",
     "question_ids": [
+      "G1_M1_TE_a1_q1",
       "G1_M3_TE_a1_q3",
       "G1_M3_TE_a1_q5",
       "G2_M4_a1_q1",
-      "G2_M4_a1_q3"
+      "G2_M4_a1_q3",
+      "Q3"
     ]
   },
   {

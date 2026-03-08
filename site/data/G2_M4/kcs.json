@@ -35,23 +35,6 @@
     ]
   },
   {
-    "kc_id": "relational_equation_missing_subtrahend",
-    "title": "Find Missing Subtrahend",
-    "description": "Solve equations of the form a = b \u2212 x by subtracting a from b.",
-    "condition": "Equation structured as a = b \u2212 x, where x is unknown.",
-    "response": "Compute x = b \u2212 a.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Rule / Plan",
-    "example": "For $561 = 800 - x$, compute $x = 800 - 561 = 239$.",
-    "notes": "Uses inverse relationship of addition and subtraction.",
-    "question_ids": [
-      "G2_M4_a1_q7"
-    ]
-  },
-  {
     "kc_id": "solve_additive_compare_fewer",
     "title": "Solve Additive Compare (Fewer)",
     "description": "Interpret 'fewer than' in word problems as subtraction.",

@@ -98,7 +98,8 @@
     "example": "Solve $16 - x = 10$ by computing $16 - 10 = 6$, so $x = 6$.",
     "notes": "",
     "question_ids": [
-      "G1_M2_TE_a1_q1"
+      "G1_M2_TE_a1_q1",
+      "G2_M4_a1_q7"
     ]
   }
 ]

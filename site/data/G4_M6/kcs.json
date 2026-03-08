@@ -1,0 +1,621 @@
+[
+  {
+    "kc_id": "add_adjacent_angles",
+    "title": "Add Adjacent Angle Measures",
+    "description": "To find a larger angle composed of two adjacent angles, add their degree measures.",
+    "condition": "Two adjacent angles share a vertex and form a larger angle; their individual measures are given.",
+    "response": "Add the two angle measures to get the total measure of the larger angle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If one angle is $38^\\circ$ and the adjacent angle is $11^\\circ$, then the larger angle is $38^\\circ + 11^\\circ = 49^\\circ$.",
+    "notes": "Used to find $\\angle CPA$. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G4_M6_TC_a1_q1",
+      "G4_M6_TC_a1_q4",
+      "G4_M6_a1_q5",
+      "G4_M6_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "classify_acute_angle",
+    "title": "Classify Acute Angle",
+    "description": "Identify an angle as acute when its measure is less than 90 degrees.",
+    "condition": "An angle formed by two rays measures less than 90\u00b0.",
+    "response": "State that the angle is an acute angle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "An angle measuring $45^\\circ$ is an acute angle.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_angle_by_measure",
+    "title": "Classify Angle by Measure",
+    "description": "Determine whether an angle is acute, right, or obtuse based on its measure.",
+    "condition": "An angle with a known or estimated measure.",
+    "response": "State whether the angle is acute (<90\u00b0), right (=90\u00b0), or obtuse (>90\u00b0 and <180\u00b0).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "An angle measuring $120^\\circ$ is obtuse because it is greater than $90^\\circ$ and less than $180^\\circ$.",
+    "notes": "[merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M6_TB_a1_q2",
+      "G4_M6_a1_q2",
+      "G4_M6_a2_q2",
+      "G5_M6_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_obtuse_angle",
+    "title": "Classify Obtuse Angle",
+    "description": "Identify an angle as obtuse when its measure is greater than 90 degrees and less than 180 degrees.",
+    "condition": "An angle formed by two rays measures greater than 90\u00b0 and less than 180\u00b0.",
+    "response": "State that the angle is an obtuse angle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "An angle measuring $120^\\circ$ is an obtuse angle.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "classify_right_angle",
+    "title": "Classify Right Angle",
+    "description": "Identify an angle as a right angle when it measures exactly 90 degrees.",
+    "condition": "An angle formed by two perpendicular rays measures 90\u00b0.",
+    "response": "State that the angle is a right angle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "An angle measuring $90^\\circ$ is a right angle.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q2",
+      "G4_M6_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "classify_triangle_by_angle_type",
+    "title": "Classify Triangle by Angle Type",
+    "description": "Classify a triangle as acute, right, or obtuse based on the measures of its interior angles.",
+    "condition": "Given a triangle with its angle measures known or visible (acute < 90\u00b0, right = 90\u00b0, obtuse > 90\u00b0).",
+    "response": "State whether the triangle is acute (all angles < 90\u00b0), right (one angle = 90\u00b0), or obtuse (one angle > 90\u00b0).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If a triangle has angles $90^\\circ$, $45^\\circ$, and $45^\\circ$, it is a right triangle because one angle is $90^\\circ$.",
+    "notes": "Requires knowledge of angle definitions.",
+    "question_ids": [
+      "G4_M6_TD_a1_q1",
+      "G4_M6_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "classify_triangle_by_side_lengths",
+    "title": "Classify Triangle by Side Lengths",
+    "description": "Classify a triangle as equilateral, isosceles, or scalene based on the number of equal side lengths.",
+    "condition": "Given a triangle with side lengths marked or stated.",
+    "response": "State whether the triangle is equilateral (3 equal sides), isosceles (2 equal sides), or scalene (no equal sides).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If a triangle has two sides marked congruent, then it is an isosceles triangle.",
+    "notes": "Relies on conventional definitions of triangle types.",
+    "question_ids": [
+      "G4_M6_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "complement_in_right_angle",
+    "title": "Complement within 90 Degrees",
+    "description": "Find a missing angle within a right angle by subtracting known adjacent angles from 90\u00b0.",
+    "condition": "Angles that together form a right angle (90\u00b0) with one or more known measures.",
+    "response": "Subtract known angle measures from $90^\\circ$ to find the unknown angle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $\\angle DPA = 90^\\circ$ and one part is $51^\\circ$, then the other part is $90^\\circ - 51^\\circ = 39^\\circ$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_a1_q5",
+      "G4_M6_a2_q5"
+    ]
+  },
+  {
+    "kc_id": "solve_basic_subtraction",
+    "title": "Compute Difference",
+    "description": "Subtract one integer degree measure from another to find the result.",
+    "condition": "Expression of the form a \u2212 b with known integers.",
+    "response": "Compute the numerical difference.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$60 - 38 = 22$.",
+    "notes": "Arithmetic computation step.",
+    "question_ids": [
+      "G4_M6_TC_a1_q2",
+      "G4_M6_TC_a1_q3",
+      "G4_M6_TC_a1_q4",
+      "G4_M6_TC_a1_q5",
+      "G4_M6_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "clock_minutes_to_degrees",
+    "title": "Convert Clock Minutes to Degrees",
+    "description": "Determine the degree rotation of a clock\u2019s minute hand based on elapsed minutes.",
+    "condition": "A time interval in minutes for the minute hand.",
+    "response": "Multiply minutes by 6\u00b0 (since 360\u00b0 \u00f7 60 minutes = 6\u00b0 per minute).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$30 \\text{ minutes} \\times 6^\\circ = 180^\\circ$",
+    "notes": "Based on a full circle (360\u00b0) divided into 60 equal minute intervals.",
+    "question_ids": [
+      "G4_M6_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "convert_fraction_of_circle_to_degrees",
+    "title": "Convert Fraction of Circle to Degrees",
+    "description": "Convert a fractional part of a circle into degrees using 360\u00b0 as the whole.",
+    "condition": "A fraction of a circle (e.g., 1/8) is given.",
+    "response": "Multiply the fraction by 360\u00b0 to find the degree measure.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$\\frac{1}{8} \\times 360^\\circ = 45^\\circ$.",
+    "notes": "Uses the fact that a full circle is 360\u00b0. [merged: condition varies] [merged: response varies]",
+    "question_ids": [
+      "G4_M6_TB_a1_q1",
+      "G4_M6_a1_q10",
+      "G4_M6_a2_q10"
+    ]
+  },
+  {
+    "kc_id": "count_pairs_of_parallel_sides",
+    "title": "Count Pairs of Parallel Sides",
+    "description": "Determine how many distinct pairs of parallel sides a polygon has.",
+    "condition": "Given a polygon with sides visible.",
+    "response": "Identify and count each pair of sides that are parallel.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "In a rectangle, the top and bottom sides form one pair of parallel sides, and the left and right sides form a second pair, for a total of 2 pairs.",
+    "notes": "Student visually inspects orientation of sides.",
+    "question_ids": [
+      "G4_M6_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "rotate_clockwise_direction",
+    "title": "Determine Direction After Clockwise Rotation",
+    "description": "Identify the new facing direction after rotating a given number of degrees clockwise.",
+    "condition": "A starting direction and a clockwise rotation measure.",
+    "response": "State the new direction or person faced.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "Starting facing Gabe, a $90^\\circ$ clockwise turn results in facing Robin.",
+    "notes": "Spatial reasoning around a circle.",
+    "question_ids": [
+      "G4_M6_a2_q10"
+    ]
+  },
+  {
+    "kc_id": "draw_angle_with_protractor",
+    "title": "Draw Angle of Given Measure",
+    "description": "Construct an angle of a specified degree measure using a protractor.",
+    "condition": "A given base ray and a target angle measure (e.g., 112\u00b0, 95\u00b0).",
+    "response": "Mark the target degree on the protractor and draw a second ray through that mark; add an arc to indicate the angle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "To draw $112^\\circ$, mark $112^\\circ$ from the baseline and draw a ray through the mark.",
+    "notes": "Includes marking the angle with an arc as part of the construction.",
+    "question_ids": [
+      "G4_M6_TB_a1_q6",
+      "G4_M6_TB_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "equilateral_triangle_angle_fact",
+    "title": "Equilateral Triangle Angle Measure",
+    "description": "Each interior angle of an equilateral triangle measures 60\u00b0.",
+    "condition": "A triangle is identified as equilateral.",
+    "response": "State that each interior angle measures 60\u00b0.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "In an equilateral triangle, each angle is $60\u00b0$.",
+    "notes": "Relies on definition of equilateral triangle.",
+    "question_ids": [
+      "G4_M6_TC_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "express_angle_as_fraction_of_circle",
+    "title": "Express Angle as Fraction of Circle",
+    "description": "Write an angle measure as a fraction of 360\u00b0.",
+    "condition": "An angle measure in degrees.",
+    "response": "Write the angle over 360 as a fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "A $47^\\circ$ angle is $\\frac{47}{360}$ of a circle.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_a1_q6",
+      "G4_M6_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "angle_subtraction_linear_pair",
+    "title": "Find Missing Angle in Linear Pair",
+    "description": "When two adjacent angles form a straight line (180\u00b0), subtract the known angle from 180\u00b0 to find the missing angle.",
+    "condition": "Two adjacent angles form a straight angle (sum 180\u00b0) and one angle measure is given.",
+    "response": "Compute missing angle as 180\u00b0 \u2212 (given angle or sum of given adjacent angles).",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If one angle is 47\u00b0, the adjacent linear-pair angle is $180 - 47 = 133\u00b0$.",
+    "notes": "Includes cases where multiple adjacent angles are summed before subtracting.",
+    "question_ids": [
+      "G4_M6_TC_a1_q1",
+      "G4_M6_TC_a1_q2",
+      "G4_M6_TC_a1_q3",
+      "G4_M6_TC_a1_q4",
+      "G4_M6_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_line_of_symmetry",
+    "title": "Identify a Line of Symmetry",
+    "description": "Determine whether a drawn line divides a figure into two mirror-image halves.",
+    "condition": "A figure with a proposed line is shown.",
+    "response": "State whether the line is a line of symmetry (yes/no).",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "A vertical line through the center of an isosceles triangle divides it into two congruent mirror halves, so it is a line of symmetry.",
+    "notes": "Relies on visual/spatial recognition. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M6_TD_a1_q2",
+      "G4_M6_a1_q1",
+      "G4_M6_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_right_triangle",
+    "title": "Identify a Right Triangle",
+    "description": "Determine whether a triangle contains a right (90\u00b0) angle.",
+    "condition": "A triangle is shown with or without angle markings.",
+    "response": "Classify it as a right triangle or not a right triangle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "A triangle with one $90^\\circ$ angle marking is a right triangle.",
+    "notes": "Based on presence of a 90\u00b0 angle.",
+    "question_ids": [
+      "G4_M6_a1_q8",
+      "G4_M6_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "identify_angle_figure",
+    "title": "Identify Angle Figure",
+    "description": "Recognize a figure formed by two rays with a common endpoint as an angle.",
+    "condition": "A figure shows two rays sharing a common endpoint.",
+    "response": "Name the figure as an angle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "Rays $\\overrightarrow{ED}$ and $\\overrightarrow{EF}$ share endpoint $E$, so they form an angle.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_line_figure",
+    "title": "Identify Line Figure",
+    "description": "Recognize a straight path extending infinitely in both directions as a line.",
+    "condition": "A straight figure has arrowheads on both ends indicating infinite extension.",
+    "response": "Name the figure as a line.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A figure with arrows on both ends through points $I$ and $J$ is a line $\\overleftrightarrow{IJ}$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_line_segment_figure",
+    "title": "Identify Line Segment Figure",
+    "description": "Recognize a straight figure with two endpoints and no arrows as a line segment.",
+    "condition": "A straight figure has two endpoints marked and no arrows.",
+    "response": "Name the figure as a line segment.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "The figure connecting points $A$ and $B$ with endpoints is line segment $\\overline{AB}$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_skew_neither",
+    "title": "Identify Neither Parallel Nor Perpendicular",
+    "description": "Determine that two lines are neither parallel nor perpendicular when they intersect at a non-right angle or do not meet the criteria for either.",
+    "condition": "Two lines either intersect at a non-90\u00b0 angle or have different directions and would meet if extended.",
+    "response": "State that the lines are neither parallel nor perpendicular.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If two lines intersect forming a $60^\\circ$ angle, they are neither parallel nor perpendicular.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q3",
+      "G4_M6_TA_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "identify_obtuse_angle_in_triangle",
+    "title": "Identify Obtuse Angle in Triangle",
+    "description": "Determine whether a triangle contains an obtuse angle (greater than 90\u00b0).",
+    "condition": "Given a triangle with its angles visible or measurable.",
+    "response": "State whether the triangle has at least one obtuse angle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If one angle in a triangle measures $110^\\circ$, then the triangle has an obtuse angle.",
+    "notes": "Uses definition of obtuse angle (> 90\u00b0).",
+    "question_ids": [
+      "G4_M6_TD_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_parallel_lines",
+    "title": "Identify Parallel Lines",
+    "description": "Recognize when two line segments are parallel (same direction, never intersect).",
+    "condition": "Two labeled line segments are shown in a figure.",
+    "response": "State that the segments are parallel.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If segments $\\overline{HO}$ and $\\overline{KL}$ run horizontally and never meet, then $\\overline{HO} \\parallel \\overline{KL}$.",
+    "notes": "Based on visual direction and non-intersection. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M6_TA_a1_q3",
+      "G4_M6_TA_a1_q4",
+      "G4_M6_TA_a1_q5",
+      "G4_M6_a1_q7",
+      "G4_M6_a1_q9",
+      "G4_M6_a2_q7",
+      "G4_M6_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "identify_perpendicular_lines",
+    "title": "Identify Perpendicular Lines",
+    "description": "Recognize when two line segments intersect to form a right angle.",
+    "condition": "Two labeled line segments intersect in a figure.",
+    "response": "State that the segments are perpendicular.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If $\\overline{NM}$ meets $\\overline{ML}$ at a $90^\\circ$ angle, then $\\overline{NM} \\perp \\overline{ML}$.",
+    "notes": "Often indicated by a square corner mark. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G4_M6_TA_a1_q3",
+      "G4_M6_TA_a1_q5",
+      "G4_M6_a1_q7",
+      "G4_M6_a1_q9",
+      "G4_M6_a2_q7",
+      "G4_M6_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "identify_point_figure",
+    "title": "Identify Point Figure",
+    "description": "Recognize a single labeled dot as a point.",
+    "condition": "A figure shows a single dot labeled with a capital letter.",
+    "response": "Name the figure as a point.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A single dot labeled $C$ represents point $C$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_ray_figure",
+    "title": "Identify Ray Figure",
+    "description": "Recognize a figure with one endpoint and one arrow as a ray.",
+    "condition": "A straight figure has one endpoint and one arrow indicating infinite extension in one direction.",
+    "response": "Name the figure as a ray.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A figure starting at point $G$ and extending through $H$ with one arrow is ray $\\overrightarrow{GH}$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TA_a1_q1",
+      "G4_M6_TA_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "identify_vertical_horizontal_symmetry",
+    "title": "Identify Vertical and Horizontal Symmetry Lines",
+    "description": "Determine all vertical and horizontal lines that create mirror symmetry in a figure.",
+    "condition": "A symmetric figure.",
+    "response": "Draw or state all valid symmetry lines.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non-verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "A rectangle-like figure with matching corners has one vertical and one horizontal line of symmetry through its center.",
+    "notes": "Non-verbal judgment of matching halves.",
+    "question_ids": [
+      "G4_M6_a2_q3"
+    ]
+  },
+  {
+    "kc_id": "match_polygon_to_parallel_sides_group",
+    "title": "Match Polygon to Group by Parallel Sides",
+    "description": "Determine whether a polygon belongs to a group defined by a specific number of parallel side pairs.",
+    "condition": "Given a polygon and a rule such as 'exactly one pair of parallel sides' or 'more than one pair of parallel sides.'",
+    "response": "Assign the polygon to the group whose rule matches its number of parallel side pairs.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If a polygon has exactly one pair of parallel sides, then it belongs in the group defined as 'exactly one pair of parallel sides.'",
+    "notes": "Builds on counting parallel side pairs.",
+    "question_ids": [
+      "G4_M6_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "measure_angle_with_protractor",
+    "title": "Measure Angle Using Protractor",
+    "description": "Determine the degree measure of an angle by aligning and reading a protractor.",
+    "condition": "A drawn angle and a correctly aligned protractor.",
+    "response": "Read and state the degree marking where the second ray intersects the scale.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "The second ray intersects the scale at $114^\\circ$, so the angle measures $114^\\circ$.",
+    "notes": "Procedural measurement skill.",
+    "question_ids": [
+      "G4_M6_TB_a1_q3",
+      "G4_M6_TB_a1_q5",
+      "G4_M6_a1_q4",
+      "G4_M6_a2_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_protractor_scale",
+    "title": "Select Correct Protractor Scale",
+    "description": "Choose the correct inner or outer scale on a protractor based on the orientation of the initial ray.",
+    "condition": "An angle aligned on a protractor with one ray on the baseline.",
+    "response": "Read the scale that begins at 0\u00b0 on the side of the initial ray.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Category",
+    "example": "If the initial ray points right, read the scale starting at $0^\\circ$ on the right.",
+    "notes": "Often implicit in protractor use instruction.",
+    "question_ids": [
+      "G4_M6_TB_a1_q3",
+      "G4_M6_TB_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "vertical_angles_congruent",
+    "title": "Vertical Angles Are Equal",
+    "description": "When two lines intersect, opposite (vertical) angles are congruent.",
+    "condition": "Two lines intersect forming vertical (opposite) angles; one angle measure is known.",
+    "response": "Assign the same measure to the vertical angle.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If $\\angle AEB = 146\u00b0$, then its vertical angle $\\angle DEC = 146\u00b0$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TC_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "set_up_subtraction_equation",
+    "title": "Write Equation for Missing Angle",
+    "description": "Translate a geometric relationship into a subtraction equation to represent a missing angle.",
+    "condition": "A full angle measure (e.g., 60\u00b0 or 180\u00b0) and a known part are given; need unknown part.",
+    "response": "Write equation of form variable = total \u2212 known part.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "If one part of a 60\u00b0 angle is 38\u00b0, write $t = 60 - 38$.",
+    "notes": "",
+    "question_ids": [
+      "G4_M6_TC_a1_q6"
+    ]
+  }
+]

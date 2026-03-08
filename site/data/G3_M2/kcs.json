@@ -16,27 +16,12 @@
       "G2_M4_a1_q14",
       "G2_M4_a1_q9",
       "G3_M2_TC_a1_q1",
-      "G3_M2_TC_a1_q5"
-    ]
-  },
-  {
-    "kc_id": "add_three_digit_numbers",
-    "title": "Add Three-Digit Numbers",
-    "description": "Compute the sum of two three-digit numbers using standard addition.",
-    "condition": "Two three-digit numbers presented with a plus sign (e.g., a + b).",
-    "response": "Calculate and state their sum.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "$349 + 382 = 731$",
-    "notes": "Includes regrouping when necessary.",
-    "question_ids": [
+      "G3_M2_TC_a1_q5",
       "G3_M2_TD_a1_q1",
       "G3_M2_TD_a1_q3",
       "G3_M2_a1_q5",
-      "G3_M2_a2_q5"
+      "G3_M2_a2_q5",
+      "G4_M1_a2_q6"
     ]
   },
   {
@@ -328,7 +313,8 @@
       "G3_M2_a1_q4",
       "G3_M2_a1_q8",
       "G3_M2_a2_q4",
-      "G3_M2_a2_q8"
+      "G3_M2_a2_q8",
+      "G4_M3_TF_a1_q3"
     ]
   },
   {
@@ -402,29 +388,15 @@
       "G2_M4_a1_q5",
       "G3_M2_TB_a1_q6",
       "G3_M2_TC_a1_q1",
-      "G3_M2_TC_a1_q4"
-    ]
-  },
-  {
-    "kc_id": "subtract_three_digit_numbers_standard",
-    "title": "Subtract Three-Digit Numbers Using Standard Algorithm",
-    "description": "Subtract one three-digit number from another using place value alignment and regrouping when necessary.",
-    "condition": "Two three-digit numbers in subtraction form (e.g., 813 \u2212 547).",
-    "response": "Compute the correct difference using place value subtraction with regrouping if needed.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle",
-    "example": "Compute $813 - 547$. Regroup: $13 - 7 = 6$, $10 - 4 = 6$, $7 - 5 = 2$. Result: $266$.",
-    "notes": "",
-    "question_ids": [
+      "G3_M2_TC_a1_q4",
       "G3_M2_TD_a1_q1",
       "G3_M2_TD_a1_q2",
       "G3_M2_a1_q3",
       "G3_M2_a1_q7",
       "G3_M2_a2_q3",
-      "G3_M2_a2_q7"
+      "G3_M2_a2_q7",
+      "G4_M1_a2_q10",
+      "G4_M1_a2_q6"
     ]
   },
   {

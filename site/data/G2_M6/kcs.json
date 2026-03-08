@@ -1,24 +1,5 @@
 [
   {
-    "kc_id": "add_equal_groups_repeated_addition",
-    "title": "Add Equal Groups Using Repeated Addition",
-    "description": "Compute the total when given equal groups by writing and evaluating a repeated addition expression.",
-    "condition": "Given a number of equal groups with the same number in each group.",
-    "response": "Write a repeated addition equation and compute the total.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "4 rows of 6 \u2192 $6 + 6 + 6 + 6 = 24$.",
-    "notes": "",
-    "question_ids": [
-      "G2_M6_TE_a1_q1",
-      "G2_M6_TE_a1_q6",
-      "G2_M6_TE_a1_q9"
-    ]
-  },
-  {
     "kc_id": "array_commutative_equivalence",
     "title": "Arrays Show Commutative Property",
     "description": "Recognize that arrays with rows and columns reversed have the same total.",

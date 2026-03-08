@@ -1,0 +1,569 @@
+[
+  {
+    "kc_id": "add_fractional_areas_same_denominator",
+    "title": "Add Fractional Areas with Same Denominator",
+    "description": "Combine fractional areas that share a common denominator by adding numerators and keeping the denominator.",
+    "condition": "Two or more fractions with the same denominator to be added (e.g., partial areas from an area model).",
+    "response": "Add the numerators and keep the common denominator; simplify if possible.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{20}{7} + \\frac{3}{7} = \\frac{23}{7}$",
+    "notes": "Applies when combining partial products in area models.",
+    "question_ids": [
+      "G5_M5_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "add_volumes_of_prisms",
+    "title": "Add Volumes of Multiple Prisms",
+    "description": "To find total volume of a composite solid made of rectangular prisms, add the volumes of the individual prisms.",
+    "condition": "A solid is composed of two or more non-overlapping right rectangular prisms with known dimensions.",
+    "response": "Compute each prism\u2019s volume and add them to get the total volume.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If one prism has volume $8 \\times 4 \\times 10 = 320$ and another has volume $4 \\times 7 \\times 2 = 56$, then total volume is $320 + 56 = 376$.",
+    "notes": "In Q4, dimensions are arranged so overlapping is avoided by decomposing correctly.",
+    "question_ids": [
+      "G5_M5_TD_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "area_is_length_times_width",
+    "title": "Area of a Rectangle Formula",
+    "description": "Find the area of a rectangle by multiplying its length by its width.",
+    "condition": "A rectangle with given side lengths.",
+    "response": "Compute length \u00d7 width.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{3}{4} \\times \\frac{6}{7} = \\frac{18}{28} = \\frac{9}{14}$",
+    "notes": "Fundamental area formula.",
+    "question_ids": [
+      "G5_M5_TB_a1_q2",
+      "G5_M5_TB_a1_q4",
+      "G5_M5_TB_a1_q6",
+      "G5_M5_a1_q4",
+      "G5_M5_a1_q6",
+      "G5_M5_a2_q4",
+      "G5_M5_a2_q6",
+      "G5_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "area_composite_rectangles",
+    "title": "Area of Composite Rectilinear Figure",
+    "description": "Find the area of a composite figure by decomposing it into rectangles, finding each area, and combining appropriately.",
+    "condition": "A rectilinear figure composed of rectangular parts with given side lengths.",
+    "response": "Decompose into rectangles, compute each area (length \u00d7 width), and add or subtract to find total area.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Split the L-shape into two rectangles and compute each area, then add to get \\(37\\tfrac{3}{5}\\).",
+    "notes": "Assumes additivity of area.",
+    "question_ids": [
+      "G5_M5_TB_a1_q5",
+      "G5_M5_a1_q8",
+      "G5_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "compute_rectangular_prism_volume",
+    "title": "Compute Volume of a Rectangular Prism",
+    "description": "The volume of a right rectangular prism equals length \u00d7 width \u00d7 height.",
+    "condition": "Given the length, width, and height of a right rectangular prism.",
+    "response": "Multiply length \u00d7 width \u00d7 height to calculate volume.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "For a prism with dimensions $25$, $5$, and $3$, volume is $25 \\times 5 \\times 3 = 375$.",
+    "notes": "Core formula underlying most problems in this set.",
+    "question_ids": [
+      "G5_M5_TC_a1_q3",
+      "G5_M5_TC_a1_q4",
+      "G5_M5_TD_a1_q1",
+      "G5_M5_TD_a1_q4",
+      "G5_M5_TD_a1_q5",
+      "G5_M5_a1_q3",
+      "G5_M5_a1_q5",
+      "G5_M5_a1_q9",
+      "G5_M5_a2_q3",
+      "G5_M5_a2_q5",
+      "G5_M5_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "convert_mixed_to_improper",
+    "title": "Convert Mixed Number to Improper Fraction",
+    "description": "Rewrite a mixed number as an improper fraction before multiplying.",
+    "condition": "A mixed number $a\\ \\frac{b}{c}$ is given in a multiplication problem.",
+    "response": "Compute $\\frac{ac+b}{c}$.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$2\\ \\frac{1}{2}=\\frac{2\\cdot2+1}{2}=\\frac{5}{2}$",
+    "notes": "Standard prerequisite for fraction multiplication. [merged: condition varies] [merged: response varies] [merged: label varies]",
+    "question_ids": [
+      "G5_M2_TC_a1_q1",
+      "G5_M2_TC_a1_q3",
+      "G5_M5_TB_a1_q1",
+      "G5_M5_TB_a1_q3",
+      "G5_M5_TB_a1_q6",
+      "G5_M5_a1_q2",
+      "G5_M5_a1_q4",
+      "G5_M5_a1_q7",
+      "G5_M5_a1_q8",
+      "G5_M5_a2_q2",
+      "G5_M5_a2_q4",
+      "G5_M5_a2_q7",
+      "G5_M5_a2_q8"
+    ]
+  },
+  {
+    "kc_id": "decompose_mixed_for_area_model",
+    "title": "Decompose Mixed Number for Area Model",
+    "description": "Split a mixed number into whole and fractional parts to build an area model.",
+    "condition": "A mixed number used in an area model representation.",
+    "response": "Represent as sum of whole number and fraction.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$4\\frac{3}{5} = 4 + \\frac{3}{5}$",
+    "notes": "Supports visual multiplication strategy.",
+    "question_ids": [
+      "G5_M5_TB_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "find_common_tile_unit_fraction",
+    "title": "Determine Common Unit Fraction for Tiling",
+    "description": "Identify a unit fraction that evenly partitions both side lengths of a rectangle.",
+    "condition": "Two fractional side lengths; need square tile with no gaps or overlaps.",
+    "response": "Choose a unit fraction whose denominator is a common multiple of the side denominators.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Sides $\\frac{3}{8}$ and $\\frac{2}{5}$ \u2192 common denominator $40$ \u2192 tile $\\frac{1}{40}$ yard.",
+    "notes": "Uses least common multiple reasoning.",
+    "question_ids": [
+      "G5_M5_TB_a1_q2",
+      "G5_M5_a1_q6",
+      "G5_M5_a2_q6"
+    ]
+  },
+  {
+    "kc_id": "scale_factor_count_small_boxes",
+    "title": "Determine Number of Smaller Prisms by Dimension Ratios",
+    "description": "Find how many smaller rectangular prisms fit inside a larger prism by dividing corresponding dimensions and multiplying the quotients.",
+    "condition": "Given dimensions of a large rectangular prism and a smaller prism that tiles it exactly.",
+    "response": "Divide each large dimension by the corresponding small dimension and multiply the three quotients.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Large box: 48 cm \u00d7 36 cm \u00d7 12 cm; Small box: 18 cm \u00d7 6 cm \u00d7 8 cm.\n\n$$\\frac{48}{18} = \\frac{36}{6} = \\frac{12}{8}$$ (after matching compatible dimensions appropriately) gives factors 2, 6, and 2.\n\n$$2 \\times 6 \\times 2 = 24 \\text{ small boxes.}$$",
+    "notes": "Requires matching compatible dimensions; assumes exact tiling with no gaps.",
+    "question_ids": [
+      "G5_M5_TC_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "count_unit_cubes_volume",
+    "title": "Determine Volume by Counting Unit Cubes",
+    "description": "Find the volume of a prism by counting the total number of unit cubes that fill it.",
+    "condition": "A rectangular prism composed of visible unit cubes where each cube represents 1 cubic unit.",
+    "response": "Count or compute the total number of unit cubes to determine volume.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "If a prism has 7 cubes along the length, 6 along the width, and 4 along the height, then:\n\n$$7 \\times 6 \\times 4 = 168 \\text{ cubic units.}$$",
+    "notes": "Often performed by structuring cubes into layers (arrays).",
+    "question_ids": [
+      "G5_M5_TC_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_kite_by_adjacent_sides",
+    "title": "Identify Kite by Adjacent Equal Sides",
+    "description": "Recognize that a quadrilateral with at least two pairs of adjacent sides of equal length is a kite.",
+    "condition": "A quadrilateral has at least two pairs of adjacent sides marked congruent.",
+    "response": "Classify the figure as a kite.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If a quadrilateral has sides $AB = BC$ and $CD = DA$, then it is a kite.",
+    "notes": "Definition-based classification.",
+    "question_ids": [
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "identify_parallelogram_by_parallel_sides",
+    "title": "Identify Parallelogram by Parallel Sides",
+    "description": "Recognize that a quadrilateral with two pairs of opposite sides parallel is a parallelogram.",
+    "condition": "A quadrilateral shows two pairs of opposite sides parallel.",
+    "response": "Classify the figure as a parallelogram.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If $AB \\parallel CD$ and $BC \\parallel AD$, then $ABCD$ is a parallelogram.",
+    "notes": "Used when interpreting diagram markings.",
+    "question_ids": [
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q4",
+      "G5_M5_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_quadrilateral_by_four_sides",
+    "title": "Identify Quadrilateral by Four Sides",
+    "description": "Recognize that any polygon with four sides is a quadrilateral.",
+    "condition": "A polygon has four sides.",
+    "response": "Classify the figure as a quadrilateral.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "A polygon with vertices $A,B,C,D$ (4 sides) is a quadrilateral.",
+    "notes": "Broadest category in the hierarchy.",
+    "question_ids": [
+      "G3_M6_TB_a1_q1",
+      "G3_M6_TB_a1_q3",
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q4",
+      "G5_M5_a1_q1",
+      "G5_M5_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_rectangle_by_right_angles",
+    "title": "Identify Rectangle by Four Right Angles",
+    "description": "Recognize that a quadrilateral with four right angles is a rectangle.",
+    "condition": "A quadrilateral has four right angle markers.",
+    "response": "Classify the figure as a rectangle.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If all angles in $ABCD$ are $90^\\circ$, then $ABCD$ is a rectangle.",
+    "notes": "Side lengths may differ.",
+    "question_ids": [
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q4",
+      "G5_M5_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_rhombus_by_equal_sides",
+    "title": "Identify Rhombus by Four Equal Sides",
+    "description": "Recognize that a quadrilateral with all sides equal in length is a rhombus.",
+    "condition": "A quadrilateral has four congruent sides.",
+    "response": "Classify the figure as a rhombus.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If $AB = BC = CD = DA$, then $ABCD$ is a rhombus.",
+    "notes": "Angles need not be right angles.",
+    "question_ids": [
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_special_quadrilateral",
+    "title": "Identify Special Quadrilateral by Properties",
+    "description": "Classify a quadrilateral (e.g., trapezoid, parallelogram, rectangle, kite) using properties like parallel sides, equal sides, or right angles.",
+    "condition": "A quadrilateral with marked properties (parallel sides, congruent sides, right angles).",
+    "response": "Select all shape names that match the given properties.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Rule / Plan",
+    "example": "If both pairs of opposite sides are parallel \u2192 Parallelogram.",
+    "notes": "Relies on definitions of each named figure.",
+    "question_ids": [
+      "G5_M5_a2_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_square_by_equal_sides_and_right_angles",
+    "title": "Identify Square by Equal Sides and Right Angles",
+    "description": "Recognize that a quadrilateral with four equal sides and four right angles is a square.",
+    "condition": "A quadrilateral has four congruent sides and four right angles.",
+    "response": "Classify the figure as a square.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If $AB = BC = CD = DA$ and each angle is $90^\\circ$, then $ABCD$ is a square.",
+    "notes": "Combines properties of rhombus and rectangle.",
+    "question_ids": [
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q3",
+      "G5_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "identify_trapezoid_by_one_pair_parallel",
+    "title": "Identify Trapezoid by One Pair of Parallel Sides",
+    "description": "Recognize that a quadrilateral with at least one pair of parallel sides is a trapezoid.",
+    "condition": "A quadrilateral has at least one pair of opposite sides parallel.",
+    "response": "Classify the figure as a trapezoid.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If $AB \\parallel CD$ but $BC \\nparallel AD$, then $ABCD$ is a trapezoid.",
+    "notes": "Inclusive definition assumed (at least one pair).",
+    "question_ids": [
+      "G5_M5_TA_a1_q1",
+      "G5_M5_TA_a1_q2",
+      "G5_M5_TA_a1_q4",
+      "G5_M5_a1_q1"
+    ]
+  },
+  {
+    "kc_id": "identify_volume_attribute",
+    "title": "Identify Volume as Attribute of Capacity",
+    "description": "Volume describes how much space an object occupies or how much a container can hold.",
+    "condition": "Asked which attribute describes how much substance (e.g., milk) a container holds.",
+    "response": "Select or state 'volume.'",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "When asked how much milk is in a bottle, the correct attribute is $\\text{volume}$.",
+    "notes": "Distinguishes volume from width, height, or area.",
+    "question_ids": [
+      "G5_M5_TD_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "interpret_cubic_units_as_volume",
+    "title": "Interpret Cubic Units as Volume",
+    "description": "Recognize that the number of cubic units filling a solid represents its volume.",
+    "condition": "A solid measured in cubic units (e.g., cubic centimeters, cubic inches, unit cubes).",
+    "response": "State that the count of cubic units equals the volume of the solid.",
+    "cond_type": "Variable",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Concept",
+    "example": "If a prism contains 168 unit cubes, then its volume is 168 cubic units.",
+    "notes": "Connects discrete cube counting to the concept of volume.",
+    "question_ids": [
+      "G5_M5_TC_a1_q1",
+      "G5_M5_TC_a1_q3"
+    ]
+  },
+  {
+    "kc_id": "match_volume_to_target_quantity",
+    "title": "Match Prism Volume to Target Quantity",
+    "description": "Determine whether a prism\u2019s computed volume equals a specified target amount.",
+    "condition": "Given a prism\u2019s dimensions and a target volume (e.g., 16 milliliters).",
+    "response": "Compute the prism\u2019s volume and compare it to the target value; answer Yes if equal, otherwise No.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If a prism measures 4 cm \u00d7 2 cm \u00d7 2 cm, then:\n\n$$V = 4 \\times 2 \\times 2 = 16 \\text{ cm}^3,$$\nso it can hold exactly 16 milliliters (Yes).",
+    "notes": "Uses the fact that 1 cm\u00b3 = 1 mL.",
+    "question_ids": [
+      "G5_M5_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "multiply_mixed_numbers",
+    "title": "Multiply Mixed Numbers",
+    "description": "Multiply mixed numbers by converting to improper fractions and multiplying.",
+    "condition": "Two mixed numbers are multiplied.",
+    "response": "Convert each to improper fractions, multiply, and convert back if needed.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$1\\ \\frac{5}{8}\\times\\frac{4}{5}=\\frac{13}{8}\\times\\frac{4}{5}=\\frac{52}{40}=1\\ \\frac{3}{10}$",
+    "notes": "Composite KC built from conversion + fraction multiplication.",
+    "question_ids": [
+      "G5_M5_a1_q2",
+      "G5_M5_a1_q4",
+      "G5_M5_a1_q7"
+    ]
+  },
+  {
+    "kc_id": "multiply_three_numbers",
+    "title": "Multiply Three Factors",
+    "description": "Multiply three whole numbers to find a product.",
+    "condition": "Given three numerical factors to combine multiplicatively.",
+    "response": "Compute their product.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "$64 \\times 80 \\times 4 = 20{,}480$.",
+    "notes": "Arithmetic skill supporting volume computation.",
+    "question_ids": [
+      "G5_M5_TD_a1_q1",
+      "G5_M5_TD_a1_q5"
+    ]
+  },
+  {
+    "kc_id": "recognize_hierarchy_rectangle_rhombus_square",
+    "title": "Recognize Square as Rectangle and Rhombus",
+    "description": "Understand that a square satisfies the definitions of both a rectangle and a rhombus.",
+    "condition": "A figure is identified as a square.",
+    "response": "Conclude it is also a rectangle and a rhombus.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "Since a square has four right angles and four equal sides, it meets the definitions of both a rectangle and a rhombus.",
+    "notes": "Explains why some rectangles are rhombuses and all squares are rhombuses.",
+    "question_ids": [
+      "G5_M5_TA_a1_q2",
+      "G5_M5_TA_a1_q3",
+      "G5_M5_TA_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "relate_cm3_to_milliliter",
+    "title": "Relate Cubic Centimeters to Milliliters",
+    "description": "Recognize that 1 cubic centimeter is equivalent to 1 milliliter.",
+    "condition": "Volume expressed in cubic centimeters for a container\u2019s capacity.",
+    "response": "Interpret the value as the same number of milliliters.",
+    "cond_type": "Constant",
+    "resp_type": "Constant",
+    "relationship": "Verbal",
+    "rationale": "No",
+    "label": "Fact",
+    "example": "$$1 \\text{ cm}^3 = 1 \\text{ mL.}$$\n\nSo 16 cm\u00b3 equals 16 mL.",
+    "notes": "Metric volume equivalence.",
+    "question_ids": [
+      "G5_M5_TC_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "select_factor_triple_for_volume",
+    "title": "Select Dimensions Matching Given Volume",
+    "description": "Choose three whole-number dimensions whose product equals a given volume.",
+    "condition": "Given a target volume and a list of possible dimension values.",
+    "response": "Select three numbers whose product equals the target volume.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Non\u2011verbal",
+    "rationale": "No",
+    "label": "Production / Skill",
+    "example": "For volume $45$, one valid set is $3 \\times 3 \\times 5 = 45$.",
+    "notes": "Requires knowledge of factor combinations.",
+    "question_ids": [
+      "G5_M5_TD_a1_q6"
+    ]
+  },
+  {
+    "kc_id": "simplify_fraction",
+    "title": "Simplify a Fraction",
+    "description": "Reduce a fraction to lowest terms by dividing numerator and denominator by their greatest common factor.",
+    "condition": "A fraction where numerator and denominator share a common factor greater than 1.",
+    "response": "Divide numerator and denominator by the GCF.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "$\\frac{18}{28} = \\frac{9}{14}$",
+    "notes": "Often final step after multiplication.",
+    "question_ids": [
+      "G5_M5_TB_a1_q4"
+    ]
+  },
+  {
+    "kc_id": "solve_for_missing_dimension",
+    "title": "Solve for Missing Prism Dimension",
+    "description": "Find an unknown dimension of a rectangular prism by dividing volume by the product of the known dimensions.",
+    "condition": "Given volume and two dimensions of a rectangular prism, with one dimension unknown.",
+    "response": "Divide volume by (known dimension \u00d7 known dimension) to find the missing value.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "If $V = 756$, $h = 7$, $w = 18$, then length $= \\frac{756}{7 \\times 18} = 6$.",
+    "notes": "Uses inverse relationship of multiplication and division.",
+    "question_ids": [
+      "G5_M5_TD_a1_q2"
+    ]
+  },
+  {
+    "kc_id": "solve_missing_prism_height_equal_volumes",
+    "title": "Solve for Missing Prism Height Using Equal Volumes",
+    "description": "Set volumes of two rectangular prisms equal and solve for the unknown height.",
+    "condition": "Two prisms with equal volumes; dimensions of one known and one dimension missing in the other.",
+    "response": "Compute known volume and divide by known base area to find missing height.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle / Model",
+    "example": "Volume A: \\(5\\times12\\times6=360\\). For B: \\(15\\times4\\times h=360\\Rightarrow h=6\\).",
+    "notes": "Uses volume formula and division.",
+    "question_ids": [
+      "G5_M5_a1_q9",
+      "G5_M5_a2_q9"
+    ]
+  },
+  {
+    "kc_id": "total_from_rate_times_quantity",
+    "title": "Total from (Amount per Batch) \u00d7 (Number of Batches)",
+    "description": "Multiply quantity per group by number of groups, then sum totals.",
+    "condition": "Problem gives amount per batch and number of batches for multiple items.",
+    "response": "Multiply each pair and add results.",
+    "cond_type": "Variable",
+    "resp_type": "Variable",
+    "relationship": "Verbal",
+    "rationale": "Yes",
+    "label": "Principle",
+    "example": "$2\\ \\frac{1}{2}\\times3\\ \\frac{1}{2} + 1\\ \\frac{3}{4}\\times4\\ \\frac{1}{2}=16\\ \\frac{5}{8}$.",
+    "notes": "Multi-step word problem structure.",
+    "question_ids": [
+      "G5_M5_a1_q7",
+      "G5_M5_a2_q7"
+    ]
+  }
+]

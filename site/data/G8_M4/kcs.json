@@ -497,24 +497,6 @@
     ]
   },
   {
-    "kc_id": "graph_ordered_pair",
-    "title": "Plot Ordered Pair on Coordinate Plane",
-    "description": "Plot a point on the coordinate plane given its ordered pair.",
-    "condition": "Given an ordered pair (x, y).",
-    "response": "Locate x on the horizontal axis and y on the vertical axis and mark the point.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Non\u2011verbal",
-    "rationale": "No",
-    "label": "Production / Skill",
-    "example": "To graph $(1,-0.5)$, move 1 unit right and 0.5 units down.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_TC_a1_q2",
-      "G8_M6_TC_a1_q1"
-    ]
-  },
-  {
     "kc_id": "identify_linear_no_solution",
     "title": "Recognize Contradictory Equation",
     "description": "Identify when simplifying a linear equation results in a false statement.",
@@ -798,23 +780,6 @@
     "notes": "",
     "question_ids": [
       "G8_M4_TF_a1_q3"
-    ]
-  },
-  {
-    "kc_id": "write_slope_intercept_from_context",
-    "title": "Write Slope-Intercept Equation from Context",
-    "description": "Write a linear equation in slope-intercept form using an initial value and constant rate of change from a word problem.",
-    "condition": "Given an initial value and a constant rate of change in a context.",
-    "response": "Write equation in form y = mx + b with correct sign and units.",
-    "cond_type": "Variable",
-    "resp_type": "Variable",
-    "relationship": "Verbal",
-    "rationale": "Yes",
-    "label": "Principle / Model",
-    "example": "Initial height 18 ft, decreasing 0.55 ft/s:\n$y = -0.55x + 18$.",
-    "notes": "",
-    "question_ids": [
-      "G8_M4_TF_a1_q5"
     ]
   }
 ]
